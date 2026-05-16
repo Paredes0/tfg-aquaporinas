@@ -1,0 +1,47 @@
+IQ-TREE 3.0.1 built Jan  1 2025
+
+Random seed number: 12345
+
+REFERENCES
+----------
+
+Input file name: synthetic.fasta
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap
+Random seed number: 12345
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 281 sequences with 430 amino-acid sites
+Number of constant sites: 50 (= 11.6% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 50 (= 11.6% of all sites)
+Number of parsimony informative sites: 350
+Number of distinct site patterns: 425
+
+ModelFinder
+-----------
+
+Best-fit model: Q.PLANT+R6 chosen according to BIC
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the consensus tree: -45149.26
+Robinson-Foulds distance between ML tree and consensus tree: 0
+
+Total tree length (sum of branch lengths): 77.2197
+Sum of internal branch lengths: 18.5327 (24.00% of tree length)
+
+WARNING: 3 near-zero internal branches (<0.0001) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'AtPIP1_1' is drawn at root
+
+Optimized model parameters:
+Model of substitution: Q.PLANT+R6
+Site proportion and rates:  (0.150,0.012) (0.200,0.110) (0.200,0.520) (0.180,1.330) (0.150,2.450) (0.120,5.120)
+Categories of FreeRate with 6 categories.
+
+Bayesian information criterion (BIC) score: 91254.32
+Akaike information criterion (AIC) score: 90854.61
+Corrected Akaike information criterion (AICc) score: 90855.12
