@@ -32,7 +32,11 @@ from Bio.SeqUtils.ProtParam import ProteinAnalysis
 # ============================================================================
 # CONFIGURACIÓN
 # ============================================================================
-BASE_DIR = Path(r'c:\Users\Lab.Micaela VI\Desktop\Noe Paredes')
+# Ruta portable: override con $TFG_DATA_ROOT si tus datos viven en otra parte.
+BASE_DIR = Path(os.environ.get(
+    'TFG_DATA_ROOT',
+    r'C:\Users\Usuario\Desktop\resultados finales'
+))
 PROTEINAS_DIR = BASE_DIR / 'analisis proteinas aquaporina'
 OUTPUT_DIR = BASE_DIR / 'visualizaciones_tfg'
 

@@ -58,8 +58,9 @@ def update_prune_file(fasta_path, prune_path):
     
     print(f"Successfully updated {prune_path} with {len(new_ids)} IDs from {fasta_path}")
 
-# Define paths
-fasta_file = r"c:\Users\Lab.Micaela VI\Desktop\Noe Paredes\analisis proteinas aquaporina\consenso_aqp.fasta"
-prune_file = r"c:\Users\Lab.Micaela VI\Desktop\Noe Paredes\prune.txt"
+# Rutas portables: override con $TFG_DATA_ROOT si tus datos viven en otra parte.
+_BASE = os.environ.get('TFG_DATA_ROOT', r'C:\Users\Usuario\Desktop\resultados finales')
+fasta_file = os.path.join(_BASE, 'analisis proteinas aquaporina', 'consenso_aqp.fasta')
+prune_file = os.path.join(_BASE, 'prune.txt')
 
 update_prune_file(fasta_file, prune_file)

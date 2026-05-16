@@ -1,11 +1,16 @@
 #!/usr/bin/env python3
 """Compara estadísticas y soporte nodal de ambos árboles IQTree."""
+import os
 import re
 from Bio import Phylo
 from collections import Counter
 import statistics
 
-BASE = r'c:\Users\Lab.Micaela VI\Desktop\Noe Paredes\analisis proteinas aquaporina'
+# Ruta portable: override con $TFG_DATA_ROOT si tus datos viven en otra parte.
+BASE = os.path.join(
+    os.environ.get('TFG_DATA_ROOT', r'C:\Users\Usuario\Desktop\resultados finales'),
+    'analisis proteinas aquaporina'
+)
 
 def parse_iqtree_stats(filepath):
     with open(filepath, 'r') as f:

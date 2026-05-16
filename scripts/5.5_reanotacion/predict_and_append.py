@@ -1,3 +1,4 @@
+import collections
 import sys, io, os, re
 import pandas as pd
 import numpy as np
@@ -6,8 +7,10 @@ from sklearn.ensemble import RandomForestClassifier
 from Bio import SeqIO
 from Bio.SeqUtils.ProtParam import ProteinAnalysis
 
-BASE_DIR = r'c:\Users\Lab.Micaela VI\Desktop\Noe Paredes\analisis proteinas aquaporina'
-GDR_DIR = os.path.join(r'c:\Users\Lab.Micaela VI\Desktop\Noe Paredes', 'GDR_fxa')
+# Rutas portables: override con $TFG_DATA_ROOT si tus datos viven en otra parte.
+_BASE = os.environ.get('TFG_DATA_ROOT', r'C:\Users\Usuario\Desktop\resultados finales')
+BASE_DIR = os.path.join(_BASE, 'analisis proteinas aquaporina')
+GDR_DIR = os.path.join(_BASE, 'GDR_fxa')
 
 df_tab = pd.read_csv(os.path.join(BASE_DIR, 'tabla_aquaporinas_traduccion.tabular'), sep='\t')
 exo_to_gene = {str(r['mRNA_exonerate_id']): r['gene_id'] for _, r in df_tab.iterrows() if pd.notna(r.get('mRNA_exonerate_id'))}
@@ -254,7 +257,7 @@ df_missing['Prediccion_Subfamilia'] = preds
 
 # Parse motifs for testing (add_missing_motifs in next script will do properly, here basic)
 # We need to append to tabla_Aquaporinas_traduccion.tabular
-print(f"Predictions done: {collections.Counter(preds) if 'collections' in globals() else preds}")
+print(f"Predictions done: {collections.Counter(preds)}")
 
 # Save to tabla !
 new_rows = []

@@ -257,16 +257,18 @@ def main():
     print("=" * 80)
     print()
     
-    # Archivo de entrada
-    filename = r"c:\Users\Lab.Micaela VI\Desktop\Noe Paredes\dataset fragaria ananassa\ncbi_data\TODAS_ROSACEAE_aqp_prot_FINAL_V13.fasta"
-    
+    # Archivo de entrada (ruta portable: override con $TFG_DATA_ROOT)
+    import os
+    BASE_DIR = os.environ.get('TFG_DATA_ROOT', r'C:\Users\Usuario\Desktop\resultados finales')
+    filename = os.path.join(BASE_DIR, 'dataset fragaria ananassa', 'ncbi_data',
+                            'TODAS_ROSACEAE_aqp_prot_FINAL_V13.fasta')
+
     print(f"Leyendo archivo: {filename}")
     lengths = parse_fasta(filename)
     print(f"Total de secuencias leídas: {len(lengths)}\n")
-    
+
     # Crear directorio de salida
-    import os
-    output_dir = r"c:\Users\Lab.Micaela VI\Desktop\Noe Paredes\visualizaciones_tfg"
+    output_dir = os.path.join(BASE_DIR, 'visualizaciones_tfg')
     os.makedirs(output_dir, exist_ok=True)
     print(f"Directorio de salida: {output_dir}\n")
     

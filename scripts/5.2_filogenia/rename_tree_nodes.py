@@ -74,8 +74,10 @@ def rename_newick_nodes(tree_path, tabular_path, output_path):
         
     print(f"Replaced {count} IDs. Saved to {output_path}")
 
-tree_file = r"c:\Users\Lab.Micaela VI\Desktop\Noe Paredes\aqp_subfamily_newick.txt"
-tab_file = r"c:\Users\Lab.Micaela VI\Desktop\Noe Paredes\analisis proteinas aquaporina\tabla_Aquaporinas_traduccion.tabular"
-output_file = r"c:\Users\Lab.Micaela VI\Desktop\Noe Paredes\aqp_subfamily_renamed.newick"
+# Rutas portables: override con $TFG_DATA_ROOT si tus datos viven en otra parte.
+_BASE = os.environ.get('TFG_DATA_ROOT', r'C:\Users\Usuario\Desktop\resultados finales')
+tree_file = os.path.join(_BASE, 'aqp_subfamily_newick.txt')
+tab_file = os.path.join(_BASE, 'analisis proteinas aquaporina', 'tabla_Aquaporinas_traduccion.tabular')
+output_file = os.path.join(_BASE, 'aqp_subfamily_renamed.newick')
 
 rename_newick_nodes(tree_file, tab_file, output_file)
