@@ -1,0 +1,77 @@
+# ===== Datos grandes (no van al repo) =====
+# FASTA, BAM, FASTQ, genomas, índices
+*.fasta
+*.fa
+*.fa.gz
+*.fasta.gz
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.bam
+*.bai
+*.sam
+*.cram
+*.crai
+*.gff3.gz
+*.gtf.gz
+*.gff.gz
+
+# Salmon / HISAT2 / STAR indices
+idx/
+index/
+salmon_index/
+hisat2_index/
+
+# Resultados intermedios voluminosos
+counts/
+fastq/
+qc/
+logs/
+results/
+salmon_check/
+
+# Imágenes y SVG grandes (mantener selectivamente)
+*.svg
+*.png
+*.pdf
+# Excepto la infografía clave
+!docs/figuras_clave/**
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+.coverage
+htmlcov/
+
+# ===== R =====
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj.user/
+
+# ===== IDE / OS =====
+.vscode/
+.idea/
+*.swp
+*.swo
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# ===== Tablas grandes (>5 MB) =====
+# Mantener las cifras clave del TFG, no el RNA-seq crudo
+counts_aquaporinas.tsv
+*.tabular.backup
+*.fasta.backup
+*.gff3.backup
