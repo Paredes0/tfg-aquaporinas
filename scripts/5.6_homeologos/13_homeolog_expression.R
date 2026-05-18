@@ -76,12 +76,16 @@ SUBGENOME_COLORS <- c(
 )
 
 FAMILY_COLORS <- c(
-    "PIP" = "#1B9E77",
-    "TIP" = "#D95F02",
-    "NIP" = "#7570B3",
-    "SIP" = "#E7298A",
-    "XIP" = "#66A61E"
+    "PIP" = "#E74C3C",
+    "TIP" = "#3498DB",
+    "NIP" = "#2ECC71",
+    "SIP" = "#F39C12",
+    "XIP" = "#9B59B6"
 )
+# NOTE (2026-05-18): paleta unificada con la canonica de 08_basal_expression.R
+# y 07_de_analysis.R para concordancia visual entre apartados del TFG (6.3.1,
+# 6.3.2 y 6.3.3). La paleta previa (rojo-naranja-violeta-magenta-verde) causaba
+# inconsistencia cromatica entre figuras de basal/DE y figuras de homeologos.
 
 message("# =================================================================")
 message("# HOMEOLOG EXPRESSION ANALYSIS — Three-Level Resolution")
