@@ -36,6 +36,14 @@ print("# =============================================================")
 if os.path.exists(SUMMARY_FILE):
     summary = pd.read_csv(SUMMARY_FILE)
     print(f"# Loaded expression summary: {len(summary)} entries")
+    # Restricción a las 121 funcionales (8 candidatas a reanotación excluidas;
+    # la reanotación no se aborda en el TFG). El visor eFP muestra sólo las 121.
+    if "needs_reannotation" in summary.columns:
+        n_genes_pre = summary["gene_id"].nunique()
+        summary = summary[summary["needs_reannotation"].astype(str).str.upper() != "TRUE"]
+        n_genes_post = summary["gene_id"].nunique()
+        print(f"# Filtered to functional aquaporins: {n_genes_post}/{n_genes_pre} "
+              f"genes (excluded {n_genes_pre - n_genes_post} reannotation candidates)")
 else:
     print(f"# WARNING: {SUMMARY_FILE} not found. Using demo data.")
     # Generate minimal demo data
@@ -66,6 +74,13 @@ else:
 if os.path.exists(AQP_TABLE):
     aqp_info = pd.read_csv(AQP_TABLE, sep="\t")
     print(f"# Loaded aquaporin table: {len(aqp_info)} genes")
+    # Restricción a las 121 funcionales (8 candidatas a reanotación excluidas;
+    # la reanotación no se aborda en el TFG)
+    if "needs_reannotation" in aqp_info.columns:
+        aqp_info = aqp_info[aqp_info["needs_reannotation"].astype(str).str.upper() != "TRUE"]
+    elif "fuente_seq" in aqp_info.columns:
+        aqp_info = aqp_info[~aqp_info["fuente_seq"].isin(["GFF3_FALLBACK", "MAKER_GFF3"])]
+    print(f"# Functional aquaporins after filter: {len(aqp_info)} genes")
 else:
     aqp_info = None
     print("# WARNING: Aquaporin table not found. Using summary data only.")

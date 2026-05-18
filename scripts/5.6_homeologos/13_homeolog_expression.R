@@ -93,8 +93,29 @@ message("# =================================================================")
 
 # Homeolog groups
 hg <- read.delim(HG_FILE, stringsAsFactors = FALSE)
-message(paste0("# Homeolog groups: ", length(unique(hg$homeolog_group)),
+message(paste0("# Homeolog groups (pre-filtro): ", length(unique(hg$homeolog_group)),
                " groups, ", nrow(hg), " genes"))
+
+# Restricción a las 121 funcionales (8 candidatas a reanotación excluidas;
+# la reanotación no se aborda en el TFG). homeolog_groups.tsv ya debería estar
+# restringido a 121 (32 grupos), pero se aplica filtro defensivo por si una
+# revisión futura del fichero añade candidatas parciales.
+n_pre <- nrow(hg)
+if ("needs_reannotation" %in% colnames(hg)) {
+    hg$needs_reannotation <- as.logical(hg$needs_reannotation)
+    hg <- hg[!hg$needs_reannotation, ]
+} else if ("is_partial" %in% colnames(hg)) {
+    # `is_partial == "yes"` marca secuencias candidatas a reanotación
+    hg <- hg[!(hg$is_partial %in% c("yes", "YES", "TRUE", "True", "true")), ]
+} else if ("annotation_source" %in% colnames(hg)) {
+    hg <- hg[!(hg$annotation_source %in% c("GFF3_FALLBACK", "MAKER_GFF3")), ]
+}
+if (nrow(hg) < n_pre) {
+    message(paste0("#   Excluidas ", n_pre - nrow(hg),
+                   " candidatas a reanotación → ", nrow(hg), " genes funcionales"))
+}
+message(paste0("# Homeolog groups (post-filtro): ",
+               length(unique(hg$homeolog_group)), " groups, ", nrow(hg), " genes"))
 
 # Raw counts
 counts_file <- file.path(COUNTS_DIR, "counts_basal.csv")

@@ -56,6 +56,23 @@ design_all <- read.csv(file.path(DESIGN_DIR, "design_basal.csv"))
 gene_lengths <- read.delim(GENE_LENGTHS)
 aqp_info <- read.delim(AQP_TABLE, sep = "\t", stringsAsFactors = FALSE)
 
+# Restricción a las 121 funcionales (8 candidatas a reanotación excluidas;
+# la reanotación no se aborda en el TFG). El filtro depende del esquema:
+#   - si existe la columna explícita `needs_reannotation` → se usa directamente
+#   - si no, se reconstruye desde `fuente_seq` (GFF3_FALLBACK / MAKER_GFF3 = TRUE)
+# La cuantificación featureCounts y la normalización DESeq2 se mantienen sobre
+# el genoma completo; sólo se restringe el subconjunto de acuaporinas.
+if ("needs_reannotation" %in% colnames(aqp_info)) {
+    aqp_info$needs_reannotation <- as.logical(aqp_info$needs_reannotation)
+} else {
+    aqp_info$needs_reannotation <- aqp_info$fuente_seq %in% c("GFF3_FALLBACK", "MAKER_GFF3")
+}
+n_pre_filter <- nrow(aqp_info)
+aqp_info <- aqp_info[!aqp_info$needs_reannotation, ]
+message(paste0("# Acuaporinas funcionales tras filtro: ", nrow(aqp_info),
+               "/", n_pre_filter, " (excluidas ", n_pre_filter - nrow(aqp_info),
+               " candidatas a reanotación)"))
+
 # Dynamic outlier exclusion
 if (OUTLIER_HANDLING == "exclude" && OUTLIER_SAMPLE %in% design_all$sample) {
     message(paste0("# EXCLUDING outlier: ", OUTLIER_SAMPLE))
@@ -162,7 +179,11 @@ aqp_meta <- aqp_meta[match(aqp_in_counts, aqp_meta$gene_id), ]
 
 # Create display names
 aqp_meta$display_name <- paste0(aqp_meta$aqp_family_subfamily, " (", aqp_meta$gene_id, ")")
-aqp_meta$needs_reannotation <- aqp_meta$fuente_seq %in% c("GFF3_FALLBACK", "MAKER_GFF3")
+# `needs_reannotation` ya viene en aqp_info tras el filtro inicial; debería ser FALSE
+# en todas las filas restantes. Se mantiene para compatibilidad con anotaciones aguas abajo.
+if (!"needs_reannotation" %in% colnames(aqp_meta)) {
+    aqp_meta$needs_reannotation <- FALSE
+}
 
 # ---- Save expression matrices ------------------------------------------------
 

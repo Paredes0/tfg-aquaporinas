@@ -67,6 +67,28 @@ hg = pd.read_csv(HG_TABLE, sep="\t")
 print(f"# Loaded collapsed TPM: {tpm.shape[0]} groups x {tpm.shape[1]} samples")
 print(f"# Loaded homeolog groups: {len(hg)} genes")
 
+# Restricción a las 121 funcionales (8 candidatas a reanotación excluidas;
+# la reanotación no se aborda en el TFG). homeolog_groups.tsv ya debería estar
+# restringido a 121 genes / 32 grupos; aplicamos filtro defensivo y replicamos
+# el filtro sobre el TPM individual basal antes de incluirlo en el visor.
+n_hg_pre = len(hg)
+if "needs_reannotation" in hg.columns:
+    hg = hg[hg["needs_reannotation"].astype(str).str.upper() != "TRUE"]
+elif "is_partial" in hg.columns:
+    hg = hg[~hg["is_partial"].astype(str).str.lower().isin(["yes", "true"])]
+elif "annotation_source" in hg.columns:
+    hg = hg[~hg["annotation_source"].isin(["GFF3_FALLBACK", "MAKER_GFF3"])]
+if len(hg) < n_hg_pre:
+    print(f"# Excluded {n_hg_pre - len(hg)} reannotation candidates → "
+          f"{len(hg)} functional homeologs in {hg['homeolog_group'].nunique()} groups")
+
+# El TPM individual basal también puede contener genes candidatos; filtramos.
+if basal_tpm is not None and "needs_reannotation" in basal_tpm.columns:
+    n_basal_pre = len(basal_tpm)
+    basal_tpm = basal_tpm[basal_tpm["needs_reannotation"].astype(str).str.upper() != "TRUE"]
+    if len(basal_tpm) < n_basal_pre:
+        print(f"# Filtered basal TPM to {len(basal_tpm)}/{n_basal_pre} functional aquaporins")
+
 # Map tissues
 tissue_map = {
     "green_fruit": [c for c in tpm.columns if "Green" in c],

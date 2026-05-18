@@ -366,6 +366,23 @@ annotate_aquaporins <- function(de_results, aqp_info, output_dir, comparison_nam
 
 # Load aquaporin metadata
 aqp_info <- read.delim(AQP_TABLE, sep = "\t", stringsAsFactors = FALSE)
+
+# Restricción a las 121 funcionales (8 candidatas a reanotación excluidas;
+# la reanotación no se aborda en el TFG). El subset `de_aquaporins_*.csv`
+# y todas las figuras de acuaporinas (volcano, heatmap) operan sólo sobre
+# estas 121. La tabla principal `results_*.csv` se mantiene sobre el genoma
+# completo (necesaria para la estimación de dispersión de DESeq2).
+if ("needs_reannotation" %in% colnames(aqp_info)) {
+    aqp_info$needs_reannotation <- as.logical(aqp_info$needs_reannotation)
+} else {
+    aqp_info$needs_reannotation <- aqp_info$fuente_seq %in% c("GFF3_FALLBACK", "MAKER_GFF3")
+}
+n_pre_filter <- nrow(aqp_info)
+aqp_info <- aqp_info[!aqp_info$needs_reannotation, ]
+message(paste0("# Acuaporinas funcionales tras filtro: ", nrow(aqp_info),
+               "/", n_pre_filter, " (excluidas ", n_pre_filter - nrow(aqp_info),
+               " candidatas a reanotación)"))
+
 # Select relevant columns
 aqp_cols <- c("gene_id", "aqp_family_subfamily", "subfamilia_phylo",
               "fuente_seq", "veredicto", "TMHs", "longitud_aa")
