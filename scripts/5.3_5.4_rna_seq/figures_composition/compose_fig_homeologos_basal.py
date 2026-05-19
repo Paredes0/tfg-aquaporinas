@@ -18,7 +18,7 @@ design = pd.read_csv(base / "design" / "design_basal.csv")
 sample_to_tissue = dict(zip(design["sample"], design["tissue"]))
 
 tissue_order = ["red_fruit", "roots", "green_fruit", "crown", "aux_bud", "leaf"]
-tissue_labels = ["Fruto rojo", "Raiz", "Fruto verde", "Corona", "Yema axilar*", "Hoja"]
+tissue_labels = ["Fruto rojo", "Raíz", "Fruto verde", "Corona", "Yema axilar*", "Hoja"]
 ct_long = ct.melt(id_vars="homeolog_group", var_name="sample", value_name="tpm")
 ct_long["tissue"] = ct_long["sample"].map(sample_to_tissue)
 ct_long = ct_long.dropna(subset=["tissue"])
@@ -111,11 +111,6 @@ ax_a.set_ylabel("TPM colapsado por grupo HG\n(SUMA de homeologos, escala symlog)
 ax_a.axhline(1, color="gray", linestyle="--", linewidth=0.8, alpha=0.7, zorder=1)
 ax_a.grid(axis="y", linestyle=":", alpha=0.4, zorder=0)
 ax_a.set_axisbelow(True)
-ax_a.set_title("Panel A. Distribucion de TPM colapsado por grupo homeologo (HG) x subfamilia x tejido. "
-               "Cada punto: un grupo HG (32 en total). n: PIP=8, TIP=9, NIP=10, SIP=3, XIP=2. "
-               "Importante: el TPM colapsado es la SUMA de los homeologos del grupo, no la media (un cuarteto completo tiene hasta 4 copias).",
-               fontsize=11.5, loc="left", pad=10)
-
 legend_a = [Line2D([0], [0], marker="o", color="w", label=sf,
                    markerfacecolor=sf_colors[sf], markeredgecolor="black", markersize=11)
             for sf in subfams]
@@ -158,10 +153,7 @@ for s_idx, sg in enumerate(subgenomes):
 
 ax_b.set_xticks(range(len(subgenomes)))
 ax_b.set_xticklabels(["Subgenoma A", "Subgenoma B", "Subgenoma C", "Subgenoma D"], fontsize=12, fontweight="bold")
-ax_b.set_ylabel("Proporcion media de TPM\npor grupo homeologo", fontsize=12)
-ax_b.set_title("Panel B. Distribucion de la dominancia subgenomica (proporcion media de TPM aportada por cada subgenoma). "
-               "Linea discontinua: equireparto (0,25). Punteada: 0,5 (dominancia clara).",
-               fontsize=11.5, loc="left", pad=10)
+ax_b.set_ylabel("Proporción media de TPM\npor grupo homeólogo", fontsize=12)
 ax_b.grid(axis="y", linestyle=":", alpha=0.4, zorder=0)
 ax_b.set_axisbelow(True)
 
@@ -172,10 +164,6 @@ legend_b += [Line2D([0], [0], color="black", linewidth=3.2, label="Media por sub
              Line2D([0], [0], color="gray", linestyle="--", linewidth=0.7, label="Equireparto (0,25)")]
 # Leyenda FUERA del area del plot
 ax_b.legend(handles=legend_b, loc="upper left", bbox_to_anchor=(1.005, 1.0), fontsize=10.5, framealpha=0.95, borderaxespad=0)
-
-fig.suptitle("Identificacion y dinamica basal de los grupos homeologos en F. x ananassa Benihoppe (32 grupos / 121 acuaporinas funcionales). "
-             "Pirate plot (Phillips 2017): violin de densidad + puntos crudos + linea de media.",
-             fontsize=12.5, y=0.995)
 
 # Ajustar para que la leyenda fuera quepa
 fig.subplots_adjust(left=0.05, right=0.86, top=0.95, bottom=0.06)
