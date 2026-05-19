@@ -63,6 +63,23 @@ for ax_idx, (ax, (label, d)) in enumerate(zip(axes, tissues)):
         ax.scatter(np.full(sig_mask.sum(), s_idx) + jitter[sig_mask], vals[sig_mask],
                    s=50, color=sf_colors[sf], edgecolor="black", linewidth=0.9,
                    alpha=0.95, zorder=4)
+        # Etiquetas en puntos significativos: FaXXXn-FxaXXXXX
+        sig_indices = np.where(sig_mask)[0]
+        sub_reset = sub.reset_index(drop=True)
+        for i_sig in sig_indices:
+            x_pt = s_idx + jitter[i_sig]
+            y_pt = vals[i_sig]
+            gene_id = str(sub_reset.iloc[i_sig]["name"])
+            aqp_subfam = str(sub_reset.iloc[i_sig]["aqp_family_subfamily"])
+            label = f"{aqp_subfam}-{gene_id}"
+            side = "left" if jitter[i_sig] >= 0 else "right"
+            dx = 7 if side == "left" else -7
+            ax.annotate(label, xy=(x_pt, y_pt), xytext=(dx, 0),
+                        textcoords="offset points",
+                        fontsize=6, ha=side, va="center",
+                        color="#222222", alpha=0.92, zorder=7,
+                        bbox=dict(facecolor="white", edgecolor="none",
+                                  alpha=0.7, pad=0.6))
         # Mean
         mean_v = float(np.mean(vals))
         ax.hlines(mean_v, s_idx - SUB_W * 0.40, s_idx + SUB_W * 0.40, color="black", linewidth=3.4, zorder=5)
