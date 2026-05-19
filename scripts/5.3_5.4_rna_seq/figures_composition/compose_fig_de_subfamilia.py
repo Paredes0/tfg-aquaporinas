@@ -5,6 +5,7 @@ from matplotlib.patches import Rectangle
 from matplotlib.lines import Line2D
 from scipy import stats
 from pathlib import Path
+from adjustText import adjust_text
 
 base = Path("/home/noe/work/RNA-seq_test/results")
 sf_colors = {"PIP": "#E74C3C", "TIP": "#3498DB", "NIP": "#2ECC71", "SIP": "#F39C12", "XIP": "#9B59B6"}
@@ -30,6 +31,9 @@ for ax_idx, (ax, (label, d)) in enumerate(zip(axes, tissues)):
     # Sombreado direccional
     ax.axhspan(0, YMAX, facecolor="#88c98a", alpha=0.07, zorder=0)
     ax.axhspan(YMIN, 0, facecolor="#e07b7b", alpha=0.07, zorder=0)
+
+    # Lista de tags de este axis para adjust_text al final
+    axis_texts = []
 
     # Pirate plot per subfamily
     for s_idx, sf in enumerate(subfams):
@@ -72,14 +76,15 @@ for ax_idx, (ax, (label, d)) in enumerate(zip(axes, tissues)):
             gene_id = str(sub_reset.iloc[i_sig]["name"])
             aqp_subfam = str(sub_reset.iloc[i_sig]["aqp_family_subfamily"])
             tag_label = f"{aqp_subfam}-{gene_id}"
-            tag_side = "left" if jitter[i_sig] >= 0 else "right"
-            tag_dx = 7 if tag_side == "left" else -7
-            ax.annotate(tag_label, xy=(x_pt, y_pt), xytext=(tag_dx, 0),
-                        textcoords="offset points",
-                        fontsize=6, ha=tag_side, va="center",
-                        color="#222222", alpha=0.92, zorder=7,
-                        bbox=dict(facecolor="white", edgecolor="none",
-                                  alpha=0.7, pad=0.6))
+            txt = ax.text(x_pt, y_pt, tag_label,
+                          fontsize=6, ha="center", va="center",
+                          color="#1a1a1a", zorder=7,
+                          bbox=dict(facecolor=sf_colors[sf],
+                                    edgecolor=sf_colors[sf],
+                                    alpha=0.55, pad=0.3,
+                                    boxstyle="round,pad=0.3",
+                                    linewidth=0.7))
+            axis_texts.append(txt)
         # Mean
         mean_v = float(np.mean(vals))
         ax.hlines(mean_v, s_idx - SUB_W * 0.40, s_idx + SUB_W * 0.40, color="black", linewidth=3.4, zorder=5)
@@ -115,6 +120,16 @@ for ax_idx, (ax, (label, d)) in enumerate(zip(axes, tissues)):
                     xycoords="axes fraction", arrowprops=dict(arrowstyle="->", color="#2d8a30", lw=2))
         ax.annotate("", xy=(1.18, 0.08), xytext=(1.18, 0.42),
                     xycoords="axes fraction", arrowprops=dict(arrowstyle="->", color="#a82020", lw=2))
+
+    # Resolver solape de tags con adjust_text (después de todas las subfamilias del axis)
+    if axis_texts:
+        adjust_text(axis_texts, ax=ax,
+                    arrowprops=dict(arrowstyle="-", color="#555555",
+                                    alpha=0.55, lw=0.4),
+                    expand=(1.25, 1.6),
+                    force_text=(0.7, 1.0),
+                    force_static=(0.35, 0.55),
+                    only_move={"text": "xy"})
 
 axes[0].set_ylabel("log2(FoldChange) — Estres / Control", fontsize=12.5)
 
