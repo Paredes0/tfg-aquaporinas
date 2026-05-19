@@ -110,10 +110,7 @@ legend_elems = [
 ]
 axes[0].legend(handles=legend_elems, loc="lower left", fontsize=9.5, framealpha=0.95)
 
-fig.suptitle("Expresion diferencial control vs estres osmotico (PEG 20%, 6 d) sobre las 121 acuaporinas funcionales.\n"
-             "Pirate plot (Phillips 2017): violin de densidad + puntos crudos + linea de media. Sombreado verde = induccion, rojo = represion.",
-             fontsize=12, y=0.995)
-fig.tight_layout(rect=[0, 0, 0.93, 0.94])
+fig.tight_layout(rect=[0, 0, 0.93, 1.0])
 
 out_pdf = base / "figura_de_stripplot.pdf"
 out_png = base / "figura_de_stripplot.png"
