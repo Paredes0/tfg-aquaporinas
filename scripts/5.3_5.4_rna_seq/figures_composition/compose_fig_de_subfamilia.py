@@ -71,12 +71,12 @@ for ax_idx, (ax, (label, d)) in enumerate(zip(axes, tissues)):
             y_pt = vals[i_sig]
             gene_id = str(sub_reset.iloc[i_sig]["name"])
             aqp_subfam = str(sub_reset.iloc[i_sig]["aqp_family_subfamily"])
-            label = f"{aqp_subfam}-{gene_id}"
-            side = "left" if jitter[i_sig] >= 0 else "right"
-            dx = 7 if side == "left" else -7
-            ax.annotate(label, xy=(x_pt, y_pt), xytext=(dx, 0),
+            tag_label = f"{aqp_subfam}-{gene_id}"
+            tag_side = "left" if jitter[i_sig] >= 0 else "right"
+            tag_dx = 7 if tag_side == "left" else -7
+            ax.annotate(tag_label, xy=(x_pt, y_pt), xytext=(tag_dx, 0),
                         textcoords="offset points",
-                        fontsize=6, ha=side, va="center",
+                        fontsize=6, ha=tag_side, va="center",
                         color="#222222", alpha=0.92, zorder=7,
                         bbox=dict(facecolor="white", edgecolor="none",
                                   alpha=0.7, pad=0.6))
