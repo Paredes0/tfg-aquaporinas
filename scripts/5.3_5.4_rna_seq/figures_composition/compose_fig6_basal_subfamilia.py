@@ -112,11 +112,6 @@ legend_elems += [
 ]
 ax.legend(handles=legend_elems, loc="upper right", ncol=2, fontsize=10.5, framealpha=0.95)
 
-ax.set_title("Figura 6. Distribucion de TPM por gen para cada subfamilia y tejido en las 121 acuaporinas funcionales de F. x ananassa Benihoppe.\n"
-             "Pirate plot (Phillips 2017): violin de densidad + puntos crudos + linea de media. Columna TOTAL: suma de TPM medios sobre los 6 tejidos.\n"
-             "* Yema axilar: cifras descriptivas (N = 1, sin replicacion biologica).",
-             fontsize=11.5, loc="left", pad=12)
-
 fig.tight_layout()
 out_pdf = base / "figura6_perfiles_subfamilia.pdf"
 out_png = base / "figura6_perfiles_subfamilia.png"
