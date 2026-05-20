@@ -720,18 +720,13 @@ def annotate_supports(node, parent_x=0.0):
 
 annotate_supports(tree.root, parent_x=0.0)
 
-# Anotacion lateral con topologia
-topology_text = (
-    "Topologia: HG-7 $\\leftrightarrow$ HG-19 hermanos; "
-    "HG-8 $\\leftrightarrow$ HG-18 hermanos.\n"
-    "Separacion en grupos distintos: Fase 2 chromosome splitting +\n"
-    "outgroup_between $\\leq$ MAX_OUTGROUP_INSERTIONS = 3."
-)
-ax_b.text(0.02, -1.2, topology_text, ha="left", va="top",
-          fontsize=9.5, color="#222222",
-          bbox=dict(boxstyle="round,pad=0.4", facecolor="#f5f5f5",
-                    edgecolor="#888888", linewidth=0.6),
-          transform=ax_b.transData, zorder=6)
+# Cuadro de anotacion lateral con topologia retirado por dos motivos:
+# (i) solapaba con la rama del outgroup MdNIP1_1 del arbol.
+# (ii) contenia jerga interna del pipeline (Fase 2 chromosome splitting,
+#      outgroup_between, MAX_OUTGROUP_INSERTIONS) que no procede en una
+#      figura de TFG. La topologia de pares hermanos (HG-7/HG-19 y
+#      HG-8/HG-18) queda visible directamente en el arbol y se discute
+#      en el cuerpo del 6.3.3.
 
 # Barra de escala filogenetica (sub/sitio)
 scale_x0 = ax_b_xmax - 0.20
