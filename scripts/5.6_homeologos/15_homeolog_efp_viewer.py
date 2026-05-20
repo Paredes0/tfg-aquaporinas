@@ -207,82 +207,121 @@ html_content = f"""<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fragaria × ananassa Aquaporin eFP Viewer</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<title>Fragaria x ananassa Aquaporin eFP Viewer</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root {{
-    --bg-primary: #0f1117;
-    --bg-secondary: #1a1d27;
-    --bg-card: #222536;
-    --bg-hover: #2a2e42;
-    --text-primary: #e8eaed;
-    --text-secondary: #9aa0b0;
-    --text-muted: #6b7185;
-    --accent-primary: #6c63ff;
-    --accent-secondary: #4ecdc4;
-    --accent-warm: #ff6b6b;
-    --border: #2d3147;
-    --border-active: #6c63ff;
-    --shadow: 0 4px 24px rgba(0,0,0,0.3);
-    --radius: 12px;
-    --radius-sm: 8px;
+    /* Surfaces — warm ivory / stone palette */
+    --bg-page:        #F7F4EE;
+    --bg-surface:     #FFFFFF;
+    --bg-subtle:      #F1EDE5;
+    --bg-soft:        #FAF7F1;
+    --bg-tissue-base: #C9C3B2;
+    /* Lines */
+    --border:         #D6CEC1;
+    --border-soft:    #E8E2D5;
+    --border-strong:  #A89E8C;
+    /* Text */
+    --text-primary:   #1F2730;
+    --text-secondary: #4A4842;
+    --text-muted:     #8A8377;
+    /* Accent — botanical dark green */
+    --accent:         #2E5A3E;
+    --accent-soft:    #E6EEE6;
+    --accent-warm:    #8B4A2B;
+    /* Aliases used by existing code (kept for back-compat) */
+    --bg-primary:     var(--bg-page);
+    --bg-secondary:   var(--bg-surface);
+    --bg-card:        var(--bg-surface);
+    --bg-hover:       var(--bg-subtle);
+    --accent-primary: var(--accent);
+    --accent-secondary: var(--accent);
+    --border-active: var(--accent);
+    /* Misc */
+    --shadow-soft:    0 1px 2px rgba(31,39,48,0.04), 0 1px 2px rgba(31,39,48,0.06);
+    --shadow-pop:     0 4px 14px rgba(31,39,48,0.08);
+    --shadow:         var(--shadow-soft);
+    --radius:         4px;
+    --radius-sm:      3px;
+    /* Typography */
+    --font-serif:     'Source Serif 4', 'Source Serif Pro', Georgia, 'Times New Roman', serif;
+    --font-sans:      'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-mono:      'JetBrains Mono', 'SF Mono', Consolas, 'Courier New', monospace;
   }}
 
   * {{ margin: 0; padding: 0; box-sizing: border-box; }}
 
   body {{
-    font-family: 'Inter', -apple-system, sans-serif;
-    background: var(--bg-primary);
+    font-family: var(--font-sans);
+    background: var(--bg-page);
     color: var(--text-primary);
     min-height: 100vh;
     overflow-x: hidden;
+    font-feature-settings: 'cv11', 'ss01', 'ss03';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }}
 
   .app-header {{
-    background: linear-gradient(135deg, var(--bg-secondary), var(--bg-card));
+    background: var(--bg-surface);
     border-bottom: 1px solid var(--border);
-    padding: 20px 32px;
+    padding: 18px 32px;
     display: flex;
     align-items: center;
     gap: 20px;
-    box-shadow: var(--shadow);
   }}
 
   .app-header h1 {{
+    font-family: var(--font-serif);
     font-size: 1.4rem;
     font-weight: 600;
-    background: linear-gradient(135deg, var(--accent-secondary), var(--accent-primary));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    letter-spacing: -0.005em;
+    color: var(--text-primary);
+    line-height: 1.2;
+  }}
+
+  .app-header h1 .sp-italic {{
+    font-style: italic;
   }}
 
   .app-header .subtitle {{
-    color: var(--text-secondary);
-    font-size: 0.85rem;
-    font-weight: 300;
+    color: var(--text-muted);
+    font-size: 0.82rem;
+    font-weight: 400;
+    margin-top: 2px;
+    letter-spacing: 0.01em;
   }}
 
   .logo-icon {{
-    width: 40px; height: 40px;
-    background: linear-gradient(135deg, #ff6b6b, #ff8e53);
-    border-radius: 10px;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 1.5rem;
+    width: 44px;
+    height: 44px;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-strong);
+    border-radius: var(--radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: 600;
+    font-size: 1.15rem;
+    color: var(--accent);
+    letter-spacing: -0.02em;
+    flex-shrink: 0;
   }}
 
   .main-container {{
     display: grid;
     grid-template-columns: 320px 1fr 340px;
     gap: 0;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 82px);
   }}
 
   .panel {{
-    background: var(--bg-secondary);
+    background: var(--bg-surface);
     border-right: 1px solid var(--border);
     overflow-y: auto;
-    padding: 20px;
+    padding: 22px 20px;
   }}
 
   .panel:last-child {{
@@ -291,12 +330,15 @@ html_content = f"""<!DOCTYPE html>
   }}
 
   .panel-title {{
-    font-size: 0.75rem;
-    font-weight: 600;
+    font-family: var(--font-serif);
+    font-size: 0.78rem;
+    font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 1.2px;
-    color: var(--text-muted);
-    margin-bottom: 16px;
+    letter-spacing: 0.12em;
+    color: var(--text-secondary);
+    margin-bottom: 14px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
   }}
 
   .control-group {{
@@ -313,83 +355,95 @@ html_content = f"""<!DOCTYPE html>
 
   select, input[type="range"] {{
     width: 100%;
-    background: var(--bg-card);
+    background: var(--bg-surface);
     border: 1px solid var(--border);
     color: var(--text-primary);
-    padding: 10px 12px;
+    padding: 9px 12px;
     border-radius: var(--radius-sm);
     font-family: inherit;
     font-size: 0.85rem;
     outline: none;
-    transition: border-color 0.2s;
+    transition: border-color 0.15s, box-shadow 0.15s;
     appearance: none;
     -webkit-appearance: none;
     cursor: pointer;
   }}
 
   select {{
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%239aa0b0' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%238A8377' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: right 12px center;
     padding-right: 32px;
   }}
 
   select:focus, select:hover {{
-    border-color: var(--accent-primary);
+    border-color: var(--accent);
+    box-shadow: 0 0 0 2px var(--accent-soft);
   }}
 
   .gene-list {{
-    max-height: 400px;
+    max-height: 420px;
     overflow-y: auto;
     border: 1px solid var(--border);
     border-radius: var(--radius-sm);
+    background: var(--bg-surface);
   }}
 
   .gene-item {{
-    padding: 8px 12px;
+    padding: 9px 12px 9px 14px;
     cursor: pointer;
     font-size: 0.8rem;
-    border-bottom: 1px solid var(--border);
+    border-bottom: 1px solid var(--border-soft);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: background 0.15s;
+    transition: background 0.12s;
+    border-left: 3px solid transparent;
+  }}
+
+  .gene-item:last-child {{
+    border-bottom: none;
   }}
 
   .gene-item:hover {{
-    background: var(--bg-hover);
+    background: var(--bg-soft);
   }}
 
   .gene-item.active {{
-    background: rgba(108, 99, 255, 0.15);
-    border-left: 3px solid var(--accent-primary);
+    background: var(--accent-soft);
+    border-left-color: var(--accent);
   }}
 
   .gene-item .gene-name {{
-    font-weight: 500;
+    font-weight: 600;
     color: var(--text-primary);
+    letter-spacing: -0.005em;
   }}
 
   .gene-item .gene-id {{
     font-size: 0.7rem;
     color: var(--text-muted);
-    font-family: 'Courier New', monospace;
+    font-family: var(--font-mono);
+    margin-top: 1px;
   }}
 
   .gene-item .reannotation-badge {{
-    background: var(--accent-warm);
-    color: white;
-    font-size: 0.6rem;
+    background: var(--bg-surface);
+    color: var(--accent-warm);
+    border: 1px solid var(--accent-warm);
+    font-size: 0.58rem;
     padding: 2px 6px;
-    border-radius: 4px;
+    border-radius: var(--radius-sm);
     font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
   }}
 
   .plant-viewer {{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: radial-gradient(ellipse at center, #1a2030 0%, var(--bg-primary) 100%);
+    background: var(--bg-page);
     position: relative;
     overflow: hidden;
   }}
@@ -420,26 +474,32 @@ html_content = f"""<!DOCTYPE html>
 
   /* Info panel */
   .info-section {{
-    background: var(--bg-card);
+    background: var(--bg-surface);
     border-radius: var(--radius-sm);
-    padding: 16px;
-    margin-bottom: 16px;
+    padding: 14px 16px 16px;
+    margin-bottom: 14px;
     border: 1px solid var(--border);
   }}
 
   .info-section h3 {{
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: var(--accent-secondary);
+    font-family: var(--font-serif);
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--accent);
     margin-bottom: 10px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--border-soft);
   }}
 
   .info-row {{
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
     padding: 5px 0;
     font-size: 0.8rem;
-    border-bottom: 1px solid rgba(255,255,255,0.05);
+    border-bottom: 1px solid var(--border-soft);
   }}
 
   .info-row:last-child {{
@@ -448,104 +508,174 @@ html_content = f"""<!DOCTYPE html>
 
   .info-row .label {{
     color: var(--text-muted);
+    font-size: 0.75rem;
   }}
 
   .info-row .value {{
     color: var(--text-primary);
     font-weight: 500;
     text-align: right;
+    font-variant-numeric: tabular-nums;
   }}
 
-  /* Color scale legend — TAIR10 style */
-  .color-scale {{
+  /* Top control bar floating over plant viewer */
+  .viewer-topbar {{
+    position: absolute;
+    top: 14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 8px 14px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    box-shadow: var(--shadow-soft);
+    z-index: 10;
+  }}
+
+  .topbar-section {{
     display: flex;
     align-items: center;
     gap: 8px;
-    padding: 12px 16px;
-    background: var(--bg-card);
-    border-radius: var(--radius-sm);
-    margin-bottom: 16px;
+  }}
+
+  .topbar-divider {{
+    width: 1px;
+    height: 22px;
+    background: var(--border);
+  }}
+
+  .topbar-label {{
+    font-family: var(--font-serif);
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }}
+
+  /* Color scale legend (lives in topbar now) */
+  .scale-bar {{
+    width: 200px;
+    height: 12px;
+    border-radius: 2px;
     border: 1px solid var(--border);
+    background: linear-gradient(90deg,
+      #C9C3B2 0%,
+      #C9C3B2 3%,
+      #FFF5C2 5%,
+      #FEE08B 18%,
+      #FDB863 32%,
+      #F39434 48%,
+      #E5601F 62%,
+      #C42E1A 78%,
+      #8E1414 92%,
+      #5A0A0A 100%);
   }}
 
-  .color-scale .scale-bar {{
-    flex: 1;
-    height: 14px;
-    border-radius: 7px;
-    background: linear-gradient(90deg, #1a1a2e, #4a3a20, #8a7a30, #ccaa20, #ffcc00, #ff8800, #dd2200, #aa0000);
+  .scale-label {{
+    font-size: 0.7rem;
+    color: var(--text-secondary);
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+    font-weight: 500;
   }}
 
-  .color-scale .scale-label {{
+  /* Scale-mode descriptive help (sidebar) */
+  .scale-help {{
     font-size: 0.7rem;
     color: var(--text-muted);
-    white-space: nowrap;
+    line-height: 1.6;
+    padding: 10px 12px;
+    background: var(--bg-subtle);
+    border-left: 2px solid var(--border-strong);
+    border-radius: 2px;
   }}
 
+  .scale-help b {{
+    color: var(--text-secondary);
+    font-weight: 600;
+  }}
+
+  /* Segmented control for scale mode */
   .mode-toggle {{
     display: flex;
-    background: var(--bg-card);
+    background: var(--bg-subtle);
     border-radius: var(--radius-sm);
-    overflow: hidden;
-    margin-bottom: 16px;
     border: 1px solid var(--border);
+    padding: 2px;
+    gap: 2px;
   }}
 
   .mode-btn {{
-    flex: 1;
-    padding: 10px;
+    padding: 5px 12px;
     text-align: center;
-    font-size: 0.78rem;
+    font-size: 0.73rem;
     font-weight: 500;
     cursor: pointer;
-    transition: all 0.2s;
-    color: var(--text-muted);
+    transition: background 0.12s, color 0.12s;
+    color: var(--text-secondary);
     background: transparent;
     border: none;
+    border-radius: 2px;
     font-family: inherit;
+    letter-spacing: 0.01em;
   }}
 
   .mode-btn.active {{
-    background: var(--accent-primary);
-    color: white;
+    background: var(--bg-surface);
+    color: var(--accent);
+    font-weight: 600;
+    box-shadow: var(--shadow-soft);
   }}
 
   .mode-btn:hover:not(.active) {{
-    background: var(--bg-hover);
     color: var(--text-primary);
   }}
 
   /* Expression bar chart in info panel */
   .expr-bar-container {{
-    margin-top: 8px;
+    margin-top: 4px;
   }}
 
   .expr-bar-row {{
     display: flex;
     align-items: center;
-    margin-bottom: 6px;
+    margin-bottom: 5px;
     gap: 8px;
+    border-radius: 2px;
+    padding: 2px 2px;
+    transition: background 0.12s;
+  }}
+
+  .expr-bar-row:hover {{
+    background: var(--bg-soft);
   }}
 
   .expr-bar-tissue {{
-    width: 80px;
+    width: 92px;
     font-size: 0.72rem;
     color: var(--text-secondary);
     text-align: right;
+    font-weight: 500;
   }}
 
   .expr-bar-wrapper {{
     flex: 1;
-    height: 18px;
-    background: var(--bg-primary);
-    border-radius: 4px;
+    height: 16px;
+    background: var(--bg-subtle);
+    border-radius: 2px;
     overflow: hidden;
     position: relative;
+    border: 1px solid var(--border-soft);
   }}
 
   .expr-bar {{
     height: 100%;
-    border-radius: 4px;
-    transition: width 0.5s ease;
+    border-radius: 0;
+    transition: width 0.4s ease;
     min-width: 2px;
   }}
 
@@ -557,36 +687,46 @@ html_content = f"""<!DOCTYPE html>
     font-size: 0.65rem;
     color: var(--text-primary);
     font-weight: 600;
-    text-shadow: 0 0 4px rgba(0,0,0,0.8);
+    font-variant-numeric: tabular-nums;
+    text-shadow: 0 0 3px rgba(255,255,255,0.85);
   }}
 
   .n1-warning {{
     font-size: 0.68rem;
     color: var(--accent-warm);
     font-style: italic;
-    margin-top: 4px;
+    margin-top: 6px;
+    padding: 4px 8px;
+    background: var(--bg-subtle);
+    border-left: 2px solid var(--accent-warm);
+    border-radius: 2px;
   }}
 
   /* Search */
   .search-input {{
     width: 100%;
-    background: var(--bg-card);
+    background: var(--bg-surface);
     border: 1px solid var(--border);
     color: var(--text-primary);
-    padding: 10px 12px 10px 34px;
+    padding: 9px 12px 9px 32px;
     border-radius: var(--radius-sm);
     font-family: inherit;
     font-size: 0.82rem;
     outline: none;
-    transition: border-color 0.2s;
+    transition: border-color 0.15s, box-shadow 0.15s;
     margin-bottom: 12px;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236b7185' stroke-width='2'%3E%3Ccircle cx='11' cy='11' r='8'/%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%238A8377' stroke-width='2'%3E%3Ccircle cx='11' cy='11' r='8'/%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: 10px center;
   }}
 
   .search-input:focus {{
-    border-color: var(--accent-primary);
+    border-color: var(--accent);
+    box-shadow: 0 0 0 2px var(--accent-soft);
+  }}
+
+  .search-input::placeholder {{
+    color: var(--text-muted);
   }}
 
   .no-data-msg {{
@@ -594,75 +734,85 @@ html_content = f"""<!DOCTYPE html>
     padding: 40px 20px;
     color: var(--text-muted);
     font-size: 0.85rem;
+    font-style: italic;
   }}
 
   .scroll-custom::-webkit-scrollbar {{
-    width: 6px;
+    width: 8px;
   }}
   .scroll-custom::-webkit-scrollbar-track {{
     background: transparent;
   }}
   .scroll-custom::-webkit-scrollbar-thumb {{
     background: var(--border);
-    border-radius: 3px;
+    border-radius: 4px;
+    border: 2px solid var(--bg-surface);
+  }}
+  .scroll-custom::-webkit-scrollbar-thumb:hover {{
+    background: var(--border-strong);
   }}
 
   /* Floating tooltip */
   .svg-tooltip {{
     position: fixed;
     pointer-events: none;
-    background: rgba(20, 22, 35, 0.95);
-    border: 1px solid var(--accent-secondary);
-    border-radius: 8px;
-    padding: 10px 14px;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-strong);
+    border-radius: var(--radius-sm);
+    padding: 9px 12px;
     font-size: 0.78rem;
     color: var(--text-primary);
-    box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+    box-shadow: var(--shadow-pop);
     z-index: 1000;
     opacity: 0;
-    transition: opacity 0.15s;
-    max-width: 220px;
-    backdrop-filter: blur(8px);
+    transition: opacity 0.12s;
+    max-width: 230px;
   }}
   .svg-tooltip.visible {{
     opacity: 1;
   }}
   .svg-tooltip .tt-tissue {{
     font-weight: 600;
-    color: var(--accent-secondary);
-    margin-bottom: 4px;
+    color: var(--accent);
+    margin-bottom: 3px;
+    font-family: var(--font-serif);
+    font-size: 0.82rem;
   }}
   .svg-tooltip .tt-tpm {{
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 700;
-    color: #ffd93d;
+    color: var(--text-primary);
+    font-variant-numeric: tabular-nums;
   }}
   .svg-tooltip .tt-detail {{
     font-size: 0.7rem;
     color: var(--text-muted);
-    margin-top: 2px;
+    margin-top: 3px;
+    font-variant-numeric: tabular-nums;
   }}
 
   /* Export button */
   .export-btn {{
     position: absolute;
-    top: 12px;
-    right: 12px;
-    background: var(--bg-card);
+    top: 14px;
+    right: 14px;
+    background: var(--bg-surface);
     border: 1px solid var(--border);
     color: var(--text-secondary);
     padding: 6px 14px;
-    border-radius: 6px;
-    font-size: 0.75rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.73rem;
+    font-weight: 500;
     cursor: pointer;
     font-family: inherit;
-    transition: all 0.2s;
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
     z-index: 10;
+    letter-spacing: 0.02em;
   }}
   .export-btn:hover {{
-    background: var(--accent-primary);
-    color: white;
-    border-color: var(--accent-primary);
+    background: var(--accent);
+    color: var(--bg-surface);
+    border-color: var(--accent);
   }}
 
   /* Aux bud inset figure */
@@ -670,37 +820,42 @@ html_content = f"""<!DOCTYPE html>
     position: absolute;
     bottom: 20px;
     right: 20px;
-    background: rgba(20, 22, 35, 0.85);
+    background: var(--bg-surface);
     border: 1px solid var(--border);
     border-radius: var(--radius-sm);
     padding: 12px 16px;
-    backdrop-filter: blur(6px);
+    box-shadow: var(--shadow-soft);
     z-index: 5;
     cursor: pointer;
-    transition: border-color 0.2s, box-shadow 0.2s;
+    transition: border-color 0.15s, box-shadow 0.15s;
     text-align: center;
   }}
   .aux-bud-inset:hover {{
-    border-color: var(--accent-secondary);
-    box-shadow: 0 0 12px rgba(78, 205, 196, 0.2);
+    border-color: var(--accent);
+    box-shadow: var(--shadow-pop);
   }}
   .aux-bud-inset .aux-label {{
+    font-family: var(--font-serif);
     font-size: 0.72rem;
     color: var(--text-secondary);
     margin-bottom: 6px;
     font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
   }}
   .aux-bud-inset .aux-tpm {{
-    font-size: 0.8rem;
+    font-size: 0.82rem;
     color: var(--text-primary);
     font-weight: 700;
     margin-top: 4px;
+    font-variant-numeric: tabular-nums;
   }}
   .aux-bud-inset .aux-warning {{
     font-size: 0.6rem;
     color: var(--accent-warm);
     font-style: italic;
     margin-top: 2px;
+    letter-spacing: 0.02em;
   }}
 
   @media (max-width: 1100px) {{
@@ -714,10 +869,10 @@ html_content = f"""<!DOCTYPE html>
 <body>
 
 <header class="app-header">
-  <div class="logo-icon">🍓</div>
+  <div class="logo-icon">Fxa</div>
   <div>
-    <h1>Fragaria × ananassa — Aquaporin eFP Viewer</h1>
-    <div class="subtitle">Interactive tissue expression atlas • Basal expression (TPM) • TAIR10-style coloring</div>
+    <h1><span class="sp-italic">Fragaria</span> x <span class="sp-italic">ananassa</span> — Aquaporin eFP Viewer</h1>
+    <div class="subtitle">Tissue expression atlas · Basal expression (TPM) · Homeolog groups</div>
   </div>
 </header>
 
@@ -733,28 +888,32 @@ html_content = f"""<!DOCTYPE html>
     <div class="gene-list scroll-custom" id="gene-list">
     </div>
 
-    <div class="color-scale" style="margin-top: 20px;">
-      <span class="scale-label">0</span>
-      <div class="scale-bar"></div>
-      <span class="scale-label" id="max-tpm-label">TPM</span>
-    </div>
-
-    <div class="info-section" style="margin-top: 8px;">
-      <h3>📊 Scale Mode</h3>
-      <div class="mode-toggle">
-        <button class="mode-btn active" onclick="setScale('absolute')" id="scale-abs">Absolute</button>
-        <button class="mode-btn" onclick="setScale('relative')" id="scale-rel">Relative</button>
-      </div>
-      <div style="font-size:0.72rem; color:var(--text-muted); margin-top:8px;">
-        <b>Absolute:</b> Color scaled to global max TPM<br>
-        <b>Relative:</b> Color scaled to selected gene's max
-      </div>
+    <div class="scale-help" style="margin-top: 14px;">
+      <b>Absolute:</b> color scaled to global max TPM across all genes.<br>
+      <b>Relative:</b> color scaled to the selected gene's own max — preferred for visual contrast.
     </div>
   </div>
 
   <!-- CENTER: Plant SVG -->
   <div class="plant-viewer" id="plant-viewer">
-    <button class="export-btn" onclick="exportImage()">📷 Export PNG</button>
+    <!-- Top control bar: scale mode + color legend -->
+    <div class="viewer-topbar">
+      <div class="topbar-section">
+        <span class="topbar-label">Scale</span>
+        <div class="mode-toggle">
+          <button class="mode-btn" onclick="setScale('absolute')" id="scale-abs">Absolute</button>
+          <button class="mode-btn active" onclick="setScale('relative')" id="scale-rel">Relative</button>
+        </div>
+      </div>
+      <div class="topbar-divider"></div>
+      <div class="topbar-section">
+        <span class="topbar-label">Expression</span>
+        <span class="scale-label">0</span>
+        <div class="scale-bar"></div>
+        <span class="scale-label" id="max-tpm-label">— TPM</span>
+      </div>
+    </div>
+    <button class="export-btn" onclick="exportImage()">Export PNG</button>
     <div class="plant-svg-container" id="svg-container">
       {svg_content}
     </div>
@@ -765,7 +924,7 @@ html_content = f"""<!DOCTYPE html>
         <!-- Stolon -->
         <path d="M5,35 Q20,30 30,32" fill="none" stroke="#7CB342" stroke-width="2.5" stroke-linecap="round"/>
         <!-- Bud body -->
-        <ellipse id="aux-bud-shape" cx="38" cy="30" rx="14" ry="10" fill="#555"/>
+        <ellipse id="aux-bud-shape" cx="38" cy="30" rx="14" ry="10" fill="#C9C3B2"/>
         <!-- Bud leaves -->
         <path d="M32,25 Q38,15 44,25" fill="#6B9E3A" opacity="0.8"/>
         <path d="M30,27 Q36,18 42,26" fill="#7CB342" opacity="0.7"/>
@@ -773,7 +932,7 @@ html_content = f"""<!DOCTYPE html>
         <ellipse cx="48" cy="24" rx="6" ry="3" fill="#8BC34A" transform="rotate(-20 48 24)" opacity="0.6"/>
       </svg>
       <div class="aux-tpm" id="aux-bud-tpm">— TPM</div>
-      <div class="aux-warning">⚠ N=1 (descriptive)</div>
+      <div class="aux-warning">N = 1 (descriptive)</div>
     </div>
   </div>
 
@@ -787,20 +946,20 @@ html_content = f"""<!DOCTYPE html>
 
     <div id="gene-info" style="display:none;">
       <div class="info-section">
-        <h3>🧬 Gene Info</h3>
+        <h3>Gene Info</h3>
         <div class="info-row"><span class="label">Name</span><span class="value" id="info-gene-name">-</span></div>
         <div class="info-row"><span class="label">Group ID</span><span class="value" id="info-gene-id">-</span></div>
         <div class="info-row"><span class="label">Sub-subfamily</span><span class="value" id="info-sub_subfamily">-</span></div>
         <div class="info-row"><span class="label">Source</span><span class="value" id="info-source">-</span></div>
         <div class="info-row"><span class="label">TMHs (est.)</span><span class="value" id="info-tmhs">-</span></div>
         <div class="info-row" id="reannotation-row" style="display:none;">
-          <span class="label">⚠️ Reannotation</span>
+          <span class="label">Reannotation</span>
           <span class="value" style="color:var(--accent-warm)">Needed</span>
         </div>
       </div>
 
       <div class="info-section">
-        <h3>📊 Expression by Tissue (TPM)</h3>
+        <h3>Expression by Tissue (TPM)</h3>
         <div id="expr-bars" class="expr-bar-container"></div>
       </div>
 
@@ -812,7 +971,7 @@ html_content = f"""<!DOCTYPE html>
       </div>
 
       <div class="info-section" id="individual-expression-section" style="display:none;">
-        <h3>🔬 Individual Homeolog Expression</h3>
+        <h3>Individual Homeolog Expression</h3>
         <div id="individual-expression-table-container"></div>
       </div>
     </div>
@@ -873,28 +1032,33 @@ const SUBFAMILY_COLORS = {{
 }};
 
 // ---- State ------------------------------------------------------------------
-let currentScale = 'absolute';
+// Default to 'relative': global max TPM is dominated by a few root-expressed
+// HGs, which compresses every other gene into the low-contrast end of the
+// absolute ramp. Relative scales each gene's own range, giving more visual
+// information for the common case.
+let currentScale = 'relative';
 let selectedGeneId = null;
 let selectedTissue = null;
 
-// ---- TAIR10-style color interpolation ---------------------------------------
-// TAIR eFP Browser uses a yellow (low) → red (high) scale
-// 0 expression = light yellow (#FFFF00)
-// max expression = dark red (#CC0000)
+// ---- YlOrRd-style color interpolation (contrasted on ivory background) ------
+// Hard discontinuity: TPM=0 → taupe grey (clearly darker than ivory bg);
+// TPM>0 jumps to vivid pale yellow, then ColorBrewer-like YlOrRd ramp to deep red.
 function tpmToColor(tpm, maxTpm) {{
   if (maxTpm <= 0) maxTpm = 1;
   const ratio = Math.min(tpm / maxTpm, 1);
-  // Progressive: dark bg → faint yellow → yellow → orange → red (like opacity ramp)
+  // Hard floor: real zero (or near-zero) stays as taupe — distinguishable from any expression
+  if (tpm <= 0) {{
+    return 'rgb(201, 195, 178)';
+  }}
   const stops = [
-    [0.0,  [ 26,  26,  46]],   // background — no expression
-    [0.05, [ 50,  42,  30]],   // barely visible warm hint
-    [0.15, [ 90,  75,  25]],   // faint dark yellow
-    [0.3,  [160, 140,  20]],   // muted yellow
-    [0.45, [210, 190,  15]],   // yellow
-    [0.6,  [255, 200,   0]],   // bright yellow
-    [0.75, [255, 140,   0]],   // orange
-    [0.9,  [220,  40,   0]],   // red
-    [1.0,  [170,   0,   0]]    // dark red — max expression
+    [0.00, [255, 245, 194]],   // pale yellow — lowest expression
+    [0.10, [254, 224, 139]],   // light yellow
+    [0.22, [253, 184,  99]],   // gold
+    [0.35, [243, 148,  52]],   // orange
+    [0.50, [229,  96,  31]],   // burnt orange
+    [0.65, [196,  46,  26]],   // red
+    [0.80, [142,  20,  20]],   // deep red
+    [1.00, [ 90,  10,  10]]    // very dark red — max expression
   ];
 
   let lower = stops[0], upper = stops[stops.length - 1];
@@ -929,13 +1093,13 @@ function initSVG() {{
   svg.style.maxWidth = '100%';
   svg.style.maxHeight = '100%';
 
-  // Set up outline (path1) to be non-interactive
+  // Set up outline (path1) to be non-interactive — dark warm stroke on ivory bg
   const outline = svg.querySelector('#path1');
   if (outline) {{
     outline.style.pointerEvents = 'none';
     outline.style.fill = 'none';
-    outline.style.stroke = 'rgba(255,255,255,0.25)';
-    outline.style.strokeWidth = '0.5';
+    outline.style.stroke = 'rgba(74, 72, 66, 0.55)';
+    outline.style.strokeWidth = '0.6';
   }}
 
   // Set up each tissue group
@@ -951,9 +1115,11 @@ function initSVG() {{
     group.style.transition = 'opacity 0.3s, filter 0.3s';
     group.dataset.tissue = tissue;
 
-    // Hover effects
+    // Hover effects — subtle darken + thin outline (no neon glow)
     group.addEventListener('mouseenter', function() {{
-      this.style.filter = 'brightness(1.3) drop-shadow(0 0 8px rgba(255,255,255,0.3))';
+      if (selectedTissue !== tissue) {{
+        this.style.filter = 'brightness(0.92) drop-shadow(0 0 1.5px rgba(46, 90, 62, 0.55))';
+      }}
     }});
     group.addEventListener('mouseleave', function() {{
       if (selectedTissue !== tissue) {{
@@ -967,9 +1133,9 @@ function initSVG() {{
     }});
   }});
 
-  // Initial coloring — matches dark background (no expression)
+  // Initial coloring — taupe baseline (no expression), clearly distinct from ivory bg
   Object.entries(SVG_TISSUE_MAP).forEach(([svgId, tissue]) => {{
-    colorSVGGroup(svgId, 'rgb(26, 26, 46)');
+    colorSVGGroup(svgId, 'rgb(201, 195, 178)');
   }});
 }}
 
@@ -1070,6 +1236,18 @@ function selectGene(geneId) {{
   populateGeneList();
   updatePlant(geneId);
   updateInfoPanel(geneId);
+  // Refresh tissue detail panel with the NEW gene's data
+  // (was previously stale — anchored to the gene selected when the tissue
+  //  was first clicked). See: selectTissue handler.
+  if (selectedTissue) {{
+    updateTissueDetail(geneId, selectedTissue);
+    // Re-apply selected-tissue outline (filter was reset by re-coloring)
+    const svgId = TISSUE_SVG_MAP[selectedTissue];
+    const group = svgId ? document.getElementById(svgId) : null;
+    if (group) {{
+      group.style.filter = 'drop-shadow(0 0 1.5px rgba(46, 90, 62, 0.95)) drop-shadow(0 0 0.5px rgba(46, 90, 62, 0.95))';
+    }}
+  }}
   document.getElementById('no-selection').style.display = 'none';
   document.getElementById('gene-info').style.display = 'block';
 }}
@@ -1077,12 +1255,12 @@ function selectGene(geneId) {{
 function selectTissue(tissue) {{
   selectedTissue = tissue;
 
-  // Update visual selection: reset all, highlight selected
+  // Update visual selection: reset all, highlight selected with thin dark outline
   Object.entries(SVG_TISSUE_MAP).forEach(([svgId, t]) => {{
     const group = document.getElementById(svgId);
     if (!group) return;
     if (t === tissue) {{
-      group.style.filter = 'brightness(1.3) drop-shadow(0 0 12px rgba(78,205,196,0.5))';
+      group.style.filter = 'drop-shadow(0 0 1.5px rgba(46, 90, 62, 0.95)) drop-shadow(0 0 0.5px rgba(46, 90, 62, 0.95))';
     }} else {{
       group.style.filter = '';
     }}
@@ -1169,34 +1347,38 @@ function updateInfoPanel(geneId) {{
   if (expr.individual && Object.keys(expr.individual).length > 0) {{
     indivSection.style.display = 'block';
     
-    let html = `<table style="width:100%; font-size:0.75rem; border-collapse:collapse; text-align:left; color:var(--text-primary);">
+    let html = `<table style="width:100%; font-size:0.74rem; border-collapse:collapse; text-align:left; color:var(--text-primary); font-variant-numeric:tabular-nums;">
       <thead>
-        <tr style="border-bottom: 1px solid var(--border); color:var(--text-muted);">
-          <th style="padding:4px;">Gene</th>
-          <th style="padding:4px;">Subg</th>
-          <th style="padding:4px;">LF</th>
-          <th style="padding:4px;">CR</th>
-          <th style="padding:4px;">RT</th>
-          <th style="padding:4px;">GF</th>
-          <th style="padding:4px;">RF</th>
+        <tr style="border-bottom: 1px solid var(--border); color:var(--text-secondary); font-size:0.7rem; text-transform:uppercase; letter-spacing:0.06em;">
+          <th style="padding:5px 4px; text-align:left;">Gene</th>
+          <th style="padding:5px 4px; text-align:center;">Subg</th>
+          <th style="padding:5px 4px; text-align:right;">LF</th>
+          <th style="padding:5px 4px; text-align:right;">CR</th>
+          <th style="padding:5px 4px; text-align:right;">RT</th>
+          <th style="padding:5px 4px; text-align:right;">GF</th>
+          <th style="padding:5px 4px; text-align:right;">RF</th>
         </tr>
       </thead>
       <tbody>`;
-      
+
+    // Subgenome accent colors (TFG canonical palette)
+    const SUBG_COLORS = {{ 'A': '#6D4C41', 'B': '#C2185B', 'C': '#00838F', 'D': '#455A64' }};
+
     // Sort by subgenome
     const genesArr = Object.keys(expr.individual).map(g => ({{id: g, ...expr.individual[g]}}));
     genesArr.sort((a,b) => a.subgenome.localeCompare(b.subgenome));
-    
+
     genesArr.forEach(g => {{
+      const subColor = SUBG_COLORS[g.subgenome] || 'var(--text-secondary)';
       html += `
-        <tr style="border-bottom: 1px dashed #333;">
-          <td style="padding:4px; font-family:monospace; color:var(--accent-secondary);">${{g.id.split('g')[1] || g.id}}</td>
-          <td style="padding:4px; font-weight:bold;">${{g.subgenome}}</td>
-          <td style="padding:4px;">${{g.leaf || 0}}</td>
-          <td style="padding:4px;">${{g.crown || 0}}</td>
-          <td style="padding:4px;">${{g.roots || 0}}</td>
-          <td style="padding:4px;">${{g.green_fruit || 0}}</td>
-          <td style="padding:4px;">${{g.red_fruit || 0}}</td>
+        <tr style="border-bottom: 1px solid var(--border-soft);">
+          <td style="padding:5px 4px; font-family:var(--font-mono); color:var(--text-primary); font-size:0.7rem;">${{g.id.split('g')[1] || g.id}}</td>
+          <td style="padding:5px 4px; font-weight:600; text-align:center; color:${{subColor}};">${{g.subgenome}}</td>
+          <td style="padding:5px 4px; text-align:right;">${{g.leaf || 0}}</td>
+          <td style="padding:5px 4px; text-align:right;">${{g.crown || 0}}</td>
+          <td style="padding:5px 4px; text-align:right;">${{g.roots || 0}}</td>
+          <td style="padding:5px 4px; text-align:right;">${{g.green_fruit || 0}}</td>
+          <td style="padding:5px 4px; text-align:right;">${{g.red_fruit || 0}}</td>
         </tr>
       `;
     }});
@@ -1310,29 +1492,36 @@ function exportImage() {{
   canvas.height = 1600;
 
   img.onload = function() {{
-    // Dark background
-    ctx.fillStyle = '#0f1117';
+    // Ivory background
+    ctx.fillStyle = '#F7F4EE';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     ctx.drawImage(img, 50, 80, 1100, 1400);
 
-    // Add title
-    ctx.fillStyle = '#e8eaed';
-    ctx.font = 'bold 24px Inter, sans-serif';
+    // Title (serif, dark text)
+    ctx.fillStyle = '#1F2730';
+    ctx.font = '600 24px "Source Serif 4", "Source Serif Pro", Georgia, serif';
     const geneLabel = selectedGeneId ?
       (DATA.metadata[selectedGeneId]?.name || selectedGeneId) : 'No gene selected';
-    ctx.fillText('Fragaria × ananassa — ' + geneLabel, 20, 40);
+    ctx.fillText('Fragaria x ananassa  —  ' + geneLabel, 20, 44);
 
-    // Add color scale legend
+    // Color scale legend (warm beige → dark red)
     ctx.font = '14px Inter, sans-serif';
-    ctx.fillStyle = '#9aa0b0';
+    ctx.fillStyle = '#4A4842';
     ctx.fillText('Expression (TPM)', 20, 1540);
     const gradient = ctx.createLinearGradient(180, 1530, 500, 1530);
-    gradient.addColorStop(0, '#FFFF00');
-    gradient.addColorStop(0.5, '#FF6600');
-    gradient.addColorStop(1, '#CC0000');
+    gradient.addColorStop(0.00, '#C9C3B2');
+    gradient.addColorStop(0.03, '#C9C3B2');
+    gradient.addColorStop(0.05, '#FFF5C2');
+    gradient.addColorStop(0.22, '#FDB863');
+    gradient.addColorStop(0.50, '#E5601F');
+    gradient.addColorStop(0.80, '#8E1414');
+    gradient.addColorStop(1.00, '#5A0A0A');
     ctx.fillStyle = gradient;
     ctx.fillRect(180, 1520, 320, 16);
-    ctx.fillStyle = '#9aa0b0';
+    ctx.strokeStyle = '#D6CEC1';
+    ctx.lineWidth = 1;
+    ctx.strokeRect(180, 1520, 320, 16);
+    ctx.fillStyle = '#4A4842';
     ctx.fillText('0', 165, 1535);
     ctx.fillText(DATA.global_max_tpm.toFixed(0), 510, 1535);
 
