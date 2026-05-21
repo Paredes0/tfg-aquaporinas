@@ -44,7 +44,7 @@ import numpy as np
 
 
 def parse_tmhmm(path):
-    """Mismo algoritmo que en profiling_final_integrated.py / predict_and_append.py."""
+    """Mismo algoritmo que en profiling_final_integrated.py."""
     res = {}
     with open(path, 'r') as f:
         lines = f.readlines()
