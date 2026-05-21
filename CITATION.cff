@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+title: >-
+  tfg-aquaporinas: Identificación, curado y caracterización transcripcional
+  del acuaporinoma de Fragaria x ananassa 'Benihoppe'
+message: >-
+  Si reutilizas este código o datos, por favor cita usando los metadatos
+  de este archivo.
+type: software
+version: 1.0.0
+date-released: 2026-05-21
+authors:
+  - given-names: Noé
+    family-names: Paredes Alfonso
+    email: noeparedesalf@gmail.com
+    affiliation: Universidad Católica de Murcia (UCAM)
+abstract: >-
+  Pipeline reproducible para la identificación, curado, filogenia y
+  análisis de expresión del acuaporinoma del genoma alo-octoploide de
+  Fragaria x ananassa 'Benihoppe'. Incluye 133 tests automáticos que
+  verifican las cifras del Trabajo de Fin de Grado asociado.
+keywords:
+  - aquaporin
+  - Fragaria x ananassa
+  - strawberry
+  - octoploid
+  - phylogeny
+  - RNA-seq
+  - DESeq2
+  - homeologs
+  - subgenome dominance
+license: MIT
+repository-code: 'https://github.com/<usuario>/tfg-aquaporinas'

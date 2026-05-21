@@ -1,5 +1,9 @@
 # Acuaporinoma de *Fragaria* × *ananassa* 'Benihoppe' — código y tests del TFG
 
+[![Tests](https://img.shields.io/badge/tests-133%20passed-brightgreen)](tests/)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![DOI](https://img.shields.io/badge/DOI-pendiente-lightgrey)](docs/ZENODO.md)
+
 Repositorio de los scripts utilizados en el Trabajo de Fin de Grado **"Identificación, curaduría, filogenia y expresión del acuaporinoma del genoma alo-octoploide de *Fragaria* × *ananassa* 'Benihoppe'"** (Noé Paredes Alfonso, UCAM, Grado en Biotecnología).
 
 Directores: Dr. José Ramón Acosta Motos y Dr. Juan Nicolás Espinosa.
@@ -20,7 +24,7 @@ tfg-aquaporinas/
 │   └── common/                       Configuración compartida (paths)
 ├── workflows/galaxy/                 Workflows Galaxy publicados (.ga + URLs)
 ├── annexes/                          Anexos del TFG (A–H)
-├── tests/                            122 tests automáticos
+├── tests/                            133 tests automáticos
 └── docs/                             Documentación
 ```
 
@@ -56,11 +60,13 @@ Ver `docs/REPRODUCIBILIDAD.md` para instrucciones detalladas. Resumen:
 2. Configurar `scripts/common/config.py` con las rutas locales.
 3. Ejecutar los scripts en orden numérico dentro de cada apartado.
 
-## Licencia y cita
+## Cómo citar
 
-Código liberado bajo licencia MIT (ver `LICENSE`). Si reutilizas este código, cita:
+Si reutilizas este código o los datos derivados, por favor cita:
 
-> Paredes Alfonso, N. (2026). *Identificación, curaduría, filogenia y expresión del acuaporinoma del genoma alo-octoploide de Fragaria × ananassa 'Benihoppe'*. Trabajo de Fin de Grado, Universidad Católica de Murcia (UCAM).
+> Paredes Alfonso, N. (2026). *Identificación, curado y caracterización transcripcional del acuaporinoma de* Fragaria *x* ananassa *'Benihoppe'*. Trabajo de Fin de Grado, Universidad Católica de Murcia (UCAM). DOI: [pendiente — pendiente del release Zenodo].
+
+Ver `CITATION.cff` para el formato citation file estándar o `docs/ZENODO.md` para el procedimiento de obtención del DOI.
 
 ## Auditoría
 
