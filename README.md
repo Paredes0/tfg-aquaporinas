@@ -11,22 +11,17 @@ Directores: Dr. José Ramón Acosta Motos y Dr. Juan Nicolás Espinosa.
 ```
 tfg-aquaporinas/
 ├── scripts/
-│   ├── 5.1_curaduria/          Predicción por homología, filtros, PCA
-│   ├── 5.2_filogenia/          Comparación de árboles, renombrado iTOL
-│   ├── 5.3_5.4_rna_seq/        Pipeline numerado de RNA-seq (Bash + R + Python)
-│   ├── 5.5_reanotacion/        Detección de candidatas a reanotar
-│   ├── 5.6_homeologos/         Agrupamiento y dominancia de subgenomas
-│   └── common/                 Configuración compartida (paths)
-├── tests/
-│   ├── unit/                   Tests aislados (parsers, filtros, clasificación)
-│   ├── reproducibility/        Verificación de las cifras citadas en el TFG
-│   ├── fixtures/               Datos sintéticos pequeños para tests
-│   └── REPORTE_DEFENSA.md      Resumen ejecutivo de tests para la defensa
-├── docs/
-│   ├── AUDITORIA_SCRIPTS.md    Hallazgos de la auditoría de scripts
-│   ├── REPRODUCIBILIDAD.md     Cómo reproducir el TFG desde cero
-│   └── pipeline_resumen.md     Visión general de los apartados 5.1–5.6
-└── .gitignore
+│   ├── 5.2_5.3_homologia_curacion/   Predicción por homología + Curación (§5.2 + §5.3 TFG v9)
+│   ├── 5.4_filogenia/                Reconstrucción filogenética (§5.4 TFG v9)
+│   ├── 5.5_rna_seq/                  Análisis RNA-seq (§5.5 TFG v9)
+│   │   ├── 5.5.1_obtencion_procesamiento/   Pipeline HISAT2 + featureCounts
+│   │   ├── 5.5.2_de_abundancia/             DESeq2 + figuras compuestas
+│   │   └── 5.5.3_homeologos/                Agrupamiento + dominancia
+│   └── common/                       Configuración compartida (paths)
+├── workflows/galaxy/                 Workflows Galaxy publicados (.ga + URLs)
+├── annexes/                          Anexos del TFG (A–H)
+├── tests/                            122 tests automáticos
+└── docs/                             Documentación
 ```
 
 ## Cifras clave reproducidas por estos scripts

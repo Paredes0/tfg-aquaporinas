@@ -7,7 +7,7 @@
 | Dato | Tamaño | Fuente |
 |---|---|---|
 | Genoma *F.* × *ananassa* 'Benihoppe' (FASTA + GFF3) | ~600 MB comprimido | [Genome Database for Rosaceae](https://www.rosaceae.org/species/fragaria/fragaria_x_ananassa) |
-| 22 muestras RNA-seq paired-end | ~40 GB | NCBI SRA, BioProject `PRJNA1010234` (ver `5.3_5.4_rna_seq/SRA.txt`) |
+| 22 muestras RNA-seq paired-end | ~40 GB | NCBI SRA, BioProject `PRJNA1010234` (ver `5.5_rna_seq/5.5.1_obtencion_procesamiento/SRA.txt`) |
 | Aquaporinas de referencia Rosaceae | ~50 KB | UniProtKB, query `family:aquaporin AND organism:Rosaceae` |
 | 4 datasets curados: At AQPome, Hb (*Hevea*), Md (*Malus*), Os (*Oryza*) | ~30 KB | Johanson 2001, Zou 2015, Liu 2019, Sakurai 2005 |
 
@@ -26,14 +26,14 @@ export TFG_RNASEQ_HDD_DIR="/mnt/hdd/rnaseq_data"
 
 ## Pasos de reproducción
 
-### 5.1 Curaduría de aquaporinas (~1-2 horas)
+### 5.2 + 5.3 Predicción por homología + Curación de aquaporinas (~1-2 horas)
 
 ```bash
 # Predicción por homología (Galaxy o BLAST+ local)
 # Resultado: 419 aquaporinas Rosaceae filtradas a 140-380 aa, 3168 loci, 4984 hits, 129 sec.
 
 # Auditoría GFF3 vs Exonerate
-cd scripts/5.1_curaduria
+cd scripts/5.2_5.3_homologia_curacion
 python auditoria_gff_vs_secuencia.py   # → 91 idénticas / 38 discrepancias
 
 # Clasificación integrada (decide GFF3 vs Exonerate por gen)
@@ -49,10 +49,10 @@ python analisis_motivos_unificado.py   # → MEME huella por subfamilia
 python profiling_final_integrated.py   # → 121 funcionales, PCA Fig. 3
 ```
 
-### 5.2 Filogenia (~30 min en cluster, ~6 h en local)
+### 5.4 Filogenia (~30 min en cluster, ~6 h en local)
 
 ```bash
-cd scripts/5.2_filogenia
+cd scripts/5.4_filogenia
 
 # Construir alineamiento (externo: MAFFT v7 E-INS-i + ClipKIT)
 # Construir árbol (externo: IQ-TREE v3.0.1 -m MFP -bb 1000 -bnni -alrt 1000 -abayes)
@@ -66,37 +66,32 @@ python rename_tree_nodes.py
 python update_prune_ids.py
 ```
 
-### 5.3–5.4 RNA-seq (~6-12 horas, Linux)
+### 5.5.1 Obtención y procesamiento RNA-seq (~6-12 horas, Linux)
 
 ```bash
-cd scripts/5.3_5.4_rna_seq
+cd scripts/5.5_rna_seq/5.5.1_obtencion_procesamiento
 
 # Activar entorno conda con SRA Toolkit, fastp, HISAT2, samtools, featureCounts
 micromamba activate rnaseq_aqp
 
 # Ejecución completa
 bash run_pipeline.sh                   # ejecuta 00_setup → 06_count en orden
+```
+
+### 5.5.2 Expresión diferencial y abundancia basal (~20 min)
+
+```bash
+cd scripts/5.5_rna_seq/5.5.2_de_abundancia
 
 # Análisis R
 Rscript 07_de_analysis.R               # DESeq2 DE control vs estrés
 Rscript 08_basal_expression.R          # TPM matrix
 ```
 
-### 5.5 Reanotación (~10 min)
+### 5.5.3 Homeólogos y dominancia (~20 min)
 
 ```bash
-cd scripts/5.5_reanotacion
-
-python 09_reannotation_flags.py        # → reannotation_candidates.tsv
-python 10_generate_efp_viewer.py       # → efp_viewer.html
-python predict_and_append.py           # → 15 MAKER_GFF3 clasificadas por RF
-python 12_substitute_gff3.py           # → GFF3 corregido para visualización
-```
-
-### 5.6 Homeólogos y dominancia (~20 min)
-
-```bash
-cd scripts/5.6_homeologos
+cd scripts/5.5_rna_seq/5.5.3_homeologos
 
 python 11_homeolog_grouping.py         # → 32 grupos homeólogos
 Rscript 13_homeolog_expression.R       # → TPM colapsado por grupo
@@ -117,7 +112,7 @@ Si las 112 pruebas pasan, has reproducido las cifras del TFG.
 ## Variantes
 
 - **Sin reejecución completa**: si solo quieres verificar las cifras, descarga los outputs CSV/TSV finales (~5 MB) y ejecuta `pytest tests/reproducibility/`.
-- **Sin RNA-seq**: si solo te interesan los apartados 5.1–5.2, salta los pasos 5.3–5.6. Los tests del 5.3/5.6 se marcarán como `SKIP`.
+- **Sin RNA-seq**: si solo te interesan los apartados 5.2–5.4, salta los pasos 5.5.x. Los tests del 5.5/5.5.3 se marcarán como `SKIP`.
 
 ## Soporte
 
