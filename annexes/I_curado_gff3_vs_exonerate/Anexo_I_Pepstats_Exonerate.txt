@@ -1,0 +1,6192 @@
+PEPSTATS of mRNA_375 from 1 to 227
+
+Molecular weight = 24182.72  		Residues = 227   
+Average Residue Weight  = 106.532 	Charge   = 3.0   
+Isoelectric Point = 8.4290
+A280 Molar Extinction Coefficient  = 26030   
+A280 Extinction Coefficient 1mg/ml = 1.08      
+Improbability of expression in inclusion bodies = 0.804
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		27		11.894 		1.383  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		1		0.441  		0.152  	
+D = Asp		6		2.643  		0.481  	
+E = Glu		11		4.846  		0.808  	
+F = Phe		17		7.489  		2.080  	
+G = Gly		27		11.894 		1.416  	
+H = His		4		1.762  		0.881  	
+I = Ile		13		5.727  		1.273  	
+J = ---		0		0.000  		0.000  	
+K = Lys		9		3.965  		0.601  	
+L = Leu		18		7.930  		1.072  	
+M = Met		3		1.322  		0.777  	
+N = Asn		8		3.524  		0.820  	
+O = ---		0		0.000  		0.000  	
+P = Pro		11		4.846  		0.932  	
+Q = Gln		5		2.203  		0.565  	
+R = Arg		9		3.965  		0.809  	
+S = Ser		11		4.846  		0.692  	
+T = Thr		16		7.048  		1.155  	
+U = ---		0		0.000  		0.000  	
+V = Val		21		9.251  		1.402  	
+W = Trp		3		1.322  		1.017  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		7		3.084  		0.907  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		82		36.123
+Small		(A+B+C+D+G+N+P+S+T+V)	128		56.388
+Aliphatic	(A+I+L+V)		79		34.802
+Aromatic	(F+H+W+Y)		31		13.656
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	148		65.198
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	79		34.802
+Charged		(B+D+E+H+K+R+Z)		39		17.181
+Basic		(H+K+R)			22		 9.692
+Acidic		(B+D+E+Z)		17		 7.489
+
+PEPSTATS of mRNA_757 from 1 to 287
+
+Molecular weight = 30426.29  		Residues = 287   
+Average Residue Weight  = 106.015 	Charge   = 6.0   
+Isoelectric Point = 8.8978
+A280 Molar Extinction Coefficient  = 45090   
+A280 Extinction Coefficient 1mg/ml = 1.48      
+Improbability of expression in inclusion bodies = 0.788
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		40		13.937 		1.621  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		2		0.697  		0.240  	
+D = Asp		13		4.530  		0.824  	
+E = Glu		5		1.742  		0.290  	
+F = Phe		19		6.620  		1.839  	
+G = Gly		32		11.150 		1.327  	
+H = His		6		2.091  		1.045  	
+I = Ile		25		8.711  		1.936  	
+J = ---		0		0.000  		0.000  	
+K = Lys		13		4.530  		0.686  	
+L = Leu		23		8.014  		1.083  	
+M = Met		4		1.394  		0.820  	
+N = Asn		5		1.742  		0.405  	
+O = ---		0		0.000  		0.000  	
+P = Pro		13		4.530  		0.871  	
+Q = Gln		5		1.742  		0.447  	
+R = Arg		8		2.787  		0.569  	
+S = Ser		17		5.923  		0.846  	
+T = Thr		14		4.878  		0.800  	
+U = ---		0		0.000  		0.000  	
+V = Val		25		8.711  		1.320  	
+W = Trp		5		1.742  		1.340  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		13		4.530  		1.332  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		105		36.585
+Small		(A+B+C+D+G+N+P+S+T+V)	161		56.098
+Aliphatic	(A+I+L+V)		113		39.373
+Aromatic	(F+H+W+Y)		43		14.983
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	201		70.035
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	86		29.965
+Charged		(B+D+E+H+K+R+Z)		45		15.679
+Basic		(H+K+R)			27		 9.408
+Acidic		(B+D+E+Z)		18		 6.272
+
+PEPSTATS of mRNA_1412 from 1 to 252
+
+Molecular weight = 25817.78  		Residues = 252   
+Average Residue Weight  = 102.452 	Charge   = -2.5  
+Isoelectric Point = 5.8154
+A280 Molar Extinction Coefficient  = 41820   
+A280 Extinction Coefficient 1mg/ml = 1.62      
+Improbability of expression in inclusion bodies = 0.739
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		43		17.063 		1.984  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		1		0.397  		0.137  	
+D = Asp		7		2.778  		0.505  	
+E = Glu		6		2.381  		0.397  	
+F = Phe		17		6.746  		1.874  	
+G = Gly		30		11.905 		1.417  	
+H = His		7		2.778  		1.389  	
+I = Ile		19		7.540  		1.675  	
+J = ---		0		0.000  		0.000  	
+K = Lys		4		1.587  		0.241  	
+L = Leu		23		9.127  		1.233  	
+M = Met		6		2.381  		1.401  	
+N = Asn		10		3.968  		0.923  	
+O = ---		0		0.000  		0.000  	
+P = Pro		11		4.365  		0.839  	
+Q = Gln		1		0.397  		0.102  	
+R = Arg		3		1.190  		0.243  	
+S = Ser		20		7.937  		1.134  	
+T = Thr		9		3.571  		0.585  	
+U = ---		0		0.000  		0.000  	
+V = Val		23		9.127  		1.383  	
+W = Trp		6		2.381  		1.832  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		6		2.381  		0.700  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		103		40.873
+Small		(A+B+C+D+G+N+P+S+T+V)	154		61.111
+Aliphatic	(A+I+L+V)		108		42.857
+Aromatic	(F+H+W+Y)		36		14.286
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	185		73.413
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	67		26.587
+Charged		(B+D+E+H+K+R+Z)		27		10.714
+Basic		(H+K+R)			14		 5.556
+Acidic		(B+D+E+Z)		13		 5.159
+
+PEPSTATS of mRNA_1730 from 1 to 290
+
+Molecular weight = 31063.00  		Residues = 290   
+Average Residue Weight  = 107.114 	Charge   = 8.0   
+Isoelectric Point = 9.2142
+A280 Molar Extinction Coefficient  = 41250   
+A280 Extinction Coefficient 1mg/ml = 1.33      
+Improbability of expression in inclusion bodies = 0.808
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		38		13.103 		1.524  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		2		0.690  		0.238  	
+D = Asp		8		2.759  		0.502  	
+E = Glu		11		3.793  		0.632  	
+F = Phe		20		6.897  		1.916  	
+G = Gly		31		10.690 		1.273  	
+H = His		8		2.759  		1.379  	
+I = Ile		25		8.621  		1.916  	
+J = ---		0		0.000  		0.000  	
+K = Lys		15		5.172  		0.784  	
+L = Leu		23		7.931  		1.072  	
+M = Met		4		1.379  		0.811  	
+N = Asn		9		3.103  		0.722  	
+O = ---		0		0.000  		0.000  	
+P = Pro		16		5.517  		1.061  	
+Q = Gln		6		2.069  		0.531  	
+R = Arg		8		2.759  		0.563  	
+S = Ser		12		4.138  		0.591  	
+T = Thr		18		6.207  		1.018  	
+U = ---		0		0.000  		0.000  	
+V = Val		21		7.241  		1.097  	
+W = Trp		5		1.724  		1.326  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		10		3.448  		1.014  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		101		34.828
+Small		(A+B+C+D+G+N+P+S+T+V)	155		53.448
+Aliphatic	(A+I+L+V)		107		36.897
+Aromatic	(F+H+W+Y)		43		14.828
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	195		67.241
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	95		32.759
+Charged		(B+D+E+H+K+R+Z)		50		17.241
+Basic		(H+K+R)			31		10.690
+Acidic		(B+D+E+Z)		19		 6.552
+
+PEPSTATS of mRNA_2489 from 1 to 254
+
+Molecular weight = 25828.87  		Residues = 254   
+Average Residue Weight  = 101.688 	Charge   = -4.0  
+Isoelectric Point = 4.6576
+A280 Molar Extinction Coefficient  = 47510   
+A280 Extinction Coefficient 1mg/ml = 1.84      
+Improbability of expression in inclusion bodies = 0.697
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		45		17.717 		2.060  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		1		0.394  		0.136  	
+D = Asp		6		2.362  		0.429  	
+E = Glu		5		1.969  		0.328  	
+F = Phe		17		6.693  		1.859  	
+G = Gly		29		11.417 		1.359  	
+H = His		4		1.575  		0.787  	
+I = Ile		23		9.055  		2.012  	
+J = ---		0		0.000  		0.000  	
+K = Lys		2		0.787  		0.119  	
+L = Leu		24		9.449  		1.277  	
+M = Met		3		1.181  		0.695  	
+N = Asn		8		3.150  		0.732  	
+O = ---		0		0.000  		0.000  	
+P = Pro		11		4.331  		0.833  	
+Q = Gln		1		0.394  		0.101  	
+R = Arg		3		1.181  		0.241  	
+S = Ser		20		7.874  		1.125  	
+T = Thr		16		6.299  		1.033  	
+U = ---		0		0.000  		0.000  	
+V = Val		23		9.055  		1.372  	
+W = Trp		7		2.756  		2.120  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		6		2.362  		0.695  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		111		43.701
+Small		(A+B+C+D+G+N+P+S+T+V)	159		62.598
+Aliphatic	(A+I+L+V)		115		45.276
+Aromatic	(F+H+W+Y)		34		13.386
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	189		74.409
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	65		25.591
+Charged		(B+D+E+H+K+R+Z)		20		 7.874
+Basic		(H+K+R)			9		 3.543
+Acidic		(B+D+E+Z)		11		 4.331
+
+PEPSTATS of mRNA_3001 from 1 to 287
+
+Molecular weight = 30871.49  		Residues = 287   
+Average Residue Weight  = 107.566 	Charge   = 7.0   
+Isoelectric Point = 9.2292
+A280 Molar Extinction Coefficient  = 45660   
+A280 Extinction Coefficient 1mg/ml = 1.48      
+Improbability of expression in inclusion bodies = 0.807
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		36		12.544 		1.459  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		1		0.348  		0.120  	
+D = Asp		8		2.787  		0.507  	
+E = Glu		12		4.181  		0.697  	
+F = Phe		20		6.969  		1.936  	
+G = Gly		32		11.150 		1.327  	
+H = His		8		2.787  		1.394  	
+I = Ile		23		8.014  		1.781  	
+J = ---		0		0.000  		0.000  	
+K = Lys		11		3.833  		0.581  	
+L = Leu		21		7.317  		0.989  	
+M = Met		3		1.045  		0.615  	
+N = Asn		10		3.484  		0.810  	
+O = ---		0		0.000  		0.000  	
+P = Pro		15		5.226  		1.005  	
+Q = Gln		6		2.091  		0.536  	
+R = Arg		12		4.181  		0.853  	
+S = Ser		12		4.181  		0.597  	
+T = Thr		19		6.620  		1.085  	
+U = ---		0		0.000  		0.000  	
+V = Val		23		8.014  		1.214  	
+W = Trp		6		2.091  		1.608  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		9		3.136  		0.922  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		100		34.843
+Small		(A+B+C+D+G+N+P+S+T+V)	156		54.355
+Aliphatic	(A+I+L+V)		103		35.889
+Aromatic	(F+H+W+Y)		43		14.983
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	189		65.854
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	98		34.146
+Charged		(B+D+E+H+K+R+Z)		51		17.770
+Basic		(H+K+R)			31		10.801
+Acidic		(B+D+E+Z)		20		 6.969
+
+PEPSTATS of mRNA_3457 from 1 to 287
+
+Molecular weight = 30539.41  		Residues = 287   
+Average Residue Weight  = 106.409 	Charge   = 6.0   
+Isoelectric Point = 8.8977
+A280 Molar Extinction Coefficient  = 45090   
+A280 Extinction Coefficient 1mg/ml = 1.48      
+Improbability of expression in inclusion bodies = 0.779
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		39		13.589 		1.580  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		2		0.697  		0.240  	
+D = Asp		13		4.530  		0.824  	
+E = Glu		6		2.091  		0.348  	
+F = Phe		19		6.620  		1.839  	
+G = Gly		32		11.150 		1.327  	
+H = His		6		2.091  		1.045  	
+I = Ile		24		8.362  		1.858  	
+J = ---		0		0.000  		0.000  	
+K = Lys		13		4.530  		0.686  	
+L = Leu		23		8.014  		1.083  	
+M = Met		4		1.394  		0.820  	
+N = Asn		5		1.742  		0.405  	
+O = ---		0		0.000  		0.000  	
+P = Pro		13		4.530  		0.871  	
+Q = Gln		5		1.742  		0.447  	
+R = Arg		9		3.136  		0.640  	
+S = Ser		16		5.575  		0.796  	
+T = Thr		14		4.878  		0.800  	
+U = ---		0		0.000  		0.000  	
+V = Val		26		9.059  		1.373  	
+W = Trp		5		1.742  		1.340  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		13		4.530  		1.332  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		103		35.889
+Small		(A+B+C+D+G+N+P+S+T+V)	160		55.749
+Aliphatic	(A+I+L+V)		112		39.024
+Aromatic	(F+H+W+Y)		43		14.983
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	200		69.686
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	87		30.314
+Charged		(B+D+E+H+K+R+Z)		47		16.376
+Basic		(H+K+R)			28		 9.756
+Acidic		(B+D+E+Z)		19		 6.620
+
+PEPSTATS of mRNA_4038 from 1 to 252
+
+Molecular weight = 25828.80  		Residues = 252   
+Average Residue Weight  = 102.495 	Charge   = -3.5  
+Isoelectric Point = 5.4131
+A280 Molar Extinction Coefficient  = 41820   
+A280 Extinction Coefficient 1mg/ml = 1.62      
+Improbability of expression in inclusion bodies = 0.703
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		42		16.667 		1.938  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		1		0.397  		0.137  	
+D = Asp		8		3.175  		0.577  	
+E = Glu		6		2.381  		0.397  	
+F = Phe		16		6.349  		1.764  	
+G = Gly		30		11.905 		1.417  	
+H = His		7		2.778  		1.389  	
+I = Ile		20		7.937  		1.764  	
+J = ---		0		0.000  		0.000  	
+K = Lys		4		1.587  		0.241  	
+L = Leu		24		9.524  		1.287  	
+M = Met		6		2.381  		1.401  	
+N = Asn		9		3.571  		0.831  	
+O = ---		0		0.000  		0.000  	
+P = Pro		11		4.365  		0.839  	
+Q = Gln		1		0.397  		0.102  	
+R = Arg		3		1.190  		0.243  	
+S = Ser		20		7.937  		1.134  	
+T = Thr		10		3.968  		0.651  	
+U = ---		0		0.000  		0.000  	
+V = Val		22		8.730  		1.323  	
+W = Trp		6		2.381  		1.832  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		6		2.381  		0.700  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		103		40.873
+Small		(A+B+C+D+G+N+P+S+T+V)	153		60.714
+Aliphatic	(A+I+L+V)		108		42.857
+Aromatic	(F+H+W+Y)		35		13.889
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	184		73.016
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	68		26.984
+Charged		(B+D+E+H+K+R+Z)		28		11.111
+Basic		(H+K+R)			14		 5.556
+Acidic		(B+D+E+Z)		14		 5.556
+
+PEPSTATS of mRNA_4380 from 1 to 290
+
+Molecular weight = 31061.03  		Residues = 290   
+Average Residue Weight  = 107.107 	Charge   = 8.0   
+Isoelectric Point = 9.2142
+A280 Molar Extinction Coefficient  = 41250   
+A280 Extinction Coefficient 1mg/ml = 1.33      
+Improbability of expression in inclusion bodies = 0.808
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		38		13.103 		1.524  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		2		0.690  		0.238  	
+D = Asp		8		2.759  		0.502  	
+E = Glu		11		3.793  		0.632  	
+F = Phe		20		6.897  		1.916  	
+G = Gly		31		10.690 		1.273  	
+H = His		8		2.759  		1.379  	
+I = Ile		25		8.621  		1.916  	
+J = ---		0		0.000  		0.000  	
+K = Lys		15		5.172  		0.784  	
+L = Leu		23		7.931  		1.072  	
+M = Met		4		1.379  		0.811  	
+N = Asn		9		3.103  		0.722  	
+O = ---		0		0.000  		0.000  	
+P = Pro		16		5.517  		1.061  	
+Q = Gln		6		2.069  		0.531  	
+R = Arg		8		2.759  		0.563  	
+S = Ser		12		4.138  		0.591  	
+T = Thr		17		5.862  		0.961  	
+U = ---		0		0.000  		0.000  	
+V = Val		22		7.586  		1.149  	
+W = Trp		5		1.724  		1.326  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		10		3.448  		1.014  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		100		34.483
+Small		(A+B+C+D+G+N+P+S+T+V)	155		53.448
+Aliphatic	(A+I+L+V)		108		37.241
+Aromatic	(F+H+W+Y)		43		14.828
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	196		67.586
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	94		32.414
+Charged		(B+D+E+H+K+R+Z)		50		17.241
+Basic		(H+K+R)			31		10.690
+Acidic		(B+D+E+Z)		19		 6.552
+
+PEPSTATS of mRNA_4934 from 1 to 253
+
+Molecular weight = 26018.41  		Residues = 253   
+Average Residue Weight  = 102.840 	Charge   = 1.0   
+Isoelectric Point = 6.9253
+A280 Molar Extinction Coefficient  = 21620   
+A280 Extinction Coefficient 1mg/ml = 0.83      
+Improbability of expression in inclusion bodies = 0.732
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		44		17.391 		2.022  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		3		1.186  		0.409  	
+D = Asp		6		2.372  		0.431  	
+E = Glu		4		1.581  		0.264  	
+F = Phe		14		5.534  		1.537  	
+G = Gly		24		9.486  		1.129  	
+H = His		4		1.581  		0.791  	
+I = Ile		13		5.138  		1.142  	
+J = ---		0		0.000  		0.000  	
+K = Lys		2		0.791  		0.120  	
+L = Leu		22		8.696  		1.175  	
+M = Met		12		4.743  		2.790  	
+N = Asn		8		3.162  		0.735  	
+O = ---		0		0.000  		0.000  	
+P = Pro		12		4.743  		0.912  	
+Q = Gln		6		2.372  		0.608  	
+R = Arg		7		2.767  		0.565  	
+S = Ser		17		6.719  		0.960  	
+T = Thr		14		5.534  		0.907  	
+U = ---		0		0.000  		0.000  	
+V = Val		31		12.253 		1.857  	
+W = Trp		2		0.791  		0.608  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		8		3.162  		0.930  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		102		40.316
+Small		(A+B+C+D+G+N+P+S+T+V)	159		62.846
+Aliphatic	(A+I+L+V)		110		43.478
+Aromatic	(F+H+W+Y)		28		11.067
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	185		73.123
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	68		26.877
+Charged		(B+D+E+H+K+R+Z)		23		 9.091
+Basic		(H+K+R)			13		 5.138
+Acidic		(B+D+E+Z)		10		 3.953
+
+PEPSTATS of mRNA_5665 from 1 to 254
+
+Molecular weight = 25828.87  		Residues = 254   
+Average Residue Weight  = 101.688 	Charge   = -4.0  
+Isoelectric Point = 4.6576
+A280 Molar Extinction Coefficient  = 47510   
+A280 Extinction Coefficient 1mg/ml = 1.84      
+Improbability of expression in inclusion bodies = 0.697
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		45		17.717 		2.060  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		1		0.394  		0.136  	
+D = Asp		6		2.362  		0.429  	
+E = Glu		5		1.969  		0.328  	
+F = Phe		17		6.693  		1.859  	
+G = Gly		29		11.417 		1.359  	
+H = His		4		1.575  		0.787  	
+I = Ile		23		9.055  		2.012  	
+J = ---		0		0.000  		0.000  	
+K = Lys		2		0.787  		0.119  	
+L = Leu		24		9.449  		1.277  	
+M = Met		3		1.181  		0.695  	
+N = Asn		8		3.150  		0.732  	
+O = ---		0		0.000  		0.000  	
+P = Pro		11		4.331  		0.833  	
+Q = Gln		1		0.394  		0.101  	
+R = Arg		3		1.181  		0.241  	
+S = Ser		20		7.874  		1.125  	
+T = Thr		16		6.299  		1.033  	
+U = ---		0		0.000  		0.000  	
+V = Val		23		9.055  		1.372  	
+W = Trp		7		2.756  		2.120  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		6		2.362  		0.695  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		111		43.701
+Small		(A+B+C+D+G+N+P+S+T+V)	159		62.598
+Aliphatic	(A+I+L+V)		115		45.276
+Aromatic	(F+H+W+Y)		34		13.386
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	189		74.409
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	65		25.591
+Charged		(B+D+E+H+K+R+Z)		20		 7.874
+Basic		(H+K+R)			9		 3.543
+Acidic		(B+D+E+Z)		11		 4.331
+
+PEPSTATS of mRNA_6163 from 1 to 287
+
+Molecular weight = 30871.49  		Residues = 287   
+Average Residue Weight  = 107.566 	Charge   = 7.0   
+Isoelectric Point = 9.2292
+A280 Molar Extinction Coefficient  = 45660   
+A280 Extinction Coefficient 1mg/ml = 1.48      
+Improbability of expression in inclusion bodies = 0.807
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		36		12.544 		1.459  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		1		0.348  		0.120  	
+D = Asp		8		2.787  		0.507  	
+E = Glu		12		4.181  		0.697  	
+F = Phe		20		6.969  		1.936  	
+G = Gly		32		11.150 		1.327  	
+H = His		8		2.787  		1.394  	
+I = Ile		23		8.014  		1.781  	
+J = ---		0		0.000  		0.000  	
+K = Lys		11		3.833  		0.581  	
+L = Leu		21		7.317  		0.989  	
+M = Met		3		1.045  		0.615  	
+N = Asn		10		3.484  		0.810  	
+O = ---		0		0.000  		0.000  	
+P = Pro		15		5.226  		1.005  	
+Q = Gln		6		2.091  		0.536  	
+R = Arg		12		4.181  		0.853  	
+S = Ser		12		4.181  		0.597  	
+T = Thr		19		6.620  		1.085  	
+U = ---		0		0.000  		0.000  	
+V = Val		23		8.014  		1.214  	
+W = Trp		6		2.091  		1.608  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		9		3.136  		0.922  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		100		34.843
+Small		(A+B+C+D+G+N+P+S+T+V)	156		54.355
+Aliphatic	(A+I+L+V)		103		35.889
+Aromatic	(F+H+W+Y)		43		14.983
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	189		65.854
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	98		34.146
+Charged		(B+D+E+H+K+R+Z)		51		17.770
+Basic		(H+K+R)			31		10.801
+Acidic		(B+D+E+Z)		20		 6.969
+
+PEPSTATS of mRNA_6610 from 1 to 287
+
+Molecular weight = 30567.46  		Residues = 287   
+Average Residue Weight  = 106.507 	Charge   = 6.0   
+Isoelectric Point = 8.8977
+A280 Molar Extinction Coefficient  = 45090   
+A280 Extinction Coefficient 1mg/ml = 1.48      
+Improbability of expression in inclusion bodies = 0.779
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		39		13.589 		1.580  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		2		0.697  		0.240  	
+D = Asp		12		4.181  		0.760  	
+E = Glu		7		2.439  		0.407  	
+F = Phe		19		6.620  		1.839  	
+G = Gly		32		11.150 		1.327  	
+H = His		6		2.091  		1.045  	
+I = Ile		25		8.711  		1.936  	
+J = ---		0		0.000  		0.000  	
+K = Lys		13		4.530  		0.686  	
+L = Leu		23		8.014  		1.083  	
+M = Met		4		1.394  		0.820  	
+N = Asn		5		1.742  		0.405  	
+O = ---		0		0.000  		0.000  	
+P = Pro		13		4.530  		0.871  	
+Q = Gln		5		1.742  		0.447  	
+R = Arg		9		3.136  		0.640  	
+S = Ser		16		5.575  		0.796  	
+T = Thr		14		4.878  		0.800  	
+U = ---		0		0.000  		0.000  	
+V = Val		25		8.711  		1.320  	
+W = Trp		5		1.742  		1.340  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		13		4.530  		1.332  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		103		35.889
+Small		(A+B+C+D+G+N+P+S+T+V)	158		55.052
+Aliphatic	(A+I+L+V)		112		39.024
+Aromatic	(F+H+W+Y)		43		14.983
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	200		69.686
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	87		30.314
+Charged		(B+D+E+H+K+R+Z)		47		16.376
+Basic		(H+K+R)			28		 9.756
+Acidic		(B+D+E+Z)		19		 6.620
+
+PEPSTATS of mRNA_7171 from 1 to 252
+
+Molecular weight = 25861.84  		Residues = 252   
+Average Residue Weight  = 102.626 	Charge   = -2.5  
+Isoelectric Point = 5.8154
+A280 Molar Extinction Coefficient  = 41820   
+A280 Extinction Coefficient 1mg/ml = 1.62      
+Improbability of expression in inclusion bodies = 0.739
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		42		16.667 		1.938  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		1		0.397  		0.137  	
+D = Asp		7		2.778  		0.505  	
+E = Glu		6		2.381  		0.397  	
+F = Phe		17		6.746  		1.874  	
+G = Gly		30		11.905 		1.417  	
+H = His		7		2.778  		1.389  	
+I = Ile		20		7.937  		1.764  	
+J = ---		0		0.000  		0.000  	
+K = Lys		4		1.587  		0.241  	
+L = Leu		23		9.127  		1.233  	
+M = Met		6		2.381  		1.401  	
+N = Asn		10		3.968  		0.923  	
+O = ---		0		0.000  		0.000  	
+P = Pro		11		4.365  		0.839  	
+Q = Gln		1		0.397  		0.102  	
+R = Arg		3		1.190  		0.243  	
+S = Ser		20		7.937  		1.134  	
+T = Thr		10		3.968  		0.651  	
+U = ---		0		0.000  		0.000  	
+V = Val		22		8.730  		1.323  	
+W = Trp		6		2.381  		1.832  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		6		2.381  		0.700  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		103		40.873
+Small		(A+B+C+D+G+N+P+S+T+V)	153		60.714
+Aliphatic	(A+I+L+V)		107		42.460
+Aromatic	(F+H+W+Y)		36		14.286
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	184		73.016
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	68		26.984
+Charged		(B+D+E+H+K+R+Z)		27		10.714
+Basic		(H+K+R)			14		 5.556
+Acidic		(B+D+E+Z)		13		 5.159
+
+PEPSTATS of mRNA_7562 from 1 to 290
+
+Molecular weight = 31048.98  		Residues = 290   
+Average Residue Weight  = 107.065 	Charge   = 8.0   
+Isoelectric Point = 9.2142
+A280 Molar Extinction Coefficient  = 41250   
+A280 Extinction Coefficient 1mg/ml = 1.33      
+Improbability of expression in inclusion bodies = 0.808
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		38		13.103 		1.524  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		2		0.690  		0.238  	
+D = Asp		8		2.759  		0.502  	
+E = Glu		11		3.793  		0.632  	
+F = Phe		20		6.897  		1.916  	
+G = Gly		31		10.690 		1.273  	
+H = His		8		2.759  		1.379  	
+I = Ile		24		8.276  		1.839  	
+J = ---		0		0.000  		0.000  	
+K = Lys		15		5.172  		0.784  	
+L = Leu		23		7.931  		1.072  	
+M = Met		4		1.379  		0.811  	
+N = Asn		9		3.103  		0.722  	
+O = ---		0		0.000  		0.000  	
+P = Pro		16		5.517  		1.061  	
+Q = Gln		6		2.069  		0.531  	
+R = Arg		8		2.759  		0.563  	
+S = Ser		12		4.138  		0.591  	
+T = Thr		18		6.207  		1.018  	
+U = ---		0		0.000  		0.000  	
+V = Val		22		7.586  		1.149  	
+W = Trp		5		1.724  		1.326  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		10		3.448  		1.014  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		101		34.828
+Small		(A+B+C+D+G+N+P+S+T+V)	156		53.793
+Aliphatic	(A+I+L+V)		107		36.897
+Aromatic	(F+H+W+Y)		43		14.828
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	195		67.241
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	95		32.759
+Charged		(B+D+E+H+K+R+Z)		50		17.241
+Basic		(H+K+R)			31		10.690
+Acidic		(B+D+E+Z)		19		 6.552
+
+PEPSTATS of mRNA_8210 from 1 to 253
+
+Molecular weight = 26234.71  		Residues = 253   
+Average Residue Weight  = 103.695 	Charge   = 2.0   
+Isoelectric Point = 7.4996
+A280 Molar Extinction Coefficient  = 21620   
+A280 Extinction Coefficient 1mg/ml = 0.82      
+Improbability of expression in inclusion bodies = 0.754
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		42		16.601 		1.930  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		3		1.186  		0.409  	
+D = Asp		6		2.372  		0.431  	
+E = Glu		4		1.581  		0.264  	
+F = Phe		14		5.534  		1.537  	
+G = Gly		23		9.091  		1.082  	
+H = His		4		1.581  		0.791  	
+I = Ile		14		5.534  		1.230  	
+J = ---		0		0.000  		0.000  	
+K = Lys		2		0.791  		0.120  	
+L = Leu		22		8.696  		1.175  	
+M = Met		13		5.138  		3.023  	
+N = Asn		9		3.557  		0.827  	
+O = ---		0		0.000  		0.000  	
+P = Pro		12		4.743  		0.912  	
+Q = Gln		6		2.372  		0.608  	
+R = Arg		8		3.162  		0.645  	
+S = Ser		17		6.719  		0.960  	
+T = Thr		14		5.534  		0.907  	
+U = ---		0		0.000  		0.000  	
+V = Val		30		11.858 		1.797  	
+W = Trp		2		0.791  		0.608  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		8		3.162  		0.930  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		99		39.130
+Small		(A+B+C+D+G+N+P+S+T+V)	156		61.660
+Aliphatic	(A+I+L+V)		108		42.688
+Aromatic	(F+H+W+Y)		28		11.067
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	183		72.332
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	70		27.668
+Charged		(B+D+E+H+K+R+Z)		24		 9.486
+Basic		(H+K+R)			14		 5.534
+Acidic		(B+D+E+Z)		10		 3.953
+
+PEPSTATS of mRNA_8797 from 1 to 254
+
+Molecular weight = 25828.87  		Residues = 254   
+Average Residue Weight  = 101.688 	Charge   = -4.0  
+Isoelectric Point = 4.6576
+A280 Molar Extinction Coefficient  = 47510   
+A280 Extinction Coefficient 1mg/ml = 1.84      
+Improbability of expression in inclusion bodies = 0.697
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		45		17.717 		2.060  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		1		0.394  		0.136  	
+D = Asp		6		2.362  		0.429  	
+E = Glu		5		1.969  		0.328  	
+F = Phe		17		6.693  		1.859  	
+G = Gly		29		11.417 		1.359  	
+H = His		4		1.575  		0.787  	
+I = Ile		23		9.055  		2.012  	
+J = ---		0		0.000  		0.000  	
+K = Lys		2		0.787  		0.119  	
+L = Leu		24		9.449  		1.277  	
+M = Met		3		1.181  		0.695  	
+N = Asn		8		3.150  		0.732  	
+O = ---		0		0.000  		0.000  	
+P = Pro		11		4.331  		0.833  	
+Q = Gln		1		0.394  		0.101  	
+R = Arg		3		1.181  		0.241  	
+S = Ser		20		7.874  		1.125  	
+T = Thr		16		6.299  		1.033  	
+U = ---		0		0.000  		0.000  	
+V = Val		23		9.055  		1.372  	
+W = Trp		7		2.756  		2.120  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		6		2.362  		0.695  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		111		43.701
+Small		(A+B+C+D+G+N+P+S+T+V)	159		62.598
+Aliphatic	(A+I+L+V)		115		45.276
+Aromatic	(F+H+W+Y)		34		13.386
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	189		74.409
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	65		25.591
+Charged		(B+D+E+H+K+R+Z)		20		 7.874
+Basic		(H+K+R)			9		 3.543
+Acidic		(B+D+E+Z)		11		 4.331
+
+PEPSTATS of mRNA_9287 from 1 to 287
+
+Molecular weight = 30871.49  		Residues = 287   
+Average Residue Weight  = 107.566 	Charge   = 7.0   
+Isoelectric Point = 9.2292
+A280 Molar Extinction Coefficient  = 45660   
+A280 Extinction Coefficient 1mg/ml = 1.48      
+Improbability of expression in inclusion bodies = 0.807
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		36		12.544 		1.459  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		1		0.348  		0.120  	
+D = Asp		8		2.787  		0.507  	
+E = Glu		12		4.181  		0.697  	
+F = Phe		20		6.969  		1.936  	
+G = Gly		32		11.150 		1.327  	
+H = His		8		2.787  		1.394  	
+I = Ile		23		8.014  		1.781  	
+J = ---		0		0.000  		0.000  	
+K = Lys		11		3.833  		0.581  	
+L = Leu		21		7.317  		0.989  	
+M = Met		3		1.045  		0.615  	
+N = Asn		10		3.484  		0.810  	
+O = ---		0		0.000  		0.000  	
+P = Pro		15		5.226  		1.005  	
+Q = Gln		6		2.091  		0.536  	
+R = Arg		12		4.181  		0.853  	
+S = Ser		12		4.181  		0.597  	
+T = Thr		19		6.620  		1.085  	
+U = ---		0		0.000  		0.000  	
+V = Val		23		8.014  		1.214  	
+W = Trp		6		2.091  		1.608  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		9		3.136  		0.922  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		100		34.843
+Small		(A+B+C+D+G+N+P+S+T+V)	156		54.355
+Aliphatic	(A+I+L+V)		103		35.889
+Aromatic	(F+H+W+Y)		43		14.983
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	189		65.854
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	98		34.146
+Charged		(B+D+E+H+K+R+Z)		51		17.770
+Basic		(H+K+R)			31		10.801
+Acidic		(B+D+E+Z)		20		 6.969
+
+PEPSTATS of mRNA_9710 from 1 to 285
+
+Molecular weight = 30358.26  		Residues = 285   
+Average Residue Weight  = 106.520 	Charge   = 6.5   
+Isoelectric Point = 9.1492
+A280 Molar Extinction Coefficient  = 45090   
+A280 Extinction Coefficient 1mg/ml = 1.49      
+Improbability of expression in inclusion bodies = 0.802
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		38		13.333 		1.550  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		2		0.702  		0.242  	
+D = Asp		11		3.860  		0.702  	
+E = Glu		7		2.456  		0.409  	
+F = Phe		19		6.667  		1.852  	
+G = Gly		32		11.228 		1.337  	
+H = His		5		1.754  		0.877  	
+I = Ile		24		8.421  		1.871  	
+J = ---		0		0.000  		0.000  	
+K = Lys		13		4.561  		0.691  	
+L = Leu		23		8.070  		1.091  	
+M = Met		4		1.404  		0.826  	
+N = Asn		5		1.754  		0.408  	
+O = ---		0		0.000  		0.000  	
+P = Pro		13		4.561  		0.877  	
+Q = Gln		6		2.105  		0.540  	
+R = Arg		9		3.158  		0.644  	
+S = Ser		16		5.614  		0.802  	
+T = Thr		14		4.912  		0.805  	
+U = ---		0		0.000  		0.000  	
+V = Val		26		9.123  		1.382  	
+W = Trp		5		1.754  		1.350  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		13		4.561  		1.342  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		102		35.789
+Small		(A+B+C+D+G+N+P+S+T+V)	157		55.088
+Aliphatic	(A+I+L+V)		111		38.947
+Aromatic	(F+H+W+Y)		42		14.737
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	199		69.825
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	86		30.175
+Charged		(B+D+E+H+K+R+Z)		45		15.789
+Basic		(H+K+R)			27		 9.474
+Acidic		(B+D+E+Z)		18		 6.316
+
+PEPSTATS of mRNA_10259 from 1 to 252
+
+Molecular weight = 25861.84  		Residues = 252   
+Average Residue Weight  = 102.626 	Charge   = -2.5  
+Isoelectric Point = 5.8154
+A280 Molar Extinction Coefficient  = 41820   
+A280 Extinction Coefficient 1mg/ml = 1.62      
+Improbability of expression in inclusion bodies = 0.739
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		42		16.667 		1.938  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		1		0.397  		0.137  	
+D = Asp		7		2.778  		0.505  	
+E = Glu		6		2.381  		0.397  	
+F = Phe		17		6.746  		1.874  	
+G = Gly		30		11.905 		1.417  	
+H = His		7		2.778  		1.389  	
+I = Ile		20		7.937  		1.764  	
+J = ---		0		0.000  		0.000  	
+K = Lys		4		1.587  		0.241  	
+L = Leu		23		9.127  		1.233  	
+M = Met		6		2.381  		1.401  	
+N = Asn		10		3.968  		0.923  	
+O = ---		0		0.000  		0.000  	
+P = Pro		11		4.365  		0.839  	
+Q = Gln		1		0.397  		0.102  	
+R = Arg		3		1.190  		0.243  	
+S = Ser		20		7.937  		1.134  	
+T = Thr		10		3.968  		0.651  	
+U = ---		0		0.000  		0.000  	
+V = Val		22		8.730  		1.323  	
+W = Trp		6		2.381  		1.832  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		6		2.381  		0.700  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		103		40.873
+Small		(A+B+C+D+G+N+P+S+T+V)	153		60.714
+Aliphatic	(A+I+L+V)		107		42.460
+Aromatic	(F+H+W+Y)		36		14.286
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	184		73.016
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	68		26.984
+Charged		(B+D+E+H+K+R+Z)		27		10.714
+Basic		(H+K+R)			14		 5.556
+Acidic		(B+D+E+Z)		13		 5.159
+
+PEPSTATS of mRNA_10680 from 1 to 290
+
+Molecular weight = 31075.06  		Residues = 290   
+Average Residue Weight  = 107.155 	Charge   = 8.0   
+Isoelectric Point = 9.2142
+A280 Molar Extinction Coefficient  = 41250   
+A280 Extinction Coefficient 1mg/ml = 1.33      
+Improbability of expression in inclusion bodies = 0.808
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		38		13.103 		1.524  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		2		0.690  		0.238  	
+D = Asp		8		2.759  		0.502  	
+E = Glu		11		3.793  		0.632  	
+F = Phe		20		6.897  		1.916  	
+G = Gly		31		10.690 		1.273  	
+H = His		8		2.759  		1.379  	
+I = Ile		26		8.966  		1.992  	
+J = ---		0		0.000  		0.000  	
+K = Lys		15		5.172  		0.784  	
+L = Leu		23		7.931  		1.072  	
+M = Met		4		1.379  		0.811  	
+N = Asn		9		3.103  		0.722  	
+O = ---		0		0.000  		0.000  	
+P = Pro		16		5.517  		1.061  	
+Q = Gln		6		2.069  		0.531  	
+R = Arg		8		2.759  		0.563  	
+S = Ser		12		4.138  		0.591  	
+T = Thr		17		5.862  		0.961  	
+U = ---		0		0.000  		0.000  	
+V = Val		21		7.241  		1.097  	
+W = Trp		5		1.724  		1.326  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		10		3.448  		1.014  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		100		34.483
+Small		(A+B+C+D+G+N+P+S+T+V)	154		53.103
+Aliphatic	(A+I+L+V)		108		37.241
+Aromatic	(F+H+W+Y)		43		14.828
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	196		67.586
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	94		32.414
+Charged		(B+D+E+H+K+R+Z)		50		17.241
+Basic		(H+K+R)			31		10.690
+Acidic		(B+D+E+Z)		19		 6.552
+
+PEPSTATS of mRNA_11228 from 1 to 253
+
+Molecular weight = 25982.25  		Residues = 253   
+Average Residue Weight  = 102.697 	Charge   = 0.0   
+Isoelectric Point = 6.4968
+A280 Molar Extinction Coefficient  = 22900   
+A280 Extinction Coefficient 1mg/ml = 0.88      
+Improbability of expression in inclusion bodies = 0.756
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		42		16.601 		1.930  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		3		1.186  		0.409  	
+D = Asp		6		2.372  		0.431  	
+E = Glu		4		1.581  		0.264  	
+F = Phe		13		5.138  		1.427  	
+G = Gly		25		9.881  		1.176  	
+H = His		4		1.581  		0.791  	
+I = Ile		13		5.138  		1.142  	
+J = ---		0		0.000  		0.000  	
+K = Lys		2		0.791  		0.120  	
+L = Leu		22		8.696  		1.175  	
+M = Met		12		4.743  		2.790  	
+N = Asn		9		3.557  		0.827  	
+O = ---		0		0.000  		0.000  	
+P = Pro		12		4.743  		0.912  	
+Q = Gln		6		2.372  		0.608  	
+R = Arg		6		2.372  		0.484  	
+S = Ser		19		7.510  		1.073  	
+T = Thr		14		5.534  		0.907  	
+U = ---		0		0.000  		0.000  	
+V = Val		30		11.858 		1.797  	
+W = Trp		2		0.791  		0.608  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		9		3.557  		1.046  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		103		40.711
+Small		(A+B+C+D+G+N+P+S+T+V)	160		63.241
+Aliphatic	(A+I+L+V)		107		42.292
+Aromatic	(F+H+W+Y)		28		11.067
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	183		72.332
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	70		27.668
+Charged		(B+D+E+H+K+R+Z)		22		 8.696
+Basic		(H+K+R)			12		 4.743
+Acidic		(B+D+E+Z)		10		 3.953
+
+PEPSTATS of mRNA_11695 from 1 to 254
+
+Molecular weight = 25776.84  		Residues = 254   
+Average Residue Weight  = 101.484 	Charge   = -4.0  
+Isoelectric Point = 4.6576
+A280 Molar Extinction Coefficient  = 47510   
+A280 Extinction Coefficient 1mg/ml = 1.84      
+Improbability of expression in inclusion bodies = 0.697
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		45		17.717 		2.060  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		1		0.394  		0.136  	
+D = Asp		6		2.362  		0.429  	
+E = Glu		5		1.969  		0.328  	
+F = Phe		15		5.906  		1.640  	
+G = Gly		28		11.024 		1.312  	
+H = His		4		1.575  		0.787  	
+I = Ile		24		9.449  		2.100  	
+J = ---		0		0.000  		0.000  	
+K = Lys		2		0.787  		0.119  	
+L = Leu		24		9.449  		1.277  	
+M = Met		3		1.181  		0.695  	
+N = Asn		8		3.150  		0.732  	
+O = ---		0		0.000  		0.000  	
+P = Pro		11		4.331  		0.833  	
+Q = Gln		1		0.394  		0.101  	
+R = Arg		3		1.181  		0.241  	
+S = Ser		21		8.268  		1.181  	
+T = Thr		16		6.299  		1.033  	
+U = ---		0		0.000  		0.000  	
+V = Val		24		9.449  		1.432  	
+W = Trp		7		2.756  		2.120  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		6		2.362  		0.695  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		111		43.701
+Small		(A+B+C+D+G+N+P+S+T+V)	160		62.992
+Aliphatic	(A+I+L+V)		117		46.063
+Aromatic	(F+H+W+Y)		32		12.598
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	188		74.016
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	66		25.984
+Charged		(B+D+E+H+K+R+Z)		20		 7.874
+Basic		(H+K+R)			9		 3.543
+Acidic		(B+D+E+Z)		11		 4.331
+
+PEPSTATS of mRNA_12291 from 1 to 306
+
+Molecular weight = 31558.64  		Residues = 306   
+Average Residue Weight  = 103.133 	Charge   = 5.5   
+Isoelectric Point = 8.4857
+A280 Molar Extinction Coefficient  = 22190   
+A280 Extinction Coefficient 1mg/ml = 0.70      
+Improbability of expression in inclusion bodies = 0.886
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		41		13.399 		1.558  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		5		1.634  		0.563  	
+D = Asp		4		1.307  		0.238  	
+E = Glu		14		4.575  		0.763  	
+F = Phe		17		5.556  		1.543  	
+G = Gly		32		10.458 		1.245  	
+H = His		5		1.634  		0.817  	
+I = Ile		16		5.229  		1.162  	
+J = ---		0		0.000  		0.000  	
+K = Lys		13		4.248  		0.644  	
+L = Leu		30		9.804  		1.325  	
+M = Met		6		1.961  		1.153  	
+N = Asn		11		3.595  		0.836  	
+O = ---		0		0.000  		0.000  	
+P = Pro		21		6.863  		1.320  	
+Q = Gln		3		0.980  		0.251  	
+R = Arg		8		2.614  		0.534  	
+S = Ser		21		6.863  		0.980  	
+T = Thr		24		7.843  		1.286  	
+U = ---		0		0.000  		0.000  	
+V = Val		28		9.150  		1.386  	
+W = Trp		3		0.980  		0.754  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		4		1.307  		0.384  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		123		40.196
+Small		(A+B+C+D+G+N+P+S+T+V)	187		61.111
+Aliphatic	(A+I+L+V)		115		37.582
+Aromatic	(F+H+W+Y)		29		 9.477
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	203		66.340
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	103		33.660
+Charged		(B+D+E+H+K+R+Z)		44		14.379
+Basic		(H+K+R)			26		 8.497
+Acidic		(B+D+E+Z)		18		 5.882
+
+PEPSTATS of mRNA_12792 from 1 to 248
+
+Molecular weight = 25315.32  		Residues = 248   
+Average Residue Weight  = 102.078 	Charge   = -2.5  
+Isoelectric Point = 5.4543
+A280 Molar Extinction Coefficient  = 28590   
+A280 Extinction Coefficient 1mg/ml = 1.13      
+Improbability of expression in inclusion bodies = 0.725
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		37		14.919 		1.735  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		2		0.806  		0.278  	
+D = Asp		7		2.823  		0.513  	
+E = Glu		5		2.016  		0.336  	
+F = Phe		19		7.661  		2.128  	
+G = Gly		35		14.113 		1.680  	
+H = His		5		2.016  		1.008  	
+I = Ile		28		11.290 		2.509  	
+J = ---		0		0.000  		0.000  	
+K = Lys		5		2.016  		0.305  	
+L = Leu		20		8.065  		1.090  	
+M = Met		2		0.806  		0.474  	
+N = Asn		7		2.823  		0.656  	
+O = ---		0		0.000  		0.000  	
+P = Pro		10		4.032  		0.775  	
+Q = Gln		3		1.210  		0.310  	
+R = Arg		2		0.806  		0.165  	
+S = Ser		15		6.048  		0.864  	
+T = Thr		13		5.242  		0.859  	
+U = ---		0		0.000  		0.000  	
+V = Val		21		8.468  		1.283  	
+W = Trp		3		1.210  		0.931  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		9		3.629  		1.067  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		102		41.129
+Small		(A+B+C+D+G+N+P+S+T+V)	147		59.274
+Aliphatic	(A+I+L+V)		106		42.742
+Aromatic	(F+H+W+Y)		36		14.516
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	186		75.000
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	62		25.000
+Charged		(B+D+E+H+K+R+Z)		24		 9.677
+Basic		(H+K+R)			12		 4.839
+Acidic		(B+D+E+Z)		12		 4.839
+
+PEPSTATS of mRNA_13095 from 1 to 241
+
+Molecular weight = 25498.26  		Residues = 241   
+Average Residue Weight  = 105.802 	Charge   = 12.0  
+Isoelectric Point = 10.6999
+A280 Molar Extinction Coefficient  = 44950   
+A280 Extinction Coefficient 1mg/ml = 1.76      
+Improbability of expression in inclusion bodies = 0.902
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		27		11.203 		1.303  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		1		0.415  		0.143  	
+D = Asp		2		0.830  		0.151  	
+E = Glu		4		1.660  		0.277  	
+F = Phe		18		7.469  		2.075  	
+G = Gly		26		10.788 		1.284  	
+H = His		2		0.830  		0.415  	
+I = Ile		15		6.224  		1.383  	
+J = ---		0		0.000  		0.000  	
+K = Lys		13		5.394  		0.817  	
+L = Leu		28		11.618 		1.570  	
+M = Met		9		3.734  		2.197  	
+N = Asn		7		2.905  		0.675  	
+O = ---		0		0.000  		0.000  	
+P = Pro		14		5.809  		1.117  	
+Q = Gln		4		1.660  		0.426  	
+R = Arg		4		1.660  		0.339  	
+S = Ser		20		8.299  		1.186  	
+T = Thr		15		6.224  		1.020  	
+U = ---		0		0.000  		0.000  	
+V = Val		21		8.714  		1.320  	
+W = Trp		7		2.905  		2.234  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		4		1.660  		0.488  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		89		36.929
+Small		(A+B+C+D+G+N+P+S+T+V)	133		55.187
+Aliphatic	(A+I+L+V)		91		37.759
+Aromatic	(F+H+W+Y)		31		12.863
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	170		70.539
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	71		29.461
+Charged		(B+D+E+H+K+R+Z)		25		10.373
+Basic		(H+K+R)			19		 7.884
+Acidic		(B+D+E+Z)		6		 2.490
+
+PEPSTATS of mRNA_13018 from 1 to 148
+
+Molecular weight = 16161.00  		Residues = 148   
+Average Residue Weight  = 109.196 	Charge   = 4.0   
+Isoelectric Point = 9.4583
+A280 Molar Extinction Coefficient  = 39260   
+A280 Extinction Coefficient 1mg/ml = 2.43      
+Improbability of expression in inclusion bodies = 0.871
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		16		10.811 		1.257  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		1		0.676  		0.233  	
+D = Asp		2		1.351  		0.246  	
+E = Glu		7		4.730  		0.788  	
+F = Phe		10		6.757  		1.877  	
+G = Gly		15		10.135 		1.207  	
+H = His		2		1.351  		0.676  	
+I = Ile		6		4.054  		0.901  	
+J = ---		0		0.000  		0.000  	
+K = Lys		11		7.432  		1.126  	
+L = Leu		16		10.811 		1.461  	
+M = Met		5		3.378  		1.987  	
+N = Asn		6		4.054  		0.943  	
+O = ---		0		0.000  		0.000  	
+P = Pro		10		6.757  		1.299  	
+Q = Gln		4		2.703  		0.693  	
+R = Arg		1		0.676  		0.138  	
+S = Ser		6		4.054  		0.579  	
+T = Thr		6		4.054  		0.665  	
+U = ---		0		0.000  		0.000  	
+V = Val		14		9.459  		1.433  	
+W = Trp		6		4.054  		3.119  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		4		2.703  		0.795  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		44		29.730
+Small		(A+B+C+D+G+N+P+S+T+V)	76		51.351
+Aliphatic	(A+I+L+V)		52		35.135
+Aromatic	(F+H+W+Y)		22		14.865
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	103		69.595
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	45		30.405
+Charged		(B+D+E+H+K+R+Z)		23		15.541
+Basic		(H+K+R)			14		 9.459
+Acidic		(B+D+E+Z)		9		 6.081
+
+PEPSTATS of mRNA_13461 from 1 to 282
+
+Molecular weight = 30041.83  		Residues = 282   
+Average Residue Weight  = 106.531 	Charge   = 7.5   
+Isoelectric Point = 9.3239
+A280 Molar Extinction Coefficient  = 26030   
+A280 Extinction Coefficient 1mg/ml = 0.87      
+Improbability of expression in inclusion bodies = 0.850
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		31		10.993 		1.278  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		2		0.709  		0.245  	
+D = Asp		9		3.191  		0.580  	
+E = Glu		9		3.191  		0.532  	
+F = Phe		15		5.319  		1.478  	
+G = Gly		21		7.447  		0.887  	
+H = His		7		2.482  		1.241  	
+I = Ile		24		8.511  		1.891  	
+J = ---		0		0.000  		0.000  	
+K = Lys		13		4.610  		0.698  	
+L = Leu		21		7.447  		1.006  	
+M = Met		8		2.837  		1.669  	
+N = Asn		6		2.128  		0.495  	
+O = ---		0		0.000  		0.000  	
+P = Pro		15		5.319  		1.023  	
+Q = Gln		6		2.128  		0.546  	
+R = Arg		9		3.191  		0.651  	
+S = Ser		29		10.284 		1.469  	
+T = Thr		21		7.447  		1.221  	
+U = ---		0		0.000  		0.000  	
+V = Val		26		9.220  		1.397  	
+W = Trp		3		1.064  		0.818  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		7		2.482  		0.730  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		104		36.879
+Small		(A+B+C+D+G+N+P+S+T+V)	160		56.738
+Aliphatic	(A+I+L+V)		102		36.170
+Aromatic	(F+H+W+Y)		32		11.348
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	173		61.348
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	109		38.652
+Charged		(B+D+E+H+K+R+Z)		47		16.667
+Basic		(H+K+R)			29		10.284
+Acidic		(B+D+E+Z)		18		 6.383
+
+PEPSTATS of mRNA_13880 from 1 to 274
+
+Molecular weight = 28985.83  		Residues = 274   
+Average Residue Weight  = 105.788 	Charge   = 8.0   
+Isoelectric Point = 9.3437
+A280 Molar Extinction Coefficient  = 27310   
+A280 Extinction Coefficient 1mg/ml = 0.94      
+Improbability of expression in inclusion bodies = 0.881
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		33		12.044 		1.400  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		3		1.095  		0.378  	
+D = Asp		6		2.190  		0.398  	
+E = Glu		8		2.920  		0.487  	
+F = Phe		12		4.380  		1.217  	
+G = Gly		20		7.299  		0.869  	
+H = His		6		2.190  		1.095  	
+I = Ile		24		8.759  		1.946  	
+J = ---		0		0.000  		0.000  	
+K = Lys		10		3.650  		0.553  	
+L = Leu		23		8.394  		1.134  	
+M = Met		8		2.920  		1.717  	
+N = Asn		6		2.190  		0.509  	
+O = ---		0		0.000  		0.000  	
+P = Pro		17		6.204  		1.193  	
+Q = Gln		6		2.190  		0.561  	
+R = Arg		9		3.285  		0.670  	
+S = Ser		28		10.219 		1.460  	
+T = Thr		18		6.569  		1.077  	
+U = ---		0		0.000  		0.000  	
+V = Val		26		9.489  		1.438  	
+W = Trp		3		1.095  		0.842  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		8		2.920  		0.859  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		102		37.226
+Small		(A+B+C+D+G+N+P+S+T+V)	157		57.299
+Aliphatic	(A+I+L+V)		106		38.686
+Aromatic	(F+H+W+Y)		29		10.584
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	177		64.599
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	97		35.401
+Charged		(B+D+E+H+K+R+Z)		39		14.234
+Basic		(H+K+R)			25		 9.124
+Acidic		(B+D+E+Z)		14		 5.109
+
+PEPSTATS of mRNA_14250 from 1 to 272
+
+Molecular weight = 29343.98  		Residues = 272   
+Average Residue Weight  = 107.882 	Charge   = 2.5   
+Isoelectric Point = 7.2118
+A280 Molar Extinction Coefficient  = 33000   
+A280 Extinction Coefficient 1mg/ml = 1.12      
+Improbability of expression in inclusion bodies = 0.809
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		22		8.088  		0.940  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		2		0.735  		0.254  	
+D = Asp		7		2.574  		0.468  	
+E = Glu		11		4.044  		0.674  	
+F = Phe		18		6.618  		1.838  	
+G = Gly		24		8.824  		1.050  	
+H = His		7		2.574  		1.287  	
+I = Ile		18		6.618  		1.471  	
+J = ---		0		0.000  		0.000  	
+K = Lys		10		3.676  		0.557  	
+L = Leu		28		10.294 		1.391  	
+M = Met		7		2.574  		1.514  	
+N = Asn		9		3.309  		0.769  	
+O = ---		0		0.000  		0.000  	
+P = Pro		13		4.779  		0.919  	
+Q = Gln		6		2.206  		0.566  	
+R = Arg		7		2.574  		0.525  	
+S = Ser		27		9.926  		1.418  	
+T = Thr		16		5.882  		0.964  	
+U = ---		0		0.000  		0.000  	
+V = Val		28		10.294 		1.560  	
+W = Trp		4		1.471  		1.131  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		8		2.941  		0.865  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		91		33.456
+Small		(A+B+C+D+G+N+P+S+T+V)	148		54.412
+Aliphatic	(A+I+L+V)		96		35.294
+Aromatic	(F+H+W+Y)		37		13.603
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	172		63.235
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	100		36.765
+Charged		(B+D+E+H+K+R+Z)		42		15.441
+Basic		(H+K+R)			24		 8.824
+Acidic		(B+D+E+Z)		18		 6.618
+
+PEPSTATS of mRNA_14568 from 1 to 271
+
+Molecular weight = 28803.30  		Residues = 271   
+Average Residue Weight  = 106.285 	Charge   = 5.5   
+Isoelectric Point = 8.4708
+A280 Molar Extinction Coefficient  = 20340   
+A280 Extinction Coefficient 1mg/ml = 0.71      
+Improbability of expression in inclusion bodies = 0.896
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		24		8.856  		1.030  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		3		1.107  		0.382  	
+D = Asp		6		2.214  		0.403  	
+E = Glu		8		2.952  		0.492  	
+F = Phe		16		5.904  		1.640  	
+G = Gly		25		9.225  		1.098  	
+H = His		7		2.583  		1.292  	
+I = Ile		17		6.273  		1.394  	
+J = ---		0		0.000  		0.000  	
+K = Lys		8		2.952  		0.447  	
+L = Leu		25		9.225  		1.247  	
+M = Met		7		2.583  		1.519  	
+N = Asn		16		5.904  		1.373  	
+O = ---		0		0.000  		0.000  	
+P = Pro		16		5.904  		1.135  	
+Q = Gln		5		1.845  		0.473  	
+R = Arg		8		2.952  		0.602  	
+S = Ser		21		7.749  		1.107  	
+T = Thr		20		7.380  		1.210  	
+U = ---		0		0.000  		0.000  	
+V = Val		30		11.070 		1.677  	
+W = Trp		2		0.738  		0.568  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		7		2.583  		0.760  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		93		34.317
+Small		(A+B+C+D+G+N+P+S+T+V)	161		59.410
+Aliphatic	(A+I+L+V)		96		35.424
+Aromatic	(F+H+W+Y)		32		11.808
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	172		63.469
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	99		36.531
+Charged		(B+D+E+H+K+R+Z)		37		13.653
+Basic		(H+K+R)			23		 8.487
+Acidic		(B+D+E+Z)		14		 5.166
+
+PEPSTATS of mRNA_15122 from 1 to 253
+
+Molecular weight = 26038.84  		Residues = 253   
+Average Residue Weight  = 102.920 	Charge   = -3.5  
+Isoelectric Point = 5.0724
+A280 Molar Extinction Coefficient  = 43100   
+A280 Extinction Coefficient 1mg/ml = 1.66      
+Improbability of expression in inclusion bodies = 0.760
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		38		15.020 		1.746  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		1		0.395  		0.136  	
+D = Asp		6		2.372  		0.431  	
+E = Glu		8		3.162  		0.527  	
+F = Phe		19		7.510  		2.086  	
+G = Gly		35		13.834 		1.647  	
+H = His		5		1.976  		0.988  	
+I = Ile		15		5.929  		1.318  	
+J = ---		0		0.000  		0.000  	
+K = Lys		4		1.581  		0.240  	
+L = Leu		23		9.091  		1.229  	
+M = Met		4		1.581  		0.930  	
+N = Asn		12		4.743  		1.103  	
+O = ---		0		0.000  		0.000  	
+P = Pro		11		4.348  		0.836  	
+Q = Gln		2		0.791  		0.203  	
+R = Arg		4		1.581  		0.323  	
+S = Ser		15		5.929  		0.847  	
+T = Thr		13		5.138  		0.842  	
+U = ---		0		0.000  		0.000  	
+V = Val		25		9.881  		1.497  	
+W = Trp		6		2.372  		1.824  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		7		2.767  		0.814  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		102		40.316
+Small		(A+B+C+D+G+N+P+S+T+V)	156		61.660
+Aliphatic	(A+I+L+V)		101		39.921
+Aromatic	(F+H+W+Y)		37		14.625
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	184		72.727
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	69		27.273
+Charged		(B+D+E+H+K+R+Z)		27		10.672
+Basic		(H+K+R)			13		 5.138
+Acidic		(B+D+E+Z)		14		 5.534
+
+PEPSTATS of mRNA_15498 from 1 to 306
+
+Molecular weight = 31572.67  		Residues = 306   
+Average Residue Weight  = 103.179 	Charge   = 5.5   
+Isoelectric Point = 8.4857
+A280 Molar Extinction Coefficient  = 22190   
+A280 Extinction Coefficient 1mg/ml = 0.70      
+Improbability of expression in inclusion bodies = 0.886
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		41		13.399 		1.558  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		5		1.634  		0.563  	
+D = Asp		4		1.307  		0.238  	
+E = Glu		14		4.575  		0.763  	
+F = Phe		17		5.556  		1.543  	
+G = Gly		32		10.458 		1.245  	
+H = His		5		1.634  		0.817  	
+I = Ile		17		5.556  		1.235  	
+J = ---		0		0.000  		0.000  	
+K = Lys		13		4.248  		0.644  	
+L = Leu		30		9.804  		1.325  	
+M = Met		6		1.961  		1.153  	
+N = Asn		11		3.595  		0.836  	
+O = ---		0		0.000  		0.000  	
+P = Pro		21		6.863  		1.320  	
+Q = Gln		3		0.980  		0.251  	
+R = Arg		8		2.614  		0.534  	
+S = Ser		21		6.863  		0.980  	
+T = Thr		24		7.843  		1.286  	
+U = ---		0		0.000  		0.000  	
+V = Val		27		8.824  		1.337  	
+W = Trp		3		0.980  		0.754  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		4		1.307  		0.384  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		123		40.196
+Small		(A+B+C+D+G+N+P+S+T+V)	186		60.784
+Aliphatic	(A+I+L+V)		115		37.582
+Aromatic	(F+H+W+Y)		29		 9.477
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	203		66.340
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	103		33.660
+Charged		(B+D+E+H+K+R+Z)		44		14.379
+Basic		(H+K+R)			26		 8.497
+Acidic		(B+D+E+Z)		18		 5.882
+
+PEPSTATS of mRNA_15531 from 1 to 241
+
+Molecular weight = 25410.03  		Residues = 241   
+Average Residue Weight  = 105.436 	Charge   = 12.0  
+Isoelectric Point = 10.6999
+A280 Molar Extinction Coefficient  = 44950   
+A280 Extinction Coefficient 1mg/ml = 1.77      
+Improbability of expression in inclusion bodies = 0.915
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		28		11.618 		1.351  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		1		0.415  		0.143  	
+D = Asp		2		0.830  		0.151  	
+E = Glu		4		1.660  		0.277  	
+F = Phe		19		7.884  		2.190  	
+G = Gly		26		10.788 		1.284  	
+H = His		2		0.830  		0.415  	
+I = Ile		14		5.809  		1.291  	
+J = ---		0		0.000  		0.000  	
+K = Lys		13		5.394  		0.817  	
+L = Leu		27		11.203 		1.514  	
+M = Met		7		2.905  		1.709  	
+N = Asn		7		2.905  		0.675  	
+O = ---		0		0.000  		0.000  	
+P = Pro		15		6.224  		1.197  	
+Q = Gln		4		1.660  		0.426  	
+R = Arg		4		1.660  		0.339  	
+S = Ser		21		8.714  		1.245  	
+T = Thr		14		5.809  		0.952  	
+U = ---		0		0.000  		0.000  	
+V = Val		22		9.129  		1.383  	
+W = Trp		7		2.905  		2.234  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		4		1.660  		0.488  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		90		37.344
+Small		(A+B+C+D+G+N+P+S+T+V)	136		56.432
+Aliphatic	(A+I+L+V)		91		37.759
+Aromatic	(F+H+W+Y)		32		13.278
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	170		70.539
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	71		29.461
+Charged		(B+D+E+H+K+R+Z)		25		10.373
+Basic		(H+K+R)			19		 7.884
+Acidic		(B+D+E+Z)		6		 2.490
+
+PEPSTATS of mRNA_15882 from 1 to 241
+
+Molecular weight = 25765.60  		Residues = 241   
+Average Residue Weight  = 106.911 	Charge   = 11.0  
+Isoelectric Point = 10.4721
+A280 Molar Extinction Coefficient  = 40540   
+A280 Extinction Coefficient 1mg/ml = 1.57      
+Improbability of expression in inclusion bodies = 0.862
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		28		11.618 		1.351  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		1		0.415  		0.143  	
+D = Asp		2		0.830  		0.151  	
+E = Glu		6		2.490  		0.415  	
+F = Phe		19		7.884  		2.190  	
+G = Gly		24		9.959  		1.186  	
+H = His		2		0.830  		0.415  	
+I = Ile		17		7.054  		1.568  	
+J = ---		0		0.000  		0.000  	
+K = Lys		14		5.809  		0.880  	
+L = Leu		28		11.618 		1.570  	
+M = Met		7		2.905  		1.709  	
+N = Asn		8		3.320  		0.772  	
+O = ---		0		0.000  		0.000  	
+P = Pro		13		5.394  		1.037  	
+Q = Gln		6		2.490  		0.638  	
+R = Arg		4		1.660  		0.339  	
+S = Ser		15		6.224  		0.889  	
+T = Thr		14		5.809  		0.952  	
+U = ---		0		0.000  		0.000  	
+V = Val		22		9.129  		1.383  	
+W = Trp		6		2.490  		1.915  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		5		2.075  		0.610  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		82		34.025
+Small		(A+B+C+D+G+N+P+S+T+V)	127		52.697
+Aliphatic	(A+I+L+V)		95		39.419
+Aromatic	(F+H+W+Y)		32		13.278
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	170		70.539
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	71		29.461
+Charged		(B+D+E+H+K+R+Z)		28		11.618
+Basic		(H+K+R)			20		 8.299
+Acidic		(B+D+E+Z)		8		 3.320
+
+PEPSTATS of mRNA_16151 from 1 to 274
+
+Molecular weight = 28969.74  		Residues = 274   
+Average Residue Weight  = 105.729 	Charge   = 5.0   
+Isoelectric Point = 8.4640
+A280 Molar Extinction Coefficient  = 26030   
+A280 Extinction Coefficient 1mg/ml = 0.90      
+Improbability of expression in inclusion bodies = 0.854
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		29		10.584 		1.231  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		3		1.095  		0.378  	
+D = Asp		7		2.555  		0.464  	
+E = Glu		9		3.285  		0.547  	
+F = Phe		12		4.380  		1.217  	
+G = Gly		21		7.664  		0.912  	
+H = His		6		2.190  		1.095  	
+I = Ile		25		9.124  		2.028  	
+J = ---		0		0.000  		0.000  	
+K = Lys		10		3.650  		0.553  	
+L = Leu		21		7.664  		1.036  	
+M = Met		8		2.920  		1.717  	
+N = Asn		7		2.555  		0.594  	
+O = ---		0		0.000  		0.000  	
+P = Pro		16		5.839  		1.123  	
+Q = Gln		6		2.190  		0.561  	
+R = Arg		8		2.920  		0.596  	
+S = Ser		29		10.584 		1.512  	
+T = Thr		17		6.204  		1.017  	
+U = ---		0		0.000  		0.000  	
+V = Val		30		10.949 		1.659  	
+W = Trp		3		1.095  		0.842  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		7		2.555  		0.751  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		99		36.131
+Small		(A+B+C+D+G+N+P+S+T+V)	159		58.029
+Aliphatic	(A+I+L+V)		105		38.321
+Aromatic	(F+H+W+Y)		28		10.219
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	175		63.869
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	99		36.131
+Charged		(B+D+E+H+K+R+Z)		40		14.599
+Basic		(H+K+R)			24		 8.759
+Acidic		(B+D+E+Z)		16		 5.839
+
+PEPSTATS of mRNA_16526 from 1 to 283
+
+Molecular weight = 30159.89  		Residues = 283   
+Average Residue Weight  = 106.572 	Charge   = 6.5   
+Isoelectric Point = 8.7902
+A280 Molar Extinction Coefficient  = 26030   
+A280 Extinction Coefficient 1mg/ml = 0.86      
+Improbability of expression in inclusion bodies = 0.833
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		31		10.954 		1.274  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		3		1.060  		0.366  	
+D = Asp		9		3.180  		0.578  	
+E = Glu		9		3.180  		0.530  	
+F = Phe		15		5.300  		1.472  	
+G = Gly		21		7.420  		0.883  	
+H = His		7		2.473  		1.237  	
+I = Ile		24		8.481  		1.885  	
+J = ---		0		0.000  		0.000  	
+K = Lys		12		4.240  		0.642  	
+L = Leu		20		7.067  		0.955  	
+M = Met		8		2.827  		1.663  	
+N = Asn		6		2.120  		0.493  	
+O = ---		0		0.000  		0.000  	
+P = Pro		15		5.300  		1.019  	
+Q = Gln		8		2.827  		0.725  	
+R = Arg		9		3.180  		0.649  	
+S = Ser		29		10.247 		1.464  	
+T = Thr		21		7.420  		1.216  	
+U = ---		0		0.000  		0.000  	
+V = Val		26		9.187  		1.392  	
+W = Trp		3		1.060  		0.815  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		7		2.473  		0.727  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		105		37.102
+Small		(A+B+C+D+G+N+P+S+T+V)	161		56.890
+Aliphatic	(A+I+L+V)		101		35.689
+Aromatic	(F+H+W+Y)		32		11.307
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	173		61.131
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	110		38.869
+Charged		(B+D+E+H+K+R+Z)		46		16.254
+Basic		(H+K+R)			28		 9.894
+Acidic		(B+D+E+Z)		18		 6.360
+
+PEPSTATS of mRNA_16625 from 1 to 237
+
+Molecular weight = 25086.59  		Residues = 237   
+Average Residue Weight  = 105.851 	Charge   = 6.0   
+Isoelectric Point = 9.4172
+A280 Molar Extinction Coefficient  = 41820   
+A280 Extinction Coefficient 1mg/ml = 1.67      
+Improbability of expression in inclusion bodies = 0.827
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		32		13.502 		1.570  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		2		0.844  		0.291  	
+D = Asp		5		2.110  		0.384  	
+E = Glu		3		1.266  		0.211  	
+F = Phe		18		7.595  		2.110  	
+G = Gly		24		10.127 		1.206  	
+H = His		4		1.688  		0.844  	
+I = Ile		14		5.907  		1.313  	
+J = ---		0		0.000  		0.000  	
+K = Lys		8		3.376  		0.511  	
+L = Leu		27		11.392 		1.540  	
+M = Met		8		3.376  		1.986  	
+N = Asn		8		3.376  		0.785  	
+O = ---		0		0.000  		0.000  	
+P = Pro		11		4.641  		0.893  	
+Q = Gln		4		1.688  		0.433  	
+R = Arg		4		1.688  		0.344  	
+S = Ser		13		5.485  		0.784  	
+T = Thr		16		6.751  		1.107  	
+U = ---		0		0.000  		0.000  	
+V = Val		24		10.127 		1.534  	
+W = Trp		6		2.532  		1.947  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		6		2.532  		0.745  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		87		36.709
+Small		(A+B+C+D+G+N+P+S+T+V)	135		56.962
+Aliphatic	(A+I+L+V)		97		40.928
+Aromatic	(F+H+W+Y)		34		14.346
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	172		72.574
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	65		27.426
+Charged		(B+D+E+H+K+R+Z)		24		10.127
+Basic		(H+K+R)			16		 6.751
+Acidic		(B+D+E+Z)		8		 3.376
+
+PEPSTATS of mRNA_17401 from 1 to 287
+
+Molecular weight = 30330.99  		Residues = 287   
+Average Residue Weight  = 105.683 	Charge   = 4.5   
+Isoelectric Point = 8.2881
+A280 Molar Extinction Coefficient  = 45090   
+A280 Extinction Coefficient 1mg/ml = 1.49      
+Improbability of expression in inclusion bodies = 0.856
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		34		11.847 		1.378  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		4		1.394  		0.481  	
+D = Asp		11		3.833  		0.697  	
+E = Glu		6		2.091  		0.348  	
+F = Phe		18		6.272  		1.742  	
+G = Gly		37		12.892 		1.535  	
+H = His		5		1.742  		0.871  	
+I = Ile		26		9.059  		2.013  	
+J = ---		0		0.000  		0.000  	
+K = Lys		11		3.833  		0.581  	
+L = Leu		24		8.362  		1.130  	
+M = Met		3		1.045  		0.615  	
+N = Asn		9		3.136  		0.729  	
+O = ---		0		0.000  		0.000  	
+P = Pro		14		4.878  		0.938  	
+Q = Gln		6		2.091  		0.536  	
+R = Arg		8		2.787  		0.569  	
+S = Ser		17		5.923  		0.846  	
+T = Thr		15		5.226  		0.857  	
+U = ---		0		0.000  		0.000  	
+V = Val		21		7.317  		1.109  	
+W = Trp		5		1.742  		1.340  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		13		4.530  		1.332  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		107		37.282
+Small		(A+B+C+D+G+N+P+S+T+V)	162		56.446
+Aliphatic	(A+I+L+V)		105		36.585
+Aromatic	(F+H+W+Y)		41		14.286
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	199		69.338
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	88		30.662
+Charged		(B+D+E+H+K+R+Z)		41		14.286
+Basic		(H+K+R)			24		 8.362
+Acidic		(B+D+E+Z)		17		 5.923
+
+PEPSTATS of mRNA_17700 from 1 to 284
+
+Molecular weight = 30097.85  		Residues = 284   
+Average Residue Weight  = 105.978 	Charge   = 5.0   
+Isoelectric Point = 8.2928
+A280 Molar Extinction Coefficient  = 45090   
+A280 Extinction Coefficient 1mg/ml = 1.50      
+Improbability of expression in inclusion bodies = 0.823
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		36		12.676 		1.474  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		4		1.408  		0.486  	
+D = Asp		11		3.873  		0.704  	
+E = Glu		6		2.113  		0.352  	
+F = Phe		17		5.986  		1.663  	
+G = Gly		34		11.972 		1.425  	
+H = His		6		2.113  		1.056  	
+I = Ile		25		8.803  		1.956  	
+J = ---		0		0.000  		0.000  	
+K = Lys		11		3.873  		0.587  	
+L = Leu		23		8.099  		1.094  	
+M = Met		5		1.761  		1.036  	
+N = Asn		8		2.817  		0.655  	
+O = ---		0		0.000  		0.000  	
+P = Pro		14		4.930  		0.948  	
+Q = Gln		5		1.761  		0.451  	
+R = Arg		8		2.817  		0.575  	
+S = Ser		16		5.634  		0.805  	
+T = Thr		15		5.282  		0.866  	
+U = ---		0		0.000  		0.000  	
+V = Val		22		7.746  		1.174  	
+W = Trp		5		1.761  		1.354  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		13		4.577  		1.346  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		105		36.972
+Small		(A+B+C+D+G+N+P+S+T+V)	160		56.338
+Aliphatic	(A+I+L+V)		106		37.324
+Aromatic	(F+H+W+Y)		41		14.437
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	198		69.718
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	86		30.282
+Charged		(B+D+E+H+K+R+Z)		42		14.789
+Basic		(H+K+R)			25		 8.803
+Acidic		(B+D+E+Z)		17		 5.986
+
+PEPSTATS of mRNA_17850 from 1 to 253
+
+Molecular weight = 26038.84  		Residues = 253   
+Average Residue Weight  = 102.920 	Charge   = -3.5  
+Isoelectric Point = 5.0724
+A280 Molar Extinction Coefficient  = 43100   
+A280 Extinction Coefficient 1mg/ml = 1.66      
+Improbability of expression in inclusion bodies = 0.760
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		38		15.020 		1.746  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		1		0.395  		0.136  	
+D = Asp		6		2.372  		0.431  	
+E = Glu		8		3.162  		0.527  	
+F = Phe		19		7.510  		2.086  	
+G = Gly		35		13.834 		1.647  	
+H = His		5		1.976  		0.988  	
+I = Ile		15		5.929  		1.318  	
+J = ---		0		0.000  		0.000  	
+K = Lys		4		1.581  		0.240  	
+L = Leu		23		9.091  		1.229  	
+M = Met		4		1.581  		0.930  	
+N = Asn		12		4.743  		1.103  	
+O = ---		0		0.000  		0.000  	
+P = Pro		11		4.348  		0.836  	
+Q = Gln		2		0.791  		0.203  	
+R = Arg		4		1.581  		0.323  	
+S = Ser		15		5.929  		0.847  	
+T = Thr		13		5.138  		0.842  	
+U = ---		0		0.000  		0.000  	
+V = Val		25		9.881  		1.497  	
+W = Trp		6		2.372  		1.824  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		7		2.767  		0.814  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		102		40.316
+Small		(A+B+C+D+G+N+P+S+T+V)	156		61.660
+Aliphatic	(A+I+L+V)		101		39.921
+Aromatic	(F+H+W+Y)		37		14.625
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	184		72.727
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	69		27.273
+Charged		(B+D+E+H+K+R+Z)		27		10.672
+Basic		(H+K+R)			13		 5.138
+Acidic		(B+D+E+Z)		14		 5.534
+
+PEPSTATS of mRNA_18621 from 1 to 306
+
+Molecular weight = 31542.69  		Residues = 306   
+Average Residue Weight  = 103.081 	Charge   = 6.5   
+Isoelectric Point = 8.7385
+A280 Molar Extinction Coefficient  = 22190   
+A280 Extinction Coefficient 1mg/ml = 0.70      
+Improbability of expression in inclusion bodies = 0.897
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		41		13.399 		1.558  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		5		1.634  		0.563  	
+D = Asp		4		1.307  		0.238  	
+E = Glu		13		4.248  		0.708  	
+F = Phe		17		5.556  		1.543  	
+G = Gly		32		10.458 		1.245  	
+H = His		5		1.634  		0.817  	
+I = Ile		17		5.556  		1.235  	
+J = ---		0		0.000  		0.000  	
+K = Lys		13		4.248  		0.644  	
+L = Leu		30		9.804  		1.325  	
+M = Met		6		1.961  		1.153  	
+N = Asn		11		3.595  		0.836  	
+O = ---		0		0.000  		0.000  	
+P = Pro		21		6.863  		1.320  	
+Q = Gln		3		0.980  		0.251  	
+R = Arg		8		2.614  		0.534  	
+S = Ser		21		6.863  		0.980  	
+T = Thr		24		7.843  		1.286  	
+U = ---		0		0.000  		0.000  	
+V = Val		28		9.150  		1.386  	
+W = Trp		3		0.980  		0.754  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		4		1.307  		0.384  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		123		40.196
+Small		(A+B+C+D+G+N+P+S+T+V)	187		61.111
+Aliphatic	(A+I+L+V)		116		37.908
+Aromatic	(F+H+W+Y)		29		 9.477
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	204		66.667
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	102		33.333
+Charged		(B+D+E+H+K+R+Z)		43		14.052
+Basic		(H+K+R)			26		 8.497
+Acidic		(B+D+E+Z)		17		 5.556
+
+PEPSTATS of mRNA_19165 from 1 to 248
+
+Molecular weight = 25314.34  		Residues = 248   
+Average Residue Weight  = 102.074 	Charge   = -1.5  
+Isoelectric Point = 5.9583
+A280 Molar Extinction Coefficient  = 28590   
+A280 Extinction Coefficient 1mg/ml = 1.13      
+Improbability of expression in inclusion bodies = 0.760
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		37		14.919 		1.735  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		2		0.806  		0.278  	
+D = Asp		6		2.419  		0.440  	
+E = Glu		5		2.016  		0.336  	
+F = Phe		19		7.661  		2.128  	
+G = Gly		35		14.113 		1.680  	
+H = His		5		2.016  		1.008  	
+I = Ile		28		11.290 		2.509  	
+J = ---		0		0.000  		0.000  	
+K = Lys		5		2.016  		0.305  	
+L = Leu		20		8.065  		1.090  	
+M = Met		2		0.806  		0.474  	
+N = Asn		8		3.226  		0.750  	
+O = ---		0		0.000  		0.000  	
+P = Pro		10		4.032  		0.775  	
+Q = Gln		3		1.210  		0.310  	
+R = Arg		2		0.806  		0.165  	
+S = Ser		15		6.048  		0.864  	
+T = Thr		13		5.242  		0.859  	
+U = ---		0		0.000  		0.000  	
+V = Val		21		8.468  		1.283  	
+W = Trp		3		1.210  		0.931  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		9		3.629  		1.067  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		102		41.129
+Small		(A+B+C+D+G+N+P+S+T+V)	147		59.274
+Aliphatic	(A+I+L+V)		106		42.742
+Aromatic	(F+H+W+Y)		36		14.516
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	186		75.000
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	62		25.000
+Charged		(B+D+E+H+K+R+Z)		23		 9.274
+Basic		(H+K+R)			12		 4.839
+Acidic		(B+D+E+Z)		11		 4.435
+
+PEPSTATS of mRNA_19360 from 1 to 241
+
+Molecular weight = 25452.11  		Residues = 241   
+Average Residue Weight  = 105.610 	Charge   = 12.0  
+Isoelectric Point = 10.6999
+A280 Molar Extinction Coefficient  = 44950   
+A280 Extinction Coefficient 1mg/ml = 1.77      
+Improbability of expression in inclusion bodies = 0.909
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		27		11.203 		1.303  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		1		0.415  		0.143  	
+D = Asp		2		0.830  		0.151  	
+E = Glu		4		1.660  		0.277  	
+F = Phe		19		7.884  		2.190  	
+G = Gly		26		10.788 		1.284  	
+H = His		2		0.830  		0.415  	
+I = Ile		15		6.224  		1.383  	
+J = ---		0		0.000  		0.000  	
+K = Lys		13		5.394  		0.817  	
+L = Leu		26		10.788 		1.458  	
+M = Met		7		2.905  		1.709  	
+N = Asn		7		2.905  		0.675  	
+O = ---		0		0.000  		0.000  	
+P = Pro		15		6.224  		1.197  	
+Q = Gln		4		1.660  		0.426  	
+R = Arg		4		1.660  		0.339  	
+S = Ser		20		8.299  		1.186  	
+T = Thr		15		6.224  		1.020  	
+U = ---		0		0.000  		0.000  	
+V = Val		23		9.544  		1.446  	
+W = Trp		7		2.905  		2.234  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		4		1.660  		0.488  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		89		36.929
+Small		(A+B+C+D+G+N+P+S+T+V)	136		56.432
+Aliphatic	(A+I+L+V)		91		37.759
+Aromatic	(F+H+W+Y)		32		13.278
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	170		70.539
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	71		29.461
+Charged		(B+D+E+H+K+R+Z)		25		10.373
+Basic		(H+K+R)			19		 7.884
+Acidic		(B+D+E+Z)		6		 2.490
+
+PEPSTATS of mRNA_19416 from 1 to 240
+
+Molecular weight = 25769.63  		Residues = 240   
+Average Residue Weight  = 107.373 	Charge   = 10.5  
+Isoelectric Point = 10.5061
+A280 Molar Extinction Coefficient  = 40540   
+A280 Extinction Coefficient 1mg/ml = 1.57      
+Improbability of expression in inclusion bodies = 0.855
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		27		11.250 		1.308  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		1		0.417  		0.144  	
+D = Asp		2		0.833  		0.152  	
+E = Glu		6		2.500  		0.417  	
+F = Phe		19		7.917  		2.199  	
+G = Gly		23		9.583  		1.141  	
+H = His		1		0.417  		0.208  	
+I = Ile		18		7.500  		1.667  	
+J = ---		0		0.000  		0.000  	
+K = Lys		13		5.417  		0.821  	
+L = Leu		28		11.667 		1.577  	
+M = Met		7		2.917  		1.716  	
+N = Asn		8		3.333  		0.775  	
+O = ---		0		0.000  		0.000  	
+P = Pro		13		5.417  		1.042  	
+Q = Gln		7		2.917  		0.748  	
+R = Arg		5		2.083  		0.425  	
+S = Ser		15		6.250  		0.893  	
+T = Thr		14		5.833  		0.956  	
+U = ---		0		0.000  		0.000  	
+V = Val		22		9.167  		1.389  	
+W = Trp		6		2.500  		1.923  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		5		2.083  		0.613  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		80		33.333
+Small		(A+B+C+D+G+N+P+S+T+V)	125		52.083
+Aliphatic	(A+I+L+V)		95		39.583
+Aromatic	(F+H+W+Y)		31		12.917
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	169		70.417
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	71		29.583
+Charged		(B+D+E+H+K+R+Z)		27		11.250
+Basic		(H+K+R)			19		 7.917
+Acidic		(B+D+E+Z)		8		 3.333
+
+PEPSTATS of mRNA_19842 from 1 to 274
+
+Molecular weight = 28782.49  		Residues = 274   
+Average Residue Weight  = 105.046 	Charge   = 6.0   
+Isoelectric Point = 9.0450
+A280 Molar Extinction Coefficient  = 26030   
+A280 Extinction Coefficient 1mg/ml = 0.90      
+Improbability of expression in inclusion bodies = 0.876
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		35		12.774 		1.485  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		2		0.730  		0.252  	
+D = Asp		6		2.190  		0.398  	
+E = Glu		8		2.920  		0.487  	
+F = Phe		13		4.745  		1.318  	
+G = Gly		21		7.664  		0.912  	
+H = His		6		2.190  		1.095  	
+I = Ile		24		8.759  		1.946  	
+J = ---		0		0.000  		0.000  	
+K = Lys		9		3.285  		0.498  	
+L = Leu		23		8.394  		1.134  	
+M = Met		8		2.920  		1.717  	
+N = Asn		7		2.555  		0.594  	
+O = ---		0		0.000  		0.000  	
+P = Pro		17		6.204  		1.193  	
+Q = Gln		6		2.190  		0.561  	
+R = Arg		8		2.920  		0.596  	
+S = Ser		29		10.584 		1.512  	
+T = Thr		17		6.204  		1.017  	
+U = ---		0		0.000  		0.000  	
+V = Val		25		9.124  		1.382  	
+W = Trp		3		1.095  		0.842  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		7		2.555  		0.751  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		104		37.956
+Small		(A+B+C+D+G+N+P+S+T+V)	159		58.029
+Aliphatic	(A+I+L+V)		107		39.051
+Aromatic	(F+H+W+Y)		29		10.584
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	178		64.964
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	96		35.036
+Charged		(B+D+E+H+K+R+Z)		37		13.504
+Basic		(H+K+R)			23		 8.394
+Acidic		(B+D+E+Z)		14		 5.109
+
+PEPSTATS of mRNA_20242 from 1 to 282
+
+Molecular weight = 29913.63  		Residues = 282   
+Average Residue Weight  = 106.077 	Charge   = 7.5   
+Isoelectric Point = 9.3240
+A280 Molar Extinction Coefficient  = 26030   
+A280 Extinction Coefficient 1mg/ml = 0.87      
+Improbability of expression in inclusion bodies = 0.850
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		31		10.993 		1.278  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		2		0.709  		0.245  	
+D = Asp		8		2.837  		0.516  	
+E = Glu		9		3.191  		0.532  	
+F = Phe		15		5.319  		1.478  	
+G = Gly		22		7.801  		0.929  	
+H = His		7		2.482  		1.241  	
+I = Ile		24		8.511  		1.891  	
+J = ---		0		0.000  		0.000  	
+K = Lys		13		4.610  		0.698  	
+L = Leu		20		7.092  		0.958  	
+M = Met		7		2.482  		1.460  	
+N = Asn		6		2.128  		0.495  	
+O = ---		0		0.000  		0.000  	
+P = Pro		14		4.965  		0.955  	
+Q = Gln		7		2.482  		0.636  	
+R = Arg		8		2.837  		0.579  	
+S = Ser		29		10.284 		1.469  	
+T = Thr		22		7.801  		1.279  	
+U = ---		0		0.000  		0.000  	
+V = Val		28		9.929  		1.504  	
+W = Trp		3		1.064  		0.818  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		7		2.482  		0.730  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		106		37.589
+Small		(A+B+C+D+G+N+P+S+T+V)	162		57.447
+Aliphatic	(A+I+L+V)		103		36.525
+Aromatic	(F+H+W+Y)		32		11.348
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	173		61.348
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	109		38.652
+Charged		(B+D+E+H+K+R+Z)		45		15.957
+Basic		(H+K+R)			28		 9.929
+Acidic		(B+D+E+Z)		17		 6.028
+
+PEPSTATS of mRNA_20968 from 1 to 269
+
+Molecular weight = 28546.01  		Residues = 269   
+Average Residue Weight  = 106.119 	Charge   = 4.5   
+Isoelectric Point = 8.0970
+A280 Molar Extinction Coefficient  = 20340   
+A280 Extinction Coefficient 1mg/ml = 0.71      
+Improbability of expression in inclusion bodies = 0.887
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		24		8.922  		1.037  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		3		1.115  		0.385  	
+D = Asp		6		2.230  		0.406  	
+E = Glu		8		2.974  		0.496  	
+F = Phe		16		5.948  		1.652  	
+G = Gly		25		9.294  		1.106  	
+H = His		7		2.602  		1.301  	
+I = Ile		17		6.320  		1.404  	
+J = ---		0		0.000  		0.000  	
+K = Lys		8		2.974  		0.451  	
+L = Leu		25		9.294  		1.256  	
+M = Met		7		2.602  		1.531  	
+N = Asn		16		5.948  		1.383  	
+O = ---		0		0.000  		0.000  	
+P = Pro		16		5.948  		1.144  	
+Q = Gln		5		1.859  		0.477  	
+R = Arg		7		2.602  		0.531  	
+S = Ser		21		7.807  		1.115  	
+T = Thr		19		7.063  		1.158  	
+U = ---		0		0.000  		0.000  	
+V = Val		30		11.152 		1.690  	
+W = Trp		2		0.743  		0.572  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		7		2.602  		0.765  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		92		34.201
+Small		(A+B+C+D+G+N+P+S+T+V)	160		59.480
+Aliphatic	(A+I+L+V)		96		35.688
+Aromatic	(F+H+W+Y)		32		11.896
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	172		63.941
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	97		36.059
+Charged		(B+D+E+H+K+R+Z)		36		13.383
+Basic		(H+K+R)			22		 8.178
+Acidic		(B+D+E+Z)		14		 5.204
+
+PEPSTATS of mRNA_21389 from 1 to 284
+
+Molecular weight = 29972.49  		Residues = 284   
+Average Residue Weight  = 105.537 	Charge   = 2.5   
+Isoelectric Point = 7.4521
+A280 Molar Extinction Coefficient  = 43810   
+A280 Extinction Coefficient 1mg/ml = 1.46      
+Improbability of expression in inclusion bodies = 0.824
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		35		12.324 		1.433  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		5		1.761  		0.607  	
+D = Asp		11		3.873  		0.704  	
+E = Glu		7		2.465  		0.411  	
+F = Phe		18		6.338  		1.761  	
+G = Gly		36		12.676 		1.509  	
+H = His		5		1.761  		0.880  	
+I = Ile		24		8.451  		1.878  	
+J = ---		0		0.000  		0.000  	
+K = Lys		9		3.169  		0.480  	
+L = Leu		23		8.099  		1.094  	
+M = Met		3		1.056  		0.621  	
+N = Asn		9		3.169  		0.737  	
+O = ---		0		0.000  		0.000  	
+P = Pro		14		4.930  		0.948  	
+Q = Gln		6		2.113  		0.542  	
+R = Arg		9		3.169  		0.647  	
+S = Ser		17		5.986  		0.855  	
+T = Thr		14		4.930  		0.808  	
+U = ---		0		0.000  		0.000  	
+V = Val		22		7.746  		1.174  	
+W = Trp		5		1.761  		1.354  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		12		4.225  		1.243  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		107		37.676
+Small		(A+B+C+D+G+N+P+S+T+V)	163		57.394
+Aliphatic	(A+I+L+V)		104		36.620
+Aromatic	(F+H+W+Y)		40		14.085
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	197		69.366
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	87		30.634
+Charged		(B+D+E+H+K+R+Z)		41		14.437
+Basic		(H+K+R)			23		 8.099
+Acidic		(B+D+E+Z)		18		 6.338
+
+PEPSTATS of mRNA_21806 from 1 to 284
+
+Molecular weight = 30102.86  		Residues = 284   
+Average Residue Weight  = 105.996 	Charge   = 4.5   
+Isoelectric Point = 8.2881
+A280 Molar Extinction Coefficient  = 45090   
+A280 Extinction Coefficient 1mg/ml = 1.50      
+Improbability of expression in inclusion bodies = 0.823
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		36		12.676 		1.474  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		4		1.408  		0.486  	
+D = Asp		11		3.873  		0.704  	
+E = Glu		6		2.113  		0.352  	
+F = Phe		17		5.986  		1.663  	
+G = Gly		34		11.972 		1.425  	
+H = His		5		1.761  		0.880  	
+I = Ile		26		9.155  		2.034  	
+J = ---		0		0.000  		0.000  	
+K = Lys		11		3.873  		0.587  	
+L = Leu		23		8.099  		1.094  	
+M = Met		5		1.761  		1.036  	
+N = Asn		8		2.817  		0.655  	
+O = ---		0		0.000  		0.000  	
+P = Pro		14		4.930  		0.948  	
+Q = Gln		6		2.113  		0.542  	
+R = Arg		8		2.817  		0.575  	
+S = Ser		16		5.634  		0.805  	
+T = Thr		15		5.282  		0.866  	
+U = ---		0		0.000  		0.000  	
+V = Val		21		7.394  		1.120  	
+W = Trp		5		1.761  		1.354  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		13		4.577  		1.346  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		105		36.972
+Small		(A+B+C+D+G+N+P+S+T+V)	159		55.986
+Aliphatic	(A+I+L+V)		106		37.324
+Aromatic	(F+H+W+Y)		40		14.085
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	198		69.718
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	86		30.282
+Charged		(B+D+E+H+K+R+Z)		41		14.437
+Basic		(H+K+R)			24		 8.451
+Acidic		(B+D+E+Z)		17		 5.986
+
+PEPSTATS of mRNA_22501 from 1 to 253
+
+Molecular weight = 26036.82  		Residues = 253   
+Average Residue Weight  = 102.912 	Charge   = -3.5  
+Isoelectric Point = 5.0724
+A280 Molar Extinction Coefficient  = 43100   
+A280 Extinction Coefficient 1mg/ml = 1.66      
+Improbability of expression in inclusion bodies = 0.771
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		38		15.020 		1.746  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		1		0.395  		0.136  	
+D = Asp		6		2.372  		0.431  	
+E = Glu		8		3.162  		0.527  	
+F = Phe		19		7.510  		2.086  	
+G = Gly		35		13.834 		1.647  	
+H = His		5		1.976  		0.988  	
+I = Ile		15		5.929  		1.318  	
+J = ---		0		0.000  		0.000  	
+K = Lys		4		1.581  		0.240  	
+L = Leu		23		9.091  		1.229  	
+M = Met		4		1.581  		0.930  	
+N = Asn		12		4.743  		1.103  	
+O = ---		0		0.000  		0.000  	
+P = Pro		12		4.743  		0.912  	
+Q = Gln		2		0.791  		0.203  	
+R = Arg		4		1.581  		0.323  	
+S = Ser		15		5.929  		0.847  	
+T = Thr		13		5.138  		0.842  	
+U = ---		0		0.000  		0.000  	
+V = Val		24		9.486  		1.437  	
+W = Trp		6		2.372  		1.824  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		7		2.767  		0.814  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		102		40.316
+Small		(A+B+C+D+G+N+P+S+T+V)	156		61.660
+Aliphatic	(A+I+L+V)		100		39.526
+Aromatic	(F+H+W+Y)		37		14.625
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	184		72.727
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	69		27.273
+Charged		(B+D+E+H+K+R+Z)		27		10.672
+Basic		(H+K+R)			13		 5.138
+Acidic		(B+D+E+Z)		14		 5.534
+
+PEPSTATS of mRNA_23048 from 1 to 253
+
+Molecular weight = 26064.87  		Residues = 253   
+Average Residue Weight  = 103.023 	Charge   = -3.5  
+Isoelectric Point = 5.0724
+A280 Molar Extinction Coefficient  = 43100   
+A280 Extinction Coefficient 1mg/ml = 1.65      
+Improbability of expression in inclusion bodies = 0.771
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		37		14.625 		1.701  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		1		0.395  		0.136  	
+D = Asp		6		2.372  		0.431  	
+E = Glu		8		3.162  		0.527  	
+F = Phe		19		7.510  		2.086  	
+G = Gly		35		13.834 		1.647  	
+H = His		5		1.976  		0.988  	
+I = Ile		15		5.929  		1.318  	
+J = ---		0		0.000  		0.000  	
+K = Lys		4		1.581  		0.240  	
+L = Leu		23		9.091  		1.229  	
+M = Met		4		1.581  		0.930  	
+N = Asn		12		4.743  		1.103  	
+O = ---		0		0.000  		0.000  	
+P = Pro		12		4.743  		0.912  	
+Q = Gln		2		0.791  		0.203  	
+R = Arg		4		1.581  		0.323  	
+S = Ser		15		5.929  		0.847  	
+T = Thr		13		5.138  		0.842  	
+U = ---		0		0.000  		0.000  	
+V = Val		25		9.881  		1.497  	
+W = Trp		6		2.372  		1.824  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		7		2.767  		0.814  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		101		39.921
+Small		(A+B+C+D+G+N+P+S+T+V)	156		61.660
+Aliphatic	(A+I+L+V)		100		39.526
+Aromatic	(F+H+W+Y)		37		14.625
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	184		72.727
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	69		27.273
+Charged		(B+D+E+H+K+R+Z)		27		10.672
+Basic		(H+K+R)			13		 5.138
+Acidic		(B+D+E+Z)		14		 5.534
+
+PEPSTATS of mRNA_23294 from 1 to 306
+
+Molecular weight = 31591.69  		Residues = 306   
+Average Residue Weight  = 103.241 	Charge   = 4.5   
+Isoelectric Point = 8.2180
+A280 Molar Extinction Coefficient  = 22190   
+A280 Extinction Coefficient 1mg/ml = 0.70      
+Improbability of expression in inclusion bodies = 0.867
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		41		13.399 		1.558  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		5		1.634  		0.563  	
+D = Asp		5		1.634  		0.297  	
+E = Glu		14		4.575  		0.763  	
+F = Phe		17		5.556  		1.543  	
+G = Gly		32		10.458 		1.245  	
+H = His		5		1.634  		0.817  	
+I = Ile		17		5.556  		1.235  	
+J = ---		0		0.000  		0.000  	
+K = Lys		13		4.248  		0.644  	
+L = Leu		29		9.477  		1.281  	
+M = Met		7		2.288  		1.346  	
+N = Asn		10		3.268  		0.760  	
+O = ---		0		0.000  		0.000  	
+P = Pro		21		6.863  		1.320  	
+Q = Gln		3		0.980  		0.251  	
+R = Arg		8		2.614  		0.534  	
+S = Ser		21		6.863  		0.980  	
+T = Thr		24		7.843  		1.286  	
+U = ---		0		0.000  		0.000  	
+V = Val		27		8.824  		1.337  	
+W = Trp		3		0.980  		0.754  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		4		1.307  		0.384  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		123		40.196
+Small		(A+B+C+D+G+N+P+S+T+V)	186		60.784
+Aliphatic	(A+I+L+V)		114		37.255
+Aromatic	(F+H+W+Y)		29		 9.477
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	203		66.340
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	103		33.660
+Charged		(B+D+E+H+K+R+Z)		45		14.706
+Basic		(H+K+R)			26		 8.497
+Acidic		(B+D+E+Z)		19		 6.209
+
+PEPSTATS of mRNA_23852 from 1 to 248
+
+Molecular weight = 25314.34  		Residues = 248   
+Average Residue Weight  = 102.074 	Charge   = -1.5  
+Isoelectric Point = 5.9583
+A280 Molar Extinction Coefficient  = 28590   
+A280 Extinction Coefficient 1mg/ml = 1.13      
+Improbability of expression in inclusion bodies = 0.760
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		37		14.919 		1.735  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		2		0.806  		0.278  	
+D = Asp		6		2.419  		0.440  	
+E = Glu		5		2.016  		0.336  	
+F = Phe		19		7.661  		2.128  	
+G = Gly		35		14.113 		1.680  	
+H = His		5		2.016  		1.008  	
+I = Ile		28		11.290 		2.509  	
+J = ---		0		0.000  		0.000  	
+K = Lys		5		2.016  		0.305  	
+L = Leu		20		8.065  		1.090  	
+M = Met		2		0.806  		0.474  	
+N = Asn		8		3.226  		0.750  	
+O = ---		0		0.000  		0.000  	
+P = Pro		10		4.032  		0.775  	
+Q = Gln		3		1.210  		0.310  	
+R = Arg		2		0.806  		0.165  	
+S = Ser		15		6.048  		0.864  	
+T = Thr		13		5.242  		0.859  	
+U = ---		0		0.000  		0.000  	
+V = Val		21		8.468  		1.283  	
+W = Trp		3		1.210  		0.931  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		9		3.629  		1.067  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		102		41.129
+Small		(A+B+C+D+G+N+P+S+T+V)	147		59.274
+Aliphatic	(A+I+L+V)		106		42.742
+Aromatic	(F+H+W+Y)		36		14.516
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	186		75.000
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	62		25.000
+Charged		(B+D+E+H+K+R+Z)		23		 9.274
+Basic		(H+K+R)			12		 4.839
+Acidic		(B+D+E+Z)		11		 4.435
+
+PEPSTATS of mRNA_24155 from 1 to 257
+
+Molecular weight = 26752.98  		Residues = 257   
+Average Residue Weight  = 104.097 	Charge   = 1.5   
+Isoelectric Point = 6.8896
+A280 Molar Extinction Coefficient  = 17780   
+A280 Extinction Coefficient 1mg/ml = 0.66      
+Improbability of expression in inclusion bodies = 0.709
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		40		15.564 		1.810  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		1		0.389  		0.134  	
+D = Asp		6		2.335  		0.424  	
+E = Glu		8		3.113  		0.519  	
+F = Phe		17		6.615  		1.837  	
+G = Gly		23		8.949  		1.065  	
+H = His		7		2.724  		1.362  	
+I = Ile		21		8.171  		1.816  	
+J = ---		0		0.000  		0.000  	
+K = Lys		6		2.335  		0.354  	
+L = Leu		23		8.949  		1.209  	
+M = Met		5		1.946  		1.144  	
+N = Asn		7		2.724  		0.633  	
+O = ---		0		0.000  		0.000  	
+P = Pro		15		5.837  		1.122  	
+Q = Gln		8		3.113  		0.798  	
+R = Arg		6		2.335  		0.476  	
+S = Ser		17		6.615  		0.945  	
+T = Thr		18		7.004  		1.148  	
+U = ---		0		0.000  		0.000  	
+V = Val		22		8.560  		1.297  	
+W = Trp		2		0.778  		0.599  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		5		1.946  		0.572  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		99		38.521
+Small		(A+B+C+D+G+N+P+S+T+V)	149		57.977
+Aliphatic	(A+I+L+V)		106		41.245
+Aromatic	(F+H+W+Y)		31		12.062
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	174		67.704
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	83		32.296
+Charged		(B+D+E+H+K+R+Z)		33		12.840
+Basic		(H+K+R)			19		 7.393
+Acidic		(B+D+E+Z)		14		 5.447
+
+PEPSTATS of mRNA_24472 from 1 to 241
+
+Molecular weight = 25438.09  		Residues = 241   
+Average Residue Weight  = 105.552 	Charge   = 12.0  
+Isoelectric Point = 10.6999
+A280 Molar Extinction Coefficient  = 44950   
+A280 Extinction Coefficient 1mg/ml = 1.77      
+Improbability of expression in inclusion bodies = 0.902
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		28		11.618 		1.351  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		1		0.415  		0.143  	
+D = Asp		2		0.830  		0.151  	
+E = Glu		4		1.660  		0.277  	
+F = Phe		19		7.884  		2.190  	
+G = Gly		26		10.788 		1.284  	
+H = His		2		0.830  		0.415  	
+I = Ile		14		5.809  		1.291  	
+J = ---		0		0.000  		0.000  	
+K = Lys		13		5.394  		0.817  	
+L = Leu		27		11.203 		1.514  	
+M = Met		7		2.905  		1.709  	
+N = Asn		7		2.905  		0.675  	
+O = ---		0		0.000  		0.000  	
+P = Pro		15		6.224  		1.197  	
+Q = Gln		4		1.660  		0.426  	
+R = Arg		4		1.660  		0.339  	
+S = Ser		19		7.884  		1.126  	
+T = Thr		16		6.639  		1.088  	
+U = ---		0		0.000  		0.000  	
+V = Val		22		9.129  		1.383  	
+W = Trp		7		2.905  		2.234  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		4		1.660  		0.488  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		90		37.344
+Small		(A+B+C+D+G+N+P+S+T+V)	136		56.432
+Aliphatic	(A+I+L+V)		91		37.759
+Aromatic	(F+H+W+Y)		32		13.278
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	170		70.539
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	71		29.461
+Charged		(B+D+E+H+K+R+Z)		25		10.373
+Basic		(H+K+R)			19		 7.884
+Acidic		(B+D+E+Z)		6		 2.490
+
+PEPSTATS of mRNA_24459 from 1 to 241
+
+Molecular weight = 25826.64  		Residues = 241   
+Average Residue Weight  = 107.164 	Charge   = 11.0  
+Isoelectric Point = 10.4721
+A280 Molar Extinction Coefficient  = 40540   
+A280 Extinction Coefficient 1mg/ml = 1.57      
+Improbability of expression in inclusion bodies = 0.871
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		28		11.618 		1.351  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		1		0.415  		0.143  	
+D = Asp		2		0.830  		0.151  	
+E = Glu		6		2.490  		0.415  	
+F = Phe		20		8.299  		2.305  	
+G = Gly		24		9.959  		1.186  	
+H = His		2		0.830  		0.415  	
+I = Ile		17		7.054  		1.568  	
+J = ---		0		0.000  		0.000  	
+K = Lys		14		5.809  		0.880  	
+L = Leu		28		11.618 		1.570  	
+M = Met		7		2.905  		1.709  	
+N = Asn		9		3.734  		0.868  	
+O = ---		0		0.000  		0.000  	
+P = Pro		13		5.394  		1.037  	
+Q = Gln		6		2.490  		0.638  	
+R = Arg		4		1.660  		0.339  	
+S = Ser		15		6.224  		0.889  	
+T = Thr		13		5.394  		0.884  	
+U = ---		0		0.000  		0.000  	
+V = Val		21		8.714  		1.320  	
+W = Trp		6		2.490  		1.915  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		5		2.075  		0.610  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		81		33.610
+Small		(A+B+C+D+G+N+P+S+T+V)	126		52.282
+Aliphatic	(A+I+L+V)		94		39.004
+Aromatic	(F+H+W+Y)		33		13.693
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	170		70.539
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	71		29.461
+Charged		(B+D+E+H+K+R+Z)		28		11.618
+Basic		(H+K+R)			20		 8.299
+Acidic		(B+D+E+Z)		8		 3.320
+
+PEPSTATS of mRNA_24856 from 1 to 274
+
+Molecular weight = 28781.65  		Residues = 274   
+Average Residue Weight  = 105.043 	Charge   = 6.0   
+Isoelectric Point = 8.7948
+A280 Molar Extinction Coefficient  = 26030   
+A280 Extinction Coefficient 1mg/ml = 0.90      
+Improbability of expression in inclusion bodies = 0.861
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		34		12.409 		1.443  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		3		1.095  		0.378  	
+D = Asp		6		2.190  		0.398  	
+E = Glu		8		2.920  		0.487  	
+F = Phe		13		4.745  		1.318  	
+G = Gly		21		7.664  		0.912  	
+H = His		6		2.190  		1.095  	
+I = Ile		24		8.759  		1.946  	
+J = ---		0		0.000  		0.000  	
+K = Lys		10		3.650  		0.553  	
+L = Leu		23		8.394  		1.134  	
+M = Met		8		2.920  		1.717  	
+N = Asn		6		2.190  		0.509  	
+O = ---		0		0.000  		0.000  	
+P = Pro		17		6.204  		1.193  	
+Q = Gln		6		2.190  		0.561  	
+R = Arg		7		2.555  		0.521  	
+S = Ser		28		10.219 		1.460  	
+T = Thr		16		5.839  		0.957  	
+U = ---		0		0.000  		0.000  	
+V = Val		28		10.219 		1.548  	
+W = Trp		3		1.095  		0.842  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		7		2.555  		0.751  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		102		37.226
+Small		(A+B+C+D+G+N+P+S+T+V)	159		58.029
+Aliphatic	(A+I+L+V)		109		39.781
+Aromatic	(F+H+W+Y)		29		10.584
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	181		66.058
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	93		33.942
+Charged		(B+D+E+H+K+R+Z)		37		13.504
+Basic		(H+K+R)			23		 8.394
+Acidic		(B+D+E+Z)		14		 5.109
+
+PEPSTATS of mRNA_25292 from 1 to 283
+
+Molecular weight = 30179.94  		Residues = 283   
+Average Residue Weight  = 106.643 	Charge   = 6.5   
+Isoelectric Point = 8.7872
+A280 Molar Extinction Coefficient  = 26030   
+A280 Extinction Coefficient 1mg/ml = 0.86      
+Improbability of expression in inclusion bodies = 0.833
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		30		10.601 		1.233  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		3		1.060  		0.366  	
+D = Asp		9		3.180  		0.578  	
+E = Glu		9		3.180  		0.530  	
+F = Phe		15		5.300  		1.472  	
+G = Gly		21		7.420  		0.883  	
+H = His		7		2.473  		1.237  	
+I = Ile		23		8.127  		1.806  	
+J = ---		0		0.000  		0.000  	
+K = Lys		13		4.594  		0.696  	
+L = Leu		20		7.067  		0.955  	
+M = Met		9		3.180  		1.871  	
+N = Asn		6		2.120  		0.493  	
+O = ---		0		0.000  		0.000  	
+P = Pro		15		5.300  		1.019  	
+Q = Gln		8		2.827  		0.725  	
+R = Arg		8		2.827  		0.577  	
+S = Ser		29		10.247 		1.464  	
+T = Thr		22		7.774  		1.274  	
+U = ---		0		0.000  		0.000  	
+V = Val		26		9.187  		1.392  	
+W = Trp		3		1.060  		0.815  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		7		2.473  		0.727  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		105		37.102
+Small		(A+B+C+D+G+N+P+S+T+V)	161		56.890
+Aliphatic	(A+I+L+V)		99		34.982
+Aromatic	(F+H+W+Y)		32		11.307
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	172		60.777
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	111		39.223
+Charged		(B+D+E+H+K+R+Z)		46		16.254
+Basic		(H+K+R)			28		 9.894
+Acidic		(B+D+E+Z)		18		 6.360
+
+PEPSTATS of mRNA_25656 from 1 to 281
+
+Molecular weight = 30027.79  		Residues = 281   
+Average Residue Weight  = 106.860 	Charge   = 9.0   
+Isoelectric Point = 9.1382
+A280 Molar Extinction Coefficient  = 26030   
+A280 Extinction Coefficient 1mg/ml = 0.87      
+Improbability of expression in inclusion bodies = 0.860
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		30		10.676 		1.241  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		4		1.423  		0.491  	
+D = Asp		7		2.491  		0.453  	
+E = Glu		10		3.559  		0.593  	
+F = Phe		14		4.982  		1.384  	
+G = Gly		20		7.117  		0.847  	
+H = His		8		2.847  		1.423  	
+I = Ile		23		8.185  		1.819  	
+J = ---		0		0.000  		0.000  	
+K = Lys		14		4.982  		0.755  	
+L = Leu		20		7.117  		0.962  	
+M = Met		8		2.847  		1.675  	
+N = Asn		7		2.491  		0.579  	
+O = ---		0		0.000  		0.000  	
+P = Pro		14		4.982  		0.958  	
+Q = Gln		8		2.847  		0.730  	
+R = Arg		8		2.847  		0.581  	
+S = Ser		29		10.320 		1.474  	
+T = Thr		21		7.473  		1.225  	
+U = ---		0		0.000  		0.000  	
+V = Val		26		9.253  		1.402  	
+W = Trp		3		1.068  		0.821  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		7		2.491  		0.733  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		104		37.011
+Small		(A+B+C+D+G+N+P+S+T+V)	158		56.228
+Aliphatic	(A+I+L+V)		99		35.231
+Aromatic	(F+H+W+Y)		32		11.388
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	169		60.142
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	112		39.858
+Charged		(B+D+E+H+K+R+Z)		47		16.726
+Basic		(H+K+R)			30		10.676
+Acidic		(B+D+E+Z)		17		 6.050
+
+PEPSTATS of mRNA_26306 from 1 to 221
+
+Molecular weight = 23177.87  		Residues = 221   
+Average Residue Weight  = 104.877 	Charge   = 2.5   
+Isoelectric Point = 7.1938
+A280 Molar Extinction Coefficient  = 12090   
+A280 Extinction Coefficient 1mg/ml = 0.52      
+Improbability of expression in inclusion bodies = 0.751
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		27		12.217 		1.421  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		3		1.357  		0.468  	
+D = Asp		6		2.715  		0.494  	
+E = Glu		8		3.620  		0.603  	
+F = Phe		12		5.430  		1.508  	
+G = Gly		18		8.145  		0.970  	
+H = His		7		3.167  		1.584  	
+I = Ile		20		9.050  		2.011  	
+J = ---		0		0.000  		0.000  	
+K = Lys		10		4.525  		0.686  	
+L = Leu		16		7.240  		0.978  	
+M = Met		7		3.167  		1.863  	
+N = Asn		5		2.262  		0.526  	
+O = ---		0		0.000  		0.000  	
+P = Pro		11		4.977  		0.957  	
+Q = Gln		5		2.262  		0.580  	
+R = Arg		3		1.357  		0.277  	
+S = Ser		21		9.502  		1.357  	
+T = Thr		17		7.692  		1.261  	
+U = ---		0		0.000  		0.000  	
+V = Val		19		8.597  		1.303  	
+W = Trp		1		0.452  		0.348  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		5		2.262  		0.665  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		86		38.914
+Small		(A+B+C+D+G+N+P+S+T+V)	127		57.466
+Aliphatic	(A+I+L+V)		82		37.104
+Aromatic	(F+H+W+Y)		25		11.312
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	139		62.896
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	82		37.104
+Charged		(B+D+E+H+K+R+Z)		34		15.385
+Basic		(H+K+R)			20		 9.050
+Acidic		(B+D+E+Z)		14		 6.335
+
+PEPSTATS of mRNA_26679 from 1 to 272
+
+Molecular weight = 29230.82  		Residues = 272   
+Average Residue Weight  = 107.466 	Charge   = 1.5   
+Isoelectric Point = 6.8839
+A280 Molar Extinction Coefficient  = 33000   
+A280 Extinction Coefficient 1mg/ml = 1.13      
+Improbability of expression in inclusion bodies = 0.800
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		22		8.088  		0.940  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		2		0.735  		0.254  	
+D = Asp		7		2.574  		0.468  	
+E = Glu		11		4.044  		0.674  	
+F = Phe		18		6.618  		1.838  	
+G = Gly		25		9.191  		1.094  	
+H = His		7		2.574  		1.287  	
+I = Ile		17		6.250  		1.389  	
+J = ---		0		0.000  		0.000  	
+K = Lys		10		3.676  		0.557  	
+L = Leu		28		10.294 		1.391  	
+M = Met		7		2.574  		1.514  	
+N = Asn		9		3.309  		0.769  	
+O = ---		0		0.000  		0.000  	
+P = Pro		13		4.779  		0.919  	
+Q = Gln		6		2.206  		0.566  	
+R = Arg		6		2.206  		0.450  	
+S = Ser		27		9.926  		1.418  	
+T = Thr		16		5.882  		0.964  	
+U = ---		0		0.000  		0.000  	
+V = Val		29		10.662 		1.615  	
+W = Trp		4		1.471  		1.131  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		8		2.941  		0.865  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		92		33.824
+Small		(A+B+C+D+G+N+P+S+T+V)	150		55.147
+Aliphatic	(A+I+L+V)		96		35.294
+Aromatic	(F+H+W+Y)		37		13.603
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	173		63.603
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	99		36.397
+Charged		(B+D+E+H+K+R+Z)		41		15.074
+Basic		(H+K+R)			23		 8.456
+Acidic		(B+D+E+Z)		18		 6.618
+
+PEPSTATS of mRNA_27082 from 1 to 271
+
+Molecular weight = 28836.46  		Residues = 271   
+Average Residue Weight  = 106.408 	Charge   = 6.5   
+Isoelectric Point = 8.8028
+A280 Molar Extinction Coefficient  = 20340   
+A280 Extinction Coefficient 1mg/ml = 0.71      
+Improbability of expression in inclusion bodies = 0.895
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		24		8.856  		1.030  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		3		1.107  		0.382  	
+D = Asp		6		2.214  		0.403  	
+E = Glu		7		2.583  		0.431  	
+F = Phe		15		5.535  		1.538  	
+G = Gly		24		8.856  		1.054  	
+H = His		7		2.583  		1.292  	
+I = Ile		19		7.011  		1.558  	
+J = ---		0		0.000  		0.000  	
+K = Lys		8		2.952  		0.447  	
+L = Leu		25		9.225  		1.247  	
+M = Met		7		2.583  		1.519  	
+N = Asn		16		5.904  		1.373  	
+O = ---		0		0.000  		0.000  	
+P = Pro		16		5.904  		1.135  	
+Q = Gln		6		2.214  		0.568  	
+R = Arg		8		2.952  		0.602  	
+S = Ser		20		7.380  		1.054  	
+T = Thr		20		7.380  		1.210  	
+U = ---		0		0.000  		0.000  	
+V = Val		31		11.439 		1.733  	
+W = Trp		2		0.738  		0.568  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		7		2.583  		0.760  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		91		33.579
+Small		(A+B+C+D+G+N+P+S+T+V)	160		59.041
+Aliphatic	(A+I+L+V)		99		36.531
+Aromatic	(F+H+W+Y)		31		11.439
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	173		63.838
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	98		36.162
+Charged		(B+D+E+H+K+R+Z)		36		13.284
+Basic		(H+K+R)			23		 8.487
+Acidic		(B+D+E+Z)		13		 4.797
+
+PEPSTATS of mRNA_27158 from 1 to 237
+
+Molecular weight = 25153.68  		Residues = 237   
+Average Residue Weight  = 106.134 	Charge   = 5.5   
+Isoelectric Point = 9.4168
+A280 Molar Extinction Coefficient  = 41820   
+A280 Extinction Coefficient 1mg/ml = 1.66      
+Improbability of expression in inclusion bodies = 0.827
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		31		13.080 		1.521  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		2		0.844  		0.291  	
+D = Asp		5		2.110  		0.384  	
+E = Glu		3		1.266  		0.211  	
+F = Phe		19		8.017  		2.227  	
+G = Gly		24		10.127 		1.206  	
+H = His		3		1.266  		0.633  	
+I = Ile		14		5.907  		1.313  	
+J = ---		0		0.000  		0.000  	
+K = Lys		8		3.376  		0.511  	
+L = Leu		27		11.392 		1.540  	
+M = Met		8		3.376  		1.986  	
+N = Asn		8		3.376  		0.785  	
+O = ---		0		0.000  		0.000  	
+P = Pro		11		4.641  		0.893  	
+Q = Gln		5		2.110  		0.541  	
+R = Arg		4		1.688  		0.344  	
+S = Ser		13		5.485  		0.784  	
+T = Thr		16		6.751  		1.107  	
+U = ---		0		0.000  		0.000  	
+V = Val		24		10.127 		1.534  	
+W = Trp		6		2.532  		1.947  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		6		2.532  		0.745  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		86		36.287
+Small		(A+B+C+D+G+N+P+S+T+V)	134		56.540
+Aliphatic	(A+I+L+V)		96		40.506
+Aromatic	(F+H+W+Y)		34		14.346
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	172		72.574
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	65		27.426
+Charged		(B+D+E+H+K+R+Z)		23		 9.705
+Basic		(H+K+R)			15		 6.329
+Acidic		(B+D+E+Z)		8		 3.376
+
+PEPSTATS of mRNA_27801 from 1 to 287
+
+Molecular weight = 30222.87  		Residues = 287   
+Average Residue Weight  = 105.306 	Charge   = 3.5   
+Isoelectric Point = 7.8784
+A280 Molar Extinction Coefficient  = 42530   
+A280 Extinction Coefficient 1mg/ml = 1.41      
+Improbability of expression in inclusion bodies = 0.841
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		34		11.847 		1.378  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		5		1.742  		0.601  	
+D = Asp		12		4.181  		0.760  	
+E = Glu		6		2.091  		0.348  	
+F = Phe		18		6.272  		1.742  	
+G = Gly		37		12.892 		1.535  	
+H = His		5		1.742  		0.871  	
+I = Ile		26		9.059  		2.013  	
+J = ---		0		0.000  		0.000  	
+K = Lys		11		3.833  		0.581  	
+L = Leu		24		8.362  		1.130  	
+M = Met		3		1.045  		0.615  	
+N = Asn		9		3.136  		0.729  	
+O = ---		0		0.000  		0.000  	
+P = Pro		14		4.878  		0.938  	
+Q = Gln		6		2.091  		0.536  	
+R = Arg		8		2.787  		0.569  	
+S = Ser		17		5.923  		0.846  	
+T = Thr		15		5.226  		0.857  	
+U = ---		0		0.000  		0.000  	
+V = Val		21		7.317  		1.109  	
+W = Trp		5		1.742  		1.340  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		11		3.833  		1.127  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		108		37.631
+Small		(A+B+C+D+G+N+P+S+T+V)	164		57.143
+Aliphatic	(A+I+L+V)		105		36.585
+Aromatic	(F+H+W+Y)		39		13.589
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	198		68.990
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	89		31.010
+Charged		(B+D+E+H+K+R+Z)		42		14.634
+Basic		(H+K+R)			24		 8.362
+Acidic		(B+D+E+Z)		18		 6.272
+
+PEPSTATS of mRNA_28002 from 1 to 284
+
+Molecular weight = 30111.87  		Residues = 284   
+Average Residue Weight  = 106.028 	Charge   = 5.0   
+Isoelectric Point = 8.2928
+A280 Molar Extinction Coefficient  = 45090   
+A280 Extinction Coefficient 1mg/ml = 1.50      
+Improbability of expression in inclusion bodies = 0.823
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		36		12.676 		1.474  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		4		1.408  		0.486  	
+D = Asp		11		3.873  		0.704  	
+E = Glu		6		2.113  		0.352  	
+F = Phe		17		5.986  		1.663  	
+G = Gly		34		11.972 		1.425  	
+H = His		6		2.113  		1.056  	
+I = Ile		26		9.155  		2.034  	
+J = ---		0		0.000  		0.000  	
+K = Lys		11		3.873  		0.587  	
+L = Leu		23		8.099  		1.094  	
+M = Met		5		1.761  		1.036  	
+N = Asn		8		2.817  		0.655  	
+O = ---		0		0.000  		0.000  	
+P = Pro		14		4.930  		0.948  	
+Q = Gln		5		1.761  		0.451  	
+R = Arg		8		2.817  		0.575  	
+S = Ser		16		5.634  		0.805  	
+T = Thr		15		5.282  		0.866  	
+U = ---		0		0.000  		0.000  	
+V = Val		21		7.394  		1.120  	
+W = Trp		5		1.761  		1.354  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		13		4.577  		1.346  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		105		36.972
+Small		(A+B+C+D+G+N+P+S+T+V)	159		55.986
+Aliphatic	(A+I+L+V)		106		37.324
+Aromatic	(F+H+W+Y)		41		14.437
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	198		69.718
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	86		30.282
+Charged		(B+D+E+H+K+R+Z)		42		14.789
+Basic		(H+K+R)			25		 8.803
+Acidic		(B+D+E+Z)		17		 5.986
+
+PEPSTATS of mRNA_28817 from 1 to 260
+
+Molecular weight = 27952.36  		Residues = 260   
+Average Residue Weight  = 107.509 	Charge   = 3.5   
+Isoelectric Point = 7.3698
+A280 Molar Extinction Coefficient  = 48220   
+A280 Extinction Coefficient 1mg/ml = 1.73      
+Improbability of expression in inclusion bodies = 0.747
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		33		12.692 		1.476  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		0		0.000  		0.000  	
+D = Asp		7		2.692  		0.490  	
+E = Glu		10		3.846  		0.641  	
+F = Phe		15		5.769  		1.603  	
+G = Gly		30		11.538 		1.374  	
+H = His		9		3.462  		1.731  	
+I = Ile		23		8.846  		1.966  	
+J = ---		0		0.000  		0.000  	
+K = Lys		5		1.923  		0.291  	
+L = Leu		24		9.231  		1.247  	
+M = Met		5		1.923  		1.131  	
+N = Asn		7		2.692  		0.626  	
+O = ---		0		0.000  		0.000  	
+P = Pro		16		6.154  		1.183  	
+Q = Gln		3		1.154  		0.296  	
+R = Arg		11		4.231  		0.863  	
+S = Ser		11		4.231  		0.604  	
+T = Thr		14		5.385  		0.883  	
+U = ---		0		0.000  		0.000  	
+V = Val		20		7.692  		1.166  	
+W = Trp		6		2.308  		1.775  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		11		4.231  		1.244  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		88		33.846
+Small		(A+B+C+D+G+N+P+S+T+V)	138		53.077
+Aliphatic	(A+I+L+V)		100		38.462
+Aromatic	(F+H+W+Y)		41		15.769
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	183		70.385
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	77		29.615
+Charged		(B+D+E+H+K+R+Z)		42		16.154
+Basic		(H+K+R)			25		 9.615
+Acidic		(B+D+E+Z)		17		 6.538
+
+PEPSTATS of mRNA_29310 from 1 to 249
+
+Molecular weight = 25176.18  		Residues = 249   
+Average Residue Weight  = 101.109 	Charge   = -3.5  
+Isoelectric Point = 4.6969
+A280 Molar Extinction Coefficient  = 28590   
+A280 Extinction Coefficient 1mg/ml = 1.14      
+Improbability of expression in inclusion bodies = 0.792
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		34		13.655 		1.588  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		3		1.205  		0.415  	
+D = Asp		7		2.811  		0.511  	
+E = Glu		5		2.008  		0.335  	
+F = Phe		19		7.631  		2.120  	
+G = Gly		36		14.458 		1.721  	
+H = His		3		1.205  		0.602  	
+I = Ile		21		8.434  		1.874  	
+J = ---		0		0.000  		0.000  	
+K = Lys		6		2.410  		0.365  	
+L = Leu		22		8.835  		1.194  	
+M = Met		2		0.803  		0.472  	
+N = Asn		7		2.811  		0.654  	
+O = ---		0		0.000  		0.000  	
+P = Pro		11		4.418  		0.850  	
+Q = Gln		1		0.402  		0.103  	
+R = Arg		1		0.402  		0.082  	
+S = Ser		19		7.631  		1.090  	
+T = Thr		12		4.819  		0.790  	
+U = ---		0		0.000  		0.000  	
+V = Val		28		11.245 		1.704  	
+W = Trp		3		1.205  		0.927  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		9		3.614  		1.063  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		104		41.767
+Small		(A+B+C+D+G+N+P+S+T+V)	157		63.052
+Aliphatic	(A+I+L+V)		105		42.169
+Aromatic	(F+H+W+Y)		34		13.655
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	188		75.502
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	61		24.498
+Charged		(B+D+E+H+K+R+Z)		22		 8.835
+Basic		(H+K+R)			10		 4.016
+Acidic		(B+D+E+Z)		12		 4.819
+
+PEPSTATS of mRNA_29788 from 1 to 286
+
+Molecular weight = 30708.65  		Residues = 286   
+Average Residue Weight  = 107.373 	Charge   = 8.5   
+Isoelectric Point = 9.4463
+A280 Molar Extinction Coefficient  = 41250   
+A280 Extinction Coefficient 1mg/ml = 1.34      
+Improbability of expression in inclusion bodies = 0.798
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		37		12.937 		1.504  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		2		0.699  		0.241  	
+D = Asp		9		3.147  		0.572  	
+E = Glu		10		3.497  		0.583  	
+F = Phe		20		6.993  		1.943  	
+G = Gly		31		10.839 		1.290  	
+H = His		7		2.448  		1.224  	
+I = Ile		23		8.042  		1.787  	
+J = ---		0		0.000  		0.000  	
+K = Lys		12		4.196  		0.636  	
+L = Leu		22		7.692  		1.040  	
+M = Met		4		1.399  		0.823  	
+N = Asn		5		1.748  		0.407  	
+O = ---		0		0.000  		0.000  	
+P = Pro		16		5.594  		1.076  	
+Q = Gln		7		2.448  		0.628  	
+R = Arg		12		4.196  		0.856  	
+S = Ser		12		4.196  		0.599  	
+T = Thr		17		5.944  		0.974  	
+U = ---		0		0.000  		0.000  	
+V = Val		25		8.741  		1.324  	
+W = Trp		5		1.748  		1.345  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		10		3.497  		1.028  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		99		34.615
+Small		(A+B+C+D+G+N+P+S+T+V)	154		53.846
+Aliphatic	(A+I+L+V)		107		37.413
+Aromatic	(F+H+W+Y)		42		14.685
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	195		68.182
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	91		31.818
+Charged		(B+D+E+H+K+R+Z)		50		17.483
+Basic		(H+K+R)			31		10.839
+Acidic		(B+D+E+Z)		19		 6.643
+
+PEPSTATS of mRNA_30540 from 1 to 249
+
+Molecular weight = 25274.17  		Residues = 249   
+Average Residue Weight  = 101.503 	Charge   = -3.5  
+Isoelectric Point = 4.6969
+A280 Molar Extinction Coefficient  = 29870   
+A280 Extinction Coefficient 1mg/ml = 1.18      
+Improbability of expression in inclusion bodies = 0.802
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		33		13.253 		1.541  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		2		0.803  		0.277  	
+D = Asp		7		2.811  		0.511  	
+E = Glu		5		2.008  		0.335  	
+F = Phe		19		7.631  		2.120  	
+G = Gly		35		14.056 		1.673  	
+H = His		3		1.205  		0.602  	
+I = Ile		21		8.434  		1.874  	
+J = ---		0		0.000  		0.000  	
+K = Lys		6		2.410  		0.365  	
+L = Leu		22		8.835  		1.194  	
+M = Met		2		0.803  		0.472  	
+N = Asn		7		2.811  		0.654  	
+O = ---		0		0.000  		0.000  	
+P = Pro		10		4.016  		0.772  	
+Q = Gln		1		0.402  		0.103  	
+R = Arg		1		0.402  		0.082  	
+S = Ser		22		8.835  		1.262  	
+T = Thr		13		5.221  		0.856  	
+U = ---		0		0.000  		0.000  	
+V = Val		27		10.843 		1.643  	
+W = Trp		3		1.205  		0.927  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		10		4.016  		1.181  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		105		42.169
+Small		(A+B+C+D+G+N+P+S+T+V)	156		62.651
+Aliphatic	(A+I+L+V)		103		41.365
+Aromatic	(F+H+W+Y)		35		14.056
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	184		73.896
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	65		26.104
+Charged		(B+D+E+H+K+R+Z)		22		 8.835
+Basic		(H+K+R)			10		 4.016
+Acidic		(B+D+E+Z)		12		 4.819
+
+PEPSTATS of mRNA_30981 from 1 to 286
+
+Molecular weight = 30740.71  		Residues = 286   
+Average Residue Weight  = 107.485 	Charge   = 8.5   
+Isoelectric Point = 9.4463
+A280 Molar Extinction Coefficient  = 41250   
+A280 Extinction Coefficient 1mg/ml = 1.34      
+Improbability of expression in inclusion bodies = 0.798
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		37		12.937 		1.504  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		2		0.699  		0.241  	
+D = Asp		9		3.147  		0.572  	
+E = Glu		10		3.497  		0.583  	
+F = Phe		20		6.993  		1.943  	
+G = Gly		31		10.839 		1.290  	
+H = His		7		2.448  		1.224  	
+I = Ile		23		8.042  		1.787  	
+J = ---		0		0.000  		0.000  	
+K = Lys		12		4.196  		0.636  	
+L = Leu		22		7.692  		1.040  	
+M = Met		5		1.748  		1.028  	
+N = Asn		5		1.748  		0.407  	
+O = ---		0		0.000  		0.000  	
+P = Pro		16		5.594  		1.076  	
+Q = Gln		7		2.448  		0.628  	
+R = Arg		12		4.196  		0.856  	
+S = Ser		12		4.196  		0.599  	
+T = Thr		17		5.944  		0.974  	
+U = ---		0		0.000  		0.000  	
+V = Val		24		8.392  		1.271  	
+W = Trp		5		1.748  		1.345  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		10		3.497  		1.028  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		99		34.615
+Small		(A+B+C+D+G+N+P+S+T+V)	153		53.497
+Aliphatic	(A+I+L+V)		106		37.063
+Aromatic	(F+H+W+Y)		42		14.685
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	195		68.182
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	91		31.818
+Charged		(B+D+E+H+K+R+Z)		50		17.483
+Basic		(H+K+R)			31		10.839
+Acidic		(B+D+E+Z)		19		 6.643
+
+PEPSTATS of mRNA_31053 from 1 to 161
+
+Molecular weight = 17127.33  		Residues = 161   
+Average Residue Weight  = 106.381 	Charge   = 4.0   
+Isoelectric Point = 8.1023
+A280 Molar Extinction Coefficient  = 16500   
+A280 Extinction Coefficient 1mg/ml = 0.96      
+Improbability of expression in inclusion bodies = 0.565
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		21		13.043 		1.517  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		3		1.863  		0.643  	
+D = Asp		4		2.484  		0.452  	
+E = Glu		2		1.242  		0.207  	
+F = Phe		7		4.348  		1.208  	
+G = Gly		12		7.453  		0.887  	
+H = His		6		3.727  		1.863  	
+I = Ile		8		4.969  		1.104  	
+J = ---		0		0.000  		0.000  	
+K = Lys		4		2.484  		0.376  	
+L = Leu		21		13.043 		1.763  	
+M = Met		9		5.590  		3.288  	
+N = Asn		5		3.106  		0.722  	
+O = ---		0		0.000  		0.000  	
+P = Pro		4		2.484  		0.478  	
+Q = Gln		4		2.484  		0.637  	
+R = Arg		3		1.863  		0.380  	
+S = Ser		7		4.348  		0.621  	
+T = Thr		16		9.938  		1.629  	
+U = ---		0		0.000  		0.000  	
+V = Val		19		11.801 		1.788  	
+W = Trp		2		1.242  		0.956  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		4		2.484  		0.731  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		59		36.646
+Small		(A+B+C+D+G+N+P+S+T+V)	91		56.522
+Aliphatic	(A+I+L+V)		69		42.857
+Aromatic	(F+H+W+Y)		19		11.801
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	110		68.323
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	51		31.677
+Charged		(B+D+E+H+K+R+Z)		19		11.801
+Basic		(H+K+R)			13		 8.075
+Acidic		(B+D+E+Z)		6		 3.727
+
+PEPSTATS of mRNA_31465 from 1 to 301
+
+Molecular weight = 31215.02  		Residues = 301   
+Average Residue Weight  = 103.704 	Charge   = 4.5   
+Isoelectric Point = 8.0491
+A280 Molar Extinction Coefficient  = 28590   
+A280 Extinction Coefficient 1mg/ml = 0.92      
+Improbability of expression in inclusion bodies = 0.901
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		40		13.289 		1.545  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		7		2.326  		0.802  	
+D = Asp		7		2.326  		0.423  	
+E = Glu		8		2.658  		0.443  	
+F = Phe		14		4.651  		1.292  	
+G = Gly		31		10.299 		1.226  	
+H = His		5		1.661  		0.831  	
+I = Ile		16		5.316  		1.181  	
+J = ---		0		0.000  		0.000  	
+K = Lys		5		1.661  		0.252  	
+L = Leu		26		8.638  		1.167  	
+M = Met		7		2.326  		1.368  	
+N = Asn		10		3.322  		0.773  	
+O = ---		0		0.000  		0.000  	
+P = Pro		26		8.638  		1.661  	
+Q = Gln		6		1.993  		0.511  	
+R = Arg		12		3.987  		0.814  	
+S = Ser		21		6.977  		0.997  	
+T = Thr		22		7.309  		1.198  	
+U = ---		0		0.000  		0.000  	
+V = Val		26		8.638  		1.309  	
+W = Trp		3		0.997  		0.767  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		9		2.990  		0.879  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		121		40.199
+Small		(A+B+C+D+G+N+P+S+T+V)	190		63.123
+Aliphatic	(A+I+L+V)		108		35.880
+Aromatic	(F+H+W+Y)		31		10.299
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	205		68.106
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	96		31.894
+Charged		(B+D+E+H+K+R+Z)		37		12.292
+Basic		(H+K+R)			22		 7.309
+Acidic		(B+D+E+Z)		15		 4.983
+
+PEPSTATS of mRNA_32164 from 1 to 260
+
+Molecular weight = 27830.20  		Residues = 260   
+Average Residue Weight  = 107.039 	Charge   = 1.5   
+Isoelectric Point = 6.7985
+A280 Molar Extinction Coefficient  = 48220   
+A280 Extinction Coefficient 1mg/ml = 1.73      
+Improbability of expression in inclusion bodies = 0.714
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		33		12.692 		1.476  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		1		0.385  		0.133  	
+D = Asp		7		2.692  		0.490  	
+E = Glu		10		3.846  		0.641  	
+F = Phe		15		5.769  		1.603  	
+G = Gly		30		11.538 		1.374  	
+H = His		9		3.462  		1.731  	
+I = Ile		23		8.846  		1.966  	
+J = ---		0		0.000  		0.000  	
+K = Lys		5		1.923  		0.291  	
+L = Leu		24		9.231  		1.247  	
+M = Met		5		1.923  		1.131  	
+N = Asn		7		2.692  		0.626  	
+O = ---		0		0.000  		0.000  	
+P = Pro		16		6.154  		1.183  	
+Q = Gln		3		1.154  		0.296  	
+R = Arg		9		3.462  		0.706  	
+S = Ser		12		4.615  		0.659  	
+T = Thr		14		5.385  		0.883  	
+U = ---		0		0.000  		0.000  	
+V = Val		20		7.692  		1.166  	
+W = Trp		6		2.308  		1.775  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		11		4.231  		1.244  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		90		34.615
+Small		(A+B+C+D+G+N+P+S+T+V)	140		53.846
+Aliphatic	(A+I+L+V)		100		38.462
+Aromatic	(F+H+W+Y)		41		15.769
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	184		70.769
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	76		29.231
+Charged		(B+D+E+H+K+R+Z)		40		15.385
+Basic		(H+K+R)			23		 8.846
+Acidic		(B+D+E+Z)		17		 6.538
+
+PEPSTATS of mRNA_32733 from 1 to 260
+
+Molecular weight = 27911.26  		Residues = 260   
+Average Residue Weight  = 107.351 	Charge   = 2.5   
+Isoelectric Point = 7.0384
+A280 Molar Extinction Coefficient  = 48220   
+A280 Extinction Coefficient 1mg/ml = 1.73      
+Improbability of expression in inclusion bodies = 0.737
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		33		12.692 		1.476  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		0		0.000  		0.000  	
+D = Asp		7		2.692  		0.490  	
+E = Glu		10		3.846  		0.641  	
+F = Phe		15		5.769  		1.603  	
+G = Gly		30		11.538 		1.374  	
+H = His		9		3.462  		1.731  	
+I = Ile		23		8.846  		1.966  	
+J = ---		0		0.000  		0.000  	
+K = Lys		4		1.538  		0.233  	
+L = Leu		24		9.231  		1.247  	
+M = Met		5		1.923  		1.131  	
+N = Asn		7		2.692  		0.626  	
+O = ---		0		0.000  		0.000  	
+P = Pro		16		6.154  		1.183  	
+Q = Gln		3		1.154  		0.296  	
+R = Arg		11		4.231  		0.863  	
+S = Ser		12		4.615  		0.659  	
+T = Thr		14		5.385  		0.883  	
+U = ---		0		0.000  		0.000  	
+V = Val		20		7.692  		1.166  	
+W = Trp		6		2.308  		1.775  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		11		4.231  		1.244  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		89		34.231
+Small		(A+B+C+D+G+N+P+S+T+V)	139		53.462
+Aliphatic	(A+I+L+V)		100		38.462
+Aromatic	(F+H+W+Y)		41		15.769
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	183		70.385
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	77		29.615
+Charged		(B+D+E+H+K+R+Z)		41		15.769
+Basic		(H+K+R)			24		 9.231
+Acidic		(B+D+E+Z)		17		 6.538
+
+PEPSTATS of mRNA_33243 from 1 to 249
+
+Molecular weight = 25234.21  		Residues = 249   
+Average Residue Weight  = 101.342 	Charge   = -4.5  
+Isoelectric Point = 4.5201
+A280 Molar Extinction Coefficient  = 28590   
+A280 Extinction Coefficient 1mg/ml = 1.13      
+Improbability of expression in inclusion bodies = 0.759
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		34		13.655 		1.588  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		3		1.205  		0.415  	
+D = Asp		8		3.213  		0.584  	
+E = Glu		5		2.008  		0.335  	
+F = Phe		19		7.631  		2.120  	
+G = Gly		35		14.056 		1.673  	
+H = His		3		1.205  		0.602  	
+I = Ile		22		8.835  		1.963  	
+J = ---		0		0.000  		0.000  	
+K = Lys		6		2.410  		0.365  	
+L = Leu		21		8.434  		1.140  	
+M = Met		2		0.803  		0.472  	
+N = Asn		7		2.811  		0.654  	
+O = ---		0		0.000  		0.000  	
+P = Pro		11		4.418  		0.850  	
+Q = Gln		1		0.402  		0.103  	
+R = Arg		1		0.402  		0.082  	
+S = Ser		19		7.631  		1.090  	
+T = Thr		12		4.819  		0.790  	
+U = ---		0		0.000  		0.000  	
+V = Val		28		11.245 		1.704  	
+W = Trp		3		1.205  		0.927  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		9		3.614  		1.063  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		103		41.365
+Small		(A+B+C+D+G+N+P+S+T+V)	157		63.052
+Aliphatic	(A+I+L+V)		105		42.169
+Aromatic	(F+H+W+Y)		34		13.655
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	187		75.100
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	62		24.900
+Charged		(B+D+E+H+K+R+Z)		23		 9.237
+Basic		(H+K+R)			10		 4.016
+Acidic		(B+D+E+Z)		13		 5.221
+
+PEPSTATS of mRNA_33716 from 1 to 286
+
+Molecular weight = 30753.75  		Residues = 286   
+Average Residue Weight  = 107.531 	Charge   = 9.5   
+Isoelectric Point = 9.6178
+A280 Molar Extinction Coefficient  = 41250   
+A280 Extinction Coefficient 1mg/ml = 1.34      
+Improbability of expression in inclusion bodies = 0.824
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		36		12.587 		1.464  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		2		0.699  		0.241  	
+D = Asp		8		2.797  		0.509  	
+E = Glu		10		3.497  		0.583  	
+F = Phe		20		6.993  		1.943  	
+G = Gly		31		10.839 		1.290  	
+H = His		7		2.448  		1.224  	
+I = Ile		22		7.692  		1.709  	
+J = ---		0		0.000  		0.000  	
+K = Lys		12		4.196  		0.636  	
+L = Leu		22		7.692  		1.040  	
+M = Met		5		1.748  		1.028  	
+N = Asn		6		2.098  		0.488  	
+O = ---		0		0.000  		0.000  	
+P = Pro		16		5.594  		1.076  	
+Q = Gln		7		2.448  		0.628  	
+R = Arg		12		4.196  		0.856  	
+S = Ser		12		4.196  		0.599  	
+T = Thr		17		5.944  		0.974  	
+U = ---		0		0.000  		0.000  	
+V = Val		26		9.091  		1.377  	
+W = Trp		5		1.748  		1.345  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		10		3.497  		1.028  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		98		34.266
+Small		(A+B+C+D+G+N+P+S+T+V)	154		53.846
+Aliphatic	(A+I+L+V)		106		37.063
+Aromatic	(F+H+W+Y)		42		14.685
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	195		68.182
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	91		31.818
+Charged		(B+D+E+H+K+R+Z)		49		17.133
+Basic		(H+K+R)			31		10.839
+Acidic		(B+D+E+Z)		18		 6.294
+
+PEPSTATS of mRNA_34158 from 1 to 145
+
+Molecular weight = 15199.93  		Residues = 145   
+Average Residue Weight  = 104.827 	Charge   = 8.0   
+Isoelectric Point = 10.2775
+A280 Molar Extinction Coefficient  = 10810   
+A280 Extinction Coefficient 1mg/ml = 0.71      
+Improbability of expression in inclusion bodies = 0.758
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		24		16.552 		1.925  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		1		0.690  		0.238  	
+D = Asp		4		2.759  		0.502  	
+E = Glu		0		0.000  		0.000  	
+F = Phe		5		3.448  		0.958  	
+G = Gly		9		6.207  		0.739  	
+H = His		4		2.759  		1.379  	
+I = Ile		7		4.828  		1.073  	
+J = ---		0		0.000  		0.000  	
+K = Lys		7		4.828  		0.731  	
+L = Leu		20		13.793 		1.864  	
+M = Met		6		4.138  		2.434  	
+N = Asn		6		4.138  		0.962  	
+O = ---		0		0.000  		0.000  	
+P = Pro		6		4.138  		0.796  	
+Q = Gln		4		2.759  		0.707  	
+R = Arg		3		2.069  		0.422  	
+S = Ser		9		6.207  		0.887  	
+T = Thr		13		8.966  		1.470  	
+U = ---		0		0.000  		0.000  	
+V = Val		12		8.276  		1.254  	
+W = Trp		1		0.690  		0.531  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		4		2.759  		0.811  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		56		38.621
+Small		(A+B+C+D+G+N+P+S+T+V)	84		57.931
+Aliphatic	(A+I+L+V)		63		43.448
+Aromatic	(F+H+W+Y)		14		 9.655
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	95		65.517
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	50		34.483
+Charged		(B+D+E+H+K+R+Z)		18		12.414
+Basic		(H+K+R)			14		 9.655
+Acidic		(B+D+E+Z)		4		 2.759
+
+PEPSTATS of mRNA_34303 from 1 to 301
+
+Molecular weight = 31154.91  		Residues = 301   
+Average Residue Weight  = 103.505 	Charge   = 4.5   
+Isoelectric Point = 8.1200
+A280 Molar Extinction Coefficient  = 28590   
+A280 Extinction Coefficient 1mg/ml = 0.92      
+Improbability of expression in inclusion bodies = 0.907
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		40		13.289 		1.545  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		6		1.993  		0.687  	
+D = Asp		7		2.326  		0.423  	
+E = Glu		8		2.658  		0.443  	
+F = Phe		14		4.651  		1.292  	
+G = Gly		32		10.631 		1.266  	
+H = His		5		1.661  		0.831  	
+I = Ile		15		4.983  		1.107  	
+J = ---		0		0.000  		0.000  	
+K = Lys		5		1.661  		0.252  	
+L = Leu		26		8.638  		1.167  	
+M = Met		7		2.326  		1.368  	
+N = Asn		10		3.322  		0.773  	
+O = ---		0		0.000  		0.000  	
+P = Pro		26		8.638  		1.661  	
+Q = Gln		6		1.993  		0.511  	
+R = Arg		12		3.987  		0.814  	
+S = Ser		21		6.977  		0.997  	
+T = Thr		22		7.309  		1.198  	
+U = ---		0		0.000  		0.000  	
+V = Val		27		8.970  		1.359  	
+W = Trp		3		0.997  		0.767  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		9		2.990  		0.879  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		121		40.199
+Small		(A+B+C+D+G+N+P+S+T+V)	191		63.455
+Aliphatic	(A+I+L+V)		108		35.880
+Aromatic	(F+H+W+Y)		31		10.299
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	205		68.106
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	96		31.894
+Charged		(B+D+E+H+K+R+Z)		37		12.292
+Basic		(H+K+R)			22		 7.309
+Acidic		(B+D+E+Z)		15		 4.983
+
+PEPSTATS of mRNA_34967 from 1 to 249
+
+Molecular weight = 25277.22  		Residues = 249   
+Average Residue Weight  = 101.515 	Charge   = -4.5  
+Isoelectric Point = 4.5202
+A280 Molar Extinction Coefficient  = 28590   
+A280 Extinction Coefficient 1mg/ml = 1.13      
+Improbability of expression in inclusion bodies = 0.748
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		34		13.655 		1.588  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		2		0.803  		0.277  	
+D = Asp		8		3.213  		0.584  	
+E = Glu		5		2.008  		0.335  	
+F = Phe		19		7.631  		2.120  	
+G = Gly		35		14.056 		1.673  	
+H = His		3		1.205  		0.602  	
+I = Ile		22		8.835  		1.963  	
+J = ---		0		0.000  		0.000  	
+K = Lys		6		2.410  		0.365  	
+L = Leu		22		8.835  		1.194  	
+M = Met		2		0.803  		0.472  	
+N = Asn		7		2.811  		0.654  	
+O = ---		0		0.000  		0.000  	
+P = Pro		10		4.016  		0.772  	
+Q = Gln		2		0.803  		0.206  	
+R = Arg		1		0.402  		0.082  	
+S = Ser		19		7.631  		1.090  	
+T = Thr		13		5.221  		0.856  	
+U = ---		0		0.000  		0.000  	
+V = Val		27		10.843 		1.643  	
+W = Trp		3		1.205  		0.927  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		9		3.614  		1.063  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		103		41.365
+Small		(A+B+C+D+G+N+P+S+T+V)	155		62.249
+Aliphatic	(A+I+L+V)		105		42.169
+Aromatic	(F+H+W+Y)		34		13.655
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	185		74.297
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	64		25.703
+Charged		(B+D+E+H+K+R+Z)		23		 9.237
+Basic		(H+K+R)			10		 4.016
+Acidic		(B+D+E+Z)		13		 5.221
+
+PEPSTATS of mRNA_35428 from 1 to 286
+
+Molecular weight = 30744.62  		Residues = 286   
+Average Residue Weight  = 107.499 	Charge   = 9.5   
+Isoelectric Point = 9.4549
+A280 Molar Extinction Coefficient  = 41250   
+A280 Extinction Coefficient 1mg/ml = 1.34      
+Improbability of expression in inclusion bodies = 0.807
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		37		12.937 		1.504  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		2		0.699  		0.241  	
+D = Asp		8		2.797  		0.509  	
+E = Glu		10		3.497  		0.583  	
+F = Phe		20		6.993  		1.943  	
+G = Gly		31		10.839 		1.290  	
+H = His		9		3.147  		1.573  	
+I = Ile		21		7.343  		1.632  	
+J = ---		0		0.000  		0.000  	
+K = Lys		11		3.846  		0.583  	
+L = Leu		21		7.343  		0.992  	
+M = Met		5		1.748  		1.028  	
+N = Asn		6		2.098  		0.488  	
+O = ---		0		0.000  		0.000  	
+P = Pro		16		5.594  		1.076  	
+Q = Gln		7		2.448  		0.628  	
+R = Arg		12		4.196  		0.856  	
+S = Ser		12		4.196  		0.599  	
+T = Thr		17		5.944  		0.974  	
+U = ---		0		0.000  		0.000  	
+V = Val		26		9.091  		1.377  	
+W = Trp		5		1.748  		1.345  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		10		3.497  		1.028  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		99		34.615
+Small		(A+B+C+D+G+N+P+S+T+V)	155		54.196
+Aliphatic	(A+I+L+V)		105		36.713
+Aromatic	(F+H+W+Y)		44		15.385
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	194		67.832
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	92		32.168
+Charged		(B+D+E+H+K+R+Z)		50		17.483
+Basic		(H+K+R)			32		11.189
+Acidic		(B+D+E+Z)		18		 6.294
+
+PEPSTATS of mRNA_35805 from 1 to 220
+
+Molecular weight = 23302.68  		Residues = 220   
+Average Residue Weight  = 105.921 	Charge   = 8.0   
+Isoelectric Point = 9.3916
+A280 Molar Extinction Coefficient  = 26030   
+A280 Extinction Coefficient 1mg/ml = 1.12      
+Improbability of expression in inclusion bodies = 0.748
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		32		14.545 		1.691  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		3		1.364  		0.470  	
+D = Asp		6		2.727  		0.496  	
+E = Glu		3		1.364  		0.227  	
+F = Phe		8		3.636  		1.010  	
+G = Gly		16		7.273  		0.866  	
+H = His		6		2.727  		1.364  	
+I = Ile		13		5.909  		1.313  	
+J = ---		0		0.000  		0.000  	
+K = Lys		9		4.091  		0.620  	
+L = Leu		27		12.273 		1.658  	
+M = Met		10		4.545  		2.674  	
+N = Asn		6		2.727  		0.634  	
+O = ---		0		0.000  		0.000  	
+P = Pro		11		5.000  		0.962  	
+Q = Gln		4		1.818  		0.466  	
+R = Arg		5		2.273  		0.464  	
+S = Ser		10		4.545  		0.649  	
+T = Thr		18		8.182  		1.341  	
+U = ---		0		0.000  		0.000  	
+V = Val		23		10.455 		1.584  	
+W = Trp		3		1.364  		1.049  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		7		3.182  		0.936  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		79		35.909
+Small		(A+B+C+D+G+N+P+S+T+V)	125		56.818
+Aliphatic	(A+I+L+V)		95		43.182
+Aromatic	(F+H+W+Y)		24		10.909
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	153		69.545
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	67		30.455
+Charged		(B+D+E+H+K+R+Z)		29		13.182
+Basic		(H+K+R)			20		 9.091
+Acidic		(B+D+E+Z)		9		 4.091
+
+PEPSTATS of mRNA_36074 from 1 to 301
+
+Molecular weight = 31199.02  		Residues = 301   
+Average Residue Weight  = 103.651 	Charge   = 4.5   
+Isoelectric Point = 8.0491
+A280 Molar Extinction Coefficient  = 28590   
+A280 Extinction Coefficient 1mg/ml = 0.92      
+Improbability of expression in inclusion bodies = 0.896
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		41		13.621 		1.584  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		7		2.326  		0.802  	
+D = Asp		7		2.326  		0.423  	
+E = Glu		8		2.658  		0.443  	
+F = Phe		14		4.651  		1.292  	
+G = Gly		31		10.299 		1.226  	
+H = His		5		1.661  		0.831  	
+I = Ile		16		5.316  		1.181  	
+J = ---		0		0.000  		0.000  	
+K = Lys		5		1.661  		0.252  	
+L = Leu		26		8.638  		1.167  	
+M = Met		7		2.326  		1.368  	
+N = Asn		10		3.322  		0.773  	
+O = ---		0		0.000  		0.000  	
+P = Pro		26		8.638  		1.661  	
+Q = Gln		6		1.993  		0.511  	
+R = Arg		12		3.987  		0.814  	
+S = Ser		20		6.645  		0.949  	
+T = Thr		22		7.309  		1.198  	
+U = ---		0		0.000  		0.000  	
+V = Val		26		8.638  		1.309  	
+W = Trp		3		0.997  		0.767  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		9		2.990  		0.879  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		121		40.199
+Small		(A+B+C+D+G+N+P+S+T+V)	190		63.123
+Aliphatic	(A+I+L+V)		109		36.213
+Aromatic	(F+H+W+Y)		31		10.299
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	206		68.439
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	95		31.561
+Charged		(B+D+E+H+K+R+Z)		37		12.292
+Basic		(H+K+R)			22		 7.309
+Acidic		(B+D+E+Z)		15		 4.983
+
+PEPSTATS of mRNA_36594 from 1 to 260
+
+Molecular weight = 27911.26  		Residues = 260   
+Average Residue Weight  = 107.351 	Charge   = 2.5   
+Isoelectric Point = 7.0384
+A280 Molar Extinction Coefficient  = 48220   
+A280 Extinction Coefficient 1mg/ml = 1.73      
+Improbability of expression in inclusion bodies = 0.737
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		33		12.692 		1.476  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		0		0.000  		0.000  	
+D = Asp		7		2.692  		0.490  	
+E = Glu		10		3.846  		0.641  	
+F = Phe		15		5.769  		1.603  	
+G = Gly		30		11.538 		1.374  	
+H = His		9		3.462  		1.731  	
+I = Ile		23		8.846  		1.966  	
+J = ---		0		0.000  		0.000  	
+K = Lys		4		1.538  		0.233  	
+L = Leu		24		9.231  		1.247  	
+M = Met		5		1.923  		1.131  	
+N = Asn		7		2.692  		0.626  	
+O = ---		0		0.000  		0.000  	
+P = Pro		16		6.154  		1.183  	
+Q = Gln		3		1.154  		0.296  	
+R = Arg		11		4.231  		0.863  	
+S = Ser		12		4.615  		0.659  	
+T = Thr		14		5.385  		0.883  	
+U = ---		0		0.000  		0.000  	
+V = Val		20		7.692  		1.166  	
+W = Trp		6		2.308  		1.775  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		11		4.231  		1.244  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		89		34.231
+Small		(A+B+C+D+G+N+P+S+T+V)	139		53.462
+Aliphatic	(A+I+L+V)		100		38.462
+Aromatic	(F+H+W+Y)		41		15.769
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	183		70.385
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	77		29.615
+Charged		(B+D+E+H+K+R+Z)		41		15.769
+Basic		(H+K+R)			24		 9.231
+Acidic		(B+D+E+Z)		17		 6.538
+
+PEPSTATS of mRNA_37056 from 1 to 271
+
+Molecular weight = 28488.44  		Residues = 271   
+Average Residue Weight  = 105.123 	Charge   = 2.5   
+Isoelectric Point = 7.1620
+A280 Molar Extinction Coefficient  = 29160   
+A280 Extinction Coefficient 1mg/ml = 1.02      
+Improbability of expression in inclusion bodies = 0.811
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		28		10.332 		1.201  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		5		1.845  		0.636  	
+D = Asp		5		1.845  		0.335  	
+E = Glu		9		3.321  		0.554  	
+F = Phe		13		4.797  		1.333  	
+G = Gly		24		8.856  		1.054  	
+H = His		7		2.583  		1.292  	
+I = Ile		19		7.011  		1.558  	
+J = ---		0		0.000  		0.000  	
+K = Lys		9		3.321  		0.503  	
+L = Leu		34		12.546 		1.695  	
+M = Met		8		2.952  		1.736  	
+N = Asn		10		3.690  		0.858  	
+O = ---		0		0.000  		0.000  	
+P = Pro		13		4.797  		0.923  	
+Q = Gln		5		1.845  		0.473  	
+R = Arg		4		1.476  		0.301  	
+S = Ser		26		9.594  		1.371  	
+T = Thr		14		5.166  		0.847  	
+U = ---		0		0.000  		0.000  	
+V = Val		29		10.701 		1.621  	
+W = Trp		4		1.476  		1.135  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		5		1.845  		0.543  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		97		35.793
+Small		(A+B+C+D+G+N+P+S+T+V)	154		56.827
+Aliphatic	(A+I+L+V)		110		40.590
+Aromatic	(F+H+W+Y)		29		10.701
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	182		67.159
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	89		32.841
+Charged		(B+D+E+H+K+R+Z)		34		12.546
+Basic		(H+K+R)			20		 7.380
+Acidic		(B+D+E+Z)		14		 5.166
+
+PEPSTATS of mRNA_37544 from 1 to 283
+
+Molecular weight = 30237.65  		Residues = 283   
+Average Residue Weight  = 106.847 	Charge   = 8.0   
+Isoelectric Point = 9.1389
+A280 Molar Extinction Coefficient  = 21620   
+A280 Extinction Coefficient 1mg/ml = 0.72      
+Improbability of expression in inclusion bodies = 0.870
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		21		7.420  		0.863  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		4		1.413  		0.487  	
+D = Asp		7		2.473  		0.450  	
+E = Glu		7		2.473  		0.412  	
+F = Phe		16		5.654  		1.570  	
+G = Gly		27		9.541  		1.136  	
+H = His		6		2.120  		1.060  	
+I = Ile		30		10.601 		2.356  	
+J = ---		0		0.000  		0.000  	
+K = Lys		9		3.180  		0.482  	
+L = Leu		27		9.541  		1.289  	
+M = Met		9		3.180  		1.871  	
+N = Asn		8		2.827  		0.657  	
+O = ---		0		0.000  		0.000  	
+P = Pro		12		4.240  		0.815  	
+Q = Gln		4		1.413  		0.362  	
+R = Arg		10		3.534  		0.721  	
+S = Ser		25		8.834  		1.262  	
+T = Thr		20		7.067  		1.159  	
+U = ---		0		0.000  		0.000  	
+V = Val		31		10.954 		1.660  	
+W = Trp		2		0.707  		0.544  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		8		2.827  		0.831  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		97		34.276
+Small		(A+B+C+D+G+N+P+S+T+V)	155		54.770
+Aliphatic	(A+I+L+V)		109		38.516
+Aromatic	(F+H+W+Y)		32		11.307
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	187		66.078
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	96		33.922
+Charged		(B+D+E+H+K+R+Z)		39		13.781
+Basic		(H+K+R)			25		 8.834
+Acidic		(B+D+E+Z)		14		 4.947
+
+PEPSTATS of mRNA_38300 from 1 to 271
+
+Molecular weight = 28364.27  		Residues = 271   
+Average Residue Weight  = 104.665 	Charge   = 2.5   
+Isoelectric Point = 7.1474
+A280 Molar Extinction Coefficient  = 29160   
+A280 Extinction Coefficient 1mg/ml = 1.03      
+Improbability of expression in inclusion bodies = 0.820
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		28		10.332 		1.201  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		6		2.214  		0.763  	
+D = Asp		5		1.845  		0.335  	
+E = Glu		8		2.952  		0.492  	
+F = Phe		13		4.797  		1.333  	
+G = Gly		25		9.225  		1.098  	
+H = His		7		2.583  		1.292  	
+I = Ile		18		6.642  		1.476  	
+J = ---		0		0.000  		0.000  	
+K = Lys		9		3.321  		0.503  	
+L = Leu		33		12.177 		1.646  	
+M = Met		8		2.952  		1.736  	
+N = Asn		10		3.690  		0.858  	
+O = ---		0		0.000  		0.000  	
+P = Pro		13		4.797  		0.923  	
+Q = Gln		6		2.214  		0.568  	
+R = Arg		3		1.107  		0.226  	
+S = Ser		26		9.594  		1.371  	
+T = Thr		14		5.166  		0.847  	
+U = ---		0		0.000  		0.000  	
+V = Val		30		11.070 		1.677  	
+W = Trp		4		1.476  		1.135  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		5		1.845  		0.543  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		99		36.531
+Small		(A+B+C+D+G+N+P+S+T+V)	157		57.934
+Aliphatic	(A+I+L+V)		109		40.221
+Aromatic	(F+H+W+Y)		29		10.701
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	183		67.528
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	88		32.472
+Charged		(B+D+E+H+K+R+Z)		32		11.808
+Basic		(H+K+R)			19		 7.011
+Acidic		(B+D+E+Z)		13		 4.797
+
+PEPSTATS of mRNA_38688 from 1 to 283
+
+Molecular weight = 30189.55  		Residues = 283   
+Average Residue Weight  = 106.677 	Charge   = 8.0   
+Isoelectric Point = 9.1389
+A280 Molar Extinction Coefficient  = 21620   
+A280 Extinction Coefficient 1mg/ml = 0.72      
+Improbability of expression in inclusion bodies = 0.877
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		21		7.420  		0.863  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		4		1.413  		0.487  	
+D = Asp		7		2.473  		0.450  	
+E = Glu		7		2.473  		0.412  	
+F = Phe		16		5.654  		1.570  	
+G = Gly		27		9.541  		1.136  	
+H = His		6		2.120  		1.060  	
+I = Ile		31		10.954 		2.434  	
+J = ---		0		0.000  		0.000  	
+K = Lys		9		3.180  		0.482  	
+L = Leu		25		8.834  		1.194  	
+M = Met		8		2.827  		1.663  	
+N = Asn		8		2.827  		0.657  	
+O = ---		0		0.000  		0.000  	
+P = Pro		13		4.594  		0.883  	
+Q = Gln		4		1.413  		0.362  	
+R = Arg		10		3.534  		0.721  	
+S = Ser		25		8.834  		1.262  	
+T = Thr		20		7.067  		1.159  	
+U = ---		0		0.000  		0.000  	
+V = Val		32		11.307 		1.713  	
+W = Trp		2		0.707  		0.544  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		8		2.827  		0.831  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		97		34.276
+Small		(A+B+C+D+G+N+P+S+T+V)	157		55.477
+Aliphatic	(A+I+L+V)		109		38.516
+Aromatic	(F+H+W+Y)		32		11.307
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	187		66.078
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	96		33.922
+Charged		(B+D+E+H+K+R+Z)		39		13.781
+Basic		(H+K+R)			25		 8.834
+Acidic		(B+D+E+Z)		14		 4.947
+
+PEPSTATS of mRNA_39316 from 1 to 291
+
+Molecular weight = 30475.53  		Residues = 291   
+Average Residue Weight  = 104.727 	Charge   = 2.5   
+Isoelectric Point = 7.1480
+A280 Molar Extinction Coefficient  = 29160   
+A280 Extinction Coefficient 1mg/ml = 0.96      
+Improbability of expression in inclusion bodies = 0.857
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		29		9.966  		1.159  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		6		2.062  		0.711  	
+D = Asp		6		2.062  		0.375  	
+E = Glu		9		3.093  		0.515  	
+F = Phe		14		4.811  		1.336  	
+G = Gly		26		8.935  		1.064  	
+H = His		7		2.405  		1.203  	
+I = Ile		18		6.186  		1.375  	
+J = ---		0		0.000  		0.000  	
+K = Lys		8		2.749  		0.417  	
+L = Leu		33		11.340 		1.532  	
+M = Met		8		2.749  		1.617  	
+N = Asn		11		3.780  		0.879  	
+O = ---		0		0.000  		0.000  	
+P = Pro		17		5.842  		1.123  	
+Q = Gln		6		2.062  		0.529  	
+R = Arg		6		2.062  		0.421  	
+S = Ser		30		10.309 		1.473  	
+T = Thr		16		5.498  		0.901  	
+U = ---		0		0.000  		0.000  	
+V = Val		32		10.997 		1.666  	
+W = Trp		4		1.375  		1.057  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		5		1.718  		0.505  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		107		36.770
+Small		(A+B+C+D+G+N+P+S+T+V)	173		59.450
+Aliphatic	(A+I+L+V)		112		38.488
+Aromatic	(F+H+W+Y)		30		10.309
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	192		65.979
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	99		34.021
+Charged		(B+D+E+H+K+R+Z)		36		12.371
+Basic		(H+K+R)			21		 7.216
+Acidic		(B+D+E+Z)		15		 5.155
+
+PEPSTATS of mRNA_39706 from 1 to 284
+
+Molecular weight = 30339.80  		Residues = 284   
+Average Residue Weight  = 106.830 	Charge   = 8.0   
+Isoelectric Point = 8.9458
+A280 Molar Extinction Coefficient  = 21620   
+A280 Extinction Coefficient 1mg/ml = 0.71      
+Improbability of expression in inclusion bodies = 0.868
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		20		7.042  		0.819  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		5		1.761  		0.607  	
+D = Asp		7		2.465  		0.448  	
+E = Glu		7		2.465  		0.411  	
+F = Phe		16		5.634  		1.565  	
+G = Gly		27		9.507  		1.132  	
+H = His		6		2.113  		1.056  	
+I = Ile		31		10.915 		2.426  	
+J = ---		0		0.000  		0.000  	
+K = Lys		9		3.169  		0.480  	
+L = Leu		25		8.803  		1.190  	
+M = Met		9		3.169  		1.864  	
+N = Asn		7		2.465  		0.573  	
+O = ---		0		0.000  		0.000  	
+P = Pro		13		4.577  		0.880  	
+Q = Gln		4		1.408  		0.361  	
+R = Arg		10		3.521  		0.719  	
+S = Ser		25		8.803  		1.258  	
+T = Thr		21		7.394  		1.212  	
+U = ---		0		0.000  		0.000  	
+V = Val		32		11.268 		1.707  	
+W = Trp		2		0.704  		0.542  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		8		2.817  		0.829  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		98		34.507
+Small		(A+B+C+D+G+N+P+S+T+V)	157		55.282
+Aliphatic	(A+I+L+V)		108		38.028
+Aromatic	(F+H+W+Y)		32		11.268
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	188		66.197
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	96		33.803
+Charged		(B+D+E+H+K+R+Z)		39		13.732
+Basic		(H+K+R)			25		 8.803
+Acidic		(B+D+E+Z)		14		 4.930
+
+PEPSTATS of mRNA_40329 from 1 to 341
+
+Molecular weight = 36184.25  		Residues = 341   
+Average Residue Weight  = 106.112 	Charge   = 2.5   
+Isoelectric Point = 7.1482
+A280 Molar Extinction Coefficient  = 36130   
+A280 Extinction Coefficient 1mg/ml = 1.00      
+Improbability of expression in inclusion bodies = 0.844
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		33		9.677  		1.125  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		6		1.760  		0.607  	
+D = Asp		7		2.053  		0.373  	
+E = Glu		11		3.226  		0.538  	
+F = Phe		20		5.865  		1.629  	
+G = Gly		25		7.331  		0.873  	
+H = His		7		2.053  		1.026  	
+I = Ile		22		6.452  		1.434  	
+J = ---		0		0.000  		0.000  	
+K = Lys		11		3.226  		0.489  	
+L = Leu		43		12.610 		1.704  	
+M = Met		9		2.639  		1.553  	
+N = Asn		14		4.106  		0.955  	
+O = ---		0		0.000  		0.000  	
+P = Pro		20		5.865  		1.128  	
+Q = Gln		7		2.053  		0.526  	
+R = Arg		6		1.760  		0.359  	
+S = Ser		37		10.850 		1.550  	
+T = Thr		20		5.865  		0.961  	
+U = ---		0		0.000  		0.000  	
+V = Val		32		9.384  		1.422  	
+W = Trp		5		1.466  		1.128  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		6		1.760  		0.518  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		121		35.484
+Small		(A+B+C+D+G+N+P+S+T+V)	194		56.891
+Aliphatic	(A+I+L+V)		130		38.123
+Aromatic	(F+H+W+Y)		38		11.144
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	221		64.809
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	120		35.191
+Charged		(B+D+E+H+K+R+Z)		42		12.317
+Basic		(H+K+R)			24		 7.038
+Acidic		(B+D+E+Z)		18		 5.279
+
+PEPSTATS of mRNA_40751 from 1 to 283
+
+Molecular weight = 30207.58  		Residues = 283   
+Average Residue Weight  = 106.741 	Charge   = 8.0   
+Isoelectric Point = 9.1389
+A280 Molar Extinction Coefficient  = 21620   
+A280 Extinction Coefficient 1mg/ml = 0.72      
+Improbability of expression in inclusion bodies = 0.877
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		21		7.420  		0.863  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		4		1.413  		0.487  	
+D = Asp		7		2.473  		0.450  	
+E = Glu		7		2.473  		0.412  	
+F = Phe		16		5.654  		1.570  	
+G = Gly		27		9.541  		1.136  	
+H = His		6		2.120  		1.060  	
+I = Ile		30		10.601 		2.356  	
+J = ---		0		0.000  		0.000  	
+K = Lys		9		3.180  		0.482  	
+L = Leu		25		8.834  		1.194  	
+M = Met		9		3.180  		1.871  	
+N = Asn		8		2.827  		0.657  	
+O = ---		0		0.000  		0.000  	
+P = Pro		13		4.594  		0.883  	
+Q = Gln		4		1.413  		0.362  	
+R = Arg		10		3.534  		0.721  	
+S = Ser		25		8.834  		1.262  	
+T = Thr		20		7.067  		1.159  	
+U = ---		0		0.000  		0.000  	
+V = Val		32		11.307 		1.713  	
+W = Trp		2		0.707  		0.544  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		8		2.827  		0.831  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		97		34.276
+Small		(A+B+C+D+G+N+P+S+T+V)	157		55.477
+Aliphatic	(A+I+L+V)		108		38.163
+Aromatic	(F+H+W+Y)		32		11.307
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	187		66.078
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	96		33.922
+Charged		(B+D+E+H+K+R+Z)		39		13.781
+Basic		(H+K+R)			25		 8.834
+Acidic		(B+D+E+Z)		14		 4.947
+
+PEPSTATS of mRNA_41273 from 1 to 281
+
+Molecular weight = 29995.68  		Residues = 281   
+Average Residue Weight  = 106.746 	Charge   = 3.5   
+Isoelectric Point = 7.6233
+A280 Molar Extinction Coefficient  = 43810   
+A280 Extinction Coefficient 1mg/ml = 1.46      
+Improbability of expression in inclusion bodies = 0.691
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		39		13.879 		1.614  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		3		1.068  		0.368  	
+D = Asp		12		4.270  		0.776  	
+E = Glu		7		2.491  		0.415  	
+F = Phe		20		7.117  		1.977  	
+G = Gly		31		11.032 		1.313  	
+H = His		7		2.491  		1.246  	
+I = Ile		21		7.473  		1.661  	
+J = ---		0		0.000  		0.000  	
+K = Lys		11		3.915  		0.593  	
+L = Leu		25		8.897  		1.202  	
+M = Met		4		1.423  		0.837  	
+N = Asn		6		2.135  		0.497  	
+O = ---		0		0.000  		0.000  	
+P = Pro		13		4.626  		0.890  	
+Q = Gln		6		2.135  		0.547  	
+R = Arg		8		2.847  		0.581  	
+S = Ser		12		4.270  		0.610  	
+T = Thr		17		6.050  		0.992  	
+U = ---		0		0.000  		0.000  	
+V = Val		22		7.829  		1.186  	
+W = Trp		5		1.779  		1.369  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		12		4.270  		1.256  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		102		36.299
+Small		(A+B+C+D+G+N+P+S+T+V)	155		55.160
+Aliphatic	(A+I+L+V)		107		38.078
+Aromatic	(F+H+W+Y)		44		15.658
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	195		69.395
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	86		30.605
+Charged		(B+D+E+H+K+R+Z)		45		16.014
+Basic		(H+K+R)			26		 9.253
+Acidic		(B+D+E+Z)		19		 6.762
+
+PEPSTATS of mRNA_41882 from 1 to 254
+
+Molecular weight = 25938.96  		Residues = 254   
+Average Residue Weight  = 102.122 	Charge   = -5.0  
+Isoelectric Point = 4.4972
+A280 Molar Extinction Coefficient  = 47510   
+A280 Extinction Coefficient 1mg/ml = 1.83      
+Improbability of expression in inclusion bodies = 0.685
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		43		16.929 		1.969  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		1		0.394  		0.136  	
+D = Asp		6		2.362  		0.429  	
+E = Glu		6		2.362  		0.394  	
+F = Phe		18		7.087  		1.969  	
+G = Gly		29		11.417 		1.359  	
+H = His		4		1.575  		0.787  	
+I = Ile		23		9.055  		2.012  	
+J = ---		0		0.000  		0.000  	
+K = Lys		2		0.787  		0.119  	
+L = Leu		21		8.268  		1.117  	
+M = Met		4		1.575  		0.926  	
+N = Asn		8		3.150  		0.732  	
+O = ---		0		0.000  		0.000  	
+P = Pro		11		4.331  		0.833  	
+Q = Gln		1		0.394  		0.101  	
+R = Arg		3		1.181  		0.241  	
+S = Ser		21		8.268  		1.181  	
+T = Thr		15		5.906  		0.968  	
+U = ---		0		0.000  		0.000  	
+V = Val		25		9.843  		1.491  	
+W = Trp		7		2.756  		2.120  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		6		2.362  		0.695  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		109		42.913
+Small		(A+B+C+D+G+N+P+S+T+V)	159		62.598
+Aliphatic	(A+I+L+V)		112		44.094
+Aromatic	(F+H+W+Y)		35		13.780
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	188		74.016
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	66		25.984
+Charged		(B+D+E+H+K+R+Z)		21		 8.268
+Basic		(H+K+R)			9		 3.543
+Acidic		(B+D+E+Z)		12		 4.724
+
+PEPSTATS of mRNA_42184 from 1 to 270
+
+Molecular weight = 28957.52  		Residues = 270   
+Average Residue Weight  = 107.250 	Charge   = 9.0   
+Isoelectric Point = 9.3826
+A280 Molar Extinction Coefficient  = 26030   
+A280 Extinction Coefficient 1mg/ml = 0.90      
+Improbability of expression in inclusion bodies = 0.915
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		24		8.889  		1.034  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		3		1.111  		0.383  	
+D = Asp		5		1.852  		0.337  	
+E = Glu		7		2.593  		0.432  	
+F = Phe		18		6.667  		1.852  	
+G = Gly		23		8.519  		1.014  	
+H = His		8		2.963  		1.481  	
+I = Ile		16		5.926  		1.317  	
+J = ---		0		0.000  		0.000  	
+K = Lys		10		3.704  		0.561  	
+L = Leu		24		8.889  		1.201  	
+M = Met		7		2.593  		1.525  	
+N = Asn		16		5.926  		1.378  	
+O = ---		0		0.000  		0.000  	
+P = Pro		14		5.185  		0.997  	
+Q = Gln		6		2.222  		0.570  	
+R = Arg		7		2.593  		0.529  	
+S = Ser		22		8.148  		1.164  	
+T = Thr		20		7.407  		1.214  	
+U = ---		0		0.000  		0.000  	
+V = Val		30		11.111 		1.684  	
+W = Trp		3		1.111  		0.855  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		7		2.593  		0.763  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		92		34.074
+Small		(A+B+C+D+G+N+P+S+T+V)	157		58.148
+Aliphatic	(A+I+L+V)		94		34.815
+Aromatic	(F+H+W+Y)		36		13.333
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	169		62.593
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	101		37.407
+Charged		(B+D+E+H+K+R+Z)		37		13.704
+Basic		(H+K+R)			25		 9.259
+Acidic		(B+D+E+Z)		12		 4.444
+
+PEPSTATS of mRNA_42542 from 1 to 271
+
+Molecular weight = 29119.62  		Residues = 271   
+Average Residue Weight  = 107.452 	Charge   = 5.0   
+Isoelectric Point = 8.2500
+A280 Molar Extinction Coefficient  = 30440   
+A280 Extinction Coefficient 1mg/ml = 1.05      
+Improbability of expression in inclusion bodies = 0.828
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		25		9.225  		1.073  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		2		0.738  		0.254  	
+D = Asp		7		2.583  		0.470  	
+E = Glu		9		3.321  		0.554  	
+F = Phe		17		6.273  		1.743  	
+G = Gly		21		7.749  		0.923  	
+H = His		8		2.952  		1.476  	
+I = Ile		18		6.642  		1.476  	
+J = ---		0		0.000  		0.000  	
+K = Lys		10		3.690  		0.559  	
+L = Leu		24		8.856  		1.197  	
+M = Met		6		2.214  		1.302  	
+N = Asn		13		4.797  		1.116  	
+O = ---		0		0.000  		0.000  	
+P = Pro		12		4.428  		0.852  	
+Q = Gln		7		2.583  		0.662  	
+R = Arg		7		2.583  		0.527  	
+S = Ser		25		9.225  		1.318  	
+T = Thr		18		6.642  		1.089  	
+U = ---		0		0.000  		0.000  	
+V = Val		32		11.808 		1.789  	
+W = Trp		4		1.476  		1.135  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		6		2.214  		0.651  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		91		33.579
+Small		(A+B+C+D+G+N+P+S+T+V)	155		57.196
+Aliphatic	(A+I+L+V)		99		36.531
+Aromatic	(F+H+W+Y)		35		12.915
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	167		61.624
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	104		38.376
+Charged		(B+D+E+H+K+R+Z)		41		15.129
+Basic		(H+K+R)			25		 9.225
+Acidic		(B+D+E+Z)		16		 5.904
+
+PEPSTATS of mRNA_43267 from 1 to 281
+
+Molecular weight = 29981.65  		Residues = 281   
+Average Residue Weight  = 106.696 	Charge   = 3.5   
+Isoelectric Point = 7.6233
+A280 Molar Extinction Coefficient  = 43810   
+A280 Extinction Coefficient 1mg/ml = 1.46      
+Improbability of expression in inclusion bodies = 0.702
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		38		13.523 		1.572  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		3		1.068  		0.368  	
+D = Asp		12		4.270  		0.776  	
+E = Glu		7		2.491  		0.415  	
+F = Phe		20		7.117  		1.977  	
+G = Gly		32		11.388 		1.356  	
+H = His		7		2.491  		1.246  	
+I = Ile		21		7.473  		1.661  	
+J = ---		0		0.000  		0.000  	
+K = Lys		11		3.915  		0.593  	
+L = Leu		25		8.897  		1.202  	
+M = Met		4		1.423  		0.837  	
+N = Asn		6		2.135  		0.497  	
+O = ---		0		0.000  		0.000  	
+P = Pro		13		4.626  		0.890  	
+Q = Gln		6		2.135  		0.547  	
+R = Arg		8		2.847  		0.581  	
+S = Ser		12		4.270  		0.610  	
+T = Thr		17		6.050  		0.992  	
+U = ---		0		0.000  		0.000  	
+V = Val		22		7.829  		1.186  	
+W = Trp		5		1.779  		1.369  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		12		4.270  		1.256  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		102		36.299
+Small		(A+B+C+D+G+N+P+S+T+V)	155		55.160
+Aliphatic	(A+I+L+V)		106		37.722
+Aromatic	(F+H+W+Y)		44		15.658
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	195		69.395
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	86		30.605
+Charged		(B+D+E+H+K+R+Z)		45		16.014
+Basic		(H+K+R)			26		 9.253
+Acidic		(B+D+E+Z)		19		 6.762
+
+PEPSTATS of mRNA_44038 from 1 to 254
+
+Molecular weight = 25918.97  		Residues = 254   
+Average Residue Weight  = 102.043 	Charge   = -5.0  
+Isoelectric Point = 4.4972
+A280 Molar Extinction Coefficient  = 47510   
+A280 Extinction Coefficient 1mg/ml = 1.83      
+Improbability of expression in inclusion bodies = 0.685
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		43		16.929 		1.969  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		1		0.394  		0.136  	
+D = Asp		6		2.362  		0.429  	
+E = Glu		6		2.362  		0.394  	
+F = Phe		17		6.693  		1.859  	
+G = Gly		29		11.417 		1.359  	
+H = His		4		1.575  		0.787  	
+I = Ile		23		9.055  		2.012  	
+J = ---		0		0.000  		0.000  	
+K = Lys		2		0.787  		0.119  	
+L = Leu		23		9.055  		1.224  	
+M = Met		4		1.575  		0.926  	
+N = Asn		8		3.150  		0.732  	
+O = ---		0		0.000  		0.000  	
+P = Pro		11		4.331  		0.833  	
+Q = Gln		1		0.394  		0.101  	
+R = Arg		3		1.181  		0.241  	
+S = Ser		21		8.268  		1.181  	
+T = Thr		15		5.906  		0.968  	
+U = ---		0		0.000  		0.000  	
+V = Val		24		9.449  		1.432  	
+W = Trp		7		2.756  		2.120  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		6		2.362  		0.695  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		109		42.913
+Small		(A+B+C+D+G+N+P+S+T+V)	158		62.205
+Aliphatic	(A+I+L+V)		113		44.488
+Aromatic	(F+H+W+Y)		34		13.386
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	188		74.016
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	66		25.984
+Charged		(B+D+E+H+K+R+Z)		21		 8.268
+Basic		(H+K+R)			9		 3.543
+Acidic		(B+D+E+Z)		12		 4.724
+
+PEPSTATS of mRNA_44780 from 1 to 270
+
+Molecular weight = 28856.44  		Residues = 270   
+Average Residue Weight  = 106.876 	Charge   = 7.5   
+Isoelectric Point = 9.1135
+A280 Molar Extinction Coefficient  = 26030   
+A280 Extinction Coefficient 1mg/ml = 0.90      
+Improbability of expression in inclusion bodies = 0.909
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		24		8.889  		1.034  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		3		1.111  		0.383  	
+D = Asp		4		1.481  		0.269  	
+E = Glu		8		2.963  		0.494  	
+F = Phe		18		6.667  		1.852  	
+G = Gly		24		8.889  		1.058  	
+H = His		7		2.593  		1.296  	
+I = Ile		17		6.296  		1.399  	
+J = ---		0		0.000  		0.000  	
+K = Lys		9		3.333  		0.505  	
+L = Leu		25		9.259  		1.251  	
+M = Met		6		2.222  		1.307  	
+N = Asn		16		5.926  		1.378  	
+O = ---		0		0.000  		0.000  	
+P = Pro		14		5.185  		0.997  	
+Q = Gln		6		2.222  		0.570  	
+R = Arg		7		2.593  		0.529  	
+S = Ser		22		8.148  		1.164  	
+T = Thr		19		7.037  		1.154  	
+U = ---		0		0.000  		0.000  	
+V = Val		31		11.481 		1.740  	
+W = Trp		3		1.111  		0.855  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		7		2.593  		0.763  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		92		34.074
+Small		(A+B+C+D+G+N+P+S+T+V)	157		58.148
+Aliphatic	(A+I+L+V)		97		35.926
+Aromatic	(F+H+W+Y)		35		12.963
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	172		63.704
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	98		36.296
+Charged		(B+D+E+H+K+R+Z)		35		12.963
+Basic		(H+K+R)			23		 8.519
+Acidic		(B+D+E+Z)		12		 4.444
+
+PEPSTATS of mRNA_44721 from 1 to 271
+
+Molecular weight = 29129.71  		Residues = 271   
+Average Residue Weight  = 107.490 	Charge   = 8.5   
+Isoelectric Point = 9.5791
+A280 Molar Extinction Coefficient  = 31720   
+A280 Extinction Coefficient 1mg/ml = 1.09      
+Improbability of expression in inclusion bodies = 0.894
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		25		9.225  		1.073  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		2		0.738  		0.254  	
+D = Asp		6		2.214  		0.403  	
+E = Glu		8		2.952  		0.492  	
+F = Phe		17		6.273  		1.743  	
+G = Gly		22		8.118  		0.966  	
+H = His		7		2.583  		1.292  	
+I = Ile		16		5.904  		1.312  	
+J = ---		0		0.000  		0.000  	
+K = Lys		11		4.059  		0.615  	
+L = Leu		25		9.225  		1.247  	
+M = Met		6		2.214  		1.302  	
+N = Asn		14		5.166  		1.201  	
+O = ---		0		0.000  		0.000  	
+P = Pro		12		4.428  		0.852  	
+Q = Gln		6		2.214  		0.568  	
+R = Arg		8		2.952  		0.602  	
+S = Ser		24		8.856  		1.265  	
+T = Thr		19		7.011  		1.149  	
+U = ---		0		0.000  		0.000  	
+V = Val		32		11.808 		1.789  	
+W = Trp		4		1.476  		1.135  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		7		2.583  		0.760  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		92		33.948
+Small		(A+B+C+D+G+N+P+S+T+V)	156		57.565
+Aliphatic	(A+I+L+V)		98		36.162
+Aromatic	(F+H+W+Y)		35		12.915
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	168		61.993
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	103		38.007
+Charged		(B+D+E+H+K+R+Z)		40		14.760
+Basic		(H+K+R)			26		 9.594
+Acidic		(B+D+E+Z)		14		 5.166
+
+PEPSTATS of mRNA_45429 from 1 to 281
+
+Molecular weight = 29967.63  		Residues = 281   
+Average Residue Weight  = 106.646 	Charge   = 3.5   
+Isoelectric Point = 7.6233
+A280 Molar Extinction Coefficient  = 43810   
+A280 Extinction Coefficient 1mg/ml = 1.46      
+Improbability of expression in inclusion bodies = 0.691
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		40		14.235 		1.655  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		3		1.068  		0.368  	
+D = Asp		12		4.270  		0.776  	
+E = Glu		7		2.491  		0.415  	
+F = Phe		20		7.117  		1.977  	
+G = Gly		31		11.032 		1.313  	
+H = His		7		2.491  		1.246  	
+I = Ile		21		7.473  		1.661  	
+J = ---		0		0.000  		0.000  	
+K = Lys		11		3.915  		0.593  	
+L = Leu		25		8.897  		1.202  	
+M = Met		4		1.423  		0.837  	
+N = Asn		6		2.135  		0.497  	
+O = ---		0		0.000  		0.000  	
+P = Pro		13		4.626  		0.890  	
+Q = Gln		6		2.135  		0.547  	
+R = Arg		8		2.847  		0.581  	
+S = Ser		12		4.270  		0.610  	
+T = Thr		17		6.050  		0.992  	
+U = ---		0		0.000  		0.000  	
+V = Val		21		7.473  		1.132  	
+W = Trp		5		1.779  		1.369  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		12		4.270  		1.256  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		103		36.655
+Small		(A+B+C+D+G+N+P+S+T+V)	155		55.160
+Aliphatic	(A+I+L+V)		107		38.078
+Aromatic	(F+H+W+Y)		44		15.658
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	195		69.395
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	86		30.605
+Charged		(B+D+E+H+K+R+Z)		45		16.014
+Basic		(H+K+R)			26		 9.253
+Acidic		(B+D+E+Z)		19		 6.762
+
+PEPSTATS of mRNA_46040 from 1 to 254
+
+Molecular weight = 25952.99  		Residues = 254   
+Average Residue Weight  = 102.177 	Charge   = -5.0  
+Isoelectric Point = 4.4972
+A280 Molar Extinction Coefficient  = 47510   
+A280 Extinction Coefficient 1mg/ml = 1.83      
+Improbability of expression in inclusion bodies = 0.685
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		43		16.929 		1.969  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		1		0.394  		0.136  	
+D = Asp		6		2.362  		0.429  	
+E = Glu		6		2.362  		0.394  	
+F = Phe		18		7.087  		1.969  	
+G = Gly		29		11.417 		1.359  	
+H = His		4		1.575  		0.787  	
+I = Ile		23		9.055  		2.012  	
+J = ---		0		0.000  		0.000  	
+K = Lys		2		0.787  		0.119  	
+L = Leu		22		8.661  		1.170  	
+M = Met		4		1.575  		0.926  	
+N = Asn		8		3.150  		0.732  	
+O = ---		0		0.000  		0.000  	
+P = Pro		11		4.331  		0.833  	
+Q = Gln		1		0.394  		0.101  	
+R = Arg		3		1.181  		0.241  	
+S = Ser		21		8.268  		1.181  	
+T = Thr		15		5.906  		0.968  	
+U = ---		0		0.000  		0.000  	
+V = Val		24		9.449  		1.432  	
+W = Trp		7		2.756  		2.120  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		6		2.362  		0.695  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		109		42.913
+Small		(A+B+C+D+G+N+P+S+T+V)	158		62.205
+Aliphatic	(A+I+L+V)		112		44.094
+Aromatic	(F+H+W+Y)		35		13.780
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	188		74.016
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	66		25.984
+Charged		(B+D+E+H+K+R+Z)		21		 8.268
+Basic		(H+K+R)			9		 3.543
+Acidic		(B+D+E+Z)		12		 4.724
+
+PEPSTATS of mRNA_46540 from 1 to 270
+
+Molecular weight = 28766.25  		Residues = 270   
+Average Residue Weight  = 106.542 	Charge   = 8.0   
+Isoelectric Point = 9.1143
+A280 Molar Extinction Coefficient  = 26030   
+A280 Extinction Coefficient 1mg/ml = 0.90      
+Improbability of expression in inclusion bodies = 0.915
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		25		9.259  		1.077  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		3		1.111  		0.383  	
+D = Asp		5		1.852  		0.337  	
+E = Glu		7		2.593  		0.432  	
+F = Phe		17		6.296  		1.749  	
+G = Gly		25		9.259  		1.102  	
+H = His		8		2.963  		1.481  	
+I = Ile		17		6.296  		1.399  	
+J = ---		0		0.000  		0.000  	
+K = Lys		9		3.333  		0.505  	
+L = Leu		23		8.519  		1.151  	
+M = Met		7		2.593  		1.525  	
+N = Asn		16		5.926  		1.378  	
+O = ---		0		0.000  		0.000  	
+P = Pro		14		5.185  		0.997  	
+Q = Gln		6		2.222  		0.570  	
+R = Arg		7		2.593  		0.529  	
+S = Ser		22		8.148  		1.164  	
+T = Thr		19		7.037  		1.154  	
+U = ---		0		0.000  		0.000  	
+V = Val		30		11.111 		1.684  	
+W = Trp		3		1.111  		0.855  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		7		2.593  		0.763  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		94		34.815
+Small		(A+B+C+D+G+N+P+S+T+V)	159		58.889
+Aliphatic	(A+I+L+V)		95		35.185
+Aromatic	(F+H+W+Y)		35		12.963
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	171		63.333
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	99		36.667
+Charged		(B+D+E+H+K+R+Z)		36		13.333
+Basic		(H+K+R)			24		 8.889
+Acidic		(B+D+E+Z)		12		 4.444
+
+PEPSTATS of mRNA_46635 from 1 to 271
+
+Molecular weight = 29197.70  		Residues = 271   
+Average Residue Weight  = 107.741 	Charge   = 7.5   
+Isoelectric Point = 9.0361
+A280 Molar Extinction Coefficient  = 31720   
+A280 Extinction Coefficient 1mg/ml = 1.09      
+Improbability of expression in inclusion bodies = 0.843
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		25		9.225  		1.073  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		2		0.738  		0.254  	
+D = Asp		7		2.583  		0.470  	
+E = Glu		8		2.952  		0.492  	
+F = Phe		17		6.273  		1.743  	
+G = Gly		21		7.749  		0.923  	
+H = His		9		3.321  		1.661  	
+I = Ile		17		6.273  		1.394  	
+J = ---		0		0.000  		0.000  	
+K = Lys		11		4.059  		0.615  	
+L = Leu		24		8.856  		1.197  	
+M = Met		6		2.214  		1.302  	
+N = Asn		11		4.059  		0.944  	
+O = ---		0		0.000  		0.000  	
+P = Pro		11		4.059  		0.781  	
+Q = Gln		8		2.952  		0.757  	
+R = Arg		7		2.583  		0.527  	
+S = Ser		26		9.594  		1.371  	
+T = Thr		19		7.011  		1.149  	
+U = ---		0		0.000  		0.000  	
+V = Val		31		11.439 		1.733  	
+W = Trp		4		1.476  		1.135  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		7		2.583  		0.760  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		93		34.317
+Small		(A+B+C+D+G+N+P+S+T+V)	153		56.458
+Aliphatic	(A+I+L+V)		97		35.793
+Aromatic	(F+H+W+Y)		37		13.653
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	165		60.886
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	106		39.114
+Charged		(B+D+E+H+K+R+Z)		42		15.498
+Basic		(H+K+R)			27		 9.963
+Acidic		(B+D+E+Z)		15		 5.535
+
+PEPSTATS of mRNA_47396 from 1 to 281
+
+Molecular weight = 29995.68  		Residues = 281   
+Average Residue Weight  = 106.746 	Charge   = 3.5   
+Isoelectric Point = 7.6233
+A280 Molar Extinction Coefficient  = 43810   
+A280 Extinction Coefficient 1mg/ml = 1.46      
+Improbability of expression in inclusion bodies = 0.691
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		39		13.879 		1.614  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		3		1.068  		0.368  	
+D = Asp		12		4.270  		0.776  	
+E = Glu		7		2.491  		0.415  	
+F = Phe		20		7.117  		1.977  	
+G = Gly		31		11.032 		1.313  	
+H = His		7		2.491  		1.246  	
+I = Ile		21		7.473  		1.661  	
+J = ---		0		0.000  		0.000  	
+K = Lys		11		3.915  		0.593  	
+L = Leu		25		8.897  		1.202  	
+M = Met		4		1.423  		0.837  	
+N = Asn		6		2.135  		0.497  	
+O = ---		0		0.000  		0.000  	
+P = Pro		13		4.626  		0.890  	
+Q = Gln		6		2.135  		0.547  	
+R = Arg		8		2.847  		0.581  	
+S = Ser		12		4.270  		0.610  	
+T = Thr		17		6.050  		0.992  	
+U = ---		0		0.000  		0.000  	
+V = Val		22		7.829  		1.186  	
+W = Trp		5		1.779  		1.369  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		12		4.270  		1.256  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		102		36.299
+Small		(A+B+C+D+G+N+P+S+T+V)	155		55.160
+Aliphatic	(A+I+L+V)		107		38.078
+Aromatic	(F+H+W+Y)		44		15.658
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	195		69.395
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	86		30.605
+Charged		(B+D+E+H+K+R+Z)		45		16.014
+Basic		(H+K+R)			26		 9.253
+Acidic		(B+D+E+Z)		19		 6.762
+
+PEPSTATS of mRNA_47901 from 1 to 254
+
+Molecular weight = 25968.99  		Residues = 254   
+Average Residue Weight  = 102.240 	Charge   = -5.0  
+Isoelectric Point = 4.4972
+A280 Molar Extinction Coefficient  = 47510   
+A280 Extinction Coefficient 1mg/ml = 1.83      
+Improbability of expression in inclusion bodies = 0.698
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		42		16.535 		1.923  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		1		0.394  		0.136  	
+D = Asp		6		2.362  		0.429  	
+E = Glu		6		2.362  		0.394  	
+F = Phe		18		7.087  		1.969  	
+G = Gly		29		11.417 		1.359  	
+H = His		4		1.575  		0.787  	
+I = Ile		23		9.055  		2.012  	
+J = ---		0		0.000  		0.000  	
+K = Lys		2		0.787  		0.119  	
+L = Leu		22		8.661  		1.170  	
+M = Met		4		1.575  		0.926  	
+N = Asn		8		3.150  		0.732  	
+O = ---		0		0.000  		0.000  	
+P = Pro		11		4.331  		0.833  	
+Q = Gln		1		0.394  		0.101  	
+R = Arg		3		1.181  		0.241  	
+S = Ser		22		8.661  		1.237  	
+T = Thr		15		5.906  		0.968  	
+U = ---		0		0.000  		0.000  	
+V = Val		24		9.449  		1.432  	
+W = Trp		7		2.756  		2.120  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		6		2.362  		0.695  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		109		42.913
+Small		(A+B+C+D+G+N+P+S+T+V)	158		62.205
+Aliphatic	(A+I+L+V)		111		43.701
+Aromatic	(F+H+W+Y)		35		13.780
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	187		73.622
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	67		26.378
+Charged		(B+D+E+H+K+R+Z)		21		 8.268
+Basic		(H+K+R)			9		 3.543
+Acidic		(B+D+E+Z)		12		 4.724
+
+PEPSTATS of mRNA_48239 from 1 to 270
+
+Molecular weight = 28870.40  		Residues = 270   
+Average Residue Weight  = 106.927 	Charge   = 8.0   
+Isoelectric Point = 9.1143
+A280 Molar Extinction Coefficient  = 26030   
+A280 Extinction Coefficient 1mg/ml = 0.90      
+Improbability of expression in inclusion bodies = 0.903
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		26		9.630  		1.120  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		3		1.111  		0.383  	
+D = Asp		5		1.852  		0.337  	
+E = Glu		7		2.593  		0.432  	
+F = Phe		18		6.667  		1.852  	
+G = Gly		23		8.519  		1.014  	
+H = His		8		2.963  		1.481  	
+I = Ile		16		5.926  		1.317  	
+J = ---		0		0.000  		0.000  	
+K = Lys		9		3.333  		0.505  	
+L = Leu		24		8.889  		1.201  	
+M = Met		7		2.593  		1.525  	
+N = Asn		16		5.926  		1.378  	
+O = ---		0		0.000  		0.000  	
+P = Pro		14		5.185  		0.997  	
+Q = Gln		6		2.222  		0.570  	
+R = Arg		7		2.593  		0.529  	
+S = Ser		22		8.148  		1.164  	
+T = Thr		19		7.037  		1.154  	
+U = ---		0		0.000  		0.000  	
+V = Val		30		11.111 		1.684  	
+W = Trp		3		1.111  		0.855  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		7		2.593  		0.763  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		93		34.444
+Small		(A+B+C+D+G+N+P+S+T+V)	158		58.519
+Aliphatic	(A+I+L+V)		96		35.556
+Aromatic	(F+H+W+Y)		36		13.333
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	171		63.333
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	99		36.667
+Charged		(B+D+E+H+K+R+Z)		36		13.333
+Basic		(H+K+R)			24		 8.889
+Acidic		(B+D+E+Z)		12		 4.444
+
+PEPSTATS of mRNA_48605 from 1 to 271
+
+Molecular weight = 29172.64  		Residues = 271   
+Average Residue Weight  = 107.648 	Charge   = 4.0   
+Isoelectric Point = 7.7302
+A280 Molar Extinction Coefficient  = 37410   
+A280 Extinction Coefficient 1mg/ml = 1.28      
+Improbability of expression in inclusion bodies = 0.810
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		25		9.225  		1.073  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		2		0.738  		0.254  	
+D = Asp		7		2.583  		0.470  	
+E = Glu		9		3.321  		0.554  	
+F = Phe		17		6.273  		1.743  	
+G = Gly		21		7.749  		0.923  	
+H = His		8		2.952  		1.476  	
+I = Ile		17		6.273  		1.394  	
+J = ---		0		0.000  		0.000  	
+K = Lys		10		3.690  		0.559  	
+L = Leu		24		8.856  		1.197  	
+M = Met		6		2.214  		1.302  	
+N = Asn		12		4.428  		1.030  	
+O = ---		0		0.000  		0.000  	
+P = Pro		12		4.428  		0.852  	
+Q = Gln		7		2.583  		0.662  	
+R = Arg		6		2.214  		0.452  	
+S = Ser		26		9.594  		1.371  	
+T = Thr		18		6.642  		1.089  	
+U = ---		0		0.000  		0.000  	
+V = Val		32		11.808 		1.789  	
+W = Trp		5		1.845  		1.419  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		7		2.583  		0.760  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		92		33.948
+Small		(A+B+C+D+G+N+P+S+T+V)	155		57.196
+Aliphatic	(A+I+L+V)		98		36.162
+Aromatic	(F+H+W+Y)		37		13.653
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	168		61.993
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	103		38.007
+Charged		(B+D+E+H+K+R+Z)		40		14.760
+Basic		(H+K+R)			24		 8.856
+Acidic		(B+D+E+Z)		16		 5.904
+
+PEPSTATS of mRNA_48789 from 1 to 177
+
+Molecular weight = 18990.03  		Residues = 177   
+Average Residue Weight  = 107.288 	Charge   = 4.5   
+Isoelectric Point = 8.4784
+A280 Molar Extinction Coefficient  = 24750   
+A280 Extinction Coefficient 1mg/ml = 1.30      
+Improbability of expression in inclusion bodies = 0.857
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		17		9.605  		1.117  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		1		0.565  		0.195  	
+D = Asp		4		2.260  		0.411  	
+E = Glu		4		2.260  		0.377  	
+F = Phe		10		5.650  		1.569  	
+G = Gly		17		9.605  		1.143  	
+H = His		7		3.955  		1.977  	
+I = Ile		11		6.215  		1.381  	
+J = ---		0		0.000  		0.000  	
+K = Lys		3		1.695  		0.257  	
+L = Leu		21		11.864 		1.603  	
+M = Met		5		2.825  		1.662  	
+N = Asn		6		3.390  		0.788  	
+O = ---		0		0.000  		0.000  	
+P = Pro		10		5.650  		1.086  	
+Q = Gln		3		1.695  		0.435  	
+R = Arg		6		3.390  		0.692  	
+S = Ser		15		8.475  		1.211  	
+T = Thr		12		6.780  		1.111  	
+U = ---		0		0.000  		0.000  	
+V = Val		16		9.040  		1.370  	
+W = Trp		3		1.695  		1.304  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		6		3.390  		0.997  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		62		35.028
+Small		(A+B+C+D+G+N+P+S+T+V)	98		55.367
+Aliphatic	(A+I+L+V)		65		36.723
+Aromatic	(F+H+W+Y)		26		14.689
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	117		66.102
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	60		33.898
+Charged		(B+D+E+H+K+R+Z)		24		13.559
+Basic		(H+K+R)			16		 9.040
+Acidic		(B+D+E+Z)		8		 4.520
+
+PEPSTATS of mRNA_49376 from 1 to 281
+
+Molecular weight = 29971.65  		Residues = 281   
+Average Residue Weight  = 106.661 	Charge   = 9.5   
+Isoelectric Point = 9.0143
+A280 Molar Extinction Coefficient  = 42530   
+A280 Extinction Coefficient 1mg/ml = 1.42      
+Improbability of expression in inclusion bodies = 0.811
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		38		13.523 		1.572  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		3		1.068  		0.368  	
+D = Asp		8		2.847  		0.518  	
+E = Glu		7		2.491  		0.415  	
+F = Phe		18		6.406  		1.779  	
+G = Gly		28		9.964  		1.186  	
+H = His		11		3.915  		1.957  	
+I = Ile		23		8.185  		1.819  	
+J = ---		0		0.000  		0.000  	
+K = Lys		11		3.915  		0.593  	
+L = Leu		23		8.185  		1.106  	
+M = Met		3		1.068  		0.628  	
+N = Asn		7		2.491  		0.579  	
+O = ---		0		0.000  		0.000  	
+P = Pro		14		4.982  		0.958  	
+Q = Gln		5		1.779  		0.456  	
+R = Arg		8		2.847  		0.581  	
+S = Ser		17		6.050  		0.864  	
+T = Thr		18		6.406  		1.050  	
+U = ---		0		0.000  		0.000  	
+V = Val		23		8.185  		1.240  	
+W = Trp		5		1.779  		1.369  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		11		3.915  		1.151  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		104		37.011
+Small		(A+B+C+D+G+N+P+S+T+V)	156		55.516
+Aliphatic	(A+I+L+V)		107		38.078
+Aromatic	(F+H+W+Y)		45		16.014
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	189		67.260
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	92		32.740
+Charged		(B+D+E+H+K+R+Z)		45		16.014
+Basic		(H+K+R)			30		10.676
+Acidic		(B+D+E+Z)		15		 5.338
+
+PEPSTATS of mRNA_49987 from 1 to 318
+
+Molecular weight = 34386.51  		Residues = 318   
+Average Residue Weight  = 108.134 	Charge   = 7.0   
+Isoelectric Point = 8.1535
+A280 Molar Extinction Coefficient  = 47510   
+A280 Extinction Coefficient 1mg/ml = 1.38      
+Improbability of expression in inclusion bodies = 0.764
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		28		8.805  		1.024  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		6		1.887  		0.651  	
+D = Asp		6		1.887  		0.343  	
+E = Glu		13		4.088  		0.681  	
+F = Phe		16		5.031  		1.398  	
+G = Gly		26		8.176  		0.973  	
+H = His		10		3.145  		1.572  	
+I = Ile		29		9.119  		2.027  	
+J = ---		0		0.000  		0.000  	
+K = Lys		11		3.459  		0.524  	
+L = Leu		33		10.377 		1.402  	
+M = Met		9		2.830  		1.665  	
+N = Asn		7		2.201  		0.512  	
+O = ---		0		0.000  		0.000  	
+P = Pro		17		5.346  		1.028  	
+Q = Gln		7		2.201  		0.564  	
+R = Arg		10		3.145  		0.642  	
+S = Ser		24		7.547  		1.078  	
+T = Thr		20		6.289  		1.031  	
+U = ---		0		0.000  		0.000  	
+V = Val		33		10.377 		1.572  	
+W = Trp		7		2.201  		1.693  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		6		1.887  		0.555  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		104		32.704
+Small		(A+B+C+D+G+N+P+S+T+V)	167		52.516
+Aliphatic	(A+I+L+V)		123		38.679
+Aromatic	(F+H+W+Y)		39		12.264
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	210		66.038
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	108		33.962
+Charged		(B+D+E+H+K+R+Z)		50		15.723
+Basic		(H+K+R)			31		 9.748
+Acidic		(B+D+E+Z)		19		 5.975
+
+PEPSTATS of mRNA_49970 from 1 to 283
+
+Molecular weight = 30348.75  		Residues = 283   
+Average Residue Weight  = 107.239 	Charge   = 2.0   
+Isoelectric Point = 6.8270
+A280 Molar Extinction Coefficient  = 31720   
+A280 Extinction Coefficient 1mg/ml = 1.05      
+Improbability of expression in inclusion bodies = 0.588
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		26		9.187  		1.068  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		10		3.534  		1.218  	
+D = Asp		7		2.473  		0.450  	
+E = Glu		10		3.534  		0.589  	
+F = Phe		18		6.360  		1.767  	
+G = Gly		26		9.187  		1.094  	
+H = His		10		3.534  		1.767  	
+I = Ile		15		5.300  		1.178  	
+J = ---		0		0.000  		0.000  	
+K = Lys		8		2.827  		0.428  	
+L = Leu		35		12.367 		1.671  	
+M = Met		10		3.534  		2.079  	
+N = Asn		5		1.767  		0.411  	
+O = ---		0		0.000  		0.000  	
+P = Pro		10		3.534  		0.680  	
+Q = Gln		5		1.767  		0.453  	
+R = Arg		6		2.120  		0.433  	
+S = Ser		19		6.714  		0.959  	
+T = Thr		20		7.067  		1.159  	
+U = ---		0		0.000  		0.000  	
+V = Val		32		11.307 		1.713  	
+W = Trp		4		1.413  		1.087  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		7		2.473  		0.727  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		101		35.689
+Small		(A+B+C+D+G+N+P+S+T+V)	155		54.770
+Aliphatic	(A+I+L+V)		108		38.163
+Aromatic	(F+H+W+Y)		39		13.781
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	193		68.198
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	90		31.802
+Charged		(B+D+E+H+K+R+Z)		41		14.488
+Basic		(H+K+R)			24		 8.481
+Acidic		(B+D+E+Z)		17		 6.007
+
+PEPSTATS of mRNA_50413 from 1 to 248
+
+Molecular weight = 26146.39  		Residues = 248   
+Average Residue Weight  = 105.429 	Charge   = -1.0  
+Isoelectric Point = 6.2252
+A280 Molar Extinction Coefficient  = 48790   
+A280 Extinction Coefficient 1mg/ml = 1.87      
+Improbability of expression in inclusion bodies = 0.672
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		30		12.097 		1.407  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		1		0.403  		0.139  	
+D = Asp		8		3.226  		0.587  	
+E = Glu		7		2.823  		0.470  	
+F = Phe		17		6.855  		1.904  	
+G = Gly		30		12.097 		1.440  	
+H = His		6		2.419  		1.210  	
+I = Ile		17		6.855  		1.523  	
+J = ---		0		0.000  		0.000  	
+K = Lys		6		2.419  		0.367  	
+L = Leu		29		11.694 		1.580  	
+M = Met		5		2.016  		1.186  	
+N = Asn		4		1.613  		0.375  	
+O = ---		0		0.000  		0.000  	
+P = Pro		11		4.435  		0.853  	
+Q = Gln		2		0.806  		0.207  	
+R = Arg		5		2.016  		0.411  	
+S = Ser		16		6.452  		0.922  	
+T = Thr		18		7.258  		1.190  	
+U = ---		0		0.000  		0.000  	
+V = Val		22		8.871  		1.344  	
+W = Trp		7		2.823  		2.171  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		7		2.823  		0.830  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		95		38.306
+Small		(A+B+C+D+G+N+P+S+T+V)	140		56.452
+Aliphatic	(A+I+L+V)		98		39.516
+Aromatic	(F+H+W+Y)		37		14.919
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	176		70.968
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	72		29.032
+Charged		(B+D+E+H+K+R+Z)		32		12.903
+Basic		(H+K+R)			17		 6.855
+Acidic		(B+D+E+Z)		15		 6.048
+
+PEPSTATS of mRNA_51379 from 1 to 248
+
+Molecular weight = 26136.30  		Residues = 248   
+Average Residue Weight  = 105.388 	Charge   = -1.0  
+Isoelectric Point = 6.2244
+A280 Molar Extinction Coefficient  = 48790   
+A280 Extinction Coefficient 1mg/ml = 1.87      
+Improbability of expression in inclusion bodies = 0.672
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		31		12.500 		1.453  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		1		0.403  		0.139  	
+D = Asp		9		3.629  		0.660  	
+E = Glu		6		2.419  		0.403  	
+F = Phe		17		6.855  		1.904  	
+G = Gly		29		11.694 		1.392  	
+H = His		6		2.419  		1.210  	
+I = Ile		18		7.258  		1.613  	
+J = ---		0		0.000  		0.000  	
+K = Lys		6		2.419  		0.367  	
+L = Leu		28		11.290 		1.526  	
+M = Met		5		2.016  		1.186  	
+N = Asn		3		1.210  		0.281  	
+O = ---		0		0.000  		0.000  	
+P = Pro		11		4.435  		0.853  	
+Q = Gln		3		1.210  		0.310  	
+R = Arg		5		2.016  		0.411  	
+S = Ser		18		7.258  		1.037  	
+T = Thr		18		7.258  		1.190  	
+U = ---		0		0.000  		0.000  	
+V = Val		20		8.065  		1.222  	
+W = Trp		7		2.823  		2.171  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		7		2.823  		0.830  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		97		39.113
+Small		(A+B+C+D+G+N+P+S+T+V)	140		56.452
+Aliphatic	(A+I+L+V)		97		39.113
+Aromatic	(F+H+W+Y)		37		14.919
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	174		70.161
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	74		29.839
+Charged		(B+D+E+H+K+R+Z)		32		12.903
+Basic		(H+K+R)			17		 6.855
+Acidic		(B+D+E+Z)		15		 6.048
+
+PEPSTATS of mRNA_51986 from 1 to 281
+
+Molecular weight = 29997.65  		Residues = 281   
+Average Residue Weight  = 106.753 	Charge   = 8.5   
+Isoelectric Point = 8.7488
+A280 Molar Extinction Coefficient  = 42530   
+A280 Extinction Coefficient 1mg/ml = 1.42      
+Improbability of expression in inclusion bodies = 0.784
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		39		13.879 		1.614  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		3		1.068  		0.368  	
+D = Asp		8		2.847  		0.518  	
+E = Glu		8		2.847  		0.474  	
+F = Phe		18		6.406  		1.779  	
+G = Gly		28		9.964  		1.186  	
+H = His		11		3.915  		1.957  	
+I = Ile		22		7.829  		1.740  	
+J = ---		0		0.000  		0.000  	
+K = Lys		10		3.559  		0.539  	
+L = Leu		23		8.185  		1.106  	
+M = Met		3		1.068  		0.628  	
+N = Asn		7		2.491  		0.579  	
+O = ---		0		0.000  		0.000  	
+P = Pro		14		4.982  		0.958  	
+Q = Gln		5		1.779  		0.456  	
+R = Arg		9		3.203  		0.654  	
+S = Ser		16		5.694  		0.813  	
+T = Thr		17		6.050  		0.992  	
+U = ---		0		0.000  		0.000  	
+V = Val		24		8.541  		1.294  	
+W = Trp		5		1.779  		1.369  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		11		3.915  		1.151  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		103		36.655
+Small		(A+B+C+D+G+N+P+S+T+V)	156		55.516
+Aliphatic	(A+I+L+V)		108		38.434
+Aromatic	(F+H+W+Y)		45		16.014
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	190		67.616
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	91		32.384
+Charged		(B+D+E+H+K+R+Z)		46		16.370
+Basic		(H+K+R)			30		10.676
+Acidic		(B+D+E+Z)		16		 5.694
+
+PEPSTATS of mRNA_52422 from 1 to 318
+
+Molecular weight = 34299.30  		Residues = 318   
+Average Residue Weight  = 107.859 	Charge   = 6.5   
+Isoelectric Point = 7.9003
+A280 Molar Extinction Coefficient  = 47510   
+A280 Extinction Coefficient 1mg/ml = 1.39      
+Improbability of expression in inclusion bodies = 0.756
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		28		8.805  		1.024  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		6		1.887  		0.651  	
+D = Asp		6		1.887  		0.343  	
+E = Glu		13		4.088  		0.681  	
+F = Phe		16		5.031  		1.398  	
+G = Gly		27		8.491  		1.011  	
+H = His		11		3.459  		1.730  	
+I = Ile		28		8.805  		1.957  	
+J = ---		0		0.000  		0.000  	
+K = Lys		11		3.459  		0.524  	
+L = Leu		32		10.063 		1.360  	
+M = Met		9		2.830  		1.665  	
+N = Asn		7		2.201  		0.512  	
+O = ---		0		0.000  		0.000  	
+P = Pro		17		5.346  		1.028  	
+Q = Gln		7		2.201  		0.564  	
+R = Arg		9		2.830  		0.578  	
+S = Ser		24		7.547  		1.078  	
+T = Thr		21		6.604  		1.083  	
+U = ---		0		0.000  		0.000  	
+V = Val		33		10.377 		1.572  	
+W = Trp		7		2.201  		1.693  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		6		1.887  		0.555  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		106		33.333
+Small		(A+B+C+D+G+N+P+S+T+V)	169		53.145
+Aliphatic	(A+I+L+V)		121		38.050
+Aromatic	(F+H+W+Y)		40		12.579
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	209		65.723
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	109		34.277
+Charged		(B+D+E+H+K+R+Z)		50		15.723
+Basic		(H+K+R)			31		 9.748
+Acidic		(B+D+E+Z)		19		 5.975
+
+PEPSTATS of mRNA_52864 from 1 to 318
+
+Molecular weight = 34275.32  		Residues = 318   
+Average Residue Weight  = 107.784 	Charge   = 6.0   
+Isoelectric Point = 7.8894
+A280 Molar Extinction Coefficient  = 47510   
+A280 Extinction Coefficient 1mg/ml = 1.39      
+Improbability of expression in inclusion bodies = 0.756
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		28		8.805  		1.024  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		6		1.887  		0.651  	
+D = Asp		6		1.887  		0.343  	
+E = Glu		13		4.088  		0.681  	
+F = Phe		16		5.031  		1.398  	
+G = Gly		27		8.491  		1.011  	
+H = His		10		3.145  		1.572  	
+I = Ile		28		8.805  		1.957  	
+J = ---		0		0.000  		0.000  	
+K = Lys		11		3.459  		0.524  	
+L = Leu		33		10.377 		1.402  	
+M = Met		9		2.830  		1.665  	
+N = Asn		7		2.201  		0.512  	
+O = ---		0		0.000  		0.000  	
+P = Pro		17		5.346  		1.028  	
+Q = Gln		7		2.201  		0.564  	
+R = Arg		9		2.830  		0.578  	
+S = Ser		24		7.547  		1.078  	
+T = Thr		21		6.604  		1.083  	
+U = ---		0		0.000  		0.000  	
+V = Val		33		10.377 		1.572  	
+W = Trp		7		2.201  		1.693  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		6		1.887  		0.555  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		106		33.333
+Small		(A+B+C+D+G+N+P+S+T+V)	169		53.145
+Aliphatic	(A+I+L+V)		122		38.365
+Aromatic	(F+H+W+Y)		39		12.264
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	210		66.038
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	108		33.962
+Charged		(B+D+E+H+K+R+Z)		49		15.409
+Basic		(H+K+R)			30		 9.434
+Acidic		(B+D+E+Z)		19		 5.975
+
+PEPSTATS of mRNA_53665 from 1 to 248
+
+Molecular weight = 26186.39  		Residues = 248   
+Average Residue Weight  = 105.590 	Charge   = -2.0  
+Isoelectric Point = 5.8976
+A280 Molar Extinction Coefficient  = 48790   
+A280 Extinction Coefficient 1mg/ml = 1.86      
+Improbability of expression in inclusion bodies = 0.631
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		31		12.500 		1.453  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		1		0.403  		0.139  	
+D = Asp		9		3.629  		0.660  	
+E = Glu		7		2.823  		0.470  	
+F = Phe		17		6.855  		1.904  	
+G = Gly		29		11.694 		1.392  	
+H = His		6		2.419  		1.210  	
+I = Ile		20		8.065  		1.792  	
+J = ---		0		0.000  		0.000  	
+K = Lys		6		2.419  		0.367  	
+L = Leu		29		11.694 		1.580  	
+M = Met		4		1.613  		0.949  	
+N = Asn		4		1.613  		0.375  	
+O = ---		0		0.000  		0.000  	
+P = Pro		11		4.435  		0.853  	
+Q = Gln		2		0.806  		0.207  	
+R = Arg		5		2.016  		0.411  	
+S = Ser		16		6.452  		0.922  	
+T = Thr		18		7.258  		1.190  	
+U = ---		0		0.000  		0.000  	
+V = Val		19		7.661  		1.161  	
+W = Trp		7		2.823  		2.171  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		7		2.823  		0.830  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		95		38.306
+Small		(A+B+C+D+G+N+P+S+T+V)	138		55.645
+Aliphatic	(A+I+L+V)		99		39.919
+Aromatic	(F+H+W+Y)		37		14.919
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	175		70.565
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	73		29.435
+Charged		(B+D+E+H+K+R+Z)		33		13.306
+Basic		(H+K+R)			17		 6.855
+Acidic		(B+D+E+Z)		16		 6.452
+
+PEPSTATS of mRNA_54367 from 1 to 318
+
+Molecular weight = 34259.28  		Residues = 318   
+Average Residue Weight  = 107.734 	Charge   = 7.0   
+Isoelectric Point = 8.1534
+A280 Molar Extinction Coefficient  = 47510   
+A280 Extinction Coefficient 1mg/ml = 1.39      
+Improbability of expression in inclusion bodies = 0.790
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		28		8.805  		1.024  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		6		1.887  		0.651  	
+D = Asp		6		1.887  		0.343  	
+E = Glu		12		3.774  		0.629  	
+F = Phe		16		5.031  		1.398  	
+G = Gly		27		8.491  		1.011  	
+H = His		10		3.145  		1.572  	
+I = Ile		27		8.491  		1.887  	
+J = ---		0		0.000  		0.000  	
+K = Lys		11		3.459  		0.524  	
+L = Leu		33		10.377 		1.402  	
+M = Met		9		2.830  		1.665  	
+N = Asn		8		2.516  		0.585  	
+O = ---		0		0.000  		0.000  	
+P = Pro		17		5.346  		1.028  	
+Q = Gln		8		2.516  		0.645  	
+R = Arg		9		2.830  		0.578  	
+S = Ser		25		7.862  		1.123  	
+T = Thr		19		5.975  		0.979  	
+U = ---		0		0.000  		0.000  	
+V = Val		34		10.692 		1.620  	
+W = Trp		7		2.201  		1.693  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		6		1.887  		0.555  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		105		33.019
+Small		(A+B+C+D+G+N+P+S+T+V)	170		53.459
+Aliphatic	(A+I+L+V)		122		38.365
+Aromatic	(F+H+W+Y)		39		12.264
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	210		66.038
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	108		33.962
+Charged		(B+D+E+H+K+R+Z)		48		15.094
+Basic		(H+K+R)			30		 9.434
+Acidic		(B+D+E+Z)		18		 5.660
+
+PEPSTATS of mRNA_54358 from 1 to 283
+
+Molecular weight = 30307.74  		Residues = 283   
+Average Residue Weight  = 107.094 	Charge   = 2.5   
+Isoelectric Point = 6.9660
+A280 Molar Extinction Coefficient  = 31720   
+A280 Extinction Coefficient 1mg/ml = 1.05      
+Improbability of expression in inclusion bodies = 0.639
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		25		8.834  		1.027  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		10		3.534  		1.218  	
+D = Asp		7		2.473  		0.450  	
+E = Glu		10		3.534  		0.589  	
+F = Phe		17		6.007  		1.669  	
+G = Gly		26		9.187  		1.094  	
+H = His		9		3.180  		1.590  	
+I = Ile		15		5.300  		1.178  	
+J = ---		0		0.000  		0.000  	
+K = Lys		9		3.180  		0.482  	
+L = Leu		36		12.721 		1.719  	
+M = Met		10		3.534  		2.079  	
+N = Asn		6		2.120  		0.493  	
+O = ---		0		0.000  		0.000  	
+P = Pro		10		3.534  		0.680  	
+Q = Gln		4		1.413  		0.362  	
+R = Arg		6		2.120  		0.433  	
+S = Ser		20		7.067  		1.010  	
+T = Thr		20		7.067  		1.159  	
+U = ---		0		0.000  		0.000  	
+V = Val		32		11.307 		1.713  	
+W = Trp		4		1.413  		1.087  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		7		2.473  		0.727  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		101		35.689
+Small		(A+B+C+D+G+N+P+S+T+V)	156		55.124
+Aliphatic	(A+I+L+V)		108		38.163
+Aromatic	(F+H+W+Y)		37		13.074
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	192		67.845
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	91		32.155
+Charged		(B+D+E+H+K+R+Z)		41		14.488
+Basic		(H+K+R)			24		 8.481
+Acidic		(B+D+E+Z)		17		 6.007
+
+PEPSTATS of mRNA_54755 from 1 to 281
+
+Molecular weight = 30027.63  		Residues = 281   
+Average Residue Weight  = 106.860 	Charge   = 7.5   
+Isoelectric Point = 8.4525
+A280 Molar Extinction Coefficient  = 42530   
+A280 Extinction Coefficient 1mg/ml = 1.42      
+Improbability of expression in inclusion bodies = 0.775
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		38		13.523 		1.572  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		3		1.068  		0.368  	
+D = Asp		9		3.203  		0.582  	
+E = Glu		8		2.847  		0.474  	
+F = Phe		18		6.406  		1.779  	
+G = Gly		28		9.964  		1.186  	
+H = His		11		3.915  		1.957  	
+I = Ile		22		7.829  		1.740  	
+J = ---		0		0.000  		0.000  	
+K = Lys		10		3.559  		0.539  	
+L = Leu		23		8.185  		1.106  	
+M = Met		3		1.068  		0.628  	
+N = Asn		7		2.491  		0.579  	
+O = ---		0		0.000  		0.000  	
+P = Pro		14		4.982  		0.958  	
+Q = Gln		5		1.779  		0.456  	
+R = Arg		9		3.203  		0.654  	
+S = Ser		17		6.050  		0.864  	
+T = Thr		16		5.694  		0.933  	
+U = ---		0		0.000  		0.000  	
+V = Val		24		8.541  		1.294  	
+W = Trp		5		1.779  		1.369  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		11		3.915  		1.151  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		102		36.299
+Small		(A+B+C+D+G+N+P+S+T+V)	156		55.516
+Aliphatic	(A+I+L+V)		107		38.078
+Aromatic	(F+H+W+Y)		45		16.014
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	189		67.260
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	92		32.740
+Charged		(B+D+E+H+K+R+Z)		47		16.726
+Basic		(H+K+R)			30		10.676
+Acidic		(B+D+E+Z)		17		 6.050
+
+PEPSTATS of mRNA_55382 from 1 to 248
+
+Molecular weight = 26053.23  		Residues = 248   
+Average Residue Weight  = 105.053 	Charge   = -1.0  
+Isoelectric Point = 6.2228
+A280 Molar Extinction Coefficient  = 43100   
+A280 Extinction Coefficient 1mg/ml = 1.65      
+Improbability of expression in inclusion bodies = 0.672
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		31		12.500 		1.453  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		2		0.806  		0.278  	
+D = Asp		9		3.629  		0.660  	
+E = Glu		6		2.419  		0.403  	
+F = Phe		17		6.855  		1.904  	
+G = Gly		29		11.694 		1.392  	
+H = His		6		2.419  		1.210  	
+I = Ile		18		7.258  		1.613  	
+J = ---		0		0.000  		0.000  	
+K = Lys		6		2.419  		0.367  	
+L = Leu		28		11.290 		1.526  	
+M = Met		5		2.016  		1.186  	
+N = Asn		3		1.210  		0.281  	
+O = ---		0		0.000  		0.000  	
+P = Pro		11		4.435  		0.853  	
+Q = Gln		3		1.210  		0.310  	
+R = Arg		5		2.016  		0.411  	
+S = Ser		18		7.258  		1.037  	
+T = Thr		18		7.258  		1.190  	
+U = ---		0		0.000  		0.000  	
+V = Val		20		8.065  		1.222  	
+W = Trp		6		2.419  		1.861  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		7		2.823  		0.830  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		98		39.516
+Small		(A+B+C+D+G+N+P+S+T+V)	141		56.855
+Aliphatic	(A+I+L+V)		97		39.113
+Aromatic	(F+H+W+Y)		36		14.516
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	174		70.161
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	74		29.839
+Charged		(B+D+E+H+K+R+Z)		32		12.903
+Basic		(H+K+R)			17		 6.855
+Acidic		(B+D+E+Z)		15		 6.048
+
+PEPSTATS of mRNA_55546 from 1 to 232
+
+Molecular weight = 25226.68  		Residues = 232   
+Average Residue Weight  = 108.736 	Charge   = 11.0  
+Isoelectric Point = 10.3203
+A280 Molar Extinction Coefficient  = 33570   
+A280 Extinction Coefficient 1mg/ml = 1.33      
+Improbability of expression in inclusion bodies = 0.874
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		19		8.190  		0.952  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		1		0.431  		0.149  	
+D = Asp		7		3.017  		0.549  	
+E = Glu		7		3.017  		0.503  	
+F = Phe		18		7.759  		2.155  	
+G = Gly		22		9.483  		1.129  	
+H = His		6		2.586  		1.293  	
+I = Ile		17		7.328  		1.628  	
+J = ---		0		0.000  		0.000  	
+K = Lys		14		6.034  		0.914  	
+L = Leu		27		11.638 		1.573  	
+M = Met		6		2.586  		1.521  	
+N = Asn		5		2.155  		0.501  	
+O = ---		0		0.000  		0.000  	
+P = Pro		10		4.310  		0.829  	
+Q = Gln		1		0.431  		0.111  	
+R = Arg		8		3.448  		0.704  	
+S = Ser		19		8.190  		1.170  	
+T = Thr		16		6.897  		1.131  	
+U = ---		0		0.000  		0.000  	
+V = Val		20		8.621  		1.306  	
+W = Trp		5		2.155  		1.658  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		4		1.724  		0.507  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		77		33.190
+Small		(A+B+C+D+G+N+P+S+T+V)	119		51.293
+Aliphatic	(A+I+L+V)		83		35.776
+Aromatic	(F+H+W+Y)		33		14.224
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	149		64.224
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	83		35.776
+Charged		(B+D+E+H+K+R+Z)		42		18.103
+Basic		(H+K+R)			28		12.069
+Acidic		(B+D+E+Z)		14		 6.034
+
+PEPSTATS of mRNA_56063 from 1 to 284
+
+Molecular weight = 30386.04  		Residues = 284   
+Average Residue Weight  = 106.993 	Charge   = 6.0   
+Isoelectric Point = 8.1048
+A280 Molar Extinction Coefficient  = 43810   
+A280 Extinction Coefficient 1mg/ml = 1.44      
+Improbability of expression in inclusion bodies = 0.716
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		37		13.028 		1.515  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		3		1.056  		0.364  	
+D = Asp		7		2.465  		0.448  	
+E = Glu		11		3.873  		0.646  	
+F = Phe		14		4.930  		1.369  	
+G = Gly		28		9.859  		1.174  	
+H = His		10		3.521  		1.761  	
+I = Ile		14		4.930  		1.095  	
+J = ---		0		0.000  		0.000  	
+K = Lys		10		3.521  		0.534  	
+L = Leu		29		10.211 		1.380  	
+M = Met		4		1.408  		0.829  	
+N = Asn		10		3.521  		0.819  	
+O = ---		0		0.000  		0.000  	
+P = Pro		10		3.521  		0.677  	
+Q = Gln		7		2.465  		0.632  	
+R = Arg		9		3.169  		0.647  	
+S = Ser		15		5.282  		0.755  	
+T = Thr		17		5.986  		0.981  	
+U = ---		0		0.000  		0.000  	
+V = Val		32		11.268 		1.707  	
+W = Trp		5		1.761  		1.354  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		12		4.225  		1.243  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		100		35.211
+Small		(A+B+C+D+G+N+P+S+T+V)	159		55.986
+Aliphatic	(A+I+L+V)		112		39.437
+Aromatic	(F+H+W+Y)		41		14.437
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	188		66.197
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	96		33.803
+Charged		(B+D+E+H+K+R+Z)		47		16.549
+Basic		(H+K+R)			29		10.211
+Acidic		(B+D+E+Z)		18		 6.338
+
+PEPSTATS of mRNA_56145 from 1 to 232
+
+Molecular weight = 25206.58  		Residues = 232   
+Average Residue Weight  = 108.649 	Charge   = 9.0   
+Isoelectric Point = 10.0791
+A280 Molar Extinction Coefficient  = 33570   
+A280 Extinction Coefficient 1mg/ml = 1.33      
+Improbability of expression in inclusion bodies = 0.875
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		19		8.190  		0.952  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		1		0.431  		0.149  	
+D = Asp		7		3.017  		0.549  	
+E = Glu		8		3.448  		0.575  	
+F = Phe		18		7.759  		2.155  	
+G = Gly		22		9.483  		1.129  	
+H = His		6		2.586  		1.293  	
+I = Ile		16		6.897  		1.533  	
+J = ---		0		0.000  		0.000  	
+K = Lys		13		5.603  		0.849  	
+L = Leu		26		11.207 		1.514  	
+M = Met		7		3.017  		1.775  	
+N = Asn		4		1.724  		0.401  	
+O = ---		0		0.000  		0.000  	
+P = Pro		10		4.310  		0.829  	
+Q = Gln		1		0.431  		0.111  	
+R = Arg		8		3.448  		0.704  	
+S = Ser		20		8.621  		1.232  	
+T = Thr		17		7.328  		1.201  	
+U = ---		0		0.000  		0.000  	
+V = Val		20		8.621  		1.306  	
+W = Trp		5		2.155  		1.658  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		4		1.724  		0.507  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		79		34.052
+Small		(A+B+C+D+G+N+P+S+T+V)	120		51.724
+Aliphatic	(A+I+L+V)		81		34.914
+Aromatic	(F+H+W+Y)		33		14.224
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	148		63.793
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	84		36.207
+Charged		(B+D+E+H+K+R+Z)		42		18.103
+Basic		(H+K+R)			27		11.638
+Acidic		(B+D+E+Z)		15		 6.466
+
+PEPSTATS of mRNA_56667 from 1 to 284
+
+Molecular weight = 30279.95  		Residues = 284   
+Average Residue Weight  = 106.620 	Charge   = 5.0   
+Isoelectric Point = 7.7079
+A280 Molar Extinction Coefficient  = 43810   
+A280 Extinction Coefficient 1mg/ml = 1.45      
+Improbability of expression in inclusion bodies = 0.717
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		35		12.324 		1.433  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		3		1.056  		0.364  	
+D = Asp		7		2.465  		0.448  	
+E = Glu		11		3.873  		0.646  	
+F = Phe		14		4.930  		1.369  	
+G = Gly		30		10.563 		1.258  	
+H = His		10		3.521  		1.761  	
+I = Ile		13		4.577  		1.017  	
+J = ---		0		0.000  		0.000  	
+K = Lys		10		3.521  		0.534  	
+L = Leu		29		10.211 		1.380  	
+M = Met		4		1.408  		0.829  	
+N = Asn		9		3.169  		0.737  	
+O = ---		0		0.000  		0.000  	
+P = Pro		12		4.225  		0.813  	
+Q = Gln		7		2.465  		0.632  	
+R = Arg		8		2.817  		0.575  	
+S = Ser		14		4.930  		0.704  	
+T = Thr		17		5.986  		0.981  	
+U = ---		0		0.000  		0.000  	
+V = Val		34		11.972 		1.814  	
+W = Trp		5		1.761  		1.354  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		12		4.225  		1.243  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		99		34.859
+Small		(A+B+C+D+G+N+P+S+T+V)	161		56.690
+Aliphatic	(A+I+L+V)		111		39.085
+Aromatic	(F+H+W+Y)		41		14.437
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	191		67.254
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	93		32.746
+Charged		(B+D+E+H+K+R+Z)		46		16.197
+Basic		(H+K+R)			28		 9.859
+Acidic		(B+D+E+Z)		18		 6.338
+
+PEPSTATS of mRNA_57313 from 1 to 284
+
+Molecular weight = 30490.25  		Residues = 284   
+Average Residue Weight  = 107.360 	Charge   = 5.5   
+Isoelectric Point = 8.0956
+A280 Molar Extinction Coefficient  = 43810   
+A280 Extinction Coefficient 1mg/ml = 1.44      
+Improbability of expression in inclusion bodies = 0.716
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		36		12.676 		1.474  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		3		1.056  		0.364  	
+D = Asp		8		2.817  		0.512  	
+E = Glu		11		3.873  		0.646  	
+F = Phe		15		5.282  		1.467  	
+G = Gly		29		10.211 		1.216  	
+H = His		9		3.169  		1.585  	
+I = Ile		14		4.930  		1.095  	
+J = ---		0		0.000  		0.000  	
+K = Lys		10		3.521  		0.534  	
+L = Leu		29		10.211 		1.380  	
+M = Met		5		1.761  		1.036  	
+N = Asn		10		3.521  		0.819  	
+O = ---		0		0.000  		0.000  	
+P = Pro		12		4.225  		0.813  	
+Q = Gln		6		2.113  		0.542  	
+R = Arg		10		3.521  		0.719  	
+S = Ser		12		4.225  		0.604  	
+T = Thr		17		5.986  		0.981  	
+U = ---		0		0.000  		0.000  	
+V = Val		31		10.915 		1.654  	
+W = Trp		5		1.761  		1.354  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		12		4.225  		1.243  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		97		34.155
+Small		(A+B+C+D+G+N+P+S+T+V)	158		55.634
+Aliphatic	(A+I+L+V)		110		38.732
+Aromatic	(F+H+W+Y)		41		14.437
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	191		67.254
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	93		32.746
+Charged		(B+D+E+H+K+R+Z)		48		16.901
+Basic		(H+K+R)			29		10.211
+Acidic		(B+D+E+Z)		19		 6.690
+
+PEPSTATS of mRNA_57381 from 1 to 232
+
+Molecular weight = 25254.70  		Residues = 232   
+Average Residue Weight  = 108.856 	Charge   = 11.0  
+Isoelectric Point = 10.3505
+A280 Molar Extinction Coefficient  = 33570   
+A280 Extinction Coefficient 1mg/ml = 1.33      
+Improbability of expression in inclusion bodies = 0.874
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		19		8.190  		0.952  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		1		0.431  		0.149  	
+D = Asp		7		3.017  		0.549  	
+E = Glu		7		3.017  		0.503  	
+F = Phe		18		7.759  		2.155  	
+G = Gly		22		9.483  		1.129  	
+H = His		6		2.586  		1.293  	
+I = Ile		17		7.328  		1.628  	
+J = ---		0		0.000  		0.000  	
+K = Lys		13		5.603  		0.849  	
+L = Leu		27		11.638 		1.573  	
+M = Met		6		2.586  		1.521  	
+N = Asn		5		2.155  		0.501  	
+O = ---		0		0.000  		0.000  	
+P = Pro		10		4.310  		0.829  	
+Q = Gln		1		0.431  		0.111  	
+R = Arg		9		3.879  		0.792  	
+S = Ser		19		8.190  		1.170  	
+T = Thr		16		6.897  		1.131  	
+U = ---		0		0.000  		0.000  	
+V = Val		20		8.621  		1.306  	
+W = Trp		5		2.155  		1.658  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		4		1.724  		0.507  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		77		33.190
+Small		(A+B+C+D+G+N+P+S+T+V)	119		51.293
+Aliphatic	(A+I+L+V)		83		35.776
+Aromatic	(F+H+W+Y)		33		14.224
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	149		64.224
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	83		35.776
+Charged		(B+D+E+H+K+R+Z)		42		18.103
+Basic		(H+K+R)			28		12.069
+Acidic		(B+D+E+Z)		14		 6.034
+
+PEPSTATS of mRNA_57811 from 1 to 284
+
+Molecular weight = 30424.18  		Residues = 284   
+Average Residue Weight  = 107.127 	Charge   = 5.0   
+Isoelectric Point = 8.0816
+A280 Molar Extinction Coefficient  = 45090   
+A280 Extinction Coefficient 1mg/ml = 1.48      
+Improbability of expression in inclusion bodies = 0.716
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		35		12.324 		1.433  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		3		1.056  		0.364  	
+D = Asp		8		2.817  		0.512  	
+E = Glu		11		3.873  		0.646  	
+F = Phe		15		5.282  		1.467  	
+G = Gly		29		10.211 		1.216  	
+H = His		8		2.817  		1.408  	
+I = Ile		13		4.577  		1.017  	
+J = ---		0		0.000  		0.000  	
+K = Lys		11		3.873  		0.587  	
+L = Leu		28		9.859  		1.332  	
+M = Met		5		1.761  		1.036  	
+N = Asn		8		2.817  		0.655  	
+O = ---		0		0.000  		0.000  	
+P = Pro		11		3.873  		0.745  	
+Q = Gln		6		2.113  		0.542  	
+R = Arg		9		3.169  		0.647  	
+S = Ser		15		5.282  		0.755  	
+T = Thr		17		5.986  		0.981  	
+U = ---		0		0.000  		0.000  	
+V = Val		34		11.972 		1.814  	
+W = Trp		5		1.761  		1.354  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		13		4.577  		1.346  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		99		34.859
+Small		(A+B+C+D+G+N+P+S+T+V)	160		56.338
+Aliphatic	(A+I+L+V)		110		38.732
+Aromatic	(F+H+W+Y)		41		14.437
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	191		67.254
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	93		32.746
+Charged		(B+D+E+H+K+R+Z)		47		16.549
+Basic		(H+K+R)			28		 9.859
+Acidic		(B+D+E+Z)		19		 6.690
+

@@ -1,0 +1,6 @@
+ID,Subfamilia_asignada,Filtro_decisivo,TMHs_GFF3_Exo,Motivo_NPA_B,Motivo_NPA_E,Longitud_aa,Cobertura_columnas_core_pct,Mahalanobis2_PCA_consolidado,Mahalanobis2_PCA_inicial,Longitud_rama_terminal_arbol,Soporte_SHaLRT_aBayes_UFBoot,Posicion_arbol
+Fxa6Bg00715,NIP,Alineamiento múltiple (MAFFT): deleción interna entre los dos NPA,6/-,NPA,NPA,225,"79,7","4,26","0,77","0,0134","0 / 0,333 / 58","Clado FaNIP1 cromosoma 6 (junto a FaNIP1_1, Fxa6Ag00747, Fxa6Dg00623)"
+Fxa6Cg01391,NIP,Árbol filogenético: clado erróneo + rama anómala,6/-,NPA,NPA,297,"96,1","2,04","0,04","0,3286","0 / 0,333 / 95",Clado PIP2;5 cromosoma 6 (incongruente con asignación funcional NIP)
+Fxa5Bg03706,NIP,Alineamiento múltiple (MAFFT) + PCA: pérdida de NPA-E y firma fisicoquímica fuera del cluster,6/2,NPA,SPV,242,"90,0","86,73","10,31","0,1794",96 / 1 / 100,"Subclado de parciales NIP1 (con Fxa5Ag03930, Fxa5Cg03343)"
+Fxa3Ag00841,NIP,Topología (DeepTMHMM): 8 hélices (no canónico),8/4,NPA,NPA,254,"89,2","14,85","1,17","0,0287","0 / 0,333 / 66",Clado FaNIP1 cromosoma 6 (junto a parciales MAKER)
+Fxa5Ag03930,NIP,"PCA: distancia de Mahalanobis al cuadrado fuera del umbral 5,991 + truncamiento N-terminal",6/4,-,NPA,178,"67,5","61,12","6,35","0,0297",96 / 1 / 100,"Subclado de parciales NIP1 (con Fxa5Bg03706, Fxa5Cg03343)"

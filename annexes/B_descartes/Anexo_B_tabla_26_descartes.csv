@@ -1,0 +1,27 @@
+ID,Veredicto_Fase2,TMHs_GFF3,TMHs_Exonerate,Motivo_NPA_B,Motivo_NPA_E,Longitud_aa,Filtro_principal,Metrica_complementaria,Expresion_RNAseq
+Fxa2Ag01868,(no entró a Fase 2),0 (SP),-,-,-,426,Topologia no membrana,"BLAST: aminoacilasa-1 (ACY1, Peptidase_M20)",n/d
+Fxa2Bg01635,(no entró a Fase 2),0 (GLOB),-,-,-,312,Topologia no membrana,BLAST: aminoacilasa-1,n/d
+Fxa1Ag03542,(no entró a Fase 2),3,-,NPA,NPA,314,TMHs != 6,N-terminal anomalo 203 aa antes del primer TM; motivo M1 duplicado,n/d
+Fxa3Bg00731,MAKER_GFF3,2,-,NPA,NPA,82,TMHs < 6,longitud severa < 140 aa,sin expresion
+Fxa4Bg03149,MAKER_GFF3,2,-,NPA,NPA,90,TMHs < 6,longitud severa < 140 aa,sin expresion
+Fxa5Bg01988,MAKER_GFF3,2,-,NPA,NPA,100,TMHs < 6,longitud severa < 140 aa,sin expresion
+Fxa6Ag04863,MAKER_GFF3,2,-,NPA,NPA,102,TMHs < 6,longitud severa < 140 aa,sin expresion
+Fxa3Cg00716,MAKER_GFF3,2,-,NPA,NPA,114,TMHs < 6,longitud corta,sin expresion
+Fxa6Dg03789,MAKER_GFF3,3,-,NPA,NPA,114,TMHs < 6,longitud corta,sin expresion
+Fxa6Ag01546,MAKER_GFF3,3,-,NPA,NPA,116,TMHs < 6,longitud corta,sin expresion
+Fxa5Dg03404,MAKER_GFF3,2,-,NPA,NPA,152,TMHs < 6,longitud corta,sin expresion
+Fxa2Cg01599,MAKER_GFF3,4,-,NPA,NPA,168,TMHs < 6,longitud corta,sin expresion
+Fxa1Bg02622,MAKER_GFF3,5,-,NPA,NPA,181,TMHs < 6,longitud corta,sin expresion
+Fxa1Bg03423,MAKER_GFF3,5,-,NPA,NPA,182,TMHs < 6,longitud corta,sin expresion
+Fxa3Dg00714,MAKER_GFF3,4,-,NPA,NPA,187,TMHs < 6,longitud corta,sin expresion
+Fxa2Bg00225,MAKER_GFF3,5,-,NPA,NPA,207,TMHs < 6,longitud corta,sin expresion
+Fxa6Ag04864,AMBAS_MAL,2,5,-,NPA,81,TMHs < 6 + falta NPA-B,longitud severa,TPM max = 3.18 (NIP) - expresado
+Fxa5Cg03343,AMBAS_MAL,4,5,NPA,-,141,TMHs < 6 + falta NPA-E,longitud corta,sin expresion
+Fxa6Dg03790,AMBAS_MAL,2,4,-,NPA,148,TMHs < 6 + falta NPA-B,longitud corta,TPM max = 3.01 (SIP) - expresado
+Fxa4Ag01484,AMBAS_MAL,5,6,NPA,-,200,TMHs < 6 (GFF3) + falta NPA-E (Exo),marginal,TPM max = 0.89 (NIP) - marginal
+Fxa7Dg01388,AMBAS_MAL,5,5,NPA,-,231,TMHs < 6 + falta NPA-E,candidata reanotacion,TPM max = 43.14 (PIP) - expresado fuerte
+Fxa6Bg00715,MAKER_GFF3,6,-,NPA,NPA,225,Deleciones internas en MAFFT,cobertura core 79.7%,sin expresion
+Fxa6Cg01391,MAKER_GFF3,6,-,NPA,NPA,297,Clado erroneo en arbol + rama anomala,"bl=0.33 (P90 arbol), SH-aLRT=0",sin expresion
+Fxa5Bg03706,AMBAS_MAL,6,2,NPA,SPV,242,Perdida NPA-E en alineamiento + PCA outlier,d2=33.03 ; 8 cols gap sobre el motivo,sin expresion
+Fxa3Ag00841,AMBAS_MAL,8,4,NPA,NPA,254,TMHs=8 (topologia no canonica),extension N-terminal 104 aa en MAFFT,sin expresion
+Fxa5Ag03930,MANUAL_CURATED,6,4,-,NPA,178,PCA outlier severo + truncamiento N-terminal,d2=22.45 ; cobertura core 67.5%,sin expresion

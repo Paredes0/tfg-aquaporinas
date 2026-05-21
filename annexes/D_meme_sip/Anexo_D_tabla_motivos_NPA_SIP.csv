@@ -1,0 +1,13 @@
+gene_id,subfamilia,longitud_aa,TMHs,motivo_NPA_B,motivo_NPA_E,detectado_M2_por_MEME
+Fxa1Ag02792,FaSIP2;2,232,6,NPL,NPA,No
+Fxa1Cg02650,FaSIP2;2,232,6,NPL,NPA,No
+Fxa1Dg02410,FaSIP2;2,232,6,NPL,NPA,No
+Fxa6Ag00070,FaSIP1,325,6,NPT,NPA,Sí (escaneo permisivo)
+Fxa6Cg00057,FaSIP1,237,6,NPT,NPA,Sí (escaneo permisivo)
+Fxa6Ag04289,FaSIP1;3,241,6,NPS,NPI,Sí (descubrimiento)
+Fxa6Ag04290,FaSIP1;3,241,6,NPS,NPA,Sí (descubrimiento)
+Fxa6Bg03993,FaSIP1;3,241,6,NPS,NPI,Sí (descubrimiento)
+Fxa6Bg04002,FaSIP1;3,225,6,NPS,NPA,Sí (descubrimiento)
+Fxa6Cg03541,FaSIP1;3,241,6,NPS,NPI,Sí (descubrimiento)
+Fxa6Cg03543,FaSIP1;3,241,6,NPS,NPA,Sí (descubrimiento)
+Fxa6Dg03788,FaSIP1;3,241,6,NPS,NPI,Sí (descubrimiento)
