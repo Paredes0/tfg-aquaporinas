@@ -8,7 +8,7 @@
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](pyproject.toml)
 [![Tests](https://img.shields.io/badge/tests-130%20passing-brightgreen)](tests/)
 [![Licencia](https://img.shields.io/badge/licencia-MIT-blue.svg)](LICENSE)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20346630.svg)](https://doi.org/10.5281/zenodo.20346630)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20346629.svg)](https://doi.org/10.5281/zenodo.20346629)
 [![Visores](https://img.shields.io/badge/visores-GitHub%20Pages-2ea44f?logo=github)](https://paredes0.github.io/tfg-aquaporinas/)
 
 *Identificación, curado y caracterización transcripcional del acuaporinoma de* Fragaria x ananassa *'Benihoppe'*
@@ -124,7 +124,7 @@ Ver [`docs/REPRODUCIBILIDAD.md`](docs/REPRODUCIBILIDAD.md). Resumen:
 
 ## Cómo citar
 
-> Paredes Alfonso, N. (2026). *Identificación, curado y caracterización transcripcional del acuaporinoma de* Fragaria *x* ananassa *'Benihoppe'* [Software y conjunto de datos]. Zenodo. https://doi.org/10.5281/zenodo.20346630
+> Paredes Alfonso, N. (2026). *Identificación, curado y caracterización transcripcional del acuaporinoma de* Fragaria *x* ananassa *'Benihoppe'* [Software y conjunto de datos]. Zenodo. https://doi.org/10.5281/zenodo.20346629
 
 Ver [`CITATION.cff`](CITATION.cff) o [`docs/ZENODO.md`](docs/ZENODO.md) para el procedimiento de obtención del DOI.
 

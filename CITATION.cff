@@ -8,7 +8,7 @@ message: >-
 type: software
 version: 1.0.0
 date-released: '2026-05-22'
-doi: 10.5281/zenodo.20346630
+doi: 10.5281/zenodo.20346629
 authors:
   - given-names: Noé
     family-names: Paredes Alfonso
