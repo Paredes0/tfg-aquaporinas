@@ -35,11 +35,11 @@
     {"identifier": "zenodo"}
   ],
   "related_identifiers": [
-    {
-      "identifier": "https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1010234",
-      "relation": "isSupplementTo",
-      "resource_type": "dataset",
-      "scheme": "url"
-    }
+    {"identifier": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_034370585.1/", "relation": "isDerivedFrom", "resource_type": "dataset", "scheme": "url"},
+    {"identifier": "https://www.rosaceae.org/Analysis/18085091", "relation": "isDerivedFrom", "resource_type": "dataset", "scheme": "url"},
+    {"identifier": "https://www.ncbi.nlm.nih.gov/bioproject/PRJNA838938", "relation": "isDerivedFrom", "resource_type": "dataset", "scheme": "url"},
+    {"identifier": "https://www.ncbi.nlm.nih.gov/bioproject/PRJNA715088", "relation": "isDerivedFrom", "resource_type": "dataset", "scheme": "url"},
+    {"identifier": "https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1144869", "relation": "isDerivedFrom", "resource_type": "dataset", "scheme": "url"},
+    {"identifier": "https://www.ncbi.nlm.nih.gov/bioproject/PRJNA632583", "relation": "isDerivedFrom", "resource_type": "dataset", "scheme": "url"}
   ]
 }

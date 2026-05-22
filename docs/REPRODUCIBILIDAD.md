@@ -17,8 +17,8 @@ Regenerar `datos/` desde cero (genoma + lecturas crudas) requiere los datos prim
 
 | Punto de entrada | Qué es | Cómo obtenerlo |
 |---|---|---|
-| **Genoma 'Benihoppe'** (FASTA + GFF3) | Genoma de referencia alo-octoploide (~600 MB) | Descargar de [Genome Database for Rosaceae](https://www.rosaceae.org/species/fragaria/fragaria_x_ananassa) |
-| **22 muestras RNA-seq** | Lecturas paired-end (~40 GB) | NCBI SRA, BioProject `PRJNA1010234` |
+| **Genoma 'Benihoppe'** | Ensamblaje de referencia alo-octoploide (~600 MB) | NCBI `GCA_034370585.1` (ASM3437058v1); anotación GFF3 oficial en [GDR (Benihoppe v1.0.a1)](https://www.rosaceae.org/Analysis/18085091) |
+| **22 muestras RNA-seq** | Lecturas paired-end (~40 GB) | NCBI SRA, 4 BioProjects: `PRJNA838938`, `PRJNA715088`, `PRJNA1144869`, `PRJNA632583` |
 
 ### Sobre los workflows Galaxy (`.ga`)
 
@@ -33,8 +33,9 @@ Para una réplica 100 % en línea de comandos sin Galaxy, habría que reimplemen
 
 | Dato | Tamaño | Fuente |
 |---|---|---|
-| Genoma *F.* x *ananassa* 'Benihoppe' (FASTA + GFF3) | ~600 MB comprimido | [Genome Database for Rosaceae](https://www.rosaceae.org/species/fragaria/fragaria_x_ananassa) |
-| 22 muestras RNA-seq paired-end | ~40 GB | NCBI SRA, BioProject `PRJNA1010234` (ver `5.5_rna_seq/5.5.1_obtencion_procesamiento/SRA.txt`) |
+| Genoma *F.* x *ananassa* 'Benihoppe' (ensamblaje) | ~600 MB comprimido | NCBI [`GCA_034370585.1`](https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_034370585.1/) (ASM3437058v1) |
+| Anotación estructural GFF3 'Benihoppe' (v1.0.a1) | ~150 MB | [GDR, Analysis 18085091](https://www.rosaceae.org/Analysis/18085091) |
+| 22 muestras RNA-seq paired-end | ~40 GB | NCBI SRA, 4 BioProjects: `PRJNA838938` / `PRJNA715088` / `PRJNA1144869` / `PRJNA632583` (SRR por muestra en `5.5_rna_seq/5.5.1_obtencion_procesamiento/SRA.txt`) |
 | Aquaporinas de referencia Rosaceae | ~50 KB | UniProtKB, query `family:aquaporin AND organism:Rosaceae` |
 | 4 datasets curados: At AQPome, Hb (*Hevea*), Md (*Malus*), Os (*Oryza*) | ~30 KB | Johanson 2001, Zou 2015, Liu 2019, Sakurai 2005 |
 

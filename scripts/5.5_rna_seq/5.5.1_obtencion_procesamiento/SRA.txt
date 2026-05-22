@@ -1,0 +1,33 @@
+# Muestras de RNA-seq utilizadas en el TFG — 22 runs públicos de NCBI SRA
+# Organismo: Fragaria x ananassa. Las lecturas proceden de CUATRO BioProjects
+# públicos (un mismo cultivar/material no estaba disponible para los seis tejidos
+# en un único estudio, por lo que se combinaron datos públicos por tejido).
+# Los BAM se generaron alineando con HISAT2 en Galaxy (workflow en workflows/galaxy/).
+# SRR30146487 (RootsCtrl_2) se excluyó del análisis por PCA (outlier).
+#
+# Genoma de referencia: GCA_034370585.1 (ASM3437058v1), NCBI.
+# Anotación estructural oficial (GFF3): Genome Database for Rosaceae (GDR).
+#
+# tejido         muestra         run_SRR        BioProject
+green_fruit      GreenFruit_1    SRR19268914    PRJNA838938
+green_fruit      GreenFruit_2    SRR19268915    PRJNA838938
+green_fruit      GreenFruit_3    SRR19268916    PRJNA838938
+red_fruit        RedFruit_1      SRR19268906    PRJNA838938
+red_fruit        RedFruit_2      SRR19268920    PRJNA838938
+red_fruit        RedFruit_3      SRR19268921    PRJNA838938
+crown            Crown_1         SRR14016625    PRJNA715088
+crown            Crown_2         SRR14016626    PRJNA715088
+crown            Crown_3         SRR14016634    PRJNA715088
+leaf_stress      LeafStress_1    SRR30146462    PRJNA1144869
+leaf_stress      LeafStress_2    SRR30146464    PRJNA1144869
+leaf_stress      LeafStress_3    SRR30146470    PRJNA1144869
+leaf_control     LeafCtrl_1      SRR30146489    PRJNA1144869
+leaf_control     LeafCtrl_2      SRR30146490    PRJNA1144869
+leaf_control     LeafCtrl_3      SRR30146491    PRJNA1144869
+roots_stress     RootsStress_1   SRR30146471    PRJNA1144869
+roots_stress     RootsStress_2   SRR30146472    PRJNA1144869
+roots_stress     RootsStress_3   SRR30146473    PRJNA1144869
+roots_control    RootsCtrl_1     SRR30146486    PRJNA1144869
+roots_control    RootsCtrl_2     SRR30146487    PRJNA1144869   # OUTLIER — excluido por PCA
+roots_control    RootsCtrl_3     SRR30146488    PRJNA1144869
+axillary_bud     AuxBud_1        SRR11806824    PRJNA632583

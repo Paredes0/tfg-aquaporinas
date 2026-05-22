@@ -6,11 +6,11 @@ Este documento lista los datos primarios y derivados utilizados en el pipeline.
 
 | Dato | Tamaño | Fuente |
 |---|---|---|
-| Genoma 'Benihoppe' FASTA (`.fa.gz`) | ~600 MB | [Genome Database for Rosaceae](https://www.rosaceae.org/species/fragaria/fragaria_x_ananassa) |
-| Anotación GFF3 'Benihoppe' (`.gff3.gz`) | ~150 MB | GDR (misma URL) |
-| 22 muestras RNA-seq paired-end | ~40 GB | NCBI SRA, BioProject [`PRJNA1010234`](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1010234) |
+| Genoma 'Benihoppe' (ensamblaje, `.fa.gz`) | ~600 MB | NCBI [`GCA_034370585.1`](https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_034370585.1/) (ASM3437058v1) |
+| Anotación GFF3 'Benihoppe' (`.gff3.gz`, v1.0.a1) | ~150 MB | [GDR, Analysis 18085091](https://www.rosaceae.org/Analysis/18085091) |
+| 22 muestras RNA-seq paired-end | ~40 GB | NCBI SRA — 4 BioProjects: `PRJNA838938`, `PRJNA715088`, `PRJNA1144869`, `PRJNA632583` |
 
-Lista completa de accesiones SRR en `design/samples.tsv` (depósito Zenodo).
+Lista completa de accesiones SRR (muestra → run → BioProject) en `scripts/5.5_rna_seq/5.5.1_obtencion_procesamiento/SRA.txt`.
 
 ## Datos de referencia ligeros (depósito Zenodo)
 
