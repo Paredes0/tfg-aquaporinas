@@ -38,7 +38,6 @@ El curado del acuaporinoma decide, gen a gen, qué anotación adoptar entre la o
 | Archivo | Contenido |
 |---|---|
 | `Anexo_H_tabla_veredictos_GFF3_vs_Exonerate.tabular` | Tabla maestra: por gen, veredicto Fase 2 (PEP=GFF3 preferido / EXO=Exonerate preferido / MAL=ambas fallan), métricas comparativas, fuente seleccionada. |
-| `Anexo_H_tabla_visual_validacion_GFF3_vs_Exonerate.png` | Visualización de la tabla maestra con criterios cromáticos (verde=EXO, azul=PEP, rojo=MAL). |
 | `Anexo_H_consenso_aqp_FINAL.fasta` | FASTA peptídico del consenso curado (129 secuencias = mejor opción por gen). |
 | `Anexo_H_consenso_aqp_fixed.gff3` | **GFF3 corregido** con los 20 modelos Exonerate-curados sustituyendo a sus contrapartes GFF3 defectuosas. Listo para mergear con el GFF3 oficial completo del genoma. |
 
