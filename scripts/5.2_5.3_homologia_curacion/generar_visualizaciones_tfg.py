@@ -15,6 +15,11 @@ import seaborn as sns
 plt.style.use('seaborn-v0_8-whitegrid')
 sns.set_palette("husl")
 
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+from scripts.common import config
+
 def parse_fasta(filename):
     """Parse FASTA file and return list of sequence lengths"""
     lengths = []
@@ -252,18 +257,16 @@ def main():
     print("=" * 80)
     print()
     
-    # Archivo de entrada (ruta portable: override con $TFG_DATA_ROOT)
+    # Entrada y salida vía config (reproducible desde el repo)
     import os
-    BASE_DIR = os.environ.get('TFG_DATA_ROOT', r'C:\Users\Usuario\Desktop\resultados finales')
-    filename = os.path.join(BASE_DIR, 'dataset fragaria ananassa', 'ncbi_data',
-                            'TODAS_ROSACEAE_aqp_prot_FINAL_V13.fasta')
+    filename = str(config.CURADO_DIR / 'TODAS_ROSACEAE_aqp_prot_FINAL_V13.fasta')
 
     print(f"Leyendo archivo: {filename}")
     lengths = parse_fasta(filename)
     print(f"Total de secuencias leídas: {len(lengths)}\n")
 
     # Crear directorio de salida
-    output_dir = os.path.join(BASE_DIR, 'visualizaciones_tfg')
+    output_dir = str(config.ensure_results() / 'visualizaciones_tfg')
     os.makedirs(output_dir, exist_ok=True)
     print(f"Directorio de salida: {output_dir}\n")
     
