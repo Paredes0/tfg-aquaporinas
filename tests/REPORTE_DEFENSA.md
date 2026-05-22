@@ -1,6 +1,6 @@
 # Reporte de tests para la defensa del TFG
 
-> **Documento orientado a la defensa**: demuestra que los scripts utilizados para generar los resultados del TFG funcionan correctamente, mediante una batería de **112 tests automáticos** divididos en pruebas unitarias y pruebas de reproducibilidad.
+> **Documento orientado a la defensa**: demuestra que los scripts utilizados para generar los resultados del TFG funcionan correctamente, mediante una batería de **133 tests automáticos** divididos en pruebas unitarias y pruebas de reproducibilidad.
 
 **Fecha**: 2026-05-16
 **Autor**: Noé Paredes Alfonso
@@ -12,8 +12,8 @@
 
 | Métrica | Valor |
 |---|---|
-| **Tests ejecutados** | 112 |
-| **Tests pasados (PASS)** | 112 (100%) |
+| **Tests ejecutados** | 133 |
+| **Tests pasados (PASS)** | 133 (100%) |
 | **Tests fallidos (FAIL)** | 0 |
 | **Cifras del TFG verificadas automáticamente** | 19 |
 | **Funciones de los scripts cubiertas por tests** | 12+ (parsers, filtros, clasificación) |
@@ -42,17 +42,37 @@ tests/reproducibility/test_cifras_filogenia.py::TestArbolFinal::test_log_likelih
 tests/reproducibility/test_cifras_homeologos.py::TestDominanciaSubgenomas::test_d_es_el_dominante PASSED
 
 ======== RESUMEN PARA DEFENSA DEL TFG ========
-  Tests ejecutados:  112
-  Pasados (PASS):    112
+  Tests ejecutados:  133
+  Pasados (PASS):    133
   Fallidos (FAIL):   0
   Todas las funciones de los scripts pasan sus tests unitarios.
   Las cifras citadas en el TFG son reproducibles desde el código.
-======== 112 passed in 2.36s ========
+======== 133 passed in 2.36s ========
 ```
+
+### Qué garantizan estos tests y qué no — explicación para no informáticos
+
+Un test automático es una pregunta de sí/no que el ordenador se hace a sí mismo: «¿Si paso este input a esta función, devuelve el resultado esperado?». Cuando los 133 tests responden "sí", significa que el código se comporta como se afirma. No significa que el código sea infalible.
+
+**Lo que estos tests SÍ garantizan:**
+
+- Que las cifras citadas en el TFG son las que efectivamente salen del pipeline. Si en algún momento manipulara un CSV a mano y cambiara un número, los tests fallarían en el siguiente arranque.
+- Que las funciones aisladas que clasifican secuencias por subfamilia, cuentan hélices transmembrana, leen modelos de IQ-TREE o calculan repartos de subfamilias funcionan correctamente sobre datos sintéticos diseñados para cubrir todos los casos posibles.
+- Que el árbol filogenético final tiene 281 secuencias, 430 sitios, modelo Q.PLANT+R6, log-likelihood −45.149,26 y los soportes estadísticos descritos.
+- Que la matriz de homeólogos identifica 32 grupos con la dominancia subgenómica reportada (A=9, B=5, C=5, D=12).
+- Que cada uno de los scripts Python del pipeline compila sin errores de sintaxis tras la reorganización del repositorio (smoke tests).
+
+**Lo que estos tests NO cubren (y por qué no):**
+
+- **El pipeline de procesamiento de FASTQ (alineamiento HISAT2, conteo de lecturas).** Procesar las 22 muestras de RNA-seq lleva unas 12 horas y requiere 40 GB de espacio en disco. No se puede ejecutar dentro de un test automático que debe correr en 2 segundos. Lo que sí testamos son sus salidas (matriz TPM, conteo por gen y tejido), que son lo que realmente usa el análisis estadístico posterior.
+- **Los scripts que generan las figuras (compose_fig6, compose_fig7, etc.).** Estos scripts toman los datos numéricos ya verificados y los disponen visualmente en paneles. Un test automático no sabe «si el gráfico se ve bien», pero sí sabe «si los datos que el gráfico representa son los correctos». La calidad visual la verifica el lector humano.
+- **Los scripts en R (DESeq2).** R tiene su propio sistema de testing (testthat) y aquí no se ha implementado, porque los outputs del DESeq2 (genes diferencialmente expresados con *padj* y *log2FoldChange*) sí están verificados por los tests de Python que los leen.
+
+En resumen: los tests garantizan la **corrección de los datos** y la **lógica de las decisiones automáticas** (qué se descarta, qué se conserva, cómo se clasifica). La interpretación biológica y la calidad visual son trabajo humano que ningún test puede automatizar.
 
 ---
 
-## Desglose de los 112 tests por categoría
+## Desglose de los 133 tests por categoría
 
 ### 1. Tests unitarios — 67 tests (verifican que las **funciones** son correctas)
 
@@ -147,7 +167,7 @@ Verificados directamente sobre `homeolog_groups_summary.tsv` y `dominant_subgeno
 
 > **P**: "¿Cómo sé que tu código realmente hace lo que dices?"
 >
-> **R**: "Lo prueba la suite. `pytest tests/` ejecuta 112 tests en 2 segundos: 67 verifican la lógica de las funciones aisladas con fixtures sintéticas, y 45 verifican que los outputs reales del pipeline contienen las cifras que cito en el TFG. Si modifico el código y rompo algo, los tests fallan. Si las cifras del TFG cambiaran respecto a los outputs, los tests también fallarían."
+> **R**: "Lo prueba la suite. `pytest tests/` ejecuta 133 tests en 2 segundos: 67 verifican la lógica de las funciones aisladas con fixtures sintéticas, 45 verifican que los outputs reales del pipeline contienen las cifras que cito en el TFG, y 21 comprueban que todos los scripts del repositorio compilan sin errores de sintaxis. Si modifico el código y rompo algo, los tests fallan. Si las cifras del TFG cambiaran respecto a los outputs, los tests también fallarían."
 
 > **P**: "¿Has detectado errores en tu propio código?"
 >
@@ -155,7 +175,7 @@ Verificados directamente sobre `homeolog_groups_summary.tsv` y `dominant_subgeno
 
 > **P**: "Tu código fue generado en parte con asistencia de IA. ¿Cómo demuestras que es correcto?"
 >
-> **R**: "Esa es exactamente la motivación de los tests. La IA puede generar código que parece correcto pero hace algo distinto de lo que pretende. Los tests son la forma estándar en ingeniería de software para verificar que el código hace lo que se espera. Cada test es una afirmación matemática: «si ejecuto esta función con estos inputs, debe devolver este output». 112 afirmaciones, todas verdaderas, son una evidencia mucho más sólida que «el script imprimió el número correcto»."
+> **R**: "Esa es exactamente la motivación de los tests. La IA puede generar código que parece correcto pero hace algo distinto de lo que pretende. Los tests son la forma estándar en ingeniería de software para verificar que el código hace lo que se espera. Cada test es una afirmación matemática: «si ejecuto esta función con estos inputs, debe devolver este output». 133 afirmaciones, todas verdaderas, son una evidencia mucho más sólida que «el script imprimió el número correcto»."
 
 > **P**: "¿Por qué no testeas el pipeline completo de RNA-seq?"
 >
@@ -170,4 +190,4 @@ Para listar todos los tests:
 pytest tests/ --collect-only -q
 ```
 
-(Esto genera un listado plano de los 112 tests, útil si el jurado quiere ver uno específico.)
+(Esto genera un listado plano de los 133 tests, útil si el jurado quiere ver uno específico.)

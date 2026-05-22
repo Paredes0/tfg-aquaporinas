@@ -12,7 +12,7 @@
 
 | Conclusión | Evidencia |
 |---|---|
-| **Ningún bug compromete las cifras del TFG** | 112/112 tests verdes; cifras del 5.1–5.6 verificadas |
+| **Ningún bug compromete las cifras del TFG** | 133/133 tests verdes; cifras del 5.1–5.6 verificadas |
 | **Lógica de filtros y parsers correcta** | 67 tests unitarios pasan sobre la lógica que generó los resultados |
 | **Rutas hardcoded corregidas** | 7 scripts modificados — ahora usan `$TFG_DATA_ROOT` |
 | **3 hallazgos menores documentados** | Sin impacto en resultados; resueltos en este repo |
@@ -36,13 +36,13 @@ BASE = os.environ.get('TFG_DATA_ROOT', r'C:\Users\Usuario\Desktop\resultados fin
 ```
 
 **Scripts afectados** (ver commit `fix: rutas hardcoded sustituidas por env vars portables`):
-- `scripts/5.1_curaduria/clasificacion_integrada_aqp.py`
-- `scripts/5.1_curaduria/generar_visualizaciones_tfg.py`
-- `scripts/5.2_filogenia/comparar_arboles.py`
-- `scripts/5.2_filogenia/rename_tree_nodes.py`
-- `scripts/5.2_filogenia/update_prune_ids.py`
-- `scripts/5.3_5.4_rna_seq/config.sh` (override opcional `TFG_RNASEQ_HDD_DIR`)
-- `scripts/5.5_reanotacion/predict_and_append.py`
+- `scripts/5.2_5.3_homologia_curacion/clasificacion_integrada_aqp.py`
+- `scripts/5.2_5.3_homologia_curacion/generar_visualizaciones_tfg.py`
+- `scripts/5.4_filogenia/comparar_arboles.py`
+- `scripts/5.4_filogenia/rename_tree_nodes.py`
+- `scripts/5.4_filogenia/update_prune_ids.py`
+- `scripts/5.5_rna_seq/5.5.1_obtencion_procesamiento/config.sh` (override opcional `TFG_RNASEQ_HDD_DIR`)
+- `scripts/5.2_5.3_homologia_curacion/12_substitute_gff3.py` (los scripts de reanotación predictiva se descartaron en v9 del TFG)
 
 ---
 
@@ -204,7 +204,7 @@ pytest tests/unit/ -v
 pytest tests/reproducibility/ -v
 ```
 
-Resultado esperado: `112 passed in ~2 segundos`.
+Resultado esperado: `133 passed in ~2 segundos`.
 
 ---
 
