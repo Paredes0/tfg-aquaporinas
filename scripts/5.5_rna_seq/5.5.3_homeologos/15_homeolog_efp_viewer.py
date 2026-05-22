@@ -34,12 +34,15 @@ import math
 import base64
 
 # ---- Configuration ----------------------------------------------------------
-PROJECT_DIR  = os.environ.get("PROJECT_DIR", os.getcwd())
-TPM_FILE     = os.path.join(PROJECT_DIR, "results", "homeolog_analysis", "collapsed_tpm.csv")
-BASAL_TPM_FILE = os.path.join(PROJECT_DIR, "results", "basal_aquaporins", "basal_aquaporins_tpm.csv")
-HG_TABLE     = os.path.join(PROJECT_DIR, "homeolog_groups.tsv")
-SVG_FILE     = os.path.join(PROJECT_DIR, "fxa_vectorizado.svg")
-OUTPUT_HTML  = os.path.join(PROJECT_DIR, "results", "homeolog_analysis", "efp_viewer_homeologs.html")
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parents[3]))
+from scripts.common import config
+
+TPM_FILE       = str(config.RNASEQ_HOM_DIR / "collapsed_tpm.csv")
+BASAL_TPM_FILE = str(config.RNASEQ_BASAL_DIR / "basal_aquaporins_tpm.csv")
+HG_TABLE       = str(config.RNASEQ_HOM_DIR / "homeolog_groups.tsv")
+SVG_FILE       = str(config.RNASEQ_DIR / "fxa_vectorizado.svg")
+OUTPUT_HTML    = str(config.ensure_results() / "efp_viewer_homeologs.html")
 
 print("# =============================================================")
 print("# GENERATING eFP-like VIEWER (HOMEOLOG GROUPS)")

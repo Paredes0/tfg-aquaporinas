@@ -23,10 +23,13 @@ import sys
 import math
 
 # ---- Configuration ----------------------------------------------------------
-PROJECT_DIR  = os.environ.get("PROJECT_DIR", os.getcwd())
-SUMMARY_FILE = os.path.join(PROJECT_DIR, "results", "basal_aquaporins", "basal_aquaporins_summary.csv")
-AQP_TABLE    = os.path.join(PROJECT_DIR, "tabla_Aquaporinas_traduccion.tabular")
-OUTPUT_HTML  = os.path.join(PROJECT_DIR, "results", "basal_aquaporins", "efp_viewer.html")
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parents[3]))
+from scripts.common import config
+
+SUMMARY_FILE = str(config.RNASEQ_BASAL_DIR / "basal_aquaporins_summary.csv")
+AQP_TABLE    = str(config.CURADO_DIR / "tabla_aquaporinas_traduccion.tabular")
+OUTPUT_HTML  = str(config.ensure_results() / "efp_viewer.html")
 
 print("# =============================================================")
 print("# GENERATING eFP-like EXPRESSION VIEWER")

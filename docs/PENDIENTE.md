@@ -13,6 +13,7 @@ Estas acciones no las puede hacer Claude; requieren tu cuenta y tus credenciales
 - [ ] **Primer push**: `git push -u origin main`.
 - [ ] **Tag de release**: `git tag -a v1.0.0-tfg-entregado -m "TFG entregado para defensa"` + `git push origin --tags`. Zenodo emitirá el DOI automáticamente.
 - [ ] **Subir los datos derivados a Zenodo** (~250 KB). Lista completa en `annexes/A_repo_overview/INPUTS_CONJUNTO_DATOS.md` (sección "Datos de referencia ligeros" + "Datos derivados intermedios").
+- [ ] **Activar GitHub Pages** una vez (Settings → Pages → Deploy from a branch → `main` / `/docs`). Publica los visores interactivos (eFP de homeólogos + PCA). Pasos en `docs/GITHUB_PAGES.md`. URL prevista: `https://paredes0.github.io/tfg-aquaporinas/`.
 
 ## 2. Placeholders a sustituir tras obtener el DOI
 

@@ -34,6 +34,18 @@ tfg-aquaporinas/
 
 Los scripts de Python leen sus inputs de `data/` a través de `scripts/common/config.py`, por lo que el análisis de curado y filogenia es reproducible tras un `git clone` (ver `docs/REPRODUCIBILIDAD.md`). Los datos primarios pesados (genoma, FASTQ) no se incluyen: se referencian con sus identificadores públicos.
 
+## Visores interactivos (GitHub Pages)
+
+Dos visores HTML autocontenidos acompañan al TFG y se publican como web estática
+desde la carpeta `docs/` (una vez activado GitHub Pages):
+
+- **Atlas eFP de grupos homeólogos** — expresión por tejido (TPM) sobre la planta de fresa.
+- **Explorador del PCA** — espacio multidimensional de las 121 acuaporinas funcionales.
+
+Comparten estilo (marfil académico, tipografía serif, paleta de subfamilias) y se
+regeneran desde los scripts del repo. Instrucciones de publicación y regeneración
+en `docs/GITHUB_PAGES.md`. URL prevista: `https://paredes0.github.io/tfg-aquaporinas/`.
+
 ## Cifras clave reproducidas por estos scripts
 
 | Cifra | Apartado | Script | Test |

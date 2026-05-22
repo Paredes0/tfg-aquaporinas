@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Acuaporinoma de Fragaria x ananassa — Visores interactivos del TFG</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&family=Newsreader:ital,opsz,wght@0,6..72,300..500;1,6..72,300..420&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F3ECDD;        /* marfil */
+    --paper2:#EBE2CE;
+    --surface:#FBF7EE;
+    --ink:#23282a;
+    --ink2:#51595a;
+    --faint:#a59c87;
+    --line:rgba(60,66,52,.16);
+    --green:#2E5A3E;        /* verde botanico */
+    --green2:#4a7d57;
+    --berry:#A23528;        /* fresa academica, sin neon */
+    --gold:#9c7322;
+    --pip:#E74C3C;--tip:#3498DB;--nip:#2ECC71;--sip:#F39C12;--xip:#9B59B6;
+    --display:'Fraunces',Georgia,serif;
+    --mono:'IBM Plex Mono',ui-monospace,monospace;
+    --read:'Newsreader',Georgia,serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:var(--read);
+    background:var(--paper);
+    color:var(--ink);
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;position:relative;min-height:100vh;
+  }
+
+  /* ---- Atmosphere: soft botanical caustics on ivory ---- */
+  .field{position:fixed;inset:-20% -10%;z-index:0;pointer-events:none;
+    background:
+      radial-gradient(54% 46% at 16% 10%, rgba(46,90,62,.10), transparent 62%),
+      radial-gradient(48% 56% at 90% 18%, rgba(156,115,34,.10), transparent 64%),
+      radial-gradient(64% 64% at 74% 96%, rgba(162,53,40,.08), transparent 62%),
+      radial-gradient(90% 90% at 28% 84%, rgba(235,226,206,.7), transparent 72%);
+    filter:blur(6px);
+    animation:drift 24s ease-in-out infinite alternate;
+  }
+  @keyframes drift{0%{transform:translate3d(0,0,0) scale(1)}100%{transform:translate3d(-3%,2%,0) scale(1.07)}}
+  /* Vertical "channel" hairlines through the membrane */
+  .channels{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.6;
+    background-image:repeating-linear-gradient(90deg,
+      transparent 0, transparent 86px,
+      rgba(60,66,52,.06) 86px, rgba(60,66,52,.06) 87px);
+    mask-image:linear-gradient(180deg,transparent,#000 16%,#000 84%,transparent);
+  }
+  .grain{position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.04;mix-blend-mode:multiply;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");}
+
+  .wrap{position:relative;z-index:2;max-width:1180px;margin:0 auto;padding:0 7vw}
+
+  .top{display:flex;justify-content:space-between;align-items:center;
+    padding:30px 0 0;font-family:var(--mono);font-size:.72rem;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--faint)}
+  .top .tag{color:var(--green)}
+  .top .dot{display:inline-block;width:7px;height:7px;border-radius:50%;
+    background:var(--berry);box-shadow:0 0 8px -1px var(--berry);margin-right:8px;
+    vertical-align:middle;animation:pulse 2.6s ease-in-out infinite}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+
+  .hero{padding:9vh 0 7vh;position:relative}
+  .kicker{font-family:var(--mono);font-size:.8rem;letter-spacing:.34em;
+    text-transform:uppercase;color:var(--ink2);margin-bottom:26px;
+    opacity:0;animation:rise .9s .1s both}
+  h1{font-family:var(--display);font-weight:330;line-height:.95;
+    letter-spacing:-.02em;font-size:clamp(2.9rem,9.2vw,7.4rem);font-optical-sizing:auto}
+  h1 .l{display:block;overflow:hidden}
+  h1 .l > span{display:block;opacity:0;animation:rise 1s both}
+  h1 .l:nth-child(1)>span{animation-delay:.18s}
+  h1 .l:nth-child(2)>span{animation-delay:.30s}
+  h1 .it{font-style:italic;font-weight:560;
+    background:linear-gradient(96deg,var(--green),#6f9c5e 52%,var(--berry));
+    -webkit-background-clip:text;background-clip:text;color:transparent}
+  h1 .x{font-style:normal;font-weight:300;color:var(--faint);
+    font-size:.5em;vertical-align:.12em;margin:0 .14em}
+  .cv{display:block;font-family:var(--mono);font-weight:400;
+    font-size:clamp(.8rem,1.7vw,1.05rem);letter-spacing:.32em;text-transform:uppercase;
+    color:var(--faint);margin-top:1.6rem;opacity:0;animation:rise 1s .46s both}
+
+  .belt{display:flex;flex-wrap:wrap;gap:2rem 4rem;margin-top:3.6rem;
+    align-items:flex-start;opacity:0;animation:rise 1s .6s both}
+  .lede{font-family:var(--read);font-weight:360;font-size:1.24rem;line-height:1.5;
+    max-width:34ch;color:#3b443f}
+  .lede em{font-style:italic;color:var(--green)}
+  .facts{font-family:var(--mono);font-size:.78rem;line-height:1.9;color:var(--ink2);letter-spacing:.02em}
+  .facts b{color:var(--ink);font-weight:500}
+  .facts .row{display:flex;gap:1.1rem;border-bottom:1px solid var(--line);padding:.5rem 0;min-width:260px}
+  .facts .k{color:var(--faint);width:12ch;flex:none}
+
+  .mol{display:flex;flex-wrap:wrap;gap:1.5rem;margin-top:3.2rem;
+    font-family:var(--mono);font-size:.74rem;letter-spacing:.12em;color:var(--ink2);
+    opacity:0;animation:rise 1s .78s both}
+  .mol i{font-style:normal;display:inline-flex;align-items:center;gap:.55rem}
+  .mol i::before{content:"";width:11px;height:11px;border-radius:50%;
+    background:var(--c);box-shadow:0 0 0 4px color-mix(in srgb,var(--c) 18%,transparent)}
+
+  .plates{margin:8vh 0 4vh;border-top:1px solid var(--line)}
+  .plate{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:2rem;
+    padding:3.2rem .4rem;text-decoration:none;color:inherit;
+    border-bottom:1px solid var(--line);position:relative;isolation:isolate}
+  .plate::before{content:"";position:absolute;inset:0;z-index:-1;
+    background:linear-gradient(90deg,rgba(46,90,62,.10),rgba(46,90,62,.03) 45%,transparent 75%);
+    transform:scaleX(0);transform-origin:left;transition:transform .6s cubic-bezier(.2,.8,.2,1)}
+  .plate:hover::before{transform:scaleX(1)}
+  .pl-head{display:flex;align-items:baseline;gap:1.6rem;flex-wrap:wrap}
+  .num{font-family:var(--display);font-weight:300;font-size:clamp(2.4rem,6vw,4.6rem);line-height:1;
+    color:transparent;-webkit-text-stroke:1px var(--faint);
+    transition:-webkit-text-stroke-color .4s,color .4s,transform .5s cubic-bezier(.2,.8,.2,1)}
+  .plate:hover .num{color:var(--green);-webkit-text-stroke-color:var(--green);transform:translateX(6px)}
+  .pl-title{font-family:var(--display);font-weight:440;letter-spacing:-.01em;
+    font-size:clamp(1.5rem,3.4vw,2.5rem);line-height:1.04}
+  .pl-meta{font-family:var(--mono);font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--faint);margin-top:.7rem}
+  .pl-desc{font-family:var(--read);font-weight:360;font-size:1.06rem;line-height:1.46;
+    color:#444c47;max-width:52ch;margin-top:1rem}
+  .arrow{font-family:var(--display);font-size:2.2rem;color:var(--faint);
+    transition:color .4s,transform .5s cubic-bezier(.2,.8,.2,1);justify-self:end}
+  .plate:hover .arrow{color:var(--berry);transform:translate(8px,-2px)}
+
+  .colophon{margin:6vh 0 0;padding:2.4rem 0 8vh;border-top:1px solid var(--line);
+    display:flex;flex-wrap:wrap;justify-content:space-between;gap:1.4rem;
+    font-family:var(--mono);font-size:.74rem;color:var(--faint);letter-spacing:.04em}
+  .colophon p{max-width:60ch;line-height:1.85}
+  .colophon code{color:var(--ink2);font-size:.92em}
+  .colophon a{color:var(--green);text-decoration:none;border-bottom:1px solid transparent;transition:border-color .3s}
+  .colophon a:hover{border-color:var(--green)}
+
+  @keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+
+  @media (max-width:720px){
+    .plate{grid-template-columns:1fr;gap:1.2rem}
+    .arrow{justify-self:start}
+    .belt{gap:2.2rem}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *{animation:none!important;transition:none!important}
+    .plate::before{transform:scaleX(1);opacity:.4}
+  }
+</style>
+</head>
+<body>
+<div class="field"></div>
+<div class="channels"></div>
+<div class="grain"></div>
+
+<div class="wrap">
+
+  <div class="top">
+    <span><span class="dot"></span>TFG · UCAM · Biotecnología</span>
+    <span class="tag">Acuaporinoma · Octoploide · 2026</span>
+  </div>
+
+  <header class="hero">
+    <div class="kicker">Identificación · Curaduría · Filogenia · Expresión</div>
+    <h1>
+      <span class="l"><span>El acuaporinoma de</span></span>
+      <span class="l"><span><span class="it">Fragaria</span><span class="x">x</span><span class="it">ananassa</span></span></span>
+      <span class="cv">cultivar &lsquo;Benihoppe&rsquo; &middot; genoma alo&#8209;octoploide</span>
+    </h1>
+
+    <div class="belt">
+      <p class="lede">
+        Dos visores interactivos del acuaporinoma de la fresa cultivada: la
+        <em>expresión por tejido</em> de los grupos homeólogos y el análisis de
+        componentes principales de las 121 acuaporinas funcionales. Material
+        complementario y reproducible del Trabajo Fin de Grado.
+      </p>
+      <div class="facts">
+        <div class="row"><span class="k">Autor</span><b>Noé Paredes Alfonso</b></div>
+        <div class="row"><span class="k">Dirección</span><b>Acosta Motos · Espinosa</b></div>
+        <div class="row"><span class="k">Acuaporinas</span><b>121 funcionales</b></div>
+        <div class="row"><span class="k">Homeólogos</span><b>32 grupos · 4 subgenomas</b></div>
+      </div>
+    </div>
+
+    <div class="mol">
+      <i style="--c:var(--pip)">PIP &middot; 32</i>
+      <i style="--c:var(--tip)">TIP &middot; 34</i>
+      <i style="--c:var(--nip)">NIP &middot; 37</i>
+      <i style="--c:var(--sip)">SIP &middot; 12</i>
+      <i style="--c:var(--xip)">XIP &middot; 6</i>
+    </div>
+  </header>
+
+  <nav class="plates">
+
+    <a class="plate" href="efp_homeologos.html">
+      <div>
+        <div class="pl-head">
+          <span class="num">01</span>
+          <div>
+            <div class="pl-title">Atlas eFP de grupos homeólogos</div>
+            <div class="pl-meta">Expresión por tejido &middot; TPM colapsado</div>
+          </div>
+        </div>
+        <p class="pl-desc">
+          Colorea la planta de fresa según el TPM de cada uno de los 32 grupos
+          homeólogos y desglosa, gen a gen, la contribución de los subgenomas
+          A · B · C · D.
+        </p>
+      </div>
+      <span class="arrow">&rarr;</span>
+    </a>
+
+    <a class="plate" href="pca_interactivo.html">
+      <div>
+        <div class="pl-head">
+          <span class="num">02</span>
+          <div>
+            <div class="pl-title">Explorador del PCA multidimensional</div>
+            <div class="pl-meta">Rasgos fisicoquímicos · topología · localización</div>
+          </div>
+        </div>
+        <p class="pl-desc">
+          Navega el espacio de componentes principales de las 121 acuaporinas,
+          con elipses de confianza por subfamilia y los vectores de carga que
+          gobiernan la separación.
+        </p>
+      </div>
+      <span class="arrow">&rarr;</span>
+    </a>
+
+  </nav>
+
+  <footer class="colophon">
+    <p>
+      Visores suplementarios del TFG; las figuras estáticas y sus pies viven en
+      el documento. Se regeneran ejecutando
+      <code>15_homeolog_efp_viewer.py</code> y
+      <code>profiling_final_integrated.py</code> y copiando los HTML a
+      <code>docs/</code>.
+    </p>
+    <p>
+      <i>Fragaria</i> x <i>ananassa</i> &lsquo;Benihoppe&rsquo;<br>
+      Código y datos &middot; <a href="https://github.com/Paredes0/tfg-aquaporinas">repositorio del TFG</a>
+    </p>
+  </footer>
+
+</div>
+</body>
+</html>

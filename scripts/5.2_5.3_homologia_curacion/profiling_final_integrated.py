@@ -975,13 +975,32 @@ for i, var in enumerate(feature_cols):
 # los motivos MEME no son features del PCA (son metadato), igual que se
 # retiro de la figura estatica. El explorador se centra en las coordenadas.
 
+# Estilo academico marfil, coherente con el eFP viewer y la landing del repo
 fig_int.update_layout(
-    font_family="DejaVu Sans", title_font_size=20,
+    font_family="Fraunces, 'Source Serif 4', Georgia, serif",
+    font_color="#22282a",
+    title_font_size=22,
+    paper_bgcolor="#F4EEE1",
+    plot_bgcolor="#FBF8F1",
     legend_title_text='Categor\u00eda',
-    hoverlabel=dict(bgcolor="white", font_size=13)
+    hoverlabel=dict(bgcolor="#FBF8F1", font_size=13),
+    xaxis=dict(gridcolor="rgba(60,70,60,.10)", zerolinecolor="rgba(60,70,60,.22)"),
+    yaxis=dict(gridcolor="rgba(60,70,60,.10)", zerolinecolor="rgba(60,70,60,.22)"),
 )
 
-fig_int.write_html(os.path.join(OUT, 'PCA_INTERACTIVO_FINAL.html'))
+_pca_html_path = os.path.join(OUT, 'PCA_INTERACTIVO_FINAL.html')
+fig_int.write_html(_pca_html_path)
+# Inyectar Fraunces para igualar la tipografia de la landing y el eFP viewer
+_font_link = (
+    '<link rel="preconnect" href="https://fonts.googleapis.com">'
+    '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
+    '<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&display=swap" rel="stylesheet">'
+)
+with open(_pca_html_path, encoding='utf-8') as _fh:
+    _html = _fh.read()
+_html = _html.replace('<head>', '<head>' + _font_link, 1)
+with open(_pca_html_path, 'w', encoding='utf-8') as _fh:
+    _fh.write(_html)
 print(f"    → PCA_INTERACTIVO_FINAL.html")
 
 banner("PIPELINE FINALIZADO CON ÉXITO")
