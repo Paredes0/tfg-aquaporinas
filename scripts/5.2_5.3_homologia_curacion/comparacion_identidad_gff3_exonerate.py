@@ -91,7 +91,7 @@ def main() -> None:
     mean_discr = discr["pid"].mean()
     print(f"Genes comparados: {n_tot}  |  identicos: {n_ident}  |  discrepantes: {n_discr}")
     print(f"Identidad media de los discrepantes: {mean_discr:.1f}%  "
-          f"(rango {discr['pid'].min():.0f}-{discr['pid'].max():.0f}%); "
+          f"(rango {discr['pid'].min():.1f}-{discr['pid'].max():.1f}%, nunca 100%); "
           f"los {n_ident} identicos son 100% por igualdad exacta de secuencia.")
 
     plt.style.use("seaborn-v0_8-whitegrid")
@@ -106,8 +106,8 @@ def main() -> None:
     axA.set_ylim(0, 105)
     axA.set_xlabel("Genes (ordenados por % identidad)", fontsize=12)
     axA.set_ylabel("% Identidad secuencia (alineamiento global)", fontsize=12)
-    axA.set_title("Identidad de secuencia peptídica entre GFF3 y Exonerate\npor gen de acuaporina",
-                  fontsize=13, fontweight="bold", color="#1f3a5f", pad=12)
+    axA.text(0.0, 1.02, "(A)", transform=axA.transAxes, fontsize=15,
+             fontweight="bold", va="bottom", ha="left", color="#1f3a5f")
     axA.legend(handles=[
         Patch(facecolor=C_DISCR, label=f"Discrepantes (n={n_discr})"),
         Patch(facecolor=C_IDENT, label=f"Idénticos (n={n_ident}, 100% identidad)"),
@@ -125,8 +125,8 @@ def main() -> None:
     axB.set_xlim(0, 102)
     axB.set_xlabel("% Identidad secuencia", fontsize=12)
     axB.set_ylabel("Nº de genes", fontsize=12)
-    axB.set_title("Distribución de identidad\n(GFF3 vs Exonerate)",
-                  fontsize=13, fontweight="bold", color="#1f3a5f", pad=12)
+    axB.text(0.0, 1.02, "(B)", transform=axB.transAxes, fontsize=15,
+             fontweight="bold", va="bottom", ha="left", color="#1f3a5f")
     axB.legend(loc="upper left", fontsize=10, framealpha=0.95)
 
     fig.tight_layout()
