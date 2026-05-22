@@ -17,9 +17,12 @@ import pandas as pd
 import pytest
 
 
+from scripts.common import config
+
+
 @pytest.fixture(scope='module')
-def dominant_subgenome_path(data_root):
-    p = data_root / 'RNA-seq' / 'homeolog_analysis' / 'dominant_subgenome.csv'
+def dominant_subgenome_path():
+    p = config.RNASEQ_HOM_DIR / 'dominant_subgenome.csv'
     if not p.exists():
         pytest.skip(f"No existe: {p}")
     return p

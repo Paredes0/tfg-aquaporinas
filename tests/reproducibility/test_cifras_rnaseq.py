@@ -14,17 +14,20 @@ import pandas as pd
 import pytest
 
 
+from scripts.common import config
+
+
 @pytest.fixture(scope='module')
-def basal_tpm_path(data_root):
-    p = data_root / 'RNA-seq' / 'basal_aquaporins' / 'basal_aquaporins_tpm.csv'
+def basal_tpm_path():
+    p = config.RNASEQ_BASAL_DIR / 'basal_aquaporins_tpm.csv'
     if not p.exists():
         pytest.skip(f"No existe: {p}")
     return p
 
 
 @pytest.fixture(scope='module')
-def basal_summary_path(data_root):
-    p = data_root / 'RNA-seq' / 'basal_aquaporins' / 'basal_aquaporins_summary.csv'
+def basal_summary_path():
+    p = config.RNASEQ_BASAL_DIR / 'basal_aquaporins_summary.csv'
     if not p.exists():
         pytest.skip(f"No existe: {p}")
     return p

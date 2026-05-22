@@ -133,7 +133,7 @@ def parse_meme_combined_block(filepath):
 
 
 def parse_iqtree_stats(filepath):
-    """Mismo algoritmo que en comparar_arboles.py."""
+    """Extrae los estadísticos del .iqtree de IQ-TREE (modelo, sitios, lnL...)."""
     with open(filepath, 'r') as f:
         content = f.read()
     stats = {}
@@ -156,7 +156,7 @@ def parse_iqtree_stats(filepath):
 
 
 def parse_tree_support(treefile):
-    """Mismo algoritmo que en comparar_arboles.py."""
+    """Extrae los soportes nodales (SH-aLRT/aBayes/UFBoot) del .treefile."""
     with open(treefile, 'r') as f:
         content = f.read()
     pattern = re.compile(r'([\d.]+)/([\d.]+)/(\d+)')

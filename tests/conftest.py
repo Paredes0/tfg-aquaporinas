@@ -8,7 +8,6 @@ Define fixtures reutilizables:
 """
 from __future__ import annotations
 
-import os
 import sys
 from pathlib import Path
 
@@ -17,6 +16,8 @@ import pytest
 # Permitir importar `scripts.common.config` desde los tests
 REPO_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO_ROOT))
+
+from scripts.common import config  # noqa: E402  (requiere el sys.path de arriba)
 
 FIXTURES_DIR = Path(__file__).parent / 'fixtures'
 
@@ -58,76 +59,45 @@ def treefile_synthetic(fixtures_dir) -> Path:
     return fixtures_dir / 'tree_synthetic.treefile'
 
 
-# ── Fixtures de datos primarios (opcionales) ────────────────────────────────
-@pytest.fixture(scope='session')
-def data_root() -> Path:
-    """
-    Raíz de los datos primarios del TFG.
-    Toma TFG_DATA_ROOT si está; si no, asume la ruta por defecto.
-    """
-    raw = os.environ.get('TFG_DATA_ROOT', r'C:\Users\Usuario\Desktop\resultados finales')
-    return Path(raw)
+# ── Fixtures de datos derivados (incluidos en el repo, data/) ───────────────
+# Apuntan a la copia de datos que viaja en el repositorio (data/), de modo que
+# los tests de cifras pasan en verde tras un `git clone`, sin depender de la
+# máquina original. Override global con $TFG_DATA_ROOT (lo respeta config.py).
+def _require(p: Path) -> Path:
+    """Devuelve la ruta si existe; si no, salta el test con un mensaje claro."""
+    if not Path(p).exists():
+        pytest.skip(f"Dato no disponible en el repo: {p}")
+    return Path(p)
 
 
 @pytest.fixture(scope='session')
-def tabla_traduccion(data_root) -> Path:
-    """Path a tabla_aquaporinas_traduccion.tabular (output del 5.1)."""
-    p = data_root / 'analisis proteinas aquaporina' / 'tabla_aquaporinas_traduccion.tabular'
-    if not p.exists():
-        pytest.skip(f"Datos primarios no disponibles: {p}")
-    return p
+def tabla_traduccion() -> Path:
+    """tabla_aquaporinas_traduccion.tabular (tabla maestra de clasificación)."""
+    return _require(config.CURADO_DIR / 'tabla_aquaporinas_traduccion.tabular')
 
 
 @pytest.fixture(scope='session')
-def clasificacion_simple(data_root) -> Path:
-    """Path a clasificacion_filogenetica_simple.csv (output del 5.1)."""
-    p = data_root / 'analisis proteinas aquaporina' / 'clasificacion_filogenetica_simple.csv'
-    if not p.exists():
-        pytest.skip(f"Datos primarios no disponibles: {p}")
-    return p
+def pca_coordenadas() -> Path:
+    """PCA_Coordenadas_Finales.csv (coordenadas del PCA fisicoquímico)."""
+    return _require(config.CURADO_DIR / 'PCA_Coordenadas_Finales.csv')
 
 
 @pytest.fixture(scope='session')
-def pca_coordenadas(data_root) -> Path:
-    """Path a PCA_Coordenadas_Finales.csv (output del 5.1 profiling)."""
-    p = (data_root / 'analisis proteinas aquaporina'
-         / 'profiling_aqp_motifs_final' / 'PCA_Coordenadas_Finales.csv')
-    if not p.exists():
-        pytest.skip(f"Datos primarios no disponibles: {p}")
-    return p
-
-
-@pytest.fixture(scope='session')
-def ranking_features(data_root) -> Path:
-    """Path al ranking de importancia del Random Forest."""
-    p = (data_root / 'analisis proteinas aquaporina'
-         / 'profiling_aqp_motifs_final' / 'RANKING_FINAL_INTEGRADO.csv')
-    if not p.exists():
-        pytest.skip(f"Datos primarios no disponibles: {p}")
-    return p
+def ranking_features() -> Path:
+    """RANKING_FINAL_INTEGRADO.csv (importancia de variables del Random Forest)."""
+    return _require(config.CURADO_DIR / 'RANKING_FINAL_INTEGRADO.csv')
 
 
 @pytest.fixture(scope='session')
 def iqtree_final() -> Path:
-    """
-    Path al .iqtree del árbol final (281 secuencias).
-    Vive en Z:\\work\\RNA-seq_test\\ por defecto.
-    """
-    raw = os.environ.get('TFG_RNA_SEQ_ROOT', r'Z:\work\RNA-seq_test')
-    p = Path(raw) / 'arbol_acuaporinas_2_bueno_sin_parciales.treefile'
-    iqtree_p = Path(str(p).replace('.treefile', '.iqtree'))
-    if not iqtree_p.exists():
-        pytest.skip(f"Árbol final no disponible: {iqtree_p}")
-    return iqtree_p
+    """.iqtree del árbol filogenético final (data/filogenia/)."""
+    return _require(config.FILO_DIR / 'arbol_acuaporinas.iqtree')
 
 
 @pytest.fixture(scope='session')
-def homeolog_summary(data_root) -> Path:
-    """Path a homeolog_groups_summary.tsv (output del 5.6)."""
-    p = data_root / 'aqp_finales' / 'homeolog_groups_summary.tsv'
-    if not p.exists():
-        pytest.skip(f"Datos primarios no disponibles: {p}")
-    return p
+def homeolog_summary() -> Path:
+    """homeolog_groups_summary.tsv (resumen de grupos homeólogos)."""
+    return _require(config.RNASEQ_HOM_DIR / 'homeolog_groups_summary.tsv')
 
 
 # ── Pretty-print del resumen al final ───────────────────────────────────────
@@ -143,7 +113,7 @@ def pytest_terminal_summary(terminalreporter, exitstatus, config):
     tr.write_line(f"  Tests ejecutados:  {total}")
     tr.write_line(f"  Pasados (PASS):    {passed}")
     tr.write_line(f"  Fallidos (FAIL):   {failed}")
-    tr.write_line(f"  Saltados (SKIP):   {skipped}   (faltan datos primarios)")
+    tr.write_line(f"  Saltados (SKIP):   {skipped}")
     tr.write_line('')
     if failed == 0:
         tr.write_line("  Todas las funciones de los scripts pasan sus tests unitarios.")

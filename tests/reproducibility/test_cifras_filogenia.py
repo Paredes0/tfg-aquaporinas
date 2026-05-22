@@ -23,7 +23,7 @@ from pathlib import Path
 import pytest
 
 
-# ─── Parsers locales (idénticos a los del comparar_arboles.py) ────────────
+# ─── Parsers locales del .iqtree/.treefile de IQ-TREE ─────────────────────
 def parse_iqtree_stats(filepath):
     with open(filepath, 'r') as f:
         content = f.read()
@@ -53,41 +53,26 @@ def parse_tree_support(treefile):
     return sh_alrt, abayes, ufboot
 
 
-# ─── Fixtures para localizar el .iqtree real ──────────────────────────────
-@pytest.fixture(scope='module')
-def iqtree_final_path(data_root):
-    """
-    Busca el .iqtree del árbol final BUENO. Tiene varios sitios posibles:
-    1. Z:/work/RNA-seq_test (paths.iqtree_final por defecto)
-    2. resultados finales/TFG/.../Filogenia/FINAL/final_without_partials/
-    """
-    candidates = [
-        Path(os.environ.get(
-            'TFG_RNA_SEQ_ROOT', r'Z:\work\RNA-seq_test'
-        )) / 'arbol_acuaporinas_2_bueno_sin_parciales.iqtree',
-        data_root / 'TFG' / 'TFG-PRACTICAS NOE' / 'RESULTADOS' / 'Filogenia'
-            / 'FINAL' / 'final_without_partials' / 'arbol_acuaporinas.iqtree',
-    ]
-    for p in candidates:
-        if p.exists():
-            return p
-    pytest.skip(f"No se encontró el .iqtree final en ninguno de: {candidates}")
+# ─── Fixtures del árbol final (incluido en data/filogenia/ del repo) ───────
+from scripts.common import config
 
 
 @pytest.fixture(scope='module')
-def treefile_final_path(data_root):
-    """Busca el .treefile del árbol final con soportes nodales."""
-    candidates = [
-        Path(os.environ.get(
-            'TFG_RNA_SEQ_ROOT', r'Z:\work\RNA-seq_test'
-        )) / 'arbol_acuaporinas_2_bueno_sin_parciales.treefile',
-        data_root / 'TFG' / 'TFG-PRACTICAS NOE' / 'RESULTADOS' / 'Filogenia'
-            / 'FINAL' / 'final_without_partials' / 'arbol_acuaporinas.treefile',
-    ]
-    for p in candidates:
-        if p.exists():
-            return p
-    pytest.skip(f"No se encontró el .treefile final en ninguno de: {candidates}")
+def iqtree_final_path():
+    """.iqtree del árbol final, incluido en el repo (data/filogenia/)."""
+    p = config.FILO_DIR / 'arbol_acuaporinas.iqtree'
+    if not p.exists():
+        pytest.skip(f"No se encontró el .iqtree final: {p}")
+    return p
+
+
+@pytest.fixture(scope='module')
+def treefile_final_path():
+    """.treefile del árbol final con soportes nodales (data/filogenia/)."""
+    p = config.FILO_DIR / 'arbol_acuaporinas.treefile'
+    if not p.exists():
+        pytest.skip(f"No se encontró el .treefile final: {p}")
+    return p
 
 
 # ─────────────────────────────── TESTS ────────────────────────────────────
