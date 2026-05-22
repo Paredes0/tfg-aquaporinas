@@ -715,7 +715,7 @@ if mask_maker.any():
 # PLOTS
 plt.figure(figsize=(10, 8))
 sns.barplot(data=feat_imp.head(25), x='Importance', y='Feature', palette='viridis')
-plt.title("RANKING DE VARIABLES DISCRIMINANTES (v3.1)")
+# Título en el pie de figura (norma APA/UCAM), no embebido en la imagen
 plt.tight_layout()
 plt.savefig(os.path.join(OUT, 'FINAL_IMPORTANCE.png'))
 
@@ -804,7 +804,7 @@ def plot_static_pca(include_partial=True, filename='PCA_FINAL_INTEGRADO.png'):
     ax_st.set_xlabel(f"PC1 ({pca.explained_variance_ratio_[0]*100:.1f}%)")
     ax_st.set_ylabel(f"PC2 ({pca.explained_variance_ratio_[1]*100:.1f}%)")
     varianza_total = (pca.explained_variance_ratio_[0] + pca.explained_variance_ratio_[1]) * 100
-    ax_st.set_title(f"PCA INTEGRADO: HUELLA ESTRUCTURAL Y FÍSICA\n(Varianza explicada: {varianza_total:.1f}%)")
+    # Título en el pie de figura (norma APA/UCAM); la varianza explicada se indica en el pie
     ax_st.legend(fontsize=9, framealpha=0.9)
     ax_st.grid(alpha=0.2)
     ax_st.margins(0.1)

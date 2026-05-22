@@ -77,9 +77,7 @@ def create_histogram(lengths, output_file='histograma_longitudes_aqp.png'):
     # Etiquetas y títulos
     ax.set_xlabel('Longitud de la secuencia (aminoácidos)', fontsize=14, fontweight='bold')
     ax.set_ylabel('Frecuencia (número de secuencias)', fontsize=14, fontweight='bold')
-    ax.set_title('Distribución de longitudes de aquaporinas en Rosaceae\n' + 
-                 f'(N = {stats["n"]} secuencias)', 
-                 fontsize=16, fontweight='bold', pad=20)
+    # Título en el pie de figura (norma APA/UCAM), no embebido en la imagen
     
     # Leyenda
     ax.legend(loc='upper right', fontsize=11, framealpha=0.95)
@@ -138,8 +136,7 @@ def create_boxplot(lengths, output_file='boxplot_longitudes_aqp.png'):
     ax.axvspan(140, 380, alpha=0.1, color='green')
     
     ax.set_xlabel('Longitud de la secuencia (aminoácidos)', fontsize=14, fontweight='bold')
-    ax.set_title('Distribución de longitudes de aquaporinas en Rosaceae', 
-                 fontsize=14, fontweight='bold')
+    # Título en el pie de figura (norma APA/UCAM), no embebido en la imagen
     ax.set_yticks([])
     ax.legend(fontsize=11)
     ax.grid(True, alpha=0.3, axis='x')
@@ -242,9 +239,7 @@ def create_pie_chart(lengths, output_file='grafico_distribucion_rangos.png'):
         autotext.set_fontsize(14)
         autotext.set_fontweight('bold')
     
-    ax.set_title('Distribución de secuencias por rango de longitud\n' + 
-                 f'(N = {len(lengths)} secuencias)', 
-                 fontsize=16, fontweight='bold', pad=20)
+    # Título en el pie de figura (norma APA/UCAM), no embebido en la imagen
     
     plt.tight_layout()
     plt.savefig(output_file, dpi=300, bbox_inches='tight', facecolor='white')
