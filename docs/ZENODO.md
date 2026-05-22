@@ -29,15 +29,14 @@ GitHub detectará el tag y mostrará un botón "Create release" en la página de
 
 ## 4. Recibir el DOI
 
-A los pocos minutos, Zenodo:
-1. Crea el depósito.
-2. Genera el DOI (formato `10.5281/zenodo.XXXXXXX`).
-3. Te envía un email con el enlace.
+A los pocos minutos, Zenodo crea el depósito, genera el DOI y envía un email con el enlace.
+
+**DOI de este repositorio:** `10.5281/zenodo.20346630` (*concept DOI*, apunta siempre a la última versión) → https://doi.org/10.5281/zenodo.20346630
 
 ## 5. Insertar el DOI en el TFG y el README
 
-- En `README.md` de este repo, sustituir `XXXXXXX` por el DOI real (commit post-release).
-- En la sección §10 del TFG.docx, sustituir `10.5281/zenodo.XXXXXXX` por el DOI real.
+- `README.md`, `CITATION.cff` y `.zenodo.json` ya citan el DOI.
+- En la sección §10 del TFG, usar `https://doi.org/10.5281/zenodo.20346630`.
 
 ## Política de versiones
 
