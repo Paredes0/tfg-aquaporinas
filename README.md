@@ -70,6 +70,16 @@ pytest tests/ -v
 
 Si todos los tests pasan, las cifras del TFG son reproducibles desde el código de este repo.
 
+## Cómo regenerar las figuras
+
+`config.py` solo define rutas; **no ejecuta nada**. Para regenerar **todas las figuras** del TFG desde `data/`:
+
+```bash
+python scripts/regenerar_figuras.py
+```
+
+Genera las **Figuras 4–12** del cuerpo, el visor eFP (Figura 13) y las figuras/tablas de los Anexos C, E y J, y las **reúne numeradas** en `results/figuras_TFG/` (`Figura_04_*.png` … `Figura_13_*.html`). Cada script las deja además en su subcarpeta de trabajo (`results/figuras_rnaseq/`, `results/profiling_aqp_motifs_final/`, `results/visualizaciones_tfg/`); la carpeta `results/figuras_TFG/` es el índice limpio y ordenado. (La Figura 7 —árbol— se hace en iTOL; las Figuras 1–3 son de otras publicaciones.)
+
 ## Cómo reproducir el pipeline completo
 
 Ver `docs/REPRODUCIBILIDAD.md` para instrucciones detalladas. Resumen:

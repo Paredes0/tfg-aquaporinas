@@ -20,6 +20,7 @@ Salidas en `results/` (y, para los anexos, en su propia carpeta).
 from __future__ import annotations
 
 import os
+import shutil
 import subprocess
 import sys
 from pathlib import Path
@@ -59,6 +60,38 @@ def main() -> None:
         tail = (stream.strip().splitlines() or ["(sin salida)"])[-1]
         print(("    OK  " if ok else "    FALLO  ") + tail)
         results.append((label, ok))
+
+    # ── Reunir las figuras finales en UNA carpeta, numeradas como en el TFG ──
+    # (cada script las deja en su subcarpeta; aquí se copian a un índice limpio)
+    dest = REPO / "results" / "figuras_TFG"
+    if dest.exists():
+        shutil.rmtree(dest)
+    dest.mkdir(parents=True, exist_ok=True)
+    coleccion = [
+        ("Figura_04_longitudes_Rosaceae", ["results/visualizaciones_tfg/histograma_longitudes_aqp.png",
+                                           "results/visualizaciones_tfg/histograma_longitudes_aqp.pdf"]),
+        ("Figura_05_identidad_GFF3_Exonerate", ["results/identidad_gff3_vs_exonerate.png",
+                                                "results/identidad_gff3_vs_exonerate.pdf"]),
+        ("Figura_06_PCA_fisicoquimico", ["results/profiling_aqp_motifs_final/PCA_FINAL_INTEGRADO.png"]),
+        ("Figura_08_MEME_motivos", ["results/HEATMAP_Frecuencia_Motivos_Sub-subfamilias.png"]),
+        ("Figura_09_TPM_basal", ["results/figuras_rnaseq/figura6_perfiles_subfamilia.png",
+                                 "results/figuras_rnaseq/figura6_perfiles_subfamilia.pdf"]),
+        ("Figura_10_expresion_diferencial", ["results/figuras_rnaseq/figura_de_stripplot.png",
+                                             "results/figuras_rnaseq/figura_de_stripplot.pdf"]),
+        ("Figura_11_homeologos", ["results/figuras_rnaseq/figura_homeologos_basal.png",
+                                  "results/figuras_rnaseq/figura_homeologos_basal.pdf"]),
+        ("Figura_12_tandems_NIP1", ["results/figuras_rnaseq/figura_tandems_schema.png",
+                                    "results/figuras_rnaseq/figura_tandems_schema.pdf"]),
+        ("Figura_13_eFP_homeologos", ["results/efp_viewer_homeologs.html"]),
+        ("PCA_interactivo", ["results/profiling_aqp_motifs_final/PCA_INTERACTIVO_FINAL.html"]),
+    ]
+    for nombre, fuentes in coleccion:
+        for src in fuentes:
+            p = REPO / src
+            if p.exists():
+                shutil.copy2(p, dest / f"{nombre}{p.suffix}")
+    print(f"\n>>> Figuras del TFG reunidas y numeradas en: {dest}")
+    print("    (la Figura 7 — árbol — se hace en iTOL; las 1-3 son de otros papers)")
 
     print(f"\n{'='*72}\nRESUMEN\n{'='*72}")
     for label, ok in results:
