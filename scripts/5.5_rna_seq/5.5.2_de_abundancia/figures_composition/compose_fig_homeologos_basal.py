@@ -1,4 +1,4 @@
-import os
+import sys
 import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
@@ -8,14 +8,18 @@ from matplotlib.lines import Line2D
 from scipy import stats
 from pathlib import Path
 
-base = Path(os.environ.get("TFG_RNA_SEQ_ROOT","/home/noe/work/RNA-seq_test")+"")
-hom = base / "results" / "homeolog_analysis"
+sys.path.insert(0, str(Path(__file__).resolve().parents[4]))
+from scripts.common import config
 
-hg_sum = pd.read_csv(base / "homeolog_groups_summary.tsv", sep="\t")
+hom = config.RNASEQ_HOM_DIR
+out_dir = config.ensure_results() / "figuras_rnaseq"
+out_dir.mkdir(parents=True, exist_ok=True)
+
+hg_sum = pd.read_csv(hom / "homeolog_groups_summary.tsv", sep="\t")
 ct = pd.read_csv(hom / "collapsed_tpm.csv").rename(columns={"Unnamed: 0": "homeolog_group"})
 do = pd.read_csv(hom / "dominance_overall.csv")
 
-design = pd.read_csv(base / "design" / "design_basal.csv")
+design = pd.read_csv(config.RNASEQ_DIR / "design_basal.csv")
 sample_to_tissue = dict(zip(design["sample"], design["tissue"]))
 
 tissue_order = ["red_fruit", "roots", "green_fruit", "crown", "aux_bud", "leaf"]
@@ -169,8 +173,8 @@ ax_b.legend(handles=legend_b, loc="upper left", bbox_to_anchor=(1.005, 1.0), fon
 # Ajustar para que la leyenda fuera quepa
 fig.subplots_adjust(left=0.05, right=0.86, top=0.95, bottom=0.06)
 
-out_pdf = base / "results" / "figura_homeologos_basal.pdf"
-out_png = base / "results" / "figura_homeologos_basal.png"
+out_pdf = out_dir / "figura_homeologos_basal.pdf"
+out_png = out_dir / "figura_homeologos_basal.png"
 fig.savefig(str(out_pdf), dpi=200, bbox_inches="tight")
 fig.savefig(str(out_png), dpi=200, bbox_inches="tight")
 print("PDF:", out_pdf.stat().st_size)

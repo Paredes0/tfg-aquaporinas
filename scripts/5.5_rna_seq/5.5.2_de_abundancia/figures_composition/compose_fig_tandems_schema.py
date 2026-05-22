@@ -10,6 +10,7 @@ del 6.2 (Q.PLANT+R6, log L = -45.149,26), con apoyos SH-aLRT/aBayes/UFboot.
 Datos verbatim del subagente A v3 (specs/2026-05-19-rnaseq-6.3.3-tandems-analysis.md).
 """
 import io
+import sys
 from pathlib import Path
 
 import matplotlib.pyplot as plt
@@ -18,6 +19,9 @@ import numpy as np
 from matplotlib.patches import FancyArrow, Rectangle, FancyArrowPatch
 from matplotlib.lines import Line2D
 from Bio import Phylo
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[4]))
+from scripts.common import config
 
 
 # ---------------------------------------------------------------------------
@@ -772,8 +776,7 @@ fig.subplots_adjust(left=0.06, right=0.85, top=0.97, bottom=0.05, hspace=0.30)
 # ---------------------------------------------------------------------------
 # Outputs
 # ---------------------------------------------------------------------------
-base = Path(os.environ.get("TFG_RNA_SEQ_ROOT","/home/noe/work/RNA-seq_test")+"")
-out_dir = base / "results" / "homeolog_analysis"
+out_dir = config.ensure_results() / "figuras_rnaseq"
 out_dir.mkdir(parents=True, exist_ok=True)
 
 out_pdf = out_dir / "figura_tandems_schema.pdf"

@@ -4,17 +4,24 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import Ellipse
 from matplotlib.lines import Line2D
 import numpy as np
-import csv, os
+import csv
+import sys
+from pathlib import Path
 
-os.chdir(r"C:\Users\Usuario\Desktop\resultados finales")
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+from scripts.common import config
+
+OUT_DIR = Path(__file__).resolve().parent
+PCA_COORDS = config.RESULTS_DIR / "profiling_aqp_motifs_final" / "PCA_Coordenadas_Finales.csv"
+TABLA = config.CURADO_DIR / "tabla_aquaporinas_traduccion.tabular"
 
 pca = {}
-with open(r"analisis proteinas aquaporina/profiling_aqp_motifs_final/PCA_Coordenadas_Finales.csv", encoding="utf-8") as f:
+with open(PCA_COORDS, encoding="utf-8") as f:
     for row in csv.DictReader(f):
         pca[row["ID"]] = {"PC1":float(row["PC1"]),"PC2":float(row["PC2"]),"subfam":row["Subfamilia"]}
 
 tabla = {}
-with open(r"analisis proteinas aquaporina/tabla_Aquaporinas_traduccion.tabular", encoding="utf-8") as f:
+with open(TABLA, encoding="utf-8") as f:
     for row in csv.DictReader(f, delimiter="\t"):
         tabla[row["gene_id"]] = row
 
@@ -88,9 +95,9 @@ fig.legend(handles=legend_items, loc="lower center", ncol=2, fontsize=11, bbox_t
 plt.suptitle("Comparacion PCA: elipses al 95% segun se entrenen con CLEAN o con TODAS",
              fontsize=14, fontweight="bold", y=1.00)
 plt.tight_layout()
-plt.savefig("audit_PCA_inclusivo/PCA_A_vs_B_comparativa.png", dpi=180, bbox_inches="tight")
+plt.savefig(OUT_DIR / "Anexo_C_figura_paneles_AvsB.png", dpi=180, bbox_inches="tight")
 plt.close()
-print("Guardado: PCA_A_vs_B_comparativa.png")
+print("Guardado:", OUT_DIR / "Anexo_C_figura_paneles_AvsB.png")
 
 # Plot 2: superpuesto
 fig, ax = plt.subplots(figsize=(13, 9))
@@ -124,6 +131,6 @@ ax.grid(True, alpha=0.3)
 ax.axhline(0, color="gray", linewidth=0.5)
 ax.axvline(0, color="gray", linewidth=0.5)
 plt.tight_layout()
-plt.savefig("audit_PCA_inclusivo/PCA_elipses_superpuestas.png", dpi=180, bbox_inches="tight")
+plt.savefig(OUT_DIR / "Anexo_C_figura_elipses_AvsB.png", dpi=180, bbox_inches="tight")
 plt.close()
-print("Guardado: PCA_elipses_superpuestas.png")
+print("Guardado:", OUT_DIR / "Anexo_C_figura_elipses_AvsB.png")

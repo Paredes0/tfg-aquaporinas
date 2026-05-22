@@ -1,4 +1,4 @@
-import os
+import sys
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
@@ -8,12 +8,17 @@ from scipy import stats
 from pathlib import Path
 from adjustText import adjust_text
 
-base = Path(os.environ.get("TFG_RNA_SEQ_ROOT","/home/noe/work/RNA-seq_test")+"/results")
+sys.path.insert(0, str(Path(__file__).resolve().parents[4]))
+from scripts.common import config
+
+base = config.RNASEQ_DE_DIR
+out_dir = config.ensure_results() / "figuras_rnaseq"
+out_dir.mkdir(parents=True, exist_ok=True)
 sf_colors = {"PIP": "#E74C3C", "TIP": "#3498DB", "NIP": "#2ECC71", "SIP": "#F39C12", "XIP": "#9B59B6"}
 subfams = ["PIP", "TIP", "NIP", "SIP", "XIP"]
 
-leaf_df = pd.read_csv(base / "de_leaf" / "de_aquaporins_leaf.csv")
-roots_df = pd.read_csv(base / "de_roots" / "de_aquaporins_roots.csv")
+leaf_df = pd.read_csv(base / "de_aquaporins_leaf.csv")
+roots_df = pd.read_csv(base / "de_aquaporins_roots.csv")
 for d in (leaf_df, roots_df):
     d["log2FoldChange"] = pd.to_numeric(d["log2FoldChange"], errors="coerce")
     d["PAdj"] = pd.to_numeric(d["PAdj"], errors="coerce")
@@ -145,8 +150,8 @@ axes[0].legend(handles=legend_elems, loc="lower left", fontsize=9.5, framealpha=
 
 fig.tight_layout(rect=[0, 0, 0.93, 1.0])
 
-out_pdf = base / "figura_de_stripplot.pdf"
-out_png = base / "figura_de_stripplot.png"
+out_pdf = out_dir / "figura_de_stripplot.pdf"
+out_png = out_dir / "figura_de_stripplot.png"
 fig.savefig(str(out_pdf), dpi=200, bbox_inches="tight")
 fig.savefig(str(out_png), dpi=200, bbox_inches="tight")
 print("PDF:", out_pdf.stat().st_size)

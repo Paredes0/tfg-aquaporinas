@@ -1,12 +1,17 @@
-import os
+import sys
 import fitz
 import matplotlib.pyplot as plt
 from pathlib import Path
 import numpy as np
 
-base = Path(os.environ.get("TFG_RNA_SEQ_ROOT","/home/noe/work/RNA-seq_test")+"/results/basal_aquaporins")
-out_pdf = base / "figura7_validacion.pdf"
-out_png = base / "figura7_validacion.png"
+sys.path.insert(0, str(Path(__file__).resolve().parents[4]))
+from scripts.common import config
+
+base = config.RNASEQ_BASAL_DIR
+out_dir = config.ensure_results() / "figuras_rnaseq"
+out_dir.mkdir(parents=True, exist_ok=True)
+out_pdf = out_dir / "figura7_validacion.pdf"
+out_png = out_dir / "figura7_validacion.png"
 
 paneles = [
     ("pca_aquaporins.pdf", "A) PCA de las 22 muestras paired-end"),

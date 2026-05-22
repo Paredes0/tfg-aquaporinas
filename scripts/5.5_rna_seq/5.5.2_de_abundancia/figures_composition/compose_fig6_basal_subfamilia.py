@@ -1,4 +1,4 @@
-import os
+import sys
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
@@ -7,7 +7,12 @@ from matplotlib.lines import Line2D
 from scipy import stats
 from pathlib import Path
 
-base = Path(os.environ.get("TFG_RNA_SEQ_ROOT","/home/noe/work/RNA-seq_test")+"/results/basal_aquaporins")
+sys.path.insert(0, str(Path(__file__).resolve().parents[4]))
+from scripts.common import config
+
+base = config.RNASEQ_BASAL_DIR
+out_dir = config.ensure_results() / "figuras_rnaseq"
+out_dir.mkdir(parents=True, exist_ok=True)
 df = pd.read_csv(base / "basal_aquaporins_summary.csv")
 if "needs_reannotation" in df.columns:
     df = df[df["needs_reannotation"].astype(str).str.upper() == "FALSE"].copy()
@@ -114,8 +119,8 @@ legend_elems += [
 ax.legend(handles=legend_elems, loc="upper right", ncol=2, fontsize=10.5, framealpha=0.95)
 
 fig.tight_layout()
-out_pdf = base / "figura6_perfiles_subfamilia.pdf"
-out_png = base / "figura6_perfiles_subfamilia.png"
+out_pdf = out_dir / "figura6_perfiles_subfamilia.pdf"
+out_png = out_dir / "figura6_perfiles_subfamilia.png"
 fig.savefig(str(out_pdf), dpi=200, bbox_inches="tight")
 fig.savefig(str(out_png), dpi=200, bbox_inches="tight")
 print("PDF:", out_pdf.stat().st_size)
