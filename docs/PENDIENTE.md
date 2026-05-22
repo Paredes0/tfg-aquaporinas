@@ -57,6 +57,22 @@ El pipeline está cubierto y sincronizado con la numeración del TFG v9:
 
 Cobertura de tests: **133/133** (45 reproducibilidad + 67 unit + 21 smoke). Limitaciones de cobertura documentadas honestamente en `tests/REPORTE_DEFENSA.md` (sección "Qué garantizan estos tests y qué no").
 
+### 5.1. Reproducibilidad de rutas — refactor a config.py (2026-05-22) ✅
+
+- `scripts/common/config.py` reescrito: ahora apunta a `data/` del repo por defecto; los scripts ya no tienen rutas a la máquina original.
+- `data/` añadido (curado/, filogenia/, rna_seq/) con los datos derivados (verificados idénticos a los originales por md5).
+- `profiling_final_integrated.py` y `analisis_motivos_unificado.py` leen de `config.CURADO_DIR`. **Verificado**: el PCA reproduce las 121 funcionales leyendo de `data/curado/` (exit 0).
+- Los 5 `compose_fig*.py` usan `TFG_RNA_SEQ_ROOT` (ya no `/home/noe/work` hardcoded).
+
+### 5.2. Verificación end-to-end pendiente (fase "luego") ⏳
+
+Falta **ejecutar cada script y confirmar que reproduce sus cifras**, no solo el PCA:
+- [ ] `analisis_motivos_unificado.py` — necesita `clasificacion_filogenetica_simple.csv`, que genera `clasificacion_integrada_aqp.py`; confirmar el orden de ejecución (clasificación → motivos).
+- [ ] Scripts de `5.4_filogenia/` (comparar_arboles, rename_tree_nodes, update_prune_ids) — verificar que leen los treefiles de `data/filogenia/`.
+- [ ] Scripts R (`07_de_analysis.R`, `08_basal_expression.R`, homeólogos) — requieren entorno R + DESeq2.
+- [ ] Scripts `compose_fig*.py` — dependen de outputs intermedios del pipeline RNA-seq (PDFs de PCA, `design_basal.csv`) que se generan en pasos previos; documentar/añadir esas dependencias.
+- [ ] Auditoría completa reejecutando todo el repo (acordada con Noé).
+
 ## 6. Sub-proyecto relacionado (fuera de este repo)
 
 - [ ] **Sub-proyecto #38 — Secuencias parciales con expresión**: verificar si las 8 candidatas parciales identificadas en §6.1 tienen expresión en RNA-seq (ya se conocen 2: `Fxa7Dg01388` PIP TPM máx 43,14 y `Fxa6Dg03790` SIP TPM máx 3,01). Si la tienen, redactar un párrafo en §6.3 del TFG mencionándolas como candidatas a reanotación futura. Es trabajo de redacción del TFG, no del repo, pero su material (`reannotation_candidates.tsv`) está referenciado en `annexes/B_descartes/`.
