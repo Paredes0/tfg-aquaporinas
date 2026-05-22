@@ -6,7 +6,7 @@ Citado en §6.1 del TFG (curado de secuencias) y referenciable desde §5.3 (Cura
 
 El curado del acuaporinoma decide, gen a gen, qué anotación adoptar entre la oficial del GDR (GFF3 'Benihoppe' v1) y la alternativa generada por Exonerate sobre proteínas de referencia. La decisión usa criterios estructurales (metionina inicial, 6 hélices transmembrana, motivos NPA conservados). Este anexo contiene **todos los datos intermedios** que sustentan esa decisión, de modo que:
 
-- El tribunal puede inspeccionar el material en bruto.
+- Cualquier persona puede inspeccionar y verificar el material en bruto que respalda cada decisión.
 - Otros grupos que quieran **actualizar la anotación oficial de** *F.* x *ananassa* **'Benihoppe' en GDR** con los modelos curados disponen del GFF3 listo para sustituir (`Anexo_B_consenso_aqp_fixed.gff3`) y del FASTA del consenso (`Anexo_B_consenso_aqp_FINAL.fasta`).
 
 ## Contenido
