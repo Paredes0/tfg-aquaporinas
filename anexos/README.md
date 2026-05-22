@@ -23,4 +23,4 @@ Esta carpeta agrupa los anexos materializables del TFG con numeración correlati
 ## Historial de cambios
 
 - **2026-05-22**: el antiguo Anexo F (paneles del PCA) se fusionó en el de robustez del PCA; se añadieron los anexos de datos RNA-seq, parámetros fisicoquímicos y se amplió el de MEME.
-- **2026-05-22 (renumeración APA)**: las letras se reasignaron por **orden de primera cita en el TFG v12**. Mapa respecto a la numeración temática previa: overview A→A, curado H→B, RNA-seq I→C, figuras G→D, descartes B→E, polémicas F→F, PCA C→G, fisicoquímico J→H, soportes E→I, MEME D→J. La propuesta `resultados finales/ANEXOS_TFG.md` documenta el §10 del TFG con esta numeración.
+- **2026-05-22 (renumeración APA)**: las letras se reasignaron por **orden de primera cita en el TFG**. El apartado «10. Anexos» del TFG cita los anexos con esta misma numeración A–J.
