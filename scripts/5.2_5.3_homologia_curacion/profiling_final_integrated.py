@@ -809,11 +809,9 @@ def plot_static_pca(include_partial=True, filename='PCA_FINAL_INTEGRADO.png'):
     ax_st.grid(alpha=0.2)
     ax_st.margins(0.1)
 
-    # Recuadro de huella de motivos (esquina inferior izquierda)
-    ax_st.text(0.02, 0.02, motif_box_text, transform=ax_st.transAxes,
-               fontsize=9, verticalalignment='bottom', fontfamily='monospace',
-               bbox=dict(boxstyle='round,pad=0.6', facecolor='#F8F9FA',
-                         edgecolor='#2C3E50', alpha=0.92, linewidth=1.5))
+    # Recuadro de huella de motivos retirado: era metadato MEME (M1-M12 del análisis
+    # exploratorio) que no aporta a la figura del PCA y resultaba inconsistente con la
+    # numeración M1-M15 del análisis de motivos definitivo (Figura 5).
 
     plt.tight_layout()
     fig_st.savefig(os.path.join(OUT, filename), bbox_inches='tight')
