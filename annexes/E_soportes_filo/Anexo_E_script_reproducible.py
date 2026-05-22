@@ -33,10 +33,12 @@ import matplotlib.pyplot as plt
 
 # ── Localización del árbol final ─────────────────────────────────────────────
 # El árbol de referencia del TFG es el de final_without_partials (282 hojas, 430
-# sitios, Q.PLANT+R6, log L = -45.149,26 → 277 nodos internos). Se prioriza ese.
-# La copia de Z:\work\RNA-seq_test es una variante redondeada (276 nodos) y queda
-# como último recurso. Para reproducir en otra máquina, exportar el .treefile y
-# apuntar TFG_TREEFILE a su ruta.
+# sitios, Q.PLANT+R6, log L = -45.149,26 → 277 nodos internos), del que proceden
+# las cifras de soporte citadas en §6.2.2. Se prioriza ese.
+# La copia de Z:\work\RNA-seq_test (arbol_acuaporinas_2_bueno_sin_parciales) es la
+# misma reconstrucción tras podar la rama parcial Fxa6Dg03790 (281 hojas, 276
+# nodos); estadísticos casi idénticos. Queda como último recurso.
+# Para reproducir en otra máquina, exportar el .treefile y apuntar TFG_TREEFILE.
 _CANDIDATE_TREES = [
     os.environ.get("TFG_TREEFILE", ""),
     r"C:\Users\Usuario\Desktop\resultados finales\TFG\TFG-PRACTICAS NOE\RESULTADOS\Filogenia\FINAL\final_without_partials\arbol_acuaporinas.treefile",

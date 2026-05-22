@@ -36,4 +36,12 @@ El script localiza el árbol vía la variable `TFG_TREEFILE` o, en su defecto, e
 
 - Formato de soporte en el `.treefile`: `)SH-aLRT/aBayes/UFboot:branch_length` (p. ej. `)98.9/1/100:0.23`), tal como lo anota IQ-TREE con `-alrt 1000 -abayes -bb 1000`.
 - El mapeo de cada hoja de *Fragaria* a su subfamilia se toma de `homeolog_groups.tsv` (columna `subfamily`, de la que se extrae la subfamilia canónica); las hojas de referencia (At/Os/Md/Hb) se asignan por el nombre.
-- Existe una copia alternativa del árbol en `Z:\work\RNA-seq_test\` con los soportes redondeados (276 nodos parseables); este anexo usa la versión de 277 nodos por coincidir con el `.iqtree` de 282 secuencias citado en el TFG.
+
+### Sobre las dos versiones del árbol (282 vs 281 hojas)
+
+Existen dos versiones de la reconstrucción definitiva que difieren en **una sola hoja**:
+
+- **282 hojas → 277 nodos internos** (`final_without_partials/arbol_acuaporinas.treefile`): incluye la rama de la secuencia parcial `Fxa6Dg03790`. Es la versión del `.iqtree` del que proceden los parámetros citados en §6.2.2 (log L = −45.149,26) y los estadísticos de soporte (277 nodos, 116 con triple soporte alto, 41,9 %; medianas UFBoot 91 / SH-aLRT 92,2 / aBayes 1,000).
+- **281 hojas → 276 nodos** (`Z:\work\RNA-seq_test\arbol_acuaporinas_2_bueno_sin_parciales.treefile`): la misma reconstrucción tras podar `Fxa6Dg03790`. Sus estadísticos son prácticamente idénticos (276 nodos, 116 triple soporte, 42,0 %; medianas UFBoot 91,5 / SH-aLRT 92,2 / aBayes 1,000).
+
+**Este anexo usa la versión de 282 hojas (277 nodos)** porque es la que respalda exactamente las cifras citadas en el cuerpo del TFG (§6.2.2). La secuencia parcial `Fxa6Dg03790` se excluyó del conjunto curado de 121 funcionales pero su rama se conservó en el árbol del que se calcularon los soportes, ya que podarla no altera de forma apreciable los resultados (la diferencia entre ambas versiones es de un nodo y menos de una décima en los porcentajes). Esta decisión es coherente con la nota del proyecto: "281 secuencias / parámetros del `.iqtree` de 282 que es esencialmente la misma reconstrucción".

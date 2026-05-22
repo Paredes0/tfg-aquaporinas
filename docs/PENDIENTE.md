@@ -23,16 +23,16 @@ Estas acciones no las puede hacer Claude; requieren tu cuenta y tus credenciales
 
 ## 3. Contenido del repo aún incompleto
 
-### Anexo E — Soportes filogenéticos (PENDIENTE de generar)
+### Anexo E — Soportes filogenéticos ✅ COMPLETADO (2026-05-22)
 
-`annexes/E_soportes_filo/` contiene solo un `README.md` placeholder. Faltan 4 archivos, **bloqueados** por la disponibilidad del `.treefile` final (vive en `Z:\work\RNA-seq_test\arbol_acuaporinas_2_bueno_sin_parciales.treefile`):
+Generado a partir del árbol final (282 hojas, 277 nodos internos, Q.PLANT+R6, log L = −45.149,26). `annexes/E_soportes_filo/` ya contiene:
 
-- [ ] `Anexo_E_tabla_277_nodos_soportes.csv` — un nodo por fila: SH-aLRT (1000 iter), UFBoot (1000 iter), aBayes + indicadores de triple soporte.
-- [ ] `Anexo_E_figura_histograma_soportes.png` — distribución de los 3 estadísticos con líneas de umbrales (UFBoot ≥ 95 %, SH-aLRT ≥ 80 %, aBayes ≥ 0,95).
-- [ ] `Anexo_E_tabla_nodos_subfamilias.csv` — subtabla con los nodos que delimitan PIP, TIP, NIP, SIP, XIP.
-- [ ] `Anexo_E_script_reproducible.py` — script (ete3/dendropy) que regenera tabla y figura desde el `.treefile`.
+- [x] `Anexo_E_script_reproducible.py` — parsea soportes SH-aLRT/aBayes/UFboot y genera tabla, histograma y subtabla.
+- [x] `Anexo_E_tabla_277_nodos_soportes.csv` — 277 nodos con sus 3 soportes + indicadores de umbral.
+- [x] `Anexo_E_figura_histograma_soportes.{png,pdf}` — 116 nodos (41,9 %) con triple soporte alto.
+- [x] `Anexo_E_tabla_nodos_subfamilias.csv` — PIP/NIP/SIP triple alto, TIP monofilético, XIP basal.
 
-**Cómo desbloquearlo**: copiar el `.treefile` final a local (o montar `Z:`), escribir el script de extracción de soportes y ejecutarlo. Es el único hueco de contenido real del repo.
+La cifra de 116 nodos (41,9 %) coincide exactamente con la documentada en `README_MAPA_ANEXOS.md`. **No quedan huecos de contenido en el repo.**
 
 ## 4. Verificaciones opcionales recomendadas antes del push
 
