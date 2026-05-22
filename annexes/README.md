@@ -1,19 +1,19 @@
 # Anexos del TFG — mapa y citas
 
-Esta carpeta agrupa los anexos materializables del TFG con numeración correlativa A–J. Cada anexo es auto-contenido: contiene sus datos derivados, figuras, scripts reproducibles y memoria técnica donde aplique.
+Esta carpeta agrupa los anexos materializables del TFG con numeración correlativa A–J, **ordenada por la primera aparición de cada anexo en el TFG v12** (regla APA). Cada anexo es auto-contenido: contiene sus datos derivados, figuras, scripts reproducibles y memoria técnica donde aplique.
 
-| Anexo | Carpeta | Contenido | Citado en TFG v10 |
+| Anexo | Carpeta | Contenido | Citado en TFG v12 |
 |---|---|---|---|
-| **A** | `A_repo_overview/` | Visión global del repo + inventario de inputs (§5.1) | §10 (disponibilidad de datos y código) |
-| **B** | `B_descartes/` | Tabla de las 26 secuencias excluidas del análisis | §6.1 |
-| **C** | `C_pca_robustez/` | Prueba de robustez del PCA: elipses A vs B **superpuestas** y en **paneles separados** + distancias de Mahalanobis | §6.1 |
-| **D** | `D_meme_motivos/` | Análisis MEME de las 121 (datos + frecuencia de motivos = Fig 5) + motivo NPA del bucle B en SIP | §6.2.3 (Fig 5) |
-| **E** | `E_soportes_filo/` | Distribución SH-aLRT/UFBoot/aBayes sobre 277 nodos | §6.2.2 |
-| **F** | `F_evidencia_5polemicas/` | Evidencia visual del descarte de las 5 polémicas | §6.1 |
-| **G** | `G_figuras_TFG/` | Versiones alta resolución de las figuras del cuerpo | §6.1 a §6.3 |
-| **H** | `H_curado_gff3_vs_exonerate/` | Inputs y outputs del curado GFF3 vs Exonerate (FASTAs, DeepTMHMM, Pepstats, DeepLoc, MEME, tabla veredictos, `Anexo_H_consenso_aqp_fixed.gff3` para actualización oficial) + figura de identidad (Fig 2) | §6.1 (Fig 2) |
-| **I** | `I_rnaseq_datos/` | Matrices RNA-seq (TPM basal, DE, homeólogos) + informe MultiQC | §6.3 (Fig 6–9) |
-| **J** | `J_parametros_fisicoquimicos/` | Tabla por gen: pI, Mw, nº TMH, variante NPA-B/E, localización | §6.1 y §6.2.3 |
+| **A** | `A_repo_overview/` | Visión global del repo + inventario de inputs + reproducibilidad (incluye workflows de Galaxy) | §5 (disponibilidad de datos), §5.2 (Fig 3) |
+| **B** | `B_curado_gff3_vs_exonerate/` | Curado GFF3 vs Exonerate: FASTAs, DeepTMHMM, Pepstats, DeepLoc, MEME, tabla de veredictos, GFF3 corregido + figura de identidad | §5.3 / §6.1 (Fig 5) |
+| **C** | `C_rnaseq_datos/` | Matrices RNA-seq (TPM basal, DE, homeólogos) + informe MultiQC | §5.5 / §6.3 (Figs 9–12) |
+| **D** | `D_figuras_TFG/` | Versiones alta resolución de las Figuras 4–12 del cuerpo | §6.1 a §6.3 |
+| **E** | `E_descartes/` | Tabla de las 26 secuencias excluidas del análisis | §6.1 |
+| **F** | `F_evidencia_5polemicas/` | Evidencia visual del descarte de las secuencias polémicas (alineamientos MAFFT) | §6.1 |
+| **G** | `G_pca_robustez/` | Robustez del PCA: elipses A vs B (superpuestas + paneles) + distancias de Mahalanobis | §6.1 |
+| **H** | `H_parametros_fisicoquimicos/` | Tabla por gen: pI, Mw, nº TMH, isoforma, modelo (GFF3/Exonerate), variantes NPA | §6.1 y §6.2.3 |
+| **I** | `I_soportes_filo/` | Distribución SH-aLRT/UFBoot/aBayes sobre los 277 nodos | §6.2.2 |
+| **J** | `J_meme_motivos/` | Análisis MEME de las 121 (frecuencia de motivos = Fig 8) + motivo NPA del bucle B en SIP | §6.2.3 (Fig 8) |
 
 ## Política de archivos
 
@@ -22,5 +22,5 @@ Esta carpeta agrupa los anexos materializables del TFG con numeración correlati
 
 ## Historial de cambios
 
-- **2026-05-22**: el antiguo **Anexo F** (paneles del PCA) se fusionó en el **Anexo C**, que ya contenía las dos vistas de la misma prueba (elipses superpuestas + paneles separados). Los anexos posteriores se renumeraron: G→F, H→G, I→H.
-- **2026-05-22**: el **Anexo D** se amplió de "MEME SIP" a "MEME de las 121" (carpeta `D_meme_sip/` → `D_meme_motivos/`), incorporando los datos MEME completos y la figura de frecuencia de motivos (Fig 5). Se añadieron dos anexos para cubrir contenido citado en el TFG que faltaba: **Anexo I** (datos RNA-seq + MultiQC) y **Anexo J** (parámetros fisicoquímicos por gen).
+- **2026-05-22**: el antiguo Anexo F (paneles del PCA) se fusionó en el de robustez del PCA; se añadieron los anexos de datos RNA-seq, parámetros fisicoquímicos y se amplió el de MEME.
+- **2026-05-22 (renumeración APA)**: las letras se reasignaron por **orden de primera cita en el TFG v12**. Mapa respecto a la numeración temática previa: overview A→A, curado H→B, RNA-seq I→C, figuras G→D, descartes B→E, polémicas F→F, PCA C→G, fisicoquímico J→H, soportes E→I, MEME D→J. La propuesta `resultados finales/ANEXOS_TFG.md` documenta el §10 del TFG con esta numeración.

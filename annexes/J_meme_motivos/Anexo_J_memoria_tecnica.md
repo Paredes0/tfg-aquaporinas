@@ -1,4 +1,4 @@
-# Anexo D — Análisis de motivos peptídicos (MEME) de las 121 acuaporinas de *Fragaria* x *ananassa* 'Benihoppe'
+# Anexo J — Análisis de motivos peptídicos (MEME) de las 121 acuaporinas de *Fragaria* x *ananassa* 'Benihoppe'
 
 > Material de apoyo del apartado 6.2.3. Sustenta la **Figura 5** (frecuencia de los
 > 15 motivos por sub-subfamilia) y aporta el detalle cuantitativo de la pérdida del
@@ -8,11 +8,11 @@
 
 | Archivo | Contenido |
 |---|---|
-| `Anexo_D_MEME_ALL_AQP_121.txt` | Salida completa de MEME sobre las 121 acuaporinas curadas (15 motivos M1–M15, matrices de probabilidad y diagramas por secuencia). Es la fuente de datos de la Figura 5. |
-| `Anexo_D_figura_frecuencia_motivos.png` | Mapa de calor de frecuencia de los 15 motivos por sub-subfamilia (versión de la Figura 5). |
-| `Anexo_D_tabla_motivos_NPA_SIP.csv` | Variante del motivo NPA (bucles B y E) en las 12 SIP. |
-| `Anexo_D_PSSM_motivo_M2.csv` | Matriz de probabilidad (PSSM) del motivo M2 (NPA del bucle B). |
-| `Anexo_D_memoria_tecnica.md` | Este documento. |
+| `Anexo_J_MEME_ALL_AQP_121.txt` | Salida completa de MEME sobre las 121 acuaporinas curadas (15 motivos M1–M15, matrices de probabilidad y diagramas por secuencia). Es la fuente de datos de la Figura 5. |
+| `Anexo_J_figura_frecuencia_motivos.png` | Mapa de calor de frecuencia de los 15 motivos por sub-subfamilia (versión de la Figura 5). |
+| `Anexo_J_tabla_motivos_NPA_SIP.csv` | Variante del motivo NPA (bucles B y E) en las 12 SIP. |
+| `Anexo_J_PSSM_motivo_M2.csv` | Matriz de probabilidad (PSSM) del motivo M2 (NPA del bucle B). |
+| `Anexo_J_memoria_tecnica.md` | Este documento. |
 
 La frecuencia de motivos por sub-subfamilia (Figura 5) se reproduce ejecutando
 `scripts/5.2_5.3_homologia_curacion/analisis_motivos_final.py`, que lee
@@ -29,7 +29,7 @@ degeneradas (NPL, NPT, NPS).
 
 ### 1.1. Tabla de motivos NPA por isoforma SIP
 
-Archivo: `Anexo_D_tabla_motivos_NPA_SIP.csv` (12 filas × 7 columnas). Origen del dato:
+Archivo: `Anexo_J_tabla_motivos_NPA_SIP.csv` (12 filas × 7 columnas). Origen del dato:
 columnas `motivo_B` y `motivo_E` de `data/curado/tabla_aqp_ordenada.csv`, obtenidas
 durante la curaduría estructural del apartado 6.1.
 
@@ -46,9 +46,9 @@ SIP1 con NPT, siete SIP1;3 con NPS).
 
 ### 1.2. Matriz de probabilidades del motivo M2 (PSSM)
 
-Archivo: `Anexo_D_PSSM_motivo_M2.csv` (21 posiciones × 20 aminoácidos). Origen del dato:
+Archivo: `Anexo_J_PSSM_motivo_M2.csv` (21 posiciones × 20 aminoácidos). Origen del dato:
 sección `letter-probability matrix: alength= 20 w= 21 nsites= 116 E= 1.2e-1345` de
-`Anexo_D_MEME_ALL_AQP_121.txt`.
+`Anexo_J_MEME_ALL_AQP_121.txt`.
 
 Cada fila corresponde a una posición del motivo M2 (consenso `AGISGGHINPAVTFGLALARH`).
 Cada columna corresponde a un aminoácido. Los valores son la probabilidad estimada por

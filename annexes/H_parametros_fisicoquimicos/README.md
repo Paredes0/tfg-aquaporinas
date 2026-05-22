@@ -1,4 +1,4 @@
-# Anexo J — Parámetros fisicoquímicos por acuaporina
+# Anexo H — Parámetros fisicoquímicos por acuaporina
 
 Tabla por gen de las **121 acuaporinas funcionales** de *F.* x *ananassa* 'Benihoppe'
 con los parámetros citados en el cuerpo del TFG (apartados 6.1 y 6.2.3).
@@ -7,8 +7,8 @@ con los parámetros citados en el cuerpo del TFG (apartados 6.1 y 6.2.3).
 
 | Archivo | Contenido |
 |---|---|
-| `Anexo_J_parametros_fisicoquimicos.csv` | Una fila por acuaporina (121), ordenada por subfamilia y sub-subfamilia. |
-| `Anexo_J_script_reproducible.py` | Genera la tabla desde `data/curado/tabla_aqp_ordenada.csv` vía `scripts/common/config.py`. |
+| `Anexo_B_parametros_fisicoquimicos.csv` | Una fila por acuaporina (121), ordenada por subfamilia y sub-subfamilia. |
+| `Anexo_H_script_reproducible.py` | Genera la tabla desde `data/curado/tabla_aqp_ordenada.csv` vía `scripts/common/config.py`. |
 
 ### Columnas
 
@@ -24,7 +24,7 @@ con los parámetros citados en el cuerpo del TFG (apartados 6.1 y 6.2.3).
 ## Cifras de control (uniformes con el TFG)
 
 - 121 acuaporinas (PIP 32, TIP 34, NIP 37, SIP 12, XIP 6).
-- Modelo de secuencia: **101 GFF3 oficial + 20 Exonerate** (sustituidos por mayor integridad; mismos 20 del GFF3 corregido del Anexo H).
+- Modelo de secuencia: **101 GFF3 oficial + 20 Exonerate** (sustituidos por mayor integridad; mismos 20 del GFF3 corregido del Anexo B).
 - Motivo NPA del **bucle B** en SIP: **NPL ×3** (las tres SIP2;2), **NPT ×2** (SIP1;1, ambas de Exonerate), **NPS ×7** (las siete SIP1;3) — ningún NPA canónico.
 - Motivo NPA del **bucle E** en SIP: **NPA ×8 + NPI ×4**.
 

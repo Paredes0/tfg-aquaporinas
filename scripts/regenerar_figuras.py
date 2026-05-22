@@ -31,7 +31,7 @@ PY = sys.executable
 ENV = {**os.environ, "PYTHONIOENCODING": "utf-8", "PYTHONUTF8": "1"}
 
 # (etiqueta, ruta relativa al repo). El orden importa: profiling (Fig 6) genera
-# PCA_Coordenadas_Finales.csv que necesita el Anexo C.
+# PCA_Coordenadas_Finales.csv que necesita el Anexo G (robustez del PCA).
 SCRIPTS = [
     ("Figura 4  — longitudes Rosaceae", "scripts/5.2_5.3_homologia_curacion/generar_visualizaciones_tfg.py"),
     ("Figura 5  — identidad GFF3/Exonerate", "scripts/5.2_5.3_homologia_curacion/comparacion_identidad_gff3_exonerate.py"),
@@ -42,9 +42,9 @@ SCRIPTS = [
     ("Figura 11 — grupos homeólogos", "scripts/5.5_rna_seq/5.5.2_de_abundancia/figures_composition/compose_fig_homeologos_basal.py"),
     ("Figura 12 — tándems NIP1", "scripts/5.5_rna_seq/5.5.2_de_abundancia/figures_composition/compose_fig_tandems_schema.py"),
     ("Figura 13 — visor eFP homeólogos (HTML)", "scripts/5.5_rna_seq/5.5.3_homeologos/15_homeolog_efp_viewer.py"),
-    ("Anexo C — robustez del PCA", "annexes/C_pca_robustez/Anexo_C_script_reproducible.py"),
-    ("Anexo E — soportes filogenéticos", "annexes/E_soportes_filo/Anexo_E_script_reproducible.py"),
-    ("Anexo J — parámetros fisicoquímicos", "annexes/J_parametros_fisicoquimicos/Anexo_J_script_reproducible.py"),
+    ("Anexo G — robustez del PCA", "annexes/G_pca_robustez/Anexo_G_script_reproducible.py"),
+    ("Anexo I — soportes filogenéticos", "annexes/I_soportes_filo/Anexo_I_script_reproducible.py"),
+    ("Anexo H — parámetros fisicoquímicos", "annexes/H_parametros_fisicoquimicos/Anexo_H_script_reproducible.py"),
 ]
 
 

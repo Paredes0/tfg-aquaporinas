@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Anexo_J_script_reproducible.py — Tabla de parámetros fisicoquímicos por acuaporina.
+Anexo_H_script_reproducible.py — Tabla de parámetros fisicoquímicos por acuaporina.
 
 Genera la tabla por gen de las 121 acuaporinas funcionales con los parámetros
 citados en el TFG (pI, peso molecular, nº de hélices transmembrana) y las
@@ -11,7 +11,7 @@ discusión de las SIP (NPL/NPT/NPS en el bucle B).
 Fuente: data/curado/tabla_aqp_ordenada.csv (salida consolidada del curado).
 
 Output (en la carpeta del anexo):
-    Anexo_J_parametros_fisicoquimicos.csv
+    Anexo_H_parametros_fisicoquimicos.csv
 """
 from __future__ import annotations
 
@@ -24,7 +24,7 @@ from scripts.common import config
 
 SRC = config.CURADO_DIR / "tabla_aqp_ordenada.csv"
 HOM = config.RNASEQ_HOM_DIR / "homeolog_groups.tsv"   # isoforma (sub_subfamily con ;N)
-OUT = Path(__file__).resolve().parent / "Anexo_J_parametros_fisicoquimicos.csv"
+OUT = Path(__file__).resolve().parent / "Anexo_H_parametros_fisicoquimicos.csv"
 
 SUBFAM_ORDER = {"PIP": 0, "TIP": 1, "NIP": 2, "SIP": 3, "XIP": 4}
 MODELO = {"GFF3": "GFF3 oficial", "EXONERATE": "Exonerate (sustituido)"}

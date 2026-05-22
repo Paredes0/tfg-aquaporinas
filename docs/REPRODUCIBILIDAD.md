@@ -5,7 +5,7 @@
 ## Dos niveles de reproducción
 
 **Nivel 1 — Reproducción del análisis (autocontenida en el repo).**
-El curado (§5.2-5.3), la filogenia (§5.4, soportes del Anexo E) y las figuras a partir de las matrices derivadas se reproducen **directamente con el repo**, sin descargas: los datos derivados están en `data/` y los scripts los leen vía `scripts/common/config.py`. Ejemplo verificado:
+El curado (§5.2-5.3), la filogenia (§5.4, soportes del Anexo I) y las figuras a partir de las matrices derivadas se reproducen **directamente con el repo**, sin descargas: los datos derivados están en `data/` y los scripts los leen vía `scripts/common/config.py`. Ejemplo verificado:
 
 ```bash
 python scripts/5.2_5.3_homologia_curacion/profiling_final_integrated.py

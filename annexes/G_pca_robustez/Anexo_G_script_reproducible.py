@@ -95,9 +95,9 @@ fig.legend(handles=legend_items, loc="lower center", ncol=2, fontsize=11, bbox_t
 plt.suptitle("Comparacion PCA: elipses al 95% segun se entrenen con CLEAN o con TODAS",
              fontsize=14, fontweight="bold", y=1.00)
 plt.tight_layout()
-plt.savefig(OUT_DIR / "Anexo_C_figura_paneles_AvsB.png", dpi=180, bbox_inches="tight")
+plt.savefig(OUT_DIR / "Anexo_G_figura_paneles_AvsB.png", dpi=180, bbox_inches="tight")
 plt.close()
-print("Guardado:", OUT_DIR / "Anexo_C_figura_paneles_AvsB.png")
+print("Guardado:", OUT_DIR / "Anexo_G_figura_paneles_AvsB.png")
 
 # Plot 2: superpuesto
 fig, ax = plt.subplots(figsize=(13, 9))
@@ -131,6 +131,6 @@ ax.grid(True, alpha=0.3)
 ax.axhline(0, color="gray", linewidth=0.5)
 ax.axvline(0, color="gray", linewidth=0.5)
 plt.tight_layout()
-plt.savefig(OUT_DIR / "Anexo_C_figura_elipses_AvsB.png", dpi=180, bbox_inches="tight")
+plt.savefig(OUT_DIR / "Anexo_G_figura_elipses_AvsB.png", dpi=180, bbox_inches="tight")
 plt.close()
-print("Guardado:", OUT_DIR / "Anexo_C_figura_elipses_AvsB.png")
+print("Guardado:", OUT_DIR / "Anexo_G_figura_elipses_AvsB.png")

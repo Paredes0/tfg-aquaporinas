@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Anexo_E_script_reproducible.py — Distribución de soportes filogenéticos.
+Anexo_I_script_reproducible.py — Distribución de soportes filogenéticos.
 
 Recorre el árbol filogenético definitivo (Q.PLANT+R6, 282 hojas, log L = -45.149,26)
 y extrae los tres estadísticos de soporte que IQ-TREE anota en cada nodo interno:
 SH-aLRT (1000 iteraciones, %), aBayes y ultrafast bootstrap UFBoot (1000 iter, %).
 
 Genera tres salidas en la misma carpeta:
-  - Anexo_E_tabla_277_nodos_soportes.csv      (un nodo por fila + indicadores de umbral)
-  - Anexo_E_figura_histograma_soportes.png    (3 paneles con líneas de umbral)
-  - Anexo_E_tabla_nodos_subfamilias.csv       (soporte del nodo que define cada subfamilia)
+  - Anexo_I_tabla_277_nodos_soportes.csv      (un nodo por fila + indicadores de umbral)
+  - Anexo_I_figura_histograma_soportes.png    (3 paneles con líneas de umbral)
+  - Anexo_I_tabla_nodos_subfamilias.csv       (soporte del nodo que define cada subfamilia)
 
 El árbol se localiza vía la variable de entorno TFG_RNA_SEQ_ROOT o, en su defecto,
 en las rutas locales conocidas. Formato de soporte en el .treefile:
@@ -227,12 +227,12 @@ def main() -> None:
     supports = parse_node_supports(newick)
     print(f"[Anexo E] Nodos internos con triple soporte: {len(supports)}")
 
-    write_node_table(supports, OUT_DIR / "Anexo_E_tabla_277_nodos_soportes.csv")
-    plot_histograms(supports, OUT_DIR / "Anexo_E_figura_histograma_soportes.png")
+    write_node_table(supports, OUT_DIR / "Anexo_I_tabla_277_nodos_soportes.csv")
+    plot_histograms(supports, OUT_DIR / "Anexo_I_figura_histograma_soportes.png")
 
     fxa_map = load_leaf_subfamilies(_first_existing(_CANDIDATE_HOMEOLOGS))
     print(f"[Anexo E] Hojas Fragaria mapeadas a subfamilia: {len(fxa_map)}")
-    write_subfamily_table(tree_path, fxa_map, OUT_DIR / "Anexo_E_tabla_nodos_subfamilias.csv")
+    write_subfamily_table(tree_path, fxa_map, OUT_DIR / "Anexo_I_tabla_nodos_subfamilias.csv")
 
     print("[Anexo E] Salidas generadas en:", OUT_DIR)
 
