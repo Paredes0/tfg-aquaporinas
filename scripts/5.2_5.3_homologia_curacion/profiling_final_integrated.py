@@ -971,15 +971,9 @@ for i, var in enumerate(feature_cols):
             showarrow=True, arrowhead=2, arrowsize=1, arrowwidth=2, arrowcolor="#B0B0B0", opacity=0.8
         )
 
-# Recuadro de huella de motivos en el HTML
-motif_html = motif_box_text.replace('\n', '<br>')
-fig_int.add_annotation(
-    text=motif_html,
-    xref='paper', yref='paper', x=0.01, y=0.01,
-    showarrow=False, font=dict(family='Courier New', size=10, color='#2C3E50'),
-    align='left', bordercolor='#2C3E50', borderwidth=1.5, borderpad=8,
-    bgcolor='rgba(248,249,250,0.92)', xanchor='left', yanchor='bottom'
-)
+# Recuadro de huella de motivos retirado tambien del HTML interactivo:
+# los motivos MEME no son features del PCA (son metadato), igual que se
+# retiro de la figura estatica. El explorador se centra en las coordenadas.
 
 fig_int.update_layout(
     font_family="DejaVu Sans", title_font_size=20,
