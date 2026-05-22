@@ -42,9 +42,9 @@ SCRIPTS = [
     ("Figura 11 — grupos homeólogos", "scripts/5.5_rna_seq/5.5.2_de_abundancia/figures_composition/compose_fig_homeologos_basal.py"),
     ("Figura 12 — tándems NIP1", "scripts/5.5_rna_seq/5.5.2_de_abundancia/figures_composition/compose_fig_tandems_schema.py"),
     ("Figura 13 — visor eFP homeólogos (HTML)", "scripts/5.5_rna_seq/5.5.3_homeologos/15_homeolog_efp_viewer.py"),
-    ("Anexo G — robustez del PCA", "annexes/G_pca_robustez/Anexo_G_script_reproducible.py"),
-    ("Anexo I — soportes filogenéticos", "annexes/I_soportes_filo/Anexo_I_script_reproducible.py"),
-    ("Anexo H — parámetros fisicoquímicos", "annexes/H_parametros_fisicoquimicos/Anexo_H_script_reproducible.py"),
+    ("Anexo G — robustez del PCA", "anexos/G_robustez_pca/Anexo_G_script_reproducible.py"),
+    ("Anexo I — soportes filogenéticos", "anexos/I_soportes_filo/Anexo_I_script_reproducible.py"),
+    ("Anexo H — parámetros fisicoquímicos", "anexos/H_parametros_fisicoquimicos/Anexo_H_script_reproducible.py"),
 ]
 
 
@@ -63,27 +63,27 @@ def main() -> None:
 
     # ── Reunir las figuras finales en UNA carpeta, numeradas como en el TFG ──
     # (cada script las deja en su subcarpeta; aquí se copian a un índice limpio)
-    dest = REPO / "results" / "figuras_TFG"
+    dest = REPO / "resultados" / "figuras_TFG"
     if dest.exists():
         shutil.rmtree(dest)
     dest.mkdir(parents=True, exist_ok=True)
     coleccion = [
-        ("Figura_04_longitudes_Rosaceae", ["results/visualizaciones_tfg/histograma_longitudes_aqp.png",
-                                           "results/visualizaciones_tfg/histograma_longitudes_aqp.pdf"]),
-        ("Figura_05_identidad_GFF3_Exonerate", ["results/identidad_gff3_vs_exonerate.png",
-                                                "results/identidad_gff3_vs_exonerate.pdf"]),
-        ("Figura_06_PCA_fisicoquimico", ["results/profiling_aqp_motifs_final/PCA_FINAL_INTEGRADO.png"]),
-        ("Figura_08_MEME_motivos", ["results/HEATMAP_Frecuencia_Motivos_Sub-subfamilias.png"]),
-        ("Figura_09_TPM_basal", ["results/figuras_rnaseq/figura6_perfiles_subfamilia.png",
-                                 "results/figuras_rnaseq/figura6_perfiles_subfamilia.pdf"]),
-        ("Figura_10_expresion_diferencial", ["results/figuras_rnaseq/figura_de_stripplot.png",
-                                             "results/figuras_rnaseq/figura_de_stripplot.pdf"]),
-        ("Figura_11_homeologos", ["results/figuras_rnaseq/figura_homeologos_basal.png",
-                                  "results/figuras_rnaseq/figura_homeologos_basal.pdf"]),
-        ("Figura_12_tandems_NIP1", ["results/figuras_rnaseq/figura_tandems_schema.png",
-                                    "results/figuras_rnaseq/figura_tandems_schema.pdf"]),
-        ("Figura_13_eFP_homeologos", ["results/efp_viewer_homeologs.html"]),
-        ("PCA_interactivo", ["results/profiling_aqp_motifs_final/PCA_INTERACTIVO_FINAL.html"]),
+        ("Figura_04_longitudes_Rosaceae", ["resultados/visualizaciones_tfg/histograma_longitudes_aqp.png",
+                                           "resultados/visualizaciones_tfg/histograma_longitudes_aqp.pdf"]),
+        ("Figura_05_identidad_GFF3_Exonerate", ["resultados/identidad_gff3_vs_exonerate.png",
+                                                "resultados/identidad_gff3_vs_exonerate.pdf"]),
+        ("Figura_06_PCA_fisicoquimico", ["resultados/profiling_aqp_motifs_final/PCA_FINAL_INTEGRADO.png"]),
+        ("Figura_08_MEME_motivos", ["resultados/HEATMAP_Frecuencia_Motivos_Sub-subfamilias.png"]),
+        ("Figura_09_TPM_basal", ["resultados/figuras_rnaseq/figura6_perfiles_subfamilia.png",
+                                 "resultados/figuras_rnaseq/figura6_perfiles_subfamilia.pdf"]),
+        ("Figura_10_expresion_diferencial", ["resultados/figuras_rnaseq/figura_de_stripplot.png",
+                                             "resultados/figuras_rnaseq/figura_de_stripplot.pdf"]),
+        ("Figura_11_homeologos", ["resultados/figuras_rnaseq/figura_homeologos_basal.png",
+                                  "resultados/figuras_rnaseq/figura_homeologos_basal.pdf"]),
+        ("Figura_12_tandems_NIP1", ["resultados/figuras_rnaseq/figura_tandems_schema.png",
+                                    "resultados/figuras_rnaseq/figura_tandems_schema.pdf"]),
+        ("Figura_13_eFP_homeologos", ["resultados/efp_viewer_homeologs.html"]),
+        ("PCA_interactivo", ["resultados/profiling_aqp_motifs_final/PCA_INTERACTIVO_FINAL.html"]),
     ]
     for nombre, fuentes in coleccion:
         for src in fuentes:
@@ -93,7 +93,7 @@ def main() -> None:
     # ── Dejar results/ limpio: solo la carpeta figuras_TFG ───────────────────
     # (cada script deja artefactos intermedios en sus subcarpetas; una vez
     #  reunidas las figuras finales, esos intermedios sobran)
-    results_root = REPO / "results"
+    results_root = REPO / "resultados"
     for item in results_root.iterdir():
         if item.resolve() == dest.resolve():
             continue

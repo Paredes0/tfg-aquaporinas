@@ -7,26 +7,44 @@ message: >-
   de este archivo.
 type: software
 version: 1.0.0
-date-released: 2026-05-21
+date-released: '2026-05-22'
 authors:
   - given-names: Noé
     family-names: Paredes Alfonso
     email: noeparedesalf@gmail.com
     affiliation: Universidad Católica de Murcia (UCAM)
 abstract: >-
-  Pipeline reproducible para la identificación, curado, filogenia y
-  análisis de expresión del acuaporinoma del genoma alo-octoploide de
-  Fragaria x ananassa 'Benihoppe'. Incluye 133 tests automáticos que
-  verifican las cifras del Trabajo de Fin de Grado asociado.
+  Introduction. The growing water pressure on Mediterranean horticultural
+  systems, where cultivated strawberry (Fragaria x ananassa) is a crop of
+  major economic importance, places aquaporins, membrane channels that
+  facilitate the passage of water and small solutes, as key players in the
+  plant's water regulation; however, their complete repertoire had not been
+  characterised in the allo-octoploid genome of cultivated strawberry, of
+  which only four members were known. Objectives. To identify, classify, and
+  profile the cultivar's aquaporin set at the structural, evolutionary, and
+  transcriptional levels, through a reproducible bioinformatic procedure that
+  explicitly handles the gene duplication arising from polyploidy.
+  Methodology. The work combines homology prediction on the reference genome,
+  a multidimensional structural and physicochemical curation, a
+  maximum-likelihood phylogenetic reconstruction, and an expression analysis
+  based on public RNA sequencing data from six tissues, under control and
+  water-stress conditions, with explicit treatment of the duplicated copies.
+  Results. A catalogue of 121 functional aquaporins distributed across the five
+  canonical subfamilies is obtained, with a predominance of the subfamily
+  associated with metalloid transport consistent with the polyploid condition;
+  basal expression shows a high accumulation of plasma membrane proteins in the
+  fruit, water stress elicits opposing responses between leaf and root, and the
+  groups of duplicated copies show an uneven contribution of the different
+  subgenomes. Conclusions. Overall, the work provides the first genome-scale
+  curated catalogue of the cultivated strawberry aquaporinome, together with a
+  reproducible resource that lays the basis for future functional studies and
+  is extensible to other related species with complex genomes.
 keywords:
-  - aquaporin
+  - aquaporins
   - Fragaria x ananassa
-  - strawberry
-  - octoploid
-  - phylogeny
-  - RNA-seq
-  - DESeq2
+  - allo-octoploid genome
   - homeologs
-  - subgenome dominance
+  - water stress
+  - phylogenetics
 license: MIT
-repository-code: 'https://github.com/<usuario>/tfg-aquaporinas'
+repository-code: 'https://github.com/Paredes0/tfg-aquaporinas'

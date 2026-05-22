@@ -46,4 +46,4 @@ A los pocos minutos, Zenodo:
 
 ## Inputs externos a subir manualmente a Zenodo
 
-Ver `annexes/A_repo_overview/INPUTS_CONJUNTO_DATOS.md` para la lista de datos derivados que conviene subir como dataset separado en Zenodo (~250 KB). Pueden ir en el mismo depósito que el código o en uno aparte; depende de tu preferencia.
+Ver `anexos/A_repositorio/INPUTS_CONJUNTO_DATOS.md` para la lista de datos derivados que conviene subir como dataset separado en Zenodo (~250 KB). Pueden ir en el mismo depósito que el código o en uno aparte; depende de tu preferencia.

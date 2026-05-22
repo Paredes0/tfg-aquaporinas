@@ -28,7 +28,7 @@ counts/
 fastq/
 qc/
 logs/
-results/
+resultados/
 salmon_check/
 
 # Imágenes y SVG grandes (mantener selectivamente)

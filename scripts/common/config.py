@@ -1,11 +1,11 @@
 """
 config.py — Configuración centralizada de rutas del repositorio.
 
-Por defecto, los datos viven en la carpeta `data/` del PROPIO repositorio, de modo
+Por defecto, los datos viven en la carpeta `datos/` del PROPIO repositorio, de modo
 que el pipeline es autorreproducible tras un `git clone` (no depende de rutas de la
 máquina original). Estructura esperada:
 
-    data/
+    datos/
     ├── curado/      Inputs de §5.2-5.3 (FASTAs, DeepTMHMM, MEME, Pepstats, DeepLoc,
     │                tablas de veredictos, datos GDR). Nombres originales.
     ├── filogenia/   Árbol final (.treefile, .iqtree, .contree) + alineamiento ClipKIT.
@@ -22,7 +22,7 @@ Uso desde un script del repo:
 
 Overrides por variable de entorno (opcionales):
     TFG_DATA_ROOT     → apunta a otra copia con la misma estructura data/ (curado, filogenia, rna_seq).
-    TFG_RESULTS_DIR   → carpeta donde los scripts escriben sus outputs (por defecto results/).
+    TFG_RESULTS_DIR   → carpeta donde los scripts escriben sus outputs (por defecto resultados/).
 """
 from __future__ import annotations
 
@@ -35,7 +35,7 @@ REPO_ROOT: Path = Path(__file__).resolve().parents[2]
 # ── Raíz de datos ─────────────────────────────────────────────────────────────
 # Por defecto: data/ del repo. Override global con TFG_DATA_ROOT.
 _data_env = os.environ.get("TFG_DATA_ROOT")
-DATA_DIR: Path = Path(_data_env) if _data_env else REPO_ROOT / "data"
+DATA_DIR: Path = Path(_data_env) if _data_env else REPO_ROOT / "datos"
 
 # ── Subcarpetas de datos ──────────────────────────────────────────────────────
 CURADO_DIR: Path = DATA_DIR / "curado"          # §5.2-5.3 predicción + curación
@@ -49,7 +49,7 @@ RNASEQ_HOM_DIR: Path = RNASEQ_DIR / "homeologos"
 GDR_DIR: Path = CURADO_DIR
 
 # ── Carpeta de salida (outputs intermedios / resultados regenerados) ──────────
-RESULTS_DIR: Path = Path(os.environ.get("TFG_RESULTS_DIR", str(REPO_ROOT / "results")))
+RESULTS_DIR: Path = Path(os.environ.get("TFG_RESULTS_DIR", str(REPO_ROOT / "resultados")))
 
 
 def ensure_results() -> Path:

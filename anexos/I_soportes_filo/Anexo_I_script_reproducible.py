@@ -36,14 +36,14 @@ import matplotlib.pyplot as plt
 # Q.PLANT+R6, log L = -45.149,26 → 277 nodos internos) viene incluido en el repo,
 # en data/filogenia/; las cifras de soporte de §6.2.2 proceden de ahí.
 # Override opcional con $TFG_TREEFILE para apuntar a otra copia.
-_REPO_TREE = str(Path(__file__).resolve().parents[2] / "data" / "filogenia" / "arbol_acuaporinas.treefile")
+_REPO_TREE = str(Path(__file__).resolve().parents[2] / "datos" / "filogenia" / "arbol_acuaporinas.treefile")
 _CANDIDATE_TREES = [
     os.environ.get("TFG_TREEFILE", ""),
     _REPO_TREE,  # copia incluida en el repo (data/filogenia/) → autorreproducible
 ]
 
 # Mapeo gene_id -> subfamilia para las hojas de Fragaria (homeolog_groups.tsv del repo).
-_REPO_HOMEOLOGS = str(Path(__file__).resolve().parents[2] / "data" / "rna_seq" / "homeologos" / "homeolog_groups.tsv")
+_REPO_HOMEOLOGS = str(Path(__file__).resolve().parents[2] / "datos" / "rna_seq" / "homeologos" / "homeolog_groups.tsv")
 _CANDIDATE_HOMEOLOGS = [
     os.environ.get("TFG_HOMEOLOGS", ""),
     _REPO_HOMEOLOGS,  # incluido en el repo → autorreproducible

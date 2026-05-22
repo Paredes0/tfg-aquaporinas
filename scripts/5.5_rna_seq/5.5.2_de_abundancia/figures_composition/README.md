@@ -3,7 +3,7 @@
 Scripts en Python (matplotlib + scipy + adjustText/PyMuPDF) que componen las figuras
 del apartado 6.3 a partir de las matrices generadas por el pipeline de RNA-seq
 (`08_basal_expression.R`, `07_de_analysis.R`, `13_homeolog_expression.R`). Leen sus
-inputs de `data/rna_seq/` a través de `scripts/common/config.py`.
+inputs de `datos/rna_seq/` a través de `scripts/common/config.py`.
 
 Todos implementan **Pirate plots** (Phillips, 2017): violín bilateral de densidad
 kernel + puntos crudos con jitter + línea de la media, con la paleta canónica del
@@ -12,7 +12,7 @@ proyecto. Las figuras carecen de título embebido y las multipanel llevan etique
 
 ## Inventario
 
-| Script | Genera | Figura del TFG v11 | Inputs (`data/rna_seq/`) |
+| Script | Genera | Figura del TFG v11 | Inputs (`datos/rna_seq/`) |
 |---|---|---|---|
 | `compose_fig6_basal_subfamilia.py` | Pirate plot de TPM por gen × subfamilia × tejido + columna TOTAL | **Figura 9** | `basal/basal_aquaporins_summary.csv` |
 | `compose_fig_de_subfamilia.py` | Pirate plot de log2FC por subfamilia × tejido (inducido/reprimido) | **Figura 10** | `de/de_aquaporins_leaf.csv`, `de/de_aquaporins_roots.csv` |
@@ -22,13 +22,13 @@ proyecto. Las figuras carecen de título embebido y las multipanel llevan etique
 ## Ejecución
 
 Lo más cómodo es el runner global, que ejecuta estos y el resto de scripts de figuras
-y reúne las salidas numeradas en `results/figuras_TFG/`:
+y reúne las salidas numeradas en `resultados/figuras_TFG/`:
 
 ```bash
 python scripts/regenerar_figuras.py
 ```
 
-O cada script por separado (lee de `data/` vía `config.py`, escribe en `results/figuras_rnaseq/`):
+O cada script por separado (lee de `datos/` vía `config.py`, escribe en `resultados/figuras_rnaseq/`):
 
 ```bash
 pip install pandas matplotlib scipy adjustText PyMuPDF

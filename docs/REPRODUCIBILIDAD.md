@@ -5,15 +5,15 @@
 ## Dos niveles de reproducción
 
 **Nivel 1 — Reproducción del análisis (autocontenida en el repo).**
-El curado (§5.2-5.3), la filogenia (§5.4, soportes del Anexo I) y las figuras a partir de las matrices derivadas se reproducen **directamente con el repo**, sin descargas: los datos derivados están en `data/` y los scripts los leen vía `scripts/common/config.py`. Ejemplo verificado:
+El curado (§5.2-5.3), la filogenia (§5.4, soportes del Anexo I) y las figuras a partir de las matrices derivadas se reproducen **directamente con el repo**, sin descargas: los datos derivados están en `datos/` y los scripts los leen vía `scripts/common/config.py`. Ejemplo verificado:
 
 ```bash
 python scripts/5.2_5.3_homologia_curacion/profiling_final_integrated.py
-# → reproduce las 121 acuaporinas funcionales (PCA + Random Forest) leyendo de data/curado/
+# → reproduce las 121 acuaporinas funcionales (PCA + Random Forest) leyendo de datos/curado/
 ```
 
 **Nivel 2 — Reproducción desde los datos primarios (la "primera parte").**
-Regenerar `data/` desde cero (genoma + lecturas crudas) requiere los datos primarios pesados, que **no** se incluyen por tamaño. Esta es la parte que un tercero debe montar por su cuenta:
+Regenerar `datos/` desde cero (genoma + lecturas crudas) requiere los datos primarios pesados, que **no** se incluyen por tamaño. Esta es la parte que un tercero debe montar por su cuenta:
 
 | Punto de entrada | Qué es | Cómo obtenerlo |
 |---|---|---|
@@ -70,7 +70,7 @@ python clasificacion_integrada_aqp.py  # → tabla_aquaporinas_traduccion.tabula
 python generar_consenso_fasta.py       # → consenso_aqp.fasta
 
 # Análisis de motivos
-python analisis_motivos_unificado.py   # → MEME huella por subfamilia
+python analisis_motivos_final.py       # → MEME de las 121 curadas (Figura 8)
 
 # PCA integrado + Random Forest
 python profiling_final_integrated.py   # → 121 funcionales, PCA Fig. 3
@@ -81,9 +81,9 @@ python profiling_final_integrated.py   # → 121 funcionales, PCA Fig. 3
 ```bash
 # Alineamiento (externo: MAFFT v7 E-INS-i + ClipKIT)
 # Árbol (externo: IQ-TREE v3.0.1 -m MFP -bb 1000 -bnni -alrt 1000 -abayes)
-# → data/filogenia/arbol_acuaporinas.{iqtree,treefile,contree}
+# → datos/filogenia/arbol_acuaporinas.{iqtree,treefile,contree}
 # Los soportes nodales se resumen con:
-python annexes/I_soportes_filo/Anexo_I_script_reproducible.py
+python anexos/I_soportes_filo/Anexo_I_script_reproducible.py
 ```
 
 ### 5.5.1 Obtención y procesamiento RNA-seq (~6-12 horas, Linux)
@@ -127,7 +127,7 @@ Tras completar la reproducción, ejecuta los tests:
 pytest tests/ -v
 ```
 
-Si las 112 pruebas pasan, has reproducido las cifras del TFG.
+Si las 130 pruebas pasan, has reproducido las cifras del TFG.
 
 ## Variantes
 

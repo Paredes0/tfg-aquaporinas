@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "tfg-aquaporinas"
 version = "1.0.0"
-description = "Scripts y tests del TFG sobre el acuaporinoma de Fragaria × ananassa 'Benihoppe'"
+description = "Identificación, curado y caracterización transcripcional del acuaporinoma de Fragaria x ananassa 'Benihoppe'"
 readme = "README.md"
 license = { text = "MIT" }
 requires-python = ">=3.10"

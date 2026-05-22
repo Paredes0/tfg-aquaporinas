@@ -38,16 +38,16 @@ automáticamente.
 Si cambian los datos o el código, vuelve a generar los HTML y cópialos a `docs/`:
 
 ```bash
-# Atlas eFP de homeólogos  ->  results/efp_viewer_homeologs.html
+# Atlas eFP de homeólogos  ->  resultados/efp_viewer_homeologs.html
 python scripts/5.5_rna_seq/5.5.3_homeologos/15_homeolog_efp_viewer.py
-cp results/efp_viewer_homeologs.html docs/efp_homeologos.html
+cp resultados/efp_viewer_homeologs.html docs/efp_homeologos.html
 
-# Explorador PCA  ->  results/profiling_aqp_motifs_final/PCA_INTERACTIVO_FINAL.html
+# Explorador PCA  ->  resultados/profiling_aqp_motifs_final/PCA_INTERACTIVO_FINAL.html
 python scripts/5.2_5.3_homologia_curacion/profiling_final_integrated.py
-cp results/profiling_aqp_motifs_final/PCA_INTERACTIVO_FINAL.html docs/pca_interactivo.html
+cp resultados/profiling_aqp_motifs_final/PCA_INTERACTIVO_FINAL.html docs/pca_interactivo.html
 ```
 
-(Ambos scripts leen sus entradas de `data/` vía `scripts/common/config.py`, así
+(Ambos scripts leen sus entradas de `datos/` vía `scripts/common/config.py`, así
 que funcionan tras un `git clone` sin configurar rutas.)
 
 ## Comprobación local antes de publicar

@@ -1,6 +1,6 @@
 {
   "title": "tfg-aquaporinas: Identificación, curado y caracterización transcripcional del acuaporinoma de Fragaria x ananassa 'Benihoppe'",
-  "description": "Código, workflows, tests y anexos del Trabajo de Fin de Grado de Noé Paredes Alfonso (UCAM, Grado en Biotecnología, 2026). Pipeline reproducible para la identificación, curado, filogenia y análisis de expresión del acuaporinoma del genoma alo-octoploide de Fragaria x ananassa 'Benihoppe'.",
+  "description": "Repositorio de código, datos derivados, workflows, tests y anexos del Trabajo de Fin de Grado de Noé Paredes Alfonso (Universidad Católica de Murcia, Grado en Biotecnología, 2026).\n\nRESUMEN. La creciente presión hídrica sobre los sistemas hortícolas mediterráneos, donde la fresa cultivada (Fragaria x ananassa) constituye un cultivo de gran relevancia económica, sitúa a las acuaporinas, canales de membrana que facilitan el paso de agua y de pequeños solutos, como piezas clave de la regulación hídrica de la planta; sin embargo, su repertorio completo no se había caracterizado en el genoma aloctoploide de la fresa cultivada, del que solo se conocían cuatro miembros experimentalmente. Se identifica, clasifica y perfila el conjunto de acuaporinas del cultivar a nivel estructural, evolutivo y transcripcional mediante un procedimiento bioinformático reproducible que trata explícitamente la duplicación génica derivada de la poliploidía. Se obtiene un catálogo de 121 acuaporinas funcionales repartidas en las cinco subfamilias canónicas, con predominio de la subfamilia asociada al transporte de metaloides; la expresión basal muestra acumulación elevada de proteínas de la membrana plasmática en el fruto, el estrés hídrico provoca respuestas opuestas entre hoja y raíz, y los grupos de copias duplicadas presentan una contribución desigual de los distintos subgenomas. El trabajo aporta el primer catálogo curado a escala genómica del acuaporinoma de la fresa cultivada, junto con un recurso reproducible extensible a otras especies con genomas complejos.\n\nABSTRACT. The growing water pressure on Mediterranean horticultural systems, where cultivated strawberry (Fragaria x ananassa) is a crop of major economic importance, places aquaporins, membrane channels that facilitate the passage of water and small solutes, as key players in the plant's water regulation; however, their complete repertoire had not been characterised in the allo-octoploid genome of cultivated strawberry, of which only four members were known. The cultivar's aquaporin set is identified, classified, and profiled at the structural, evolutionary, and transcriptional levels through a reproducible bioinformatic procedure that explicitly handles the gene duplication arising from polyploidy. A catalogue of 121 functional aquaporins distributed across the five canonical subfamilies is obtained, with a predominance of the subfamily associated with metalloid transport; basal expression shows high accumulation of plasma membrane proteins in the fruit, water stress elicits opposing responses between leaf and root, and the groups of duplicated copies show an uneven contribution of the different subgenomes. The work provides the first genome-scale curated catalogue of the cultivated strawberry aquaporinome, together with a reproducible resource extensible to other related species with complex genomes.",
   "creators": [
     {
       "name": "Paredes Alfonso, Noé",
@@ -20,18 +20,12 @@
     }
   ],
   "keywords": [
-    "aquaporin",
+    "aquaporins",
     "Fragaria x ananassa",
-    "strawberry",
-    "Benihoppe",
-    "octoploid",
-    "phylogeny",
-    "RNA-seq",
-    "DESeq2",
+    "allo-octoploid genome",
     "homeologs",
-    "subgenome dominance",
-    "TFG",
-    "Biotechnology"
+    "water stress",
+    "phylogenetics"
   ],
   "license": "MIT",
   "access_right": "open",
