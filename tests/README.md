@@ -25,8 +25,7 @@ tests/
 │   ├── test_cifras_curaduria.py   17 tests — 5.1: 121 funcionales, reparto, PCA, RF
 │   ├── test_cifras_filogenia.py   10 tests — 5.2: 281 sec, Q.PLANT+R6, log L
 │   ├── test_cifras_homeologos.py   9 tests — 5.6: 32 grupos, dominancia D=12
-│   └── test_cifras_rnaseq.py       9 tests — 5.3: 129 AQPs, 6 tejidos, outlier
-└── REPORTE_DEFENSA.md       Resumen ejecutivo para la defensa del TFG
+    └── test_cifras_rnaseq.py       9 tests — 5.3: 129 AQPs, 6 tejidos, outlier
 ```
 
 ## Variables de entorno

@@ -13,17 +13,17 @@ servidor propio ni base de datos: son archivos HTML autocontenidos.
 | `pca_interactivo.html` | Explorador del PCA de las 121 acuaporinas | `scripts/5.2_5.3_homologia_curacion/profiling_final_integrated.py` |
 | `.nojekyll` | Le dice a Pages que sirva los HTML tal cual (sin procesarlos con Jekyll) | (archivo vacío) |
 
-> El visor eFP por gen individual se retiró por estar obsoleto; su script
-> (`10_generate_efp_viewer.py`) se conserva en el repositorio pero su salida ya
-> no se publica.
+> El visor eFP por gen individual se retiró por ser redundante con el de grupos
+> homeólogos (que ya desglosa la expresión gen a gen dentro de cada grupo); su
+> script se eliminó del repositorio.
 
-Los tres comparten un mismo estilo académico (fondo marfil, tipografía serif
-Fraunces y la paleta oficial de subfamilias) para que la portada, el eFP y el
-PCA se vean como una sola pieza.
+La portada, el eFP y el PCA comparten un mismo estilo académico (fondo marfil,
+tipografía serif Fraunces y la paleta oficial de subfamilias) para que se vean
+como una sola pieza.
 
 ## Cómo activar GitHub Pages (una sola vez)
 
-1. Sube el repositorio a GitHub (ver `docs/PENDIENTE.md`, sección 1).
+1. Sube el repositorio a GitHub (ver `docs/ZENODO.md` para el flujo de publicación + DOI).
 2. En GitHub, entra en **Settings → Pages**.
 3. En **Source**, elige **Deploy from a branch**.
 4. Selecciona la rama **`main`** y la carpeta **`/docs`**. Pulsa **Save**.

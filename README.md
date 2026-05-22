@@ -86,11 +86,3 @@ Si reutilizas este código o los datos derivados, por favor cita:
 
 Ver `CITATION.cff` para el formato citation file estándar o `docs/ZENODO.md` para el procedimiento de obtención del DOI.
 
-## Auditoría
-
-Los scripts han sido auditados estáticamente para detectar bugs e inconsistencias que pudieran invalidar los resultados. Ver `docs/AUDITORIA_SCRIPTS.md` para el informe completo. Resumen:
-
-- ✅ Lógica de filtros, parsers y clasificación: correcta
-- ✅ Cifras citadas en el TFG: reproducibles (verificado por tests)
-- ✅ Rutas: los scripts de Python leen de `data/` vía `scripts/common/config.py` (variable `TFG_DATA_ROOT` para apuntar a otra copia); los scripts de figuras de RNA-seq usan `TFG_RNA_SEQ_ROOT`
-- ⚠️ Ningún bug detectado invalida los resultados del TFG
