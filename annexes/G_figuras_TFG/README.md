@@ -1,4 +1,4 @@
-# Anexo H — Figuras del cuerpo del TFG en alta resolución
+# Anexo G — Figuras del cuerpo del TFG en alta resolución
 
 PNG (300 DPI) + PDF vectorial de las 8 figuras que aparecen en el cuerpo del TFG.
 

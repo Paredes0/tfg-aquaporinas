@@ -34,5 +34,5 @@ data/
 ## Notas
 
 - El DESeq2 completo del transcriptoma (`results_leaf.csv` / `results_roots.csv`, ~17 MB cada uno, ~109.000 genes) **no se incluye**: las figuras y el análisis usan solo el subconjunto de acuaporinas (`de_aquaporins_*.csv`). El resultado completo se regenera con `scripts/5.5_rna_seq/5.5.2_de_abundancia/07_de_analysis.R`.
-- Los datos de curado por herramienta (DeepTMHMM, MEME, Pepstats, DeepLoc, FASTAs, consenso, GFF3 corregido) están en `annexes/I_curado_gff3_vs_exonerate/`.
+- Los datos de curado por herramienta (DeepTMHMM, MEME, Pepstats, DeepLoc, FASTAs, consenso, GFF3 corregido) están en `annexes/H_curado_gff3_vs_exonerate/`.
 - El árbol incluido es el de 282 hojas / 277 nodos (con la rama parcial `Fxa6Dg03790`), que es el que respalda las cifras citadas en §6.2.2 del TFG. Detalle en `annexes/E_soportes_filo/README.md`.

@@ -117,12 +117,15 @@ La justificación operativa es:
 
 ## 7. Archivos generados
 
+Este anexo reúne las **dos vistas** de la misma prueba de robustez (el antiguo
+Anexo F —paneles separados— se fusionó aquí en 2026-05-22):
+
 | Archivo | Contenido |
 |---|---|
-| `audit_PCA_inclusivo/comparativa_PCA_A_vs_B.csv` | Tabla cuantitativa: ID, subfamilia, veredicto, TMHs, PC1, PC2, d²_A, out_A, d²_B, out_B |
-| `audit_PCA_inclusivo/PCA_A_vs_B_comparativa.png` | Dos paneles lado a lado: versión A (izquierda) y versión B (derecha). Las 5 polémicas etiquetadas |
-| `audit_PCA_inclusivo/PCA_elipses_superpuestas.png` | Plano único con las elipses A (línea sólida) y B (línea discontinua) superpuestas para mostrar el grado de inflado |
-| `audit_PCA_inclusivo/generate_plots.py` | Script reproducible que regenera los gráficos a partir de `PCA_Coordenadas_Finales.csv` |
-| `audit_PCA_inclusivo/ANALISIS_PCA_A_vs_B.md` | Este documento |
+| `Anexo_C_figura_paneles_AvsB.png` | Dos paneles lado a lado: versión A (izquierda) y versión B (derecha), con las polémicas etiquetadas. *(Antes Anexo F.)* |
+| `Anexo_C_figura_elipses_AvsB.png` | Plano único con las elipses A (línea sólida) y B (línea discontinua) superpuestas, para mostrar el grado de inflado de un vistazo. |
+| `Anexo_C_tabla_Mahalanobis_AvsB.csv` | Tabla cuantitativa: ID, subfamilia, veredicto, TMHs, PC1, PC2, d²_A, out_A, d²_B, out_B. |
+| `Anexo_C_script_reproducible.py` | Script reproducible (vía `scripts/common/config.py`) que regenera ambas figuras a partir de `results/profiling_aqp_motifs_final/PCA_Coordenadas_Finales.csv`. |
+| `Anexo_C_memoria_tecnica.md` | Este documento. |
 
 **Importante**: la prueba se hace sobre los **mismos ejes PC1/PC2** del PCA original (no se re-entrenó el PCA con nuevas variables). Lo único que varía son las elipses de confianza por subfamilia. Si quisiéramos rigor adicional, podría re-ejecutarse `profiling_final_integrated.py` permitiendo que las parciales participen en la estandarización y en la descomposición — pero como la transformación es lineal y las parciales ya están proyectadas en este espacio, la inferencia sobre la pertenencia a cada cluster no se altera sustancialmente.

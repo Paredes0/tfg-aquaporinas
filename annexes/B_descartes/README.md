@@ -9,7 +9,7 @@ Citado en §6.1 del TFG.
 ## Composición
 
 - **17 descartes evidentes** por filtro topológico estricto (3 entradas no-membrana + 14 con TMHs <= 5).
-- **6 polémicas** analizadas en detalle en Anexo C (Mahalanobis) y Anexo G (evidencia visual).
+- **6 polémicas** analizadas en detalle en Anexo C (Mahalanobis) y Anexo F (evidencia visual).
 - **3 candidatas a reanotación futura** con expresión RNA-seq detectable.
 
 ## Trazabilidad

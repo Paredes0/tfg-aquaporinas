@@ -39,7 +39,7 @@ La cifra de 116 nodos (41,9 %) coincide exactamente con la documentada en `READM
 
 - [ ] **Revisar `.gitignore`**: los anexos usaron `git add -f` para incluir `.fasta/.png/.pdf` (que el `.gitignore` excluye por defecto). Confirmar que el `.gitignore` no vuelve a excluirlos en futuros `git add` y que ningún dato primario pesado (>10 MB) entró por error. Comprobar tamaño total del repo antes del push (`git count-objects -vH`).
 - [ ] **Revisar tamaño de `annexes/`**: confirmar que el repo sigue siendo razonable para GitHub (idealmente < 100 MB). Las figuras PNG y el alineamiento MAFFT son lo más pesado.
-- [ ] **Comprobar que `consenso_aqp_fixed.gff3`** (en `annexes/I_curado_gff3_vs_exonerate/`) abre correctamente y tiene las 20 entradas Exonerate-curadas esperadas.
+- [ ] **Comprobar que `consenso_aqp_fixed.gff3`** (en `annexes/H_curado_gff3_vs_exonerate/`) abre correctamente y tiene las 20 entradas Exonerate-curadas esperadas.
 
 ## 5. Estado de los scripts (completo — sin pendientes)
 
@@ -54,7 +54,7 @@ El pipeline está cubierto y sincronizado con la numeración del TFG v9:
 | `scripts/5.5_rna_seq/5.5.3_homeologos/` | §5.5.3 | 4 |
 | `scripts/common/` | infraestructura | 2 |
 
-**No falta ningún script** del pipeline actual. Los 3 scripts de reanotación se descartaron (decisión del TFG v9); `12_substitute_gff3.py` se rescató porque genera el GFF3 corregido (material del Anexo I).
+**No falta ningún script** del pipeline actual. Los 3 scripts de reanotación se descartaron (decisión del TFG v9); `12_substitute_gff3.py` se rescató porque genera el GFF3 corregido (material del Anexo H).
 
 Cobertura de tests: **133/133** (45 reproducibilidad + 67 unit + 21 smoke). Limitaciones de cobertura documentadas honestamente en `tests/REPORTE_DEFENSA.md` (sección "Qué garantizan estos tests y qué no").
 
@@ -63,7 +63,7 @@ Cobertura de tests: **133/133** (45 reproducibilidad + 67 unit + 21 smoke). Limi
 - `scripts/common/config.py` reescrito: ahora apunta a `data/` del repo por defecto; los scripts ya no tienen rutas a la máquina original.
 - `data/` añadido (curado/, filogenia/, rna_seq/) con los datos derivados (verificados idénticos a los originales por md5).
 - `profiling_final_integrated.py` y `analisis_motivos_unificado.py` leen de `config.CURADO_DIR`. **Verificado**: el PCA reproduce las 121 funcionales leyendo de `data/curado/` (exit 0).
-- Los 5 `compose_fig*.py` usan `TFG_RNA_SEQ_ROOT` (ya no `/home/noe/work` hardcoded).
+- Los 5 `compose_fig*.py`, los dos visores eFP y el script del Anexo C se refactorizaron a `config.py` (ver §5.2): leen de `data/` y escriben en `results/`.
 
 ### 5.2. Verificación end-to-end pendiente (fase "luego") ⏳
 
@@ -71,14 +71,9 @@ Falta **ejecutar cada script y confirmar que reproduce sus cifras**, no solo el 
 - [ ] `analisis_motivos_unificado.py` — necesita `clasificacion_filogenetica_simple.csv`, que genera `clasificacion_integrada_aqp.py`; confirmar el orden de ejecución (clasificación → motivos).
 - [ ] Scripts de `5.4_filogenia/` (comparar_arboles, rename_tree_nodes, update_prune_ids) — verificar que leen los treefiles de `data/filogenia/`.
 - [ ] Scripts R (`07_de_analysis.R`, `08_basal_expression.R`, homeólogos) — requieren entorno R + DESeq2.
-- [ ] **Refactor de los 5 `compose_fig*.py` a `config.RNASEQ_DIR`** (figuras RNA-seq 6-9 desde el repo). Estado: los inputs YA están en el repo (`data/rna_seq/{basal,de,homeologos}/` + `design_basal.csv` + `basal/{pca_aquaporins.pdf, correlation_samples.pdf}`). Falta editar cada compose para que `base` apunte a `config.RNASEQ_DIR` en vez de a `TFG_RNA_SEQ_ROOT/results/...`, ajustando las subrutas:
-  - `compose_fig6_basal_subfamilia.py`: `base/results/basal_aquaporins/basal_aquaporins_summary.csv` → `config.RNASEQ_BASAL_DIR`.
-  - `compose_fig7_validacion_pca.py`: `base/results/basal_aquaporins/{pca_aquaporins.pdf, correlation_samples.pdf}` → `config.RNASEQ_BASAL_DIR` (usa PyMuPDF/fitz).
-  - `compose_fig_de_subfamilia.py`: `base/results/de_leaf|de_roots/de_aquaporins_*.csv` → `config.RNASEQ_DE_DIR`.
-  - `compose_fig_homeologos_basal.py`: `homeolog_groups_summary.tsv`, `results/homeolog_analysis/collapsed_tpm.csv`, `dominance_overall.csv` → `config.RNASEQ_HOM_DIR`; `design/design_basal.csv` → `config.RNASEQ_DIR / 'design_basal.csv'`.
-  - `compose_fig_tandems_schema.py`: datos embebidos, revisar si usa `base`.
-  - Verificar cada figura al ejecutar (requieren matplotlib, PyMuPDF/fitz, adjustText).
-- [ ] **Refactor del script del Anexo C** (`annexes/C_pca_robustez/Anexo_C_script_reproducible.py`) a config.py: lee `PCA_Coordenadas_Finales.csv` (output del PCA, ahora en `results/profiling_aqp_motifs_final/`) y `tabla_aquaporinas_traduccion.tabular` (en `data/curado/`). Es el PCA con/sin parciales (Anexo C + F).
+- [x] **Refactor de los 5 `compose_fig*.py` a `config.RNASEQ_DIR`** ✅ (2026-05-22): leen de `data/rna_seq/` y escriben en `results/figuras_rnaseq/`; las 5 figuras (10 PDF/PNG) se regeneran desde el repo.
+- [x] **Refactor de los dos visores eFP** (`10_generate_efp_viewer.py`, `15_homeolog_efp_viewer.py`) a config.py ✅ (2026-05-22): SVG `fxa_vectorizado.svg` incorporado a `data/rna_seq/`. (El eFP individual queda obsoleto; no se publica.)
+- [x] **Refactor del script del Anexo C** a config.py ✅ (2026-05-22): lee `PCA_Coordenadas_Finales.csv` de `results/profiling_aqp_motifs_final/` y la tabla de `data/curado/`; regenera las dos figuras (paneles + elipses superpuestas) idénticas a las commiteadas. El antiguo Anexo F se fusionó en el Anexo C.
 - [ ] Scripts R (`07_de_analysis.R`, `08_basal_expression.R`, homeólogos) — requieren entorno R + DESeq2.
 - [ ] Auditoría completa reejecutando todo el repo (acordada con Noé).
 
