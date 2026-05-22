@@ -79,18 +79,11 @@ python profiling_final_integrated.py   # → 121 funcionales, PCA Fig. 3
 ### 5.4 Filogenia (~30 min en cluster, ~6 h en local)
 
 ```bash
-cd scripts/5.4_filogenia
-
-# Construir alineamiento (externo: MAFFT v7 E-INS-i + ClipKIT)
-# Construir árbol (externo: IQ-TREE v3.0.1 -m MFP -bb 1000 -bnni -alrt 1000 -abayes)
-# → arbol_acuaporinas_2_bueno_sin_parciales.{iqtree,treefile}
-
-# Comparar árboles GFF3 vs Exonerate
-python comparar_arboles.py
-
-# Renombrar nodos para iTOL
-python rename_tree_nodes.py
-python update_prune_ids.py
+# Alineamiento (externo: MAFFT v7 E-INS-i + ClipKIT)
+# Árbol (externo: IQ-TREE v3.0.1 -m MFP -bb 1000 -bnni -alrt 1000 -abayes)
+# → data/filogenia/arbol_acuaporinas.{iqtree,treefile,contree}
+# Los soportes nodales se resumen con:
+python annexes/I_soportes_filo/Anexo_I_script_reproducible.py
 ```
 
 ### 5.5.1 Obtención y procesamiento RNA-seq (~6-12 horas, Linux)

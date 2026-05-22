@@ -21,10 +21,10 @@ SORT_THREADS=2              # Threads for samtools sort
 # ---- Storage layout ----------------------------------------------------------
 # SSD (440 GB, fast I/O): scripts, indices, references, results
 # HDD (916 GB, large capacity): FASTQ, BAMs, trimmed reads, temp files
-SSD_DIR="${PROJECT_DIR}"                          # /home/noe/work/RNA-seq_test (SSD)
+SSD_DIR="${PROJECT_DIR}"                          # ruta del proyecto en el servidor (disco rápido)
 # Override HDD_DIR via env var if your heavy data lives elsewhere:
 #   export TFG_RNASEQ_HDD_DIR=/path/to/your/data
-HDD_DIR="${TFG_RNASEQ_HDD_DIR:-/home/noe/work/datos/rnaseq_data}"
+HDD_DIR="${TFG_RNASEQ_HDD_DIR:-/path/to/rnaseq_data}"
 
 # ---- Reference files ---------------------------------------------------------
 GENOME_GZ="${SSD_DIR}/Fragaria_ananassa_Benihoppe_Genome.fa.gz"

@@ -18,7 +18,7 @@ Salidas:
 Dependencias: biopython >= 1.80, pandas
 """
 
-import os
+import sys
 import re
 import json
 import csv
@@ -32,17 +32,16 @@ from Bio.SeqUtils.ProtParam import ProteinAnalysis
 # ============================================================================
 # CONFIGURACIÓN
 # ============================================================================
-# Ruta portable: override con $TFG_DATA_ROOT si tus datos viven en otra parte.
-BASE_DIR = Path(os.environ.get(
-    'TFG_DATA_ROOT',
-    r'C:\Users\Usuario\Desktop\resultados finales'
-))
-PROTEINAS_DIR = BASE_DIR / 'analisis proteinas aquaporina'
-OUTPUT_DIR = BASE_DIR / 'visualizaciones_tfg'
+# Entradas en el repo (data/curado/); salidas en results/. Override con $TFG_DATA_ROOT.
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+from scripts.common import config
+
+PROTEINAS_DIR = config.CURADO_DIR
+OUTPUT_DIR = config.ensure_results()
 
 # Archivos de entrada
-FASE1_JSON = OUTPUT_DIR / 'fase1_resultado.json'
-MATCH_FILE = BASE_DIR / 'match_gffcompare_mRNA_genID.tabular'
+FASE1_JSON = PROTEINAS_DIR / 'fase1_resultado.json'
+MATCH_FILE = PROTEINAS_DIR / 'match_gffcompare_mRNA_genID.tabular'
 
 # FASTA
 FASTA_GFF3 = PROTEINAS_DIR / 'aquaporin_peptides.fasta'
@@ -52,20 +51,18 @@ FASTA_EXO = PROTEINAS_DIR / 'exonerate_genes_aqp.fasta'
 TREE_GFF3 = PROTEINAS_DIR / 'fxa_aqp_gff3_129_clipkit.fasta.treefile'
 TREE_EXO = PROTEINAS_DIR / 'exonerate_aqp.treefile'
 
-# Topología, MEME, DeepLoc, pepstats
+# Topología, DeepLoc, pepstats
 TOPO_GFF3 = PROTEINAS_DIR / 'predicted_topologies_gff3.3line'
 TOPO_EXO = PROTEINAS_DIR / 'predicted_topologies_exonerate.3line'
-MEME_GFF3 = PROTEINAS_DIR / 'MEME_gff3.memexml'
-MEME_EXO = PROTEINAS_DIR / 'MEME_exonerate.memexml'
 DEEPLOC_GFF3 = PROTEINAS_DIR / 'deeploc_gff3.csv'
 DEEPLOC_EXO = PROTEINAS_DIR / 'deeploc_exonerate.csv'
 PEPSTATS_GFF3 = PROTEINAS_DIR / 'pepstats_gff3.txt'
 PEPSTATS_EXO = PROTEINAS_DIR / 'pepstats_exonerate.txt'
 
 # Salidas
-OUT_TABLA = PROTEINAS_DIR / 'tabla_aquaporinas_traduccion.tabular'
-OUT_CSV = PROTEINAS_DIR / 'clasificacion_filogenetica_simple.csv'
-OUT_INFORME = PROTEINAS_DIR / 'informe_analisis_integrado_aqp.txt'
+OUT_TABLA = config.RESULTS_DIR / 'tabla_aquaporinas_traduccion.tabular'
+OUT_CSV = config.RESULTS_DIR / 'clasificacion_filogenetica_simple.csv'
+OUT_INFORME = config.RESULTS_DIR / 'informe_analisis_integrado_aqp.txt'
 
 # Patrones
 GENE_ID_PATTERN = re.compile(r'Fxa(\d)([A-D])g(\d+)')

@@ -119,38 +119,6 @@ def create_histogram(lengths, output_file='histograma_longitudes_aqp.png'):
     
     plt.close()
 
-def create_boxplot(lengths, output_file='boxplot_longitudes_aqp.png'):
-    """Crear boxplot adicional"""
-    
-    fig, ax = plt.subplots(figsize=(8, 6), dpi=300)
-    
-    # Crear boxplot horizontal
-    bp = ax.boxplot([lengths], vert=False, widths=0.6, patch_artist=True,
-                     boxprops=dict(facecolor='#3498db', alpha=0.7),
-                     medianprops=dict(color='red', linewidth=2),
-                     whiskerprops=dict(linewidth=1.5),
-                     capprops=dict(linewidth=1.5))
-    
-    # Añadir líneas verticales en 140 y 380
-    ax.axvline(x=140, color='red', linestyle='--', linewidth=2, 
-               label='Umbral 140 aa', alpha=0.8)
-    ax.axvline(x=380, color='red', linestyle='--', linewidth=2, 
-               label='Umbral 380 aa', alpha=0.8)
-    
-    # Sombrear región
-    ax.axvspan(140, 380, alpha=0.1, color='green')
-    
-    ax.set_xlabel('Longitud de la secuencia (aminoácidos)', fontsize=14, fontweight='bold')
-    # Título en el pie de figura (norma APA/UCAM), no embebido en la imagen
-    ax.set_yticks([])
-    ax.legend(fontsize=11)
-    ax.grid(True, alpha=0.3, axis='x')
-    
-    plt.tight_layout()
-    plt.savefig(output_file, dpi=300, bbox_inches='tight', facecolor='white')
-    print(f"[OK] Boxplot guardado: {output_file}")
-    plt.close()
-
 def create_statistics_table(lengths, output_file='tabla_estadisticas.txt'):
     """Crear tabla de estadísticas para el TFG"""
     
@@ -216,41 +184,6 @@ def create_statistics_table(lengths, output_file='tabla_estadisticas.txt'):
     
     return table_text
 
-def create_pie_chart(lengths, output_file='grafico_distribucion_rangos.png'):
-    """Crear gráfico de pastel con distribución de rangos"""
-    
-    # Calcular distribuciones
-    below_140 = sum(1 for l in lengths if l < 140)
-    in_range = sum(1 for l in lengths if 140 <= l <= 380)
-    above_380 = sum(1 for l in lengths if l > 380)
-    
-    sizes = [below_140, in_range, above_380]
-    labels = [f'< 140 aa\n({below_140} seq.)', 
-              f'140-380 aa\n({in_range} seq.)', 
-              f'> 380 aa\n({above_380} seq.)']
-    colors = ['#ff9999', '#90EE90', '#ffcc99']
-    explode = (0.05, 0.1, 0.05)  # Resaltar el rango principal
-    
-    fig, ax = plt.subplots(figsize=(8, 8), dpi=300)
-    
-    wedges, texts, autotexts = ax.pie(sizes, explode=explode, labels=labels, 
-                                       colors=colors, autopct='%1.1f%%',
-                                       shadow=True, startangle=90,
-                                       textprops={'fontsize': 12, 'fontweight': 'bold'})
-    
-    # Mejorar formato de porcentajes
-    for autotext in autotexts:
-        autotext.set_color('black')
-        autotext.set_fontsize(14)
-        autotext.set_fontweight('bold')
-    
-    # Título en el pie de figura (norma APA/UCAM), no embebido en la imagen
-    
-    plt.tight_layout()
-    plt.savefig(output_file, dpi=300, bbox_inches='tight', facecolor='white')
-    print(f"[OK] Grafico de pastel guardado: {output_file}")
-    plt.close()
-
 def main():
     print("=" * 80)
     print("GENERANDO VISUALIZACIONES PROFESIONALES PARA TFG")
@@ -273,20 +206,12 @@ def main():
     # Generar visualizaciones
     print("Generando visualizaciones...\n")
     
-    # 1. Histograma principal
-    create_histogram(lengths, 
+    # 1. Histograma principal (Figura 4 del TFG)
+    create_histogram(lengths,
                      os.path.join(output_dir, 'histograma_longitudes_aqp.png'))
-    
-    # 2. Boxplot
-    create_boxplot(lengths, 
-                   os.path.join(output_dir, 'boxplot_longitudes_aqp.png'))
-    
-    # 3. Gráfico de pastel
-    create_pie_chart(lengths, 
-                     os.path.join(output_dir, 'grafico_distribucion_rangos.png'))
-    
-    # 4. Tabla de estadísticas
-    create_statistics_table(lengths, 
+
+    # 2. Tabla de estadísticas (datos de respaldo)
+    create_statistics_table(lengths,
                            os.path.join(output_dir, 'tabla_estadisticas.txt'))
     
     # 5. Exportar datos crudos para Excel
@@ -302,9 +227,7 @@ def main():
     print("=" * 80)
     print(f"\nTodos los archivos están en: {output_dir}")
     print("\nArchivos generados:")
-    print("  - histograma_longitudes_aqp.png (y .pdf)")
-    print("  - boxplot_longitudes_aqp.png")
-    print("  - grafico_distribucion_rangos.png")
+    print("  - histograma_longitudes_aqp.png (y .pdf)  [Figura 4 del TFG]")
     print("  - tabla_estadisticas.txt (y .csv)")
     print("  - datos_longitudes.csv")
 

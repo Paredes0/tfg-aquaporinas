@@ -32,31 +32,21 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 # ── Localización del árbol final ─────────────────────────────────────────────
-# El árbol de referencia del TFG es el de final_without_partials (282 hojas, 430
-# sitios, Q.PLANT+R6, log L = -45.149,26 → 277 nodos internos), del que proceden
-# las cifras de soporte citadas en §6.2.2. Se prioriza ese.
-# La copia de Z:\work\RNA-seq_test (arbol_acuaporinas_2_bueno_sin_parciales) es la
-# misma reconstrucción tras podar la rama parcial Fxa6Dg03790 (281 hojas, 276
-# nodos); estadísticos casi idénticos. Queda como último recurso.
-# Para reproducir en otra máquina, exportar el .treefile y apuntar TFG_TREEFILE.
+# El árbol de referencia del TFG (final_without_partials: 282 hojas, 430 sitios,
+# Q.PLANT+R6, log L = -45.149,26 → 277 nodos internos) viene incluido en el repo,
+# en data/filogenia/; las cifras de soporte de §6.2.2 proceden de ahí.
+# Override opcional con $TFG_TREEFILE para apuntar a otra copia.
 _REPO_TREE = str(Path(__file__).resolve().parents[2] / "data" / "filogenia" / "arbol_acuaporinas.treefile")
 _CANDIDATE_TREES = [
     os.environ.get("TFG_TREEFILE", ""),
     _REPO_TREE,  # copia incluida en el repo (data/filogenia/) → autorreproducible
-    r"C:\Users\Usuario\Desktop\resultados finales\TFG\TFG-PRACTICAS NOE\RESULTADOS\Filogenia\FINAL\final_without_partials\arbol_acuaporinas.treefile",
-    r"C:\Users\Usuario\Downloads\iqtree-3.0.1-Windows\iqtree-3.0.1-Windows\bin\final_without_partials\arbol_acuaporinas.treefile",
-    os.path.join(
-        os.environ.get("TFG_RNA_SEQ_ROOT", r"Z:\work\RNA-seq_test"),
-        "arbol_acuaporinas_2_bueno_sin_parciales.treefile",
-    ),
 ]
 
-# Mapeo gene_id -> subfamilia para las hojas de Fragaria (homeolog_groups.tsv)
+# Mapeo gene_id -> subfamilia para las hojas de Fragaria (homeolog_groups.tsv del repo).
+_REPO_HOMEOLOGS = str(Path(__file__).resolve().parents[2] / "data" / "rna_seq" / "homeologos" / "homeolog_groups.tsv")
 _CANDIDATE_HOMEOLOGS = [
-    os.path.join(
-        os.environ.get("TFG_DATA_ROOT", r"C:\Users\Usuario\Desktop\resultados finales"),
-        "ANEXOS_TFG_DATOS", "AnexoA_RNAseq_datos", "homeologos", "homeolog_groups.tsv",
-    ),
+    os.environ.get("TFG_HOMEOLOGS", ""),
+    _REPO_HOMEOLOGS,  # incluido en el repo → autorreproducible
 ]
 
 OUT_DIR = Path(__file__).resolve().parent

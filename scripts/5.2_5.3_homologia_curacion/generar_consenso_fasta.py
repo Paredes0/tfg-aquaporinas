@@ -14,16 +14,20 @@ Reglas de selección y renombrado:
 import pandas as pd
 from Bio import SeqIO
 import os
+import sys
+from pathlib import Path
 
-# Archivos de entrada
-TABLA_FILE = 'tabla_Aquaporinas_traduccion.tabular'
-FASTA_GFF3 = 'aquaporin_peptides.fasta'
-FASTA_EXO  = 'exonerate_genes_aqp.fasta'
-GDR_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'GDR_fxa')
-FASTA_MAKER = os.path.join(GDR_DIR, 'missing_aquaporins.fasta')
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+from scripts.common import config
+
+# Entradas en el repo (data/curado/); salida en results/. Override con $TFG_DATA_ROOT.
+TABLA_FILE = config.CURADO_DIR / 'tabla_aquaporinas_traduccion.tabular'
+FASTA_GFF3 = config.CURADO_DIR / 'aquaporin_peptides.fasta'
+FASTA_EXO  = config.CURADO_DIR / 'exonerate_genes_aqp.fasta'
+FASTA_MAKER = config.CURADO_DIR / 'missing_aquaporins.fasta'
 
 # Archivo de salida
-OUTPUT_FILE = 'consenso_aqp.fasta'
+OUTPUT_FILE = config.ensure_results() / 'consenso_aqp.fasta'
 
 def main():
     print(f"Leyendo tabla: {TABLA_FILE}...")

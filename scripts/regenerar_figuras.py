@@ -90,7 +90,23 @@ def main() -> None:
             p = REPO / src
             if p.exists():
                 shutil.copy2(p, dest / f"{nombre}{p.suffix}")
+    # ── Dejar results/ limpio: solo la carpeta figuras_TFG ───────────────────
+    # (cada script deja artefactos intermedios en sus subcarpetas; una vez
+    #  reunidas las figuras finales, esos intermedios sobran)
+    results_root = REPO / "results"
+    for item in results_root.iterdir():
+        if item.resolve() == dest.resolve():
+            continue
+        if item.is_dir():
+            shutil.rmtree(item, ignore_errors=True)
+        else:
+            try:
+                item.unlink()
+            except OSError:
+                pass
+
     print(f"\n>>> Figuras del TFG reunidas y numeradas en: {dest}")
+    print("    results/ queda con una sola carpeta: figuras_TFG/")
     print("    (la Figura 7 — árbol — se hace en iTOL; las 1-3 son de otros papers)")
 
     print(f"\n{'='*72}\nRESUMEN\n{'='*72}")
