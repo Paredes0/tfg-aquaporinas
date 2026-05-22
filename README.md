@@ -1,10 +1,10 @@
-# Acuaporinoma de *Fragaria* × *ananassa* 'Benihoppe' — código y tests del TFG
+# Acuaporinoma de *Fragaria* x *ananassa* 'Benihoppe' — código y tests del TFG
 
 [![Tests](https://img.shields.io/badge/tests-133%20passed-brightgreen)](tests/)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![DOI](https://img.shields.io/badge/DOI-pendiente-lightgrey)](docs/ZENODO.md)
 
-Repositorio de los scripts utilizados en el Trabajo de Fin de Grado **"Identificación, curaduría, filogenia y expresión del acuaporinoma del genoma alo-octoploide de *Fragaria* × *ananassa* 'Benihoppe'"** (Noé Paredes Alfonso, UCAM, Grado en Biotecnología).
+Repositorio de los scripts utilizados en el Trabajo de Fin de Grado **"Identificación, curado y caracterización transcripcional del acuaporinoma de *Fragaria* x *ananassa* 'Benihoppe'"** (Noé Paredes Alfonso, UCAM, Grado en Biotecnología).
 
 Directores: Dr. José Ramón Acosta Motos y Dr. Juan Nicolás Espinosa.
 
@@ -23,7 +23,7 @@ tfg-aquaporinas/
 │   │   └── 5.5.3_homeologos/                Agrupamiento + dominancia
 │   └── common/                       Configuración compartida (paths)
 ├── workflows/galaxy/                 Workflows Galaxy publicados (.ga + URLs)
-├── annexes/                          Anexos del TFG (A–H)
+├── annexes/                          Anexos del TFG (A–I)
 ├── tests/                            133 tests automáticos
 └── docs/                             Documentación
 ```
@@ -32,15 +32,15 @@ tfg-aquaporinas/
 
 | Cifra | Apartado | Script | Test |
 |---|---|---|---|
-| 419 aquaporinas Rosaceae filtradas a 140–380 aa | 5.1 | (descarga inteligente externa) | — |
-| 3.168 loci → 4.984 hits Exonerate → 129 secuencias no redundantes | 5.1 | `auditoria_gff_vs_secuencia.py` | `test_cifras_curaduria.py` |
-| 91 / 38 idénticas vs discrepantes | 5.1 | `auditoria_gff_vs_secuencia.py` | `test_cifras_curaduria.py` |
-| **121 acuaporinas funcionales** (37 NIP, 34 TIP, 32 PIP, 12 SIP, 6 XIP) | 5.1 | `profiling_final_integrated.py` + `clasificacion_integrada_aqp.py` | `test_cifras_curaduria.py` |
-| 23 descartes (21 sin 6 TMH + 2 NIPs deleción + 3 aminoacilasas) | 5.1 | `profiling_final_integrated.py` | `test_cifras_curaduria.py` |
-| Filogenia final: 281 sec / 430 sites / Q.PLANT+R6 / log L = −45.149,26 | 5.2 | `comparar_arboles.py` | `test_cifras_filogenia.py` |
-| Matriz basal TPM sobre 129 acuaporinas, 22 muestras, 6 tejidos | 5.3 | `08_basal_expression.R` | `test_cifras_rnaseq.py` |
-| 32 grupos homeólogos, 18 cuartetos completos | 5.6 | `11_homeolog_grouping.py` | `test_cifras_homeologos.py` |
-| Dominancia subgenomas A=9 / B=5 / C=5 / **D=12** | 5.6 | `14_homeolog_de_analysis.R` | `test_cifras_homeologos.py` |
+| 419 aquaporinas Rosaceae filtradas a 140–380 aa | 5.2 | (descarga inteligente externa) | — |
+| 3.168 loci → 4.984 hits Exonerate → 129 secuencias no redundantes | 5.2 | `auditoria_gff_vs_secuencia.py` | `test_cifras_curaduria.py` |
+| 91 / 38 idénticas vs discrepantes | 5.3 | `auditoria_gff_vs_secuencia.py` | `test_cifras_curaduria.py` |
+| **121 acuaporinas funcionales** (37 NIP, 34 TIP, 32 PIP, 12 SIP, 6 XIP) | 5.3 | `profiling_final_integrated.py` + `clasificacion_integrada_aqp.py` | `test_cifras_curaduria.py` |
+| 23 descartes (21 sin 6 TMH + 2 NIPs deleción + 3 aminoacilasas) | 5.3 | `profiling_final_integrated.py` | `test_cifras_curaduria.py` |
+| Filogenia final: 281 sec / 430 sites / Q.PLANT+R6 / log L = −45.149,26 | 5.4 | `comparar_arboles.py` | `test_cifras_filogenia.py` |
+| Matriz basal TPM sobre 129 acuaporinas, 22 muestras, 6 tejidos | 5.5.1 | `08_basal_expression.R` | `test_cifras_rnaseq.py` |
+| 32 grupos homeólogos, 18 cuartetos completos | 5.5.3 | `11_homeolog_grouping.py` | `test_cifras_homeologos.py` |
+| Dominancia subgenomas A=9 / B=5 / C=5 / **D=12** | 5.5.3 | `14_homeolog_de_analysis.R` | `test_cifras_homeologos.py` |
 
 ## Cómo ejecutar los tests
 

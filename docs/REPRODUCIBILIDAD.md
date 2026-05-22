@@ -6,7 +6,7 @@
 
 | Dato | Tamaño | Fuente |
 |---|---|---|
-| Genoma *F.* × *ananassa* 'Benihoppe' (FASTA + GFF3) | ~600 MB comprimido | [Genome Database for Rosaceae](https://www.rosaceae.org/species/fragaria/fragaria_x_ananassa) |
+| Genoma *F.* x *ananassa* 'Benihoppe' (FASTA + GFF3) | ~600 MB comprimido | [Genome Database for Rosaceae](https://www.rosaceae.org/species/fragaria/fragaria_x_ananassa) |
 | 22 muestras RNA-seq paired-end | ~40 GB | NCBI SRA, BioProject `PRJNA1010234` (ver `5.5_rna_seq/5.5.1_obtencion_procesamiento/SRA.txt`) |
 | Aquaporinas de referencia Rosaceae | ~50 KB | UniProtKB, query `family:aquaporin AND organism:Rosaceae` |
 | 4 datasets curados: At AQPome, Hb (*Hevea*), Md (*Malus*), Os (*Oryza*) | ~30 KB | Johanson 2001, Zou 2015, Liu 2019, Sakurai 2005 |
