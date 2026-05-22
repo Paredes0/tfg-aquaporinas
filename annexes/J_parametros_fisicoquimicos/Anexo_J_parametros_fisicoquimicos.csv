@@ -1,122 +1,122 @@
-gene_id,subfamilia,sub_subfamilia,longitud_aa,pI,Mw_kDa,TMHs,NPA_bucle_B,NPA_bucle_E,localizacion
-Fxa5Ag00335,PIP,FaPIP1,286,9.18,30.74,6,NPA,NPA,Cell membrane
-Fxa5Bg00282,PIP,FaPIP1,310,9.49,33.56,6,NPA,NPA,Cell membrane
-Fxa5Cg00258,PIP,FaPIP1,286,9.16,30.74,6,NPA,NPA,Cell membrane
-Fxa5Dg00262,PIP,FaPIP1,286,9.16,30.71,6,NPA,NPA,Cell membrane
-Fxa7Ag01470,PIP,FaPIP1,287,8.93,30.87,6,NPA,NPA,Cell membrane
-Fxa7Ag02374,PIP,FaPIP1,290,8.95,31.07,6,NPA,NPA,Cell membrane
-Fxa7Bg01478,PIP,FaPIP1,287,8.93,30.87,6,NPA,NPA,Cell membrane
-Fxa7Bg02233,PIP,FaPIP1,290,8.95,31.05,6,NPA,NPA,Cell membrane
-Fxa7Cg01379,PIP,FaPIP1,287,8.93,30.87,6,NPA,NPA,Cell membrane
-Fxa7Cg02122,PIP,FaPIP1,290,8.95,31.06,6,NPA,NPA,Cell membrane
-Fxa7Dg02199,PIP,FaPIP1,290,8.95,31.06,6,NPA,NPA,Cell membrane
-Fxa1Ag01329,PIP,FaPIP2,284,7.75,30.42,6,NPA,NPA,Cell membrane
-Fxa1Bg01161,PIP,FaPIP2,284,7.77,30.49,6,NPA,NPA,Cell membrane
-Fxa1Cg01161,PIP,FaPIP2,284,7.15,30.28,6,NPA,NPA,Cell membrane
-Fxa1Dg01169,PIP,FaPIP2,284,7.78,30.39,6,NPA,NPA,Cell membrane
-Fxa2Ag01701,PIP,FaPIP2,281,8.38,30.03,6,NPA,NPA,Cell membrane
-Fxa2Bg01497,PIP,FaPIP2,281,8.71,30.0,6,NPA,NPA,Cell membrane
-Fxa2Dg01359,PIP,FaPIP2,281,8.91,29.97,6,NPA,NPA,Cell membrane
-Fxa3Ag03208,PIP,FaPIP2,281,7.05,30.0,6,NPA,NPA,Cell membrane
-Fxa3Bg03093,PIP,FaPIP2,281,7.05,29.97,6,NPA,NPA,Cell membrane
-Fxa3Cg03061,PIP,FaPIP2,281,7.05,29.98,6,NPA,NPA,Cell membrane
-Fxa3Dg02827,PIP,FaPIP2,281,7.05,30.0,6,NPA,NPA,Cell membrane
-Fxa6Ag01549,PIP,FaPIP2,314,7.64,33.16,6,NPA,NPA,Cell membrane
-Fxa6Ag01550,PIP,FaPIP2,284,8.28,30.11,6,NPA,NPA,Cell membrane
-Fxa6Bg01475,PIP,FaPIP2,284,6.94,29.97,6,NPA,NPA,Cell membrane
-Fxa6Bg01476,PIP,FaPIP2,284,8.27,30.1,6,NPA,NPA,Cell membrane
-Fxa6Cg01396,PIP,FaPIP2,287,8.27,30.33,6,NPA,NPA,Cell membrane
-Fxa6Cg01397,PIP,FaPIP2,284,8.28,30.1,6,NPA,NPA,Cell membrane
-Fxa7Ag01972,PIP,FaPIP2,285,8.94,30.36,6,NPA,NPA,Cell membrane
-Fxa7Bg01892,PIP,FaPIP2,307,8.89,32.72,6,NPA,NPA,Cell membrane
-Fxa7Cg01769,PIP,FaPIP2,287,8.73,30.54,6,NPA,NPA,Cell membrane
-Fxa7Dg01838,PIP,FaPIP2,287,8.73,30.43,6,NPA,NPA,Cell membrane
-Fxa3Ag03414,TIP,FaTIP1,254,4.72,25.97,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
-Fxa3Bg03276,TIP,FaTIP1,254,4.72,25.95,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
-Fxa3Cg03258,TIP,FaTIP1,254,4.72,25.92,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
-Fxa3Dg02998,TIP,FaTIP1,254,4.72,25.94,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
-Fxa6Ag01681,TIP,FaTIP1,253,5.18,26.06,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
-Fxa6Bg01580,TIP,FaTIP1,253,5.18,26.04,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
-Fxa6Cg01508,TIP,FaTIP1,253,5.18,26.04,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
-Fxa6Dg01485,TIP,FaTIP1,253,5.18,26.04,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
-Fxa7Ag00344,TIP,FaTIP1,254,4.85,25.78,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
-Fxa7Ag02144,TIP,FaTIP1,252,5.49,25.86,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
-Fxa7Bg00386,TIP,FaTIP1,254,4.85,25.83,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
-Fxa7Bg02050,TIP,FaTIP1,252,5.49,25.86,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
-Fxa7Cg00335,TIP,FaTIP1,254,4.85,25.83,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
-Fxa7Cg01932,TIP,FaTIP1,252,5.29,25.83,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
-Fxa7Dg00308,TIP,FaTIP1,254,4.85,25.83,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
-Fxa7Dg01994,TIP,FaTIP1,252,5.49,25.82,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
-Fxa5Ag02099,TIP,FaTIP2,249,4.73,25.28,6,NPA,NPA,Cell membrane
-Fxa5Bg02045,TIP,FaTIP2,249,4.73,25.23,6,NPA,NPA,Cell membrane
-Fxa5Cg01808,TIP,FaTIP2,249,4.9,25.27,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
-Fxa5Dg01850,TIP,FaTIP2,249,4.9,25.18,6,NPA,NPA,Cell membrane
-Fxa6Ag03173,TIP,FaTIP2,248,5.6,25.31,6,NPA,NPA,Lysosome/Vacuole
-Fxa6Bg02964,TIP,FaTIP2,248,5.6,25.31,6,NPA,NPA,Lysosome/Vacuole
-Fxa6Dg02788,TIP,FaTIP2,248,5.33,25.32,6,NPA,NPA,Lysosome/Vacuole
-Fxa5Ag02048,TIP,FaTIP3,260,6.49,27.91,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
-Fxa5Bg01989,TIP,FaTIP3,260,6.49,27.91,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
-Fxa5Cg01763,TIP,FaTIP3,260,6.29,27.83,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
-Fxa5Dg01809,TIP,FaTIP3,260,6.75,27.95,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
-Fxa2Ag03929,TIP,FaTIP4,248,5.79,26.05,6,NPA,NPA,Lysosome/Vacuole
-Fxa2Bg03539,TIP,FaTIP4,248,5.58,26.19,6,NPA,NPA,Cell membrane
-Fxa2Cg00636,TIP,FaTIP4,248,5.79,26.14,6,NPA,NPA,Lysosome/Vacuole
-Fxa2Dg03205,TIP,FaTIP4,248,5.8,26.15,6,NPA,NPA,Cell membrane
-Fxa7Ag02742,TIP,FaTIP5,253,6.01,25.98,6,NPA,NPA,Cell membrane
-Fxa7Bg02566,TIP,FaTIP5,253,6.89,26.23,6,NPA,NPA,Cell membrane
-Fxa7Cg02454,TIP,FaTIP5,254,6.38,26.15,6,NPA,NPA,Cell membrane
-Fxa3Ag00839,NIP,FaNIP1,270,9.01,28.87,6,NPA,NPA,Cell membrane
-Fxa3Ag00840,NIP,FaNIP1,284,7.09,30.89,6,NPA,NPA,Lysosome/Vacuole
-Fxa3Bg00729,NIP,FaNIP1,270,9.01,28.77,6,NPA,NPA,Cell membrane
-Fxa3Bg00730,NIP,FaNIP1,271,8.85,29.2,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
-Fxa3Cg00714,NIP,FaNIP1,270,9.01,28.86,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
-Fxa3Cg00715,NIP,FaNIP1,271,9.25,29.13,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
-Fxa3Dg00712,NIP,FaNIP1,270,9.17,28.96,6,NPA,NPA,Cell membrane
-Fxa3Dg00713,NIP,FaNIP1,271,7.84,29.12,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
-Fxa6Ag00747,NIP,FaNIP1,272,6.37,29.23,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
-Fxa6Ag00748,NIP,FaNIP1,271,8.79,28.84,6,NPA,NPA,Cell membrane
-Fxa6Bg00716,NIP,FaNIP1,270,7.78,28.65,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
-Fxa6Dg00623,NIP,FaNIP1,272,6.65,29.34,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
-Fxa6Dg00624,NIP,FaNIP1,271,8.44,28.8,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
-Fxa6Ag04860,NIP,FaNIP2,274,8.76,28.78,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
-Fxa6Ag04861,NIP,FaNIP2,282,8.72,30.05,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
-Fxa6Ag04862,NIP,FaNIP2,281,9.02,30.03,6,NPA,NPA,Cell membrane
-Fxa6Bg04544,NIP,FaNIP2,274,8.89,28.78,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
-Fxa6Bg04546,NIP,FaNIP2,282,9.04,29.91,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
-Fxa6Cg04054,NIP,FaNIP2,274,8.42,28.97,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
-Fxa6Cg04057,NIP,FaNIP2,283,8.73,30.16,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
-Fxa6Dg04288,NIP,FaNIP2,282,9.04,30.04,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
-Fxa6Dg04289,NIP,FaNIP2,274,9.15,28.99,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
-Fxa4Ag03283,NIP,FaNIP4,283,9.08,30.21,6,NPA,NPA,Cell membrane
-Fxa4Bg03148,NIP,FaNIP4,284,8.99,30.34,6,NPA,NPA,Cell membrane
-Fxa4Cg03033,NIP,FaNIP4,283,9.08,30.19,6,NPA,NPA,Cell membrane
-Fxa4Dg02771,NIP,FaNIP4,283,9.08,30.24,6,NPA,NPA,Cell membrane
-Fxa5Ag01079,NIP,FaNIP5,301,8.17,31.2,6,NPS,NPV,Cell membrane|Lysosome/Vacuole
-Fxa5Bg01013,NIP,FaNIP5,275,8.29,28.27,6,NPS,NPV,Cell membrane
-Fxa5Cg00895,NIP,FaNIP5,336,8.09,35.09,6,NPS,NPV,Cell membrane
-Fxa6Ag04017,NIP,FaNIP5,238,8.79,24.7,6,NPS,NPA,Cell membrane
-Fxa6Ag02836,NIP,FaNIP6,306,8.26,31.59,6,NPA,NPV,Cell membrane
-Fxa6Bg02677,NIP,FaNIP6,306,8.82,31.54,6,NPA,NPV,Cell membrane
-Fxa6Cg02462,NIP,FaNIP6,306,8.59,31.57,6,NPA,NPV,Cell membrane
-Fxa6Dg02490,NIP,FaNIP6,306,8.59,31.56,6,NPA,NPV,Cell membrane
-Fxa4Bg01616,NIP,FaNIP7,291,6.64,30.48,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
-Fxa4Cg01442,NIP,FaNIP7,284,6.69,29.72,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
-Fxa4Dg01302,NIP,FaNIP7,283,6.69,29.84,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
-Fxa6Ag00070,SIP,FaSIP1,325,9.74,34.44,6,NPT,NPA,Endoplasmic reticulum
-Fxa6Ag04289,SIP,FaSIP1,241,10.05,25.44,6,NPS,NPI,Endoplasmic reticulum
-Fxa6Ag04290,SIP,FaSIP1,241,9.87,25.83,6,NPS,NPA,Endoplasmic reticulum
-Fxa6Bg03993,SIP,FaSIP1,241,10.05,25.45,6,NPS,NPI,Endoplasmic reticulum
-Fxa6Bg04002,SIP,FaSIP1,225,9.78,23.68,6,NPS,NPA,Cell membrane
-Fxa6Cg00057,SIP,FaSIP1,237,9.17,25.09,6,NPT,NPA,Endoplasmic reticulum
-Fxa6Cg03541,SIP,FaSIP1,241,10.05,25.41,6,NPS,NPI,Endoplasmic reticulum
-Fxa6Cg03543,SIP,FaSIP1,241,9.87,25.77,6,NPS,NPA,Endoplasmic reticulum
-Fxa6Dg03788,SIP,FaSIP1,241,10.05,25.5,6,NPS,NPI,Endoplasmic reticulum
-Fxa1Ag02792,SIP,FaSIP2,232,9.75,25.25,6,NPL,NPA,Endoplasmic reticulum
-Fxa1Cg02650,SIP,FaSIP2,232,9.52,25.21,6,NPL,NPA,Endoplasmic reticulum
-Fxa1Dg02410,SIP,FaSIP2,232,9.71,25.23,6,NPL,NPA,Endoplasmic reticulum
-Fxa2Ag00187,XIP,FaXIP1,286,6.73,30.69,6,SPV,NPA,Cell membrane
-Fxa2Dg00213,XIP,FaXIP1,286,6.53,30.73,6,SPV,NPA,Cell membrane
-Fxa2Ag00184,XIP,FaXIP2,318,8.21,34.26,6,NPV,NPA,Cell membrane
-Fxa2Bg00218,XIP,FaXIP2,332,7.71,35.82,6,NPV,NPA,Cell membrane
-Fxa2Bg00222,XIP,FaXIP2,332,7.7,35.8,6,NPV,NPA,Cell membrane
-Fxa2Dg00210,XIP,FaXIP2,318,8.21,34.39,6,NPV,NPA,Cell membrane
+gene_id,subfamilia,isoforma,modelo,mRNA_modelo,longitud_aa,pI,Mw_kDa,TMHs,NPA_bucle_B,NPA_bucle_E,localizacion
+Fxa5Ag00335,PIP,PIP1;3,GFF3 oficial,Fxa5Ag00335-mRNA-1,286,9.18,30.74,6,NPA,NPA,Cell membrane
+Fxa5Bg00282,PIP,PIP1;3,Exonerate (sustituido),mRNA_33716,310,9.49,33.56,6,NPA,NPA,Cell membrane
+Fxa5Cg00258,PIP,PIP1;3,GFF3 oficial,Fxa5Cg00258-mRNA-1,286,9.16,30.74,6,NPA,NPA,Cell membrane
+Fxa5Dg00262,PIP,PIP1;3,GFF3 oficial,Fxa5Dg00262-mRNA-1,286,9.16,30.71,6,NPA,NPA,Cell membrane
+Fxa7Ag01470,PIP,PIP1;4,GFF3 oficial,Fxa7Ag01470-mRNA-1,287,8.93,30.87,6,NPA,NPA,Cell membrane
+Fxa7Ag02374,PIP,PIP1;1,Exonerate (sustituido),mRNA_10680,290,8.95,31.07,6,NPA,NPA,Cell membrane
+Fxa7Bg01478,PIP,PIP1;4,GFF3 oficial,Fxa7Bg01478-mRNA-1,287,8.93,30.87,6,NPA,NPA,Cell membrane
+Fxa7Bg02233,PIP,PIP1;1,GFF3 oficial,Fxa7Bg02233-mRNA-1,290,8.95,31.05,6,NPA,NPA,Cell membrane
+Fxa7Cg01379,PIP,PIP1;4,GFF3 oficial,Fxa7Cg01379-mRNA-1,287,8.93,30.87,6,NPA,NPA,Cell membrane
+Fxa7Cg02122,PIP,PIP1;1,GFF3 oficial,Fxa7Cg02122-mRNA-1,290,8.95,31.06,6,NPA,NPA,Cell membrane
+Fxa7Dg02199,PIP,PIP1;1,Exonerate (sustituido),mRNA_1730,290,8.95,31.06,6,NPA,NPA,Cell membrane
+Fxa1Ag01329,PIP,PIP2;8,GFF3 oficial,Fxa1Ag01329-mRNA-1,284,7.75,30.42,6,NPA,NPA,Cell membrane
+Fxa1Bg01161,PIP,PIP2;8,GFF3 oficial,Fxa1Bg01161-mRNA-1,284,7.77,30.49,6,NPA,NPA,Cell membrane
+Fxa1Cg01161,PIP,PIP2;8,GFF3 oficial,Fxa1Cg01161-mRNA-1,284,7.15,30.28,6,NPA,NPA,Cell membrane
+Fxa1Dg01169,PIP,PIP2;8,GFF3 oficial,Fxa1Dg01169-mRNA-1,284,7.78,30.39,6,NPA,NPA,Cell membrane
+Fxa2Ag01701,PIP,PIP2;7,GFF3 oficial,Fxa2Ag01701-mRNA-1,281,8.38,30.03,6,NPA,NPA,Cell membrane
+Fxa2Bg01497,PIP,PIP2;7,GFF3 oficial,Fxa2Bg01497-mRNA-1,281,8.71,30.0,6,NPA,NPA,Cell membrane
+Fxa2Dg01359,PIP,PIP2;7,GFF3 oficial,Fxa2Dg01359-mRNA-1,281,8.91,29.97,6,NPA,NPA,Cell membrane
+Fxa3Ag03208,PIP,PIP2;2,GFF3 oficial,Fxa3Ag03208-mRNA-1,281,7.05,30.0,6,NPA,NPA,Cell membrane
+Fxa3Bg03093,PIP,PIP2;2,GFF3 oficial,Fxa3Bg03093-mRNA-1,281,7.05,29.97,6,NPA,NPA,Cell membrane
+Fxa3Cg03061,PIP,PIP2;2,GFF3 oficial,Fxa3Cg03061-mRNA-1,281,7.05,29.98,6,NPA,NPA,Cell membrane
+Fxa3Dg02827,PIP,PIP2;2,GFF3 oficial,Fxa3Dg02827-mRNA-1,281,7.05,30.0,6,NPA,NPA,Cell membrane
+Fxa6Ag01549,PIP,PIP2;5,Exonerate (sustituido),mRNA_27801,314,7.64,33.16,6,NPA,NPA,Cell membrane
+Fxa6Ag01550,PIP,PIP2;5,GFF3 oficial,Fxa6Ag01550-mRNA-1,284,8.28,30.11,6,NPA,NPA,Cell membrane
+Fxa6Bg01475,PIP,PIP2;5,GFF3 oficial,Fxa6Bg01475-mRNA-1,284,6.94,29.97,6,NPA,NPA,Cell membrane
+Fxa6Bg01476,PIP,PIP2;5,GFF3 oficial,Fxa6Bg01476-mRNA-1,284,8.27,30.1,6,NPA,NPA,Cell membrane
+Fxa6Cg01396,PIP,PIP2;5,GFF3 oficial,Fxa6Cg01396-mRNA-1,287,8.27,30.33,6,NPA,NPA,Cell membrane
+Fxa6Cg01397,PIP,PIP2;5,GFF3 oficial,Fxa6Cg01397-mRNA-1,284,8.28,30.1,6,NPA,NPA,Cell membrane
+Fxa7Ag01972,PIP,PIP2;1,GFF3 oficial,Fxa7Ag01972-mRNA-1,285,8.94,30.36,6,NPA,NPA,Cell membrane
+Fxa7Bg01892,PIP,PIP2;1,GFF3 oficial,Fxa7Bg01892-mRNA-1,307,8.89,32.72,6,NPA,NPA,Cell membrane
+Fxa7Cg01769,PIP,PIP2;1,GFF3 oficial,Fxa7Cg01769-mRNA-1,287,8.73,30.54,6,NPA,NPA,Cell membrane
+Fxa7Dg01838,PIP,PIP2;1,GFF3 oficial,Fxa7Dg01838-mRNA-1,287,8.73,30.43,6,NPA,NPA,Cell membrane
+Fxa3Ag03414,TIP,TIP1;7,GFF3 oficial,Fxa3Ag03414-mRNA-1,254,4.72,25.97,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
+Fxa3Bg03276,TIP,TIP1;7,GFF3 oficial,Fxa3Bg03276-mRNA-1,254,4.72,25.95,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
+Fxa3Cg03258,TIP,TIP1;7,GFF3 oficial,Fxa3Cg03258-mRNA-1,254,4.72,25.92,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
+Fxa3Dg02998,TIP,TIP1;7,GFF3 oficial,Fxa3Dg02998-mRNA-1,254,4.72,25.94,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
+Fxa6Ag01681,TIP,TIP1;1,GFF3 oficial,Fxa6Ag01681-mRNA-1,253,5.18,26.06,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
+Fxa6Bg01580,TIP,TIP1;1,GFF3 oficial,Fxa6Bg01580-mRNA-1,253,5.18,26.04,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
+Fxa6Cg01508,TIP,TIP1;1,GFF3 oficial,Fxa6Cg01508-mRNA-1,253,5.18,26.04,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
+Fxa6Dg01485,TIP,TIP1;1,GFF3 oficial,Fxa6Dg01485-mRNA-1,253,5.18,26.04,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
+Fxa7Ag00344,TIP,TIP1;8,GFF3 oficial,Fxa7Ag00344-mRNA-1,254,4.85,25.78,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
+Fxa7Ag02144,TIP,TIP1;5,GFF3 oficial,Fxa7Ag02144-mRNA-1,252,5.49,25.86,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
+Fxa7Bg00386,TIP,TIP1;8,GFF3 oficial,Fxa7Bg00386-mRNA-1,254,4.85,25.83,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
+Fxa7Bg02050,TIP,TIP1;5,GFF3 oficial,Fxa7Bg02050-mRNA-1,252,5.49,25.86,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
+Fxa7Cg00335,TIP,TIP1;8,GFF3 oficial,Fxa7Cg00335-mRNA-1,254,4.85,25.83,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
+Fxa7Cg01932,TIP,TIP1;5,GFF3 oficial,Fxa7Cg01932-mRNA-1,252,5.29,25.83,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
+Fxa7Dg00308,TIP,TIP1;8,GFF3 oficial,Fxa7Dg00308-mRNA-1,254,4.85,25.83,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
+Fxa7Dg01994,TIP,TIP1;5,GFF3 oficial,Fxa7Dg01994-mRNA-1,252,5.49,25.82,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
+Fxa5Ag02099,TIP,TIP2;3,GFF3 oficial,Fxa5Ag02099-mRNA-1,249,4.73,25.28,6,NPA,NPA,Cell membrane
+Fxa5Bg02045,TIP,TIP2;3,GFF3 oficial,Fxa5Bg02045-mRNA-1,249,4.73,25.23,6,NPA,NPA,Cell membrane
+Fxa5Cg01808,TIP,TIP2;3,GFF3 oficial,Fxa5Cg01808-mRNA-1,249,4.9,25.27,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
+Fxa5Dg01850,TIP,TIP2;3,GFF3 oficial,Fxa5Dg01850-mRNA-1,249,4.9,25.18,6,NPA,NPA,Cell membrane
+Fxa6Ag03173,TIP,TIP2;1,GFF3 oficial,Fxa6Ag03173-mRNA-1,248,5.6,25.31,6,NPA,NPA,Lysosome/Vacuole
+Fxa6Bg02964,TIP,TIP2;1,GFF3 oficial,Fxa6Bg02964-mRNA-1,248,5.6,25.31,6,NPA,NPA,Lysosome/Vacuole
+Fxa6Dg02788,TIP,TIP2;1,GFF3 oficial,Fxa6Dg02788-mRNA-1,248,5.33,25.32,6,NPA,NPA,Lysosome/Vacuole
+Fxa5Ag02048,TIP,TIP3;1,GFF3 oficial,Fxa5Ag02048-mRNA-1,260,6.49,27.91,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
+Fxa5Bg01989,TIP,TIP3;1,Exonerate (sustituido),mRNA_32733,260,6.49,27.91,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
+Fxa5Cg01763,TIP,TIP3;1,GFF3 oficial,Fxa5Cg01763-mRNA-1,260,6.29,27.83,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
+Fxa5Dg01809,TIP,TIP3;1,GFF3 oficial,Fxa5Dg01809-mRNA-1,260,6.75,27.95,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
+Fxa2Ag03929,TIP,TIP4;2,GFF3 oficial,Fxa2Ag03929-mRNA-1,248,5.79,26.05,6,NPA,NPA,Lysosome/Vacuole
+Fxa2Bg03539,TIP,TIP4;2,GFF3 oficial,Fxa2Bg03539-mRNA-1,248,5.58,26.19,6,NPA,NPA,Cell membrane
+Fxa2Cg00636,TIP,TIP4;2,GFF3 oficial,Fxa2Cg00636-mRNA-1,248,5.79,26.14,6,NPA,NPA,Lysosome/Vacuole
+Fxa2Dg03205,TIP,TIP4;2,GFF3 oficial,Fxa2Dg03205-mRNA-1,248,5.8,26.15,6,NPA,NPA,Cell membrane
+Fxa7Ag02742,TIP,TIP5;2,GFF3 oficial,Fxa7Ag02742-mRNA-1,253,6.01,25.98,6,NPA,NPA,Cell membrane
+Fxa7Bg02566,TIP,TIP5;2,GFF3 oficial,Fxa7Bg02566-mRNA-1,253,6.89,26.23,6,NPA,NPA,Cell membrane
+Fxa7Cg02454,TIP,TIP5;2,GFF3 oficial,Fxa7Cg02454-mRNA-1,254,6.38,26.15,6,NPA,NPA,Cell membrane
+Fxa3Ag00839,NIP,NIP1;1,GFF3 oficial,Fxa3Ag00839-mRNA-1,270,9.01,28.87,6,NPA,NPA,Cell membrane
+Fxa3Ag00840,NIP,NIP1;1,Exonerate (sustituido),mRNA_48605,284,7.09,30.89,6,NPA,NPA,Lysosome/Vacuole
+Fxa3Bg00729,NIP,NIP1;1,GFF3 oficial,Fxa3Bg00729-mRNA-1,270,9.01,28.77,6,NPA,NPA,Cell membrane
+Fxa3Bg00730,NIP,NIP1;1,GFF3 oficial,Fxa3Bg00730-mRNA-1,271,8.85,29.2,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
+Fxa3Cg00714,NIP,NIP1;1,GFF3 oficial,Fxa3Cg00714-mRNA-1,270,9.01,28.86,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
+Fxa3Cg00715,NIP,NIP1;1,GFF3 oficial,Fxa3Cg00715-mRNA-1,271,9.25,29.13,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
+Fxa3Dg00712,NIP,NIP1;1,GFF3 oficial,Fxa3Dg00712-mRNA-1,270,9.17,28.96,6,NPA,NPA,Cell membrane
+Fxa3Dg00713,NIP,NIP1;1,GFF3 oficial,Fxa3Dg00713-mRNA-1,271,7.84,29.12,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
+Fxa6Ag00747,NIP,NIP1;2,GFF3 oficial,Fxa6Ag00747-mRNA-1,272,6.37,29.23,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
+Fxa6Ag00748,NIP,NIP1;2,GFF3 oficial,Fxa6Ag00748-mRNA-1,271,8.79,28.84,6,NPA,NPA,Cell membrane
+Fxa6Bg00716,NIP,NIP1;2,GFF3 oficial,Fxa6Bg00716-mRNA-1,270,7.78,28.65,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
+Fxa6Dg00623,NIP,NIP1;2,GFF3 oficial,Fxa6Dg00623-mRNA-1,272,6.65,29.34,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
+Fxa6Dg00624,NIP,NIP1;2,GFF3 oficial,Fxa6Dg00624-mRNA-1,271,8.44,28.8,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
+Fxa6Ag04860,NIP,NIP2;3,GFF3 oficial,Fxa6Ag04860-mRNA-1,274,8.76,28.78,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
+Fxa6Ag04861,NIP,NIP2;3,GFF3 oficial,Fxa6Ag04861-mRNA-1,282,8.72,30.05,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
+Fxa6Ag04862,NIP,NIP2;3,Exonerate (sustituido),mRNA_25656,281,9.02,30.03,6,NPA,NPA,Cell membrane
+Fxa6Bg04544,NIP,NIP2;3,Exonerate (sustituido),mRNA_19842,274,8.89,28.78,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
+Fxa6Bg04546,NIP,NIP2;3,GFF3 oficial,Fxa6Bg04546-mRNA-1,282,9.04,29.91,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
+Fxa6Cg04054,NIP,NIP2;3,Exonerate (sustituido),mRNA_16151,274,8.42,28.97,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
+Fxa6Cg04057,NIP,NIP2;3,Exonerate (sustituido),mRNA_16526,283,8.73,30.16,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
+Fxa6Dg04288,NIP,NIP2;3,GFF3 oficial,Fxa6Dg04288-mRNA-1,282,9.04,30.04,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
+Fxa6Dg04289,NIP,NIP2;3,GFF3 oficial,Fxa6Dg04289-mRNA-1,274,9.15,28.99,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
+Fxa4Ag03283,NIP,NIP4;2,Exonerate (sustituido),mRNA_40751,283,9.08,30.21,6,NPA,NPA,Cell membrane
+Fxa4Bg03148,NIP,NIP4;2,Exonerate (sustituido),mRNA_39706,284,8.99,30.34,6,NPA,NPA,Cell membrane
+Fxa4Cg03033,NIP,NIP4;2,Exonerate (sustituido),mRNA_38688,283,9.08,30.19,6,NPA,NPA,Cell membrane
+Fxa4Dg02771,NIP,NIP4;2,Exonerate (sustituido),mRNA_37544,283,9.08,30.24,6,NPA,NPA,Cell membrane
+Fxa5Ag01079,NIP,NIP5;1,GFF3 oficial,Fxa5Ag01079-mRNA-1,301,8.17,31.2,6,NPS,NPV,Cell membrane|Lysosome/Vacuole
+Fxa5Bg01013,NIP,NIP5;1,GFF3 oficial,Fxa5Bg01013-mRNA-1,275,8.29,28.27,6,NPS,NPV,Cell membrane
+Fxa5Cg00895,NIP,NIP5;1,Exonerate (sustituido),mRNA_31465,336,8.09,35.09,6,NPS,NPV,Cell membrane
+Fxa6Ag04017,NIP,NIP5;3,Exonerate (sustituido),mRNA_24155,238,8.79,24.7,6,NPS,NPA,Cell membrane
+Fxa6Ag02836,NIP,NIP6;1,GFF3 oficial,Fxa6Ag02836-mRNA-1,306,8.26,31.59,6,NPA,NPV,Cell membrane
+Fxa6Bg02677,NIP,NIP6;1,GFF3 oficial,Fxa6Bg02677-mRNA-1,306,8.82,31.54,6,NPA,NPV,Cell membrane
+Fxa6Cg02462,NIP,NIP6;1,GFF3 oficial,Fxa6Cg02462-mRNA-1,306,8.59,31.57,6,NPA,NPV,Cell membrane
+Fxa6Dg02490,NIP,NIP6;1,GFF3 oficial,Fxa6Dg02490-mRNA-1,306,8.59,31.56,6,NPA,NPV,Cell membrane
+Fxa4Bg01616,NIP,NIP7;1,GFF3 oficial,Fxa4Bg01616-mRNA-1,291,6.64,30.48,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
+Fxa4Cg01442,NIP,NIP7;1,GFF3 oficial,Fxa4Cg01442-mRNA-1,284,6.69,29.72,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
+Fxa4Dg01302,NIP,NIP7;1,GFF3 oficial,Fxa4Dg01302-mRNA-1,283,6.69,29.84,6,NPA,NPA,Cell membrane|Lysosome/Vacuole
+Fxa6Ag00070,SIP,SIP1;1,Exonerate (sustituido),mRNA_27158,325,9.74,34.44,6,NPT,NPA,Endoplasmic reticulum
+Fxa6Ag04289,SIP,SIP1;3,GFF3 oficial,Fxa6Ag04289-mRNA-1,241,10.05,25.44,6,NPS,NPI,Endoplasmic reticulum
+Fxa6Ag04290,SIP,SIP1;3,GFF3 oficial,Fxa6Ag04290-mRNA-1,241,9.87,25.83,6,NPS,NPA,Endoplasmic reticulum
+Fxa6Bg03993,SIP,SIP1;3,GFF3 oficial,Fxa6Bg03993-mRNA-1,241,10.05,25.45,6,NPS,NPI,Endoplasmic reticulum
+Fxa6Bg04002,SIP,SIP1;3,Exonerate (sustituido),mRNA_19416,225,9.78,23.68,6,NPS,NPA,Cell membrane
+Fxa6Cg00057,SIP,SIP1;1,Exonerate (sustituido),mRNA_16625,237,9.17,25.09,6,NPT,NPA,Endoplasmic reticulum
+Fxa6Cg03541,SIP,SIP1;3,GFF3 oficial,Fxa6Cg03541-mRNA-1,241,10.05,25.41,6,NPS,NPI,Endoplasmic reticulum
+Fxa6Cg03543,SIP,SIP1;3,GFF3 oficial,Fxa6Cg03543-mRNA-1,241,9.87,25.77,6,NPS,NPA,Endoplasmic reticulum
+Fxa6Dg03788,SIP,SIP1;3,GFF3 oficial,Fxa6Dg03788-mRNA-1,241,10.05,25.5,6,NPS,NPI,Endoplasmic reticulum
+Fxa1Ag02792,SIP,SIP2;2,GFF3 oficial,Fxa1Ag02792-mRNA-1,232,9.75,25.25,6,NPL,NPA,Endoplasmic reticulum
+Fxa1Cg02650,SIP,SIP2;2,GFF3 oficial,Fxa1Cg02650-mRNA-1,232,9.52,25.21,6,NPL,NPA,Endoplasmic reticulum
+Fxa1Dg02410,SIP,SIP2;2,GFF3 oficial,Fxa1Dg02410-mRNA-1,232,9.71,25.23,6,NPL,NPA,Endoplasmic reticulum
+Fxa2Ag00187,XIP,XIP1;1,GFF3 oficial,Fxa2Ag00187-mRNA-1,286,6.73,30.69,6,SPV,NPA,Cell membrane
+Fxa2Dg00213,XIP,XIP1;1,GFF3 oficial,Fxa2Dg00213-mRNA-1,286,6.53,30.73,6,SPV,NPA,Cell membrane
+Fxa2Ag00184,XIP,XIP2;1,Exonerate (sustituido),mRNA_54367,318,8.21,34.26,6,NPV,NPA,Cell membrane
+Fxa2Bg00218,XIP,XIP2;1,GFF3 oficial,Fxa2Bg00218-mRNA-1,332,7.71,35.82,6,NPV,NPA,Cell membrane
+Fxa2Bg00222,XIP,XIP2;1,GFF3 oficial,Fxa2Bg00222-mRNA-1,332,7.7,35.8,6,NPV,NPA,Cell membrane
+Fxa2Dg00210,XIP,XIP2;1,GFF3 oficial,Fxa2Dg00210-mRNA-1,318,8.21,34.39,6,NPV,NPA,Cell membrane
