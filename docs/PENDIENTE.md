@@ -70,7 +70,15 @@ Falta **ejecutar cada script y confirmar que reproduce sus cifras**, no solo el 
 - [ ] `analisis_motivos_unificado.py` — necesita `clasificacion_filogenetica_simple.csv`, que genera `clasificacion_integrada_aqp.py`; confirmar el orden de ejecución (clasificación → motivos).
 - [ ] Scripts de `5.4_filogenia/` (comparar_arboles, rename_tree_nodes, update_prune_ids) — verificar que leen los treefiles de `data/filogenia/`.
 - [ ] Scripts R (`07_de_analysis.R`, `08_basal_expression.R`, homeólogos) — requieren entorno R + DESeq2.
-- [ ] Scripts `compose_fig*.py` — dependen de outputs intermedios del pipeline RNA-seq (PDFs de PCA, `design_basal.csv`) que se generan en pasos previos; documentar/añadir esas dependencias.
+- [ ] **Refactor de los 5 `compose_fig*.py` a `config.RNASEQ_DIR`** (figuras RNA-seq 6-9 desde el repo). Estado: los inputs YA están en el repo (`data/rna_seq/{basal,de,homeologos}/` + `design_basal.csv` + `basal/{pca_aquaporins.pdf, correlation_samples.pdf}`). Falta editar cada compose para que `base` apunte a `config.RNASEQ_DIR` en vez de a `TFG_RNA_SEQ_ROOT/results/...`, ajustando las subrutas:
+  - `compose_fig6_basal_subfamilia.py`: `base/results/basal_aquaporins/basal_aquaporins_summary.csv` → `config.RNASEQ_BASAL_DIR`.
+  - `compose_fig7_validacion_pca.py`: `base/results/basal_aquaporins/{pca_aquaporins.pdf, correlation_samples.pdf}` → `config.RNASEQ_BASAL_DIR` (usa PyMuPDF/fitz).
+  - `compose_fig_de_subfamilia.py`: `base/results/de_leaf|de_roots/de_aquaporins_*.csv` → `config.RNASEQ_DE_DIR`.
+  - `compose_fig_homeologos_basal.py`: `homeolog_groups_summary.tsv`, `results/homeolog_analysis/collapsed_tpm.csv`, `dominance_overall.csv` → `config.RNASEQ_HOM_DIR`; `design/design_basal.csv` → `config.RNASEQ_DIR / 'design_basal.csv'`.
+  - `compose_fig_tandems_schema.py`: datos embebidos, revisar si usa `base`.
+  - Verificar cada figura al ejecutar (requieren matplotlib, PyMuPDF/fitz, adjustText).
+- [ ] **Refactor del script del Anexo C** (`annexes/C_pca_robustez/Anexo_C_script_reproducible.py`) a config.py: lee `PCA_Coordenadas_Finales.csv` (output del PCA, ahora en `results/profiling_aqp_motifs_final/`) y `tabla_aquaporinas_traduccion.tabular` (en `data/curado/`). Es el PCA con/sin parciales (Anexo C + F).
+- [ ] Scripts R (`07_de_analysis.R`, `08_basal_expression.R`, homeólogos) — requieren entorno R + DESeq2.
 - [ ] Auditoría completa reejecutando todo el repo (acordada con Noé).
 
 ## 6. Sub-proyecto relacionado (fuera de este repo)
