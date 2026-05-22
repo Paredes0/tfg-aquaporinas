@@ -53,7 +53,7 @@ def banner(title):
     print("\n" + "="*80 + "\n" + f" {title} ".center(80, " ") + "\n" + "="*80)
 
 # ─── PASO 1: MAPEO Y HUELLA DE MOTIVOS ───────────────────────────────────────
-banner("PASO 1: GENERACIÓN DE HUELLA ESTRUCTURAL (M1-M12)")
+banner("PASO 1: GENERACIÓN DE HUELLA ESTRUCTURAL (MEME final, M1-M15)")
 
 df_tab = pd.read_csv(os.path.join(BASE_DIR, 'tabla_aquaporinas_traduccion.tabular'), sep='\t')
 exo_to_gene = {str(r['mRNA_exonerate_id']): r['gene_id'] for _, r in df_tab.iterrows() if pd.notna(r.get('mRNA_exonerate_id'))}
@@ -149,31 +149,63 @@ def parse_fimo_missing(filepath):
                     res[seq_name].add(motif)
     return res
 
-MEME_COMBINED = os.path.join(BASE_DIR, 'MEME_exonerate_gff3_aqp.txt')
-all_motifs = parse_meme_combined_block(MEME_COMBINED)
-FIMO_MISSING = os.path.join(GDR_DIR, 'motifs_aqp_missing.tsv')
-all_motifs.update(parse_fimo_missing(FIMO_MISSING))
-print(f"  Secuencias parseadas del MEME (+FIMO): {len(all_motifs)}")
+MEME_FINAL = os.path.join(BASE_DIR, 'ALL_AQP.txt')
 
-# ── Seleccionar solo los motivos de la secuencia elegida por fuente_seq ──
+def parse_meme_final_diagram(path):
+    """ALL_AQP.txt (MEME final sobre las 121 curadas, 15 motivos): {gene_id: set(Mn)}.
+    Parsea la sección MOTIF DIAGRAM; el gene_id se extrae del nombre de secuencia
+    'PIP1;1-Fxa7Dg02199' -> 'Fxa7Dg02199'."""
+    if not os.path.exists(path):
+        print(f"  [WARN] No se encontró: {path}")
+        return {}
+    content = open(path, encoding='utf-8').read()
+    idx = content.find("SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM")
+    if idx < 0:
+        return {}
+    seq_motifs, cur, diag = {}, None, ""
+    for line in content[idx:].split("\n")[2:]:
+        if line.startswith("-------------"):
+            break
+        if not line.strip() or line.startswith("*") or line.startswith("----"):
+            if cur:
+                seq_motifs[cur] = diag
+                cur, diag = None, ""
+            continue
+        if not line.startswith(" ") and not line.startswith("\t"):
+            if cur:
+                seq_motifs[cur] = diag
+            parts = line.split()
+            cur = parts[0]
+            diag = parts[2] if len(parts) > 2 else ""
+        else:
+            diag += line.strip()
+        if diag.endswith("\\"):
+            diag = diag[:-1]
+    if cur and cur not in seq_motifs:
+        seq_motifs[cur] = diag
+    _re = re.compile(r"\[(\d+)\(")
+    out = {}
+    for seq, d in seq_motifs.items():
+        gid = seq.split("-", 1)[1].split("-")[0] if "-" in seq else seq
+        out[gid] = {f"M{m}" for m in _re.findall(d)}
+    return out
+
+final_motifs = parse_meme_final_diagram(MEME_FINAL)
+print(f"  Secuencias parseadas del MEME final (ALL_AQP, 15 motivos): {len(final_motifs)}")
+
+# ── presence_map por gene_id desde el MEME final (las 121 curadas) ──
+# Las parciales no entraron en el MEME final -> sin motivos (hover vacío en motivos).
 presence_map = {}
 mapped_count = 0
-missing_ids = []
-for gid, fasta_id in selected_fasta_id.items():
-    if fasta_id in all_motifs:
-        presence_map[gid] = all_motifs[fasta_id]
+for gid in selected_fasta_id:
+    if gid in final_motifs:
+        presence_map[gid] = final_motifs[gid]
         mapped_count += 1
     else:
-        missing_ids.append((gid, fasta_id))
-        presence_map[gid] = set()  # Sin motivos asignados
+        presence_map[gid] = set()
+print(f"  Genes con motivos del MEME final: {mapped_count}/{len(selected_fasta_id)}")
 
-print(f"  Genes mapeados correctamente: {mapped_count}/{len(selected_fasta_id)}")
-if missing_ids:
-    print(f"  [WARN] Genes sin match en MEME ({len(missing_ids)}):")
-    for gid, fid in missing_ids[:10]:
-        print(f"    {gid} -> esperaba '{fid}' en MEME")
-
-motif_cols = [f"M{i}" for i in range(1, 13)]
+motif_cols = [f"M{i}" for i in range(1, 16)]
 motif_rows = []
 for gid, found in presence_map.items():
     row = {'ID': gid}
