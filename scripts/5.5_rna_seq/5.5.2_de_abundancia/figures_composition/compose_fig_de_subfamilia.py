@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
@@ -7,7 +8,7 @@ from scipy import stats
 from pathlib import Path
 from adjustText import adjust_text
 
-base = Path("/home/noe/work/RNA-seq_test/results")
+base = Path(os.environ.get("TFG_RNA_SEQ_ROOT","/home/noe/work/RNA-seq_test")+"/results")
 sf_colors = {"PIP": "#E74C3C", "TIP": "#3498DB", "NIP": "#2ECC71", "SIP": "#F39C12", "XIP": "#9B59B6"}
 subfams = ["PIP", "TIP", "NIP", "SIP", "XIP"]
 

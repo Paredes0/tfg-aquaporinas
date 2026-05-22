@@ -32,9 +32,16 @@ from Bio.SeqUtils.ProtParam import ProteinAnalysis
 import plotly.express as px
 
 # ─── CONFIGURACIÓN ───────────────────────────────────────────────────────────
-BASE_DIR = r'c:\Users\Usuario\Desktop\resultados finales\analisis proteinas aquaporina'
-GDR_DIR = os.path.join(r'c:\Users\Usuario\Desktop\resultados finales', 'GDR_fxa')
-OUT = os.path.join(BASE_DIR, 'profiling_aqp_motifs_final')
+import sys as _sys
+from pathlib import Path as _Path
+_sys.path.insert(0, str(_Path(__file__).resolve().parents[2]))
+from scripts.common import config as _cfg
+
+# Inputs: data/curado/ del repo (los datos GDR viven en la misma carpeta).
+BASE_DIR = str(_cfg.CURADO_DIR)
+GDR_DIR = str(_cfg.GDR_DIR)
+# Outputs: results/ del repo (no versionado).
+OUT = str(_cfg.RESULTS_DIR / 'profiling_aqp_motifs_final')
 os.makedirs(OUT, exist_ok=True)
 COLOR_MAP = {
     'PIP': '#E74C3C', 'TIP': '#3498DB', 'NIP': '#2ECC71',

@@ -1,9 +1,10 @@
+import os
 import fitz
 import matplotlib.pyplot as plt
 from pathlib import Path
 import numpy as np
 
-base = Path("/home/noe/work/RNA-seq_test/results/basal_aquaporins")
+base = Path(os.environ.get("TFG_RNA_SEQ_ROOT","/home/noe/work/RNA-seq_test")+"/results/basal_aquaporins")
 out_pdf = base / "figura7_validacion.pdf"
 out_png = base / "figura7_validacion.png"
 

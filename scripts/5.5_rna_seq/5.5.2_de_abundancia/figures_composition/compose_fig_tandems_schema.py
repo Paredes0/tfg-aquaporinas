@@ -1,3 +1,4 @@
+import os
 """
 Figura 9 — Duplicaciones tandem pre-poliploidizacion en el clado NIP1.
 
@@ -771,7 +772,7 @@ fig.subplots_adjust(left=0.06, right=0.85, top=0.97, bottom=0.05, hspace=0.30)
 # ---------------------------------------------------------------------------
 # Outputs
 # ---------------------------------------------------------------------------
-base = Path("/home/noe/work/RNA-seq_test")
+base = Path(os.environ.get("TFG_RNA_SEQ_ROOT","/home/noe/work/RNA-seq_test")+"")
 out_dir = base / "results" / "homeolog_analysis"
 out_dir.mkdir(parents=True, exist_ok=True)
 

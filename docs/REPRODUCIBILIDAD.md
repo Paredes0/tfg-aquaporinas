@@ -1,6 +1,33 @@
 # Reproducibilidad del TFG — guía paso a paso
 
-> Esta guía explica cómo reproducir los resultados del TFG desde cero, partiendo de los datos primarios públicos.
+> Esta guía explica cómo reproducir los resultados del TFG. Hay **dos niveles** de reproducción según de dónde se parta.
+
+## Dos niveles de reproducción
+
+**Nivel 1 — Reproducción del análisis (autocontenida en el repo).**
+El curado (§5.2-5.3), la filogenia (§5.4, soportes del Anexo E) y las figuras a partir de las matrices derivadas se reproducen **directamente con el repo**, sin descargas: los datos derivados están en `data/` y los scripts los leen vía `scripts/common/config.py`. Ejemplo verificado:
+
+```bash
+python scripts/5.2_5.3_homologia_curacion/profiling_final_integrated.py
+# → reproduce las 121 acuaporinas funcionales (PCA + Random Forest) leyendo de data/curado/
+```
+
+**Nivel 2 — Reproducción desde los datos primarios (la "primera parte").**
+Regenerar `data/` desde cero (genoma + lecturas crudas) requiere los datos primarios pesados, que **no** se incluyen por tamaño. Esta es la parte que un tercero debe montar por su cuenta:
+
+| Punto de entrada | Qué es | Cómo obtenerlo |
+|---|---|---|
+| **Genoma 'Benihoppe'** (FASTA + GFF3) | Genoma de referencia alo-octoploide (~600 MB) | Descargar de [Genome Database for Rosaceae](https://www.rosaceae.org/species/fragaria/fragaria_x_ananassa) |
+| **22 muestras RNA-seq** | Lecturas paired-end (~40 GB) | NCBI SRA, BioProject `PRJNA1010234` |
+
+### Sobre los workflows Galaxy (`.ga`)
+
+Los dos `.ga` de `workflows/galaxy/` definen la **predicción por homología** (§5.2) y el **preprocesamiento RNA-seq** (§5.5.1). **No se ejecutan por línea de comandos**: son definiciones de workflow de Galaxy y se usan de una de estas formas:
+
+1. **Importarlos en una instancia Galaxy** (web): `Workflow → Import → Upload File` → seleccionar el `.ga`, subir el genoma como input y ejecutar. También se pueden ejecutar desde las URLs públicas (ver `workflows/galaxy/README.md`).
+2. **Vía la API de Galaxy** con [BioBlend](https://bioblend.readthedocs.io) (Python), para automatizar la subida del genoma y el lanzamiento.
+
+Para una réplica 100 % en línea de comandos sin Galaxy, habría que reimplementar sus pasos con las herramientas equivalentes (tblastn de BLAST+, BEDtools, Exonerate); el `.ga` documenta los parámetros exactos de cada paso.
 
 ## Datos primarios necesarios
 

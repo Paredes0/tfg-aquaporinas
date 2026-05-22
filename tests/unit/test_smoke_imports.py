@@ -45,8 +45,11 @@ def test_common_config_imports() -> None:
     """El módulo común scripts.common.config debe poder importarse."""
     from scripts.common import config  # noqa: F401
 
-    assert hasattr(config, 'DATA_ROOT')
-    assert hasattr(config, 'paths')
+    assert hasattr(config, 'REPO_ROOT')
+    assert hasattr(config, 'DATA_DIR')
+    assert hasattr(config, 'CURADO_DIR')
+    assert hasattr(config, 'FILO_DIR')
+    assert hasattr(config, 'RNASEQ_DIR')
 
 
 def test_at_least_ten_scripts_present() -> None:

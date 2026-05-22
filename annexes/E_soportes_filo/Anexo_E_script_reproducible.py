@@ -39,8 +39,10 @@ import matplotlib.pyplot as plt
 # misma reconstrucción tras podar la rama parcial Fxa6Dg03790 (281 hojas, 276
 # nodos); estadísticos casi idénticos. Queda como último recurso.
 # Para reproducir en otra máquina, exportar el .treefile y apuntar TFG_TREEFILE.
+_REPO_TREE = str(Path(__file__).resolve().parents[2] / "data" / "filogenia" / "arbol_acuaporinas.treefile")
 _CANDIDATE_TREES = [
     os.environ.get("TFG_TREEFILE", ""),
+    _REPO_TREE,  # copia incluida en el repo (data/filogenia/) → autorreproducible
     r"C:\Users\Usuario\Desktop\resultados finales\TFG\TFG-PRACTICAS NOE\RESULTADOS\Filogenia\FINAL\final_without_partials\arbol_acuaporinas.treefile",
     r"C:\Users\Usuario\Downloads\iqtree-3.0.1-Windows\iqtree-3.0.1-Windows\bin\final_without_partials\arbol_acuaporinas.treefile",
     os.path.join(

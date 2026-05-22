@@ -1,207 +1,84 @@
 """
-Configuración centralizada de rutas.
+config.py — Configuración centralizada de rutas del repositorio.
 
-Reemplaza las rutas hardcoded que aparecían en los scripts originales
-(c:\\Users\\Lab.Micaela VI\\Desktop\\Noe Paredes\\...).
+Por defecto, los datos viven en la carpeta `data/` del PROPIO repositorio, de modo
+que el pipeline es autorreproducible tras un `git clone` (no depende de rutas de la
+máquina original). Estructura esperada:
 
-Uso desde un script:
-    from scripts.common.config import paths
+    data/
+    ├── curado/      Inputs de §5.2-5.3 (FASTAs, DeepTMHMM, MEME, Pepstats, DeepLoc,
+    │                tablas de veredictos, datos GDR). Nombres originales.
+    ├── filogenia/   Árbol final (.treefile, .iqtree, .contree) + alineamiento ClipKIT.
+    └── rna_seq/     Matrices derivadas (basal/, de/, homeologos/).
 
-    df = pd.read_csv(paths.tabla_traduccion(), sep='\\t')
+Uso desde un script del repo:
 
-Override mediante variable de entorno:
-    export TFG_DATA_ROOT="C:/Users/Usuario/Desktop/resultados finales"
-    export TFG_RNA_SEQ_ROOT="Z:/work/RNA-seq_test"
+    import sys
+    from pathlib import Path
+    sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+    from scripts.common import config
+
+    df = pd.read_csv(config.CURADO_DIR / 'tabla_aquaporinas_traduccion.tabular', sep='\\t')
+
+Overrides por variable de entorno (opcionales):
+    TFG_DATA_ROOT     → apunta a otra copia con la misma estructura data/ (curado, filogenia, rna_seq).
+    TFG_RESULTS_DIR   → carpeta donde los scripts escriben sus outputs (por defecto results/).
 """
 from __future__ import annotations
 
 import os
 from pathlib import Path
 
+# ── Raíz del repositorio (este archivo está en scripts/common/) ──────────────
+REPO_ROOT: Path = Path(__file__).resolve().parents[2]
 
-def _env_path(var_name: str, default: str) -> Path:
-    """Devuelve Path desde variable de entorno o default."""
-    return Path(os.environ.get(var_name, default))
+# ── Raíz de datos ─────────────────────────────────────────────────────────────
+# Por defecto: data/ del repo. Override global con TFG_DATA_ROOT.
+_data_env = os.environ.get("TFG_DATA_ROOT")
+DATA_DIR: Path = Path(_data_env) if _data_env else REPO_ROOT / "data"
 
+# ── Subcarpetas de datos ──────────────────────────────────────────────────────
+CURADO_DIR: Path = DATA_DIR / "curado"          # §5.2-5.3 predicción + curación
+FILO_DIR: Path = DATA_DIR / "filogenia"         # §5.4 reconstrucción filogenética
+RNASEQ_DIR: Path = DATA_DIR / "rna_seq"         # §5.5 RNA-seq
+RNASEQ_BASAL_DIR: Path = RNASEQ_DIR / "basal"
+RNASEQ_DE_DIR: Path = RNASEQ_DIR / "de"
+RNASEQ_HOM_DIR: Path = RNASEQ_DIR / "homeologos"
 
-# ── Raíces principales ──────────────────────────────────────────────────────
-# Donde viven los datos primarios del TFG (genoma, FASTA, tablas, etc.).
-DATA_ROOT: Path = _env_path(
-    'TFG_DATA_ROOT',
-    r'C:\Users\Usuario\Desktop\resultados finales'
-)
+# Los datos GDR (15 secuencias MAKER) se almacenan junto a los de curado.
+GDR_DIR: Path = CURADO_DIR
 
-# Donde vive el pipeline de RNA-seq (puede estar en otra unidad)
-RNA_SEQ_ROOT: Path = _env_path(
-    'TFG_RNA_SEQ_ROOT',
-    r'Z:\work\RNA-seq_test'
-)
-
-# Carpeta GDR (Genome Database for Rosaceae) auxiliar
-GDR_ROOT: Path = _env_path(
-    'TFG_GDR_ROOT',
-    str(DATA_ROOT / 'GDR_fxa')
-)
+# ── Carpeta de salida (outputs intermedios / resultados regenerados) ──────────
+RESULTS_DIR: Path = Path(os.environ.get("TFG_RESULTS_DIR", str(REPO_ROOT / "results")))
 
 
-# ── Subdirectorios de DATA_ROOT ─────────────────────────────────────────────
-class Paths:
-    """Accesores a archivos individuales. Cada método devuelve una Path concreta."""
-
-    # 5.1 — Curaduría
-    @staticmethod
-    def proteinas_dir() -> Path:
-        return DATA_ROOT / 'analisis proteinas aquaporina'
-
-    @staticmethod
-    def tabla_traduccion() -> Path:
-        return Paths.proteinas_dir() / 'tabla_aquaporinas_traduccion.tabular'
-
-    @staticmethod
-    def clasificacion_simple() -> Path:
-        return Paths.proteinas_dir() / 'clasificacion_filogenetica_simple.csv'
-
-    @staticmethod
-    def fasta_gff3_peptidos() -> Path:
-        return Paths.proteinas_dir() / 'aquaporin_peptides.fasta'
-
-    @staticmethod
-    def fasta_exonerate() -> Path:
-        return Paths.proteinas_dir() / 'exonerate_genes_aqp.fasta'
-
-    @staticmethod
-    def meme_combined() -> Path:
-        return Paths.proteinas_dir() / 'MEME_exonerate_gff3_aqp.txt'
-
-    @staticmethod
-    def topologias_gff3() -> Path:
-        return Paths.proteinas_dir() / 'predicted_topologies_gff3.3line'
-
-    @staticmethod
-    def topologias_exonerate() -> Path:
-        return Paths.proteinas_dir() / 'predicted_topologies_exonerate.3line'
-
-    @staticmethod
-    def pepstats_gff3() -> Path:
-        return Paths.proteinas_dir() / 'pepstats_gff3.txt'
-
-    @staticmethod
-    def pepstats_exonerate() -> Path:
-        return Paths.proteinas_dir() / 'pepstats_exonerate.txt'
-
-    @staticmethod
-    def deeploc_gff3() -> Path:
-        return Paths.proteinas_dir() / 'deeploc_gff3.csv'
-
-    @staticmethod
-    def deeploc_exonerate() -> Path:
-        return Paths.proteinas_dir() / 'deeploc_exonerate.csv'
-
-    # 5.2 — Filogenia
-    @staticmethod
-    def treefile_gff3() -> Path:
-        return Paths.proteinas_dir() / 'fxa_aqp_gff3_129_clipkit.fasta.treefile'
-
-    @staticmethod
-    def iqtree_gff3() -> Path:
-        return Paths.proteinas_dir() / 'fxa_aqp_gff3_129_clipkit.fasta.iqtree'
-
-    @staticmethod
-    def treefile_exonerate() -> Path:
-        return Paths.proteinas_dir() / 'exonerate_aqp.treefile'
-
-    @staticmethod
-    def iqtree_exonerate() -> Path:
-        return Paths.proteinas_dir() / 'exonerate_aqp.iqtree'
-
-    @staticmethod
-    def treefile_final() -> Path:
-        """Árbol final BUENO de 281 secuencias funcionales."""
-        return RNA_SEQ_ROOT / 'arbol_acuaporinas_2_bueno_sin_parciales.treefile'
-
-    # 5.3–5.4 — RNA-seq
-    @staticmethod
-    def rna_seq_dir() -> Path:
-        return DATA_ROOT / 'RNA-seq'
-
-    @staticmethod
-    def basal_aquaporins() -> Path:
-        return Paths.rna_seq_dir() / 'basal_aquaporins'
-
-    @staticmethod
-    def basal_tpm() -> Path:
-        return Paths.basal_aquaporins() / 'basal_aquaporins_tpm.csv'
-
-    @staticmethod
-    def de_leaf_dir() -> Path:
-        return Paths.rna_seq_dir() / 'de_leaf'
-
-    @staticmethod
-    def de_roots_dir() -> Path:
-        return Paths.rna_seq_dir() / 'de_roots'
-
-    # 5.5 — Reanotación
-    @staticmethod
-    def reanotacion_candidates() -> Path:
-        return Paths.basal_aquaporins() / 'reannotation_candidates.tsv'
-
-    # 5.6 — Homeólogos
-    @staticmethod
-    def homeolog_groups_summary() -> Path:
-        return DATA_ROOT / 'aqp_finales' / 'homeolog_groups_summary.tsv'
-
-    @staticmethod
-    def homeolog_analysis_dir() -> Path:
-        return Paths.rna_seq_dir() / 'homeolog_analysis'
-
-    @staticmethod
-    def dominant_subgenome() -> Path:
-        return Paths.homeolog_analysis_dir() / 'dominant_subgenome.csv'
+def ensure_results() -> Path:
+    """Crea la carpeta de resultados si no existe y la devuelve."""
+    RESULTS_DIR.mkdir(parents=True, exist_ok=True)
+    return RESULTS_DIR
 
 
-paths = Paths()
+def verify_inputs(strict: bool = False) -> dict[str, bool]:
+    """Comprueba que las carpetas de datos existen. Útil para depuración."""
+    checks = {
+        "data/curado": CURADO_DIR.is_dir(),
+        "data/filogenia": FILO_DIR.is_dir(),
+        "data/rna_seq": RNASEQ_DIR.is_dir(),
+    }
+    if strict:
+        for name, ok in checks.items():
+            if not ok:
+                raise FileNotFoundError(f"No existe la carpeta de datos: {name} (bajo {DATA_DIR})")
+    return checks
 
 
-def verify_paths(strict: bool = False) -> dict[str, bool]:
-    """
-    Comprueba qué archivos existen en la configuración actual.
-    Útil para debugging y para los tests de smoke.
-
-    Args:
-        strict: si True, lanza FileNotFoundError ante el primer archivo faltante.
-
-    Returns:
-        Dict {nombre_metodo: existe}
-    """
-    result = {}
-    for name in dir(Paths):
-        if name.startswith('_'):
-            continue
-        method = getattr(Paths, name)
-        if not callable(method):
-            continue
-        try:
-            p = method()
-            exists = p.exists()
-            result[name] = exists
-            if strict and not exists:
-                raise FileNotFoundError(f"No existe: {p} (método paths.{name}())")
-        except Exception as e:
-            result[name] = False
-            if strict:
-                raise
-    return result
-
-
-if __name__ == '__main__':
-    print(f"DATA_ROOT     = {DATA_ROOT}")
-    print(f"RNA_SEQ_ROOT  = {RNA_SEQ_ROOT}")
-    print(f"GDR_ROOT      = {GDR_ROOT}")
+if __name__ == "__main__":
+    print(f"REPO_ROOT  = {REPO_ROOT}")
+    print(f"DATA_DIR   = {DATA_DIR}")
+    print(f"CURADO_DIR = {CURADO_DIR}")
+    print(f"FILO_DIR   = {FILO_DIR}")
+    print(f"RNASEQ_DIR = {RNASEQ_DIR}")
+    print(f"RESULTS_DIR= {RESULTS_DIR}")
     print()
-    print("Verificación de paths:")
-    results = verify_paths(strict=False)
-    for name, exists in sorted(results.items()):
-        mark = '✓' if exists else '✗'
-        print(f"  {mark} paths.{name}()")
-    n_ok = sum(results.values())
-    print(f"\n  Total: {n_ok}/{len(results)} archivos encontrados.")
+    for name, ok in verify_inputs().items():
+        print(f"  [{'OK' if ok else '  '}] {name}")

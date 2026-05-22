@@ -29,8 +29,13 @@ plt.rcParams['savefig.dpi'] = 300
 plt.rcParams['font.size'] = 10
 plt.rcParams['font.family'] = 'DejaVu Sans'
 
-BASE = r'c:\Users\Usuario\Desktop\resultados finales\analisis proteinas aquaporina'
-OUT  = os.path.join(BASE, 'analisis_motivos_unificado')
+import sys as _sys
+from pathlib import Path as _Path
+_sys.path.insert(0, str(_Path(__file__).resolve().parents[2]))
+from scripts.common import config as _cfg
+
+BASE = str(_cfg.CURADO_DIR)
+OUT  = str(_cfg.RESULTS_DIR / 'analisis_motivos_unificado')
 os.makedirs(OUT, exist_ok=True)
 
 COLOR_MAP = {

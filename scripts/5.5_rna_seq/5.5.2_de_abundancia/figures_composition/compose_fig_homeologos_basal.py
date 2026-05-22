@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
@@ -7,7 +8,7 @@ from matplotlib.lines import Line2D
 from scipy import stats
 from pathlib import Path
 
-base = Path("/home/noe/work/RNA-seq_test")
+base = Path(os.environ.get("TFG_RNA_SEQ_ROOT","/home/noe/work/RNA-seq_test")+"")
 hom = base / "results" / "homeolog_analysis"
 
 hg_sum = pd.read_csv(base / "homeolog_groups_summary.tsv", sep="\t")

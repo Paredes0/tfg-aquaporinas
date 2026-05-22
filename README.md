@@ -21,12 +21,18 @@ tfg-aquaporinas/
 │   │   ├── 5.5.1_obtencion_procesamiento/   Pipeline HISAT2 + featureCounts
 │   │   ├── 5.5.2_de_abundancia/             DESeq2 + figuras compuestas
 │   │   └── 5.5.3_homeologos/                Agrupamiento + dominancia
-│   └── common/                       Configuración compartida (paths)
+│   └── common/                       config.py — rutas centralizadas (apunta a data/)
+├── data/                             Datos derivados para reproducir el análisis
+│   ├── curado/                       Inputs §5.2-5.3 (FASTAs, DeepTMHMM, MEME, Pepstats, DeepLoc, GDR)
+│   ├── filogenia/                    Árbol final (.treefile, .iqtree) + alineamiento ClipKIT
+│   └── rna_seq/                      Matrices basal, DE y homeólogos
 ├── workflows/galaxy/                 Workflows Galaxy publicados (.ga + URLs)
 ├── annexes/                          Anexos del TFG (A–I)
 ├── tests/                            133 tests automáticos
 └── docs/                             Documentación
 ```
+
+Los scripts de Python leen sus inputs de `data/` a través de `scripts/common/config.py`, por lo que el análisis de curado y filogenia es reproducible tras un `git clone` (ver `docs/REPRODUCIBILIDAD.md`). Los datos primarios pesados (genoma, FASTQ) no se incluyen: se referencian con sus identificadores públicos.
 
 ## Cifras clave reproducidas por estos scripts
 
@@ -74,5 +80,5 @@ Los scripts han sido auditados estáticamente para detectar bugs e inconsistenci
 
 - ✅ Lógica de filtros, parsers y clasificación: correcta
 - ✅ Cifras citadas en el TFG: reproducibles (verificado por tests)
-- ⚠️ Rutas hardcoded en scripts originales: corregidas en este repo vía `scripts/common/config.py`
+- ✅ Rutas: los scripts de Python leen de `data/` vía `scripts/common/config.py` (variable `TFG_DATA_ROOT` para apuntar a otra copia); los scripts de figuras de RNA-seq usan `TFG_RNA_SEQ_ROOT`
 - ⚠️ Ningún bug detectado invalida los resultados del TFG

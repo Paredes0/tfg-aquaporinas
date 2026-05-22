@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
@@ -6,7 +7,7 @@ from matplotlib.lines import Line2D
 from scipy import stats
 from pathlib import Path
 
-base = Path("/home/noe/work/RNA-seq_test/results/basal_aquaporins")
+base = Path(os.environ.get("TFG_RNA_SEQ_ROOT","/home/noe/work/RNA-seq_test")+"/results/basal_aquaporins")
 df = pd.read_csv(base / "basal_aquaporins_summary.csv")
 if "needs_reannotation" in df.columns:
     df = df[df["needs_reannotation"].astype(str).str.upper() == "FALSE"].copy()
