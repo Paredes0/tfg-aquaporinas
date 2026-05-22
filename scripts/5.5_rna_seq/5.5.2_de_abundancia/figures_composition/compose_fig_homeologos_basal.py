@@ -173,6 +173,12 @@ ax_b.legend(handles=legend_b, loc="upper left", bbox_to_anchor=(1.005, 1.0), fon
 # Ajustar para que la leyenda fuera quepa
 fig.subplots_adjust(left=0.05, right=0.86, top=0.95, bottom=0.06)
 
+# Etiquetas de panel (A)/(B) — norma APA/UCAM: descripción en el pie de figura
+ax_a.text(0.0, 1.02, "(A)", transform=ax_a.transAxes, fontsize=16,
+          fontweight="bold", va="bottom", ha="left", color="#1f3a5f")
+ax_b.text(0.0, 1.04, "(B)", transform=ax_b.transAxes, fontsize=16,
+          fontweight="bold", va="bottom", ha="left", color="#1f3a5f")
+
 out_pdf = out_dir / "figura_homeologos_basal.pdf"
 out_png = out_dir / "figura_homeologos_basal.png"
 fig.savefig(str(out_pdf), dpi=200, bbox_inches="tight")

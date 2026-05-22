@@ -106,7 +106,7 @@ for ax_idx, (ax, (label, d)) in enumerate(zip(axes, tissues)):
     ax.axhline(-1, color="gray", linestyle="--", linewidth=0.6, alpha=0.6, zorder=1)
     ax.set_xticks(range(len(subfams)))
     ax.set_xticklabels(subfams, fontsize=13, fontweight="bold")
-    ax.set_title(label, fontsize=13.5, fontweight="bold")
+    ax.set_title(f"({'AB'[ax_idx]}) {label}", fontsize=13.5, fontweight="bold", loc="left")
     ax.grid(axis="y", linestyle=":", alpha=0.4, zorder=0)
     ax.set_axisbelow(True)
     ax.set_ylim(YMIN, YMAX)

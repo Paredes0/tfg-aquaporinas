@@ -779,6 +779,12 @@ fig.subplots_adjust(left=0.06, right=0.85, top=0.97, bottom=0.05, hspace=0.30)
 out_dir = config.ensure_results() / "figuras_rnaseq"
 out_dir.mkdir(parents=True, exist_ok=True)
 
+# Etiquetas de panel (A)/(B) — norma APA/UCAM: descripción en el pie de figura
+ax_a.text(0.0, 1.01, "(A)", transform=ax_a.transAxes, fontsize=16,
+          fontweight="bold", va="bottom", ha="left", color="#1f3a5f")
+ax_b.text(0.0, 1.01, "(B)", transform=ax_b.transAxes, fontsize=16,
+          fontweight="bold", va="bottom", ha="left", color="#1f3a5f")
+
 out_pdf = out_dir / "figura_tandems_schema.pdf"
 out_png = out_dir / "figura_tandems_schema.png"
 
