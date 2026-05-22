@@ -7,7 +7,7 @@ con los parámetros citados en el cuerpo del TFG (apartados 6.1 y 6.2.3).
 
 | Archivo | Contenido |
 |---|---|
-| `Anexo_B_parametros_fisicoquimicos.csv` | Una fila por acuaporina (121), ordenada por subfamilia y sub-subfamilia. |
+| `Anexo_H_parametros_fisicoquimicos.csv` | Una fila por acuaporina (121), ordenada por subfamilia y sub-subfamilia. |
 | `Anexo_H_script_reproducible.py` | Genera la tabla desde `datos/curado/tabla_aqp_ordenada.csv` vía `scripts/common/config.py`. |
 
 ### Columnas

@@ -20,7 +20,7 @@ Sobre los **277 nodos internos** del árbol definitivo:
 - **UFBoot ≥ 95 %**: 122 nodos.
 - **Triple soporte alto** (los tres umbrales a la vez): **116 nodos (41,9 %)**.
 
-Los nodos que delimitan las subfamilias canónicas se encuentran entre los de máxima confianza: PIP, NIP y SIP presentan triple soporte máximo (SH-aLRT 100 / aBayes 1 / UFBoot 100) y TIP forma un clado monofilético (SH-aLRT 97,6 / aBayes 1 / UFBoot 69). La subfamilia XIP queda como grupo basal: su nodo de origen (MRCA) coincide con la raíz del árbol no enraizado, un punto que por definición no porta valor de soporte; su monofilia se aprecia en el árbol completo (Figura 4 del TFG y Anexo D).
+Los nodos que delimitan las subfamilias canónicas se encuentran entre los de máxima confianza: PIP, NIP y SIP presentan triple soporte máximo (SH-aLRT 100 / aBayes 1 / UFBoot 100) y TIP forma un clado monofilético (SH-aLRT 97,6 / aBayes 1 / UFBoot 69). La subfamilia XIP queda como grupo basal: su nodo de origen (MRCA) coincide con la raíz del árbol no enraizado, un punto que por definición no porta valor de soporte; su monofilia se aprecia en el árbol completo (Figura 7 del TFG).
 
 ## Reproducción
 
