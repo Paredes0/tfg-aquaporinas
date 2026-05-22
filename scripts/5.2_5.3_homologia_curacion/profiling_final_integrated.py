@@ -79,76 +79,9 @@ fasta_to_gene = {}
 for gid, fid in selected_fasta_id.items():
     fasta_to_gene[fid] = gid
 
-def parse_meme_combined_block(filepath):
-    """
-    Parsea la tabla 'Combined block diagrams' del archivo MEME.
-    Devuelve un dict: {fasta_id: set(motifs)} para TODAS las 258 secuencias.
-    No traduce IDs aquí; eso se hace después con el mapeo de fuente_seq.
-    """
-    if not os.path.exists(filepath):
-        print(f"  [WARN] No se encontró: {filepath}")
-        return {}
-    res = {}
-    in_block = False
-    current_sid = None
-    accumulated_diagram = ""
-    
-    with open(filepath, 'r') as f:
-        for line in f:
-            if 'Combined block diagrams: non-overlapping sites with p-value < 0.0001' in line:
-                in_block = True
-                continue
-            if in_block:
-                if line.startswith('---'): continue
-                if line.startswith('SEQUENCE NAME'): continue
-                if line.startswith('***') or 'CPU:' in line: break
-                
-                line = line.strip()
-                if not line: continue
-                
-                parts = line.split()
-                # Nueva línea de secuencia (nombre + p-value + diagrama)
-                if len(parts) >= 3 and not line.startswith('['):
-                    sid = parts[0].replace('-mRNA-1', '').replace('-partial', '')
-                    current_sid = sid
-                    diagram_part = parts[2]
-                else:
-                    # Línea de continuación
-                    diagram_part = parts[0]
-                
-                if diagram_part.endswith('\\'):
-                    accumulated_diagram += diagram_part[:-1]
-                else:
-                    accumulated_diagram += diagram_part
-                    if current_sid:
-                        motifs = set(f"M{m}" for m in re.findall(r'\[(\d+)\(', accumulated_diagram))
-                        if current_sid not in res:
-                            res[current_sid] = set()
-                        res[current_sid].update(motifs)
-                    current_sid = None
-                    accumulated_diagram = ""
-    return res
-
-# ── Parsear el archivo MEME del FASTA combinado ──
-# IMPORTANTE: Este archivo proviene de correr MEME sobre exonerate_gff3_aqp.fasta
-# que contiene las 258 secuencias (129 GFF3 + 129 Exonerate).
-def parse_fimo_missing(filepath):
-    if not os.path.exists(filepath): return {}
-    res = {}
-    with open(filepath, 'r') as f:
-        for line in f:
-            if line.startswith('motif_id') or line.startswith('#') or not line.strip(): continue
-            parts = line.split('\t')
-            if len(parts) >= 3:
-                alt_id = parts[1]
-                seq_name = parts[2].replace('-mRNA-1_Benihoppe_v1', '')
-                m_match = re.search(r'MEME-(\d+)', alt_id)
-                if m_match:
-                    motif = f"M{m_match.group(1)}"
-                    if seq_name not in res: res[seq_name] = set()
-                    res[seq_name].add(motif)
-    return res
-
+# El PCA usa el MEME final (ALL_AQP.txt, 15 motivos sobre las 121 curadas) para la
+# huella de motivos del hover; el MEME exploratorio sobre las 258 candidatas y su
+# parser quedaron obsoletos y se retiraron.
 MEME_FINAL = os.path.join(BASE_DIR, 'ALL_AQP.txt')
 
 def parse_meme_final_diagram(path):
