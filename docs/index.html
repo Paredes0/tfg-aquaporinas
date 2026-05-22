@@ -101,7 +101,16 @@
     opacity:0;animation:rise 1s .78s both}
   .mol i{font-style:normal;display:inline-flex;align-items:center;gap:.55rem}
   .mol i::before{content:"";width:11px;height:11px;border-radius:50%;
-    background:var(--c);box-shadow:0 0 0 4px color-mix(in srgb,var(--c) 18%,transparent)}
+    background:var(--c);box-shadow:0 0 0 4px color-mix(in srgb,var(--c) 18%,transparent);
+    animation:glow 2.6s ease-in-out infinite}
+  .mol i:nth-child(2)::before{animation-delay:.5s}
+  .mol i:nth-child(3)::before{animation-delay:1s}
+  .mol i:nth-child(4)::before{animation-delay:1.5s}
+  .mol i:nth-child(5)::before{animation-delay:2s}
+  @keyframes glow{
+    0%,100%{box-shadow:0 0 0 4px color-mix(in srgb,var(--c) 18%,transparent),0 0 5px -1px var(--c);transform:scale(1)}
+    50%{box-shadow:0 0 0 7px color-mix(in srgb,var(--c) 7%,transparent),0 0 13px 1px var(--c);transform:scale(1.18)}
+  }
 
   .plates{margin:8vh 0 4vh;border-top:1px solid var(--line)}
   .plate{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:2rem;
@@ -176,7 +185,7 @@
       </p>
       <div class="facts">
         <div class="row"><span class="k">Autor</span><b>Noé Paredes Alfonso</b></div>
-        <div class="row"><span class="k">Dirección</span><b>Acosta Motos · Espinosa</b></div>
+        <div class="row"><span class="k">Dirección</span><b>Espinosa · Acosta Motos</b></div>
         <div class="row"><span class="k">Acuaporinas</span><b>121 funcionales</b></div>
         <div class="row"><span class="k">Homeólogos</span><b>32 grupos · 4 subgenomas</b></div>
       </div>
