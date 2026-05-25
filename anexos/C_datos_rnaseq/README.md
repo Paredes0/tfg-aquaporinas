@@ -36,7 +36,7 @@ RootsCtrl_2, SRR30146487, se excluyó por PCA; evidencia en
 | Archivo | Contenido |
 |---|---|
 | `Anexo_C_design_basal.csv` | Tabla de diseño (muestra → tejido/condición). |
-| `Anexo_C_MultiQC_report.html` | Informe MultiQC integrado (QC + asignación featureCounts de las 22 muestras). |
+| `Anexo_C_MultiQC_report.html` | Informe MultiQC integrado (QC + asignación featureCounts de las 21 muestras retenidas; RootsCtrl_2 no consta, pues se generó tras su exclusión). |
 | `Anexo_C_MultiQC_general_stats.txt` / `_featurecounts.txt` | Tablas de estadísticas que resume el informe. |
 | `Anexo_C_PCA_outlier_RootsCtrl2.pdf` / `.png` | PCA genómico (VST, contraste de raíz) que muestra que la réplica control RootsCtrl_2 (SRR30146487) no agrupa con sus réplicas biológicas (RootsCtrl_1 y RootsCtrl_3); sustenta su exclusión descrita en §5.5.2. Generado en modo `include` reincorporando la muestra purgada. |
 
