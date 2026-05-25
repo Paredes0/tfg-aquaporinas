@@ -4,7 +4,8 @@ Matrices de expresión derivadas del análisis transcriptómico (apartado 6.3 de
 e informe de control de calidad. Son los datos que sustentan las **Figuras 6, 7, 8 y 9**.
 
 22 muestras *paired-end*, 6 tejidos de *F.* x *ananassa* 'Benihoppe' (la muestra
-RootsCtrl_2, SRR30146487, se excluyó por PCA). Las matrices están restringidas a las
+RootsCtrl_2, SRR30146487, se excluyó por PCA; evidencia en
+`Anexo_C_PCA_outlier_RootsCtrl2.pdf`/`.png`). Las matrices están restringidas a las
 **121 acuaporinas funcionales** salvo donde se indique.
 
 ## Contenido
@@ -37,6 +38,7 @@ RootsCtrl_2, SRR30146487, se excluyó por PCA). Las matrices están restringidas
 | `Anexo_C_design_basal.csv` | Tabla de diseño (muestra → tejido/condición). |
 | `Anexo_C_MultiQC_report.html` | Informe MultiQC integrado (QC + asignación featureCounts de las 22 muestras). |
 | `Anexo_C_MultiQC_general_stats.txt` / `_featurecounts.txt` | Tablas de estadísticas que resume el informe. |
+| `Anexo_C_PCA_outlier_RootsCtrl2.pdf` / `.png` | PCA genómico (VST, contraste de raíz) que muestra que la réplica control RootsCtrl_2 (SRR30146487) no agrupa con sus réplicas biológicas (RootsCtrl_1 y RootsCtrl_3); sustenta su exclusión descrita en §5.5.2. Generado en modo `include` reincorporando la muestra purgada. |
 
 Las mismas matrices (sin el prefijo `Anexo_C_`) están en `datos/rna_seq/` del repo, desde
 donde las leen los scripts de RNA-seq vía `scripts/common/config.py`.
