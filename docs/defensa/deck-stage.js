@@ -75,6 +75,9 @@
   const OVERLAY_HIDE_MS = 1800;
   const VALIDATE_ATTR = 'no_overflowing_text,no_overlapping_text,slide_sized_text';
   const FINE_POINTER_MQ = matchMedia('(hover: hover) and (pointer: fine)');
+  // Touch presence (cubre dispositivos hibridos raton+tactil donde
+  // FINE_POINTER_MQ tambien matchea; sin esto el tap nunca se procesa).
+  const ANY_TOUCH_MQ = matchMedia('(any-pointer: coarse)');
   const NARROW_MQ = matchMedia('(max-width: 640px)');
   // Slide-authored controls that should keep a tap instead of it navigating.
   const INTERACTIVE_SEL = 'a[href], button, input, select, textarea, summary, label, video[controls], audio[controls], [role="button"], [onclick], [tabindex]:not([tabindex^="-"]), [contenteditable]:not([contenteditable="false" i])';
@@ -1241,8 +1244,11 @@
     }
 
     _onTap(e) {
-      // Touch-only — keyboard + the overlay toolbar cover nav on desktop.
-      if (FINE_POINTER_MQ.matches) return;
+      // Touch-capable devices — keyboard + overlay toolbar cubren desktop.
+      // Importante: comprobamos any-pointer: coarse (existe touch) en vez de
+      // solo descartar punteros finos, porque las pantallas tactiles de aula
+      // suelen llevar tambien raton/teclado conectado (puntero fino primario).
+      if (!ANY_TOUCH_MQ.matches) return;
       // Only taps that land on the stage (slide content or letterbox); the
       // overlay / rail / menus are siblings with their own click handlers.
       const path = e.composedPath();
@@ -1257,9 +1263,10 @@
         if (n.matches && n.matches(INTERACTIVE_SEL)) return;
       }
       e.preventDefault();
-      const rw = this._railWidth();
-      const mid = rw + (window.innerWidth - rw) / 2;
-      this._advance(e.clientX < mid ? -1 : 1, 'tap');
+      // Solo avanzar al tocar la slide (decision UX para defensa tactil):
+      // un dedo apuntando a cualquier parte = siguiente. Para retroceder,
+      // el ponente usa la toolbar inferior (boton <) o teclado.
+      this._advance(1, 'tap');
     }
 
     _onKey(e) {
