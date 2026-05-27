@@ -398,13 +398,14 @@ function buildStages(svg) {
       stroke: 'rgba(232,240,255,0.12)', 'stroke-width': '1'
     }, cardG);
 
-    // Conteo grande (inicial = valor final; count-up GSAP override si está disponible)
+    // Conteo grande (inicial = 0; count-up GSAP lleva al valor final al entrar
+    // la carta). snapToFinal restaura el valor target si GSAP falla.
     TXT(cardG, {
       x: cx, y: top + 100,
       class: 'gp-serif', 'font-size': 30,
       fill: st.accent, 'text-anchor': 'middle',
       _data: { role: 'stage-count-text', stageIndex: i, target: st.count }
-    }, st.count);
+    }, '0');
 
     // Etiqueta de la unidad (hits/locus/modelos)
     TXT(cardG, {
@@ -568,7 +569,7 @@ function buildChromosomeGrid(svg, data) {
   const rowH = (usableY1 - usableY0) / totalRows;
 
   // Headers de columnas (subgenomas) — solo la letra A/B/C/D
-  // (Noé verbaliza "subgenoma" en la defensa)
+  // (Noé verbaliza "subgenoma" en la defensa). Opacity inicial 0 → animacion.
   CHROM_COLS.forEach((sg, c) => {
     const cx = usableX0 + colW * (c + 0.5);
     TXT(gridG, {
@@ -576,19 +577,19 @@ function buildChromosomeGrid(svg, data) {
       'text-anchor': 'middle',
       class: 'gp-mono', 'font-size': 22, 'letter-spacing': '1',
       'font-weight': 'bold',
-      fill: '#e8f0ff', opacity: '1',
+      fill: '#e8f0ff', opacity: '0',
       _data: { role: 'grid-col-header', col: c }
     }, sg);
   });
 
-  // Headers de filas (cromosomas)
+  // Headers de filas (cromosomas) — opacity 0 hasta el GSAP del scaffold (2,4 s)
   CHROM_ROWS.forEach((chr, r) => {
     const cy = usableY0 + rowH * (r + 0.5);
     TXT(gridG, {
       x: GRID_X0 + 14, y: cy + 6,
       class: 'gp-mono', 'font-size': 17, 'letter-spacing': '1.5',
       'font-weight': 'bold',
-      fill: '#c7cee2', opacity: '1',
+      fill: '#c7cee2', opacity: '0',
       _data: { role: 'grid-row-label', row: r }
     }, `Chr ${chr}`);
   });
@@ -832,19 +833,21 @@ function animatePipeline(svg) {
     1.0
   );
 
-  // 1.6–2.4 · count-up de sub-conteos
+  // 1.1–1.9 · count-up de sub-conteos · arranca con el fade-in de cada carta
+  // (carta i empieza a aparecer a 1.0 + i * 0.14; el count-up entra 0,1 s
+  // despues para que el numero "0" no aparezca ya dibujado antes que la carta)
   const stageCountTexts = svg.querySelectorAll('[data-role="stage-count-text"]');
   stageCountTexts.forEach((el, i) => {
     const target = parseFloat(el.dataset.target.replace(/\./g, ''));
     const obj = { v: 0 };
     tl.to(obj, {
       v: target,
-      duration: 0.7,
+      duration: 0.75,
       ease: 'power2.out',
       onUpdate: () => {
         el.textContent = obj.v.toLocaleString('es-ES', { maximumFractionDigits: 0 });
       }
-    }, 1.6 + i * 0.12);
+    }, 1.1 + i * 0.14);
   });
 
   // 1.8–2.2 · conectores rectos entre etapas + flechitas
