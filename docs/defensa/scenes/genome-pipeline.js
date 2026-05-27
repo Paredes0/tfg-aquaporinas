@@ -95,7 +95,7 @@ const SPECIES = [
 // Tres etapas en fila horizontal limpia, todas al mismo y. Cards iguales.
 const STAGES = [
   { label: 'tblastn',   sublabel: 'e < 1e-05',           accent: '#4ec5e0', count: '53.396', countLabel: 'hits' },
-  { label: 'BEDtools',  sublabel: 'merge 3 kb + slop 1 kb', accent: '#7dd3a8', count: '3.168',  countLabel: 'locus' },
+  { label: 'BEDtools',  sublabel: 'merge 3kb · slop 1kb', accent: '#7dd3a8', count: '3.168',  countLabel: 'locus' },
   { label: 'Exonerate', sublabel: 'protein2genome',      accent: '#f0b65a', count: '4.984',  countLabel: 'modelos' }
 ];
 
@@ -383,11 +383,12 @@ function buildStages(svg) {
       fill: st.accent, 'text-anchor': 'start'
     }, st.label);
 
-    // Sublabel (parametros)
+    // Sublabel (parametros) — letter-spacing reducido para que entre el sublabel
+    // mas largo (BEDtools "merge 3kb · slop 1kb") sin desbordar la carta de 160px.
     TXT(cardG, {
       x: cx, y: top + 56,
       class: 'gp-mono', 'font-size': 11,
-      'letter-spacing': '1.5', fill: '#8b96b3',
+      'letter-spacing': '0.4', fill: '#8b96b3',
       'text-anchor': 'middle'
     }, st.sublabel);
 
