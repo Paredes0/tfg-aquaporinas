@@ -6,11 +6,14 @@ Dos workflows usados respectivamente en §5.2 (predicción por homología) y §5
 
 Workflow del apartado **Predicción basada en homología** del TFG.
 
-- **Inputs**:
-  - Genoma de referencia FASTA de *Fragaria* x *ananassa* 'Benihoppe' (versión GDR). Si se parte del ensamblaje NCBI (`GCA_034370585.1`) en lugar del de GDR, hace falta además el archivo `Galaxy4-[Tabla_Traduccion].tabular` (no incluido en el repo) que reescribe los nombres de cromosoma NCBI → GDR. Si se usa GDR directamente —como en el TFG— esta tabla no es necesaria.
-  - Anotación GFF3 de 'Benihoppe' (versión GDR), usada por GFFCompare para evaluar coincidencias con la anotación oficial.
-  - **419 secuencias de acuaporinas de Rosaceae** descargadas de UniProt como plantillas BLAST. Sirven también para fijar empíricamente el rango de longitudes (140–380 aa) que se aplica luego como filtro de viabilidad biológica.
-  - **Acuaporinomas curados** de las cuatro especies de referencia, también como plantillas BLAST: *Arabidopsis thaliana* (Johanson et al., 2001), *Hevea brasiliensis* (Zou et al., 2015), *Malus domestica* (Liu et al., 2019) y *Oryza sativa* (Sakurai et al., 2005).
+- **Inputs** (todos depositados junto al `.ga`, salvo el genoma y el GFF3 por tamaño):
+  - **Genoma de referencia FASTA** de *Fragaria* x *ananassa* 'Benihoppe' (versión GDR; no incluido por tamaño, accesible en [GDR](https://www.rosaceae.org/Analysis/18085091)). Si se parte del ensamblaje NCBI (`GCA_034370585.1`) en lugar de la versión GDR, hace falta además `tabla_traduccion_NCBI_GDR.tabular` (28 cromosomas; incluida en este directorio) que reescribe los nombres de cromosoma NCBI → GDR. Si se usa GDR directamente —como en el TFG— esta tabla no es necesaria.
+  - **Anotación GFF3** de 'Benihoppe' (versión GDR; no incluida por tamaño, misma fuente que el genoma), usada por GFFCompare para evaluar coincidencias con la anotación oficial.
+  - **`dataset_blastn_exonerate.fasta`** — depositado en este directorio. Contiene **576 secuencias** de proteínas de acuaporina usadas como **plantillas para el tblastn**, compuestas por:
+    - **419 acuaporinas de Rosaceae** descargadas de **NCBI RefSeq** mediante un script en Python con Biopython (módulo `Bio.Entrez`). Este es el mismo conjunto que se utilizó para fijar empíricamente el rango de longitudes 140–380 aa (rango que abarca el 98,81 % de la familia). El conjunto crudo está depositado también en `datos/curado/TODAS_ROSACEAE_aqp_prot_FINAL_V13.fasta` e incluye, como controles internos, secuencias de *Fragaria vesca* (Fv) y *Fragaria* x *ananassa* (Fa).
+    - **157 acuaporinomas curados** procedentes de literatura: **35** *Arabidopsis thaliana* (Johanson et al., 2001), **30** *Oryza sativa* (Sakurai et al., 2005), **41** *Malus domestica* (Liu et al., 2019) y **51** *Hevea brasiliensis* (Zou et al., 2015).
+    - **Conteo total: 419 + 35 + 30 + 41 + 51 = 576 secuencias.**
+    - *Sobre el conteo de cabeceras del archivo:* el FASTA exportado por Galaxy contiene 627 cabeceras. Algunas entradas de *Fragaria vesca* y *Fragaria* x *ananassa* aparecen con dos cabeceras —una con la accesión NCBI y la etiqueta de curación original (p. ej., `>[MIP][GB]_ADJ67992.1 ... aquaporin [Fragaria x ananassa]`) y otra con la misma accesión junto al nombre funcional del gen (p. ej., `>ADJ67992.1 FaPIP2;1`)—; ambas se conservan en el exportado. Estas 51 entradas redundantes no afectan al tblastn, ya que los hits coincidentes se colapsan downstream por la lógica de mejor coincidencia única.
 - **Pasos**: tblastn → BEDtools (genera regiones candidatas) → Exonerate protein2genome → filtrado por longitud (140–380 aa) y solapamiento.
 - **Outputs**: candidatas no redundantes con coordenadas, ID exonerate y secuencia peptídica.
 
