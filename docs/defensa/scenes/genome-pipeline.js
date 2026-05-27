@@ -845,7 +845,7 @@ function animatePipeline(svg) {
       duration: 0.75,
       ease: 'power2.out',
       onUpdate: () => {
-        el.textContent = obj.v.toLocaleString('es-ES', { maximumFractionDigits: 0 });
+        el.textContent = obj.v.toLocaleString('es-ES', { maximumFractionDigits: 0, useGrouping: 'always' });
       }
     }, 1.1 + i * 0.14);
   });
@@ -945,7 +945,8 @@ function animatePipeline(svg) {
       onUpdate: () => {
         el.textContent = obj.v.toLocaleString('es-ES', {
           minimumFractionDigits: decimals,
-          maximumFractionDigits: decimals
+          maximumFractionDigits: decimals,
+          useGrouping: 'always'
         });
       }
     }, 5.3 + i * 0.10);
@@ -965,7 +966,8 @@ function snapToFinal(svg) {
     const target = parseFloat(el.dataset.target);
     const decimals = parseInt(el.dataset.decimals) || 0;
     el.textContent = target.toLocaleString('es-ES', {
-      minimumFractionDigits: decimals, maximumFractionDigits: decimals
+      minimumFractionDigits: decimals, maximumFractionDigits: decimals,
+      useGrouping: 'always'
     });
   });
 }
