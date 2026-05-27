@@ -129,7 +129,7 @@ async function applyResidueColoring(viewer) {
     .color({ color: '#E74C3C' });
 
   // Capa 5 · filtro ar/R · ball-and-stick ámbar
-  // Phe81 (TMH2), His210 (loop E), Thr213, Arg225 (Tornroth-Horsefield et al. 2006)
+  // Phe81 (TMH2), His210 (loop E), Thr213, Arg225 (Tornroth-Horsefield et al. 2005)
   const arR = [81, 210, 213, 225].map(i => ({ label_seq_id: i }));
   s.component({ selector: arR })
     .representation({ type: 'ball_and_stick' })
@@ -138,7 +138,7 @@ async function applyResidueColoring(viewer) {
   // Capa 6 · residuos del gating · 5 residuos mecanísticamente críticos
   // Asp28 (capping Ca²⁺), Ser115 + Ser188 (fosforilación → abre),
   // His193 (sensor pH del loop D), Leu197 (tapón hidrofóbico que cierra el poro)
-  // (Tornroth-Horsefield et al. 2006, Nature · refinado por Nyblom et al. 2009, JMB)
+  // (Tornroth-Horsefield et al. 2005, Nature · refinado por Nyblom et al. 2009, JMB)
   const gating = [28, 115, 188, 193, 197].map(i => ({ label_seq_id: i }));
   s.component({ selector: gating })
     .representation({ type: 'ball_and_stick' })
