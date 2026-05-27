@@ -4,10 +4,14 @@ Dos workflows usados respectivamente en §5.2 (predicción por homología) y §5
 
 ## 1. `Aquaporin_tblastn-exonerate-filter.ga`
 
-Workflow del apartado **§5.2 — Predicción basada en homología**.
+Workflow del apartado **Predicción basada en homología** del TFG.
 
-- **Inputs**: genoma 'Benihoppe' FASTA + las 419 acuaporinas Rosaceae filtradas a 140-380 aa.
-- **Pasos**: tblastn → BEDtools (genera regiones candidatas) → Exonerate protein2genome → filtrado por longitud y solapamiento.
+- **Inputs**:
+  - Genoma de referencia FASTA de *Fragaria* x *ananassa* 'Benihoppe' (versión GDR). Si se parte del ensamblaje NCBI (`GCA_034370585.1`) en lugar del de GDR, hace falta además el archivo `Galaxy4-[Tabla_Traduccion].tabular` (no incluido en el repo) que reescribe los nombres de cromosoma NCBI → GDR. Si se usa GDR directamente —como en el TFG— esta tabla no es necesaria.
+  - Anotación GFF3 de 'Benihoppe' (versión GDR), usada por GFFCompare para evaluar coincidencias con la anotación oficial.
+  - **419 secuencias de acuaporinas de Rosaceae** descargadas de UniProt como plantillas BLAST. Sirven también para fijar empíricamente el rango de longitudes (140–380 aa) que se aplica luego como filtro de viabilidad biológica.
+  - **Acuaporinomas curados** de las cuatro especies de referencia, también como plantillas BLAST: *Arabidopsis thaliana* (Johanson et al., 2001), *Hevea brasiliensis* (Zou et al., 2015), *Malus domestica* (Liu et al., 2019) y *Oryza sativa* (Sakurai et al., 2005).
+- **Pasos**: tblastn → BEDtools (genera regiones candidatas) → Exonerate protein2genome → filtrado por longitud (140–380 aa) y solapamiento.
 - **Outputs**: candidatas no redundantes con coordenadas, ID exonerate y secuencia peptídica.
 
 **URL pública**: `https://usegalaxy.org/published/workflow?id=f74ee88aff766e20`
