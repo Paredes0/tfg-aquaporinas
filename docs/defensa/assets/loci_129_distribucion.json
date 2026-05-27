@@ -1,0 +1,22 @@
+{
+  "total": 129,
+  "fuente": "fxa_aqp_129_consenso.fasta · 129 loci candidatos post-Exonerate + 3 filtros (M-inicial, longitud 140-380 aa, redundancia ClusterBED)",
+  "etapa_pipeline": "candidatos · paso 02 (modelado + filtros) · pre-curado estructural",
+  "subgenomas": ["A", "B", "C", "D"],
+  "cromosomas": [1, 2, 3, 4, 5, 6, 7],
+  "matriz": {
+    "1": {"A": 2, "B": 1, "C": 2, "D": 2, "total": 7},
+    "2": {"A": 4, "B": 4, "C": 1, "D": 4, "total": 13},
+    "3": {"A": 5, "B": 4, "C": 4, "D": 4, "total": 17},
+    "4": {"A": 2, "B": 2, "C": 2, "D": 2, "total": 8},
+    "5": {"A": 5, "B": 5, "C": 5, "D": 3, "total": 18},
+    "6": {"A": 15, "B": 10, "C": 9, "D": 9, "total": 43},
+    "7": {"A": 6, "B": 6, "C": 6, "D": 5, "total": 23}
+  },
+  "totales_por_subgenoma": {"A": 39, "B": 32, "C": 29, "D": 29},
+  "notas": [
+    "Cromosoma 6 concentra el 33% de los loci candidatos (43/129) — incluye el clúster NIP1 en tándem que motiva el caso de estudio del Bloque IV",
+    "Subgenoma A es el más rico (39/129 = 30%) — patrón cultivar-específico ya descrito en la literatura para 'Camarosa' y 'Royal Royce'",
+    "El cromosoma 4 es el más pobre en aquaporinas (8 loci · simétrico 2/2/2/2)"
+  ]
+}

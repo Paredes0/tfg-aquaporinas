@@ -1,0 +1,1720 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Defensa TFG · Acuaporinoma de Fragaria x ananassa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" />
+<link rel="stylesheet" href="styles.css?v=20260527-04" />
+<script type="application/json" id="speaker-notes">
+[
+"Buenos días. Mi TFG se titula \"Identificación, curado y caracterización transcripcional del acuaporinoma de Fragaria x ananassa 'Benihoppe'\". Soy Noé Paredes, dirigido por los doctores Juan Nicolás Espinosa y José Ramón Acosta Motos. La presentación recorre el pipeline en orden: cada bloque combina metodología y resultados del mismo paso, para que se vea cómo viajan los datos desde el genoma hasta la planta.",
+
+"Para situar el problema: el Mediterráneo es uno de los puntos calientes del cambio climático. MedECC anticipa una pérdida del 25 % de disponibilidad hídrica hacia 2050. Huelva concentra el 93 % de la superficie nacional de fresa y el 35 % de la producción europea, sobre suelos arenosos que obligan a regar con muy poco margen. Entender cómo regula la fresa sus relaciones hídricas tiene impacto agronómico directo.",
+
+"Las acuaporinas son canales de membrana que mueven agua y pequeños solutos sin gasto energético. Topológicamente: 6 hélices transmembrana y 2 reentrantes, plegamiento en reloj de arena, poro de 3 ångström. La selectividad la dan dos motivos NPA en el centro del poro y un filtro aromático-arginina. Funcionan como tetrámeros con cuatro poros independientes. En plantas se reparten en cinco subfamilias canónicas — PIP, TIP, NIP, SIP y XIP — cada una con una localización subcelular y un perfil de sustratos distintos.",
+
+"Antes de este trabajo, en Fragaria x ananassa solo había cuatro acuaporinas descritas funcionalmente. Solo cubrían PIP, NIP y TIP — sin SIP ni XIP. Y aquí está el reto técnico: el cultivar es alopoliploide, 2n=8x=56, con cuatro subgenomas — A, B, C y D — de progenitores distintos. Esto significa que cada acuaporina ancestral puede aparecer hasta cuatro veces en el genoma. Sin un catálogo curado no podemos interpretar los datos transcriptómicos disponibles ni distinguir entre copias duplicadas.",
+
+"Construir el primer catálogo curado y transcripcionalmente perfilado del acuaporinoma de la fresa cultivada. El pipeline tiene cuatro bloques: identificación por homología, curado multidimensional, filogenia y motivos, y caracterización transcriptómica. Cada uno tiene su lugar en la presentación. Todo el pipeline queda documentado en un repositorio público con 133 tests automáticos que verifican cada cifra que voy a mostrar.",
+
+"Empezamos por el bloque uno: del genoma a los candidatos. El reto es buscar acuaporinas en un genoma alopoliploide sin perder ninguna copia y sin confundir las que no son.",
+
+"Para mapear, hicimos un tblastn de los acuaporinomas curados de cuatro especies modelo — Arabidopsis, arroz, manzano y caucho — más el conjunto extendido de 419 acuaporinas de Rosaceae sacadas de NCBI RefSeq, contra el genoma de la fresa. De ahí salieron 53.396 hits proteicos crudos. Con BEDtools los fusionamos y los extendimos para recuperar 3.168 locus, de los que se extrajeron 4.984 secuencias proteicas redundantes espacialmente. Ese es el material crudo que entra al modelado.",
+
+"El modelado lo hace Exonerate con el modelo protein2genome, configurado al máximo de sensibilidad para no perder copias parálogas. Sobre las predicciones aplicamos tres filtros de viabilidad: metionina inicial, longitud entre 140 y 380 aminoácidos — un rango calibrado con 419 acuaporinas Rosaceae que cubre el 98,81 % — y resolución de redundancia espacial con ClusterBED. Después de los filtros quedan 129 secuencias no redundantes candidatas a acuaporina.",
+
+"Esas 129 las comparamos con la anotación oficial GDR. En 91 casos las dos fuentes producen exactamente la misma proteína — verde en la figura. En 38 hay discrepancia y prevalece la versión del pipeline propio, que es más fiable porque la anotación oficial es predicción automática de MAKER sin curado manual. Sumamos 15 secuencias exclusivas de la anotación oficial GDR — todas marcadas como parciales — y, junto con 3 entradas mal anotadas que también pasaron a la auditoría estructural, entramos al curado con 147 candidatas (144 compatibles con la familia).",
+
+"Bloque dos: anatomía y firma fisicoquímica. Aquí ya no buscamos secuencias, las inspeccionamos. La pregunta es si lo que parece una acuaporina lo es de verdad.",
+
+"Cada candidata pasa por cuatro capas independientes de evidencia. Topología con DeepTMHMM — tienen que ser seis hélices transmembrana. Alineamiento múltiple con MAFFT combinado con motivos peptídicos MEME, que en conjunto detectan deleciones internas y verifican los motivos canónicos NPA, M1, M3 y M6. Filogenia exploratoria con IQ-TREE preliminar, sobre las secuencias del PCA, para aislar clados marginales y ramas anormalmente largas — síntoma típico de fragmentación. Firma fisicoquímica con Pepstats y Biopython — 34 descriptores por gen que entran al PCA. Una candidata cae si falla en cualquiera. La clave es que las capas son no redundantes: cada una detecta tipos distintos de anomalía.",
+
+"Sobre las propiedades fisicoquímicas hicimos un PCA. Los dos primeros componentes explican el 54,1 % de la varianza. NIP, TIP y SIP se separan con nitidez en elipses propias. PIP y XIP comparten espacio porque comparten membrana plasmática. Quince de las 23 secuencias parciales caen fuera de su elipse de confianza al 95 %. Las ocho restantes son atípicas detectadas por los otros filtros — TMH, MAFFT o árbol exploratorio. Esto demuestra que los cuatro filtros son no redundantes.",
+
+"Y este es el resultado del bloque dos: 121 acuaporinas estructuralmente viables (curado in silico), el primer catálogo a escala genómica del cultivar. 37 NIP, 34 TIP, 32 PIP, 12 SIP y 6 XIP. Lo más llamativo: NIP es la subfamilia mayoritaria, con el 30,6 % del catálogo. En especies modelo diploides como Arabidopsis o arroz las PIP son las mayoritarias. Aquí dominan las NIP, lo cual es coherente con la dinámica de expansión de NIPs descrita en otras especies vegetales — por ejemplo en brócoli, donde la subfamilia NIP también es la más expandida.",
+
+"Bloque tres: reconstrucción evolutiva. Con las 121 curadas reconstruimos la filogenia para asignar cada secuencia a su subfamilia, subsubfamilia e isoforma.",
+
+"El árbol final integra 281 secuencias proteicas — las 121 candidatas, tres controles literarios y 157 referencias externas. ModelFinder eligió Q.PLANT+R6 — matriz de proteínas vegetales con seis categorías de tasas evolutivas. Recuperamos las cinco subfamilias como clados monofiléticos. Los soportes nodales: 91 % UFBoot, 92,2 % SH-aLRT y 1,000 aBayes de mediana. Los tres controles literarios — FaPIP1;1, FaPIP2;1 y FaNIP1;1 — caen exactamente sobre las copias que el pipeline predijo, lo cual valida la asignación. La ratio de 3,2 copias PIP por gen ancestral de F. vesca es coherente con cuadruplicación seguida de fraccionamiento moderado.",
+
+"Para validar la consistencia de las subfamilias usamos MEME — 15 motivos peptídicos. El núcleo invariable son tres: M1 con el NPA del bucle E al 100 %, y M3 y M6, dos hélices transmembrana, también al 100 %. Esos tres conforman la firma universal de la familia. Las divergencias diagnósticas: las PIP tienen M7 y M9 — extremos N y C terminales que explican la formación de heterotetrámeros PIP1·PIP2. Las NIP tienen M10 casi exclusivo. Las SIP pierden el NPA del bucle B — variantes NPS, NPT, NPL. Y las XIP, pese a compartir membrana con las PIP, no tienen ni M7 ni M9, lo que explica su separación filogenética. En las siete FaSIP1;3 aparece la variante NPS, también presente en Prunus armeniaca — posible firma Rosaceae.",
+
+"Y llegamos al bloque cuatro, el más visual: el acuaporinoma en marcha. Reanalizamos 22 librerías de RNA-seq de cuatro bioproyectos públicos, cubriendo seis tejidos, condiciones control y estrés hídrico.",
+
+"En condición basal vemos una jerarquía estructurada: PIP por encima, luego TIP, luego NIP y SIP, y XIP muy abajo. El pico absoluto es Fxa7Cg02122, FaPIP1;1, con 3.748 TPM en fruto rojo — cuatro veces el segundo. Lo importante: entre los cinco loci más expresados aparecen tres copias homeólogas de FaPIP1;1 y una FaPIP2;1, lo cual es coherente con la formación de heterotetrámeros PIP1·PIP2 documentados en oocitos. Las SIP son las más ubicuas — 11 de 12 detectables en los seis tejidos.",
+
+"Bajo estrés hídrico — PEG al 20 %, seis días — las respuestas son tejido específicas y opuestas. En hoja, balance positivo: cuatro inducidas, tres reprimidas, con tres de las cuatro copias del cuarteto FaTIP1;7 inducidas (la cuarta no alcanza significación). En raíz, predominio neto de represión: una inducida, nueve reprimidas, distribuidas entre FaNIP1, FaTIP1 y FaPIP2. Ningún locus significativo se solapa entre hoja y raíz. El cierre hidráulico en raíz contrasta con un ajuste osmótico en hoja.",
+
+"Tratamos las 121 acuaporinas como 32 grupos homeólogos — la unidad funcional del genoma alopoliploide. Sobre 30 grupos con dominancia asignable, el subgenoma D es dominante en 12, A en 9, C en 5 y B en 4. El 40 % de los grupos están dominados por el subgenoma D. Esto es un patrón cultivar específico, no extrapolable a otros F. x ananassa. La heterogeneidad de cultivares en la especie está descrita.",
+
+"Como caso de estudio, el clado NIP1. Encontramos dos pares de grupos homeólogos en tándem físico. En el cromosoma 3, HG-07 y HG-08 están en tándem en los cuatro subgenomas — duplicación conservada. En el cromosoma 6, HG-18 y HG-19 se conservan en tándem en los subgenomas A y D — B y C perdieron copias de forma heterogénea. El árbol agrupa los pares y separa los tándems entre sí: la duplicación es anterior a la octoploidización, prepoliploide.",
+
+"Cerramos el bloque cuatro con un visor anatómico interactivo, adaptado del eFP original, que proyecta el TPM agregado de cada grupo homeólogo sobre un esquema de la planta, con desglose por subgenoma. Está alojado en GitHub Pages, es independiente del repositorio y autocontenido. El caso mostrado: HG-21, el cuarteto FaTIP1;1, dominante en yema axilar con preferencia por el subgenoma A.",
+
+"Para resumir lo que aportamos respecto al estado del arte: pasamos de 4 acuaporinas caracterizadas funcionalmente en el cultivar a 121 acuaporinas estructuralmente viables (curado in silico), cubriendo las cinco subfamilias a nivel de isoforma. Y además: catálogo transcriptómico, 32 grupos homeólogos, mapa de dominancia subgenómica, visor eFP, pipeline reproducible. Un factor multiplicativo de 30 en cobertura.",
+
+"Cuatro conclusiones. Uno: el protocolo multidimensional identifica 121 acuaporinas con mayor precisión y sensibilidad que la anotación oficial automática. Dos: la filogenia delimita las cinco subfamilias canónicas con tres tests de soporte y una huella de motivos diagnóstica por subfamilia. Tres: el primer mapa transcriptómico del acuaporinoma asigna a loci concretos los picos basales, revela respuestas opuestas hoja-raíz al estrés y caracteriza 32 grupos homeólogos con dominancia desigual. Cuatro: todo el flujo queda como recurso reproducible, con 133 tests automáticos, anexos abiertos y workflows Galaxy — extensible a otras especies con genomas complejos.",
+
+"Tres líneas naturales de continuación. La reanotación manual de las secuencias parciales para alcanzar cobertura completa. El análisis dirigido del filtro ar/R en las 121 secuencias para distinguir redundancia funcional de diversificación de sustratos, sobre todo en NIP. Y la validación experimental in vivo e in vitro de los patrones de expresión y de las hipótesis funcionales aquí inferidas in silico. Todo está abierto en el repositorio con DOI permanente, 133 tests, anexos A a J y workflows Galaxy.",
+
+"Muchas gracias por la atención. Estoy a su disposición para preguntas."
+]
+</script>
+</head>
+<body>
+<deck-stage width="1920" height="1080">
+
+<!-- ===================== 01 · PORTADA ===================== -->
+<section data-label="01 · Portada">
+  <div class="particles"></div>
+
+  <!-- top chrome -->
+  <div class="topbar">
+    <div class="tb-l">
+      <span class="tb-dot"></span>
+      <span>UCAM · Grado en Biotecnología</span>
+    </div>
+    <div class="tb-r">Defensa TFG · Junio 2026</div>
+  </div>
+
+  <div class="frame" style="justify-content: center;">
+    <div style="max-width: 1480px;" class="anim-in">
+      <div class="eyebrow fruit" style="margin-bottom: 36px;">TRABAJO FIN DE GRADO</div>
+
+      <h1 class="title" style="font-size: 84px; line-height: 1.06; font-weight: 400; max-width: 1500px;">
+        <span>Identificación, curado y caracterización</span>
+        <br/>
+        <span>transcripcional del acuaporinoma</span>
+        <br/>
+        <span>de </span><span class="italic">Fragaria</span><span> </span><span>x</span><span> </span><span class="italic">ananassa</span><span> ‘Benihoppe’</span>
+      </h1>
+
+      <div style="height: 56px;"></div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 64px; max-width: 1100px;" class="anim-in-2">
+        <div>
+          <div class="eyebrow muted" style="margin-bottom: 14px; font-size: 18px;">AUTOR</div>
+          <div class="subtitle" style="font-size: 34px;">Noé Paredes Alfonso</div>
+        </div>
+        <div>
+          <div class="eyebrow muted" style="margin-bottom: 14px; font-size: 18px;">DIRECTORES</div>
+          <div class="body" style="font-size: 28px; color: var(--ink-soft);">
+            <span>Dr. Juan Nicolás Espinosa</span><br/>
+            <span>Dr. José Ramón Acosta Motos</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- UCAM badge -->
+  <div style="position: absolute; right: var(--pad-x); bottom: 96px; display: flex; align-items: center; gap: 18px; opacity: 0.85;">
+    <img src="assets/ucam-logo.png" alt="UCAM" style="height: 96px; width: auto; filter: brightness(0) invert(1) opacity(0.85);" />
+  </div>
+
+  <div class="footer-rule">
+    <div>Identificación · Curado · Filogenia · Transcriptómica</div>
+    <div>11 · Junio · 2026</div>
+  </div>
+</section>
+
+
+<!-- ===================== 02 · EL PROBLEMA ===================== -->
+<section data-label="02 · Contexto · sequía mediterránea">
+  <div class="particles" style="opacity: 0.7;"></div>
+
+  <div class="topbar">
+    <div class="tb-l">
+      <span class="tb-dot" style="background: var(--c-amber);"></span>
+      <span>Contexto · Estrés hídrico mediterráneo</span>
+    </div>
+    <div class="tb-r">02 / 22</div>
+  </div>
+
+  <div class="frame" style="justify-content: center;">
+    <div style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 100px; align-items: center;">
+
+      <div class="anim-in">
+        <div class="eyebrow amber-c" style="margin-bottom: 32px;">MEDECC · 2050</div>
+        <div class="megafig grow tabular amber-c">
+          <span>−25</span><span class="megafig-unit">% agua</span>
+        </div>
+        <p class="body-lg" style="margin-top: 32px; max-width: 760px;">
+          <span>La cuenca mediterránea perderá hasta un cuarto de su disponibilidad hídrica hacia 2050, con sequías más frecuentes y rendimientos agrícolas a la baja.</span>
+        </p>
+      </div>
+
+      <div class="anim-in-2" style="display: flex; flex-direction: column; gap: 36px;">
+        <div class="card">
+          <div class="card-title">HUELVA</div>
+          <p class="card-body">
+            <span style="font-family: var(--serif); font-size: 54px; color: var(--c-fruit);">93 %</span>
+            <span> de la superficie nacional de fresa.</span>
+            <br/>
+            <span style="font-family: var(--serif); font-size: 54px; color: var(--c-fruit);">35 %</span>
+            <span> de la producción europea.</span>
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-title">VULNERABILIDAD ESTRUCTURAL</div>
+          <p class="card-body">
+            <span>Suelos arenosos, baja retención hídrica, riego constante. La fresa de Huelva opera con un margen muy estrecho frente al déficit hídrico y al acuífero de Doñana.</span>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer-rule">
+    <div>Cramer et al. 2018 · MedECC 2020 · García-Morillo et al. 2017</div>
+    <div class="mono">02 / 22</div>
+  </div>
+</section>
+
+
+<!-- ===================== 03 · LA ACUAPORINA ===================== -->
+<section data-label="03 · Acuaporinas · qué son" data-scene="threejs:aquaporin-monomer">
+  <div class="topbar">
+    <div class="tb-l">
+      <span class="tb-dot"></span>
+      <span>Marco teórico · La pieza</span>
+    </div>
+    <div class="tb-r">03 / 22</div>
+  </div>
+
+  <div class="frame">
+    <div class="anim-in" style="max-width: 1500px;">
+      <div class="eyebrow water-c" style="margin-bottom: 22px;">CANALES DEL AGUA</div>
+      <h2 class="title">
+        <span>Acuaporinas.</span>
+        <span class="italic" style="color: var(--ink-soft); margin-left: 20px;">La maquinaria del agua en la membrana.</span>
+      </h2>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 60px; margin-top: 40px; align-items: center;">
+
+      <!-- Acuaporina monómero · PDB 1Z98 chain A renderizado con Mol* + anotaciones overlay -->
+      <div class="anim-in-2" style="position: relative; display: flex; flex-direction: column; justify-content: center; align-items: stretch; gap: 14px;">
+        <div data-aquaporin-target style="position: relative; width: 100%; aspect-ratio: 1/0.85; background: #f8f8fa; border-radius: 6px; overflow: hidden; box-shadow: 0 4px 12px rgba(20,24,42,0.06);">
+          <!-- Identificación del PDB · top-right (evita solaparse con info de selección de Mol* en bottom) -->
+          <div style="position: absolute; top: 14px; right: 14px; z-index: 10; padding: 6px 12px; background: rgba(255,255,255,0.94); border-radius: 4px; border: 1px solid var(--rule); font-family: var(--mono); font-size: 11px; color: var(--ink-soft); letter-spacing: 0.08em;">PDB 1Z98 · chain A · SoPIP2;1</div>
+        </div>
+
+        <!-- Leyenda compacta DEBAJO del Mol* (no tapa la imagen) · 2 columnas -->
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6px 22px; padding: 10px 4px;">
+          <div style="display: flex; align-items: center; gap: 9px;">
+            <span style="width: 12px; height: 4px; border-radius: 2px; background: #3498DB; flex-shrink: 0;"></span>
+            <span class="mono" style="font-size: 12px; color: var(--ink);">6 hélices transmembrana</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 9px;">
+            <span style="width: 8px; height: 8px; border-radius: 50%; background: #E74C3C; flex-shrink: 0;"></span>
+            <span class="mono" style="font-size: 12px; color: var(--ink);">2x NPA · centro del poro</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 9px;">
+            <span style="width: 12px; height: 4px; border-radius: 2px; background: #2ECC71; flex-shrink: 0;"></span>
+            <span class="mono" style="font-size: 12px; color: var(--ink);">2 hélices reentrantes</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 9px;">
+            <span style="width: 8px; height: 8px; border-radius: 50%; background: #F39C12; flex-shrink: 0;"></span>
+            <span class="mono" style="font-size: 12px; color: var(--ink);">ar/R · filtro de selectividad (F81·H210·T213·R225)</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 9px;">
+            <span style="width: 12px; height: 4px; border-radius: 2px; background: #cdd2d8; flex-shrink: 0;"></span>
+            <span class="mono" style="font-size: 12px; color: var(--ink);">bucles conectores</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 9px;">
+            <span style="width: 8px; height: 8px; border-radius: 50%; background: #9B59B6; flex-shrink: 0;"></span>
+            <span class="mono" style="font-size: 12px; color: var(--ink);">compuerta · regulación de apertura (D28·S115·S188·H193·L197)</span>
+          </div>
+        </div>
+
+        <!-- SVG legacy oculto (mantenido por si fallback) -->
+        <svg viewBox="0 0 600 580" style="display: none;">
+          <defs>
+            <!-- gradiente del poro · cono extracelular -> citoplasma -->
+            <linearGradient id="aqpPoreG" x1="0" x2="0" y1="0" y2="1">
+              <stop offset="0%" stop-color="#4ec5e0" stop-opacity="0.5"/>
+              <stop offset="48%" stop-color="#4ec5e0" stop-opacity="0.18"/>
+              <stop offset="52%" stop-color="#4ec5e0" stop-opacity="0.18"/>
+              <stop offset="100%" stop-color="#4ec5e0" stop-opacity="0.5"/>
+            </linearGradient>
+            <!-- gradiente cilindro proteína (frontal) -->
+            <linearGradient id="aqpBodyG" x1="0" x2="1" y1="0" y2="0">
+              <stop offset="0%" stop-color="#2a3458" stop-opacity="0.9"/>
+              <stop offset="50%" stop-color="#3a4670" stop-opacity="1"/>
+              <stop offset="100%" stop-color="#2a3458" stop-opacity="0.9"/>
+            </linearGradient>
+            <!-- gradiente solución acuosa -->
+            <linearGradient id="solutionTopG" x1="0" x2="0" y1="0" y2="1">
+              <stop offset="0%" stop-color="#1d4d6b" stop-opacity="0.45"/>
+              <stop offset="100%" stop-color="#1d4d6b" stop-opacity="0.10"/>
+            </linearGradient>
+            <linearGradient id="solutionBotG" x1="0" x2="0" y1="0" y2="1">
+              <stop offset="0%" stop-color="#1d4d6b" stop-opacity="0.10"/>
+              <stop offset="100%" stop-color="#1d4d6b" stop-opacity="0.45"/>
+            </linearGradient>
+          </defs>
+
+          <!-- Solución acuosa extracelular -->
+          <rect x="0" y="0" width="600" height="120" fill="url(#solutionTopG)"/>
+          <text x="22" y="32" font-family="IBM Plex Mono" font-size="13" fill="#7090a8" letter-spacing="3">EXTRACELULAR</text>
+
+          <!-- Solución acuosa citoplasma -->
+          <rect x="0" y="460" width="600" height="120" fill="url(#solutionBotG)"/>
+          <text x="22" y="552" font-family="IBM Plex Mono" font-size="13" fill="#7090a8" letter-spacing="3">CITOPLASMA</text>
+
+          <!-- Bicapa lipídica · cara externa (cabezas + colas hacia el interior) -->
+          <g transform="translate(0 120)">
+            <!-- 30 fosfolípidos arriba, espaciados, evitando el AQP central (x 220-380) -->
+            <g>
+              <!-- Cabezas hidrofílicas (círculos amarillo claro) y colas (líneas hacia abajo) -->
+              <g fill="#e8c557" stroke="#a08020" stroke-width="0.8">
+                <circle cx="20" cy="6" r="9"/><circle cx="44" cy="6" r="9"/><circle cx="68" cy="6" r="9"/><circle cx="92" cy="6" r="9"/>
+                <circle cx="116" cy="6" r="9"/><circle cx="140" cy="6" r="9"/><circle cx="164" cy="6" r="9"/><circle cx="188" cy="6" r="9"/>
+                <circle cx="212" cy="6" r="9"/>
+                <!-- (espacio para AQP de 220 a 380) -->
+                <circle cx="388" cy="6" r="9"/>
+                <circle cx="412" cy="6" r="9"/><circle cx="436" cy="6" r="9"/><circle cx="460" cy="6" r="9"/><circle cx="484" cy="6" r="9"/>
+                <circle cx="508" cy="6" r="9"/><circle cx="532" cy="6" r="9"/><circle cx="556" cy="6" r="9"/><circle cx="580" cy="6" r="9"/>
+              </g>
+              <g stroke="#a08020" stroke-width="1.4" stroke-linecap="round">
+                <line x1="17" y1="14" x2="17" y2="68"/><line x1="23" y1="14" x2="23" y2="68"/>
+                <line x1="41" y1="14" x2="41" y2="68"/><line x1="47" y1="14" x2="47" y2="68"/>
+                <line x1="65" y1="14" x2="65" y2="68"/><line x1="71" y1="14" x2="71" y2="68"/>
+                <line x1="89" y1="14" x2="89" y2="68"/><line x1="95" y1="14" x2="95" y2="68"/>
+                <line x1="113" y1="14" x2="113" y2="68"/><line x1="119" y1="14" x2="119" y2="68"/>
+                <line x1="137" y1="14" x2="137" y2="68"/><line x1="143" y1="14" x2="143" y2="68"/>
+                <line x1="161" y1="14" x2="161" y2="68"/><line x1="167" y1="14" x2="167" y2="68"/>
+                <line x1="185" y1="14" x2="185" y2="68"/><line x1="191" y1="14" x2="191" y2="68"/>
+                <line x1="209" y1="14" x2="209" y2="68"/><line x1="215" y1="14" x2="215" y2="68"/>
+                <line x1="385" y1="14" x2="385" y2="68"/><line x1="391" y1="14" x2="391" y2="68"/>
+                <line x1="409" y1="14" x2="409" y2="68"/><line x1="415" y1="14" x2="415" y2="68"/>
+                <line x1="433" y1="14" x2="433" y2="68"/><line x1="439" y1="14" x2="439" y2="68"/>
+                <line x1="457" y1="14" x2="457" y2="68"/><line x1="463" y1="14" x2="463" y2="68"/>
+                <line x1="481" y1="14" x2="481" y2="68"/><line x1="487" y1="14" x2="487" y2="68"/>
+                <line x1="505" y1="14" x2="505" y2="68"/><line x1="511" y1="14" x2="511" y2="68"/>
+                <line x1="529" y1="14" x2="529" y2="68"/><line x1="535" y1="14" x2="535" y2="68"/>
+                <line x1="553" y1="14" x2="553" y2="68"/><line x1="559" y1="14" x2="559" y2="68"/>
+                <line x1="577" y1="14" x2="577" y2="68"/><line x1="583" y1="14" x2="583" y2="68"/>
+              </g>
+            </g>
+          </g>
+
+          <!-- Bicapa lipídica · cara interna (cabezas + colas hacia arriba) -->
+          <g transform="translate(0 380)">
+            <g stroke="#a08020" stroke-width="1.4" stroke-linecap="round">
+              <line x1="17" y1="12" x2="17" y2="66"/><line x1="23" y1="12" x2="23" y2="66"/>
+              <line x1="41" y1="12" x2="41" y2="66"/><line x1="47" y1="12" x2="47" y2="66"/>
+              <line x1="65" y1="12" x2="65" y2="66"/><line x1="71" y1="12" x2="71" y2="66"/>
+              <line x1="89" y1="12" x2="89" y2="66"/><line x1="95" y1="12" x2="95" y2="66"/>
+              <line x1="113" y1="12" x2="113" y2="66"/><line x1="119" y1="12" x2="119" y2="66"/>
+              <line x1="137" y1="12" x2="137" y2="66"/><line x1="143" y1="12" x2="143" y2="66"/>
+              <line x1="161" y1="12" x2="161" y2="66"/><line x1="167" y1="12" x2="167" y2="66"/>
+              <line x1="185" y1="12" x2="185" y2="66"/><line x1="191" y1="12" x2="191" y2="66"/>
+              <line x1="209" y1="12" x2="209" y2="66"/><line x1="215" y1="12" x2="215" y2="66"/>
+              <line x1="385" y1="12" x2="385" y2="66"/><line x1="391" y1="12" x2="391" y2="66"/>
+              <line x1="409" y1="12" x2="409" y2="66"/><line x1="415" y1="12" x2="415" y2="66"/>
+              <line x1="433" y1="12" x2="433" y2="66"/><line x1="439" y1="12" x2="439" y2="66"/>
+              <line x1="457" y1="12" x2="457" y2="66"/><line x1="463" y1="12" x2="463" y2="66"/>
+              <line x1="481" y1="12" x2="481" y2="66"/><line x1="487" y1="12" x2="487" y2="66"/>
+              <line x1="505" y1="12" x2="505" y2="66"/><line x1="511" y1="12" x2="511" y2="66"/>
+              <line x1="529" y1="12" x2="529" y2="66"/><line x1="535" y1="12" x2="535" y2="66"/>
+              <line x1="553" y1="12" x2="553" y2="66"/><line x1="559" y1="12" x2="559" y2="66"/>
+              <line x1="577" y1="12" x2="577" y2="66"/><line x1="583" y1="12" x2="583" y2="66"/>
+            </g>
+            <g fill="#e8c557" stroke="#a08020" stroke-width="0.8">
+              <circle cx="20" cy="74" r="9"/><circle cx="44" cy="74" r="9"/><circle cx="68" cy="74" r="9"/><circle cx="92" cy="74" r="9"/>
+              <circle cx="116" cy="74" r="9"/><circle cx="140" cy="74" r="9"/><circle cx="164" cy="74" r="9"/><circle cx="188" cy="74" r="9"/>
+              <circle cx="212" cy="74" r="9"/>
+              <circle cx="388" cy="74" r="9"/>
+              <circle cx="412" cy="74" r="9"/><circle cx="436" cy="74" r="9"/><circle cx="460" cy="74" r="9"/><circle cx="484" cy="74" r="9"/>
+              <circle cx="508" cy="74" r="9"/><circle cx="532" cy="74" r="9"/><circle cx="556" cy="74" r="9"/><circle cx="580" cy="74" r="9"/>
+            </g>
+          </g>
+
+          <!-- Acuaporina monómero · vista lateral · forma de reloj de arena -->
+          <!-- Silueta proteína (background) -->
+          <path d="M 220 120 L 380 120 L 380 200 L 360 240 L 340 280 L 340 320 L 360 360 L 380 400 L 380 460 L 220 460 L 220 400 L 240 360 L 260 320 L 260 280 L 240 240 L 220 200 Z"
+                fill="url(#aqpBodyG)" stroke="#1f2640" stroke-width="2"/>
+
+          <!-- Poro interior (canal) -->
+          <path d="M 290 120 L 310 120 L 310 220 L 300 260 L 300 320 L 310 360 L 310 460 L 290 460 L 290 360 L 300 320 L 300 260 L 290 220 Z"
+                fill="url(#aqpPoreG)" stroke="#4ec5e0" stroke-width="1" stroke-opacity="0.4"/>
+
+          <!-- Líneas verticales sugiriendo las 6 hélices TMH (3 visibles por lado) -->
+          <g stroke="#5a6790" stroke-width="1.4" stroke-opacity="0.65" stroke-linecap="round">
+            <!-- lado izquierdo -->
+            <line x1="245" y1="135" x2="245" y2="445"/>
+            <line x1="265" y1="135" x2="265" y2="445"/>
+            <line x1="285" y1="135" x2="285" y2="445"/>
+            <!-- lado derecho -->
+            <line x1="315" y1="135" x2="315" y2="445"/>
+            <line x1="335" y1="135" x2="335" y2="445"/>
+            <line x1="355" y1="135" x2="355" y2="445"/>
+          </g>
+
+          <!-- Filtro ar/R (vestíbulo extracelular) -->
+          <ellipse cx="300" cy="200" rx="14" ry="6" fill="none" stroke="#f0b65a" stroke-width="2"/>
+          <line x1="312" y1="200" x2="430" y2="160" stroke="#f0b65a" stroke-width="1" stroke-dasharray="3 3"/>
+          <text x="436" y="158" font-family="IBM Plex Mono" font-size="14" fill="#f0b65a" letter-spacing="1">ar/R</text>
+          <text x="436" y="172" font-family="IBM Plex Sans" font-size="10" fill="#7a8aa8" letter-spacing="0.5">filtro selectividad</text>
+
+          <!-- Dos motivos NPA (centro del poro, cintura del reloj de arena) -->
+          <circle cx="300" cy="280" r="6" fill="#ff5577"/>
+          <circle cx="300" cy="320" r="6" fill="#ff5577"/>
+          <line x1="306" y1="300" x2="430" y2="300" stroke="#ff5577" stroke-width="1" stroke-dasharray="3 3"/>
+          <text x="436" y="298" font-family="IBM Plex Mono" font-size="14" fill="#ff5577" letter-spacing="1">NPA · NPA</text>
+          <text x="436" y="312" font-family="IBM Plex Sans" font-size="10" fill="#7a8aa8" letter-spacing="0.5">bucles B y E</text>
+
+          <!-- Etiqueta 6 TMH -->
+          <line x1="240" y1="290" x2="160" y2="320" stroke="#5a6790" stroke-width="1" stroke-dasharray="3 3"/>
+          <text x="60" y="318" font-family="IBM Plex Mono" font-size="14" fill="#8b9bb8" letter-spacing="1">6 TMH</text>
+          <text x="60" y="332" font-family="IBM Plex Sans" font-size="10" fill="#7a8aa8" letter-spacing="0.5">hélices transmembrana</text>
+
+          <!-- Moléculas de agua atravesando el poro (animadas) -->
+          <g fill="#4ec5e0">
+            <circle cx="300" cy="40" r="4">
+              <animate attributeName="cy" values="40;540;40" dur="4.2s" repeatCount="indefinite"/>
+              <animate attributeName="opacity" values="0;1;1;1;0" dur="4.2s" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="296" cy="60" r="3">
+              <animate attributeName="cy" values="60;560;60" dur="5.1s" begin="0.8s" repeatCount="indefinite"/>
+              <animate attributeName="opacity" values="0;0.9;0.9;0.9;0" dur="5.1s" begin="0.8s" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="304" cy="20" r="3.5">
+              <animate attributeName="cy" values="20;520;20" dur="4.6s" begin="1.6s" repeatCount="indefinite"/>
+              <animate attributeName="opacity" values="0;1;1;1;0" dur="4.6s" begin="1.6s" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="299" cy="80" r="3">
+              <animate attributeName="cy" values="80;580;80" dur="5.4s" begin="2.4s" repeatCount="indefinite"/>
+              <animate attributeName="opacity" values="0;0.85;0.85;0.85;0" dur="5.4s" begin="2.4s" repeatCount="indefinite"/>
+            </circle>
+          </g>
+        </svg>
+      </div>
+
+      <!-- Facts -->
+      <div class="anim-in-3" style="display: flex; flex-direction: column; gap: 22px;">
+        <div>
+          <div class="eyebrow muted" style="margin-bottom: 6px; font-size: 16px;">TOPOLOGÍA</div>
+          <p class="body" style="color: var(--ink); font-size: 26px; line-height: 1.4;">
+            <span>6 hélices transmembrana + 2 hélices reentrantes. Plegamiento "en reloj de arena". Poro de ~3 Å.</span>
+          </p>
+        </div>
+        <div>
+          <div class="eyebrow muted" style="margin-bottom: 6px; font-size: 16px;">SELECTIVIDAD</div>
+          <p class="body" style="color: var(--ink); font-size: 26px; line-height: 1.4;">
+            <span>Dos motivos </span><span class="mono fruit-c">NPA</span><span> en el centro del poro · filtro </span><span class="mono fruit-c">ar/R</span><span> aromático/arginina.</span>
+          </p>
+        </div>
+        <div>
+          <div class="eyebrow muted" style="margin-bottom: 6px; font-size: 16px;">UNIDAD FUNCIONAL</div>
+          <p class="body" style="color: var(--ink); font-size: 26px; line-height: 1.4;">
+            <span>Tetrámero con cuatro poros independientes en la membrana.</span>
+          </p>
+        </div>
+        <div>
+          <div class="eyebrow muted" style="margin-bottom: 6px; font-size: 16px;">EN PLANTAS · 5 SUBFAMILIAS</div>
+          <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+            <span class="pill pill-pip">PIP <span class="muted" style="font-size: 15px;">membrana plasmática</span></span>
+            <span class="pill pill-tip">TIP <span class="muted" style="font-size: 15px;">tonoplasto</span></span>
+            <span class="pill pill-nip">NIP <span class="muted" style="font-size: 15px;">metaloides</span></span>
+            <span class="pill pill-sip">SIP <span class="muted" style="font-size: 15px;">retículo</span></span>
+            <span class="pill pill-xip">XIP <span class="muted" style="font-size: 15px;">solutos sin carga</span></span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer-rule">
+    <div>Maurel et al. 2015 · Johanson et al. 2001 · Murata et al. 2000</div>
+    <div class="mono">03 / 22</div>
+  </div>
+</section>
+
+
+<!-- ===================== 04 · EL VACÍO ===================== -->
+<section data-label="04 · El vacío · 4 conocidas en Fragaria">
+  <div class="topbar">
+    <div class="tb-l">
+      <span class="tb-dot" style="background: var(--c-fruit);"></span>
+      <span>Punto de partida · Lo que se conocía</span>
+    </div>
+    <div class="tb-r">04 / 22</div>
+  </div>
+
+  <div class="frame">
+    <div class="anim-in" style="max-width: 1700px;">
+      <div class="eyebrow fruit" style="margin-bottom: 22px;">EL VACÍO</div>
+      <h2 class="title" style="font-size: 60px;">
+        <span>Cuatro acuaporinas conocidas en el cultivar.</span>
+        <span class="italic" style="color: var(--ink-soft); margin-left: 20px;">¿Cuántas oculta su genoma?</span>
+      </h2>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 100px; margin-top: 50px; align-items: start;">
+
+      <!-- Las 4 conocidas + el vacío -->
+      <div class="anim-in-2">
+        <div class="eyebrow muted" style="margin-bottom: 22px; font-size: 18px;">LO QUE SE CONOCÍA · 4 AQP CARACTERIZADAS FUNCIONALMENTE</div>
+
+        <!-- 4 cards horizontales con las 4 conocidas -->
+        <div style="display: flex; flex-direction: column; gap: 14px;">
+
+          <div style="display: flex; align-items: center; gap: 18px; padding: 14px 20px; border-radius: 6px; background: rgba(231, 76, 60, 0.08); border-left: 3px solid var(--sf-pip);">
+            <div style="width: 14px; height: 14px; border-radius: 50%; background: var(--sf-pip); flex-shrink: 0;"></div>
+            <div style="flex: 1;">
+              <div class="mono" style="font-size: 22px; color: var(--ink); font-weight: 500;">FaPIP1;1</div>
+              <div class="small" style="font-size: 16px; margin-top: 2px;">membrana plasmática · fruto · Mut et al. 2008</div>
+            </div>
+            <div class="mono" style="font-size: 16px; color: var(--sf-pip); letter-spacing: 0.12em;">PIP</div>
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 18px; padding: 14px 20px; border-radius: 6px; background: rgba(231, 76, 60, 0.08); border-left: 3px solid var(--sf-pip);">
+            <div style="width: 14px; height: 14px; border-radius: 50%; background: var(--sf-pip); flex-shrink: 0;"></div>
+            <div style="flex: 1;">
+              <div class="mono" style="font-size: 22px; color: var(--ink); font-weight: 500;">FaPIP2;1</div>
+              <div class="small" style="font-size: 16px; margin-top: 2px;">membrana plasmática · raíz · Alleva et al. 2010</div>
+            </div>
+            <div class="mono" style="font-size: 16px; color: var(--sf-pip); letter-spacing: 0.12em;">PIP</div>
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 18px; padding: 14px 20px; border-radius: 6px; background: rgba(46, 204, 113, 0.08); border-left: 3px solid var(--sf-nip);">
+            <div style="width: 14px; height: 14px; border-radius: 50%; background: var(--sf-nip); flex-shrink: 0;"></div>
+            <div style="flex: 1;">
+              <div class="mono" style="font-size: 22px; color: var(--ink); font-weight: 500;">FaNIP1;1</div>
+              <div class="small" style="font-size: 16px; margin-top: 2px;">membrana plasmática · maduración · Molina-Hidalgo et al. 2015</div>
+            </div>
+            <div class="mono" style="font-size: 16px; color: var(--sf-nip); letter-spacing: 0.12em;">NIP</div>
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 18px; padding: 14px 20px; border-radius: 6px; background: rgba(52, 152, 219, 0.08); border-left: 3px solid var(--sf-tip);">
+            <div style="width: 14px; height: 14px; border-radius: 50%; background: var(--sf-tip); flex-shrink: 0;"></div>
+            <div style="flex: 1;">
+              <div class="mono" style="font-size: 22px; color: var(--ink); font-weight: 500;">FaRB7</div>
+              <div class="small" style="font-size: 16px; margin-top: 2px;">tonoplasto · raíz · Merlaen et al. 2018</div>
+            </div>
+            <div class="mono" style="font-size: 16px; color: var(--sf-tip); letter-spacing: 0.12em;">TIP</div>
+          </div>
+
+        </div>
+
+        <!-- Visual contraste: subfamilias presentes vs ausentes -->
+        <div style="margin-top: 28px; padding-top: 22px; border-top: 1px solid var(--rule);">
+          <div class="eyebrow muted" style="font-size: 14px; margin-bottom: 14px;">CINCO SUBFAMILIAS CANÓNICAS DE ACUAPORINAS · TRES DESCRITAS</div>
+          <div style="display: flex; gap: 12px; align-items: center;">
+            <span class="mono" style="padding: 6px 14px; border-radius: 4px; background: var(--sf-pip); color: #fff; font-size: 18px; letter-spacing: 0.12em;">PIP</span>
+            <span class="mono" style="padding: 6px 14px; border-radius: 4px; background: var(--sf-tip); color: #fff; font-size: 18px; letter-spacing: 0.12em;">TIP</span>
+            <span class="mono" style="padding: 6px 14px; border-radius: 4px; background: var(--sf-nip); color: #fff; font-size: 18px; letter-spacing: 0.12em;">NIP</span>
+            <span class="mono" style="padding: 6px 14px; border-radius: 4px; background: transparent; color: var(--ink-dim); font-size: 18px; letter-spacing: 0.12em; border: 1px dashed var(--ink-dim); text-decoration: line-through; text-decoration-color: var(--c-fruit);">SIP</span>
+            <span class="mono" style="padding: 6px 14px; border-radius: 4px; background: transparent; color: var(--ink-dim); font-size: 18px; letter-spacing: 0.12em; border: 1px dashed var(--ink-dim); text-decoration: line-through; text-decoration-color: var(--c-fruit);">XIP</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right column: tension -->
+      <div class="anim-in-3" style="display: flex; flex-direction: column; gap: 36px;">
+        <div class="card">
+          <div class="card-title">EL PROBLEMA TÉCNICO</div>
+          <p class="card-body">
+            <span>El cultivar es </span><span class="italic">aloctoploide</span><span>: cuatro subgenomas (A, B, C, D) procedentes de progenitores diploides distintos. Cada acuaporina ancestral aparece hasta </span><span class="fruit-c">cuatro veces</span><span> en el genoma.</span>
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-title">EL PROBLEMA BIOLÓGICO</div>
+          <p class="card-body">
+            <span>El inventario incluye solo PIP, NIP y TIP. Las subfamilias </span><span class="mono sf-sip">SIP</span><span> y </span><span class="mono sf-xip">XIP</span><span> no se han descrito en el cultivar.</span>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer-rule">
+    <div>Alleva et al. 2010 · Mut et al. 2008 · Molina-Hidalgo et al. 2015 · Merlaen et al. 2018 · Edger et al. 2019</div>
+    <div class="mono">04 / 22</div>
+  </div>
+</section>
+
+
+<!-- ===================== 05 · BLOQUE I (SVG scene) ===================== -->
+<section data-label="05 · Bloque I · Del genoma a los candidatos" data-theme="dark" data-scene="threejs:genome-pipeline">
+  <div class="scene-overlay-bar">
+    <div class="so-eyebrow anim-in" style="color: #4ec5e0;">BLOQUE I</div>
+    <h2 class="so-title anim-in-2">Del genoma <span style="color: #4ec5e0;">a los candidatos.</span></h2>
+    <p class="so-sub anim-in-3">Cómo buscar acuaporinas en un genoma alopoliploide sin perder ninguna copia, y sin confundir las que no son.</p>
+  </div>
+
+  <div class="footer-rule">
+    <div>Galaxy · tblastn · BEDtools · Exonerate · GFFCompare</div>
+    <div class="mono">05 / 22</div>
+  </div>
+</section>
+
+<!-- ===================== 06 · PASO 01 · MAPEO ===================== -->
+<section data-label="06 · Mapeo · tblastn + BEDtools + Exonerate">
+  <div class="topbar">
+    <div class="tb-l">
+      <span class="tb-dot"></span>
+      <span>Bloque I · Paso 01 · Mapeo de homología</span>
+    </div>
+    <div class="tb-r">06 / 22</div>
+  </div>
+
+  <div class="frame">
+    <div class="anim-in" style="max-width: 1700px;">
+      <div class="eyebrow water-c" style="margin-bottom: 22px;">PASO 01 · DEL GENOMA A LOS MODELOS GÉNICOS</div>
+      <h2 class="title">
+        <span>tblastn alinea, BEDtools reconstruye,</span>
+        <br/>
+        <span class="italic" style="color: var(--ink-soft);">Exonerate modela.</span>
+      </h2>
+    </div>
+
+    <div style="margin-top: 60px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px;">
+
+      <!-- 01 · tblastn -->
+      <div class="card anim-in-2" style="padding: 28px 26px; min-height: 360px; display: flex; flex-direction: column;">
+        <div class="card-title" style="color: var(--c-water);">01 · MAPEAR</div>
+        <p style="font-family: var(--mono); font-size: 17px; color: var(--ink-muted); margin: 0 0 18px; letter-spacing: 0.14em;">tblastn · NCBI BLAST+</p>
+        <p class="card-body" style="font-size: 22px; line-height: 1.4;">
+          <span>Alineamiento de las </span><span class="fruit-c">576 secuencias query</span><span> contra el genoma de </span><span class="italic">F.</span><span> x </span><span class="italic">ananassa</span><span> 'Benihoppe'. Localiza regiones homólogas, ignorando intrones.</span>
+        </p>
+        <div style="margin-top: auto; padding-top: 20px; border-top: 1px solid var(--rule); display: flex; justify-content: space-between; align-items: baseline;">
+          <span class="mono" style="font-size: 16px; color: var(--ink-muted); letter-spacing: 0.12em;">e-value · 1e-5</span>
+          <span class="mono water-c" style="font-size: 26px;">53.396 hits</span>
+        </div>
+      </div>
+
+      <!-- 02 · BEDtools -->
+      <div class="card anim-in-3" style="padding: 28px 26px; min-height: 360px; display: flex; flex-direction: column;">
+        <div class="card-title" style="color: var(--c-water);">02 · RECONSTRUIR</div>
+        <p style="font-family: var(--mono); font-size: 17px; color: var(--ink-muted); margin: 0 0 18px; letter-spacing: 0.14em;">BEDtools · sort + merge + slop</p>
+        <p class="card-body" style="font-size: 22px; line-height: 1.4;">
+          <span>Los hits fragmentados por intrones se </span><span class="fruit-c">fusionan</span><span> a menos de 3 kb y se extienden 1 kb a cada lado para capturar el ORF completo y sus señales reguladoras.</span>
+        </p>
+        <div style="margin-top: auto; padding-top: 20px; border-top: 1px solid var(--rule); display: flex; justify-content: space-between; align-items: baseline;">
+          <span class="mono" style="font-size: 16px; color: var(--ink-muted); letter-spacing: 0.12em;">merge 3kb · slop 1kb</span>
+          <span class="mono water-c" style="font-size: 26px;">3.168 loci</span>
+        </div>
+      </div>
+
+      <!-- 03 · Exonerate -->
+      <div class="card anim-in-3" style="padding: 28px 26px; min-height: 360px; display: flex; flex-direction: column;">
+        <div class="card-title" style="color: var(--c-water);">03 · MODELAR</div>
+        <p style="font-family: var(--mono); font-size: 17px; color: var(--ink-muted); margin: 0 0 18px; letter-spacing: 0.14em;">Exonerate · protein2genome</p>
+        <p class="card-body" style="font-size: 22px; line-height: 1.4;">
+          <span>Reconstruye la estructura </span><span class="fruit-c">exón-intrón</span><span>, respeta sitios de </span><span class="italic">splicing</span><span> y recupera el ORF completo. Configurado al máximo de sensibilidad.</span>
+        </p>
+        <div style="margin-top: auto; padding-top: 20px; border-top: 1px solid var(--rule); display: flex; justify-content: space-between; align-items: baseline;">
+          <span class="mono" style="font-size: 16px; color: var(--ink-muted); letter-spacing: 0.12em;">intrón 20-3000 bp</span>
+          <span class="mono water-c" style="font-size: 26px;">4.984 modelos</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Megafig: salida del paso 01 -->
+    <div class="anim-in-3" style="display: flex; gap: 32px; align-items: baseline; margin-top: 28px; padding-top: 18px; border-top: 1px solid var(--rule);">
+      <div class="megafig grow water-c" style="font-size: 96px; line-height: 1;">4.984</div>
+      <div class="body" style="color: var(--ink-soft); line-height: 1.35; font-size: 22px;">
+        <span>modelos proteicos redundantes,</span>
+        <br/>
+        <span>listos para el </span><span class="fruit-c">curado estructural</span><span> del paso 02.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-rule">
+    <div>Camacho et al. 2009 · Quinlan & Hall 2010 · Slater & Birney 2005 · Galaxy Community 2024</div>
+    <div class="mono">06 / 22</div>
+  </div>
+</section>
+
+
+<!-- ===================== 07 · PASO 02 · MODELADO + FILTROS ===================== -->
+<section data-label="07 · Modelado · Exonerate y filtros">
+  <div class="topbar">
+    <div class="tb-l">
+      <span class="tb-dot"></span>
+      <span>Bloque I · Paso 02 · Modelado y filtros</span>
+    </div>
+    <div class="tb-r">07 / 22</div>
+  </div>
+
+  <div class="frame">
+    <div class="anim-in" style="max-width: 1500px;">
+      <div class="eyebrow water-c" style="margin-bottom: 22px;">PASO 02 · DEL LOCUS A LA SECUENCIA</div>
+      <h2 class="title">
+        <span>Exonerate reconstruye la estructura exón‑intrón.</span>
+        <br/>
+        <span class="italic" style="color: var(--ink-soft);">Tres filtros decantan la familia.</span>
+      </h2>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 80px; margin-top: 56px; align-items: center;">
+
+      <!-- Exonerate visual -->
+      <div class="anim-in-2">
+        <div class="eyebrow muted" style="margin-bottom: 22px; font-size: 18px;">PROTEIN2GENOME · MAX SENSIBILIDAD</div>
+
+        <svg viewBox="0 0 800 340" style="width: 100%; height: auto;">
+          <!-- raw locus -->
+          <g>
+            <text x="0" y="22" font-family="IBM Plex Mono" font-size="14" fill="#8b96b3" letter-spacing="2">LOCUS</text>
+            <rect x="0" y="36" width="800" height="22" fill="rgba(78,197,224,0.12)" stroke="rgba(78,197,224,0.3)"/>
+          </g>
+
+          <!-- modeled exons -->
+          <g transform="translate(0 110)">
+            <text x="0" y="-8" font-family="IBM Plex Mono" font-size="14" fill="#7dd3a8" letter-spacing="2">EXONERATE · MODELADO ORF</text>
+            <rect x="40" y="8" width="120" height="22" fill="#7dd3a8" opacity="0.7"/>
+            <rect x="220" y="8" width="80" height="22" fill="#7dd3a8" opacity="0.7"/>
+            <rect x="360" y="8" width="140" height="22" fill="#7dd3a8" opacity="0.7"/>
+            <rect x="560" y="8" width="100" height="22" fill="#7dd3a8" opacity="0.7"/>
+            <!-- introns -->
+            <line x1="160" y1="19" x2="220" y2="19" stroke="#7dd3a8" stroke-opacity="0.4" stroke-dasharray="3 4"/>
+            <line x1="300" y1="19" x2="360" y2="19" stroke="#7dd3a8" stroke-opacity="0.4" stroke-dasharray="3 4"/>
+            <line x1="500" y1="19" x2="560" y2="19" stroke="#7dd3a8" stroke-opacity="0.4" stroke-dasharray="3 4"/>
+          </g>
+
+          <!-- aa protein -->
+          <g transform="translate(0 200)">
+            <text x="0" y="-8" font-family="IBM Plex Mono" font-size="14" fill="#ff5577" letter-spacing="2">PROTEÍNA · AA</text>
+            <rect x="40" y="8" width="620" height="22" fill="rgba(255,85,119,0.25)" stroke="#ff5577" stroke-width="1"/>
+            <!-- start M marker -->
+            <text x="34" y="46" font-family="IBM Plex Mono" font-size="15" fill="#ff5577" text-anchor="middle">M</text>
+            <!-- length brackets -->
+            <text x="350" y="74" font-family="IBM Plex Mono" font-size="14" fill="#8b96b3" text-anchor="middle" letter-spacing="2">LONGITUD · 140–380 AA</text>
+            <line x1="40" y1="56" x2="660" y2="56" stroke="#8b96b3" stroke-opacity="0.4"/>
+            <line x1="40" y1="50" x2="40" y2="62" stroke="#8b96b3" stroke-opacity="0.4"/>
+            <line x1="660" y1="50" x2="660" y2="62" stroke="#8b96b3" stroke-opacity="0.4"/>
+          </g>
+        </svg>
+      </div>
+
+      <!-- Three filters -->
+      <div class="anim-in-3" style="display: flex; flex-direction: column; gap: 24px;">
+        <div class="eyebrow muted" style="font-size: 18px;">TRES FILTROS DE VIABILIDAD</div>
+
+        <div style="display: flex; gap: 22px; align-items: flex-start;">
+          <div class="mono" style="font-size: 20px; color: var(--c-water); width: 36px; padding-top: 4px;">01</div>
+          <div>
+            <div class="body-lg" style="color: var(--ink); margin: 0;">Metionina inicial</div>
+            <div class="small">Integridad del extremo N‑terminal · Kozak 1999</div>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 22px; align-items: flex-start;">
+          <div class="mono" style="font-size: 20px; color: var(--c-water); width: 36px; padding-top: 4px;">02</div>
+          <div>
+            <div class="body-lg" style="color: var(--ink); margin: 0;">Longitud 140–380 aa</div>
+            <div class="small">Cubre el 98,81 % de las acuaporinas Rosaceae · n = 419</div>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 22px; align-items: flex-start;">
+          <div class="mono" style="font-size: 20px; color: var(--c-water); width: 36px; padding-top: 4px;">03</div>
+          <div>
+            <div class="body-lg" style="color: var(--ink); margin: 0;">Redundancia espacial</div>
+            <div class="small">ClusterBED · una sola isoforma por locus, mayor puntuación</div>
+          </div>
+        </div>
+
+        <div style="height: 8px;"></div>
+
+        <div style="display: flex; gap: 28px; align-items: baseline; padding-top: 12px; border-top: 1px solid var(--rule);">
+          <div class="megafig leaf-c" style="font-size: 96px; line-height: 1;">129</div>
+          <div class="body" style="color: var(--ink-soft); line-height: 1.35; font-size: 24px;">
+            <span>secuencias no redundantes,</span>
+            <br/>
+            <span>candidatas a acuaporina.</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer-rule">
+    <div>Slater & Birney 2005 · Kozak 1999 · Filtro de longitud calibrado con n = 419 Rosaceae</div>
+    <div class="mono">07 / 22</div>
+  </div>
+</section>
+
+
+<!-- ===================== 09 · AUDITORÍA GFF3 vs EXONERATE ===================== -->
+<section data-label="08 · Auditoría · GFF3 vs Exonerate">
+  <div class="topbar">
+    <div class="tb-l">
+      <span class="tb-dot"></span>
+      <span>Bloque I · Paso 03 · Auditoría</span>
+    </div>
+    <div class="tb-r">08 / 22</div>
+  </div>
+
+  <div class="frame">
+    <div class="anim-in" style="max-width: 1500px;">
+      <div class="eyebrow water-c" style="margin-bottom: 22px;">PASO 03 · ANOTACIÓN OFICIAL vs PIPELINE PROPIO</div>
+      <h2 class="title">
+        <span>Donde la anotación oficial coincide,</span>
+        <br/>
+        <span class="italic" style="color: var(--ink-soft);">y donde necesita corrección.</span>
+      </h2>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 80px; margin-top: 56px; align-items: center;">
+
+      <!-- Figure 5 -->
+      <div class="anim-in-2" style="background: #ffffff; border-radius: 4px; padding: 24px;">
+        <img src="assets/figuras/Figura_05_identidad_GFF3_Exonerate.png" alt="Identidad GFF3 vs Exonerate" style="width: 100%; height: auto; display: block;"/>
+      </div>
+
+      <!-- Numbers -->
+      <div class="anim-in-3" style="display: flex; flex-direction: column; gap: 36px;">
+        <div>
+          <div class="eyebrow muted" style="font-size: 18px; margin-bottom: 14px;">DE LAS 129 SECUENCIAS PROPIAS</div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+            <div>
+              <div class="megafig leaf-c" style="font-size: 96px;">91</div>
+              <div class="small" style="margin-top: 6px;">100 % idénticas al GFF3 oficial</div>
+            </div>
+            <div>
+              <div class="megafig amber-c" style="font-size: 96px;">38</div>
+              <div class="small" style="margin-top: 6px;">con discrepancias · prevalece la propia</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="padding-top: 32px; border-top: 1px solid var(--rule);">
+          <div class="eyebrow muted" style="font-size: 18px; margin-bottom: 18px;">UNIÓN DE FUENTES</div>
+          <div style="display: flex; flex-direction: column; gap: 12px; font-size: 26px;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline;">
+              <span style="color: var(--ink-soft);">Propias (Exonerate)</span>
+              <span class="mono water-c" style="font-size: 30px;">129</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: baseline;">
+              <span style="color: var(--ink-soft);">Exclusivas de GDR (parciales)</span>
+              <span class="mono water-c" style="font-size: 30px;">+ 15</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: baseline; padding-top: 14px; border-top: 1px solid var(--rule-strong);">
+              <span style="color: var(--ink);">Entrada al curado estructural</span>
+              <span class="mono fruit-c" style="font-size: 42px;">147</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer-rule">
+    <div>Concordancia categórica con GDR · 129/147 candidatas compatibles · Anexo B</div>
+    <div class="mono">08 / 22</div>
+  </div>
+</section>
+
+
+<!-- ===================== 10 · SECCIÓN II · CINEMATIC ===================== -->
+<section data-label="09 · Bloque II · Anatomía y firma fisicoquímica" data-theme="dark" data-scene="threejs:tetramer">
+  <div class="scene-overlay-bar">
+    <div class="so-eyebrow anim-in" style="color: #4ec5e0;">BLOQUE II</div>
+    <h2 class="so-title anim-in-2">Anatomía y firma <span class="italic">fisicoquímica.</span></h2>
+    <p class="so-sub anim-in-3">Acuaporina vegetal real (SoPIP2;1, PDB 1Z98). Cuatro poros, dos motivos NPA, gotas atravesando.</p>
+  </div>
+
+  <div class="footer-rule">
+    <div>DeepTMHMM · MEME · MAFFT · Pepstats · DeepLoc · PCA</div>
+    <div class="mono">09 / 22</div>
+  </div>
+</section>
+
+<!-- ===================== 11 · CUATRO FILTROS ESTRUCTURALES ===================== -->
+<section data-label="10 · Cuatro filtros estructurales">
+  <div class="topbar">
+    <div class="tb-l">
+      <span class="tb-dot"></span>
+      <span>Bloque II · Curado · Cuatro capas independientes</span>
+    </div>
+    <div class="tb-r">10 / 22</div>
+  </div>
+
+  <div class="frame" style="justify-content: center;">
+    <div class="anim-in" style="max-width: 1700px;">
+      <div class="eyebrow water-c" style="margin-bottom: 22px;">CADA CANDIDATA, CUATRO FILTROS</div>
+      <h2 class="title">
+        <span>Topología, alineamiento + motivos canónicos,</span>
+        <br/>
+        <span class="italic" style="color: var(--ink-soft);">filogenia exploratoria y firma fisicoquímica.</span>
+      </h2>
+    </div>
+
+    <div style="margin-top: 56px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 26px;">
+
+      <div class="card anim-in-2" style="padding: 32px 28px; min-height: 400px; display: flex; flex-direction: column;">
+        <div class="card-title">01 · TOPOLOGÍA</div>
+        <p style="font-family: var(--mono); font-size: 18px; color: var(--c-water); margin: 0 0 18px; letter-spacing: 0.14em;">DeepTMHMM</p>
+        <p class="card-body" style="font-size: 26px; line-height: 1.4;">
+          <span>Predicción de hélices transmembrana — descarta secuencias parciales y monómeros aberrantes.</span>
+        </p>
+        <div style="margin-top: auto; padding-top: 22px; border-top: 1px solid var(--rule); display: flex; justify-content: space-between; align-items: baseline;">
+          <span class="mono" style="font-size: 18px; color: var(--ink-muted); letter-spacing: 0.12em;">CANON</span>
+          <span class="mono fruit-c" style="font-size: 30px;">6 TM</span>
+        </div>
+      </div>
+
+      <div class="card anim-in-3" style="padding: 32px 28px; min-height: 400px; display: flex; flex-direction: column;">
+        <div class="card-title">02 · ALINEAMIENTO + MOTIVOS</div>
+        <p style="font-family: var(--mono); font-size: 18px; color: var(--c-water); margin: 0 0 18px; letter-spacing: 0.14em;">MAFFT + MEME</p>
+        <p class="card-body" style="font-size: 26px; line-height: 1.4;">
+          <span>El alineamiento revela deleciones internas; los motivos verifican los </span><span class="mono fruit-c" style="font-size: 22px;">NPA</span><span> canónicos y la firma por subfamilia.</span>
+        </p>
+        <div style="margin-top: auto; padding-top: 22px; border-top: 1px solid var(--rule); display: flex; justify-content: space-between; align-items: baseline;">
+          <span class="mono" style="font-size: 18px; color: var(--ink-muted); letter-spacing: 0.12em;">CANON</span>
+          <span class="mono fruit-c" style="font-size: 26px;">2× NPA · M1·M3·M6</span>
+        </div>
+      </div>
+
+      <div class="card anim-in-4" style="padding: 32px 28px; min-height: 400px; display: flex; flex-direction: column;">
+        <div class="card-title">03 · FILOGENIA EXPLORATORIA</div>
+        <p style="font-family: var(--mono); font-size: 18px; color: var(--c-water); margin: 0 0 18px; letter-spacing: 0.14em;">IQ-TREE · preliminar</p>
+        <p class="card-body" style="font-size: 26px; line-height: 1.4;">
+          <span>Árbol exploratorio que aísla clados marginales y ramas anormalmente largas — síntoma de fragmentación.</span>
+        </p>
+        <div style="margin-top: auto; padding-top: 22px; border-top: 1px solid var(--rule); display: flex; justify-content: space-between; align-items: baseline;">
+          <span class="mono" style="font-size: 18px; color: var(--ink-muted); letter-spacing: 0.12em;">DESCARTE</span>
+          <span class="mono fruit-c" style="font-size: 26px;">rama larga</span>
+        </div>
+      </div>
+
+      <div class="card anim-in-5" style="padding: 32px 28px; min-height: 400px; display: flex; flex-direction: column;">
+        <div class="card-title">04 · FIRMA FISICOQUÍMICA</div>
+        <p style="font-family: var(--mono); font-size: 18px; color: var(--c-water); margin: 0 0 18px; letter-spacing: 0.14em;">Pepstats · Biopython</p>
+        <p class="card-body" style="font-size: 26px; line-height: 1.4;">
+          <span>pI, peso molecular, GRAVY, estructura secundaria — 34 descriptores agregados en un PCA.</span>
+        </p>
+        <div style="margin-top: auto; padding-top: 22px; border-top: 1px solid var(--rule); display: flex; justify-content: space-between; align-items: baseline;">
+          <span class="mono" style="font-size: 18px; color: var(--ink-muted); letter-spacing: 0.12em;">ENTRA AL</span>
+          <span class="mono fruit-c" style="font-size: 30px;">PCA</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Caption -->
+    <p class="body" style="margin-top: 48px; font-size: 28px; line-height: 1.45; color: var(--ink-muted); font-style: italic; max-width: 1500px;">
+      <span>Una candidata cae si falla en </span><span class="fruit-c" style="font-style: normal;">cualquiera</span><span> de las capas. La convergencia de los filtros — no su suma — es lo que permite separar 121 acuaporinas estructuralmente viables de 23 parciales y 3 entradas no canónicas.</span>
+    </p>
+
+  </div>
+
+  <div class="footer-rule">
+    <div>Hallgren et al. 2022 · Katoh et al. 2019 · Bailey et al. 2015 · Minh et al. 2020</div>
+    <div class="mono">10 / 22</div>
+  </div>
+</section>
+
+
+<!-- ===================== 12 · PCA FISICOQUÍMICO ===================== -->
+<section data-label="11 · PCA fisicoquímico" data-embed="pca">
+  <div class="topbar">
+    <div class="tb-l">
+      <span class="tb-dot"></span>
+      <span>Bloque II · Curado · Firma fisicoquímica</span>
+    </div>
+    <div class="tb-r">11 / 22</div>
+  </div>
+
+  <div class="frame">
+    <div class="anim-in" style="max-width: 1500px;">
+      <div class="eyebrow water-c" style="margin-bottom: 22px;">PASO 04 · LA HUELLA MULTIVARIANTE</div>
+      <h2 class="title">
+        <span>Cada subfamilia tiene su propia firma</span>
+        <br/>
+        <span class="italic" style="color: var(--ink-soft);">en el espacio fisicoquímico.</span>
+      </h2>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 72px; margin-top: 56px; align-items: center;">
+
+      <!-- PCA figure -->
+      <div class="anim-in-2" style="background: #ffffff; border-radius: 4px; padding: 24px;">
+        <div data-embed-target style="background: #ffffff; border-radius: 4px; padding: 0; width: 100%; height: 600px;"></div>
+      </div>
+
+      <!-- Interpretation -->
+      <div class="anim-in-3" style="display: flex; flex-direction: column; gap: 28px;">
+
+        <div>
+          <div class="eyebrow muted" style="font-size: 18px; margin-bottom: 14px;">CUATRO ELIPSES, UNA HUELLA</div>
+          <p class="body" style="font-size: 26px; line-height: 1.45; color: var(--ink-soft); margin: 0;">
+            <span>PC1 + PC2 explican el </span><span class="water-c" style="font-style: normal; font-weight: 500;">54,1 %</span><span> de la varianza. NIP, TIP y SIP se separan con nitidez. PIP y XIP comparten espacio (misma membrana plasmática).</span>
+          </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px;">
+          <div class="pill pill-nip" style="font-size: 20px;">NIP <span class="pill-n">37</span></div>
+          <div class="pill pill-tip" style="font-size: 20px;">TIP <span class="pill-n">34</span></div>
+          <div class="pill pill-pip" style="font-size: 20px;">PIP <span class="pill-n">32</span></div>
+          <div class="pill pill-sip" style="font-size: 20px;">SIP <span class="pill-n">12</span></div>
+          <div class="pill pill-xip" style="font-size: 20px;">XIP <span class="pill-n">6</span></div>
+          <div class="pill" style="font-size: 20px; color: var(--sf-partial); border-color: var(--sf-partial);">parciales <span class="pill-n">23</span></div>
+        </div>
+
+        <div style="padding-top: 28px; border-top: 1px solid var(--rule);">
+          <div class="eyebrow muted" style="font-size: 18px; margin-bottom: 14px;">PUNTOS FUERA DE LA ELIPSE 95 %</div>
+          <p class="body" style="font-size: 24px; line-height: 1.4; color: var(--ink-soft); margin: 0;">
+            <span>15 parciales caen fuera de la elipse de su subfamilia. Las 8 restantes son atípicas detectadas por los otros filtros (topología, MAFFT, árbol).</span>
+          </p>
+          <p class="small" style="margin-top: 10px;">
+            <span>Cuatro filtros, anomalías distintas, sin redundancia.</span>
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer-rule">
+    <div>Distancia de Mahalanobis · χ²(2) 95 % · Robustez en Anexo G</div>
+    <div class="mono">11 / 22</div>
+  </div>
+</section>
+
+
+<!-- ===================== 13 · CATÁLOGO 121 ===================== -->
+<section data-label="12 · Catálogo · 121 acuaporinas">
+  <div class="topbar">
+    <div class="tb-l">
+      <span class="tb-dot" style="background: var(--c-fruit);"></span>
+      <span>Resultado bloque II · Catálogo curado</span>
+    </div>
+    <div class="tb-r">12 / 22</div>
+  </div>
+
+  <div class="frame frame-center">
+    <div style="text-align: center; max-width: 1500px;">
+      <div class="eyebrow fruit" style="margin-bottom: 26px;">DESDE LAS 147 CANDIDATAS</div>
+
+      <div class="anim-in" style="display: flex; align-items: baseline; justify-content: center; gap: 22px;">
+        <div class="megafig grow fruit-c" style="font-size: 260px;">121</div>
+        <div style="text-align: left; max-width: 540px;">
+          <div class="subtitle" style="font-size: 40px; color: var(--ink); line-height: 1.1;">
+            <span>acuaporinas estructuralmente viables</span>
+          </div>
+          <div class="body" style="margin-top: 10px; color: var(--ink-muted); font-size: 26px;">
+            <span>primer catálogo a escala genómica del cultivar.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Subfamily breakdown -->
+      <div class="anim-in-2" style="margin-top: 80px;">
+        <div class="eyebrow muted" style="margin-bottom: 36px; font-size: 18px;">REPARTO POR SUBFAMILIA</div>
+        <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 28px;">
+
+          <div style="border-left: 3px solid var(--sf-nip); padding-left: 22px; text-align: left;">
+            <div class="mono" style="font-size: 22px; color: var(--sf-nip); letter-spacing: 0.06em;">NIP</div>
+            <div class="megafig" style="font-size: 72px; color: var(--ink); line-height: 1;">37</div>
+            <div class="small" style="margin-top: 8px;">metaloides</div>
+          </div>
+
+          <div style="border-left: 3px solid var(--sf-tip); padding-left: 22px; text-align: left;">
+            <div class="mono" style="font-size: 22px; color: var(--sf-tip); letter-spacing: 0.06em;">TIP</div>
+            <div class="megafig" style="font-size: 72px; color: var(--ink); line-height: 1;">34</div>
+            <div class="small" style="margin-top: 8px;">tonoplasto</div>
+          </div>
+
+          <div style="border-left: 3px solid var(--sf-pip); padding-left: 22px; text-align: left;">
+            <div class="mono" style="font-size: 22px; color: var(--sf-pip); letter-spacing: 0.06em;">PIP</div>
+            <div class="megafig" style="font-size: 72px; color: var(--ink); line-height: 1;">32</div>
+            <div class="small" style="margin-top: 8px;">m. plasmática</div>
+          </div>
+
+          <div style="border-left: 3px solid var(--sf-sip); padding-left: 22px; text-align: left;">
+            <div class="mono" style="font-size: 22px; color: var(--sf-sip); letter-spacing: 0.06em;">SIP</div>
+            <div class="megafig" style="font-size: 72px; color: var(--ink); line-height: 1;">12</div>
+            <div class="small" style="margin-top: 8px;">retículo</div>
+          </div>
+
+          <div style="border-left: 3px solid var(--sf-xip); padding-left: 22px; text-align: left;">
+            <div class="mono" style="font-size: 22px; color: var(--sf-xip); letter-spacing: 0.06em;">XIP</div>
+            <div class="megafig" style="font-size: 72px; color: var(--ink); line-height: 1;">6</div>
+            <div class="small" style="margin-top: 8px;">solutos sin carga</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Bottom note -->
+      <p class="body anim-in-3" style="margin-top: 64px; font-size: 28px; line-height: 1.45; color: var(--ink-muted); font-style: italic; max-width: 1400px; margin-left: auto; margin-right: auto;">
+        <span>Predominio de NIP — </span><span class="leaf-c" style="font-style: normal;">30,6 %</span><span> del catálogo — coherente con la dinámica de expansión de NIPs descrita en otras especies vegetales con duplicación en tándem.</span>
+      </p>
+
+    </div>
+  </div>
+
+  <div class="footer-rule">
+    <div>26 secuencias descartadas · 23 parciales + 3 no AQP · Anexo E</div>
+    <div class="mono">12 / 22</div>
+  </div>
+</section>
+
+
+<!-- ===================== 14 · SECCIÓN III · CINEMATIC ===================== -->
+<section data-label="13 · Bloque III · Reconstrucción evolutiva" data-theme="dark" data-scene="threejs:forest">
+  <div class="scene-overlay-bar">
+    <div class="so-eyebrow anim-in" style="color: #4ec5e0;">BLOQUE III</div>
+    <h2 class="so-title anim-in-2">Reconstrucción <span class="italic">evolutiva.</span></h2>
+    <p class="so-sub anim-in-3">Las cinco subfamilias canónicas como clados monofiléticos. Q.PLANT+R6, 281 secuencias.</p>
+  </div>
+
+  <div class="footer-rule">
+    <div>MAFFT · ClipKIT · IQ-TREE 3 · ModelFinder · Q.PLANT+R6 · MEME</div>
+    <div class="mono">13 / 22</div>
+  </div>
+</section>
+
+<!-- ===================== 13 · SOPORTES Y VALIDACIÓN (sin árbol) ===================== -->
+<section data-label="14 · Soportes y validación del árbol filogenético">
+  <div class="topbar">
+    <div class="tb-l">
+      <span class="tb-dot"></span>
+      <span>Bloque III · Filogenia · Validación</span>
+    </div>
+    <div class="tb-r">14 / 22</div>
+  </div>
+
+  <div class="frame" style="justify-content: center;">
+    <div class="anim-in" style="max-width: 1600px;">
+      <div class="eyebrow water-c" style="margin-bottom: 22px;">281 SECUENCIAS · 430 SITIOS · Q.PLANT+R6</div>
+      <h2 class="title">
+        <span>Cinco subfamilias monofiléticas,</span>
+        <br/>
+        <span class="italic" style="color: var(--ink-soft);">tres tests de soporte coincidentes.</span>
+      </h2>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 64px; margin-top: 64px; align-items: flex-start;">
+
+      <!-- Soportes nodales -->
+      <div class="anim-in-2">
+        <div class="eyebrow muted" style="font-size: 18px; margin-bottom: 28px;">SOPORTES NODALES · MEDIANA</div>
+        <div style="display: flex; flex-direction: column; gap: 32px;">
+          <div>
+            <div class="megafig grow water-c" style="font-size: 92px; line-height: 1;">91 %</div>
+            <div class="small" style="margin-top: 6px;">UFBoot</div>
+          </div>
+          <div>
+            <div class="megafig water-c" style="font-size: 64px; line-height: 1;">92,2 %</div>
+            <div class="small" style="margin-top: 6px;">SH-aLRT</div>
+          </div>
+          <div>
+            <div class="megafig water-c" style="font-size: 64px; line-height: 1;">1,000</div>
+            <div class="small" style="margin-top: 6px;">aBayes</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controles internos -->
+      <div class="anim-in-3">
+        <div class="eyebrow fruit" style="font-size: 18px; margin-bottom: 28px;">CONTROLES INTERNOS</div>
+        <div class="megafig grow fruit-c" style="font-size: 92px; line-height: 1;">3 / 3</div>
+        <p class="body" style="font-size: 22px; line-height: 1.5; margin-top: 18px; color: var(--ink-soft);">
+          Los controles literarios <span class="mono fruit-c" style="font-size: 19px;">FaPIP1;1</span>, <span class="mono fruit-c" style="font-size: 19px;">FaPIP2;1</span> y <span class="mono fruit-c" style="font-size: 19px;">FaNIP1;1</span> caen sobre sus copias predichas en la rama esperada, con longitud de rama cercana a cero.
+        </p>
+      </div>
+
+      <!-- Calibración octoploide -->
+      <div class="anim-in-3">
+        <div class="eyebrow leaf-c" style="font-size: 18px; margin-bottom: 28px;">CALIBRACIÓN OCTOPLOIDE</div>
+        <div class="megafig grow leaf-c" style="font-size: 92px; line-height: 1;">3,2x</div>
+        <p class="body" style="font-size: 22px; line-height: 1.5; margin-top: 18px; color: var(--ink-soft);">
+          Copias de PIP por gen ancestral de <span class="italic">F. vesca</span>. Cuadruplicación esperable, atenuada por fraccionamiento.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer-rule">
+    <div>log L = −45.149,26 · 277 nodos · 41,9 % cumplen los tres umbrales altos · árbol completo en bloque III</div>
+    <div class="mono">14 / 22</div>
+  </div>
+</section>
+
+<!-- ===================== 16 · MOTIVOS MEME ===================== -->
+<section data-label="15 · Motivos MEME · firma por subfamilia">
+  <div class="topbar">
+    <div class="tb-l">
+      <span class="tb-dot"></span>
+      <span>Bloque III · Motivos peptídicos</span>
+    </div>
+    <div class="tb-r">15 / 22</div>
+  </div>
+
+  <div class="frame" style="justify-content: center;">
+    <div class="anim-in" style="max-width: 1600px;">
+      <div class="eyebrow water-c" style="margin-bottom: 22px;">15 MOTIVOS MEME · 121 SECUENCIAS</div>
+      <h2 class="title">
+        <span>Cada subfamilia exhibe una huella peptídica diagnóstica.</span>
+      </h2>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1.25fr 0.75fr; gap: 56px; margin-top: 36px; align-items: center;">
+
+      <!-- MEME heatmap -->
+      <div class="anim-in-2" style="background: #ffffff; border-radius: 4px; padding: 18px; max-height: 720px; display: flex; align-items: center; justify-content: center;">
+        <img src="assets/figuras/Figura_08_MEME_motivos.png" alt="Motivos MEME por subsubfamilia" style="width: 100%; max-height: 684px; object-fit: contain; display: block;"/>
+      </div>
+
+      <!-- Interpretation -->
+      <div class="anim-in-3" style="display: flex; flex-direction: column; gap: 26px;">
+
+        <div>
+          <div class="eyebrow muted" style="font-size: 18px; margin-bottom: 12px;">EL NÚCLEO INVARIABLE</div>
+          <p class="body" style="font-size: 24px; line-height: 1.45; margin: 0;">
+            <span class="mono water-c" style="font-size: 26px;">M1</span><span> — el motivo que codifica el </span><span class="mono fruit-c">NPA</span><span> del bucle E — aparece en el </span><span class="leaf-c">100 %</span><span> del catálogo. </span><span class="mono water-c" style="font-size: 26px;">M3</span><span> y </span><span class="mono water-c" style="font-size: 26px;">M6</span><span>, dos hélices transmembrana, completan el núcleo universal.</span>
+          </p>
+        </div>
+
+        <div style="padding-top: 24px; border-top: 1px solid var(--rule);">
+          <div class="eyebrow muted" style="font-size: 18px; margin-bottom: 12px;">LAS DIVERGENCIAS DIAGNÓSTICAS</div>
+
+          <div style="display: flex; flex-direction: column; gap: 14px; font-size: 22px;">
+            <div style="display: flex; gap: 16px; align-items: baseline;">
+              <span class="mono sf-pip" style="font-weight: 500;">PIP</span>
+              <span style="color: var(--ink-soft);"><span class="mono water-c" style="font-size: 24px;">M7</span><span> + </span><span class="mono water-c" style="font-size: 24px;">M9</span> · extremos N y C diagnósticos · heterotetrámeros PIP1·PIP2.</span>
+            </div>
+            <div style="display: flex; gap: 16px; align-items: baseline;">
+              <span class="mono sf-nip" style="font-weight: 500;">NIP</span>
+              <span style="color: var(--ink-soft);"><span class="mono water-c" style="font-size: 24px;">M10</span> casi exclusivo (100 % en NIP1, 2, 4, 5 y 6 · ausente en NIP7).</span>
+            </div>
+            <div style="display: flex; gap: 16px; align-items: baseline;">
+              <span class="mono sf-sip" style="font-weight: 500;">SIP</span>
+              <span style="color: var(--ink-soft);"><span class="mono fruit-c">NPA</span> bucle B perdido — variantes NPS, NPT, NPL.</span>
+            </div>
+            <div style="display: flex; gap: 16px; align-items: baseline;">
+              <span class="mono sf-xip" style="font-weight: 500;">XIP</span>
+              <span style="color: var(--ink-soft);">sin <span class="mono water-c" style="font-size: 24px;">M7</span> ni <span class="mono water-c" style="font-size: 24px;">M9</span>: se separa de PIP pese a compartir membrana.</span>
+            </div>
+          </div>
+        </div>
+
+        <p class="small" style="margin-top: 8px; font-style: italic;">
+          <span>FaSIP1;3 conservan NPS en las 7 copias — variante también en </span><span class="italic">Prunus armeniaca</span><span>: posible firma Rosaceae.</span>
+        </p>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer-rule">
+    <div>Bailey et al. 2015 · Salida completa en Anexo J · Deshmukh et al. 2015</div>
+    <div class="mono">15 / 22</div>
+  </div>
+</section>
+
+
+<!-- ===================== 16 · BLOQUE IV (SVG scene) ===================== -->
+<section data-label="16 · Bloque IV · El acuaporinoma en marcha" data-theme="dark" data-scene="threejs:expression-tissues">
+  <div class="scene-overlay-bar">
+    <div class="so-eyebrow anim-in" style="color: #ff5577;">BLOQUE IV</div>
+    <h2 class="so-title anim-in-2">El acuaporinoma <span style="color: #ff5577;">en marcha.</span></h2>
+    <p class="so-sub anim-in-3">22 librerías RNA-seq · 6 tejidos · control y estrés hídrico · 32 grupos homeólogos con dominancia subgenómica desigual.</p>
+  </div>
+
+  <div class="footer-rule">
+    <div>HISAT2 · featureCounts · DESeq2 · Galaxy · 4 BioProjects</div>
+    <div class="mono">16 / 22</div>
+  </div>
+</section>
+
+<!-- ===================== 17 · EXPRESIÓN BASAL + ESTRÉS (FUSIÓN) ===================== -->
+<section data-label="17 · Expresión basal y respuesta al estrés">
+  <div class="topbar">
+    <div class="tb-l">
+      <span class="tb-dot" style="background: var(--c-fruit);"></span>
+      <span>Bloque IV · Expresión · basal y estrés</span>
+    </div>
+    <div class="tb-r">17 / 22</div>
+  </div>
+
+  <div class="frame">
+    <div class="anim-in" style="max-width: 1700px;">
+      <div class="eyebrow fruit" style="margin-bottom: 22px;">DOS REGÍMENES, RESPUESTAS DISTINTAS</div>
+      <h2 class="title" style="font-size: 54px;">
+        <span>Expresión basal — jerarquía PIP &gt; TIP &gt; NIP ≈ SIP ≫ XIP.</span><br/>
+        <span class="italic" style="color: var(--ink-soft);">Estrés hídrico — hoja y raíz responden en sentidos opuestos.</span>
+      </h2>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 40px;">
+      <div class="anim-in-2">
+        <div class="eyebrow muted" style="margin-bottom: 14px;">BASAL · 6 TEJIDOS · 22 LIBRERÍAS</div>
+        <div style="background: #ffffff; border-radius: 4px; padding: 12px;">
+          <img src="assets/figuras/Figura_09_TPM_basal.png" alt="TPM basal por tejido" style="width: 100%; height: auto; display: block;"/>
+        </div>
+        <p class="small" style="margin-top: 14px;">
+          <span>Pico absoluto: </span><span class="mono fruit-c">Fxa7Cg02122</span><span> (</span><span class="italic">FaPIP1;1</span><span>) en fruto rojo · </span><span class="leaf-c">3.748 TPM</span><span>. 11/12 SIP detectables en los 6 tejidos.</span>
+        </p>
+      </div>
+      <div class="anim-in-3">
+        <div class="eyebrow amber-c" style="margin-bottom: 14px;">ESTRÉS · PEG 20 % · 6 DÍAS</div>
+        <div style="background: #ffffff; border-radius: 4px; padding: 12px;">
+          <img src="assets/figuras/Figura_10_expresion_diferencial.png" alt="Expresión diferencial estrés" style="width: 100%; height: auto; display: block;"/>
+        </div>
+        <p class="small" style="margin-top: 14px;">
+          <span>Hoja: </span><span class="leaf-c">4 ↑ · 3 ↓</span><span> · cuarteto </span><span class="italic">FaTIP1;7</span><span> inducido. Raíz: </span><span class="fruit-c">1 ↑ · 9 ↓</span><span> · cierre hidráulico neto. Sin solapamiento entre tejidos.</span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-rule">
+    <div>Mut 2008 · Alleva 2010 · Boursiac 2005 · Kapilan 2018 · DESeq2 · padj &lt; 0,05 · |LFC| &gt; 1</div>
+    <div class="mono">17 / 22</div>
+  </div>
+</section>
+
+<!-- ===================== 20 · HOMEÓLOGOS Y DOMINANCIA ===================== -->
+<section data-label="18 · Homeólogos · dominancia subgenómica">
+  <div class="topbar">
+    <div class="tb-l">
+      <span class="tb-dot" style="background: var(--c-fruit);"></span>
+      <span>Bloque IV · Homeólogos · 32 grupos · 4 subgenomas</span>
+    </div>
+    <div class="tb-r">18 / 22</div>
+  </div>
+
+  <div class="frame">
+    <div class="anim-in" style="max-width: 1700px;">
+      <div class="eyebrow fruit" style="margin-bottom: 22px;">UNIDAD FUNCIONAL DEL GENOMA ALOCTOPLOIDE</div>
+      <h2 class="title">
+        <span>El catálogo se reorganiza en 32 grupos homeólogos,</span>
+        <br/>
+        <span class="italic" style="color: var(--ink-soft);">con dominancia subgenómica desigual.</span>
+      </h2>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1.25fr 0.75fr; gap: 48px; margin-top: 28px; align-items: center;">
+
+      <!-- Fig 11 -->
+      <div class="anim-in-2" style="background: #ffffff; border-radius: 4px; padding: 14px; max-height: 700px; display: flex; align-items: center; justify-content: center;">
+        <img src="assets/figuras/Figura_11_homeologos.png" alt="Homeólogos y dominancia" style="width: 100%; max-height: 672px; object-fit: contain; display: block;"/>
+      </div>
+
+      <!-- subgenome dominance bars -->
+      <div class="anim-in-3" style="display: flex; flex-direction: column; gap: 22px;">
+
+        <div>
+          <div class="eyebrow muted" style="font-size: 18px; margin-bottom: 14px;">DOMINANCIA POR SUBGENOMA · N = 30 GRUPOS</div>
+
+          <div style="display: flex; flex-direction: column; gap: 14px;">
+
+            <div>
+              <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 4px;">
+                <span class="mono" style="font-size: 22px; color: #a78b6f;">SUBG. A</span>
+                <span class="mono" style="font-size: 24px; color: var(--ink);">9</span>
+              </div>
+              <div style="height: 8px; background: var(--bg-elev); border-radius: 1px; overflow: hidden;">
+                <div class="bar-fill" data-delay="1" style="height: 100%; width: 75%; background: #a78b6f;"></div>
+              </div>
+            </div>
+
+            <div>
+              <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 4px;">
+                <span class="mono" style="font-size: 22px; color: #d8567e;">SUBG. B</span>
+                <span class="mono" style="font-size: 24px; color: var(--ink);">4</span>
+              </div>
+              <div style="height: 8px; background: var(--bg-elev); border-radius: 1px; overflow: hidden;">
+                <div class="bar-fill" data-delay="2" style="height: 100%; width: 33%; background: #d8567e;"></div>
+              </div>
+            </div>
+
+            <div>
+              <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 4px;">
+                <span class="mono" style="font-size: 22px; color: #4ec5c0;">SUBG. C</span>
+                <span class="mono" style="font-size: 24px; color: var(--ink);">5</span>
+              </div>
+              <div style="height: 8px; background: var(--bg-elev); border-radius: 1px; overflow: hidden;">
+                <div class="bar-fill" data-delay="3" style="height: 100%; width: 42%; background: #4ec5c0;"></div>
+              </div>
+            </div>
+
+            <div>
+              <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 4px;">
+                <span class="mono fruit-c" style="font-size: 22px; font-weight: 500;">SUBG. D</span>
+                <span class="mono fruit-c" style="font-size: 30px;">12</span>
+              </div>
+              <div style="height: 12px; background: var(--bg-elev); border-radius: 1px; overflow: hidden;">
+                <div class="bar-fill" data-delay="4" style="height: 100%; width: 100%; background: var(--c-fruit);"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div style="padding-top: 22px; border-top: 1px solid var(--rule);">
+          <p class="body" style="font-size: 22px; line-height: 1.4; color: var(--ink-soft); margin: 0;">
+            <span>El subgenoma </span><span class="fruit-c">D</span><span> es dominante en el </span><span class="fruit-c" style="font-weight: 500;">40 %</span><span> de los grupos — patrón cultivar específico, no extrapolable a otros </span><span class="italic">F.</span><span> </span><span>x</span><span> </span><span class="italic">ananassa</span><span>.</span>
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer-rule">
+    <div>18 cuartetos completos · Aufiero et al. 2024 · Wang et al. 2022 · Edger et al. 2019</div>
+    <div class="mono">18 / 22</div>
+  </div>
+</section>
+
+
+<!-- ===================== 21 · TÁNDEMS NIP1 ===================== -->
+<section data-label="19 · Tándems NIP1 · duplicación prepoliploide">
+  <div class="topbar">
+    <div class="tb-l">
+      <span class="tb-dot"></span>
+      <span>Bloque IV · Caso de estudio · Tándems NIP1</span>
+    </div>
+    <div class="tb-r">19 / 22</div>
+  </div>
+
+  <div class="frame">
+    <div class="anim-in" style="max-width: 1700px;">
+      <div class="eyebrow water-c" style="margin-bottom: 22px;">CROMOSOMA 3 · CROMOSOMA 6 · DOS PARES DE TÁNDEM</div>
+      <h2 class="title">
+        <span>Una duplicación </span><span class="italic" style="color: var(--ink-soft);">anterior</span><span> a la octoploidización,</span>
+        <br/>
+        <span class="italic" style="color: var(--ink-soft);">conservada con simetrías distintas en cada cromosoma.</span>
+      </h2>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1.5fr 0.6fr; gap: 56px; margin-top: 44px; align-items: center;">
+
+      <!-- Fig 12 -->
+      <div class="anim-in-2" style="background: #ffffff; border-radius: 4px; padding: 16px; max-height: 660px; display: flex; align-items: center; justify-content: center;">
+        <img src="assets/figuras/Figura_12_tandems_NIP1.png" alt="Tándems NIP1" style="width: 100%; height: 100%; max-height: 628px; object-fit: contain; display: block;"/>
+      </div>
+
+      <div class="anim-in-3" style="display: flex; flex-direction: column; gap: 22px;">
+
+        <div>
+          <div class="eyebrow muted" style="font-size: 18px;">CROMOSOMA 3</div>
+          <p class="body" style="font-size: 22px; line-height: 1.4; margin: 6px 0 0;">
+            <span>HG‑07 + HG‑08 en tándem en los </span><span class="leaf-c" style="font-weight: 500;">4 subgenomas</span><span>.</span>
+          </p>
+          <p class="small" style="margin-top: 4px;">
+            <span>Distancia 0,30 sub/sitio.</span>
+          </p>
+        </div>
+
+        <div style="padding-top: 18px; border-top: 1px solid var(--rule);">
+          <div class="eyebrow muted" style="font-size: 18px;">CROMOSOMA 6</div>
+          <p class="body" style="font-size: 22px; line-height: 1.4; margin: 6px 0 0;">
+            <span>HG‑18 + HG‑19 en tándem en </span><span class="fruit-c">A y D</span><span> · pérdidas heterogéneas en B y C.</span>
+          </p>
+          <p class="small" style="margin-top: 4px;">
+            <span>Distancia 0,41 sub/sitio.</span>
+          </p>
+        </div>
+
+        <div style="padding-top: 18px; border-top: 1px solid var(--rule);">
+          <p class="body" style="font-size: 22px; line-height: 1.4; color: var(--ink-soft); margin: 0; font-style: italic;">
+            <span>El árbol agrupa los pares y separa los tándems entre sí: la duplicación es ancestral, prepoliploide.</span>
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer-rule">
+    <div>Nicolas‑Espinosa & Carvajal 2022 · Wendel et al. 2018 · evidencia en Anexo F</div>
+    <div class="mono">19 / 22</div>
+  </div>
+</section>
+
+
+<!-- ===================== 22 · VISOR eFP ===================== -->
+<section data-label="20 · Visor eFP interactivo" data-embed="efp">
+  <div class="topbar">
+    <div class="tb-l">
+      <span class="tb-dot" style="background: var(--c-leaf);"></span>
+      <span>Bloque IV · Recurso adicional · Visor eFP</span>
+    </div>
+    <div class="tb-r">20 / 22</div>
+  </div>
+
+  <div class="frame">
+    <div class="anim-in" style="max-width: 1700px;">
+      <div class="eyebrow leaf-c" style="margin-bottom: 22px;">RECURSO INTERACTIVO · ABIERTO Y REPRODUCIBLE</div>
+      <h2 class="title">
+        <span>Un visor anatómico para explorar el catálogo</span>
+        <br/>
+        <span class="italic" style="color: var(--ink-soft);">grupo a grupo, tejido a tejido.</span>
+      </h2>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 64px; margin-top: 36px; align-items: center;">
+
+      <!-- interactive eFP embed -->
+      <div class="anim-in-2" data-embed-target style="background: #ffffff; border-radius: 4px; padding: 0; width: 100%; height: 580px;"></div>
+
+      <!-- right column -->
+      <div class="anim-in-3" style="display: flex; flex-direction: column; gap: 28px;">
+
+        <div>
+          <div class="eyebrow muted" style="font-size: 18px; margin-bottom: 12px;">ABIERTO EN GITHUB PAGES</div>
+          <p class="body" style="font-size: 24px; line-height: 1.4; margin: 0;">
+            <span>Proyecta el TPM agregado de cada grupo homeólogo sobre un esquema anatómico de </span><span class="italic">F.</span><span> </span><span>x</span><span> </span><span class="italic">ananassa</span><span>, con desglose por subgenoma.</span>
+          </p>
+        </div>
+
+        <div style="padding-top: 22px; border-top: 1px solid var(--rule);">
+          <div class="eyebrow muted" style="font-size: 18px; margin-bottom: 12px;">CASO MOSTRADO</div>
+          <p class="body" style="font-size: 22px; line-height: 1.4; margin: 0;">
+            <span class="mono fruit-c">HG‑21 · FaTIP1;1</span><span> — cuarteto completo dominante en yema axilar, con dominancia del subgenoma A.</span>
+          </p>
+        </div>
+
+        <div style="padding-top: 22px; border-top: 1px solid var(--rule);">
+          <div class="mono water-c" style="font-size: 18px; letter-spacing: 0.08em;">paredes0.github.io/tfg-aquaporinas</div>
+          <div class="small" style="margin-top: 8px;">
+            <span>Independiente del repositorio · página HTML autocontenida · adaptable a otras especies.</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer-rule">
+    <div>Adaptación del visor eFP de Winter et al. 2007 · GitHub Pages · disponible online</div>
+    <div class="mono">20 / 22</div>
+  </div>
+</section>
+
+
+<!-- ===================== 21 · CONCLUSIONES + LÍNEAS FUTURAS (FUSIÓN) ===================== -->
+<section data-label="21 · Conclusiones y líneas futuras">
+  <div class="topbar">
+    <div class="tb-l">
+      <span class="tb-dot"></span>
+      <span>Cierre académico</span>
+    </div>
+    <div class="tb-r">21 / 22</div>
+  </div>
+
+  <div class="frame" style="justify-content: center;">
+    <div class="anim-in" style="max-width: 1500px;">
+      <div class="eyebrow water-c" style="margin-bottom: 22px;">CUATRO TITULARES + TRES PREGUNTAS</div>
+      <h2 class="title">Conclusiones y líneas futuras.</h2>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 48px; margin-top: 44px;">
+      <div class="anim-in-2">
+        <div class="eyebrow muted" style="font-size: 18px; margin-bottom: 14px;">CONCLUSIONES</div>
+        <ol style="margin: 0; padding-left: 22px; font-size: 22px; line-height: 1.45; color: var(--ink-soft);">
+          <li style="margin-bottom: 12px;">Protocolo multidimensional → <span class="fruit-c">121 acuaporinas estructuralmente viables</span> con precisión, sensibilidad e integridad superiores a la anotación oficial automática.</li>
+          <li style="margin-bottom: 12px;">Filogenia con <span class="water-c">5 clados monofiléticos</span> respaldados por tres tests de soporte y huella de motivos diagnóstica.</li>
+          <li style="margin-bottom: 12px;">Primer mapa transcriptómico del acuaporinoma del cultivar — picos basales, respuestas opuestas hoja-raíz al estrés, <span class="leaf-c">32 grupos homeólogos</span> con dominancia desigual.</li>
+          <li>Recurso reproducible: repositorio público, <span class="leaf-c">133 tests automáticos</span>, anexos A-J, workflows Galaxy, DOI Zenodo.</li>
+        </ol>
+      </div>
+      <div class="anim-in-3">
+        <div class="eyebrow leaf-c" style="font-size: 18px; margin-bottom: 14px;">LO QUE EL CATÁLOGO ABRE</div>
+        <div style="display: flex; flex-direction: column; gap: 16px; font-size: 22px; line-height: 1.4; color: var(--ink-soft);">
+          <div style="display: flex; gap: 14px;">
+            <span class="mono leaf-c" style="font-size: 22px;">→</span>
+            <span>Reanotación manual de las parciales para cubrir el acuaporinoma completo.</span>
+          </div>
+          <div style="display: flex; gap: 14px;">
+            <span class="mono leaf-c" style="font-size: 22px;">→</span>
+            <span>Análisis dirigido del filtro ar/R en las 121 secuencias — redundancia vs diversificación, sobre todo en NIP.</span>
+          </div>
+          <div style="display: flex; gap: 14px;">
+            <span class="mono leaf-c" style="font-size: 22px;">→</span>
+            <span>Validación experimental <span class="italic">in vivo</span> e <span class="italic">in vitro</span> de los patrones in silico.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-rule">
+    <div>Catálogo · Filogenia · Transcriptoma · Recurso · paredes0.github.io/tfg-aquaporinas</div>
+    <div class="mono">21 / 22</div>
+  </div>
+</section>
+
+<!-- ===================== 22 · 4 → 121 + GRACIAS (CIERRE FUSIONADO) ===================== -->
+<section data-label="22 · Aportación 4 a 121 · Gracias">
+  <div class="particles" style="opacity: 0.4;"></div>
+
+  <div class="topbar">
+    <div class="tb-l">
+      <span class="tb-dot"></span>
+      <span>Defensa TFG · 11 junio 2026</span>
+    </div>
+    <div class="tb-r">UCAM</div>
+  </div>
+
+  <div class="frame frame-center">
+    <div style="text-align: center; max-width: 1500px;">
+
+      <div class="anim-in">
+        <div class="eyebrow fruit" style="margin-bottom: 26px;">DE 4 A 121 ACUAPORINAS · FACTOR 30x</div>
+        <div style="display: flex; align-items: baseline; justify-content: center; gap: 30px;">
+          <div class="megafig grow" style="font-size: 200px; color: var(--ink-dim); line-height: 0.95;">4</div>
+          <div style="font-family: var(--serif); font-size: 80px; color: var(--c-fruit);">→</div>
+          <div class="megafig grow fruit-c" style="font-size: 200px; line-height: 0.95;">121</div>
+        </div>
+        <p class="subtitle" style="margin-top: 24px; font-size: 32px; color: var(--ink-muted); font-style: italic;">
+          Primer catálogo curado, filogenia validada, mapa transcriptómico, pipeline reproducible.
+        </p>
+      </div>
+
+      <div class="anim-in-2" style="margin-top: 80px;">
+        <h2 class="title" style="font-size: 92px;">Gracias.</h2>
+        <p class="subtitle" style="margin-top: 18px; font-size: 28px; color: var(--ink-muted);">Preguntas, por favor.</p>
+      </div>
+
+      <div class="anim-in-3" style="margin-top: 56px; padding-top: 28px; border-top: 1px solid var(--rule); display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 36px; text-align: left; max-width: 1200px; margin-left: auto; margin-right: auto;">
+        <div>
+          <div class="eyebrow muted" style="font-size: 14px; margin-bottom: 6px;">AUTOR</div>
+          <div class="body" style="font-size: 20px; color: var(--ink-soft);">Noé Paredes Alfonso</div>
+        </div>
+        <div>
+          <div class="eyebrow muted" style="font-size: 14px; margin-bottom: 6px;">DIRECTORES</div>
+          <div class="body" style="font-size: 18px; color: var(--ink-soft); line-height: 1.4;">
+            <span>Dr. Juan Nicolás Espinosa</span><br/>
+            <span>Dr. José Ramón Acosta Motos</span>
+          </div>
+        </div>
+        <div>
+          <div class="eyebrow muted" style="font-size: 14px; margin-bottom: 6px;">REPOSITORIO</div>
+          <div class="mono water-c" style="font-size: 16px;">paredes0.github.io/tfg-aquaporinas</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-rule">
+    <div></div>
+    <div class="mono">22 / 22</div>
+  </div>
+</section>
+
+</deck-stage>
+
+<!-- Tweaks panel — appears when user toggles edit mode -->
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel">
+  const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+    "theme": "light",
+    "accent": "#7dd3a8",
+    "particles": true
+  }/*EDITMODE-END*/;
+
+  function DeckTweaks() {
+    const [tweaks, setTweak] = useTweaks(TWEAK_DEFAULTS);
+
+    // apply theme + accent live
+    React.useEffect(() => {
+      const root = document.documentElement;
+      const dark = tweaks.theme === 'dark';
+
+      // theme variables
+      if (dark) {
+        root.style.setProperty('--bg', '#0a0e1a');
+        root.style.setProperty('--bg-elev', '#0f1626');
+        root.style.setProperty('--bg-elev-2', '#141c30');
+        root.style.setProperty('--ink', '#e8f0ff');
+        root.style.setProperty('--ink-soft', '#c7cee2');
+        root.style.setProperty('--ink-muted', '#8b96b3');
+        root.style.setProperty('--ink-dim', '#5a6485');
+        root.style.setProperty('--rule', 'rgba(232, 240, 255, 0.10)');
+        root.style.setProperty('--rule-strong', 'rgba(232, 240, 255, 0.22)');
+      } else {
+        // light theme: warm ivory base
+        root.style.setProperty('--bg', '#ffffff');
+        root.style.setProperty('--bg-elev', '#ffffff');
+        root.style.setProperty('--bg-elev-2', '#f8f8fa');
+        root.style.setProperty('--ink', '#14182a');
+        root.style.setProperty('--ink-soft', '#3a4055');
+        root.style.setProperty('--ink-muted', '#6c7080');
+        root.style.setProperty('--ink-dim', '#a0a4b4');
+        root.style.setProperty('--rule', 'rgba(20, 24, 42, 0.10)');
+        root.style.setProperty('--rule-strong', 'rgba(20, 24, 42, 0.22)');
+      }
+
+      // accent applied to --c-water (primary accent)
+      root.style.setProperty('--c-water', tweaks.accent || '#4ec5e0');
+
+      // toggle particles
+      document.querySelectorAll('.particles').forEach(el => {
+        el.style.display = tweaks.particles ? '' : 'none';
+      });
+    }, [tweaks]);
+
+    return (
+      <TweaksPanel title="Tweaks">
+        <TweakSection title="Tema">
+          <TweakRadio
+            value={tweaks.theme}
+            onChange={(v) => setTweak('theme', v)}
+            options={[
+              { value: 'dark',  label: 'Oscuro' },
+              { value: 'light', label: 'Claro' }
+            ]}
+          />
+        </TweakSection>
+
+        <TweakSection title="Acento principal">
+          <TweakColor
+            value={tweaks.accent}
+            onChange={(v) => setTweak('accent', v)}
+            options={['#4ec5e0', '#ff5577', '#7dd3a8', '#f0b65a']}
+          />
+        </TweakSection>
+
+        <TweakSection title="Atmósfera">
+          <TweakToggle
+            value={tweaks.particles}
+            onChange={(v) => setTweak('particles', v)}
+            label="Partículas en portada"
+          />
+        </TweakSection>
+      </TweaksPanel>
+    );
+  }
+
+  const tweakRoot = document.createElement('div');
+  document.body.appendChild(tweakRoot);
+  ReactDOM.createRoot(tweakRoot).render(<DeckTweaks />);
+</script>
+
+<script src="deck-stage.js"></script>
+<script type="module" src="deck-orchestrator.js?v=20260527-31"></script>
+
+</body>
+</html>
