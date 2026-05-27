@@ -37,6 +37,12 @@ salmon_check/
 *.pdf
 # Excepto la infografía clave
 !docs/figuras_clave/**
+# Excepto los assets de la presentación de defensa publicada en GH Pages
+!docs/defensa/**/*.png
+!docs/defensa/**/*.svg
+!docs/defensa/**/*.pdb
+!docs/defensa/**/*.jpg
+!docs/defensa/**/*.webp
 
 # ===== Python =====
 __pycache__/
