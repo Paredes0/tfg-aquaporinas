@@ -75,6 +75,9 @@ Thumbs.db
 .DS_Store
 desktop.ini
 
+# ===== Notas privadas (no publicar) =====
+docs/ZENODO.md
+
 # ===== Tablas grandes (>5 MB) =====
 # Mantener las cifras clave del TFG, no el RNA-seq crudo
 counts_aquaporinas.tsv
