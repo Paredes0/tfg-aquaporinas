@@ -26,9 +26,9 @@ export function init(slide) {
     height: 100%;
     z-index: 0;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
-    padding: 180px 240px 80px 60px;
+    padding: 116px 240px 80px 60px;
     box-sizing: border-box;
     background: #14182a;
   `;
