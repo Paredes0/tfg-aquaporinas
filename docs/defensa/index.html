@@ -44,7 +44,9 @@
 
 "• Demo en vivo: puedo navegar entre los 32 grupos de copias si el tribunal quiere ver un patrón concreto; arranca en HG-07.\n• Adapta el formato eFP original de Winter et al. (2007), que proyecta expresión sobre un esquema de la planta; aquí pinta el TPM agregado de cada grupo, con desglose por subgenoma A/B/C/D.\n• Está en GitHub Pages, es independiente del repositorio y autocontenido (HTML+JS): funciona sin conexión y se puede clonar para otra especie.\n• TPM, recordatorio: medida normalizada de expresión, comparable entre tejidos y genes.\n• Lo coloco antes de las conclusiones como cierre tangible: convierte todo el catálogo en algo que cualquiera explora con el ratón.",
 
-"• Gancho de cierre: de 4 genes descritos a un catálogo de 121, un factor de ×30, y todo el recorrido documentado y verificable.\n• Conclusión 1: el protocolo multidimensional gana en precisión, sensibilidad e integridad frente a la anotación automática (MAKER, sin curado manual).\n• Conclusión 2: 5 clados monofiléticos, soportes mediana 91 % UFBoot, 92,2 % SH-aLRT, 1,000 aBayes; 3/3 controles caen sobre sus copias; núcleo común M1/M3/M6 y firma de motivos por subfamilia.\n• Conclusión 3: jerarquía basal PIP > TIP > NIP ≈ SIP ≫ XIP, pico 3.748 TPM en FaPIP1;1 (fruto rojo); bajo sequía, hoja 4↑/3↓ y raíz 1↑/9↓; 32 grupos homeólogos, dominancia D=12 sobre 30 (40 %).\n• Conclusión 4: repositorio público con 133 tests automáticos, anexos, workflows Galaxy, DOI Zenodo y visor eFP.\n• Líneas futuras (si preguntan): reanotación manual de las parciales; análisis del filtro ar/R (redundancia vs diversificación, sobre todo en NIP); validación experimental in vivo e in vitro. Mantener el cierre breve."
+"• Gancho de cierre: de 4 genes descritos a un catálogo de 121, un factor de ×30, y todo el recorrido documentado y verificable.\n• Conclusión 1: el protocolo multidimensional gana en precisión, sensibilidad e integridad frente a la anotación automática (MAKER, sin curado manual).\n• Conclusión 2: 5 clados monofiléticos, soportes mediana 91 % UFBoot, 92,2 % SH-aLRT, 1,000 aBayes; 3/3 controles caen sobre sus copias; núcleo común M1/M3/M6 y firma de motivos por subfamilia.\n• Conclusión 3: jerarquía basal PIP > TIP > NIP ≈ SIP ≫ XIP, pico 3.748 TPM en FaPIP1;1 (fruto rojo); bajo sequía, hoja 4↑/3↓ y raíz 1↑/9↓; 32 grupos homeólogos, dominancia D=12 sobre 30 (40 %).\n• Conclusión 4: repositorio público con 133 tests automáticos, anexos, workflows Galaxy, DOI Zenodo y visor eFP.\n• Líneas futuras (si preguntan): reanotación manual de las parciales; análisis del filtro ar/R (redundancia vs diversificación, sobre todo en NIP); validación experimental in vivo e in vitro. Mantener el cierre breve.",
+
+"• Cierre: de 4 a 121, con la clasificación, el mapa de expresión y todo el análisis reproducible.\n• Agradecer y abrir el turno de preguntas."
 ]
 </script>
 </head>
@@ -111,7 +113,7 @@
       <span class="tb-dot"></span>
       <span>Defensa TFG · Acuaporinoma</span>
     </div>
-    <div class="tb-r">02 / 18</div>
+    <div class="tb-r">02 / 19</div>
   </div>
 
   <div class="frame">
@@ -151,19 +153,70 @@
 
   <div class="footer-rule">
     <div>Contexto · Bloque I · II · III · IV · Conclusiones</div>
-    <div class="mono">02 / 18</div>
+    <div class="mono">02 / 19</div>
   </div>
 </section>
 
 
-<!-- ===================== 03 · LAS ACUAPORINAS ===================== -->
-<section data-label="03 · Acuaporinas · estructura y función" data-scene="threejs:aquaporin-monomer">
+<!-- ===================== 03 · CONTEXTO ===================== -->
+<section data-label="03 · Contexto · estrés hídrico">
+  <div class="topbar">
+    <div class="tb-l">
+      <span class="tb-dot" style="background: var(--c-amber);"></span>
+      <span>Contexto</span>
+    </div>
+    <div class="tb-r">03 / 19</div>
+  </div>
+
+  <div class="frame">
+    <div class="anim-in" style="max-width: 1500px;">
+      <h2 class="title">El agua, factor limitante del cultivo de la fresa</h2>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 90px; margin-top: 32px; align-items: center;">
+
+      <div class="anim-in-2">
+        <div class="eyebrow amber-c" style="margin-bottom: 22px; font-size: 16px;">MEDITERRÁNEO · MedECC 2050</div>
+        <div class="megafig grow tabular amber-c">
+          <span>−25</span><span class="megafig-unit">% agua</span>
+        </div>
+        <p class="body" style="margin-top: 28px; max-width: 740px; font-size: 23px; color: var(--ink-soft);">
+          Pérdida proyectada de hasta una cuarta parte del agua disponible en la cuenca mediterránea hacia 2050, con sequías más frecuentes.
+        </p>
+      </div>
+
+      <div class="anim-in-3" style="display: flex; flex-direction: column; gap: 28px;">
+        <div class="card">
+          <div class="card-title">HUELVA</div>
+          <p class="card-body">
+            <span style="font-family: var(--serif); font-size: 50px; color: var(--c-fruit);">93 %</span><span> de la superficie nacional de fresa · </span><span style="font-family: var(--serif); font-size: 50px; color: var(--c-fruit);">35 %</span><span> de la producción europea.</span>
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-title">VULNERABILIDAD</div>
+          <p class="card-body">
+            <span>Suelos arenosos de baja retención hídrica y riego intensivo, con presión sobre el acuífero ligado a Doñana.</span>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer-rule">
+    <div>Cramer et al. 2018 · MedECC 2020 · García-Morillo et al. 2017</div>
+    <div class="mono">03 / 19</div>
+  </div>
+</section>
+
+<!-- ===================== 04 · LAS ACUAPORINAS ===================== -->
+<section data-label="04 · Acuaporinas · estructura y función" data-scene="threejs:aquaporin-monomer">
   <div class="topbar">
     <div class="tb-l">
       <span class="tb-dot"></span>
       <span>Marco teórico</span>
     </div>
-    <div class="tb-r">03 / 18</div>
+    <div class="tb-r">04 / 19</div>
   </div>
 
   <div class="frame">
@@ -232,19 +285,19 @@
 
   <div class="footer-rule">
     <div>Maurel et al. 2015 · Johanson et al. 2001 · Murata et al. 2000</div>
-    <div class="mono">03 / 18</div>
+    <div class="mono">04 / 19</div>
   </div>
 </section>
 
 
 <!-- ===================== 04 · ANTECEDENTES ===================== -->
-<section data-label="04 · Antecedentes · 4 conocidas en Fragaria">
+<section data-label="05 · Antecedentes · 4 conocidas en Fragaria">
   <div class="topbar">
     <div class="tb-l">
       <span class="tb-dot" style="background: var(--c-fruit);"></span>
       <span>Antecedentes</span>
     </div>
-    <div class="tb-r">04 / 18</div>
+    <div class="tb-r">05 / 19</div>
   </div>
 
   <div class="frame">
@@ -318,19 +371,19 @@
 
   <div class="footer-rule">
     <div>Mut et al. 2008 · Alleva et al. 2010 · Molina-Hidalgo et al. 2015 · Merlaen et al. 2018 · Edger et al. 2019</div>
-    <div class="mono">04 / 18</div>
+    <div class="mono">05 / 19</div>
   </div>
 </section>
 
 
 <!-- ===================== 05 · OBJETIVO Y ESTRATEGIA ===================== -->
-<section data-label="05 · Objetivo y estrategia">
+<section data-label="06 · Objetivo y estrategia">
   <div class="topbar">
     <div class="tb-l">
       <span class="tb-dot"></span>
       <span>Objetivo y estrategia</span>
     </div>
-    <div class="tb-r">05 / 18</div>
+    <div class="tb-r">06 / 19</div>
   </div>
 
   <div class="frame">
@@ -367,13 +420,13 @@
 
   <div class="footer-rule">
     <div>Identificación · Curado · Filogenia · Transcriptómica</div>
-    <div class="mono">05 / 18</div>
+    <div class="mono">06 / 19</div>
   </div>
 </section>
 
 
 <!-- ===================== 06 · BLOQUE I (escena) ===================== -->
-<section data-label="06 · Bloque I · Identificación" data-theme="dark" data-scene="threejs:genome-pipeline">
+<section data-label="07 · Bloque I · Identificación" data-theme="dark" data-scene="threejs:genome-pipeline">
   <div class="scene-overlay-bar">
     <div class="so-eyebrow anim-in" style="color: #4ec5e0;">BLOQUE I</div>
     <h2 class="so-title anim-in-2">Identificación</h2>
@@ -382,19 +435,19 @@
 
   <div class="footer-rule">
     <div>Galaxy · tblastn · BEDtools · Exonerate · GFFCompare</div>
-    <div class="mono">06 / 18</div>
+    <div class="mono">07 / 19</div>
   </div>
 </section>
 
 
 <!-- ===================== 07 · IDENTIFICACIÓN DE CANDIDATAS ===================== -->
-<section data-label="07 · Identificación de candidatas">
+<section data-label="08 · Identificación de candidatas">
   <div class="topbar">
     <div class="tb-l">
       <span class="tb-dot"></span>
       <span>Bloque I · Identificación</span>
     </div>
-    <div class="tb-r">07 / 18</div>
+    <div class="tb-r">08 / 19</div>
   </div>
 
   <div class="frame">
@@ -458,13 +511,13 @@
 
   <div class="footer-rule">
     <div>Camacho et al. 2009 · Quinlan &amp; Hall 2010 · Slater &amp; Birney 2005 · Kozak 1999 · Galaxy Community 2024</div>
-    <div class="mono">07 / 18</div>
+    <div class="mono">08 / 19</div>
   </div>
 </section>
 
 
 <!-- ===================== 08 · BLOQUE II (escena) ===================== -->
-<section data-label="08 · Bloque II · Curado" data-theme="dark" data-scene="threejs:tetramer">
+<section data-label="09 · Bloque II · Curado" data-theme="dark" data-scene="threejs:tetramer">
   <div class="scene-overlay-bar">
     <div class="so-eyebrow anim-in" style="color: #4ec5e0;">BLOQUE II</div>
     <h2 class="so-title anim-in-2">Curado</h2>
@@ -473,19 +526,19 @@
 
   <div class="footer-rule">
     <div>DeepTMHMM · MEME · MAFFT · Pepstats · DeepLoc · PCA</div>
-    <div class="mono">08 / 18</div>
+    <div class="mono">09 / 19</div>
   </div>
 </section>
 
 
 <!-- ===================== 09 · CURADO · 4 FILTROS + PCA ===================== -->
-<section data-label="09 · Curado · cuatro filtros + PCA" data-embed="pca">
+<section data-label="10 · Curado · cuatro filtros + PCA" data-embed="pca">
   <div class="topbar">
     <div class="tb-l">
       <span class="tb-dot"></span>
       <span>Bloque II · Curado</span>
     </div>
-    <div class="tb-r">09 / 18</div>
+    <div class="tb-r">10 / 19</div>
   </div>
 
   <div class="frame">
@@ -538,19 +591,19 @@
 
   <div class="footer-rule">
     <div>Hallgren et al. 2022 · Katoh et al. 2019 · Bailey et al. 2015 · Wong et al. 2025</div>
-    <div class="mono">09 / 18</div>
+    <div class="mono">10 / 19</div>
   </div>
 </section>
 
 
 <!-- ===================== 10 · CATÁLOGO 121 ===================== -->
-<section data-label="10 · El acuaporinoma · 121 acuaporinas">
+<section data-label="11 · El acuaporinoma · 121 acuaporinas">
   <div class="topbar">
     <div class="tb-l">
       <span class="tb-dot" style="background: var(--c-fruit);"></span>
       <span>Bloque II · Resultado</span>
     </div>
-    <div class="tb-r">10 / 18</div>
+    <div class="tb-r">11 / 19</div>
   </div>
 
   <div class="frame frame-center">
@@ -609,13 +662,13 @@
 
   <div class="footer-rule">
     <div>26 secuencias descartadas · 23 parciales + 3 no-AQP · Anexo E</div>
-    <div class="mono">10 / 18</div>
+    <div class="mono">11 / 19</div>
   </div>
 </section>
 
 
 <!-- ===================== 11 · BLOQUE III (escena) ===================== -->
-<section data-label="11 · Bloque III · Filogenia" data-theme="dark" data-scene="threejs:forest">
+<section data-label="12 · Bloque III · Filogenia" data-theme="dark" data-scene="threejs:forest">
   <div class="scene-overlay-bar">
     <div class="so-eyebrow anim-in" style="color: #4ec5e0;">BLOQUE III</div>
     <h2 class="so-title anim-in-2">Filogenia</h2>
@@ -624,19 +677,19 @@
 
   <div class="footer-rule">
     <div>MAFFT · ClipKIT · IQ-TREE 3 · ModelFinder · Q.PLANT+R6 · MEME</div>
-    <div class="mono">11 / 18</div>
+    <div class="mono">12 / 19</div>
   </div>
 </section>
 
 
 <!-- ===================== 12 · FILOGENIA + MOTIVOS ===================== -->
-<section data-label="12 · Filogenia y motivos conservados">
+<section data-label="13 · Filogenia y motivos conservados">
   <div class="topbar">
     <div class="tb-l">
       <span class="tb-dot"></span>
       <span>Bloque III · Filogenia</span>
     </div>
-    <div class="tb-r">12 / 18</div>
+    <div class="tb-r">13 / 19</div>
   </div>
 
   <div class="frame">
@@ -697,13 +750,13 @@
 
   <div class="footer-rule">
     <div>Bailey et al. 2015 · Deshmukh et al. 2015 · log L = −45.149,26 · 277 nodos · Anexo F/J</div>
-    <div class="mono">12 / 18</div>
+    <div class="mono">13 / 19</div>
   </div>
 </section>
 
 
 <!-- ===================== 13 · BLOQUE IV (escena) ===================== -->
-<section data-label="13 · Bloque IV · Expresión" data-theme="dark" data-scene="threejs:expression-tissues">
+<section data-label="14 · Bloque IV · Expresión" data-theme="dark" data-scene="threejs:expression-tissues">
   <div class="scene-overlay-bar">
     <div class="so-eyebrow anim-in" style="color: #4ec5e0;">BLOQUE IV</div>
     <h2 class="so-title anim-in-2">Expresión</h2>
@@ -712,19 +765,19 @@
 
   <div class="footer-rule">
     <div>HISAT2 · featureCounts · DESeq2 · Galaxy · 4 BioProjects</div>
-    <div class="mono">13 / 18</div>
+    <div class="mono">14 / 19</div>
   </div>
 </section>
 
 
 <!-- ===================== 14 · EXPRESIÓN BASAL + ESTRÉS ===================== -->
-<section data-label="14 · Expresión basal y respuesta al estrés">
+<section data-label="15 · Expresión basal y respuesta al estrés">
   <div class="topbar">
     <div class="tb-l">
       <span class="tb-dot" style="background: var(--c-fruit);"></span>
       <span>Bloque IV · Expresión</span>
     </div>
-    <div class="tb-r">14 / 18</div>
+    <div class="tb-r">15 / 19</div>
   </div>
 
   <div class="frame">
@@ -756,19 +809,19 @@
 
   <div class="footer-rule">
     <div>Mut 2008 · Alleva 2010 · Boursiac 2005 · Kapilan 2018 · DESeq2 · padj &lt; 0,05 · |LFC| &gt; 1</div>
-    <div class="mono">14 / 18</div>
+    <div class="mono">15 / 19</div>
   </div>
 </section>
 
 
 <!-- ===================== 15 · HOMEÓLOGOS Y DOMINANCIA ===================== -->
-<section data-label="15 · Homeólogos · dominancia subgenómica">
+<section data-label="16 · Homeólogos · dominancia subgenómica">
   <div class="topbar">
     <div class="tb-l">
       <span class="tb-dot" style="background: var(--c-fruit);"></span>
       <span>Bloque IV · Homeólogos</span>
     </div>
-    <div class="tb-r">15 / 18</div>
+    <div class="tb-r">16 / 19</div>
   </div>
 
   <div class="frame">
@@ -830,19 +883,19 @@
 
   <div class="footer-rule">
     <div>18 cuartetos completos · Aufiero et al. 2024 · Wang et al. 2022 · Edger et al. 2019</div>
-    <div class="mono">15 / 18</div>
+    <div class="mono">16 / 19</div>
   </div>
 </section>
 
 
 <!-- ===================== 16 · VISOR eFP ===================== -->
-<section data-label="16 · Visor eFP interactivo" data-embed="efp">
+<section data-label="17 · Visor eFP interactivo" data-embed="efp">
   <div class="topbar">
     <div class="tb-l">
       <span class="tb-dot" style="background: var(--c-leaf);"></span>
       <span>Bloque IV · Recurso</span>
     </div>
-    <div class="tb-r">16 / 18</div>
+    <div class="tb-r">17 / 19</div>
   </div>
 
   <div class="frame">
@@ -869,19 +922,19 @@
 
   <div class="footer-rule">
     <div>Adaptación del visor eFP de Winter et al. 2007 · GitHub Pages</div>
-    <div class="mono">16 / 18</div>
+    <div class="mono">17 / 19</div>
   </div>
 </section>
 
 
 <!-- ===================== 17 · CONCLUSIONES ===================== -->
-<section data-label="17 · Conclusiones">
+<section data-label="18 · Conclusiones">
   <div class="topbar">
     <div class="tb-l">
       <span class="tb-dot"></span>
       <span>Conclusiones</span>
     </div>
-    <div class="tb-r">17 / 18</div>
+    <div class="tb-r">18 / 19</div>
   </div>
 
   <div class="frame">
@@ -921,27 +974,21 @@
 
     </div>
 
-    <div class="anim-in-4" style="margin-top: 28px; padding-top: 18px; border-top: 1px solid var(--rule); display: flex; justify-content: space-between; align-items: flex-end; gap: 40px;">
-      <div style="max-width: 1000px;">
-        <div class="eyebrow leaf-c" style="font-size: 15px; margin-bottom: 8px;">LÍNEAS FUTURAS</div>
-        <p class="body" style="font-size: 18px; line-height: 1.4; color: var(--ink-soft); margin: 0;">Reanotación manual de las parciales · análisis del filtro ar/R (sobre todo en NIP) · validación experimental de los patrones inferidos in silico.</p>
-      </div>
-      <div style="text-align: right; flex-shrink: 0;">
-        <h2 class="title" style="font-size: 52px; margin: 0;">Gracias.</h2>
-        <p class="subtitle" style="margin-top: 6px; font-size: 20px; color: var(--ink-muted);">Quedo a su disposición para preguntas.</p>
-      </div>
+    <div class="anim-in-4" style="margin-top: 28px; padding-top: 18px; border-top: 1px solid var(--rule);">
+      <div class="eyebrow leaf-c" style="font-size: 15px; margin-bottom: 8px;">LÍNEAS FUTURAS</div>
+      <p class="body" style="font-size: 19px; line-height: 1.45; color: var(--ink-soft); margin: 0; max-width: 1500px;">Reanotación manual de las parciales · análisis del filtro ar/R (sobre todo en NIP) · validación experimental de los patrones inferidos in silico.</p>
     </div>
   </div>
 
   <div class="footer-rule">
     <div>Noé Paredes Alfonso · Dr. Juan Nicolás Espinosa · Dr. José Ramón Acosta Motos · paredes0.github.io/tfg-aquaporinas</div>
-    <div class="mono">17 / 18</div>
+    <div class="mono">18 / 19</div>
   </div>
 </section>
 
 
 <!-- ===================== 18 · CIERRE / GRACIAS ===================== -->
-<section data-label="18 · Cierre">
+<section data-label="19 · Cierre">
   <div class="particles" style="opacity: 0.4;"></div>
 
   <div class="topbar">
@@ -975,7 +1022,7 @@
 
   <div class="footer-rule">
     <div>Noé Paredes Alfonso · paredes0.github.io/tfg-aquaporinas</div>
-    <div class="mono">18 / 18</div>
+    <div class="mono">19 / 19</div>
   </div>
 </section>
 
