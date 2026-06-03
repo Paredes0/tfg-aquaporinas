@@ -175,6 +175,7 @@ deck-stage > section.light .muted { color: var(--ink-on-light-muted); }
   padding: var(--pad-top) var(--pad-x) var(--pad-bottom);
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .frame-center {
