@@ -99,8 +99,10 @@ const STAGES = [
   { label: 'Exonerate', sublabel: 'protein2genome',      accent: '#f0b65a', count: '4.984',  countLabel: 'modelos' }
 ];
 
-const STAGE_Y    = 380;   // centro vertical de las cartas
-const STAGE_X0   = 560;   // x del centro de la primera carta
+const STAGE_Y    = 469;   // centro vertical de las cartas — alineado con el centro del grid
+                          // (GRID_Y0 150 + HEADER 28 + (760-150-28)/2 = 469) para que el flujo
+                          // Exonerate→grid salga RECTO y horizontal al centro de los cromosomas.
+const STAGE_X0   = 540;   // x del centro de la primera carta (centrado en el hueco entre fuentes y grid)
 const STAGE_GAP  = 180;   // separacion entre centros
 const STAGE_W    = 160;
 const STAGE_H    = 130;
@@ -478,7 +480,7 @@ function buildExonerateFan(svg) {
   const startY = STAGE_Y;
 
   // Borde izquierdo del area util del grid, centro vertical
-  const LABEL_LEFT_W = 50;
+  const LABEL_LEFT_W = 80;
   const HEADER_TOP_H = 28;
   const usableX0 = GRID_X0 + LABEL_LEFT_W;
   const gridCenterY = GRID_Y0 + HEADER_TOP_H + (GRID_Y1 - GRID_Y0 - HEADER_TOP_H) / 2;
@@ -536,17 +538,8 @@ function buildExonerateFan(svg) {
     fill: 'freeze'
   }, part);
 
-  // Etiqueta encima de la flecha: "129 candidatas"
-  const labelX = (startX + endX) / 2;
-  const labelY = (startY + endY) / 2 - 14;
-  TXT(arrowG, {
-    x: labelX, y: labelY,
-    class: 'gp-mono', 'font-size': 12,
-    'letter-spacing': '1.5',
-    'text-anchor': 'middle',
-    fill: '#ff5577', opacity: '0',
-    _data: { role: 'fan-label' }
-  }, '129 candidatas');
+  // (Antes había aquí una etiqueta "129 candidatas" sobre la flecha; se ha
+  // retirado por redundante con el strip inferior y el resumen bajo el grid.)
 }
 
 // ---------------------------------------------------------------------------
@@ -558,7 +551,7 @@ function buildChromosomeGrid(svg, data) {
   const totalCols = CHROM_COLS.length;
   const totalRows = CHROM_ROWS.length;
 
-  const LABEL_LEFT_W = 50;
+  const LABEL_LEFT_W = 80;
   const HEADER_TOP_H = 28;
 
   const usableX0 = GRID_X0 + LABEL_LEFT_W;
@@ -915,11 +908,6 @@ function animatePipeline(svg) {
     { opacity: 0.9, duration: 0.3, stagger: 0.06, ease: 'back.out(2)' },
     4.5
   );
-  tl.to('[data-role="fan-label"]',
-    { opacity: 1, duration: 0.4 },
-    4.5
-  );
-
   // 4.7–5.3 · bloque de leyenda + disclaimer bajo el grid
   tl.fromTo('[data-role="chrom-sum"]',
     { opacity: 0, y: 8 },

@@ -7,46 +7,52 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" />
-<link rel="stylesheet" href="styles.css?v=20260603-03" />
+<link rel="stylesheet" href="styles.css?v=20260608-02" />
 <script type="application/json" id="speaker-notes">
 [
-"• Buenos días. Soy Noé Paredes Alfonso y este es mi Trabajo Fin de Grado sobre el acuaporinoma de la fresa cultivada, Fragaria x ananassa 'Benihoppe', dirigido por los doctores Juan Nicolás Espinosa y José Ramón Acosta Motos.\n• El acuaporinoma es el conjunto completo de acuaporinas del genoma: las proteínas que actúan como compuertas para el paso de agua a través de la membrana celular.\n• La presentación sigue el mismo orden que el trabajo: cuatro bloques, cada uno con su método y su resultado.\n• El hilo que los conecta: arrancamos con 4 acuaporinas conocidas y terminamos con un catálogo de 121, dejando todo el análisis reproducible.",
+"• Buenos días. Soy Noé Paredes Alfonso y este es mi Trabajo Fin de Grado sobre el acuaporinoma de la fresa cultivada, Fragaria x ananassa 'Benihoppe', dirigido por los doctores Juan Nicolás Espinosa y José Ramón Acosta Motos.\n• El acuaporinoma es el conjunto completo de acuaporinas del genoma: las proteínas que actúan como compuertas para el paso de agua a través de la membrana celular.\n• La presentación sigue el mismo orden que el trabajo: contexto, y luego cuatro bloques, cada uno con su método y su resultado.\n• El hilo que los conecta: arrancamos con 4 acuaporinas conocidas y terminamos con un catálogo de 121, dejando todo el análisis reproducible.",
 
-"• Un mapa rápido del recorrido antes de entrar en materia.\n• Primero el contexto: por qué el agua es el problema de la fresa y qué se conocía, solo cuatro acuaporinas.\n• Luego los cuatro bloques: encontrar las acuaporinas del genoma, comprobar cuáles son reales, clasificarlas por parentesco y verlas en acción en la planta.\n• Y el cierre: de 4 a 121, con todo el análisis reproducible.",
+"• Un mapa rápido del recorrido antes de entrar en materia.\n• Primero el contexto: por qué el agua es el problema de la fresa, cómo se formó esta especie y qué se conocía, solo cuatro acuaporinas.\n• Luego los cuatro bloques en orden: encontrar las acuaporinas del genoma, comprobar cuáles son reales, clasificarlas por parentesco y verlas en acción en la planta.\n• Y el cierre: de 4 a 121, con todo el análisis reproducible.",
 
-"• MedECC (2020) y Cramer et al. (2018) proyectan una caída de hasta el 25 % en la disponibilidad de agua del Mediterráneo hacia 2050, con sequías cada vez más frecuentes.\n• Esa fresa está muy concentrada: Huelva reúne el 93 % de la superficie nacional y el 35 % de la producción europea. Mucho valor agrícola dependiendo de un recurso que se va a estrechar.\n• Y el suelo no ayuda: es arenoso, retiene poca agua y obliga a regar casi de continuo (García-Morillo et al. 2017).\n• Ese riego presiona el acuífero ligado a Doñana: al problema agronómico se le suma una tensión ambiental.\n• Para enlazar: si el agua es el cuello de botella, entender cómo la planta la gestiona a nivel celular pasa a ser estratégico — y ahí entran las proteínas que veremos a continuación.",
+"• MedECC (2020) y Cramer et al. (2018) proyectan una caída de hasta el 25 % en la disponibilidad de agua del Mediterráneo hacia 2050, con sequías cada vez más frecuentes.\n• Esa fresa está muy concentrada: Huelva reúne el 93 % de la superficie nacional y el 35 % de la producción europea.\n• El suelo no ayuda: es arenoso, retiene poca agua y obliga a regar casi de continuo (García-Morillo et al. 2017); ese riego presiona el acuífero ligado a Doñana.\n• Para enlazar: si el agua es el cuello de botella, entender cómo la planta la gestiona a nivel celular pasa a ser estratégico — y ahí entran las proteínas que veremos.",
 
-"• La idea en una frase: una acuaporina es un poro de proteína que deja pasar agua a favor de gradiente, de forma pasiva — el agua va de donde sobra a donde falta sin que la célula gaste energía.\n• Por dentro tiene forma de reloj de arena: seis hélices que cruzan la membrana más dos reentrantes, dejando un poro de unos 3 ångström, el ancho justo para una hilera de moléculas de agua.\n• La selectividad la marcan dos filtros: el doble motivo NPA (centro) corta el paso de protones, y el filtro ar/R (vestíbulo externo; en SoPIP2;1: F81·H210·T213·R225) afina el tamaño. Residuos y compuerta (D28·S115·S188·H193·L197): solo si preguntan.\n• En la membrana se ensamblan como tetrámeros, pero cada monómero lleva su propio poro: cuatro canales independientes.\n• Cierre: esta arquitectura, que se conserva entre especies, es la que permite reconocer una acuaporina en cualquier genoma — y existe en varios subtipos, cuyos nombres aparecen en el catálogo.\n• La estructura que se ve (PDB 1Z98, cadena A) es una acuaporina de espinaca usada como modelo; es el visor Mol* en vivo y se puede rotar.",
+"• Una acuaporina es un poro de proteína que deja pasar agua a favor de gradiente, de forma pasiva: el agua va de donde sobra a donde falta sin que la célula gaste energía.\n• Por dentro tiene forma de reloj de arena: seis hélices que cruzan la membrana más dos reentrantes, dejando un poro de unos 3 ångström, el ancho justo para una hilera de moléculas de agua.\n• La selectividad la marcan dos filtros: el doble motivo NPA corta el paso de protones y el filtro ar/R afina el tamaño.\n• En la membrana se ensamblan como tetrámeros, pero cada monómero lleva su propio poro: cuatro canales independientes.\n• Esta arquitectura, conservada entre especies, es la que permite reconocer una acuaporina en cualquier genoma; y existe en varios subtipos, cuyos nombres veremos en el catálogo.\n• En pantalla, la estructura real (PDB 1Z98, cadena A, acuaporina de espinaca) en el visor Mol* en vivo, rotable.",
 
-"• Punto de partida: en la fresa cultivada solo había cuatro acuaporinas descritas funcionalmente, cada una en un estudio independiente a lo largo de más de una década.\n• Son FaPIP1;1 y FaPIP2;1 (membrana plasmática, fruto y raíz), FaNIP1;1 (membrana plasmática, maduración) y FaRB7 (tonoplasto, raíz). Solo tres de los cinco subtipos representados.\n• El problema de fondo es la poliploidía: el cultivar es aloctoploide (2n = 8x = 56), con cuatro subgenomas A/B/C/D de progenitores diploides distintos (Edger et al. 2019).\n• Consecuencia práctica: cada gen ancestral puede tener hasta cuatro copias casi idénticas; sin un catálogo curado del genoma completo no se puede asignar cada lectura de expresión a la copia correcta.\n• Por eso el objetivo no era describir un gen más, sino construir por primera vez el inventario completo.",
+"• Antes de los genes, una pincelada de qué planta es esta, porque explica los subgenomas y los homeólogos. Es contexto conocido, no forma parte del análisis del TFG.\n• La fresa cultivada es alo-octoploide: 2n = 8x = 56. Junta en un mismo núcleo cuatro juegos cromosómicos completos —los subgenomas A, B, C y D— procedentes de cuatro especies diploides distintas; las mejor caracterizadas son F. vesca y F. iinumae, las otras dos no están claras.\n• Esos cuatro genomas acabaron reunidos en dos fresas silvestres octoploides: F. chiloensis (aporta calibre) y F. virginiana (aporta sabor y color).\n• De su cruce espontáneo en Europa, en el siglo XVIII, nació la fresa cultivada, F. x ananassa; 'Benihoppe' es un cultivar moderno. Es, por tanto, una especie muy joven.\n• Idea clave para el final: cuatro subgenomas → cada gen ancestral existe en hasta cuatro copias casi idénticas → esas copias equivalentes son los HOMEÓLOGOS.",
 
-"• Esta slide es el mapa del recorrido: cuatro pasos que se corresponden, uno a uno, con los cuatro bloques de la defensa.\n• Cada bloque junta método y resultado: primero la escena que lo abre, después la slide de contenido con las cifras.\n• Paso 1 (Bloque I): identificación por homología sobre el genoma de 'Benihoppe', del genoma completo a 147 candidatas.\n• Paso 2 (Bloque II): curado in silico con cuatro pruebas independientes; resultado, el primer catálogo de 121 acuaporinas.\n• Paso 3 (Bloque III): la filogenia de las 121, con sus motivos conservados, confirma las cinco subfamilias como ramas reales del árbol.\n• Paso 4 (Bloque IV): 22 transcriptomas en 6 tejidos, en reposo y bajo sequía, más el análisis de copias duplicadas y el visor eFP.",
+"• Punto de partida del problema concreto: en la fresa cultivada solo había cuatro acuaporinas descritas funcionalmente, cada una en un estudio independiente a lo largo de más de una década.\n• Son FaPIP1;1 y FaPIP2;1 (membrana plasmática, fruto y raíz), FaNIP1;1 (membrana plasmática, maduración) y FaRB7 (tonoplasto, raíz). Solo tres de los cinco subtipos.\n• La única referencia a escala de genoma era una anotación automática: la predicción MAKER marcaba 147 genes como posibles acuaporinas.\n• Pero eso es exactamente eso, una predicción automática: nunca se comprobó de forma independiente si esos 147 genes son realmente acuaporinas. No había curado estructural, ni una validación paralela, ni nada in vitro o in vivo. No se sabía cuáles eran reales ni a qué subfamilia pertenecían.\n• Por eso el objetivo no era describir un gen más, sino construir por primera vez el inventario completo y comprobado.",
 
-"• Arranca el primer paso: localizar en todo el genoma las posibles acuaporinas. Por delante, una escena del genoma en marcha.\n• La dificultad es doble. Esta fresa lleva cuatro juegos de cromosomas (A, B, C y D), así que cada acuaporina puede aparecer hasta cuatro veces en copias casi idénticas: el reto es encontrarlas todas.\n• A la vez hay que evitar falsos positivos: secuencias que se parecen a una acuaporina pero no lo son. Esa criba fina llega en el bloque siguiente.\n• El detalle técnico (cómo se alinea, se reconstruye el gen y se filtra) viene en la slide siguiente.\n• Todo el flujo corre dentro de Galaxy, para que cualquiera pueda reproducirlo.",
+"• Esta diapositiva es la hoja de ruta: cuatro pasos que se ejecutan EN ORDEN, uno tras otro, y que se corresponden con los cuatro bloques de la defensa.\n• No es un trabajo en paralelo: cada bloque necesita el resultado del anterior.\n• Paso 1 (Bloque I): identificar por homología, del genoma completo a un conjunto de candidatas.\n• Paso 2 (Bloque II): curar in silico con cuatro pruebas independientes; resultado, el catálogo de 121.\n• Paso 3 (Bloque III): con esas 121, reconstruir la filogenia y clasificarlas por parentesco.\n• Paso 4 (Bloque IV): ver qué acuaporinas se expresan y dónde, con 22 transcriptomas en seis tejidos, en reposo y bajo sequía.",
 
-"• El embudo tiene tres pasos antes del filtrado. Alinear (tblastn, 576 plantillas query = 419 Rosaceae + 35 At + 30 Os + 41 Md + 51 Hb, e-value 1e-5) → 53.396 hits. Reconstruir (BEDtools merge <3 kb, slop 1 kb) → 3.168 loci. Modelar (Exonerate protein2genome al máximo de sensibilidad, intrón 20–3000 bp) → 4.984 modelos.\n• Las coincidencias llegan partidas por los intrones; por eso se fusionan y extienden antes de modelar la estructura exón-intrón completa.\n• Tres filtros de viabilidad: metionina inicial (Kozak 1999), longitud 140–380 aa (calibrada con n = 419 Rosaceae, cubre 98,81 %) y una isoforma por locus (ClusterBED) → 129 no redundantes.\n• Validación cruzada con GDR: 91 de 129 idénticas, 38 discrepancias arbitradas con los filtros del paso 2, + 15 parciales exclusivas de GDR → 147 candidatas (144 compatibles con la familia).\n• Credibilidad: la anotación oficial es predicción automática tipo MAKER, sin curado manual; mi pipeline coincide donde acierta y la corrige donde falla.\n• Detalle fino solo si preguntan: cómo arbitro caso a caso las 38, y los parámetros exactos de merge/slop/intrón/e-value.",
+"• Arranca el primer paso: localizar en todo el genoma las posibles acuaporinas.\n• La dificultad es doble. Esta fresa lleva cuatro juegos de cromosomas, así que cada acuaporina puede aparecer hasta cuatro veces en copias casi idénticas: hay que encontrarlas todas.\n• A la vez hay que evitar falsos positivos: secuencias que se parecen pero no lo son. Esa criba fina llega en el bloque siguiente.\n• Todo el flujo corre dentro de Galaxy, para que cualquiera pueda reproducirlo.\n• En la escena se ve el flujo real: las fuentes de acuaporinas conocidas, las tres herramientas y la distribución de las candidatas por los 28 cromosomas.",
 
-"• Arranca el Bloque II. Del paso 1 salieron 147 candidatas; ahora hay que separar las acuaporinas reales de lo que solo se les parece.\n• La idea de fondo es sencilla: una candidata es de verdad si tiene la forma y la composición propias de una acuaporina. Que un programa la haya señalado no basta.\n• En pantalla, una acuaporina vegetal real (SoPIP2;1) reconstruida en 3D: se ven los cuatro poros y las moléculas de agua atravesando el canal.\n• Cada candidata pasa por cuatro pruebas independientes. Solo sigue la que las supera todas; con una sola no me fío.\n• Las herramientas concretas (pie de slide) las explico en la siguiente: cada una mide algo distinto.",
+"• La identificación es un embudo de tres pasos sobre el genoma de 'Benihoppe', y lo vemos por dentro.\n• Paso 1, ALINEAR (tblastn): uso 576 acuaporinas ya conocidas como sonda para barrer el genoma y marcar cada trozo parecido. Salen 53.396 coincidencias.\n• Paso 2, RECONSTRUIR (BEDtools): un mismo gen aparece en varios trozos porque los intrones lo cortan; BEDtools une los cercanos en una sola región, el locus. Quedan 3.168.\n• Paso 3, MODELAR (Exonerate): sobre cada locus reconstruye la estructura exón–intrón y traduce la proteína completa. Resultan 4.984 modelos.\n• La metáfora: tblastn rastrea, BEDtools junta las piezas y Exonerate arma el modelo final; el detalle de parámetros está en la metodología.",
 
-"• Las cuatro pruebas: anatomía (las seis hélices, DeepTMHMM), química conservada (alineamiento MAFFT + motivos MEME, los dos NPA del poro), parentesco (árbol exploratorio con IQ-TREE, que delata clados sueltos y ramas largas) y firma fisicoquímica (Pepstats: pI, peso molecular, GRAVY, estructura secundaria; 34 descriptores resumidos en un PCA).\n• Un PCA, en una frase: comprime muchas medidas que se solapan en unas pocas coordenadas que retienen casi toda la información. Aquí PC1 y PC2 recogen el 54,1 %.\n• En el PCA, NIP, TIP y SIP se separan en nubes nítidas; PIP y XIP se solapan porque comparten membrana plasmática. La pertenencia se mide con distancia de Mahalanobis y un corte de chi-cuadrado al 95 % (robustez en el Anexo G).\n• De las 23 parciales, 15 caen fuera de su nube; las 8 que quedan dentro ya las habían cazado las otras pruebas. Prueba de que los filtros no se pisan.\n• Regla de decisión: una candidata se descarta si falla en cualquiera. Lo que separa las viables de las parciales es que los filtros coincidan, no que se sumen puntos.\n• El resultado de las cuatro pruebas es el catálogo de 121, en la slide siguiente.",
+"• De los 4.984 modelos a un conjunto manejable: tres filtros de viabilidad.\n• Filtro 1: que empiece por metionina (un inicio de proteína creíble). Filtro 2: longitud entre 140 y 380 aminoácidos, el rango que cubre el 98,81 % de las acuaporinas de Rosaceae. Filtro 3: una sola isoforma por locus, para no contar dos veces el mismo gen.\n• Resultado: 129 secuencias no redundantes.\n• Y aquí cierro el hueco del que hablé antes: comparé mis 129 con la anotación automática MAKER. 91 son idénticas, 38 las arbitré con los filtros estructurales, y quedaban 15 parciales que solo estaban en la base de datos. En total, las 147 que MAKER proponía, pero ahora con una comprobación independiente.\n• Es decir: el mismo número, pero ya no a ciegas.",
 
-"• Resultado central del Bloque II: 121 acuaporinas estructuralmente viables, el primer catálogo a escala genómica de 'Benihoppe'. Partíamos de solo cuatro.\n• Reparto: 37 NIP, 34 TIP, 32 PIP, 12 SIP y 6 XIP. NIP es la mayoritaria (30,6 %), coherente con la expansión de NIP por duplicación en tándem descrita en otras especies vegetales.\n• Lo relevante: las cinco subfamilias aparecen completas a nivel de isoforma. SIP y XIP no estaban descritas en F. x ananassa; el catálogo las recupera por primera vez en el cultivar.\n• Localizaciones (por si preguntan): PIP en membrana plasmática (flujo principal de agua); TIP en tonoplasto (membrana de la vacuola); NIP en membrana plasmática (metaloides); SIP en retículo endoplásmico; XIP en membrana plasmática (solutos neutros mayores).\n• Las 26 descartadas (23 parciales + 3 que no eran acuaporinas) están en el Anexo E. Las 8 parciales candidatas a reanotación quedan como trabajo futuro.",
+"• Arranca el Bloque II. Del paso anterior salieron 147 candidatas; ahora hay que separar las acuaporinas reales de lo que solo se les parece.\n• La idea de fondo es sencilla: una candidata es de verdad si tiene la forma y la composición propias de una acuaporina. Que un programa la haya señalado no basta.\n• Cada candidata pasa por cuatro pruebas independientes. Solo sigue la que las supera todas; con una sola no me fío.\n• La escena lo ilustra como una criba: las candidatas entran, atraviesan las cuatro puertas y salen las viables.",
 
-"• Tercer paso: ya tenemos las 121 confirmadas; ahora se ordenan según de quién descienden, como un árbol genealógico agrupa las ramas de una familia.\n• Un árbol filogenético agrupa los genes por el parecido de su secuencia para deducir cuáles comparten antepasado. Cuanto más cerca dos ramas, más emparentadas las copias.\n• En la escena, el árbol real reconstruido a partir de 281 secuencias y 430 posiciones del alineamiento. El modelo que mejor explica los datos es Q.PLANT+R6, elegido por verosimilitud (log L = −45.149,26).\n• Tubería (si preguntan): MAFFT alinea, ClipKIT recorta columnas poco informativas, IQ-TREE 3 reconstruye y MEME identifica los motivos que firman cada subfamilia.\n• El resultado —las cinco subfamilias como ramas propias con triple soporte— llega en la slide siguiente.",
+"• Las cuatro pruebas, cada una mide algo distinto: anatomía (las seis hélices, DeepTMHMM), química conservada (los dos motivos NPA del poro, MAFFT + MEME), parentesco (posición coherente en un árbol exploratorio, IQ-TREE) y firma fisicoquímica (34 descriptores resumidos en un PCA, Pepstats).\n• Un PCA, en una frase: comprime muchas medidas que se solapan en unas pocas coordenadas que retienen casi toda la información. Aquí PC1 y PC2 recogen el 54,1 %.\n• En el gráfico, NIP, TIP y SIP se separan en nubes nítidas; PIP y XIP se solapan porque comparten membrana plasmática. La pertenencia se mide con distancia de Mahalanobis y un corte al 95 %.\n• De las 23 parciales, 15 caen fuera de su nube; las 8 que quedan dentro ya las habían cazado las otras pruebas: los filtros no se pisan.\n• Regla de decisión: una candidata se descarta si falla en cualquiera de los cuatro.",
 
-"• El árbol final integra 281 secuencias y 430 sitios alineados; ModelFinder eligió Q.PLANT+R6 (matriz de proteínas vegetales, seis categorías de tasa). log L = −45.149,26 sobre 277 nodos.\n• UFBoot, SH-aLRT y aBayes son tres maneras distintas de estimar cuán fiable es cada rama; que las tres coincidan en valores altos es la mayor garantía. El 41,9 % de los nodos supera los tres umbrales altos a la vez.\n• Los tres controles de la literatura caen sobre sus copias predichas con rama casi nula: validación directa de que la asignación acierta.\n• La ratio de 3,2 copias PIP por gen ancestral de F. vesca encaja con cuadruplicación seguida de fraccionamiento moderado (pérdida parcial de copias).\n• MEME identificó 15 motivos sobre las 121: M1 (NPA del bucle E), M3 y M6 (hélices transmembrana) al 100 %. M10 en NIP1, 2, 4, 5 y 6; ausente en NIP7.\n• Dato fino: las siete copias FaSIP1;3 conservan la variante NPS, también en Prunus armeniaca — posible firma de Rosaceae. El mapa de motivos es la Figura 08.",
+"• Resultado central del Bloque II: 121 acuaporinas estructuralmente viables, el primer catálogo a escala genómica de 'Benihoppe'. Partíamos de solo cuatro.\n• Reparto: 37 NIP, 34 TIP, 32 PIP, 12 SIP y 6 XIP. NIP es la mayoritaria (30,6 %), coherente con su expansión por duplicación descrita en otras plantas.\n• Lo relevante: las cinco subfamilias aparecen completas. SIP y XIP no estaban descritas en F. x ananassa; el catálogo las recupera por primera vez en el cultivar.\n• Las 26 descartadas (23 parciales + 3 que no eran acuaporinas) están en el Anexo E; las 8 parciales candidatas a reanotación quedan como trabajo futuro.",
 
-"• Cuarto y último paso: ya tenemos el catálogo y sabemos cómo se emparentan; ahora, ver cuáles funcionan de verdad y en qué parte de la planta.\n• Cada célula enciende solo los genes que necesita. Leyendo el ARN que produce un tejido sabemos qué acuaporinas tiene activas: eso es la secuenciación de ARN (RNA-seq).\n• Trabajamos con 22 transcriptomas secuenciados (21 analizados tras descartar una raíz en reposo por control de calidad), en 6 tejidos —fruto verde, fruto rojo, hoja, raíz, corona y yema axilar— de 4 proyectos públicos.\n• Los miramos en dos situaciones: la planta en reposo (qué usa cada tejido por defecto) y bajo sequía (qué activa o apaga al defenderse).\n• Cómo (si preguntan): alineamiento con HISAT2, conteo con featureCounts, comparación con DESeq2, todo en Galaxy; la muestra excluida la marcó el PCA como anómala.",
+"• Tercer paso: ya tenemos las 121 confirmadas; ahora se ordenan según de quién descienden, como un árbol genealógico agrupa las ramas de una familia.\n• Un árbol filogenético agrupa los genes por el parecido de su secuencia para deducir cuáles comparten antepasado.\n• En la escena, el árbol real reconstruido a partir de 281 secuencias y 430 posiciones; el modelo que mejor explica los datos es Q.PLANT+R6 (log L = −45.149,26).\n• El resultado —las cinco subfamilias como ramas propias con triple soporte— llega en la diapositiva siguiente.",
 
-"• TPM = transcritos por millón: cuánto se expresa cada gen una vez corregido por su longitud y por la profundidad de secuenciación, comparable entre genes y muestras.\n• Basal: la jerarquía PIP > TIP > NIP ≈ SIP ≫ XIP se mantiene estable; el pico de 3.748 TPM en FaPIP1;1 (Fxa7Cg02122) cae en fruto rojo, coherente con la entrada masiva de agua en la maduración.\n• SIP, una de las subfamilias nuevas para el cultivar, está casi en todas partes: 11 de 12 genes detectables en los 6 tejidos → función basal en el retículo (membrana interna donde se fabrican proteínas).\n• El estrés (PEG 20 %, 6 días) imita una sequía osmótica; umbrales DESeq2: padj < 0,05 (significación corregida) y |LFC| > 1 (cambio de al menos el doble). Hoja 4↑/3↓, raíz 1↑/9↓.\n• La represión neta en raíz equivale a cerrar el grifo hidráulico para no perder agua; en hoja, el cuarteto FaTIP1;7 se enciende para redistribuir agua en la vacuola.\n• Coexpresión PIP1·PIP2: solo si preguntan. El cuarteto FaTIP1;7 sube junto, dato que enlaza con la slide de homeólogos.",
+"• El árbol final integra 281 secuencias y 430 sitios; ModelFinder eligió Q.PLANT+R6 sobre 277 nodos.\n• UFBoot, SH-aLRT y aBayes son tres formas distintas de estimar la fiabilidad de cada rama; que las tres coincidan en valores altos es la mayor garantía. Soportes medianos 91 % / 92,2 % / 1,000.\n• Los tres controles de la literatura caen sobre sus copias predichas con rama casi nula: la asignación acierta. La ratio de 3,2 copias PIP por gen ancestral encaja con la cuadruplicación seguida de pérdida parcial.\n• Detalle que enlaza con el final: en el árbol, las cuatro copias de un mismo grupo homeólogo salen muy juntas y con expresión parecida; por eso después tiene sentido agruparlas.\n• MEME identificó 15 motivos: M1 (el NPA), M3 y M6 están en el 100 % del catálogo; luego cada subfamilia añade su firma propia. El mapa es la Figura 8.",
 
-"• Tras la fusión de los cuatro ancestros, cada acuaporina puede haber quedado en hasta cuatro copias casi idénticas (las mismas que costaba distinguir en el Bloque I). Agruparlas en familias de copias hermanas es la forma correcta de leer un genoma aloctoploide sin contar el mismo gen cuatro veces.\n• 32 familias; 18 son cuartetos completos (conservan los cuatro miembros). En el resto se ha perdido alguna copia, no siempre la misma.\n• Dentro de cada familia, una copia suele expresarse más: la dominante. Dos familias no se expresan, así que la dominancia se asigna sobre 30. Reparto: D=12, A=9, C=5, B=4 → 40 % a favor de D.\n• El sesgo hacia D encaja con que la dominancia entre subgenomas no es simétrica en alopoliploides; aquí se cuantifica por primera vez para las acuaporinas del cultivar.\n• Matiz: esto describe a 'Benihoppe'. Como la variabilidad entre cultivares está documentada, no se presenta como propiedad de la especie entera.\n• Si preguntan cómo se define la dominancia, lo detallo grupo por grupo a partir de los datos de expresión.",
+"• Cuarto y último paso: ya tenemos el catálogo y sabemos cómo se emparentan; ahora, ver cuáles funcionan de verdad y en qué parte de la planta.\n• Cada célula enciende solo los genes que necesita. Leyendo el ARN que produce un tejido sabemos qué acuaporinas tiene activas: eso es la secuenciación de ARN.\n• Trabajamos con 22 transcriptomas (21 analizados tras descartar una raíz por control de calidad), en 6 tejidos —fruto verde, fruto rojo, hoja, raíz, corona y yema axilar— de 4 proyectos públicos.\n• Los miramos en dos situaciones: la planta en reposo y bajo sequía.\n• En la escena, la expresión por tejido proyectada sobre la propia planta.",
 
-"• Demo en vivo: puedo navegar entre los 32 grupos de copias si el tribunal quiere ver un patrón concreto; arranca en HG-07.\n• Adapta el formato eFP original de Winter et al. (2007), que proyecta expresión sobre un esquema de la planta; aquí pinta el TPM agregado de cada grupo, con desglose por subgenoma A/B/C/D.\n• Está en GitHub Pages, es independiente del repositorio y autocontenido (HTML+JS): funciona sin conexión y se puede clonar para otra especie.\n• TPM, recordatorio: medida normalizada de expresión, comparable entre tejidos y genes.\n• Lo coloco antes de las conclusiones como cierre tangible: convierte todo el catálogo en algo que cualquiera explora con el ratón.",
+"• TPM = transcritos por millón: una medida de expresión comparable entre genes y muestras.\n• En reposo, la jerarquía PIP > TIP > NIP ≈ SIP ≫ XIP se mantiene estable en todos los tejidos.\n• El eje horizontal son los tejidos; el vertical, el nivel de expresión. El pico absoluto es FaPIP1;1 con 3.748 TPM en fruto rojo, coherente con la entrada masiva de agua durante la maduración.\n• SIP, una de las subfamilias nuevas, está casi en todas partes: 11 de 12 genes detectables en los 6 tejidos, lo que sugiere una función basal en el retículo.\n• En una frase: la PIP del fruto rojo es la gran protagonista hidráulica del cultivar.",
 
-"• Gancho de cierre: de 4 genes descritos a un catálogo de 121, un factor de ×30, y todo el recorrido documentado y verificable.\n• Conclusión 1: el protocolo multidimensional gana en precisión, sensibilidad e integridad frente a la anotación automática (MAKER, sin curado manual).\n• Conclusión 2: 5 clados monofiléticos, soportes mediana 91 % UFBoot, 92,2 % SH-aLRT, 1,000 aBayes; 3/3 controles caen sobre sus copias; núcleo común M1/M3/M6 y firma de motivos por subfamilia.\n• Conclusión 3: jerarquía basal PIP > TIP > NIP ≈ SIP ≫ XIP, pico 3.748 TPM en FaPIP1;1 (fruto rojo); bajo sequía, hoja 4↑/3↓ y raíz 1↑/9↓; 32 grupos homeólogos, dominancia D=12 sobre 30 (40 %).\n• Conclusión 4: repositorio público con 133 tests automáticos, anexos, workflows Galaxy, DOI Zenodo y visor eFP.\n• Líneas futuras (si preguntan): reanotación manual de las parciales; análisis del filtro ar/R (redundancia vs diversificación, sobre todo en NIP); validación experimental in vivo e in vitro. Mantener el cierre breve.",
+"• Aquí comparamos planta en reposo frente a planta sometida a sequía (PEG al 20 %, 6 días), órgano por órgano.\n• Cada punto es una acuaporina; el eje mide cuánto cambia su expresión bajo estrés. En rojo, los cambios significativos: padj < 0,05 (corregido) y al menos el doble de cambio (|LFC| > 1).\n• La hoja responde de forma mixta: 4 acuaporinas suben y 3 bajan; sube el cuarteto FaTIP1;7, que redistribuye agua en la vacuola.\n• La raíz hace lo contrario: 1 sube y 9 bajan. Esa represión equivale a cerrar el grifo hidráulico para no perder agua.\n• Y no se solapan: hoja y raíz usan estrategias opuestas. Es el hallazgo fisiológico del bloque.",
 
-"• Cierre: de 4 a 121, con la clasificación, el mapa de expresión y todo el análisis reproducible.\n• Agradecer y abrir el turno de preguntas."
+"• Recordatorio del término que introduje al principio: como la fresa tiene cuatro subgenomas, cada gen ancestral existe en hasta cuatro copias casi idénticas; esas copias equivalentes son los HOMEÓLOGOS.\n• Las 121 acuaporinas se agrupan en 32 grupos homeólogos; 18 son cuartetos completos (conservan las cuatro copias).\n• La pregunta interesante: ¿se expresan por igual las cuatro copias? No. En cada grupo suele mandar una, la dominante.\n• Reparto de la copia dominante por subgenoma, sobre 30 grupos con dominancia asignable: A=9, B=4, C=5 y D=12. El subgenoma D domina el 40 % de los grupos.\n• Ese sesgo hacia un subgenoma es coherente con la dominancia subgenómica descrita en alopoliploides (Edger et al. 2019); aquí se cuantifica por primera vez para las acuaporinas del cultivar 'Benihoppe'.",
+
+"• Como cierre tangible del bloque, un recurso interactivo y abierto.\n• Es un visor eFP: proyecta el nivel de expresión de cada grupo homeólogo sobre un esquema de la planta, con desglose por subgenoma A/B/C/D.\n• Está en GitHub Pages, es autocontenido y reutilizable para otra especie.\n• Puedo navegar en vivo entre los 32 grupos si el tribunal quiere ver un patrón concreto. Convierte todo el catálogo en algo que cualquiera explora con el ratón.",
+
+"• Recapitulando, de 4 acuaporinas descritas a un catálogo curado de 121, con cuatro aportaciones.\n• Aportación 1: un protocolo multidimensional que gana en precisión, sensibilidad e integridad frente a la anotación automática sin curar.\n• Aportación 2: cinco subfamilias monofiléticas con triple soporte y firma de motivos propia; 3 de 3 controles validados.\n• Aportación 3: el primer mapa de expresión por tejido, con respuesta opuesta hoja-raíz y dominancia subgenómica desigual.\n• Aportación 4: un repositorio público con 133 pruebas automáticas, anexos, workflows de Galaxy, DOI de Zenodo y el visor eFP.\n• Líneas futuras: reanotación manual de las parciales, análisis del filtro ar/R sobre todo en NIP, y validación experimental de los patrones inferidos in silico.",
+
+"• Cierre: de 4 a 121, con la clasificación, el mapa de expresión y todo el análisis reproducible.\n• Agradecer al tribunal y a mis directores, y abrir el turno de preguntas."
 ]
 </script>
 </head>
@@ -69,7 +75,7 @@
     <div style="max-width: 1480px;" class="anim-in">
       <div class="eyebrow fruit" style="margin-bottom: 36px;">TRABAJO FIN DE GRADO</div>
 
-      <h1 class="title" style="font-size: 84px; line-height: 1.06; font-weight: 400; max-width: 1500px;">
+      <h1 class="title" style="font-size: 86px; line-height: 1.06; font-weight: 400; max-width: 1520px;">
         <span>Identificación, curado y caracterización</span>
         <br/>
         <span>transcripcional del acuaporinoma</span>
@@ -79,14 +85,14 @@
 
       <div style="height: 56px;"></div>
 
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 64px; max-width: 1100px;" class="anim-in-2">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 64px; max-width: 1140px;" class="anim-in-2">
         <div>
-          <div class="eyebrow muted" style="margin-bottom: 14px; font-size: 18px;">AUTOR</div>
-          <div class="subtitle" style="font-size: 34px;">Noé Paredes Alfonso</div>
+          <div class="eyebrow muted" style="margin-bottom: 14px; font-size: 21px;">AUTOR</div>
+          <div class="subtitle" style="font-size: 37px;">Noé Paredes Alfonso</div>
         </div>
         <div>
-          <div class="eyebrow muted" style="margin-bottom: 14px; font-size: 18px;">DIRECTORES</div>
-          <div class="body" style="font-size: 28px; color: var(--ink-soft);">
+          <div class="eyebrow muted" style="margin-bottom: 14px; font-size: 21px;">DIRECTORES</div>
+          <div class="body" style="font-size: 31px; color: var(--ink-soft);">
             <span>Dr. Juan Nicolás Espinosa</span><br/>
             <span>Dr. José Ramón Acosta Motos</span>
           </div>
@@ -113,47 +119,47 @@
       <span class="tb-dot"></span>
       <span>Defensa TFG · Acuaporinoma</span>
     </div>
-    <div class="tb-r">02 / 19</div>
+    <div class="tb-r">02 / 22</div>
   </div>
 
   <div class="frame">
     <div class="anim-in" style="max-width: 1500px;">
-      <h2 class="title">Índice</h2>
+      <h2 class="title" style="font-size: 72px;">Índice</h2>
     </div>
 
-    <div class="anim-in-2" style="display: flex; flex-direction: column; gap: 12px; margin-top: 40px; max-width: 1500px;">
+    <div class="anim-in-2" style="display: flex; flex-direction: column; gap: 6px; margin-top: 48px; max-width: 1560px;">
 
-      <div style="display: flex; align-items: baseline; gap: 26px; padding: 12px 0; border-bottom: 1px solid var(--rule);">
-        <span class="mono" style="font-size: 18px; color: var(--ink-dim); width: 130px; flex-shrink: 0;">CONTEXTO</span>
-        <span class="body" style="font-size: 24px; color: var(--ink-soft);">El problema hídrico y los antecedentes</span>
+      <div style="display: flex; align-items: baseline; gap: 36px; padding: 20px 0; border-bottom: 1px solid var(--rule);">
+        <span class="mono" style="font-size: 23px; color: var(--ink-muted); width: 180px; flex-shrink: 0;">CONTEXTO</span>
+        <span class="body" style="font-size: 33px; color: var(--ink);">El problema hídrico, el origen de la especie y los antecedentes</span>
       </div>
-      <div style="display: flex; align-items: baseline; gap: 26px; padding: 12px 0; border-bottom: 1px solid var(--rule);">
-        <span class="mono water-c" style="font-size: 20px; width: 130px; flex-shrink: 0; font-weight: 500;">BLOQUE I</span>
-        <span class="body" style="font-size: 24px; color: var(--ink);">Identificación de las acuaporinas del genoma</span>
+      <div style="display: flex; align-items: baseline; gap: 36px; padding: 20px 0; border-bottom: 1px solid var(--rule);">
+        <span class="mono water-c" style="font-size: 25px; width: 180px; flex-shrink: 0; font-weight: 500;">BLOQUE I</span>
+        <span class="body" style="font-size: 33px; color: var(--ink);">Identificación de las acuaporinas del genoma</span>
       </div>
-      <div style="display: flex; align-items: baseline; gap: 26px; padding: 12px 0; border-bottom: 1px solid var(--rule);">
-        <span class="mono water-c" style="font-size: 20px; width: 130px; flex-shrink: 0; font-weight: 500;">BLOQUE II</span>
-        <span class="body" style="font-size: 24px; color: var(--ink);">Curado: el catálogo de 121 acuaporinas</span>
+      <div style="display: flex; align-items: baseline; gap: 36px; padding: 20px 0; border-bottom: 1px solid var(--rule);">
+        <span class="mono water-c" style="font-size: 25px; width: 180px; flex-shrink: 0; font-weight: 500;">BLOQUE II</span>
+        <span class="body" style="font-size: 33px; color: var(--ink);">Curado: el catálogo de 121 acuaporinas</span>
       </div>
-      <div style="display: flex; align-items: baseline; gap: 26px; padding: 12px 0; border-bottom: 1px solid var(--rule);">
-        <span class="mono water-c" style="font-size: 20px; width: 130px; flex-shrink: 0; font-weight: 500;">BLOQUE III</span>
-        <span class="body" style="font-size: 24px; color: var(--ink);">Filogenia: clasificación por parentesco</span>
+      <div style="display: flex; align-items: baseline; gap: 36px; padding: 20px 0; border-bottom: 1px solid var(--rule);">
+        <span class="mono water-c" style="font-size: 25px; width: 180px; flex-shrink: 0; font-weight: 500;">BLOQUE III</span>
+        <span class="body" style="font-size: 33px; color: var(--ink);">Filogenia: clasificación por parentesco</span>
       </div>
-      <div style="display: flex; align-items: baseline; gap: 26px; padding: 12px 0; border-bottom: 1px solid var(--rule);">
-        <span class="mono water-c" style="font-size: 20px; width: 130px; flex-shrink: 0; font-weight: 500;">BLOQUE IV</span>
-        <span class="body" style="font-size: 24px; color: var(--ink);">Expresión: actividad por tejido y homeólogos</span>
+      <div style="display: flex; align-items: baseline; gap: 36px; padding: 20px 0; border-bottom: 1px solid var(--rule);">
+        <span class="mono water-c" style="font-size: 25px; width: 180px; flex-shrink: 0; font-weight: 500;">BLOQUE IV</span>
+        <span class="body" style="font-size: 33px; color: var(--ink);">Expresión: actividad por tejido y homeólogos</span>
       </div>
-      <div style="display: flex; align-items: baseline; gap: 26px; padding: 12px 0;">
-        <span class="mono" style="font-size: 18px; color: var(--ink-dim); width: 130px; flex-shrink: 0;">CONCLUSIONES</span>
-        <span class="body" style="font-size: 24px; color: var(--ink-soft);">Síntesis y aportaciones del trabajo</span>
+      <div style="display: flex; align-items: baseline; gap: 36px; padding: 20px 0;">
+        <span class="mono" style="font-size: 23px; color: var(--ink-muted); width: 180px; flex-shrink: 0;">CIERRE</span>
+        <span class="body" style="font-size: 33px; color: var(--ink);">Síntesis, aportaciones y líneas futuras</span>
       </div>
 
     </div>
   </div>
 
   <div class="footer-rule">
-    <div>Contexto · Bloque I · II · III · IV · Conclusiones</div>
-    <div class="mono">02 / 19</div>
+    <div>Contexto · Bloque I · II · III · IV · Cierre</div>
+    <div class="mono">02 / 22</div>
   </div>
 </section>
 
@@ -165,22 +171,22 @@
       <span class="tb-dot" style="background: var(--c-amber);"></span>
       <span>Contexto</span>
     </div>
-    <div class="tb-r">03 / 19</div>
+    <div class="tb-r">03 / 22</div>
   </div>
 
   <div class="frame">
-    <div class="anim-in" style="max-width: 1500px;">
+    <div class="anim-in" style="max-width: 1560px;">
       <h2 class="title">El agua, factor limitante del cultivo de la fresa</h2>
     </div>
 
-    <div style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 90px; margin-top: 32px; align-items: center;">
+    <div style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 90px; margin-top: 40px; align-items: center;">
 
       <div class="anim-in-2">
-        <div class="eyebrow amber-c" style="margin-bottom: 22px; font-size: 16px;">MEDITERRÁNEO · MedECC 2050</div>
+        <div class="eyebrow amber-c" style="margin-bottom: 22px; font-size: 19px;">MEDITERRÁNEO · MedECC 2050</div>
         <div class="megafig grow tabular amber-c">
           <span>−25</span><span class="megafig-unit">% agua</span>
         </div>
-        <p class="body" style="margin-top: 28px; max-width: 740px; font-size: 23px; color: var(--ink-soft);">
+        <p class="body" style="margin-top: 30px; max-width: 760px; font-size: 29px; color: var(--ink-soft);">
           Pérdida proyectada de hasta una cuarta parte del agua disponible en la cuenca mediterránea hacia 2050, con sequías más frecuentes.
         </p>
       </div>
@@ -188,13 +194,13 @@
       <div class="anim-in-3" style="display: flex; flex-direction: column; gap: 28px;">
         <div class="card">
           <div class="card-title">HUELVA</div>
-          <p class="card-body">
-            <span style="font-family: var(--serif); font-size: 50px; color: var(--c-fruit);">93 %</span><span> de la superficie nacional de fresa · </span><span style="font-family: var(--serif); font-size: 50px; color: var(--c-fruit);">35 %</span><span> de la producción europea.</span>
+          <p class="card-body" style="font-size: 27px;">
+            <span style="font-family: var(--serif); font-size: 52px; color: var(--c-fruit);">93 %</span><span> de la superficie nacional de fresa · </span><span style="font-family: var(--serif); font-size: 52px; color: var(--c-fruit);">35 %</span><span> de la producción europea.</span>
           </p>
         </div>
         <div class="card">
           <div class="card-title">VULNERABILIDAD</div>
-          <p class="card-body">
+          <p class="card-body" style="font-size: 27px;">
             <span>Suelos arenosos de baja retención hídrica y riego intensivo, con presión sobre el acuífero ligado a Doñana.</span>
           </p>
         </div>
@@ -205,9 +211,10 @@
 
   <div class="footer-rule">
     <div>Cramer et al. 2018 · MedECC 2020 · García-Morillo et al. 2017</div>
-    <div class="mono">03 / 19</div>
+    <div class="mono">03 / 22</div>
   </div>
 </section>
+
 
 <!-- ===================== 04 · LAS ACUAPORINAS ===================== -->
 <section data-label="04 · Acuaporinas · estructura y función" data-scene="threejs:aquaporin-monomer">
@@ -216,67 +223,59 @@
       <span class="tb-dot"></span>
       <span>Marco teórico</span>
     </div>
-    <div class="tb-r">04 / 19</div>
+    <div class="tb-r">04 / 22</div>
   </div>
 
   <div class="frame">
-    <div class="anim-in" style="max-width: 1500px;">
+    <div class="anim-in" style="max-width: 1560px;">
       <h2 class="title">Las acuaporinas: estructura y función</h2>
     </div>
 
-    <div style="display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 60px; margin-top: 28px; align-items: center;">
+    <div style="display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 64px; margin-top: 32px; align-items: center;">
 
       <!-- Acuaporina monómero · PDB 1Z98 chain A renderizado con Mol* -->
-      <div class="anim-in-2" style="position: relative; display: flex; flex-direction: column; justify-content: center; align-items: stretch; gap: 14px;">
-        <div data-aquaporin-target style="position: relative; width: 100%; aspect-ratio: 1/0.85; background: #f8f8fa; border-radius: 6px; overflow: hidden; box-shadow: 0 4px 12px rgba(20,24,42,0.06);">
-          <div style="position: absolute; top: 14px; right: 14px; z-index: 10; padding: 6px 12px; background: rgba(255,255,255,0.94); border-radius: 4px; border: 1px solid var(--rule); font-family: var(--mono); font-size: 11px; color: var(--ink-soft); letter-spacing: 0.08em;">PDB 1Z98 · chain A · SoPIP2;1</div>
+      <div class="anim-in-2" style="position: relative; display: flex; flex-direction: column; justify-content: center; align-items: stretch; gap: 16px;">
+        <div data-aquaporin-target style="position: relative; width: 100%; aspect-ratio: 1/0.82; background: #f8f8fa; border-radius: 6px; overflow: hidden; box-shadow: 0 4px 12px rgba(20,24,42,0.06);">
+          <div style="position: absolute; top: 14px; right: 14px; z-index: 10; padding: 7px 13px; background: rgba(255,255,255,0.94); border-radius: 4px; border: 1px solid var(--rule); font-family: var(--mono); font-size: 13px; color: var(--ink-soft); letter-spacing: 0.08em;">PDB 1Z98 · chain A · SoPIP2;1</div>
         </div>
 
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6px 22px; padding: 10px 4px;">
-          <div style="display: flex; align-items: center; gap: 9px;">
-            <span style="width: 12px; height: 4px; border-radius: 2px; background: #3498DB; flex-shrink: 0;"></span>
-            <span class="mono" style="font-size: 12px; color: var(--ink);">6 hélices transmembrana</span>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px 28px; padding: 8px 4px;">
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <span style="width: 14px; height: 4px; border-radius: 2px; background: #3498DB; flex-shrink: 0;"></span>
+            <span class="mono" style="font-size: 16px; color: var(--ink);">6 hélices transmembrana</span>
           </div>
-          <div style="display: flex; align-items: center; gap: 9px;">
-            <span style="width: 8px; height: 8px; border-radius: 50%; background: #E74C3C; flex-shrink: 0;"></span>
-            <span class="mono" style="font-size: 12px; color: var(--ink);">doble motivo NPA</span>
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <span style="width: 10px; height: 10px; border-radius: 50%; background: #E74C3C; flex-shrink: 0;"></span>
+            <span class="mono" style="font-size: 16px; color: var(--ink);">doble motivo NPA</span>
           </div>
-          <div style="display: flex; align-items: center; gap: 9px;">
-            <span style="width: 12px; height: 4px; border-radius: 2px; background: #2ECC71; flex-shrink: 0;"></span>
-            <span class="mono" style="font-size: 12px; color: var(--ink);">2 hélices reentrantes</span>
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <span style="width: 14px; height: 4px; border-radius: 2px; background: #2ECC71; flex-shrink: 0;"></span>
+            <span class="mono" style="font-size: 16px; color: var(--ink);">2 hélices reentrantes</span>
           </div>
-          <div style="display: flex; align-items: center; gap: 9px;">
-            <span style="width: 8px; height: 8px; border-radius: 50%; background: #F39C12; flex-shrink: 0;"></span>
-            <span class="mono" style="font-size: 12px; color: var(--ink);">filtro ar/R</span>
-          </div>
-          <div style="display: flex; align-items: center; gap: 9px;">
-            <span style="width: 12px; height: 4px; border-radius: 2px; background: #cdd2d8; flex-shrink: 0;"></span>
-            <span class="mono" style="font-size: 12px; color: var(--ink);">bucles conectores</span>
-          </div>
-          <div style="display: flex; align-items: center; gap: 9px;">
-            <span style="width: 8px; height: 8px; border-radius: 50%; background: #9B59B6; flex-shrink: 0;"></span>
-            <span class="mono" style="font-size: 12px; color: var(--ink);">compuerta de apertura</span>
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <span style="width: 10px; height: 10px; border-radius: 50%; background: #d68910; flex-shrink: 0;"></span>
+            <span class="mono" style="font-size: 16px; color: var(--ink);">filtro ar/R</span>
           </div>
         </div>
       </div>
 
       <!-- Puntos clave -->
-      <div class="anim-in-3" style="display: flex; flex-direction: column; gap: 20px;">
+      <div class="anim-in-3" style="display: flex; flex-direction: column; gap: 26px;">
         <div>
-          <div class="eyebrow muted" style="margin-bottom: 6px; font-size: 16px;">QUÉ SON</div>
-          <p class="body" style="color: var(--ink); font-size: 24px; line-height: 1.4;">Canales de membrana que transportan agua y pequeños solutos a favor de gradiente, sin gasto energético.</p>
+          <div class="eyebrow muted" style="margin-bottom: 8px; font-size: 19px;">QUÉ SON</div>
+          <p class="body" style="color: var(--ink); font-size: 29px; line-height: 1.4;">Canales de membrana que transportan agua y pequeños solutos a favor de gradiente, sin gasto energético.</p>
         </div>
         <div>
-          <div class="eyebrow muted" style="margin-bottom: 6px; font-size: 16px;">ESTRUCTURA</div>
-          <p class="body" style="color: var(--ink); font-size: 24px; line-height: 1.4;">Plegamiento en reloj de arena · poro de ~3 Å · 6 hélices transmembrana + 2 reentrantes.</p>
+          <div class="eyebrow muted" style="margin-bottom: 8px; font-size: 19px;">ESTRUCTURA</div>
+          <p class="body" style="color: var(--ink); font-size: 29px; line-height: 1.4;">Plegamiento en reloj de arena · poro de ~3 Å · 6 hélices transmembrana + 2 reentrantes.</p>
         </div>
         <div>
-          <div class="eyebrow muted" style="margin-bottom: 6px; font-size: 16px;">SELECTIVIDAD Y ENSAMBLAJE</div>
-          <p class="body" style="color: var(--ink); font-size: 24px; line-height: 1.4;">Dos motivos <span class="mono fruit-c">NPA</span> + filtro <span class="mono fruit-c">ar/R</span>. Funcionan como tetrámeros, con cuatro poros independientes.</p>
+          <div class="eyebrow muted" style="margin-bottom: 8px; font-size: 19px;">SELECTIVIDAD Y ENSAMBLAJE</div>
+          <p class="body" style="color: var(--ink); font-size: 29px; line-height: 1.4;">Dos motivos <span class="mono fruit-c">NPA</span> + filtro <span class="mono fruit-c">ar/R</span>. Funcionan como tetrámeros, con cuatro poros independientes.</p>
         </div>
         <div>
-          <div class="eyebrow muted" style="margin-bottom: 6px; font-size: 16px;">UNA FAMILIA DIVERSA</div>
-          <p class="body" style="color: var(--ink-soft); font-size: 22px; line-height: 1.4;">Varias subfamilias según su localización en la célula y los solutos que transportan.</p>
+          <div class="eyebrow muted" style="margin-bottom: 8px; font-size: 19px;">UNA FAMILIA DIVERSA</div>
+          <p class="body" style="color: var(--ink-soft); font-size: 27px; line-height: 1.4;">Varias subfamilias según su localización en la célula y los solutos que transportan.</p>
         </div>
       </div>
 
@@ -285,83 +284,174 @@
 
   <div class="footer-rule">
     <div>Maurel et al. 2015 · Johanson et al. 2001 · Murata et al. 2000</div>
-    <div class="mono">04 / 19</div>
+    <div class="mono">04 / 22</div>
   </div>
 </section>
 
 
-<!-- ===================== 04 · ANTECEDENTES ===================== -->
-<section data-label="05 · Antecedentes · 4 conocidas en Fragaria">
+<!-- ===================== 05 · EVOLUCIÓN DE F. x ananassa (NUEVA) ===================== -->
+<section data-label="05 · Evolución de F. x ananassa">
+  <div class="topbar">
+    <div class="tb-l">
+      <span class="tb-dot" style="background: var(--c-leaf);"></span>
+      <span>Contexto · la especie</span>
+    </div>
+    <div class="tb-r">05 / 22</div>
+  </div>
+
+  <div class="frame">
+    <div class="anim-in" style="max-width: 1640px;">
+      <h2 class="title">Origen de la fresa cultivada: una especie joven y cuádruple</h2>
+    </div>
+
+    <!-- Cronología en tres estaciones -->
+    <div style="display: grid; grid-template-columns: 1.15fr 0.12fr 1fr 0.12fr 1fr; gap: 18px; margin-top: 34px; align-items: stretch;">
+
+      <!-- Estación 1 · donantes diploides -->
+      <div class="card anim-in-2" style="padding: 26px 26px;">
+        <div class="card-title" style="color: var(--c-leaf);">CUATRO ANCESTROS DIPLOIDES</div>
+        <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 10px;">
+          <div style="display: flex; align-items: baseline; gap: 14px;">
+            <span class="italic body" style="font-size: 25px; color: var(--ink);">F. vesca</span>
+            <span class="mono" style="font-size: 21px; color: var(--ink-muted);">→ subgenoma A</span>
+          </div>
+          <div style="display: flex; align-items: baseline; gap: 14px;">
+            <span class="italic body" style="font-size: 25px; color: var(--ink);">F. iinumae</span>
+            <span class="mono" style="font-size: 21px; color: var(--ink-muted);">→ subgenoma B</span>
+          </div>
+          <div style="display: flex; align-items: baseline; gap: 14px;">
+            <span class="body" style="font-size: 25px; color: var(--ink-soft);">y dos especies más</span>
+            <span class="mono" style="font-size: 21px; color: var(--ink-muted);">→ subg. C · D</span>
+          </div>
+        </div>
+        <p class="small" style="font-size: 21px; margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--rule);">
+          Cuatro fresas silvestres diploides, <span class="leaf-c">una por subgenoma</span>.
+        </p>
+      </div>
+
+      <div class="anim-in-2" style="display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--ink-muted);">
+        <div style="font-size: 35px;">→</div>
+        <div class="mono" style="font-size: 14px; writing-mode: horizontal-tb; text-align: center; margin-top: 8px; line-height: 1.3;">poliploidía</div>
+      </div>
+
+      <!-- Estación 2 · octoploides silvestres -->
+      <div class="card anim-in-3" style="padding: 26px 26px;">
+        <div class="card-title">DOS OCTOPLOIDES SILVESTRES</div>
+        <div style="margin-top: 4px;">
+          <div class="italic body" style="font-size: 25px; color: var(--ink);">F. chiloensis</div>
+          <p class="small" style="font-size: 21px; margin: 2px 0 12px;">Sudamérica · aporta el <span class="fruit-c">calibre</span></p>
+          <div class="italic body" style="font-size: 25px; color: var(--ink);">F. virginiana</div>
+          <p class="small" style="font-size: 21px; margin: 2px 0 0;">Norteamérica · aporta <span class="fruit-c">sabor y color</span></p>
+        </div>
+        <p class="small" style="font-size: 20px; margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--rule);">
+          Ambas <span class="mono">2n = 8x = 56</span>.
+        </p>
+      </div>
+
+      <div class="anim-in-3" style="display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--ink-muted);">
+        <div style="font-size: 35px;">→</div>
+        <div class="mono" style="font-size: 13px; text-align: center; margin-top: 8px; line-height: 1.3;">Europa<br/>s. XVIII</div>
+      </div>
+
+      <!-- Estación 3 · cultivada -->
+      <div class="card anim-in-4" style="padding: 26px 26px;">
+        <div class="card-title" style="color: var(--c-fruit);">LA FRESA CULTIVADA</div>
+        <div style="margin-top: 4px;">
+          <div class="italic body" style="font-size: 25px; color: var(--ink);">F. x ananassa</div>
+          <p class="small" style="font-size: 21px; margin: 2px 0 12px;">Híbrida espontánea en Europa, <span class="muted">s. XVIII</span></p>
+          <div class="body" style="font-size: 25px; color: var(--ink);">'Benihoppe'</div>
+          <p class="small" style="font-size: 21px; margin: 2px 0 0;">cultivar del estudio · Japón, 1994</p>
+        </div>
+        <p class="small" style="font-size: 20px; margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--rule);">
+          Apenas <span class="fruit-c">~300 años</span> como especie.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Takeaway · homeólogos -->
+    <div class="anim-in-4" style="margin-top: 26px; padding: 20px 30px; border-radius: 6px; background: var(--bg-elev-2); border: 1px solid var(--rule); display: flex; align-items: center; gap: 26px;">
+      <div class="mono leaf-c" style="font-size: 21px; letter-spacing: 0.14em; flex-shrink: 0;">IDEA CLAVE</div>
+      <p class="body" style="font-size: 26px; line-height: 1.4; margin: 0; color: var(--ink-soft);">
+        Cuatro subgenomas (A · B · C · D) significan que cada gen ancestral existe en <span class="fruit-c" style="font-weight: 500;">hasta cuatro copias</span> casi idénticas. A esas copias equivalentes, una por subgenoma, se las llama <span class="leaf-c" style="font-weight: 500;">homeólogos</span> — concepto que retomaremos al final.
+      </p>
+    </div>
+  </div>
+
+  <div class="footer-rule">
+    <div>Alo-octoploide · 2n = 8x = 56 · cuatro subgenomas A · B · C · D</div>
+    <div class="mono">05 / 22</div>
+  </div>
+</section>
+
+
+<!-- ===================== 06 · ANTECEDENTES ===================== -->
+<section data-label="06 · Antecedentes · 4 conocidas + 147 MAKER">
   <div class="topbar">
     <div class="tb-l">
       <span class="tb-dot" style="background: var(--c-fruit);"></span>
       <span>Antecedentes</span>
     </div>
-    <div class="tb-r">05 / 19</div>
+    <div class="tb-r">06 / 22</div>
   </div>
 
   <div class="frame">
     <div class="anim-in" style="max-width: 1700px;">
-      <h2 class="title">Antecedentes: las cuatro acuaporinas conocidas</h2>
+      <h2 class="title">El punto de partida: cuatro genes descritos, ciento cuarenta y siete por confirmar</h2>
     </div>
 
-    <div style="display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 90px; margin-top: 32px; align-items: center;">
+    <div style="display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 80px; margin-top: 36px; align-items: center;">
 
       <div class="anim-in-2">
-        <div class="eyebrow muted" style="margin-bottom: 18px; font-size: 16px;">DESCRITAS FUNCIONALMENTE EN EL CULTIVAR</div>
+        <div class="eyebrow muted" style="margin-bottom: 20px; font-size: 19px;">DESCRITAS FUNCIONALMENTE EN EL CULTIVAR</div>
 
-        <div style="display: flex; flex-direction: column; gap: 12px;">
+        <div style="display: flex; flex-direction: column; gap: 14px;">
 
-          <div style="display: flex; align-items: center; gap: 18px; padding: 13px 20px; border-radius: 6px; background: rgba(231, 76, 60, 0.08); border-left: 3px solid var(--sf-pip);">
-            <div style="width: 14px; height: 14px; border-radius: 50%; background: var(--sf-pip); flex-shrink: 0;"></div>
+          <div style="display: flex; align-items: center; gap: 18px; padding: 16px 22px; border-radius: 6px; background: rgba(231, 76, 60, 0.08); border-left: 4px solid var(--sf-pip);">
             <div style="flex: 1;">
-              <div class="mono" style="font-size: 22px; color: var(--ink); font-weight: 500;">FaPIP1;1</div>
-              <div class="small" style="font-size: 16px; margin-top: 2px;">membrana plasmática · fruto · Mut et al. 2008</div>
+              <div class="mono" style="font-size: 26px; color: var(--ink); font-weight: 500;">FaPIP1;1</div>
+              <div class="small" style="font-size: 20px; margin-top: 3px;">membrana plasmática · fruto · Mut et al. 2008</div>
             </div>
-            <div class="mono" style="font-size: 16px; color: var(--sf-pip); letter-spacing: 0.12em;">PIP</div>
+            <div class="mono" style="font-size: 20px; color: var(--sf-pip); letter-spacing: 0.12em;">PIP</div>
           </div>
 
-          <div style="display: flex; align-items: center; gap: 18px; padding: 13px 20px; border-radius: 6px; background: rgba(231, 76, 60, 0.08); border-left: 3px solid var(--sf-pip);">
-            <div style="width: 14px; height: 14px; border-radius: 50%; background: var(--sf-pip); flex-shrink: 0;"></div>
+          <div style="display: flex; align-items: center; gap: 18px; padding: 16px 22px; border-radius: 6px; background: rgba(231, 76, 60, 0.08); border-left: 4px solid var(--sf-pip);">
             <div style="flex: 1;">
-              <div class="mono" style="font-size: 22px; color: var(--ink); font-weight: 500;">FaPIP2;1</div>
-              <div class="small" style="font-size: 16px; margin-top: 2px;">membrana plasmática · raíz · Alleva et al. 2010</div>
+              <div class="mono" style="font-size: 26px; color: var(--ink); font-weight: 500;">FaPIP2;1</div>
+              <div class="small" style="font-size: 20px; margin-top: 3px;">membrana plasmática · raíz · Alleva et al. 2010</div>
             </div>
-            <div class="mono" style="font-size: 16px; color: var(--sf-pip); letter-spacing: 0.12em;">PIP</div>
+            <div class="mono" style="font-size: 20px; color: var(--sf-pip); letter-spacing: 0.12em;">PIP</div>
           </div>
 
-          <div style="display: flex; align-items: center; gap: 18px; padding: 13px 20px; border-radius: 6px; background: rgba(46, 204, 113, 0.08); border-left: 3px solid var(--sf-nip);">
-            <div style="width: 14px; height: 14px; border-radius: 50%; background: var(--sf-nip); flex-shrink: 0;"></div>
+          <div style="display: flex; align-items: center; gap: 18px; padding: 16px 22px; border-radius: 6px; background: rgba(46, 204, 113, 0.08); border-left: 4px solid var(--sf-nip);">
             <div style="flex: 1;">
-              <div class="mono" style="font-size: 22px; color: var(--ink); font-weight: 500;">FaNIP1;1</div>
-              <div class="small" style="font-size: 16px; margin-top: 2px;">membrana plasmática · maduración · Molina-Hidalgo et al. 2015</div>
+              <div class="mono" style="font-size: 26px; color: var(--ink); font-weight: 500;">FaNIP1;1</div>
+              <div class="small" style="font-size: 20px; margin-top: 3px;">membrana plasmática · maduración · Molina-Hidalgo et al. 2015</div>
             </div>
-            <div class="mono" style="font-size: 16px; color: var(--sf-nip); letter-spacing: 0.12em;">NIP</div>
+            <div class="mono" style="font-size: 20px; color: var(--sf-nip); letter-spacing: 0.12em;">NIP</div>
           </div>
 
-          <div style="display: flex; align-items: center; gap: 18px; padding: 13px 20px; border-radius: 6px; background: rgba(52, 152, 219, 0.08); border-left: 3px solid var(--sf-tip);">
-            <div style="width: 14px; height: 14px; border-radius: 50%; background: var(--sf-tip); flex-shrink: 0;"></div>
+          <div style="display: flex; align-items: center; gap: 18px; padding: 16px 22px; border-radius: 6px; background: rgba(52, 152, 219, 0.08); border-left: 4px solid var(--sf-tip);">
             <div style="flex: 1;">
-              <div class="mono" style="font-size: 22px; color: var(--ink); font-weight: 500;">FaRB7</div>
-              <div class="small" style="font-size: 16px; margin-top: 2px;">tonoplasto · raíz · Merlaen et al. 2018</div>
+              <div class="mono" style="font-size: 26px; color: var(--ink); font-weight: 500;">FaRB7</div>
+              <div class="small" style="font-size: 20px; margin-top: 3px;">tonoplasto · raíz · Merlaen et al. 2018</div>
             </div>
-            <div class="mono" style="font-size: 16px; color: var(--sf-tip); letter-spacing: 0.12em;">TIP</div>
+            <div class="mono" style="font-size: 20px; color: var(--sf-tip); letter-spacing: 0.12em;">TIP</div>
           </div>
 
         </div>
       </div>
 
-      <div class="anim-in-3" style="display: flex; flex-direction: column; gap: 28px;">
-        <div class="card">
-          <div class="card-title">EL GENOMA</div>
-          <p class="card-body">
-            <span>Cultivar </span><span class="italic">aloctoploide</span><span> (2n = 8x = 56): cuatro subgenomas (A, B, C, D) → hasta </span><span class="fruit-c">cuatro copias</span><span> por gen, casi idénticas.</span>
-          </p>
+      <div class="anim-in-3">
+        <div class="eyebrow fruit" style="margin-bottom: 18px; font-size: 19px;">A ESCALA DE GENOMA</div>
+        <div style="display: flex; align-items: baseline; gap: 20px;">
+          <span class="megafig grow fruit-c" style="font-size: 130px;">147</span>
+          <span class="body" style="font-size: 27px; color: var(--ink-soft); max-width: 360px;">genes anotados como <span class="italic">posibles</span> acuaporinas.</span>
         </div>
-        <div class="card">
-          <div class="card-title">EL HUECO</div>
-          <p class="card-body">
-            <span>La única referencia era una anotación automática (predicción </span><span class="mono">MAKER</span><span>): </span><span class="fruit-c" style="font-weight: 500;">147 genes</span><span> señalados como </span><span class="italic">posibles</span><span> acuaporinas, sin curado estructural ni verificación. No se sabía cuáles eran reales ni a qué subfamilia pertenecían.</span>
+        <div class="card" style="margin-top: 24px;">
+          <div class="card-title">PREDICCIÓN AUTOMÁTICA, SIN CONFIRMAR</div>
+          <p class="card-body" style="font-size: 26px; line-height: 1.45;">
+            Provienen de una anotación automática (<span class="mono">MAKER</span>), <span style="color: var(--ink);">sin curado estructural ni una comprobación independiente</span> — ni in silico paralela, ni in vitro o in vivo. No se sabía cuáles eran reales ni a qué subfamilia pertenecían.
           </p>
         </div>
       </div>
@@ -370,49 +460,59 @@
   </div>
 
   <div class="footer-rule">
-    <div>Mut et al. 2008 · Alleva et al. 2010 · Molina-Hidalgo et al. 2015 · Merlaen et al. 2018 · Edger et al. 2019</div>
-    <div class="mono">05 / 19</div>
+    <div>Mut et al. 2008 · Alleva et al. 2010 · Molina-Hidalgo et al. 2015 · Merlaen et al. 2018 · GDR / MAKER</div>
+    <div class="mono">06 / 22</div>
   </div>
 </section>
 
 
-<!-- ===================== 05 · OBJETIVO Y ESTRATEGIA ===================== -->
-<section data-label="06 · Objetivo y estrategia">
+<!-- ===================== 07 · OBJETIVO Y ESTRATEGIA (cronológico) ===================== -->
+<section data-label="07 · Objetivo y estrategia">
   <div class="topbar">
     <div class="tb-l">
       <span class="tb-dot"></span>
       <span>Objetivo y estrategia</span>
     </div>
-    <div class="tb-r">06 / 19</div>
+    <div class="tb-r">07 / 22</div>
   </div>
 
   <div class="frame">
-    <div class="anim-in" style="max-width: 1600px;">
+    <div class="anim-in" style="max-width: 1640px;">
       <h2 class="title">Objetivo y estrategia</h2>
-      <p class="body" style="margin-top: 16px; font-size: 24px; color: var(--ink-soft); max-width: 1400px;">Construir el primer catálogo curado y transcripcionalmente perfilado del acuaporinoma de <span class="italic">F.</span> x <span class="italic">ananassa</span> 'Benihoppe', mediante un pipeline reproducible de cuatro bloques.</p>
+      <p class="body" style="margin-top: 18px; font-size: 29px; color: var(--ink-soft); max-width: 1500px;">Construir el primer catálogo curado y transcripcionalmente perfilado del acuaporinoma de <span class="italic">F.</span> x <span class="italic">ananassa</span> 'Benihoppe', mediante <span style="color: var(--ink);">cuatro bloques que se ejecutan en orden</span>: cada uno parte del resultado del anterior.</p>
     </div>
 
-    <div style="margin-top: 36px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px;">
+    <!-- Secuencia cronológica I → II → III → IV -->
+    <div style="margin-top: 44px; display: flex; align-items: stretch; gap: 10px;">
 
-      <div class="card anim-in-2" style="padding: 24px 22px; min-height: 240px; display: flex; flex-direction: column;">
-        <div class="mono water-c" style="font-size: 15px; letter-spacing: 0.14em;">BLOQUE I</div>
-        <div class="card-title" style="margin-top: 8px;">IDENTIFICAR</div>
-        <p class="card-body" style="font-size: 20px; line-height: 1.4; margin-top: 12px;">Todas las acuaporinas del genoma, por homología.</p>
+      <div class="card anim-in-2" style="flex: 1; padding: 28px 26px; display: flex; flex-direction: column;">
+        <div class="mono water-c" style="font-size: 21px; letter-spacing: 0.14em;">BLOQUE I</div>
+        <div class="card-title" style="margin-top: 14px;">IDENTIFICAR</div>
+        <p class="card-body" style="font-size: 24px; line-height: 1.4; margin-top: 10px;">Todas las acuaporinas del genoma, por homología.</p>
       </div>
-      <div class="card anim-in-3" style="padding: 24px 22px; min-height: 240px; display: flex; flex-direction: column;">
-        <div class="mono water-c" style="font-size: 15px; letter-spacing: 0.14em;">BLOQUE II</div>
-        <div class="card-title" style="margin-top: 8px;">CURAR</div>
-        <p class="card-body" style="font-size: 20px; line-height: 1.4; margin-top: 12px;">Validar las candidatas reales (estructura y química).</p>
+
+      <div class="anim-in-2" style="display: flex; align-items: center; color: var(--ink-muted); font-size: 38px;">→</div>
+
+      <div class="card anim-in-3" style="flex: 1; padding: 28px 26px; display: flex; flex-direction: column;">
+        <div class="mono water-c" style="font-size: 21px; letter-spacing: 0.14em;">BLOQUE II</div>
+        <div class="card-title" style="margin-top: 14px;">CURAR</div>
+        <p class="card-body" style="font-size: 24px; line-height: 1.4; margin-top: 10px;">Validar las candidatas reales (estructura y química).</p>
       </div>
-      <div class="card anim-in-3" style="padding: 24px 22px; min-height: 240px; display: flex; flex-direction: column;">
-        <div class="mono water-c" style="font-size: 15px; letter-spacing: 0.14em;">BLOQUE III</div>
-        <div class="card-title" style="margin-top: 8px;">CLASIFICAR</div>
-        <p class="card-body" style="font-size: 20px; line-height: 1.4; margin-top: 12px;">Filogenia: agrupar por parentesco evolutivo.</p>
+
+      <div class="anim-in-3" style="display: flex; align-items: center; color: var(--ink-muted); font-size: 38px;">→</div>
+
+      <div class="card anim-in-4" style="flex: 1; padding: 28px 26px; display: flex; flex-direction: column;">
+        <div class="mono water-c" style="font-size: 21px; letter-spacing: 0.14em;">BLOQUE III</div>
+        <div class="card-title" style="margin-top: 14px;">CLASIFICAR</div>
+        <p class="card-body" style="font-size: 24px; line-height: 1.4; margin-top: 10px;">Filogenia: agrupar por parentesco evolutivo.</p>
       </div>
-      <div class="card anim-in-4" style="padding: 24px 22px; min-height: 240px; display: flex; flex-direction: column;">
-        <div class="mono water-c" style="font-size: 15px; letter-spacing: 0.14em;">BLOQUE IV</div>
-        <div class="card-title" style="margin-top: 8px;">EXPRESIÓN</div>
-        <p class="card-body" style="font-size: 20px; line-height: 1.4; margin-top: 12px;">RNA-seq: actividad por tejido y homeólogos.</p>
+
+      <div class="anim-in-4" style="display: flex; align-items: center; color: var(--ink-muted); font-size: 38px;">→</div>
+
+      <div class="card anim-in-5" style="flex: 1; padding: 28px 26px; display: flex; flex-direction: column;">
+        <div class="mono water-c" style="font-size: 21px; letter-spacing: 0.14em;">BLOQUE IV</div>
+        <div class="card-title" style="margin-top: 14px;">EXPRESIÓN</div>
+        <p class="card-body" style="font-size: 24px; line-height: 1.4; margin-top: 10px;">RNA-seq: actividad por tejido y homeólogos.</p>
       </div>
 
     </div>
@@ -420,13 +520,13 @@
 
   <div class="footer-rule">
     <div>Identificación · Curado · Filogenia · Transcriptómica</div>
-    <div class="mono">06 / 19</div>
+    <div class="mono">07 / 22</div>
   </div>
 </section>
 
 
-<!-- ===================== 06 · BLOQUE I (escena) ===================== -->
-<section data-label="07 · Bloque I · Identificación" data-theme="dark" data-scene="threejs:genome-pipeline">
+<!-- ===================== 08 · BLOQUE I (escena) ===================== -->
+<section data-label="08 · Bloque I · Identificación" data-theme="dark" data-scene="threejs:genome-pipeline">
   <div class="scene-overlay-bar">
     <div class="so-eyebrow anim-in" style="color: #4ec5e0;">BLOQUE I</div>
     <h2 class="so-title anim-in-2">Identificación</h2>
@@ -435,74 +535,166 @@
 
   <div class="footer-rule">
     <div>Galaxy · tblastn · BEDtools · Exonerate · GFFCompare</div>
-    <div class="mono">07 / 19</div>
+    <div class="mono">08 / 22</div>
   </div>
 </section>
 
 
-<!-- ===================== 07 · IDENTIFICACIÓN DE CANDIDATAS ===================== -->
-<section data-label="08 · Identificación de candidatas">
+<!-- ===================== 09 · IDENTIFICACIÓN · 3 PASOS ===================== -->
+<section data-label="09 · Identificación">
   <div class="topbar">
     <div class="tb-l">
       <span class="tb-dot"></span>
       <span>Bloque I · Identificación</span>
     </div>
-    <div class="tb-r">08 / 19</div>
+    <div class="tb-r">09 / 22</div>
   </div>
 
   <div class="frame">
     <div class="anim-in" style="max-width: 1700px;">
-      <h2 class="title">Identificación de candidatas</h2>
+      <h2 class="title">De todo el genoma a los modelos candidatos</h2>
+      <p class="body" style="margin-top: 14px; font-size: 27px; color: var(--ink-soft); max-width: 1400px;">
+        Un embudo de tres pasos, partiendo de <span style="color: var(--ink);">576 acuaporinas conocidas</span> usadas como sonda.
+      </p>
     </div>
 
-    <div style="margin-top: 32px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;">
+    <div style="margin-top: 28px; display: flex; align-items: stretch; gap: 8px;">
 
-      <div class="card anim-in-2" style="padding: 24px 22px; display: flex; flex-direction: column;">
-        <div class="card-title" style="color: var(--c-water);">01 · ALINEAR</div>
-        <p style="font-family: var(--mono); font-size: 15px; color: var(--ink-muted); margin: 6px 0 10px; letter-spacing: 0.1em;">tblastn</p>
-        <p class="card-body" style="font-size: 19px; line-height: 1.4;">576 plantillas de acuaporina contra el genoma.</p>
-        <div style="margin-top: auto; padding-top: 14px; border-top: 1px solid var(--rule); text-align: right;"><span class="mono water-c" style="font-size: 24px;">53.396 hits</span></div>
+      <div class="card anim-in-2" style="flex: 1; padding: 24px 24px; display: flex; flex-direction: column;">
+        <div class="card-title" style="color: var(--c-water); font-size: 22px;">01 · ALINEAR · tblastn</div>
+        <div style="margin: 12px 0 12px;">
+          <svg viewBox="0 0 360 180" style="width: 100%; height: auto;">
+            <rect x="14" y="16" width="78" height="11" rx="3" fill="#E74C3C"/>
+            <rect x="14" y="33" width="78" height="11" rx="3" fill="#3498DB"/>
+            <rect x="14" y="50" width="78" height="11" rx="3" fill="#2ECC71"/>
+            <text x="14" y="78" font-family="IBM Plex Mono, monospace" font-size="13" fill="#6c7080">576 sondas</text>
+            <rect x="14" y="132" width="332" height="16" rx="8" fill="#eceef3" stroke="#cdd2d8"/>
+            <text x="346" y="170" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="13" fill="#6c7080">genoma</text>
+            <rect x="60"  y="132" width="14" height="16" rx="3" fill="#2980b9"/>
+            <rect x="120" y="132" width="14" height="16" rx="3" fill="#2980b9"/>
+            <rect x="188" y="132" width="14" height="16" rx="3" fill="#2980b9"/>
+            <rect x="250" y="132" width="14" height="16" rx="3" fill="#2980b9"/>
+            <rect x="300" y="132" width="14" height="16" rx="3" fill="#2980b9"/>
+            <path d="M 92 38 C 150 60, 70 110, 67 132" fill="none" stroke="#2980b9" stroke-width="1.2" stroke-dasharray="3 3" opacity="0.6"/>
+            <path d="M 92 38 C 180 70, 250 110, 257 132" fill="none" stroke="#2980b9" stroke-width="1.2" stroke-dasharray="3 3" opacity="0.6"/>
+          </svg>
+        </div>
+        <p class="card-body" style="font-size: 21px; line-height: 1.35;">Usa acuaporinas ya conocidas como sonda para barrer el genoma y marcar cada trozo parecido.</p>
+        <div style="margin-top: auto; padding-top: 14px; border-top: 1px solid var(--rule); text-align: right;"><span class="mono water-c" style="font-size: 32px;">53.396</span><div class="small" style="font-size: 18px;">coincidencias</div></div>
       </div>
 
-      <div class="card anim-in-3" style="padding: 24px 22px; display: flex; flex-direction: column;">
-        <div class="card-title" style="color: var(--c-water);">02 · RECONSTRUIR</div>
-        <p style="font-family: var(--mono); font-size: 15px; color: var(--ink-muted); margin: 6px 0 10px; letter-spacing: 0.1em;">BEDtools</p>
-        <p class="card-body" style="font-size: 19px; line-height: 1.4;">Une los hits fragmentados por intrones.</p>
-        <div style="margin-top: auto; padding-top: 14px; border-top: 1px solid var(--rule); text-align: right;"><span class="mono water-c" style="font-size: 24px;">3.168 loci</span></div>
+      <div class="anim-in-2" style="display: flex; align-items: center; color: var(--ink-muted); font-size: 32px;">&#8594;</div>
+
+      <div class="card anim-in-3" style="flex: 1; padding: 24px 24px; display: flex; flex-direction: column;">
+        <div class="card-title" style="color: var(--c-leaf); font-size: 22px;">02 · RECONSTRUIR · BEDtools</div>
+        <div style="margin: 12px 0 12px;">
+          <svg viewBox="0 0 360 180" style="width: 100%; height: auto;">
+            <text x="14" y="26" font-family="IBM Plex Mono, monospace" font-size="13" fill="#6c7080">aciertos partidos por intrones</text>
+            <rect x="40"  y="44" width="40" height="16" rx="4" fill="#229954"/>
+            <rect x="110" y="44" width="28" height="16" rx="4" fill="#229954"/>
+            <rect x="172" y="44" width="46" height="16" rx="4" fill="#229954"/>
+            <rect x="252" y="44" width="34" height="16" rx="4" fill="#229954"/>
+            <line x1="40" y1="52" x2="286" y2="52" stroke="#229954" stroke-width="1" stroke-dasharray="2 4" opacity="0.5"/>
+            <path d="M 180 78 L 180 104" stroke="#6c7080" stroke-width="1.5"/>
+            <path d="M 174 98 L 180 106 L 186 98" fill="none" stroke="#6c7080" stroke-width="1.5"/>
+            <rect x="40" y="120" width="246" height="20" rx="6" fill="#229954" opacity="0.9"/>
+            <text x="40" y="166" font-family="IBM Plex Mono, monospace" font-size="13" fill="#6c7080">un locus</text>
+          </svg>
+        </div>
+        <p class="card-body" style="font-size: 21px; line-height: 1.35;">Un gen aparece en varios trozos; BEDtools une los cercanos en una sola región: el locus.</p>
+        <div style="margin-top: auto; padding-top: 14px; border-top: 1px solid var(--rule); text-align: right;"><span class="mono leaf-c" style="font-size: 32px;">3.168</span><div class="small" style="font-size: 18px;">loci</div></div>
       </div>
 
-      <div class="card anim-in-3" style="padding: 24px 22px; display: flex; flex-direction: column;">
-        <div class="card-title" style="color: var(--c-water);">03 · MODELAR</div>
-        <p style="font-family: var(--mono); font-size: 15px; color: var(--ink-muted); margin: 6px 0 10px; letter-spacing: 0.1em;">Exonerate</p>
-        <p class="card-body" style="font-size: 19px; line-height: 1.4;">Reconstruye la proteína completa de cada locus.</p>
-        <div style="margin-top: auto; padding-top: 14px; border-top: 1px solid var(--rule); text-align: right;"><span class="mono water-c" style="font-size: 24px;">4.984 modelos</span></div>
+      <div class="anim-in-3" style="display: flex; align-items: center; color: var(--ink-muted); font-size: 32px;">&#8594;</div>
+
+      <div class="card anim-in-4" style="flex: 1; padding: 24px 24px; display: flex; flex-direction: column;">
+        <div class="card-title" style="color: var(--c-amber); font-size: 22px;">03 · MODELAR · Exonerate</div>
+        <div style="margin: 12px 0 12px;">
+          <svg viewBox="0 0 360 180" style="width: 100%; height: auto;">
+            <text x="14" y="30" font-family="IBM Plex Mono, monospace" font-size="13" fill="#6c7080">estructura exón–intrón</text>
+            <rect x="30"  y="48" width="44" height="18" rx="3" fill="#d68910"/>
+            <path d="M 74 57 L 110 44 L 146 57" fill="none" stroke="#cdd2d8" stroke-width="2"/>
+            <rect x="146" y="48" width="40" height="18" rx="3" fill="#d68910"/>
+            <path d="M 186 57 L 218 44 L 250 57" fill="none" stroke="#cdd2d8" stroke-width="2"/>
+            <rect x="250" y="48" width="50" height="18" rx="3" fill="#d68910"/>
+            <path d="M 180 86 L 180 108" stroke="#6c7080" stroke-width="1.5"/>
+            <path d="M 174 102 L 180 110 L 186 102" fill="none" stroke="#6c7080" stroke-width="1.5"/>
+            <text x="14" y="138" font-family="IBM Plex Mono, monospace" font-size="13" fill="#6c7080">proteína</text>
+            <g fill="#d68910">
+              <circle cx="70" cy="158" r="7"/><circle cx="92" cy="152" r="7"/><circle cx="114" cy="158" r="7"/>
+              <circle cx="136" cy="152" r="7"/><circle cx="158" cy="158" r="7"/><circle cx="180" cy="152" r="7"/>
+              <circle cx="202" cy="158" r="7"/><circle cx="224" cy="152" r="7"/><circle cx="246" cy="158" r="7"/>
+            </g>
+          </svg>
+        </div>
+        <p class="card-body" style="font-size: 21px; line-height: 1.35;">Sobre cada locus reconstruye dónde están exones e intrones y traduce la proteína completa.</p>
+        <div style="margin-top: auto; padding-top: 14px; border-top: 1px solid var(--rule); text-align: right;"><span class="mono amber-c" style="font-size: 32px;">4.984</span><div class="small" style="font-size: 18px;">modelos</div></div>
       </div>
 
     </div>
+  </div>
 
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 56px; margin-top: 26px; padding-top: 22px; border-top: 1px solid var(--rule); align-items: stretch;">
+  <div class="footer-rule">
+    <div>Camacho et al. 2009 · Quinlan &amp; Hall 2010 · Slater &amp; Birney 2005 · Galaxy Community 2024</div>
+    <div class="mono">09 / 22</div>
+  </div>
+</section>
 
-      <div class="anim-in-3" style="display: flex; flex-direction: column;">
-        <div class="eyebrow muted" style="font-size: 16px; margin-bottom: 16px;">TRES FILTROS DE VIABILIDAD</div>
-        <div style="display: flex; flex-direction: column; gap: 11px;">
-          <div style="display: flex; gap: 14px; align-items: baseline;"><span class="mono water-c" style="font-size: 16px; flex-shrink: 0;">01</span><span class="body" style="font-size: 19px; color: var(--ink-soft);">Metionina inicial</span></div>
-          <div style="display: flex; gap: 14px; align-items: baseline;"><span class="mono water-c" style="font-size: 16px; flex-shrink: 0;">02</span><span class="body" style="font-size: 19px; color: var(--ink-soft);">Longitud 140–380 aa <span class="muted">(98,81 % de las Rosaceae)</span></span></div>
-          <div style="display: flex; gap: 14px; align-items: baseline;"><span class="mono water-c" style="font-size: 16px; flex-shrink: 0;">03</span><span class="body" style="font-size: 19px; color: var(--ink-soft);">Una isoforma por locus</span></div>
+
+<!-- ===================== 11 · FILTROS + COMPROBACIÓN MAKER ===================== -->
+<section data-label="10 · Filtros de viabilidad + comprobación">
+  <div class="topbar">
+    <div class="tb-l">
+      <span class="tb-dot"></span>
+      <span>Bloque I · Resultado</span>
+    </div>
+    <div class="tb-r">10 / 22</div>
+  </div>
+
+  <div class="frame">
+    <div class="anim-in" style="max-width: 1700px;">
+      <h2 class="title">Tres filtros de viabilidad, y una comprobación independiente</h2>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 64px; margin-top: 36px; align-items: stretch;">
+
+      <!-- Filtros -->
+      <div class="anim-in-2" style="display: flex; flex-direction: column;">
+        <div class="eyebrow muted" style="font-size: 19px; margin-bottom: 20px;">DE 4.984 MODELOS A 129 SECUENCIAS</div>
+        <div style="display: flex; flex-direction: column; gap: 16px;">
+          <div style="display: flex; gap: 18px; align-items: baseline;">
+            <span class="mono water-c" style="font-size: 23px; flex-shrink: 0;">01</span>
+            <span class="body" style="font-size: 26px; color: var(--ink-soft);">Empieza por <span style="color: var(--ink);">metionina</span> (inicio creíble).</span>
+          </div>
+          <div style="display: flex; gap: 18px; align-items: baseline;">
+            <span class="mono water-c" style="font-size: 23px; flex-shrink: 0;">02</span>
+            <span class="body" style="font-size: 26px; color: var(--ink-soft);">Longitud <span style="color: var(--ink);">140–380 aa</span> <span class="muted">(98,81 % de las Rosaceae).</span></span>
+          </div>
+          <div style="display: flex; gap: 18px; align-items: baseline;">
+            <span class="mono water-c" style="font-size: 23px; flex-shrink: 0;">03</span>
+            <span class="body" style="font-size: 26px; color: var(--ink-soft);">Una <span style="color: var(--ink);">isoforma por locus</span> (sin duplicados).</span>
+          </div>
         </div>
-        <div style="margin-top: auto; padding-top: 20px; display: flex; gap: 18px; align-items: baseline;">
-          <span class="megafig leaf-c" style="font-size: 64px; line-height: 1;">129</span>
-          <span class="body" style="color: var(--ink-soft); font-size: 20px;">secuencias no redundantes</span>
+        <div style="margin-top: auto; padding-top: 26px; display: flex; gap: 20px; align-items: baseline;">
+          <span class="megafig grow leaf-c" style="font-size: 96px; line-height: 1;">129</span>
+          <span class="body" style="color: var(--ink-soft); font-size: 25px;">secuencias no redundantes</span>
         </div>
       </div>
 
-      <div class="anim-in-3" style="display: flex; flex-direction: column;">
-        <div class="eyebrow muted" style="font-size: 16px; margin-bottom: 16px;">COMPROBACIÓN CRUZADA CON MAKER · MÉTODO PARALELO</div>
-        <p class="body" style="font-size: 19px; line-height: 1.45; color: var(--ink-soft); margin: 0;">
-          Nuestras <span class="leaf-c" style="font-weight: 500;">129</span> coinciden con genes que MAKER ya señalaba: <span class="leaf-c">91 idénticas</span> · <span class="amber-c" style="font-weight: 500;">38</span> arbitradas por estructura · <span class="water-c">+15</span> parciales exclusivas de GDR.
+      <!-- Comprobación MAKER -->
+      <div class="anim-in-3 card" style="display: flex; flex-direction: column; background: var(--bg-elev-2);">
+        <div class="eyebrow fruit" style="font-size: 19px; margin-bottom: 16px;">COMPROBACIÓN CRUZADA CON MAKER</div>
+        <p class="body" style="font-size: 25px; line-height: 1.5; color: var(--ink-soft); margin: 0;">
+          Las 129 se contrastan con la anotación automática previa:
         </p>
-        <div style="margin-top: auto; padding-top: 20px; display: flex; gap: 18px; align-items: baseline;">
+        <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 18px;">
+          <div style="display: flex; align-items: baseline; gap: 14px;"><span class="leaf-c mono" style="font-size: 31px; width: 70px;">91</span><span class="body" style="font-size: 24px; color: var(--ink-soft);">idénticas a MAKER</span></div>
+          <div style="display: flex; align-items: baseline; gap: 14px;"><span class="amber-c mono" style="font-size: 31px; width: 70px;">38</span><span class="body" style="font-size: 24px; color: var(--ink-soft);">arbitradas por estructura</span></div>
+          <div style="display: flex; align-items: baseline; gap: 14px;"><span class="water-c mono" style="font-size: 31px; width: 70px;">+15</span><span class="body" style="font-size: 24px; color: var(--ink-soft);">parciales solo en la base de datos</span></div>
+        </div>
+        <div style="margin-top: auto; padding-top: 20px; border-top: 1px solid var(--rule); display: flex; gap: 18px; align-items: baseline;">
           <span class="megafig fruit-c" style="font-size: 64px; line-height: 1;">147</span>
-          <span class="body" style="color: var(--ink-soft); font-size: 20px;">candidatas al curado · las que MAKER proponía</span>
+          <span class="body" style="color: var(--ink-soft); font-size: 24px;">candidatas al curado · ahora con doble comprobación</span>
         </div>
       </div>
 
@@ -510,35 +702,35 @@
   </div>
 
   <div class="footer-rule">
-    <div>Camacho et al. 2009 · Quinlan &amp; Hall 2010 · Slater &amp; Birney 2005 · Kozak 1999 · Galaxy Community 2024</div>
-    <div class="mono">08 / 19</div>
+    <div>Kozak 1999 · GDR / MAKER · el mismo número que proponía MAKER, ya comprobado</div>
+    <div class="mono">10 / 22</div>
   </div>
 </section>
 
 
-<!-- ===================== 08 · BLOQUE II (escena) ===================== -->
-<section data-label="09 · Bloque II · Curado" data-theme="dark" data-scene="threejs:tetramer">
+<!-- ===================== 12 · BLOQUE II (escena · criba) ===================== -->
+<section data-label="11 · Bloque II · Curado" data-theme="dark" data-scene="threejs:curation-filters">
   <div class="scene-overlay-bar">
     <div class="so-eyebrow anim-in" style="color: #4ec5e0;">BLOQUE II</div>
     <h2 class="so-title anim-in-2">Curado</h2>
-    <p class="so-sub anim-in-3">Validación estructural y fisicoquímica de cada candidata.</p>
+    <p class="so-sub anim-in-3">Una criba de cuatro filtros independientes: solo pasa lo que los supera todos.</p>
   </div>
 
   <div class="footer-rule">
-    <div>DeepTMHMM · MEME · MAFFT · Pepstats · DeepLoc · PCA</div>
-    <div class="mono">09 / 19</div>
+    <div>DeepTMHMM · MEME · MAFFT · IQ-TREE · Pepstats · PCA</div>
+    <div class="mono">11 / 22</div>
   </div>
 </section>
 
 
-<!-- ===================== 09 · CURADO · 4 FILTROS + PCA ===================== -->
-<section data-label="10 · Curado · cuatro filtros + PCA" data-embed="pca">
+<!-- ===================== 13 · CURADO · 4 FILTROS + PCA ===================== -->
+<section data-label="12 · Curado · cuatro filtros + PCA" data-embed="pca">
   <div class="topbar">
     <div class="tb-l">
       <span class="tb-dot"></span>
       <span>Bloque II · Curado</span>
     </div>
-    <div class="tb-r">10 / 19</div>
+    <div class="tb-r">12 / 22</div>
   </div>
 
   <div class="frame">
@@ -546,42 +738,42 @@
       <h2 class="title">Curado: cuatro filtros independientes</h2>
     </div>
 
-    <div style="margin-top: 28px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px;">
+    <div style="margin-top: 30px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;">
 
-      <div class="card anim-in-2" style="padding: 22px 20px; display: flex; flex-direction: column;">
+      <div class="card anim-in-2" style="padding: 24px 22px; display: flex; flex-direction: column;">
         <div class="card-title">TOPOLOGÍA</div>
-        <p class="card-body" style="font-size: 18px; line-height: 1.35; margin-top: 8px;">¿Tiene las seis hélices transmembrana?</p>
-        <div class="mono" style="margin-top: auto; padding-top: 12px; font-size: 14px; color: var(--c-water);">DeepTMHMM</div>
+        <p class="card-body" style="font-size: 23px; line-height: 1.35; margin-top: 10px;">¿Tiene las seis hélices transmembrana?</p>
+        <div class="mono" style="margin-top: auto; padding-top: 14px; font-size: 18px; color: var(--c-water);">DeepTMHMM</div>
       </div>
-      <div class="card anim-in-3" style="padding: 22px 20px; display: flex; flex-direction: column;">
+      <div class="card anim-in-3" style="padding: 24px 22px; display: flex; flex-direction: column;">
         <div class="card-title">MOTIVOS</div>
-        <p class="card-body" style="font-size: 18px; line-height: 1.35; margin-top: 8px;">¿Conserva los dos motivos <span class="mono fruit-c" style="font-size: 16px;">NPA</span>?</p>
-        <div class="mono" style="margin-top: auto; padding-top: 12px; font-size: 14px; color: var(--c-water);">MAFFT + MEME</div>
+        <p class="card-body" style="font-size: 23px; line-height: 1.35; margin-top: 10px;">¿Conserva los dos motivos <span class="mono fruit-c" style="font-size: 20px;">NPA</span>?</p>
+        <div class="mono" style="margin-top: auto; padding-top: 14px; font-size: 18px; color: var(--c-water);">MAFFT + MEME</div>
       </div>
-      <div class="card anim-in-3" style="padding: 22px 20px; display: flex; flex-direction: column;">
+      <div class="card anim-in-3" style="padding: 24px 22px; display: flex; flex-direction: column;">
         <div class="card-title">PARENTESCO</div>
-        <p class="card-body" style="font-size: 18px; line-height: 1.35; margin-top: 8px;">¿Ocupa una posición coherente en el árbol?</p>
-        <div class="mono" style="margin-top: auto; padding-top: 12px; font-size: 14px; color: var(--c-water);">IQ-TREE</div>
+        <p class="card-body" style="font-size: 23px; line-height: 1.35; margin-top: 10px;">¿Ocupa una posición coherente en el árbol?</p>
+        <div class="mono" style="margin-top: auto; padding-top: 14px; font-size: 18px; color: var(--c-water);">IQ-TREE</div>
       </div>
-      <div class="card anim-in-4" style="padding: 22px 20px; display: flex; flex-direction: column;">
-        <div class="card-title">FIRMA FISICOQUÍMICA</div>
-        <p class="card-body" style="font-size: 18px; line-height: 1.35; margin-top: 8px;">¿Su química encaja con su subfamilia?</p>
-        <div class="mono" style="margin-top: auto; padding-top: 12px; font-size: 14px; color: var(--c-water);">Pepstats + PCA</div>
+      <div class="card anim-in-4" style="padding: 24px 22px; display: flex; flex-direction: column;">
+        <div class="card-title">FÍSICO-QUÍMICA</div>
+        <p class="card-body" style="font-size: 23px; line-height: 1.35; margin-top: 10px;">¿Su química encaja con su subfamilia?</p>
+        <div class="mono" style="margin-top: auto; padding-top: 14px; font-size: 18px; color: var(--c-water);">Pepstats + PCA</div>
       </div>
 
     </div>
 
-    <div style="display: grid; grid-template-columns: 1.35fr 0.65fr; gap: 48px; margin-top: 18px; align-items: center;">
+    <div style="display: grid; grid-template-columns: 1.35fr 0.65fr; gap: 48px; margin-top: 20px; align-items: center;">
 
       <div class="anim-in-3" style="background: #ffffff; border-radius: 4px; padding: 16px;">
-        <div data-embed-target style="background: #ffffff; border-radius: 4px; padding: 0; width: 100%; height: 560px;"></div>
+        <div data-embed-target style="background: #ffffff; border-radius: 4px; padding: 0; width: 100%; height: 540px;"></div>
       </div>
 
-      <div class="anim-in-4" style="display: flex; flex-direction: column; gap: 18px;">
-        <p class="body" style="font-size: 22px; line-height: 1.45; color: var(--ink-soft); margin: 0;">
+      <div class="anim-in-4" style="display: flex; flex-direction: column; gap: 20px;">
+        <p class="body" style="font-size: 26px; line-height: 1.45; color: var(--ink-soft); margin: 0;">
           PC1 + PC2 explican el <span class="water-c" style="font-weight: 500;">54,1 %</span> de la varianza. <span class="fruit-c">15 de 23</span> secuencias parciales caen fuera de la elipse de su subfamilia.
         </p>
-        <p class="body" style="font-size: 20px; line-height: 1.4; color: var(--ink-soft); margin: 0; padding-top: 16px; border-top: 1px solid var(--rule);">
+        <p class="body" style="font-size: 24px; line-height: 1.4; color: var(--ink-soft); margin: 0; padding-top: 18px; border-top: 1px solid var(--rule);">
           Los filtros son no redundantes: una candidata se descarta si falla <span class="fruit-c">un solo</span> filtro.
         </p>
       </div>
@@ -591,69 +783,69 @@
 
   <div class="footer-rule">
     <div>Hallgren et al. 2022 · Katoh et al. 2019 · Bailey et al. 2015 · Wong et al. 2025</div>
-    <div class="mono">10 / 19</div>
+    <div class="mono">12 / 22</div>
   </div>
 </section>
 
 
-<!-- ===================== 10 · CATÁLOGO 121 ===================== -->
-<section data-label="11 · El acuaporinoma · 121 acuaporinas">
+<!-- ===================== 14 · CATÁLOGO 121 ===================== -->
+<section data-label="13 · El acuaporinoma · 121 acuaporinas">
   <div class="topbar">
     <div class="tb-l">
       <span class="tb-dot" style="background: var(--c-fruit);"></span>
       <span>Bloque II · Resultado</span>
     </div>
-    <div class="tb-r">11 / 19</div>
+    <div class="tb-r">13 / 22</div>
   </div>
 
   <div class="frame frame-center">
-    <div style="text-align: center; max-width: 1600px;">
+    <div style="text-align: center; max-width: 1640px;">
 
-      <div class="anim-in" style="display: flex; align-items: baseline; justify-content: center; gap: 22px;">
-        <div class="megafig grow fruit-c" style="font-size: 200px;">121</div>
-        <div style="text-align: left; max-width: 640px;">
-          <div class="subtitle" style="font-size: 38px; color: var(--ink); line-height: 1.1;">El acuaporinoma de la fresa</div>
-          <div class="body" style="margin-top: 10px; color: var(--ink-muted); font-size: 24px;">Primer catálogo curado a escala genómica del cultivar.</div>
+      <div class="anim-in" style="display: flex; align-items: baseline; justify-content: center; gap: 26px;">
+        <div class="megafig grow fruit-c" style="font-size: 210px;">121</div>
+        <div style="text-align: left; max-width: 680px;">
+          <div class="subtitle" style="font-size: 42px; color: var(--ink); line-height: 1.1;">El acuaporinoma de la fresa</div>
+          <div class="body" style="margin-top: 12px; color: var(--ink-muted); font-size: 28px;">Primer catálogo curado a escala genómica del cultivar.</div>
         </div>
       </div>
 
-      <p class="body anim-in-2" style="margin-top: 28px; font-size: 24px; color: var(--ink-soft);">
-        Las cinco subfamilias completas, incluidas <span class="mono sf-sip">SIP</span> y <span class="mono sf-xip">XIP</span>, no descritas antes en el cultivar.
+      <p class="body anim-in-2" style="margin-top: 30px; font-size: 28px; color: var(--ink-soft);">
+        Las cinco subfamilias completas, incluidas <span class="mono sf-sip" style="font-weight: 600;">SIP</span> y <span class="mono sf-xip" style="font-weight: 600;">XIP</span>, no descritas antes en el cultivar.
       </p>
 
-      <div class="anim-in-2" style="margin-top: 36px;">
+      <div class="anim-in-2" style="margin-top: 40px;">
         <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 24px;">
 
-          <div style="border-left: 3px solid var(--sf-nip); padding-left: 20px; text-align: left;">
-            <div class="mono" style="font-size: 21px; color: var(--sf-nip);">NIP</div>
-            <div class="megafig" style="font-size: 64px; color: var(--ink); line-height: 1;">37</div>
-            <div class="small" style="margin-top: 6px;">membrana plasmática · metaloides</div>
+          <div style="border-left: 4px solid var(--sf-nip); padding-left: 22px; text-align: left;">
+            <div class="mono" style="font-size: 24px; color: var(--sf-nip); font-weight: 600;">NIP</div>
+            <div class="megafig" style="font-size: 68px; color: var(--ink); line-height: 1;">37</div>
+            <div class="small" style="font-size: 20px; margin-top: 8px;">membrana plasmática · metaloides</div>
           </div>
-          <div style="border-left: 3px solid var(--sf-tip); padding-left: 20px; text-align: left;">
-            <div class="mono" style="font-size: 21px; color: var(--sf-tip);">TIP</div>
-            <div class="megafig" style="font-size: 64px; color: var(--ink); line-height: 1;">34</div>
-            <div class="small" style="margin-top: 6px;">tonoplasto</div>
+          <div style="border-left: 4px solid var(--sf-tip); padding-left: 22px; text-align: left;">
+            <div class="mono" style="font-size: 24px; color: var(--sf-tip); font-weight: 600;">TIP</div>
+            <div class="megafig" style="font-size: 68px; color: var(--ink); line-height: 1;">34</div>
+            <div class="small" style="font-size: 20px; margin-top: 8px;">tonoplasto</div>
           </div>
-          <div style="border-left: 3px solid var(--sf-pip); padding-left: 20px; text-align: left;">
-            <div class="mono" style="font-size: 21px; color: var(--sf-pip);">PIP</div>
-            <div class="megafig" style="font-size: 64px; color: var(--ink); line-height: 1;">32</div>
-            <div class="small" style="margin-top: 6px;">membrana plasmática</div>
+          <div style="border-left: 4px solid var(--sf-pip); padding-left: 22px; text-align: left;">
+            <div class="mono" style="font-size: 24px; color: var(--sf-pip); font-weight: 600;">PIP</div>
+            <div class="megafig" style="font-size: 68px; color: var(--ink); line-height: 1;">32</div>
+            <div class="small" style="font-size: 20px; margin-top: 8px;">membrana plasmática</div>
           </div>
-          <div style="border-left: 3px solid var(--sf-sip); padding-left: 20px; text-align: left;">
-            <div class="mono" style="font-size: 21px; color: var(--sf-sip);">SIP</div>
-            <div class="megafig" style="font-size: 64px; color: var(--ink); line-height: 1;">12</div>
-            <div class="small" style="margin-top: 6px;">retículo · nueva</div>
+          <div style="border-left: 4px solid var(--sf-sip); padding-left: 22px; text-align: left;">
+            <div class="mono" style="font-size: 24px; color: var(--sf-sip); font-weight: 600;">SIP</div>
+            <div class="megafig" style="font-size: 68px; color: var(--ink); line-height: 1;">12</div>
+            <div class="small" style="font-size: 20px; margin-top: 8px;">retículo · nueva</div>
           </div>
-          <div style="border-left: 3px solid var(--sf-xip); padding-left: 20px; text-align: left;">
-            <div class="mono" style="font-size: 21px; color: var(--sf-xip);">XIP</div>
-            <div class="megafig" style="font-size: 64px; color: var(--ink); line-height: 1;">6</div>
-            <div class="small" style="margin-top: 6px;">membrana plasmática · nueva</div>
+          <div style="border-left: 4px solid var(--sf-xip); padding-left: 22px; text-align: left;">
+            <div class="mono" style="font-size: 24px; color: var(--sf-xip); font-weight: 600;">XIP</div>
+            <div class="megafig" style="font-size: 68px; color: var(--ink); line-height: 1;">6</div>
+            <div class="small" style="font-size: 20px; margin-top: 8px;">membrana plasmática · nueva</div>
           </div>
 
         </div>
       </div>
 
-      <p class="body anim-in-3" style="margin-top: 32px; font-size: 23px; line-height: 1.4; color: var(--ink-muted); max-width: 1400px; margin-left: auto; margin-right: auto;">
+      <p class="body anim-in-3" style="margin-top: 34px; font-size: 27px; line-height: 1.4; color: var(--ink-muted); max-width: 1400px; margin-left: auto; margin-right: auto;">
         NIP es la subfamilia mayoritaria (<span class="leaf-c">30,6 %</span>), en línea con su expansión descrita en otras plantas.
       </p>
 
@@ -662,13 +854,13 @@
 
   <div class="footer-rule">
     <div>26 secuencias descartadas · 23 parciales + 3 no-AQP · Anexo E</div>
-    <div class="mono">11 / 19</div>
+    <div class="mono">13 / 22</div>
   </div>
 </section>
 
 
-<!-- ===================== 11 · BLOQUE III (escena) ===================== -->
-<section data-label="12 · Bloque III · Filogenia" data-theme="dark" data-scene="threejs:forest">
+<!-- ===================== 15 · BLOQUE III (escena) ===================== -->
+<section data-label="14 · Bloque III · Filogenia" data-theme="dark" data-scene="threejs:forest">
   <div class="scene-overlay-bar">
     <div class="so-eyebrow anim-in" style="color: #4ec5e0;">BLOQUE III</div>
     <h2 class="so-title anim-in-2">Filogenia</h2>
@@ -677,19 +869,19 @@
 
   <div class="footer-rule">
     <div>MAFFT · ClipKIT · IQ-TREE 3 · ModelFinder · Q.PLANT+R6 · MEME</div>
-    <div class="mono">12 / 19</div>
+    <div class="mono">14 / 22</div>
   </div>
 </section>
 
 
-<!-- ===================== 12 · FILOGENIA + MOTIVOS ===================== -->
-<section data-label="13 · Filogenia y motivos conservados">
+<!-- ===================== 16 · FILOGENIA + MOTIVOS ===================== -->
+<section data-label="15 · Filogenia y motivos conservados">
   <div class="topbar">
     <div class="tb-l">
       <span class="tb-dot"></span>
       <span>Bloque III · Filogenia</span>
     </div>
-    <div class="tb-r">13 / 19</div>
+    <div class="tb-r">15 / 22</div>
   </div>
 
   <div class="frame">
@@ -701,26 +893,26 @@
     <div style="display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 40px; margin-top: 28px; align-items: flex-start;">
 
       <div class="anim-in-2">
-        <div class="eyebrow muted" style="font-size: 16px; margin-bottom: 12px;">CINCO SUBFAMILIAS MONOFILÉTICAS</div>
-        <p class="body" style="font-size: 19px; line-height: 1.4; color: var(--ink-soft); margin: 0 0 14px;">Cada subfamilia forma una rama propia y completa: el parentesco confirma la clasificación.</p>
-        <div style="display: flex; gap: 22px; align-items: baseline;">
-          <div><div class="megafig water-c" style="font-size: 46px; line-height: 1;">91 %</div><div class="small">UFBoot</div></div>
-          <div><div class="megafig water-c" style="font-size: 46px; line-height: 1;">92,2 %</div><div class="small">SH-aLRT</div></div>
-          <div><div class="megafig water-c" style="font-size: 46px; line-height: 1;">1,000</div><div class="small">aBayes</div></div>
+        <div class="eyebrow muted" style="font-size: 19px; margin-bottom: 14px;">CINCO SUBFAMILIAS MONOFILÉTICAS</div>
+        <p class="body" style="font-size: 23px; line-height: 1.4; color: var(--ink-soft); margin: 0 0 16px;">Cada subfamilia forma una rama propia y completa: el parentesco confirma la clasificación.</p>
+        <div style="display: flex; gap: 24px; align-items: baseline;">
+          <div><div class="megafig water-c" style="font-size: 48px; line-height: 1;">91 %</div><div class="small" style="font-size: 19px;">UFBoot</div></div>
+          <div><div class="megafig water-c" style="font-size: 48px; line-height: 1;">92,2 %</div><div class="small" style="font-size: 19px;">SH-aLRT</div></div>
+          <div><div class="megafig water-c" style="font-size: 48px; line-height: 1;">1,000</div><div class="small" style="font-size: 19px;">aBayes</div></div>
         </div>
-        <p class="small" style="margin-top: 8px;">Triple soporte nodal (mediana).</p>
+        <p class="small" style="font-size: 20px; margin-top: 10px;">Triple soporte nodal (mediana).</p>
       </div>
 
       <div class="anim-in-3">
-        <div class="eyebrow fruit" style="font-size: 16px; margin-bottom: 12px;">CONTROLES INTERNOS</div>
-        <div class="megafig grow fruit-c" style="font-size: 60px; line-height: 1;">3 / 3</div>
-        <p class="body" style="font-size: 18px; line-height: 1.4; margin-top: 12px; color: var(--ink-soft);"><span class="mono fruit-c" style="font-size: 15px;">FaPIP1;1</span>, <span class="mono fruit-c" style="font-size: 15px;">FaPIP2;1</span> y <span class="mono fruit-c" style="font-size: 15px;">FaNIP1;1</span> caen sobre sus copias predichas.</p>
+        <div class="eyebrow fruit" style="font-size: 19px; margin-bottom: 14px;">CONTROLES INTERNOS</div>
+        <div class="megafig grow fruit-c" style="font-size: 64px; line-height: 1;">3 / 3</div>
+        <p class="body" style="font-size: 22px; line-height: 1.4; margin-top: 14px; color: var(--ink-soft);"><span class="mono fruit-c" style="font-size: 18px;">FaPIP1;1</span>, <span class="mono fruit-c" style="font-size: 18px;">FaPIP2;1</span> y <span class="mono fruit-c" style="font-size: 18px;">FaNIP1;1</span> caen sobre sus copias predichas.</p>
       </div>
 
       <div class="anim-in-3">
-        <div class="eyebrow leaf-c" style="font-size: 16px; margin-bottom: 12px;">GENOMA CUÁDRUPLE</div>
-        <div class="megafig grow leaf-c" style="font-size: 60px; line-height: 1;">3,2x</div>
-        <p class="body" style="font-size: 18px; line-height: 1.4; margin-top: 12px; color: var(--ink-soft);">Copias PIP por gen de <span class="italic">F. vesca</span>: cuadruplicación con fraccionamiento parcial.</p>
+        <div class="eyebrow leaf-c" style="font-size: 19px; margin-bottom: 14px;">GENOMA CUÁDRUPLE</div>
+        <div class="megafig grow leaf-c" style="font-size: 64px; line-height: 1;">3,2x</div>
+        <p class="body" style="font-size: 22px; line-height: 1.4; margin-top: 14px; color: var(--ink-soft);">Copias PIP por gen de <span class="italic">F. vesca</span>: cuadruplicación con fraccionamiento parcial.</p>
       </div>
 
     </div>
@@ -734,14 +926,14 @@
 
       <div class="anim-in-4" style="display: flex; flex-direction: column; gap: 14px;">
         <div>
-          <div class="eyebrow muted" style="font-size: 15px; margin-bottom: 8px;">NÚCLEO COMÚN (100 %)</div>
-          <p class="body" style="font-size: 19px; line-height: 1.4; margin: 0; color: var(--ink-soft);">Motivos M1, M3 y M6 en todo el catálogo: el motivo NPA y dos hélices transmembrana.</p>
+          <div class="eyebrow muted" style="font-size: 18px; margin-bottom: 8px;">NÚCLEO COMÚN (100 %)</div>
+          <p class="body" style="font-size: 23px; line-height: 1.4; margin: 0; color: var(--ink-soft);">Motivos M1, M3 y M6 en todo el catálogo: el motivo NPA y dos hélices transmembrana.</p>
         </div>
-        <div style="padding-top: 12px; border-top: 1px solid var(--rule); display: flex; flex-direction: column; gap: 8px; font-size: 18px; color: var(--ink-soft); line-height: 1.35;">
-          <div><span class="mono sf-pip">PIP</span> &nbsp;M7 y M9 (extremos) → heterotetrámeros PIP1·PIP2.</div>
-          <div><span class="mono sf-nip">NIP</span> &nbsp;M10 casi exclusivo.</div>
-          <div><span class="mono sf-sip">SIP</span> &nbsp;variantes del NPA (NPS, NPT, NPL).</div>
-          <div><span class="mono sf-xip">XIP</span> &nbsp;sin M7 ni M9 → se separan de las PIP.</div>
+        <div style="padding-top: 12px; border-top: 1px solid var(--rule); display: flex; flex-direction: column; gap: 9px; font-size: 22px; color: var(--ink-soft); line-height: 1.35;">
+          <div><span class="mono sf-pip" style="font-weight: 600;">PIP</span> &nbsp;M7 y M9 (extremos) → heterotetrámeros PIP1·PIP2.</div>
+          <div><span class="mono sf-nip" style="font-weight: 600;">NIP</span> &nbsp;M10 casi exclusivo.</div>
+          <div><span class="mono sf-sip" style="font-weight: 600;">SIP</span> &nbsp;variantes del NPA (NPS, NPT, NPL).</div>
+          <div><span class="mono sf-xip" style="font-weight: 600;">XIP</span> &nbsp;sin M7 ni M9 → se separan de las PIP.</div>
         </div>
       </div>
 
@@ -750,13 +942,13 @@
 
   <div class="footer-rule">
     <div>Bailey et al. 2015 · Deshmukh et al. 2015 · log L = −45.149,26 · 277 nodos · Anexo F/J</div>
-    <div class="mono">13 / 19</div>
+    <div class="mono">15 / 22</div>
   </div>
 </section>
 
 
-<!-- ===================== 13 · BLOQUE IV (escena) ===================== -->
-<section data-label="14 · Bloque IV · Expresión" data-theme="dark" data-scene="threejs:expression-tissues">
+<!-- ===================== 17 · BLOQUE IV (escena) ===================== -->
+<section data-label="16 · Bloque IV · Expresión" data-theme="dark" data-scene="threejs:expression-tissues">
   <div class="scene-overlay-bar">
     <div class="so-eyebrow anim-in" style="color: #4ec5e0;">BLOQUE IV</div>
     <h2 class="so-title anim-in-2">Expresión</h2>
@@ -765,176 +957,171 @@
 
   <div class="footer-rule">
     <div>HISAT2 · featureCounts · DESeq2 · Galaxy · 4 BioProjects</div>
-    <div class="mono">14 / 19</div>
+    <div class="mono">16 / 22</div>
   </div>
 </section>
 
 
-<!-- ===================== 14 · EXPRESIÓN BASAL + ESTRÉS ===================== -->
-<section data-label="15 · Expresión basal y respuesta al estrés">
+<!-- ===================== 18 · EXPRESIÓN BASAL (Fig 9) ===================== -->
+<section data-label="17 · Expresión basal por tejido">
   <div class="topbar">
     <div class="tb-l">
       <span class="tb-dot" style="background: var(--c-fruit);"></span>
-      <span>Bloque IV · Expresión</span>
+      <span>Bloque IV · Expresión basal</span>
     </div>
-    <div class="tb-r">15 / 19</div>
+    <div class="tb-r">17 / 22</div>
   </div>
 
   <div class="frame">
     <div class="anim-in" style="max-width: 1700px;">
-      <h2 class="title">Expresión basal y respuesta al estrés</h2>
+      <h2 class="title">Expresión basal: qué acuaporina usa cada tejido</h2>
     </div>
 
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 28px;">
-      <div class="anim-in-2">
-        <div class="eyebrow muted" style="margin-bottom: 12px; font-size: 16px;">BASAL · 6 TEJIDOS</div>
-        <div style="background: #ffffff; border-radius: 4px; padding: 12px;">
-          <img src="assets/figuras/Figura_09_TPM_basal.png" alt="Expresión basal por tejido" style="width: 100%; height: auto; display: block;"/>
-        </div>
-        <p class="small" style="margin-top: 12px;">
-          Jerarquía <span class="mono">PIP &gt; TIP &gt; NIP ≈ SIP ≫ XIP</span>. Pico: <span class="mono fruit-c">FaPIP1;1</span> en fruto rojo, <span class="leaf-c">3.748 TPM</span>. 11/12 SIP en los 6 tejidos.
-        </p>
+    <div style="display: grid; grid-template-columns: 1.45fr 0.55fr; gap: 56px; margin-top: 30px; align-items: center;">
+
+      <div class="anim-in-2" style="background: #ffffff; border-radius: 4px; padding: 18px; max-height: 720px; display: flex; align-items: center; justify-content: center;">
+        <img src="assets/figuras/Figura_09_TPM_basal.png" alt="Expresión basal por tejido (TPM)" style="width: 100%; max-height: 690px; object-fit: contain; display: block;"/>
       </div>
-      <div class="anim-in-3">
-        <div class="eyebrow amber-c" style="margin-bottom: 12px; font-size: 16px;">ESTRÉS · PEG 20 % · 6 DÍAS</div>
-        <div style="background: #ffffff; border-radius: 4px; padding: 12px;">
-          <img src="assets/figuras/Figura_10_expresion_diferencial.png" alt="Expresión diferencial bajo estrés" style="width: 100%; height: auto; display: block;"/>
-        </div>
-        <p class="small" style="margin-top: 12px;">
-          Hoja: <span class="leaf-c">4 ↑ · 3 ↓</span> (cuarteto <span class="italic">FaTIP1;7</span>). Raíz: <span class="fruit-c">1 ↑ · 9 ↓</span>. Sin solapamiento entre tejidos.
+
+      <div class="anim-in-3" style="display: flex; flex-direction: column; gap: 22px;">
+        <p class="body" style="font-size: 25px; line-height: 1.45; margin: 0; color: var(--ink-soft);">
+          Cada columna es un <span style="color: var(--ink);">tejido</span>; la altura, el nivel de expresión en <span class="mono">TPM</span> (transcritos por millón).
         </p>
+        <div style="padding-top: 18px; border-top: 1px solid var(--rule);">
+          <div class="eyebrow muted" style="font-size: 18px; margin-bottom: 10px;">JERARQUÍA ESTABLE</div>
+          <p class="body" style="font-size: 24px; line-height: 1.4; margin: 0; color: var(--ink-soft);"><span class="mono">PIP &gt; TIP &gt; NIP ≈ SIP ≫ XIP</span> en los seis tejidos.</p>
+        </div>
+        <div style="padding-top: 18px; border-top: 1px solid var(--rule);">
+          <div class="eyebrow fruit" style="font-size: 18px; margin-bottom: 10px;">PICO ABSOLUTO</div>
+          <p class="body" style="font-size: 24px; line-height: 1.4; margin: 0; color: var(--ink-soft);"><span class="mono fruit-c">FaPIP1;1</span> en fruto rojo · <span class="leaf-c" style="font-weight: 500;">3.748 TPM</span>. SIP casi ubicua (11/12).</p>
+        </div>
       </div>
+
     </div>
   </div>
 
   <div class="footer-rule">
-    <div>Mut 2008 · Alleva 2010 · Boursiac 2005 · Kapilan 2018 · DESeq2 · padj &lt; 0,05 · |LFC| &gt; 1</div>
-    <div class="mono">15 / 19</div>
+    <div>Mut 2008 · Alleva 2010 · Boursiac 2005 · TPM normalizado</div>
+    <div class="mono">17 / 22</div>
   </div>
 </section>
 
 
-<!-- ===================== 15 · HOMEÓLOGOS Y DOMINANCIA ===================== -->
-<section data-label="16 · Homeólogos · dominancia subgenómica">
+<!-- ===================== 19 · EXPRESIÓN BAJO ESTRÉS (Fig 10) ===================== -->
+<section data-label="18 · Respuesta al estrés hídrico">
+  <div class="topbar">
+    <div class="tb-l">
+      <span class="tb-dot" style="background: var(--c-amber);"></span>
+      <span>Bloque IV · Respuesta al estrés</span>
+    </div>
+    <div class="tb-r">18 / 22</div>
+  </div>
+
+  <div class="frame">
+    <div class="anim-in" style="max-width: 1700px;">
+      <h2 class="title">Respuesta al estrés hídrico: hoja y raíz, estrategias opuestas</h2>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1.45fr 0.55fr; gap: 56px; margin-top: 30px; align-items: center;">
+
+      <div class="anim-in-2" style="background: #ffffff; border-radius: 4px; padding: 18px; max-height: 720px; display: flex; align-items: center; justify-content: center;">
+        <img src="assets/figuras/Figura_10_expresion_diferencial.png" alt="Expresión diferencial bajo estrés hídrico" style="width: 100%; max-height: 690px; object-fit: contain; display: block;"/>
+      </div>
+
+      <div class="anim-in-3" style="display: flex; flex-direction: column; gap: 22px;">
+        <p class="body" style="font-size: 25px; line-height: 1.45; margin: 0; color: var(--ink-soft);">
+          Cada punto es una acuaporina; en color, los cambios significativos bajo sequía (PEG 20 %, 6 d): <span class="mono">padj &lt; 0,05</span> y <span class="mono">|LFC| &gt; 1</span>.
+        </p>
+        <div style="padding-top: 18px; border-top: 1px solid var(--rule);">
+          <div class="eyebrow leaf-c" style="font-size: 18px; margin-bottom: 10px;">HOJA</div>
+          <p class="body" style="font-size: 24px; line-height: 1.4; margin: 0; color: var(--ink-soft);"><span class="leaf-c" style="font-weight: 500;">4 ↑ · 3 ↓</span> — sube el cuarteto <span class="italic">FaTIP1;7</span> (redistribuye agua).</p>
+        </div>
+        <div style="padding-top: 18px; border-top: 1px solid var(--rule);">
+          <div class="eyebrow fruit" style="font-size: 18px; margin-bottom: 10px;">RAÍZ</div>
+          <p class="body" style="font-size: 24px; line-height: 1.4; margin: 0; color: var(--ink-soft);"><span class="fruit-c" style="font-weight: 500;">1 ↑ · 9 ↓</span> — represión neta: cierra el grifo hidráulico. Sin solapamiento entre tejidos.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer-rule">
+    <div>Kapilan 2018 · DESeq2 · padj &lt; 0,05 · |LFC| &gt; 1</div>
+    <div class="mono">18 / 22</div>
+  </div>
+</section>
+
+
+<!-- ===================== 20 · HOMEÓLOGOS Y DOMINANCIA ===================== -->
+<section data-label="19 · Homeólogos · dominancia subgenómica">
   <div class="topbar">
     <div class="tb-l">
       <span class="tb-dot" style="background: var(--c-fruit);"></span>
       <span>Bloque IV · Homeólogos</span>
     </div>
-    <div class="tb-r">16 / 19</div>
+    <div class="tb-r">19 / 22</div>
   </div>
 
   <div class="frame">
     <div class="anim-in" style="max-width: 1700px;">
-      <h2 class="title">Homeólogos y dominancia subgenómica</h2>
+      <h2 class="title">Homeólogos: cuando hay cuatro copias, ¿manda alguna?</h2>
     </div>
 
-    <div style="display: grid; grid-template-columns: 1.25fr 0.75fr; gap: 48px; margin-top: 28px; align-items: center;">
-
-      <div class="anim-in-2" style="background: #ffffff; border-radius: 4px; padding: 14px; max-height: 620px; display: flex; align-items: center; justify-content: center;">
-        <img src="assets/figuras/Figura_11_homeologos.png" alt="Homeólogos y dominancia subgenómica" style="width: 100%; max-height: 592px; object-fit: contain; display: block;"/>
-      </div>
-
-      <div class="anim-in-3" style="display: flex; flex-direction: column; gap: 20px;">
-
-        <p class="body" style="font-size: 20px; line-height: 1.4; color: var(--ink-soft); margin: 0;">
-          Las 121 acuaporinas, agrupadas en <span class="fruit-c" style="font-weight: 500;">32 grupos homeólogos</span> (copias del mismo gen en los cuatro subgenomas). <span class="leaf-c">18 cuartetos completos</span>.
-        </p>
-
-        <div>
-          <div class="eyebrow muted" style="font-size: 16px; margin-bottom: 12px;">COPIA DOMINANTE POR SUBGENOMA · N = 30</div>
-          <div style="display: flex; flex-direction: column; gap: 12px;">
-            <div>
-              <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 4px;">
-                <span class="mono" style="font-size: 20px; color: #a78b6f;">SUBG. A</span><span class="mono" style="font-size: 22px; color: var(--ink);">9</span>
-              </div>
-              <div style="height: 8px; background: var(--bg-elev); border-radius: 1px; overflow: hidden;"><div class="bar-fill" data-delay="1" style="height: 100%; width: 75%; background: #a78b6f;"></div></div>
-            </div>
-            <div>
-              <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 4px;">
-                <span class="mono" style="font-size: 20px; color: #d8567e;">SUBG. B</span><span class="mono" style="font-size: 22px; color: var(--ink);">4</span>
-              </div>
-              <div style="height: 8px; background: var(--bg-elev); border-radius: 1px; overflow: hidden;"><div class="bar-fill" data-delay="2" style="height: 100%; width: 33%; background: #d8567e;"></div></div>
-            </div>
-            <div>
-              <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 4px;">
-                <span class="mono" style="font-size: 20px; color: #4ec5c0;">SUBG. C</span><span class="mono" style="font-size: 22px; color: var(--ink);">5</span>
-              </div>
-              <div style="height: 8px; background: var(--bg-elev); border-radius: 1px; overflow: hidden;"><div class="bar-fill" data-delay="3" style="height: 100%; width: 42%; background: #4ec5c0;"></div></div>
-            </div>
-            <div>
-              <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 4px;">
-                <span class="mono fruit-c" style="font-size: 20px; font-weight: 500;">SUBG. D</span><span class="mono fruit-c" style="font-size: 28px;">12</span>
-              </div>
-              <div style="height: 12px; background: var(--bg-elev); border-radius: 1px; overflow: hidden;"><div class="bar-fill" data-delay="4" style="height: 100%; width: 100%; background: var(--c-fruit);"></div></div>
-            </div>
-          </div>
-          <p class="small" style="margin-top: 8px;">Dos grupos silentes; dominancia asignada sobre 30.</p>
-        </div>
-
-        <p class="body" style="font-size: 19px; line-height: 1.4; color: var(--ink-soft); margin: 0; padding-top: 14px; border-top: 1px solid var(--rule);">
-          El subgenoma <span class="fruit-c" style="font-weight: 500;">D domina el 40 %</span> de los grupos. Patrón propio del cultivar 'Benihoppe'.
-        </p>
-
-      </div>
-
+    <div class="anim-in-2" style="margin-top: 26px; max-width: 1660px;">
+      <p class="body" style="font-size: 28px; line-height: 1.45; color: var(--ink-soft); margin: 0;">
+        Como la fresa tiene cuatro subgenomas, cada gen ancestral existe en hasta cuatro copias equivalentes — sus <span class="leaf-c" style="font-weight: 500;">homeólogos</span>. Las 121 acuaporinas forman <span class="fruit-c" style="font-weight: 500;">32 grupos</span> (18 cuartetos completos). ¿Se expresan por igual las cuatro copias? <span style="color: var(--ink);">No: en cada grupo suele dominar una.</span>
+      </p>
     </div>
+
+    <div class="anim-in-3" style="margin-top: 22px; background: #ffffff; border-radius: 4px; padding: 16px 22px;">
+      <img src="assets/figuras/Figura_11B_subgenomas.png?v=20260608-01" alt="Dominancia por subgenoma de los grupos homeólogos" style="width: 100%; height: auto; display: block;"/>
+    </div>
+
+    <p class="body anim-in-4" style="margin-top: 18px; font-size: 26px; line-height: 1.4; color: var(--ink-soft); max-width: 1660px;">
+      Cada violín es un subgenoma; la línea, su proporción media de expresión por grupo. El subgenoma <span class="fruit-c" style="font-weight: 500;">D domina en 12 de 30 grupos (40 %)</span> — un sesgo propio de 'Benihoppe', no de la especie entera.
+    </p>
   </div>
 
   <div class="footer-rule">
-    <div>18 cuartetos completos · Aufiero et al. 2024 · Wang et al. 2022 · Edger et al. 2019</div>
-    <div class="mono">16 / 19</div>
+    <div>18 cuartetos completos · Edger et al. 2019 · Aufiero et al. 2024 · Wang et al. 2022</div>
+    <div class="mono">19 / 22</div>
   </div>
 </section>
 
 
-<!-- ===================== 16 · VISOR eFP ===================== -->
-<section data-label="17 · Visor eFP interactivo" data-embed="efp">
+<!-- ===================== 21 · VISOR eFP (pantalla casi completa) ===================== -->
+<section data-label="20 · Visor eFP interactivo" data-embed="efp">
   <div class="topbar">
     <div class="tb-l">
       <span class="tb-dot" style="background: var(--c-leaf);"></span>
-      <span>Bloque IV · Recurso</span>
+      <span>Bloque IV · Recurso interactivo</span>
     </div>
-    <div class="tb-r">17 / 19</div>
+    <div class="tb-r">20 / 22</div>
   </div>
 
-  <div class="frame">
-    <div class="anim-in" style="max-width: 1700px;">
-      <h2 class="title">Visor eFP interactivo</h2>
+  <div style="position: absolute; inset: 0; padding: 96px var(--pad-x) 84px; display: flex; flex-direction: column;">
+    <div class="anim-in" style="display: flex; align-items: baseline; justify-content: space-between; gap: 24px; margin-bottom: 16px;">
+      <h2 class="title" style="font-size: 48px;">Visor eFP interactivo</h2>
+      <div class="mono water-c" style="font-size: 20px; letter-spacing: 0.06em; flex-shrink: 0;">paredes0.github.io/tfg-aquaporinas</div>
     </div>
-
-    <div style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 56px; margin-top: 28px; align-items: center;">
-
-      <div class="anim-in-2" data-embed-target style="background: #ffffff; border-radius: 4px; padding: 0; width: 100%; height: 560px;"></div>
-
-      <div class="anim-in-3" style="display: flex; flex-direction: column; gap: 22px;">
-        <p class="body" style="font-size: 22px; line-height: 1.4; margin: 0; color: var(--ink-soft);">
-          Proyecta el TPM de cada grupo homeólogo sobre un esquema de la planta, con desglose por subgenoma (A, B, C, D).
-        </p>
-        <p class="body" style="font-size: 20px; line-height: 1.4; margin: 0; color: var(--ink-soft); padding-top: 16px; border-top: 1px solid var(--rule);">
-          Página autocontenida en GitHub Pages; reutilizable para otras especies. Adaptado de Winter et al. 2007.
-        </p>
-        <div class="mono water-c" style="font-size: 17px; letter-spacing: 0.06em;">paredes0.github.io/tfg-aquaporinas</div>
-      </div>
-
-    </div>
+    <div class="anim-in-2" data-embed-target style="flex: 1; background: #ffffff; border-radius: 6px; padding: 0; width: 100%; overflow: hidden; box-shadow: 0 4px 18px rgba(20,24,42,0.10);"></div>
   </div>
 
   <div class="footer-rule">
     <div>Adaptación del visor eFP de Winter et al. 2007 · GitHub Pages</div>
-    <div class="mono">17 / 19</div>
+    <div class="mono">20 / 22</div>
   </div>
 </section>
 
 
-<!-- ===================== 17 · CONCLUSIONES ===================== -->
-<section data-label="18 · Conclusiones">
+<!-- ===================== 22 · APORTACIONES Y LÍNEAS FUTURAS ===================== -->
+<section data-label="21 · Aportaciones y líneas futuras">
   <div class="topbar">
     <div class="tb-l">
       <span class="tb-dot"></span>
-      <span>Conclusiones</span>
+      <span>Cierre</span>
     </div>
-    <div class="tb-r">18 / 19</div>
+    <div class="tb-r">21 / 22</div>
   </div>
 
   <div class="frame">
@@ -942,53 +1129,53 @@
       <h2 class="title">Aportaciones y líneas futuras</h2>
     </div>
 
-    <div style="display: grid; grid-template-columns: 0.6fr 1.4fr; gap: 56px; margin-top: 32px; align-items: center;">
+    <div style="display: grid; grid-template-columns: 0.6fr 1.4fr; gap: 56px; margin-top: 36px; align-items: center;">
 
       <div class="anim-in-2" style="text-align: center;">
-        <div style="display: flex; align-items: baseline; justify-content: center; gap: 16px;">
-          <div class="megafig grow" style="font-size: 110px; color: var(--ink-dim); line-height: 0.95;">4</div>
-          <div style="font-family: var(--serif); font-size: 48px; color: var(--c-fruit);">→</div>
-          <div class="megafig grow fruit-c" style="font-size: 110px; line-height: 0.95;">121</div>
+        <div style="display: flex; align-items: baseline; justify-content: center; gap: 18px;">
+          <div class="megafig grow" style="font-size: 118px; color: var(--ink-dim); line-height: 0.95;">4</div>
+          <div style="font-family: var(--serif); font-size: 50px; color: var(--c-fruit);">→</div>
+          <div class="megafig grow fruit-c" style="font-size: 118px; line-height: 0.95;">121</div>
         </div>
-        <p class="small" style="margin-top: 12px;">de 4 conocidas a 121 catalogadas</p>
+        <p class="body" style="margin-top: 14px; font-size: 23px; color: var(--ink-muted);">de 4 conocidas a 121 catalogadas</p>
       </div>
 
-      <div class="anim-in-3" style="display: grid; grid-template-columns: 1fr 1fr; gap: 18px 32px;">
+      <div class="anim-in-3" style="display: grid; grid-template-columns: 1fr 1fr; gap: 22px 36px;">
         <div>
-          <div class="mono water-c" style="font-size: 16px;">01 · CATÁLOGO</div>
-          <p class="body" style="font-size: 18px; line-height: 1.35; margin: 6px 0 0; color: var(--ink-soft);">121 acuaporinas curadas, con mayor precisión que la anotación automática.</p>
+          <div class="mono water-c" style="font-size: 19px;">01 · CATÁLOGO</div>
+          <p class="body" style="font-size: 23px; line-height: 1.35; margin: 8px 0 0; color: var(--ink-soft);">121 acuaporinas curadas, con mayor precisión que la anotación automática.</p>
         </div>
         <div>
-          <div class="mono water-c" style="font-size: 16px;">02 · FILOGENIA</div>
-          <p class="body" style="font-size: 18px; line-height: 1.35; margin: 6px 0 0; color: var(--ink-soft);">Cinco subfamilias monofiléticas con triple soporte y firma de motivos propia.</p>
+          <div class="mono water-c" style="font-size: 19px;">02 · FILOGENIA</div>
+          <p class="body" style="font-size: 23px; line-height: 1.35; margin: 8px 0 0; color: var(--ink-soft);">Cinco subfamilias monofiléticas con triple soporte y firma de motivos propia.</p>
         </div>
         <div>
-          <div class="mono water-c" style="font-size: 16px;">03 · EXPRESIÓN</div>
-          <p class="body" style="font-size: 18px; line-height: 1.35; margin: 6px 0 0; color: var(--ink-soft);">Primer mapa por tejido: respuesta opuesta hoja-raíz y dominancia subgenómica desigual.</p>
+          <div class="mono water-c" style="font-size: 19px;">03 · EXPRESIÓN</div>
+          <p class="body" style="font-size: 23px; line-height: 1.35; margin: 8px 0 0; color: var(--ink-soft);">Primer mapa por tejido: respuesta opuesta hoja-raíz y dominancia subgenómica desigual.</p>
         </div>
         <div>
-          <div class="mono water-c" style="font-size: 16px;">04 · RECURSO ABIERTO</div>
-          <p class="body" style="font-size: 18px; line-height: 1.35; margin: 6px 0 0; color: var(--ink-soft);">Repositorio público, 133 pruebas automáticas, anexos, workflows y visor en línea.</p>
+          <div class="mono water-c" style="font-size: 19px;">04 · RECURSO ABIERTO</div>
+          <p class="body" style="font-size: 23px; line-height: 1.35; margin: 8px 0 0; color: var(--ink-soft);">Repositorio público, 133 pruebas automáticas, anexos, workflows y visor en línea.</p>
         </div>
       </div>
 
     </div>
 
-    <div class="anim-in-4" style="margin-top: 28px; padding-top: 18px; border-top: 1px solid var(--rule);">
-      <div class="eyebrow leaf-c" style="font-size: 15px; margin-bottom: 8px;">LÍNEAS FUTURAS</div>
-      <p class="body" style="font-size: 19px; line-height: 1.45; color: var(--ink-soft); margin: 0; max-width: 1500px;">Reanotación manual de las parciales · análisis del filtro ar/R (sobre todo en NIP) · validación experimental de los patrones inferidos in silico.</p>
+    <div class="anim-in-4" style="margin-top: 30px; padding-top: 20px; border-top: 1px solid var(--rule);">
+      <div class="eyebrow leaf-c" style="font-size: 18px; margin-bottom: 10px;">LÍNEAS FUTURAS</div>
+      <p class="body" style="font-size: 24px; line-height: 1.45; color: var(--ink-soft); margin: 0; max-width: 1560px;">Reanotación manual de las parciales · análisis del filtro ar/R (sobre todo en NIP) · validación experimental de los patrones inferidos in silico.</p>
     </div>
   </div>
 
   <div class="footer-rule">
     <div>Noé Paredes Alfonso · Dr. Juan Nicolás Espinosa · Dr. José Ramón Acosta Motos · paredes0.github.io/tfg-aquaporinas</div>
-    <div class="mono">18 / 19</div>
+    <div class="mono">21 / 22</div>
   </div>
 </section>
 
 
-<!-- ===================== 18 · CIERRE / GRACIAS ===================== -->
-<section data-label="19 · Cierre">
+<!-- ===================== 23 · CIERRE / GRACIAS ===================== -->
+<section data-label="22 · Cierre">
   <div class="particles" style="opacity: 0.4;"></div>
 
   <div class="topbar">
@@ -1008,21 +1195,21 @@
           <div style="font-family: var(--serif); font-size: 72px; color: var(--c-fruit);">→</div>
           <div class="megafig grow fruit-c" style="font-size: 180px; line-height: 0.95;">121</div>
         </div>
-        <p class="subtitle" style="margin-top: 24px; font-size: 30px; color: var(--ink-muted); font-style: italic;">
+        <p class="subtitle" style="margin-top: 24px; font-size: 33px; color: var(--ink-muted); font-style: italic;">
           Primer catálogo curado, filogenia validada, mapa transcriptómico y pipeline reproducible.
         </p>
       </div>
 
       <div class="anim-in-2" style="margin-top: 64px;">
         <h2 class="title" style="font-size: 84px;">Gracias.</h2>
-        <p class="subtitle" style="margin-top: 16px; font-size: 26px; color: var(--ink-muted);">Quedo a su disposición para preguntas.</p>
+        <p class="subtitle" style="margin-top: 16px; font-size: 29px; color: var(--ink-muted);">Quedo a su disposición para preguntas.</p>
       </div>
     </div>
   </div>
 
   <div class="footer-rule">
     <div>Noé Paredes Alfonso · paredes0.github.io/tfg-aquaporinas</div>
-    <div class="mono">19 / 19</div>
+    <div class="mono">22 / 22</div>
   </div>
 </section>
 
@@ -1114,7 +1301,7 @@
 </script>
 
 <script src="deck-stage.js"></script>
-<script type="module" src="deck-orchestrator.js?v=20260603-02"></script>
+<script type="module" src="deck-orchestrator.js?v=20260608-02"></script>
 
 <!-- Modo presentación · tecla "P" oculta/muestra la lista de diapositivas -->
 <script>
@@ -1126,7 +1313,7 @@
       if (!el) {
         el = document.createElement('div');
         el.id = 'present-toast';
-        el.style.cssText = 'position:fixed;bottom:26px;left:50%;transform:translateX(-50%);z-index:99999;background:rgba(20,24,42,0.92);color:#fff;font-family:IBM Plex Sans,system-ui,sans-serif;font-size:14px;letter-spacing:0.04em;padding:10px 20px;border-radius:6px;opacity:0;transition:opacity .25s;pointer-events:none;';
+        el.style.cssText = 'position:fixed;bottom:26px;left:50%;transform:translateX(-50%);z-index:99999;background:rgba(20,24,42,0.92);color:#fff;font-family:IBM Plex Sans,system-ui,sans-serif;font-size: 14px;letter-spacing:0.04em;padding:10px 20px;border-radius:6px;opacity:0;transition:opacity .25s;pointer-events:none;';
         document.body.appendChild(el);
       }
       el.textContent = msg;

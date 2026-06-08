@@ -280,52 +280,10 @@ function createExpressionSVG() {
     svg.appendChild(rowGroup);
   });
 
-  // ---------- Bottom: subgenome dominance bars ----------
-  const subgenomes = [
-    { name: 'A', count: 9,  color: '#a78b6f' },
-    { name: 'B', count: 5,  color: '#d8567e' },
-    { name: 'C', count: 5,  color: '#4ec5c0' },
-    { name: 'D', count: 12, color: '#ff5577' }
-  ];
-  const sgMaxCount = 12;
-  const sgMaxHeight = 80;
-  const sgBarW = 60;
-  const sgBaseline = 830;
-
-  // Distribute 4 columns evenly from x=300 to x=1300
-  const sgX0 = 300, sgX1 = 1300;
-  subgenomes.forEach((sg, i) => {
-    const cx = sgX0 + (sgX1 - sgX0) * (i / (subgenomes.length - 1));
-    const h = (sg.count / sgMaxCount) * sgMaxHeight;
-
-    const bar = document.createElementNS(svgNS, 'rect');
-    bar.setAttribute('x', cx - sgBarW / 2);
-    bar.setAttribute('y', sgBaseline);
-    bar.setAttribute('width', sgBarW);
-    bar.setAttribute('height', 0);
-    bar.setAttribute('fill', sg.color);
-    bar.setAttribute('opacity', '0.85');
-    bar.setAttribute('rx', '2');
-    bar.dataset.role = 'sg-bar';
-    bar.dataset.sgIndex = i;
-    bar.dataset.finalY = sgBaseline - h;
-    bar.dataset.finalH = h;
-    svg.appendChild(bar);
-
-    const lbl = document.createElementNS(svgNS, 'text');
-    lbl.setAttribute('x', cx);
-    lbl.setAttribute('y', sgBaseline + 30);
-    lbl.setAttribute('text-anchor', 'middle');
-    lbl.setAttribute('font-family', 'IBM Plex Mono');
-    lbl.setAttribute('font-size', 16);
-    lbl.setAttribute('fill', sg.color);
-    lbl.setAttribute('letter-spacing', '2');
-    lbl.textContent = `${sg.name} · ${sg.count}`;
-    lbl.setAttribute('opacity', 0);
-    lbl.dataset.role = 'sg-label';
-    lbl.dataset.sgIndex = i;
-    svg.appendChild(lbl);
-  });
+  // (Las barras de dominancia por subgenoma se han retirado de esta escena:
+  // el concepto de homeólogo/dominancia aún no se ha explicado en este punto de
+  // la defensa. La escena se queda con la planta vectorial + la expresión por
+  // tejido, que es lo que toca en el Bloque IV de apertura.)
 
   return svg;
 }
@@ -337,13 +295,8 @@ function animateExpression(svg) {
     svg.querySelectorAll('[data-role="plant-fragaria"]').forEach(el => el.style.opacity = 1);
     svg.querySelectorAll(
       '[data-role="heat-spot"], [data-role="info-row"], ' +
-      '[data-role="panel-title"], [data-role="sg-label"]'
+      '[data-role="panel-title"]'
     ).forEach(el => el.setAttribute('opacity', 1));
-    // Snap subgenome bars to final height
-    svg.querySelectorAll('[data-role="sg-bar"]').forEach(el => {
-      el.setAttribute('y', el.dataset.finalY);
-      el.setAttribute('height', el.dataset.finalH);
-    });
     return;
   }
 
@@ -379,17 +332,4 @@ function animateExpression(svg) {
     tl.to(row, { opacity: 1, duration: 0.45, ease: 'power2.out' }, at);
   });
 
-  // 3.5–5s: subgenome bars grow (cascade A → B → C → D)
-  const sgBars = svg.querySelectorAll('[data-role="sg-bar"]');
-  const sgLabels = svg.querySelectorAll('[data-role="sg-label"]');
-  sgBars.forEach((bar, i) => {
-    const finalY = parseFloat(bar.dataset.finalY);
-    const finalH = parseFloat(bar.dataset.finalH);
-    tl.to(bar, {
-      attr: { y: finalY, height: finalH },
-      duration: 0.6,
-      ease: 'power2.out'
-    }, 3.7 + i * 0.2);
-  });
-  tl.to(sgLabels, { opacity: 1, duration: 0.4, stagger: 0.2, ease: 'power2.out' }, 3.9);
 }

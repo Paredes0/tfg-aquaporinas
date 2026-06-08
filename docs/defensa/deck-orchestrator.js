@@ -1,5 +1,5 @@
 // deck-orchestrator.js — listens to slidechange and orchestrates per-slide init/dispose
-const ORCHESTRATOR_VERSION = '20260603-02';  // cache-bust dynamic imports + iframes
+const ORCHESTRATOR_VERSION = '20260608-02';  // cache-bust dynamic imports + iframes
 const deckStage = document.querySelector('deck-stage');
 if (!deckStage) {
   console.warn('[orchestrator] No <deck-stage> encontrado.');

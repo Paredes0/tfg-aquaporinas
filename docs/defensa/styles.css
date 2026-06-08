@@ -39,11 +39,11 @@
   --sf-partial:     rgba(125, 211, 168, 0.45);
 
   /* Type scale @1920x1080 */
-  --type-eyebrow:   22px;
-  --type-small:     26px;
-  --type-body:      32px;
-  --type-body-lg:   36px;
-  --type-subtitle:  44px;
+  --type-eyebrow:   23px;
+  --type-small:     27px;
+  --type-body:      33px;
+  --type-body-lg:   37px;
+  --type-subtitle:  45px;
   --type-title:     64px;
   --type-display:   96px;
   --type-mega:      168px;
@@ -197,17 +197,17 @@ deck-stage > section.light .muted { color: var(--ink-on-light-muted); }
   justify-content: space-between;
   align-items: center;
   font-family: var(--mono);
-  font-size: 20px;
+  font-size: 23px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--ink-dim);
+  color: var(--ink-muted);
 }
 .topbar .tb-l { display: flex; gap: 40px; align-items: center; }
 .topbar .tb-dot {
-  width: 6px; height: 6px; border-radius: 50%;
+  width: 7px; height: 7px; border-radius: 50%;
   background: var(--c-water);
 }
-.topbar .tb-r { color: var(--ink-dim); }
+.topbar .tb-r { color: var(--ink-muted); }
 
 /* ---------- bottom rule for slide footer ---------- */
 .footer-rule {
@@ -219,11 +219,11 @@ deck-stage > section.light .muted { color: var(--ink-on-light-muted); }
   justify-content: space-between;
   align-items: center;
   font-family: var(--mono);
-  font-size: 14px;
+  font-size: 17px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--ink-dim);
-  padding-top: 12px;
+  color: var(--ink-muted);
+  padding-top: 14px;
   border-top: 1px solid var(--rule);
 }
 
@@ -313,7 +313,7 @@ deck-stage > section.light .muted { color: var(--ink-on-light-muted); }
 }
 .card-title {
   font-family: var(--mono);
-  font-size: 20px;
+  font-size: 21px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--c-water);
