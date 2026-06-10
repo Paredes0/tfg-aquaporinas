@@ -1,0 +1,132 @@
+
+1- Hola soy Noé Paredes y voy a presentar mi trabajo fin de grado titulado "Identificación, curado y caracterización transcripcional del acuaporinoma de Fragaria x ananassa "Benihoppe"", dirigido por Juan Nicolas y José Ramón Acosta.
+
+
+2- Este trabajo se ha organizado en bloques, en linea con el orden lógico del pipeline/flujo de trabajo creado. Por ello, no separaremos la metodología de resultados y discusión, sino que los combinaremos para que se entienda mejor todo lo realizado. 
+
+Primero veremos un breve contexto sobre el por qué estudiamos las acuaporinas y los antecedentes en la especie de interés del trabajo (fresa comercial) y luego comenzaremos a explicar cada parte del pipeline según su objetivo y resultados en cuatro bloques que detallaré más adelante, y finalmente una conclusión.
+
+
+3- El estudio de las acuaporinas es muy relevante y cada vez más debido al impacto climático que estamos sufriendo en el mediterráneo, organizaciones científicas especializadas como el MedECC proyectan una perdida del 25% del agua disponible hacia 2050 con sequías más frecuentes. 
+
+Si esto ya es alarmante para los cultivos en general, la situación de la fresa en España es todavía mas delicada, pues el 93% de la producción nacional y el 35% de la producción europea se encuentra en Huelva, donde todavía dependen del agua de acuíferos protegidos por la UNESCO y la UE como el de Doñana, es decir, no pueden sacar todo el agua que quieran para regar.
+
+
+4- ¿Y que importancia tienen las acuaporinas en este contexto? Las acuaporinas son la familia proteica más relevante en el control hídrico y osmótico, son canales de membrana que transportan agua y pequeños solutos a favor de gradiente en las membranas celulares, y por tanto, son las encargadas de adaptarse al entorno hídrico (ya sea sequía, salinidad o exceso de agua). 
+
+Su estructura, como veis en esta imagen de la acuaporina PIP2;1 de espinaca, se divide en varias partes fundamentales en todas las acuaporinas: 1) las 6 hélices transmembrana, que serán un eje central de análisis posteriores en este estudio, 2) los dos motivos NPA en rojo, y el motivo aromatico/arginina en ámbar, aseguran la selectividad de sustrato, es decir, que moléculas pasan por el poro y cuales no. 
+
+En concreto, en este estudio analizaremos el motivo NPA, que es la estructura más común e invariable entre todas las acuaporinas, además de las 6 hélices transmembrana. Por otro lado, hay otras estructuras relevantes como los aminoácidos coloreados de morado, que se encuentran en la parte intracelular y responden a los mecanismos de estrés de la planta, cerrando o abriendo los poros dependiendo de la situación. 
+
+Finalmente, estas proteínas se dividen en 5 subfamilias y dentro de ellas hay diferentes isoformas, que iremos viendo a lo largo de la presentación.
+
+
+5- Bien, una vez explicada la acuaporina, conviene explicar la situación concreta de la fresa comercial, pues su genética muy particular. Es una especie alo-octoploide. 'Alo' quiere decir que viene de la hibridación de especies distintas, y 'octoploide' que posee ni más ni menos que 8 juegos cromosómicos en total.
+
+Para comparar: los humanos somos diploides, tenemos dos juegos cromosómicos (como se suele decir, cada uno de su padre y de su madre). Lo que ocurre es que la fresa comercial tiene cuatro 'padres', y algunos están perdidos. A estos ancestros los dividimos dentro del genoma de la fresa en subgenomas (A representaría el genoma de F. vesca, B el de F. iinumae, y C y D los de las dos especies perdidas que posiblemente estén extintas y no se conoce bien su origen).
+
+Esto es relevante porque significa que, para cada gen de acuaporina, existe una copia casi idéntica en cada subgenoma procedente de cada ancestro. A estas copias equivalentes se les llama homeólogos, un concepto que retomaremos posteriormente en el análisis transcriptómico.
+
+
+6- Hasta ahora, lo que se conocía sobre acuaporinas en fresa comercial eran 4 genes descritos funcionalmente en vitro e in vivo (uno de ellos ni siquiera estaba nombrado según la nomenclatura oficial), y un catálogo de 147 genes anotados como "posibles" acuaporinas. Este catálogo proviene de una anotación automática sin curado estructural ni comprobación independiente, ya sea in silico, in vitro o in vivo. Por tanto no se sabía cuáles eran reales ni a que subfamilia pertenecian.
+
+
+7- Es decir, partimos prácticamente de 0, tenemos 4 acuaporinas de unas 120-140 esperadas (30-35 aqp por subgenoma), y 147 aqp que no sabemos si podemos fiarnos de ellas. Por suerte, tenemos un ensamblaje genómico relativamente actualizado de la fresa comercial, del cultivar "Benihoppe", y es por tanto el que hemos utilizado en este estudio. 
+
+Entonces, con solamente el genoma y su anotación automática, nos hemos embarcado en la búsqueda de las acuaporinas en el gigantesco genoma alo-octoploide de la fresa. Para conseguirlo, hemos dividido el viaje en cuatro etapas, que representan el flujo de trabajo del pipeline reproducible creado: 
+Bloque 1) Identificar las posibles acuaporinas del genoma por homología (similar a la anotación automática pero con más pasos, herramientas y filtros paralelos que aumentan su confianza), 
+Bloque 2) Curación de las secuencias obtenidas para validar las acuaporinas reales y descartar los fragmentos o parciales a partir de los datos estructurales y fisicoquímicos, 
+Bloque 3) Clasificación filogenética de los candidatos reales para agrupar y clasificar en subfamilia e isoforma y 
+Bloque 4) Análisis de expresión genética mediante un flujo de RNA-seq, para observar la actividad por tejido y homeólogos.
+
+
+8- Comenzamos con el bloque I, donde identificamos las posibles acuaporinas dentro del genoma de la fresa. Para esto, utilizamos como fuente de datos las acuaporinas ya conocidas y curadas de 4 especies relevantes por diferentes motivos: Arabidopsis thaliana por ser la especie modelo dicotiledonea, Oryza sativa por ser monocotiledonea, Malus domestica por ser cercana a la fresa y Hevea brasiliensis por ser una familia grande de acuaporinas, aportando información de calidad de subfamilias menos representativas como SIP y XIP. Además, para aumentar la probabilidad de encontrar acuaporinas, aun a costa de encontrar fragmentos o secuencias parciales, aportamos 419 secuencias de acuaporinas de la familia Rosaceae (misma familia de la fresa) sacadas de la base de datos NCBI RefSeq (secuencias de referencia).
+
+
+9- A partir de estos datos y utilizando Galaxy, construimos un flujo de trabajo que, en resumen, realiza tres pasos fundamentales: 1) Alinea las 576 secuencias de acuaporinas en el genoma de la fresa para encontrar secuencias similares, obteniendo alrededor de 50 mil coincidencias, 2) Luego, reconstruye e identifica los lugares genomicos donde estaban esas coincidencias fragmentadas por los intrones, obteniendo casi 3200 lugares genomicos, lugares donde podía haber una secuencia completa y estructuralmente valida de acuaporina. 3) Una vez identificado donde podían estar escondidas las acuaporinas, utiliza la herramienta Exonerate en esos lugares, para, a partir de las 576 secuencias de acuaporinas, calcular y modelar por lo menos una estructura completa exon-intrón que pareciese una acuaporina por cada lugar genómico, obteniendo casi 5000 posibles estructuras exon-intron de acuaporinas y su secuencia de aminoácidos.
+
+
+10- ¿Cómo pasamos de esos 5000 modelos de acuaporina, a nuestras 129 candidatas? Con tres simples filtros: que todas las proteínas comiencen por metionina (AUG, inicio de transcripcion), que tengan longitud de 140 a 380 aminoácidos, rango de casi el 99% de acuaporinas calculado a partir de las 419 secuencias de acuaporinas de NCBI RefSeq, y eliminar la redundancia espacial, es decir, por cada locus que tuviera más de un modelo dado por exonerate, seleccionabamos el que tuviera mayor puntuación estadística segun la propia herramienta, el resto se descartaron. 
+
+Con esto, pasamos de casi 5000 modelos a 129 candidatos, que luego comparamos con el catálogo previo de 147 acuaporinas de la anotación automática, y encontramos que, aunque todas las secuencias se encontraban en los mismos genes, la estructura exon-intron y de aminoacidos era idéntica en 91 de 129 casos, mientras que en 38 eran diferentes. Finalmente, 15 secuencias, identificadas como parciales segun análisis posteriores, solo se encontraban en las secuencias de anotación automática.
+
+
+11- Pasamos así al Bloque 2, donde el objetivo es filtrar y curar nuestras candidatas. Necesitábamos saber cuáles eran acuaporinas posiblemente reales y funcionales, y cuáles eran simplemente fragmentos o errores genómicos. Para ello, analizamos sus parámetros estructurales y fisicoquímicos.
+
+
+12- Para decidir si una acuaporina es estructuralmente viable, nos basamos en los fundamentos estructurales ya descritos de las acuaporinas, analizamos si cada secuencia tiene 6 hélices transmembrana y si conserva los dos motivos NPA o sus variantes (NPS, NPL...). En paralelo, realizamos un árbol filogenético exploratorio, anterior al análisis filogenético de las candidatas curadas, para ver si hay acuaporinas que se asignan en clados marginales o si su evolución difiere significativamente del resto de acuaporinas, marcando una posible secuencia parcial. Por último, a partir de los datos fisicoquímicos y topológicos y el árbol exploratorio, realizamos un PCA combinando todas las variables y dividido en subfamilias gracias al árbol, para identificar aquellas secuencias parciales que se alejaban significativamente de la elipse de confianza correspondiente a su subfamilia, tal como se ve en este grafico PCA.
+
+
+13- Tras aplicar estos filtros, descartamos 26 secuencias parciales y obtuvimos nuestro catálogo curado final: 121 acuaporinas estructuralmente viables. Además, logramos clasificarlas provisionalmente en las cinco grandes subfamilias vegetales:
+
+37 NIPs, que es la familia más variada en cuanto a los sustratos que transporta.
+
+34 TIPs, localizadas principalmente en la membrana de las vacuolas.
+
+32 PIPs, que se sitúan en la membrana plasmática y son las más especializadas en transportar agua pura.
+
+12 SIPs, ubicadas en el retículo endoplásmico.
+
+Y finalmente 6 XIPs, una familia muy reducida en el mundo vegetal que comparte características con las PIPs.
+
+
+14- Con nuestras 121 secuencias ya validadas, pasamos al Bloque 3 y construimos este árbol filogenético definitivo.
+
+Como veis, el anillo interno divide las secuencias en los grandes bloques de subfamilias que mencionamos antes por colores. Aunque a esta escala el detalle es muy fino, lo importante es que esta topología nos ha permitido afinar la clasificación: no solo sabemos que una secuencia es 'NIP', sino que podemos asignarla con confianza a su subgrupo (por ejemplo, NIP1) y a su isoforma exacta (como NIP1;1).
+
+Pero lo más interesante está en la parte exterior. Hemos agrupado los genes homeólogos y les hemos superpuesto un mapa de calor (heatmap) que muestra su nivel de expresión basal en diferentes tejidos de la planta.
+
+El gran hallazgo visual aquí es la enorme homogeneidad. Podéis observar cómo cada grupo de homeólogos comparte un patrón de colores, es decir, de expresión, casi idéntico. Esto nos confirma algo clave: no solo sus secuencias codificantes son iguales, sino que sus regiones reguladoras, como los promotores, también se han conservado tras la hibridación y funcionan de forma coordinada.
+
+
+15- La robustez de esta clasificación filogenética es altísima, ya que la mediana del triple soporte estadístico de los nodos supera los umbrales de máxima confianza. Además, utilizamos un control interno: introdujimos en el árbol las 3 acuaporinas de fresa que ya estaban validadas experimentalmente en la literatura, y las tres cayeron exactamente en la rama y clado que nuestro modelo predecía.
+
+Por otro lado, este catálogo de 121 secuencias confirma el modelo evolutivo que esperábamos para un genoma alo-octoploide. Si nos fijamos en la subfamilia PIP y la comparamos con uno de los ancestros diploides (Fragaria vesca), observamos una tasa de retención de 3,2 copias por gen. Esto demuestra la cuadruplicación inicial de los subgenomas, seguida de un fraccionamiento o pérdida parcial de genes a lo largo de la evolución por pura redundancia.
+
+Por último, cerramos este bloque analizando los motivos proteicos, como se ve en el mapa de calor inferior.
+Encontramos un núcleo común (los motivos M1, M3 y M6, que corresponden a los motivos NPA y a las hélices transmembrana) presente en el 100% del catálogo. Pero también detectamos firmas exclusivas, destacando las PIP con sus motivos M7 y M9 en los extremos terminales. Estos motivos son vitales para formar heterotetrámeros entre PIP1 y PIP2, un mecanismo que la célula utiliza para multiplicar exponencialmente su capacidad de transportar agua.
+
+
+16- El último bloque del pipeline, una vez tenemos todas las acuaporinas identificadas, curadas y clasificadas, podemos realizar un análisis de expresión por RNA-seq con mayor confianza. En este análisis, veremos tanto la expresión basal por tejidos como la expresión diferencial entre hoja y raíz bajo estrés hídrico.
+
+
+17- Analizamos la expresión basal utilizando este gráfico conocido como raincloud plot. Por si no estáis familiarizados con él, es una evolución del clásico box plot o gráfico de violín, ya que nos permite ver simultáneamente tres cosas: la media (la línea oscura), la distribución estadística de los datos (el área de color) y cada gen de forma individual (los puntos). Además, el eje X representa los tejidos, cada uno dividido en la expresión por subfamilia, y en el eje Y el nivel de expresión en TPM (transcritos por millón).
+
+Sabiendo esto, de este mapa general extraemos tres conclusiones biológicas directas:
+
+Primero, existe una jerarquía estable en todos los tejidos: las PIP son las más expresadas, seguidas de las TIP, luego las NIP y SIP con niveles similares, y las XIP con una expresión casi residual.
+
+Segundo, observamos que las SIP (en amarillo) mantienen una expresión ubicua y muy constante en todos los órganos, sugiriendo funciones de mantenimiento vitales en el retículo endoplásmico.
+
+Y tercero, detectamos un pico absoluto de la acuaporina FaPIP1;1 en el fruto rojo, lo que apunta a un papel clave de esta isoforma durante el proceso de maduración.
+
+
+18- Pasamos ahora a la respuesta frente al estrés hídrico por sequía. Utilizando el mismo formato visual, ahora el eje Y nos muestra el cambio de expresión: los puntos hacia arriba indican que la acuaporina se induce por el estrés, y hacia abajo, que se reprime.
+
+Lo interesante de este análisis es que descubrimos dos estrategias opuestas entre tejidos:
+
+En la hoja (panel A), vemos una respuesta activa de reajuste osmótico. Destaca la inducción completa del grupo de homeólogos de la isoforma FaTIP1;7. Si recordamos que las TIP controlan la vacuola (el gran almacén de agua de la célula), esta activación masiva puede indicar que la hoja está abriendo sus reservas internas para redistribuir el agua y sobrevivir a la sequía.
+
+Por el contrario, en la raíz (panel B), observamos una represión neta casi total. Nueve de las diez acuaporinas con cambios significativos se ven reprimidas. Esto podría tener un sentido fisiológico importante, y es que, ante un suelo completamente seco, la planta cierra el grifo hidráulico en las raíces para evitar que el agua fluya en sentido inverso y se pierda hacia la tierra.
+
+
+19- Y para cerrar este bloque de expresión, volvemos a un concepto clave sobre la genética de la planta que planteamos al principio: si la fresa tiene hasta cuatro copias casi idénticas del mismo gen (los homeólogos), ¿trabajan todas por igual?
+
+La respuesta es no. En este gráfico analizamos qué proporción del trabajo asume cada uno de los cuatro subgenomas, y descubrimos un claro sesgo de expresión. Lejos de repartirse el esfuerzo de forma equitativa, y aunque la literatura general indica que el subgenoma A suele ser el dominante en la fresa, hemos visto que específicamente para las acuaporinas en nuestra variedad 'Benihoppe', el subgenoma D toma el relevo, dominando la expresión en un 40% de los casos. Esto nos demuestra que, ante la redundancia genética, la planta prioriza funcionalmente uno de sus genomas ancestrales sobre los demás dependiendo de la familia de genes.
+
+
+20- Finalmente, como recurso interactivo, he creado este visor eFP interactivo, que esta disponible en la pagina web del proyecto, donde podemos ver la expresión de cada grupo homeólogo por tejido.
+
+
+21- Para finalizar, el impacto de este trabajo se resume visualmente en este salto numérico: partíamos de apenas 4 secuencias conocidas en fresa comercial, y hoy aportamos un catálogo robusto de 121 acuaporinas validadas.
+
+Pero más allá de los números, el objetivo de este TFG siempre ha sido la utilidad práctica. Hemos estructurado este conocimiento en cuatro aportaciones clave para futuros estudios:
+Primero, un catálogo curado mucho más preciso que la anotación automática.
+Segundo, una clasificación filogenética de máxima confianza.
+Tercero, el primer mapa transcripcional de esta familia, con la expresión basal y diferencial por tejido.
+
+Y cuarto, que es quizás nuestra aportación técnica más destacable: la creación de un recurso bioinformático semi-automatizado y reproducible. Hemos publicado en un repositorio de GitHub todos los datos, scripts y flujos de trabajo detallados paso a paso. Lo más interesante de esto es que nuestro pipeline es adaptable: cualquier equipo de investigación, con los conocimientos necesarios, puede clonarlo y utilizarlo no solo para buscar acuaporinas en otras plantas, sino para identificar y caracterizar cualquier familia de proteínas transmembrana en general.
+
+Por tanto, como líneas futuras, este trabajo no se queda en el ordenador. Por un lado, es la hoja de ruta para ir al laboratorio a tiro hecho, sabiendo exactamente qué genes hay que validar experimentalmente. Y a largo plazo, asienta la base molecular necesaria para futuros programas de mejora agronómica que busquen desarrollar variedades de fresa más resistentes, aportando soluciones biológicas reales al problema de escasez de agua que vimos al principio de la presentación.
+
+22- Con esto concluyo mi exposición. Muchas gracias por su atención, y quedo a entera disposición del tribunal.
