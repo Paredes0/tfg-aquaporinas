@@ -18,7 +18,7 @@
 
 "• Una acuaporina es un poro de proteína que deja pasar agua a favor de gradiente, de forma pasiva: el agua va de donde sobra a donde falta sin que la célula gaste energía.\n• Por dentro tiene forma de reloj de arena: seis hélices que cruzan la membrana más dos reentrantes, dejando un poro de unos 3 ångström, el ancho justo para una hilera de moléculas de agua.\n• La selectividad la marcan dos filtros: el doble motivo NPA corta el paso de protones y el filtro ar/R afina el tamaño.\n• En la membrana se ensamblan como tetrámeros, pero cada monómero lleva su propio poro: cuatro canales independientes.\n• Esta arquitectura, conservada entre especies, es la que permite reconocer una acuaporina en cualquier genoma; y existe en varios subtipos, cuyos nombres veremos en el catálogo.\n• En pantalla, la estructura real (PDB 1Z98, cadena A, acuaporina de espinaca) en el visor Mol* en vivo, rotable.",
 
-"• Antes de los genes, una pincelada de qué planta es esta, porque explica los subgenomas y los homeólogos. Es contexto conocido, no forma parte del análisis del TFG.\n• La fresa cultivada es alo-octoploide: 2n = 8x = 56. Junta en un mismo núcleo cuatro juegos cromosómicos completos —los subgenomas A, B, C y D— procedentes de cuatro especies diploides distintas; las mejor caracterizadas son F. vesca y F. iinumae, las otras dos no están claras.\n• Esos cuatro genomas acabaron reunidos en dos fresas silvestres octoploides: F. chiloensis (aporta calibre) y F. virginiana (aporta sabor y color).\n• De su cruce espontáneo en Europa, en el siglo XVIII, nació la fresa cultivada, F. x ananassa; 'Benihoppe' es un cultivar moderno. Es, por tanto, una especie muy joven.\n• Idea clave para el final: cuatro subgenomas → cada gen ancestral existe en hasta cuatro copias casi idénticas → esas copias equivalentes son los HOMEÓLOGOS.",
+"• Antes de los genes, una pincelada de qué planta es esta, porque explica los subgenomas y los homeólogos. Es contexto conocido, no forma parte del análisis del TFG.\n• La fresa cultivada es alo-octoploide: 2n = 8x = 56. Junta en un mismo núcleo cuatro juegos cromosómicos completos —los subgenomas A, B, C y D— procedentes de cuatro especies diploides distintas; las mejor caracterizadas son F. vesca y F. iinumae, las otras dos no están claras.\n• Por poliploidía, esos cuatro genomas acabaron reunidos en una sola especie: la fresa cultivada, F. x ananassa, alo-octoploide (2n = 8x = 56). Surgió como híbrida espontánea en Europa en el siglo XVIII; 'Benihoppe' es un cultivar moderno. Es, por tanto, una especie muy joven.\n• Idea clave para el final: cuatro subgenomas → cada gen ancestral existe en hasta cuatro copias casi idénticas → esas copias equivalentes son los HOMEÓLOGOS.",
 
 "• Punto de partida del problema concreto: en la fresa cultivada solo había cuatro acuaporinas descritas funcionalmente, cada una en un estudio independiente a lo largo de más de una década.\n• Son FaPIP1;1 y FaPIP2;1 (membrana plasmática, fruto y raíz), FaNIP1;1 (membrana plasmática, maduración) y FaRB7 (tonoplasto, raíz). Solo tres de los cinco subtipos.\n• La única referencia a escala de genoma era una anotación automática: la predicción MAKER marcaba 147 genes como posibles acuaporinas.\n• Pero eso es exactamente eso, una predicción automática: nunca se comprobó de forma independiente si esos 147 genes son realmente acuaporinas. No había curado estructural, ni una validación paralela, ni nada in vitro o in vivo. No se sabía cuáles eran reales ni a qué subfamilia pertenecían.\n• Por eso el objetivo no era describir un gen más, sino construir por primera vez el inventario completo y comprobado.",
 
@@ -38,7 +38,7 @@
 
 "• Tercer paso: ya tenemos las 121 confirmadas; ahora se ordenan según de quién descienden, como un árbol genealógico agrupa las ramas de una familia.\n• Un árbol filogenético agrupa los genes por el parecido de su secuencia para deducir cuáles comparten antepasado.\n• En la escena, el árbol real reconstruido a partir de 281 secuencias y 430 posiciones; el modelo que mejor explica los datos es Q.PLANT+R6 (log L = −45.149,26).\n• El resultado —las cinco subfamilias como ramas propias con triple soporte— llega en la diapositiva siguiente.",
 
-"• El árbol final integra 281 secuencias y 430 sitios; ModelFinder eligió Q.PLANT+R6 sobre 277 nodos.\n• UFBoot, SH-aLRT y aBayes son tres formas distintas de estimar la fiabilidad de cada rama; que las tres coincidan en valores altos es la mayor garantía. Soportes medianos 91 % / 92,2 % / 1,000.\n• Los tres controles de la literatura caen sobre sus copias predichas con rama casi nula: la asignación acierta. La ratio de 3,2 copias PIP por gen ancestral encaja con la cuadruplicación seguida de pérdida parcial.\n• Detalle que enlaza con el final: en el árbol, las cuatro copias de un mismo grupo homeólogo salen muy juntas y con expresión parecida; por eso después tiene sentido agruparlas.\n• MEME identificó 15 motivos: M1 (el NPA), M3 y M6 están en el 100 % del catálogo; luego cada subfamilia añade su firma propia. El mapa es la Figura 8.",
+"• El árbol final integra 281 secuencias y 430 sitios; ModelFinder eligió Q.PLANT+R6 sobre 277 nodos.\n• UFBoot, SH-aLRT y aBayes son tres formas distintas de estimar la fiabilidad de cada rama; que las tres coincidan en valores altos es la mayor garantía. Soportes medianos 91 % / 92,2 % / 1,000.\n• Los tres controles de la literatura caen sobre sus copias predichas con rama casi nula: la asignación acierta.\n• Detalle que enlaza con el final: en el árbol, las cuatro copias de un mismo grupo homeólogo salen muy juntas y con expresión parecida; por eso después tiene sentido agruparlas.\n• MEME identificó 15 motivos: M1 (el NPA), M3 y M6 están en el 100 % del catálogo; luego cada subfamilia añade su firma propia. El mapa es la Figura 8.",
 
 "• Cuarto y último paso: ya tenemos el catálogo y sabemos cómo se emparentan; ahora, ver cuáles funcionan de verdad y en qué parte de la planta.\n• Cada célula enciende solo los genes que necesita. Leyendo el ARN que produce un tejido sabemos qué acuaporinas tiene activas: eso es la secuenciación de ARN.\n• Trabajamos con 22 transcriptomas (21 analizados tras descartar una raíz por control de calidad), en 6 tejidos —fruto verde, fruto rojo, hoja, raíz, corona y yema axilar— de 4 proyectos públicos.\n• Los miramos en dos situaciones: la planta en reposo y bajo sequía.\n• En la escena, la expresión por tejido proyectada sobre la propia planta.",
 
@@ -239,22 +239,22 @@
           <div style="position: absolute; top: 14px; right: 14px; z-index: 10; padding: 7px 13px; background: rgba(255,255,255,0.94); border-radius: 4px; border: 1px solid var(--rule); font-family: var(--mono); font-size: 13px; color: var(--ink-soft); letter-spacing: 0.08em;">PDB 1Z98 · chain A · SoPIP2;1</div>
         </div>
 
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px 28px; padding: 8px 4px;">
-          <div style="display: flex; align-items: center; gap: 10px;">
-            <span style="width: 14px; height: 4px; border-radius: 2px; background: #3498DB; flex-shrink: 0;"></span>
-            <span class="mono" style="font-size: 16px; color: var(--ink);">6 hélices transmembrana</span>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px 36px; padding: 14px 4px;">
+          <div style="display: flex; align-items: center; gap: 14px;">
+            <span style="width: 20px; height: 5px; border-radius: 2px; background: #3498DB; flex-shrink: 0;"></span>
+            <span class="mono" style="font-size: 21px; color: var(--ink);">6 hélices transmembrana</span>
           </div>
-          <div style="display: flex; align-items: center; gap: 10px;">
-            <span style="width: 10px; height: 10px; border-radius: 50%; background: #E74C3C; flex-shrink: 0;"></span>
-            <span class="mono" style="font-size: 16px; color: var(--ink);">doble motivo NPA</span>
+          <div style="display: flex; align-items: center; gap: 14px;">
+            <span style="width: 14px; height: 14px; border-radius: 50%; background: #E74C3C; flex-shrink: 0;"></span>
+            <span class="mono" style="font-size: 21px; color: var(--ink);">doble motivo NPA</span>
           </div>
-          <div style="display: flex; align-items: center; gap: 10px;">
-            <span style="width: 14px; height: 4px; border-radius: 2px; background: #2ECC71; flex-shrink: 0;"></span>
-            <span class="mono" style="font-size: 16px; color: var(--ink);">2 hélices reentrantes</span>
+          <div style="display: flex; align-items: center; gap: 14px;">
+            <span style="width: 20px; height: 5px; border-radius: 2px; background: #2ECC71; flex-shrink: 0;"></span>
+            <span class="mono" style="font-size: 21px; color: var(--ink);">2 hélices reentrantes</span>
           </div>
-          <div style="display: flex; align-items: center; gap: 10px;">
-            <span style="width: 10px; height: 10px; border-radius: 50%; background: #d68910; flex-shrink: 0;"></span>
-            <span class="mono" style="font-size: 16px; color: var(--ink);">filtro ar/R</span>
+          <div style="display: flex; align-items: center; gap: 14px;">
+            <span style="width: 14px; height: 14px; border-radius: 50%; background: #d68910; flex-shrink: 0;"></span>
+            <span class="mono" style="font-size: 21px; color: var(--ink);">filtro ar/R</span>
           </div>
         </div>
       </div>
@@ -304,75 +304,56 @@
       <h2 class="title">Origen de la fresa cultivada: una especie joven y cuádruple</h2>
     </div>
 
-    <!-- Cronología en tres estaciones -->
-    <div style="display: grid; grid-template-columns: 1.15fr 0.12fr 1fr 0.12fr 1fr; gap: 18px; margin-top: 34px; align-items: stretch;">
+    <!-- Cronología en dos estaciones -->
+    <div style="display: grid; grid-template-columns: 1fr 0.18fr 1fr; gap: 22px; margin-top: 40px; align-items: stretch;">
 
-      <!-- Estación 1 · donantes diploides -->
-      <div class="card anim-in-2" style="padding: 26px 26px;">
+      <!-- Estación 1 · cuatro donantes diploides -->
+      <div class="card anim-in-2" style="padding: 32px 34px;">
         <div class="card-title" style="color: var(--c-leaf);">CUATRO ANCESTROS DIPLOIDES</div>
-        <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 10px;">
-          <div style="display: flex; align-items: baseline; gap: 14px;">
-            <span class="italic body" style="font-size: 25px; color: var(--ink);">F. vesca</span>
-            <span class="mono" style="font-size: 21px; color: var(--ink-muted);">→ subgenoma A</span>
+        <div style="display: flex; flex-direction: column; gap: 16px; margin-top: 16px;">
+          <div style="display: flex; align-items: baseline; gap: 16px;">
+            <span class="italic body" style="font-size: 28px; color: var(--ink);">F. vesca</span>
+            <span class="mono" style="font-size: 23px; color: var(--ink-muted);">→ subgenoma A</span>
           </div>
-          <div style="display: flex; align-items: baseline; gap: 14px;">
-            <span class="italic body" style="font-size: 25px; color: var(--ink);">F. iinumae</span>
-            <span class="mono" style="font-size: 21px; color: var(--ink-muted);">→ subgenoma B</span>
+          <div style="display: flex; align-items: baseline; gap: 16px;">
+            <span class="italic body" style="font-size: 28px; color: var(--ink);">F. iinumae</span>
+            <span class="mono" style="font-size: 23px; color: var(--ink-muted);">→ subgenoma B</span>
           </div>
-          <div style="display: flex; align-items: baseline; gap: 14px;">
-            <span class="body" style="font-size: 25px; color: var(--ink-soft);">y dos especies más</span>
-            <span class="mono" style="font-size: 21px; color: var(--ink-muted);">→ subg. C · D</span>
+          <div style="display: flex; align-items: baseline; gap: 16px;">
+            <span class="body" style="font-size: 28px; color: var(--ink-soft);">y dos especies más</span>
+            <span class="mono" style="font-size: 23px; color: var(--ink-muted);">→ subg. C · D</span>
           </div>
         </div>
-        <p class="small" style="font-size: 21px; margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--rule);">
+        <p class="small" style="font-size: 23px; margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--rule);">
           Cuatro fresas silvestres diploides, <span class="leaf-c">una por subgenoma</span>.
         </p>
       </div>
 
-      <div class="anim-in-2" style="display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--ink-muted);">
-        <div style="font-size: 35px;">→</div>
-        <div class="mono" style="font-size: 14px; writing-mode: horizontal-tb; text-align: center; margin-top: 8px; line-height: 1.3;">poliploidía</div>
-      </div>
-
-      <!-- Estación 2 · octoploides silvestres -->
-      <div class="card anim-in-3" style="padding: 26px 26px;">
-        <div class="card-title">DOS OCTOPLOIDES SILVESTRES</div>
-        <div style="margin-top: 4px;">
-          <div class="italic body" style="font-size: 25px; color: var(--ink);">F. chiloensis</div>
-          <p class="small" style="font-size: 21px; margin: 2px 0 12px;">Sudamérica · aporta el <span class="fruit-c">calibre</span></p>
-          <div class="italic body" style="font-size: 25px; color: var(--ink);">F. virginiana</div>
-          <p class="small" style="font-size: 21px; margin: 2px 0 0;">Norteamérica · aporta <span class="fruit-c">sabor y color</span></p>
-        </div>
-        <p class="small" style="font-size: 20px; margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--rule);">
-          Ambas <span class="mono">2n = 8x = 56</span>.
-        </p>
-      </div>
-
       <div class="anim-in-3" style="display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--ink-muted);">
-        <div style="font-size: 35px;">→</div>
-        <div class="mono" style="font-size: 13px; text-align: center; margin-top: 8px; line-height: 1.3;">Europa<br/>s. XVIII</div>
+        <div style="font-size: 48px;">→</div>
+        <div class="mono" style="font-size: 17px; text-align: center; margin-top: 12px; line-height: 1.3;">poliploidía</div>
       </div>
 
-      <!-- Estación 3 · cultivada -->
-      <div class="card anim-in-4" style="padding: 26px 26px;">
+      <!-- Estación 2 · la fresa cultivada alo-octoploide -->
+      <div class="card anim-in-3" style="padding: 32px 34px;">
         <div class="card-title" style="color: var(--c-fruit);">LA FRESA CULTIVADA</div>
-        <div style="margin-top: 4px;">
-          <div class="italic body" style="font-size: 25px; color: var(--ink);">F. x ananassa</div>
-          <p class="small" style="font-size: 21px; margin: 2px 0 12px;">Híbrida espontánea en Europa, <span class="muted">s. XVIII</span></p>
-          <div class="body" style="font-size: 25px; color: var(--ink);">'Benihoppe'</div>
-          <p class="small" style="font-size: 21px; margin: 2px 0 0;">cultivar del estudio · Japón, 1994</p>
+        <div style="margin-top: 16px;">
+          <div class="italic body" style="font-size: 28px; color: var(--ink);">F. x ananassa</div>
+          <p class="small" style="font-size: 23px; margin: 6px 0 16px; line-height: 1.4;">Alo-octoploide: reúne los <span class="leaf-c">cuatro subgenomas</span> en un mismo núcleo · <span class="mono">2n = 8x = 56</span></p>
+          <div class="body" style="font-size: 28px; color: var(--ink);">'Benihoppe'</div>
+          <p class="small" style="font-size: 23px; margin: 6px 0 0;">cultivar del estudio · Japón, 1994</p>
         </div>
-        <p class="small" style="font-size: 20px; margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--rule);">
-          Apenas <span class="fruit-c">~300 años</span> como especie.
+        <p class="small" style="font-size: 22px; margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--rule);">
+          Híbrida espontánea en Europa · apenas <span class="fruit-c">~300 años</span> como especie.
         </p>
       </div>
 
     </div>
 
     <!-- Takeaway · homeólogos -->
-    <div class="anim-in-4" style="margin-top: 26px; padding: 20px 30px; border-radius: 6px; background: var(--bg-elev-2); border: 1px solid var(--rule); display: flex; align-items: center; gap: 26px;">
-      <div class="mono leaf-c" style="font-size: 21px; letter-spacing: 0.14em; flex-shrink: 0;">IDEA CLAVE</div>
-      <p class="body" style="font-size: 26px; line-height: 1.4; margin: 0; color: var(--ink-soft);">
+    <div class="anim-in-4" style="margin-top: 38px; padding: 28px 38px; border-radius: 6px; background: var(--bg-elev-2); border: 1px solid var(--rule); display: flex; align-items: center; gap: 30px;">
+      <div class="mono leaf-c" style="font-size: 22px; letter-spacing: 0.14em; flex-shrink: 0;">IDEA CLAVE</div>
+      <p class="body" style="font-size: 28px; line-height: 1.45; margin: 0; color: var(--ink-soft);">
         Cuatro subgenomas (A · B · C · D) significan que cada gen ancestral existe en <span class="fruit-c" style="font-weight: 500;">hasta cuatro copias</span> casi idénticas. A esas copias equivalentes, una por subgenoma, se las llama <span class="leaf-c" style="font-weight: 500;">homeólogos</span> — concepto que retomaremos al final.
       </p>
     </div>
@@ -890,12 +871,12 @@
     </div>
 
     <!-- Banda 1 · validación -->
-    <div style="display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 40px; margin-top: 28px; align-items: flex-start;">
+    <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 56px; margin-top: 28px; align-items: flex-start;">
 
       <div class="anim-in-2">
         <div class="eyebrow muted" style="font-size: 19px; margin-bottom: 14px;">CINCO SUBFAMILIAS MONOFILÉTICAS</div>
         <p class="body" style="font-size: 23px; line-height: 1.4; color: var(--ink-soft); margin: 0 0 16px;">Cada subfamilia forma una rama propia y completa: el parentesco confirma la clasificación.</p>
-        <div style="display: flex; gap: 24px; align-items: baseline;">
+        <div style="display: flex; gap: 36px; align-items: baseline;">
           <div><div class="megafig water-c" style="font-size: 48px; line-height: 1;">91 %</div><div class="small" style="font-size: 19px;">UFBoot</div></div>
           <div><div class="megafig water-c" style="font-size: 48px; line-height: 1;">92,2 %</div><div class="small" style="font-size: 19px;">SH-aLRT</div></div>
           <div><div class="megafig water-c" style="font-size: 48px; line-height: 1;">1,000</div><div class="small" style="font-size: 19px;">aBayes</div></div>
@@ -907,12 +888,6 @@
         <div class="eyebrow fruit" style="font-size: 19px; margin-bottom: 14px;">CONTROLES INTERNOS</div>
         <div class="megafig grow fruit-c" style="font-size: 64px; line-height: 1;">3 / 3</div>
         <p class="body" style="font-size: 22px; line-height: 1.4; margin-top: 14px; color: var(--ink-soft);"><span class="mono fruit-c" style="font-size: 18px;">FaPIP1;1</span>, <span class="mono fruit-c" style="font-size: 18px;">FaPIP2;1</span> y <span class="mono fruit-c" style="font-size: 18px;">FaNIP1;1</span> caen sobre sus copias predichas.</p>
-      </div>
-
-      <div class="anim-in-3">
-        <div class="eyebrow leaf-c" style="font-size: 19px; margin-bottom: 14px;">GENOMA CUÁDRUPLE</div>
-        <div class="megafig grow leaf-c" style="font-size: 64px; line-height: 1;">3,2x</div>
-        <p class="body" style="font-size: 22px; line-height: 1.4; margin-top: 14px; color: var(--ink-soft);">Copias PIP por gen de <span class="italic">F. vesca</span>: cuadruplicación con fraccionamiento parcial.</p>
       </div>
 
     </div>
@@ -980,7 +955,7 @@
     <div style="display: grid; grid-template-columns: 1.45fr 0.55fr; gap: 56px; margin-top: 30px; align-items: center;">
 
       <div class="anim-in-2" style="background: #ffffff; border-radius: 4px; padding: 18px; max-height: 720px; display: flex; align-items: center; justify-content: center;">
-        <img src="assets/figuras/Figura_09_TPM_basal.png" alt="Expresión basal por tejido (TPM)" style="width: 100%; max-height: 690px; object-fit: contain; display: block;"/>
+        <img src="assets/figuras/Figura_09_TPM_basal.png?v=20260611-01" alt="Expresión basal por tejido (TPM)" style="width: 100%; max-height: 690px; object-fit: contain; display: block;"/>
       </div>
 
       <div class="anim-in-3" style="display: flex; flex-direction: column; gap: 22px;">
